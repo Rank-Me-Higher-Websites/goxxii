@@ -22,9 +22,9 @@ const buttonVariants = cva(
         link:
           "text-primary underline-offset-4 hover:underline",
         hero:
-          "bg-primary text-primary-foreground font-bold uppercase tracking-wider hover:shadow-xl hover:shadow-primary/40 hover:scale-105 transition-all duration-300 rounded-lg",
+          "bg-primary text-primary-foreground font-bold uppercase tracking-wider hover:shadow-2xl hover:shadow-primary/50 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 rounded-lg relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-200%] hover:before:translate-x-[200%] before:transition-transform before:duration-700",
         heroOutline:
-          "border-2 border-foreground/30 bg-transparent text-foreground font-bold uppercase tracking-wider hover:bg-foreground/10 hover:border-foreground/50 transition-all duration-300 rounded-lg",
+          "border-2 border-foreground/30 bg-transparent text-foreground font-bold uppercase tracking-wider hover:bg-foreground/10 hover:border-primary/50 hover:shadow-lg active:scale-[0.98] transition-all duration-300 rounded-lg",
         glass:
           "glass text-foreground font-medium hover:bg-muted/50 rounded-lg border-0",
         gradient:
