@@ -39,14 +39,14 @@ const itemVariants = {
 
 export const TrustedBrandsSection = () => {
   return (
-    <section className="py-16 sm:py-20 bg-background">
+    <section className="py-20 sm:py-28 bg-[#0a1628]">
       <div className="container-custom">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center text-3xl md:text-4xl font-display font-bold uppercase tracking-tight mb-12"
+          className="text-center text-3xl md:text-4xl lg:text-5xl font-display font-bold uppercase tracking-wider mb-16 text-white"
         >
           Trusted by Leading Brands
         </motion.h2>
@@ -56,7 +56,7 @@ export const TrustedBrandsSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6"
         >
           {brands.map((brand) => (
             <motion.div
@@ -64,16 +64,18 @@ export const TrustedBrandsSection = () => {
               variants={itemVariants}
               whileHover={{ 
                 scale: 1.05,
-                y: -5,
-                transition: { duration: 0.2 }
+                y: -8,
+                transition: { duration: 0.3, ease: "easeOut" }
               }}
-              className="bg-muted/50 rounded-xl p-6 flex items-center justify-center min-h-[120px] cursor-pointer hover:bg-muted hover:shadow-lg transition-all duration-300"
+              className="group relative bg-[#1a2d4a] rounded-2xl p-5 flex items-center justify-center min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-[#2a3d5a]/50 hover:border-primary/30"
             >
-              <img
-                src={brand.logo}
-                alt={brand.name}
-                className="max-h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
-              />
+              <div className="bg-white/95 rounded-lg p-4 w-full h-full flex items-center justify-center min-h-[80px] group-hover:bg-white transition-colors duration-300">
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  className="max-h-10 md:max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
             </motion.div>
           ))}
         </motion.div>
