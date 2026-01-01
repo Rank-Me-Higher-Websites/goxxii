@@ -307,6 +307,57 @@
     transform: rotate(1deg) translateY(4px);
     opacity: 0.7;
   }
+
+  /* Image hover effects */
+  .img-hover {
+    @apply overflow-hidden;
+  }
+
+  .img-hover img {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .img-hover:hover img {
+    @apply scale-105;
+  }
+
+  .img-hover-lift {
+    @apply overflow-hidden rounded-xl transition-all duration-500;
+  }
+
+  .img-hover-lift:hover {
+    @apply -translate-y-2 shadow-2xl;
+  }
+
+  .img-hover-lift img {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .img-hover-lift:hover img {
+    @apply scale-105;
+  }
+
+  .img-hover-glow {
+    @apply relative overflow-hidden;
+  }
+
+  .img-hover-glow::after {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+    background: linear-gradient(135deg, hsl(217 91% 50% / 0.2), hsl(145 72% 45% / 0.2));
+  }
+
+  .img-hover-glow:hover::after {
+    @apply opacity-100;
+  }
+
+  .img-hover-glow img {
+    @apply transition-transform duration-500;
+  }
+
+  .img-hover-glow:hover img {
+    @apply scale-110;
+  }
 }
 
 @layer utilities {

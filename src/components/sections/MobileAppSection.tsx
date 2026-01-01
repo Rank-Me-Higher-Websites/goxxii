@@ -64,11 +64,11 @@ export const MobileAppSection = () => {
             transition={{ delay: 0.1 }}
             className="lg:col-span-2"
           >
-            <div className="relative max-w-[200px] sm:max-w-[240px] mx-auto">
+            <div className="relative max-w-[200px] sm:max-w-[240px] mx-auto group">
               <img
                 src={mobileApp}
                 alt="XXII Century Mobile App"
-                className="w-full h-auto"
+                className="w-full h-auto transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-2"
               />
             </div>
           </motion.div>

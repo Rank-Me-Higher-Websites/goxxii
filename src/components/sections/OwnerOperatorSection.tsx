@@ -76,7 +76,7 @@ export const OwnerOperatorSection = () => {
           >
             <div className="grid grid-cols-5 gap-3">
               <div className="col-span-3 space-y-3">
-                <div className="rounded-lg overflow-hidden border border-border">
+                <div className="img-hover-lift rounded-lg border border-border">
                   <img
                     src={truck1}
                     alt="Truck driver"
@@ -93,7 +93,7 @@ export const OwnerOperatorSection = () => {
                   <div className="text-2xl sm:text-3xl font-display font-bold text-accent">500+</div>
                   <div className="text-xs text-muted-foreground">Drivers</div>
                 </div>
-                <div className="rounded-lg overflow-hidden border border-border">
+                <div className="img-hover-lift rounded-lg border border-border">
                   <img
                     src={truck2}
                     alt="XXII Century truck"
