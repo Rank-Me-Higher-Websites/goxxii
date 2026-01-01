@@ -7,10 +7,14 @@ import logo from "@/assets/logo.svg";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Owner Operators", href: "/owner-operators" },
-  { label: "Company Drivers", href: "/company-drivers" },
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
+];
+
+const driverLinks = [
+  { label: "Owner Operators", href: "/owner-operators" },
+  { label: "Company Drivers", href: "/company-drivers" },
+  { label: "Fleet Program", href: "/fleet-program" },
 ];
 
 const socialLinks = [
@@ -79,6 +83,28 @@ export const Navbar = () => {
                 )}
               </Link>
             ))}
+            
+            {/* Drivers Dropdown */}
+            <div className="relative group">
+              <button className="relative font-medium text-sm uppercase tracking-wider transition-colors duration-300 hover:text-primary whitespace-nowrap text-foreground/80 flex items-center gap-1">
+                Drivers
+              </button>
+              <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="glass rounded-lg py-2 min-w-[180px] shadow-xl border border-border/50">
+                  {driverLinks.map((link, index) => (
+                    <Link
+                      key={link.href}
+                      to={link.href}
+                      className={`block px-4 py-2 text-sm transition-colors hover:bg-primary/10 hover:text-primary ${
+                        index === 2 ? "bg-gradient-to-r from-primary to-cyan-400 text-white mx-2 rounded" : ""
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           </nav>
 
           {/* CTA Buttons */}
