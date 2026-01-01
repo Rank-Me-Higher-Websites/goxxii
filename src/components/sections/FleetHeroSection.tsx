@@ -5,7 +5,7 @@ import driverFleet from "@/assets/driver-fleet.png";
 
 export const FleetHeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -17,7 +17,7 @@ export const FleetHeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 pt-24">
+      <div className="container-custom relative z-10 pt-20 pb-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
