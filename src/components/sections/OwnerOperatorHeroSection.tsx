@@ -57,11 +57,11 @@ export const OwnerOperatorHeroSection = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-background">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
         
-        <div className="container-custom relative z-10 pt-32 pb-20">
+        <div className="container-custom relative z-10 pt-24 pb-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
