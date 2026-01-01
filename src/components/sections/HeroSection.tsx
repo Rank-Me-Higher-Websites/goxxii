@@ -196,12 +196,12 @@ export const HeroSection = () => {
               )}
             </div>
 
-            {/* Floating social proof */}
+            {/* Floating social proof - positioned outside video */}
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="absolute -bottom-4 -left-4 sm:-left-8 glass-strong rounded-xl px-4 py-3 border border-accent/30 hidden sm:block"
+              className="mt-4 glass-strong rounded-xl px-4 py-3 border border-accent/30 hidden lg:inline-flex"
             >
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
