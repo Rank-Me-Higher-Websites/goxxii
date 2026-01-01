@@ -39,22 +39,16 @@ const itemVariants = {
 
 export const TrustedBrandsSection = () => {
   return (
-    <section className="py-20 sm:py-28 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl" />
-      </div>
-
-      <div className="container-custom relative z-10">
+    <section className="py-16 sm:py-20 bg-background">
+      <div className="container-custom">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center text-3xl md:text-5xl font-display font-bold uppercase tracking-tight mb-16"
+          className="text-center text-3xl md:text-4xl font-display font-bold uppercase tracking-tight mb-12"
         >
-          Trusted by <span className="text-primary">Leading Brands</span>
+          Trusted by Leading Brands
         </motion.h2>
 
         <motion.div
@@ -62,29 +56,23 @@ export const TrustedBrandsSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
         >
           {brands.map((brand) => (
             <motion.div
               key={brand.name}
               variants={itemVariants}
               whileHover={{ 
-                scale: 1.08,
-                y: -8,
-                transition: { duration: 0.25, ease: "easeOut" }
+                scale: 1.05,
+                y: -5,
+                transition: { duration: 0.2 }
               }}
-              className="group relative backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-2xl p-8 flex items-center justify-center min-h-[140px] cursor-pointer border border-white/20 dark:border-white/10 hover:border-primary/40 hover:bg-white/20 dark:hover:bg-white/10 shadow-lg hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
+              className="bg-muted/50 rounded-xl p-6 flex items-center justify-center min-h-[120px] cursor-pointer hover:bg-muted hover:shadow-lg transition-all duration-300"
             >
-              {/* Inner glow */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 via-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              
-              {/* Top highlight */}
-              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
-              
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="max-h-14 md:max-h-16 w-auto object-contain relative z-10 transition-all duration-300 group-hover:scale-105 brightness-0 invert opacity-70 group-hover:opacity-100"
+                className="max-h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
               />
             </motion.div>
           ))}
