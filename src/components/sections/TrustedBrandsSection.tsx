@@ -17,39 +17,41 @@ const brands = [
 
 export const TrustedBrandsSection = () => {
   return (
-    <section className="py-16 bg-secondary overflow-hidden">
+    <section className="py-12 sm:py-16 bg-secondary overflow-hidden">
       <div className="container-custom mb-8">
-        <h3 className="text-center text-xl font-display font-semibold text-muted-foreground">
+        <h3 className="text-center text-lg sm:text-xl font-display font-semibold italic text-foreground">
           Trusted by Leading Brands
         </h3>
       </div>
 
       {/* Infinite Scroll Marquee */}
       <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-secondary to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-secondary to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-32 bg-gradient-to-r from-secondary to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-32 bg-gradient-to-l from-secondary to-transparent z-10" />
         
         <motion.div
-          animate={{ x: [0, -50 * brands.length * 2] }}
+          animate={{ x: [0, -150 * brands.length] }}
           transition={{
             x: {
               repeat: Infinity,
               repeatType: "loop",
-              duration: 30,
+              duration: 25,
               ease: "linear",
             },
           }}
-          className="flex gap-16 items-center"
+          className="flex gap-8 sm:gap-12 items-center"
         >
           {/* Duplicate brands for seamless loop */}
           {[...brands, ...brands, ...brands, ...brands].map((brand, index) => (
             <div
               key={`${brand.name}-${index}`}
-              className="flex-shrink-0 hover:scale-110 transition-all duration-300 px-6"
+              className="flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300"
             >
-              <div className="h-10 sm:h-12 w-24 sm:w-32 bg-muted/30 rounded-lg flex items-center justify-center p-2">
-                <span className="text-xs sm:text-sm font-semibold text-foreground/70 text-center">{brand.name}</span>
-              </div>
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="h-8 sm:h-10 w-auto object-contain"
+              />
             </div>
           ))}
         </motion.div>
