@@ -6,90 +6,75 @@ import { Button } from "@/components/ui/button";
 import companyDriver from "@/assets/company-driver.jpg";
 
 const benefits = [
-  "63 CPM",
-  "AI Detention & Layover Tool",
-  "Inspection, Performance & Safety Bonuses",
-  "Unlimited Referral Bonus",
-  "Transparent Communication",
+  "63 CPM competitive pay",
+  "AI-powered detention tracking",
+  "Safety & inspection bonuses",
+  "Transparent communication",
 ];
 
 export const CompanyDriverSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
     <section ref={ref} className="section-padding bg-secondary relative overflow-hidden">
-      <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container-custom">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Image */}
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.5 }}
             className="relative order-2 lg:order-1"
           >
-            <div className="glass rounded-2xl overflow-hidden">
+            <div className="rounded-lg overflow-hidden border border-border">
               <img
                 src={companyDriver}
                 alt="Company driver"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-64 sm:h-80 lg:h-96 object-cover"
               />
             </div>
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="absolute -bottom-4 -right-4 glass-strong rounded-xl px-6 py-4"
-            >
-              <div className="text-3xl font-display font-bold text-gradient">63 CPM</div>
-              <div className="text-sm text-muted-foreground">Competitive Pay</div>
-            </motion.div>
+            {/* Pay badge - positioned differently */}
+            <div className="absolute bottom-3 left-3 glass-strong rounded-lg px-4 py-2">
+              <div className="text-xl font-display font-bold text-gradient">63¢/mi</div>
+            </div>
           </motion.div>
 
           {/* Content */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="order-1 lg:order-2"
           >
-            <span className="text-primary font-semibold uppercase tracking-wider text-sm mb-4 block">
-              Company Driver Opportunities
-            </span>
-            <h2 className="heading-section text-foreground mb-6">
-              Truck Driving Jobs with More Miles and Better Pay.
+            <span className="label-tag mb-4">Company Drivers</span>
+            <h2 className="heading-section text-foreground mb-4 accent-line pb-6">
+              More Miles. Better Pay.
             </h2>
 
-            <ul className="space-y-4 mb-8">
-              {benefits.map((benefit, index) => (
-                <motion.li
-                  key={benefit}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.1 * index }}
-                  className="flex items-center gap-3"
-                >
-                  <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-primary" />
-                  </div>
-                  <span className="text-muted-foreground">{benefit}</span>
-                </motion.li>
+            <div className="space-y-2 mb-6">
+              {benefits.map((benefit) => (
+                <div key={benefit} className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                  <span>{benefit}</span>
+                </div>
               ))}
-            </ul>
+            </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" asChild>
+            <div className="flex flex-wrap gap-3">
+              <Button variant="hero" size="default" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
-                  <ChevronRight className="w-5 h-5" />
-                  Apply To Drive
+                  <ChevronRight className="w-4 h-4" />
+                  Apply
                 </a>
               </Button>
-              <Button variant="heroOutline" size="lg" asChild>
-                <Link to="/company-drivers">Learn More</Link>
+              <Button variant="heroOutline" size="default" asChild>
+                <Link to="/company-drivers">Details</Link>
               </Button>
             </div>
           </motion.div>

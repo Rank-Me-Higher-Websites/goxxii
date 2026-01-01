@@ -1,46 +1,44 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, MapPin } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const LiveTruckSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <section ref={ref} className="section-padding bg-card relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
+    <section ref={ref} className="py-10 sm:py-14 bg-card relative border-y border-border">
+      {/* Accent corner */}
+      <div className="absolute top-0 right-0 w-20 h-1 bg-accent" />
+      <div className="absolute top-0 right-0 w-1 h-20 bg-accent" />
       
-      <div className="container-custom relative z-10">
+      <div className="container-custom">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto text-center"
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          className="flex flex-col sm:flex-row items-center justify-between gap-4"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 text-accent mb-6">
-            <MapPin className="w-4 h-4" />
-            <span className="text-sm font-semibold">Real-Time Tracking</span>
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+              <span className="text-xs font-bold uppercase tracking-wider text-accent">Live</span>
+            </div>
+            <h2 className="font-display text-xl sm:text-2xl font-bold text-foreground">
+              Truck Availability
+            </h2>
+            <p className="text-sm text-muted-foreground">Real-time access, up to 4 days ahead</p>
           </div>
 
-          <h2 className="heading-section text-foreground mb-6">
-            LIVE TRUCK AVAILABILITY
-          </h2>
-
-          <p className="body-large mb-10">
-            Get accurate, real-time access to available trucks and planned routes — up to 4 days in advance.
-          </p>
-
-          <Button variant="gradient" size="xl" asChild>
+          <Button variant="gradient" size="default" asChild>
             <a
               href="https://app.openroadtms.com/available_trucks/KkqF6-_5iDsQDGfuPRikbg"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              See Available Trucks
-              <ExternalLink className="w-5 h-5" />
+              View Trucks
+              <ExternalLink className="w-4 h-4" />
             </a>
           </Button>
         </motion.div>

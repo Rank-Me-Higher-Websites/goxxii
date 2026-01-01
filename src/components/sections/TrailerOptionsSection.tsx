@@ -7,64 +7,63 @@ import ourTrailer from "@/assets/our-trailer.png";
 
 export const TrailerOptionsSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <section ref={ref} className="section-padding bg-card relative overflow-hidden">
-      <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8">
+    <section ref={ref} className="section-padding bg-card">
+      <div className="container-custom">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
           {/* Your Truck, Your Trailer */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
-            className="glass rounded-2xl overflow-hidden group"
+            className="group relative rounded-lg overflow-hidden border border-border bg-secondary"
           >
-            <div className="relative h-64 overflow-hidden">
+            <div className="aspect-[4/3] overflow-hidden">
               <img
                 src={yourTrailer}
                 alt="Your Truck, Your Trailer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
             </div>
-            <div className="p-8">
-              <h3 className="font-display text-3xl font-bold text-foreground mb-4">
-                YOUR TRUCK, YOUR TRAILER
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-2">
+                Your Truck, Your Trailer
               </h3>
-              <p className="text-muted-foreground mb-6">
-                Reduce your overhead spending when you book loads through our vast freight network. Get pre-qualified today!
+              <p className="text-xs sm:text-sm text-muted-foreground mb-3">
+                Reduce overhead with our freight network.
               </p>
-              <Button variant="heroOutline" asChild>
-                <Link to="/contact">Join our team</Link>
+              <Button variant="heroOutline" size="sm" asChild>
+                <Link to="/contact">Join Team</Link>
               </Button>
             </div>
           </motion.div>
 
           {/* Your Truck, Our Trailer */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="glass rounded-2xl overflow-hidden group"
+            transition={{ delay: 0.1 }}
+            className="group relative rounded-lg overflow-hidden border border-border bg-secondary"
           >
-            <div className="relative h-64 overflow-hidden">
+            <div className="aspect-[4/3] overflow-hidden">
               <img
                 src={ourTrailer}
                 alt="Your Truck, Our Trailer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
             </div>
-            <div className="p-8">
-              <h3 className="font-display text-3xl font-bold text-foreground mb-4">
-                YOUR TRUCK, OUR TRAILER
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-2">
+                Your Truck, Our Trailer
               </h3>
-              <p className="text-muted-foreground mb-6">
-                You don&apos;t have to purchase your own trailer, you can use ours! Increase your profit margin with fewer equipment purchases.
+              <p className="text-xs sm:text-sm text-muted-foreground mb-3">
+                No trailer purchase needed. Boost margins.
               </p>
-              <Button variant="hero" asChild>
-                <Link to="/power-fleet">Explore Power Fleet</Link>
+              <Button variant="hero" size="sm" asChild>
+                <Link to="/power-fleet">Power Fleet</Link>
               </Button>
             </div>
           </motion.div>
