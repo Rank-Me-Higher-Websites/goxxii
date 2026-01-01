@@ -48,9 +48,9 @@ export const Navbar = () => {
             : "bg-transparent py-5"
         }`}
       >
-        <div className="container-custom flex items-center justify-between">
+        <div className="container-custom flex items-center justify-between gap-8">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex-shrink-0">
             <img
               src={logo}
               alt="XXII Century"
@@ -59,12 +59,12 @@ export const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className={`relative font-medium text-sm uppercase tracking-wider transition-colors duration-300 hover:text-primary ${
+                className={`relative font-medium text-sm uppercase tracking-wider transition-colors duration-300 hover:text-primary whitespace-nowrap ${
                   location.pathname === link.href
                     ? "text-primary"
                     : "text-foreground/80"
