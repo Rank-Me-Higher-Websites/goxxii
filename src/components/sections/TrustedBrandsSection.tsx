@@ -39,8 +39,11 @@ const itemVariants = {
 
 export const TrustedBrandsSection = () => {
   return (
-    <section className="py-20 sm:py-28 bg-[#0a1628]">
-      <div className="container-custom">
+    <section className="py-20 sm:py-28 relative overflow-hidden bg-gradient-to-b from-[#0a1628] via-[#0d1e36] to-[#0a1628]">
+      {/* Subtle radial gradient overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(59,130,246,0.08)_0%,_transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(99,102,241,0.05)_0%,_transparent_50%)]" />
+      <div className="container-custom relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
