@@ -39,8 +39,14 @@ const itemVariants = {
 
 export const TrustedBrandsSection = () => {
   return (
-    <section className="py-20 sm:py-28 bg-gradient-to-b from-background to-muted/30">
-      <div className="container-custom">
+    <section className="py-20 sm:py-28 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl" />
+      </div>
+
+      <div className="container-custom relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -67,15 +73,18 @@ export const TrustedBrandsSection = () => {
                 y: -8,
                 transition: { duration: 0.25, ease: "easeOut" }
               }}
-              className="group relative bg-white dark:bg-slate-800 rounded-2xl p-8 flex items-center justify-center min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 border border-border/50 hover:border-primary/30"
+              className="group relative backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-2xl p-8 flex items-center justify-center min-h-[140px] cursor-pointer border border-white/20 dark:border-white/10 hover:border-primary/40 hover:bg-white/20 dark:hover:bg-white/10 shadow-lg hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
             >
-              {/* Glow effect on hover */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              {/* Inner glow */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 via-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              
+              {/* Top highlight */}
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
               
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="max-h-14 md:max-h-16 w-auto object-contain relative z-10 transition-transform duration-300 group-hover:scale-105"
+                className="max-h-14 md:max-h-16 w-auto object-contain relative z-10 transition-all duration-300 group-hover:scale-105 brightness-0 invert opacity-70 group-hover:opacity-100"
               />
             </motion.div>
           ))}
