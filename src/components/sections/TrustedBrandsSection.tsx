@@ -45,12 +45,12 @@ export const TrustedBrandsSection = () => {
           {[...brands, ...brands, ...brands, ...brands].map((brand, index) => (
             <div
               key={`${brand.name}-${index}`}
-              className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300"
+              className="flex-shrink-0 hover:scale-110 transition-transform duration-300"
             >
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-12 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
