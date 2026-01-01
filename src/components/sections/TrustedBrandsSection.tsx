@@ -45,13 +45,11 @@ export const TrustedBrandsSection = () => {
           {[...brands, ...brands, ...brands, ...brands].map((brand, index) => (
             <div
               key={`${brand.name}-${index}`}
-              className="flex-shrink-0 hover:scale-110 transition-transform duration-300 px-4"
+              className="flex-shrink-0 hover:scale-110 transition-all duration-300 px-6"
             >
-              <img
-                src={brand.logo}
-                alt={brand.name}
-                className="h-10 sm:h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
-              />
+              <div className="h-10 sm:h-12 w-24 sm:w-32 bg-muted/30 rounded-lg flex items-center justify-center p-2">
+                <span className="text-xs sm:text-sm font-semibold text-foreground/70 text-center">{brand.name}</span>
+              </div>
             </div>
           ))}
         </motion.div>
