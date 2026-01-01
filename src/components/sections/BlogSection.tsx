@@ -54,11 +54,11 @@ export const BlogSection = () => {
               className="group"
             >
               <Link to={post.slug} className="block">
-                <div className="relative aspect-[3/2] rounded-lg overflow-hidden border border-border mb-3">
+                <div className="img-hover-glow relative aspect-[3/2] rounded-lg border border-border mb-3">
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <time className="text-xs text-muted-foreground">{post.date}</time>

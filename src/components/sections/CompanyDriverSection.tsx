@@ -27,7 +27,7 @@ export const CompanyDriverSection = () => {
             transition={{ duration: 0.5 }}
             className="relative order-2 lg:order-1"
           >
-            <div className="rounded-lg overflow-hidden border border-border">
+            <div className="img-hover-glow rounded-lg border border-border">
               <img
                 src={companyDriver}
                 alt="Company driver"

@@ -17,13 +17,13 @@ export const TrailerOptionsSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            className="group relative rounded-lg overflow-hidden border border-border bg-secondary"
+            className="group relative rounded-lg overflow-hidden border border-border bg-secondary transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"
           >
-            <div className="aspect-[4/3] overflow-hidden">
+            <div className="img-hover aspect-[4/3]">
               <img
                 src={yourTrailer}
                 alt="Your Truck, Your Trailer"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
@@ -45,13 +45,13 @@ export const TrailerOptionsSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1 }}
-            className="group relative rounded-lg overflow-hidden border border-border bg-secondary"
+            className="group relative rounded-lg overflow-hidden border border-border bg-secondary transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"
           >
-            <div className="aspect-[4/3] overflow-hidden">
+            <div className="img-hover aspect-[4/3]">
               <img
                 src={ourTrailer}
                 alt="Your Truck, Our Trailer"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
