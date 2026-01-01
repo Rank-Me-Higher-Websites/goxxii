@@ -50,11 +50,11 @@ export const Navbar = () => {
       >
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-3">
             <img
               src={logo}
               alt="XXII Century"
-              className="h-10 md:h-12 w-auto"
+              className="h-10 md:h-12 w-auto brightness-0 invert"
             />
           </Link>
 
