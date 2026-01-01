@@ -72,11 +72,11 @@ export const TrustedBrandsSection = () => {
               }}
               className="group relative bg-[#1a2d4a] rounded-2xl p-5 flex items-center justify-center min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-[#2a3d5a]/50 hover:border-primary/30"
             >
-              <div className="bg-white/95 rounded-lg p-4 w-full h-full flex items-center justify-center min-h-[80px] group-hover:bg-white transition-colors duration-300">
+              <div className="bg-white rounded-lg p-4 w-full h-full flex items-center justify-center min-h-[80px] group-hover:shadow-inner transition-all duration-300">
                 <img
                   src={brand.logo}
                   alt={brand.name}
-                  className="max-h-10 md:max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                  className="max-h-10 md:max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
             </motion.div>
