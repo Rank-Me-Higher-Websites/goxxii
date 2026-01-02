@@ -195,7 +195,7 @@ export const Footer = () => {
                 href={`https://${social}.com`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+                className="w-10 h-10 rounded-full border border-foreground/30 flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-colors"
               >
                 {social === "facebook" && (
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
