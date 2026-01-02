@@ -6,18 +6,18 @@ import logo from "@/assets/logo.svg";
 const footerLinks = {
   company: [
     { label: "About Us", href: "/about" },
-    { label: "Our Fleet", href: "/freight-services" },
-    { label: "Careers", href: "/contact" },
+    { label: "Our Fleet", href: "/fleet-program" },
+    { label: "Careers", href: "/careers" },
     { label: "Blog", href: "/blog" },
   ],
   drivers: [
     { label: "Owner Operators", href: "/owner-operators" },
     { label: "Company Drivers", href: "/company-drivers" },
-    { label: "Power Fleet", href: "/power-fleet" },
+    { label: "Fleet Program", href: "/fleet-program" },
     { label: "Apply Now", href: "https://intelliapp.driverapponline.com/c/goxxii?r=Eve" },
   ],
   resources: [
-    { label: "Freight Services", href: "/freight-services" },
+    { label: "Freight Services", href: "/freight-shipping-services" },
     { label: "Available Trucks", href: "https://app.openroadtms.com/available_trucks/KkqF6-_5iDsQDGfuPRikbg" },
     { label: "FAQ", href: "/contact#faq" },
     { label: "Contact", href: "/contact" },
