@@ -124,9 +124,6 @@ export const Navbar = () => {
                 Apply To Drive
               </a>
             </Button>
-            <Button variant="heroOutline" size="default" asChild>
-              <Link to="/contact">Drivers</Link>
-            </Button>
 
             {/* Social Icons */}
             <div className="flex items-center gap-2 ml-2">
