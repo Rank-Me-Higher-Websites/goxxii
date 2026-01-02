@@ -1,49 +1,202 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
+import { Calendar, Clock, ArrowRight, Search, ChevronLeft, ChevronRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
 import dedicatedOwnerOperator from "@/assets/blog/dedicated-owner-operator.jpg";
 import localOwnerOperator from "@/assets/blog/local-owner-operator.jpg";
 import ownerOperatorGuide from "@/assets/blog/owner-operator-guide.png";
+import dryVanJobs from "@/assets/blog/dry-van-jobs.jpg";
+import localJobsHome from "@/assets/blog/local-jobs-home.png";
+import bestTruckingCompany from "@/assets/blog/best-trucking-company.jpg";
+import chicagoJobs from "@/assets/blog/chicago-jobs.jpg";
+import succeedWithoutBurnout from "@/assets/blog/succeed-without-burnout.jpg";
+import careerChicago from "@/assets/blog/career-chicago.jpg";
+import becomingOwnerOperator from "@/assets/blog/becoming-owner-operator.jpg";
+import driverShortage from "@/assets/blog/driver-shortage.jpg";
+import truckingTechnology from "@/assets/blog/trucking-technology.jpg";
+import tca2025 from "@/assets/blog/tca-2025.jpg";
 
 const blogPosts = [
+  // Page 1
   {
     image: dedicatedOwnerOperator,
     title: "Dedicated Owner Operator Jobs: Pros and Cons",
-    excerpt: "Explore the advantages and challenges of dedicated owner operator positions in the trucking industry. Learn what to expect and how to make the most of dedicated lanes.",
+    excerpt: "If you're an owner operator, you've probably heard the term dedicated lanes thrown around more times than you can count.",
     date: "December 22, 2025",
-    readTime: "5 min read",
-    slug: "/blog/dedicated-owner-operator-jobs",
+    readTime: "8 min read",
+    slug: "dedicated-owner-operator-jobs",
     category: "Owner Operators",
   },
   {
     image: localOwnerOperator,
     title: "Local Owner Operator Jobs Near Me: Chicago Tips",
-    excerpt: "Find the best local owner operator opportunities in the Chicago area. Insider tips on routes, rates, and building relationships with local shippers.",
+    excerpt: "If you've ever typed 'local owner operator jobs near me' into a search bar and found yourself overwhelmed by options—especially in Chicago.",
     date: "December 15, 2025",
-    readTime: "4 min read",
-    slug: "/blog/local-owner-operator-jobs",
+    readTime: "10 min read",
+    slug: "local-owner-operator-jobs",
     category: "Local Jobs",
   },
   {
     image: ownerOperatorGuide,
     title: "Owner Operator Guide: Insurance, Jobs and Carriers",
-    excerpt: "Everything you need to know about owner operator insurance requirements, finding the best jobs, and choosing the right carrier to partner with.",
+    excerpt: "Everything you need to know about owner operator insurance requirements, finding the best jobs, and choosing the right carrier.",
     date: "December 3, 2025",
-    readTime: "7 min read",
-    slug: "/blog/owner-operator-guide",
+    readTime: "12 min read",
+    slug: "owner-operator-guide",
     category: "Guides",
+  },
+  // Page 2
+  {
+    image: dryVanJobs,
+    title: "Dry Van Owner Operator Jobs: What to Know",
+    excerpt: "If you've been thinking about becoming a dry van owner operator, you're not alone. More drivers than ever are exploring this path.",
+    date: "November 21, 2025",
+    readTime: "7 min read",
+    slug: "dry-van-owner-operator-jobs",
+    category: "Owner Operators",
+  },
+  {
+    image: localJobsHome,
+    title: "Local Owner Operator Jobs That Pay and Let You Stay Home",
+    excerpt: "Becoming an independent driver is one of the most rewarding steps in trucking. The freedom to manage your schedule and choose your loads.",
+    date: "November 13, 2025",
+    readTime: "6 min read",
+    slug: "local-owner-operator-jobs-home",
+    category: "Local Jobs",
+  },
+  {
+    image: dedicatedOwnerOperator,
+    title: "How Regional Trucking Affects Owner Operator Opportunities",
+    excerpt: "Regional trucking demand in 2025 directly shapes your earnings and schedule, influencing everything from freight volume to lane frequency.",
+    date: "November 6, 2025",
+    readTime: "8 min read",
+    slug: "regional-trucking-opportunities",
+    category: "Industry News",
+  },
+  // Page 3
+  {
+    image: bestTruckingCompany,
+    title: "How to Choose the Best Owner Operator Trucking Company",
+    excerpt: "Becoming an independent truck driver is a big step. The freedom to choose loads, set your schedule, and grow your business.",
+    date: "October 16, 2025",
+    readTime: "9 min read",
+    slug: "best-owner-operator-trucking-company",
+    category: "Guides",
+  },
+  {
+    image: chicagoJobs,
+    title: "How to Land the Best Owner Operator Jobs in Chicago",
+    excerpt: "If you've driven through Chicago, you've seen just how busy the highways are with freight trucks. Chicago is a major hub.",
+    date: "October 6, 2025",
+    readTime: "7 min read",
+    slug: "owner-operator-jobs-chicago-best",
+    category: "Local Jobs",
+  },
+  {
+    image: succeedWithoutBurnout,
+    title: "How to Succeed in Owner Operator Position Without Burning Out",
+    excerpt: "Becoming an owner operator in the trucking industry can feel like a dream come true: the freedom to be your own boss.",
+    date: "September 18, 2025",
+    readTime: "8 min read",
+    slug: "succeed-without-burning-out",
+    category: "Guides",
+  },
+  // Page 4
+  {
+    image: careerChicago,
+    title: "How To Build a Truck Driving Career in Chicago",
+    excerpt: "Truck driving career in Chicago opportunities are everywhere if you know where to look. The city offers endless possibilities.",
+    date: "September 8, 2025",
+    readTime: "7 min read",
+    slug: "truck-driving-career-chicago",
+    category: "Local Jobs",
+  },
+  {
+    image: becomingOwnerOperator,
+    title: "Becoming an Owner Operator: Costs and What to Expect",
+    excerpt: "If you've ever spent hours on the highway watching endless streams of big rigs roll by, you've probably wondered what it takes.",
+    date: "August 15, 2025",
+    readTime: "10 min read",
+    slug: "becoming-owner-operator-costs",
+    category: "Guides",
+  },
+  {
+    image: dryVanJobs,
+    title: "Owner Operator Jobs in Chicago: What Truckers Should Know",
+    excerpt: "Thinking about taking control of your trucking career and hitting the road on your own terms? You're not alone.",
+    date: "August 8, 2025",
+    readTime: "6 min read",
+    slug: "owner-operator-jobs-chicago-what-to-know",
+    category: "Local Jobs",
+  },
+  // Page 5
+  {
+    image: localOwnerOperator,
+    title: "Hiring Owner Operators in Chicago: What Need to Know",
+    excerpt: "If you're a trucker in the Windy City looking to take control of your career, now might be the perfect time.",
+    date: "July 23, 2025",
+    readTime: "6 min read",
+    slug: "hiring-owner-operators-chicago",
+    category: "Local Jobs",
+  },
+  {
+    image: dedicatedOwnerOperator,
+    title: "A Guide to Independent Truck Driver Jobs",
+    excerpt: "Thinking about becoming your own boss behind the wheel? You're not alone. More and more drivers are trading in company positions.",
+    date: "July 23, 2025",
+    readTime: "8 min read",
+    slug: "independent-truck-driver-guide",
+    category: "Guides",
+  },
+  {
+    image: driverShortage,
+    title: "The Truck Driver Shortage: Problems and Solutions",
+    excerpt: "If you're thinking about a career in the trucking industry—or already working in it—understanding the labor landscape is essential.",
+    date: "April 28, 2025",
+    readTime: "7 min read",
+    slug: "truck-driver-shortage",
+    category: "Industry News",
+  },
+  // Page 6
+  {
+    image: truckingTechnology,
+    title: "Navigating the Future: Trucking Technology Trends",
+    excerpt: "Staying informed about emerging technologies is crucial in the rapidly evolving logistics sector. Recent advancements have significantly enhanced safety.",
+    date: "April 25, 2025",
+    readTime: "6 min read",
+    slug: "trucking-technology-trends",
+    category: "Industry News",
+  },
+  {
+    image: dedicatedOwnerOperator,
+    title: "Dry Van Market Update: Imports to Drop in May",
+    excerpt: "U.S. Imports Projected to Plummet in May. Import activity at major U.S. ports is expected to take a sharp downturn.",
+    date: "April 22, 2025",
+    readTime: "5 min read",
+    slug: "dry-van-market-update",
+    category: "Industry News",
+  },
+  {
+    image: tca2025,
+    title: "TCA 2025: Key Insights Driving the Trucking Industry",
+    excerpt: "Rising Costs Continue to Challenge the Industry. At the TCA 2025 conference, experts highlighted the ongoing challenge of rising operational costs.",
+    date: "March 18, 2025",
+    readTime: "6 min read",
+    slug: "tca-2025-key-insights",
+    category: "Industry News",
   },
 ];
 
 const categories = ["All", "Owner Operators", "Company Drivers", "Local Jobs", "Guides", "Industry News"];
+const POSTS_PER_PAGE = 6;
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
 
   const filteredPosts = blogPosts.filter((post) => {
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -51,6 +204,26 @@ const Blog = () => {
     const matchesCategory = activeCategory === "All" || post.category === activeCategory;
     return matchesSearch && matchesCategory;
   });
+
+  const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const paginatedPosts = filteredPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Reset to page 1 when filters change
+  const handleCategoryChange = (category: string) => {
+    setActiveCategory(category);
+    setCurrentPage(1);
+  };
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
+    setCurrentPage(1);
+  };
 
   return (
     <Layout>
@@ -70,8 +243,8 @@ const Blog = () => {
               Industry News & Insights
             </h1>
             <p className="text-muted-foreground text-lg mb-8">
-              Stay informed with the latest trucking industry news, career tips, and insights 
-              for owner operators and company drivers.
+              Explore our trucking blog for CDL driver tips, power-only insights, and pro-level advice. 
+              Stay updated with expert guidance on navigating the road and maximizing earnings.
             </p>
             
             {/* Search Bar */}
@@ -81,7 +254,7 @@ const Blog = () => {
                 type="text"
                 placeholder="Search articles..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={handleSearchChange}
                 className="pl-12 h-12 bg-background border-border"
               />
             </div>
@@ -96,7 +269,7 @@ const Blog = () => {
             {categories.map((category) => (
               <button
                 key={category}
-                onClick={() => setActiveCategory(category)}
+                onClick={() => handleCategoryChange(category)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                   activeCategory === category
                     ? "bg-primary text-white"
@@ -113,57 +286,104 @@ const Blog = () => {
       {/* Blog Posts Grid */}
       <section className="section-padding">
         <div className="container-custom">
-          {filteredPosts.length > 0 ? (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredPosts.map((post, index) => (
-                <motion.article
-                  key={post.slug}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 * index }}
-                  className="group"
-                >
-                  <Link to={post.slug} className="block">
-                    <div className="relative aspect-[16/10] rounded-xl overflow-hidden mb-4 border border-border">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 bg-primary/90 text-white text-xs font-semibold rounded-full">
-                          {post.category}
+          {paginatedPosts.length > 0 ? (
+            <>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {paginatedPosts.map((post, index) => (
+                  <motion.article
+                    key={post.slug}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 * index }}
+                    className="group"
+                  >
+                    <Link to={`/blog/${post.slug}`} className="block">
+                      <div className="relative aspect-[16/10] rounded-xl overflow-hidden mb-4 border border-border">
+                        <img
+                          src={post.image}
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute top-4 left-4">
+                          <span className="px-3 py-1 bg-primary/90 text-white text-xs font-semibold rounded-full">
+                            {post.category}
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="w-3 h-3" />
+                          {post.date}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="w-3 h-3" />
+                          {post.readTime}
                         </span>
                       </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3">
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        {post.date}
+                      
+                      <h2 className="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors mb-3">
+                        {post.title}
+                      </h2>
+                      
+                      <p className="text-muted-foreground text-sm line-clamp-3 mb-4">
+                        {post.excerpt}
+                      </p>
+                      
+                      <span className="text-primary font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Read More <ArrowRight className="w-4 h-4" />
                       </span>
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
-                        {post.readTime}
-                      </span>
-                    </div>
-                    
-                    <h2 className="font-display text-xl font-bold text-foreground group-hover:text-primary transition-colors mb-3">
-                      {post.title}
-                    </h2>
-                    
-                    <p className="text-muted-foreground text-sm line-clamp-3 mb-4">
-                      {post.excerpt}
-                    </p>
-                    
-                    <span className="text-primary font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                      Read More <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </Link>
-                </motion.article>
-              ))}
-            </div>
+                    </Link>
+                  </motion.article>
+                ))}
+              </div>
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="flex items-center justify-center gap-2 mt-12"
+                >
+                  <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className="p-2 rounded-lg border border-border bg-background hover:bg-card disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <button
+                      key={page}
+                      onClick={() => handlePageChange(page)}
+                      className={`w-10 h-10 rounded-lg font-medium transition-colors ${
+                        currentPage === page
+                          ? "bg-primary text-white"
+                          : "border border-border bg-background hover:bg-card text-foreground"
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  ))}
+                  
+                  <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className="p-2 rounded-lg border border-border bg-background hover:bg-card disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+                </motion.div>
+              )}
+
+              {/* Results count */}
+              <p className="text-center text-muted-foreground text-sm mt-6">
+                Showing {startIndex + 1}-{Math.min(startIndex + POSTS_PER_PAGE, filteredPosts.length)} of {filteredPosts.length} articles
+              </p>
+            </>
           ) : (
             <div className="text-center py-16">
               <p className="text-muted-foreground text-lg">No articles found matching your search.</p>
