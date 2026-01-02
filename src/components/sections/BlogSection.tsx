@@ -1,25 +1,35 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Calendar, Clock } from "lucide-react";
+
+import dedicatedOwnerOperator from "@/assets/blog/dedicated-owner-operator.jpg";
+import localOwnerOperator from "@/assets/blog/local-owner-operator.jpg";
+import ownerOperatorGuide from "@/assets/blog/owner-operator-guide.png";
 
 const blogPosts = [
   {
-    image: "https://goxxii.com/wp-content/uploads/2025/04/blog-3-e1752675723126.jpg",
-    title: "Dedicated Owner Operator Jobs",
-    date: "Dec 22",
+    image: dedicatedOwnerOperator,
+    title: "Dedicated Owner Operator Jobs: Pros and Cons",
+    excerpt: "Explore the advantages and challenges of dedicated owner operator positions in the trucking industry.",
+    date: "December 22, 2025",
+    readTime: "5 min read",
     slug: "/blog/dedicated-owner-operator-jobs",
   },
   {
-    image: "https://goxxii.com/wp-content/uploads/2025/11/1014-1-scaled-e1766426043392.jpeg",
-    title: "Local Jobs Near Chicago",
-    date: "Dec 15",
+    image: localOwnerOperator,
+    title: "Local Owner Operator Jobs Near Me: Chicago Tips",
+    excerpt: "Find the best local owner operator opportunities in the Chicago area with insider tips.",
+    date: "December 15, 2025",
+    readTime: "4 min read",
     slug: "/blog/local-owner-operator-jobs",
   },
   {
-    image: "https://goxxii.com/wp-content/uploads/2025/11/Tanker-owner-operator-jobs.png",
-    title: "Insurance & Carriers Guide",
-    date: "Dec 3",
+    image: ownerOperatorGuide,
+    title: "Owner Operator Guide: Insurance, Jobs and Carriers",
+    excerpt: "Everything you need to know about insurance, finding jobs, and choosing the right carrier.",
+    date: "December 3, 2025",
+    readTime: "7 min read",
     slug: "/blog/owner-operator-guide",
   },
 ];
@@ -32,39 +42,64 @@ export const BlogSection = () => {
     <section ref={ref} className="section-padding bg-card">
       <div className="container-custom">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          className="flex items-center justify-between mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10 gap-4"
         >
-          <h2 className="font-display text-xl sm:text-2xl font-bold text-foreground">
-            Latest News
-          </h2>
-          <Link to="/blog" className="text-sm text-primary hover:underline flex items-center gap-1">
-            View All <ArrowRight className="w-3 h-3" />
+          <div>
+            <span className="text-primary text-sm font-semibold uppercase tracking-wider mb-2 block">
+              Industry Insights
+            </span>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+              Latest News
+            </h2>
+          </div>
+          <Link 
+            to="/blog" 
+            className="text-sm text-primary hover:text-primary/80 flex items-center gap-2 font-semibold group"
+          >
+            View All Articles 
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </motion.div>
 
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-6">
           {blogPosts.map((post, index) => (
             <motion.article
               key={post.slug}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.05 * index }}
+              transition={{ delay: 0.1 * index }}
               className="group"
             >
               <Link to={post.slug} className="block">
-                <div className="img-hover-glow relative aspect-[3/2] rounded-lg border border-border mb-3">
+                <div className="relative aspect-[16/10] rounded-xl overflow-hidden mb-4 border border-border">
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <time className="text-xs text-muted-foreground">{post.date}</time>
-                <h3 className="font-display text-sm sm:text-base font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                
+                <div className="flex items-center gap-4 text-xs text-muted-foreground mb-2">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3 h-3" />
+                    {post.date}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Clock className="w-3 h-3" />
+                    {post.readTime}
+                  </span>
+                </div>
+                
+                <h3 className="font-display text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2 line-clamp-2">
                   {post.title}
                 </h3>
+                
+                <p className="text-sm text-muted-foreground line-clamp-2">
+                  {post.excerpt}
+                </p>
               </Link>
             </motion.article>
           ))}
