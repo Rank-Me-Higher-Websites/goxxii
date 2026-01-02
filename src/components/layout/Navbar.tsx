@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronRight, Phone } from "lucide-react";
+import { Menu, X, ChevronRight, ChevronDown, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.svg";
 
@@ -88,6 +88,7 @@ export const Navbar = () => {
             <div className="relative group">
               <button className="relative font-medium text-sm uppercase tracking-wider transition-colors duration-300 hover:text-primary whitespace-nowrap text-foreground/80 flex items-center gap-1">
                 Drivers
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
               <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="glass rounded-lg py-2 min-w-[180px] shadow-xl border border-border/50">
