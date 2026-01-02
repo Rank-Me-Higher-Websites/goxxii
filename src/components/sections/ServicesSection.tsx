@@ -66,20 +66,20 @@ export const ServicesSection = () => {
         </motion.div>
 
         {/* Service Tabs */}
-        <div className="flex justify-center gap-4 mb-10">
+        <div className="flex justify-center gap-2 sm:gap-4 mb-10 overflow-x-auto pb-2">
           {services.map((service) => (
             <button
               key={service.id}
               onClick={() => setActiveService(service.id)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+              className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
                 activeService === service.id
                   ? "bg-primary text-primary-foreground shadow-lg"
                   : "bg-card text-muted-foreground hover:text-foreground border border-border"
               }`}
             >
               <span className="flex items-center gap-2">
-                <service.icon className="w-5 h-5" />
-                {service.id === "dry-van" ? "Dry Van" : "Refrigerated"}
+                <service.icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="text-sm sm:text-base">{service.id === "dry-van" ? "Dry Van" : "Refrigerated"}</span>
               </span>
             </button>
           ))}

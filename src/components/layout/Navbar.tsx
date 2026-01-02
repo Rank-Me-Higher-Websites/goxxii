@@ -194,7 +194,7 @@ export const Navbar = () => {
                 >
                   <Link
                     to={link.href}
-                    className={`text-2xl font-display font-bold uppercase tracking-wider transition-colors ${
+                    className={`text-xl font-display font-bold uppercase tracking-wider transition-colors ${
                       location.pathname === link.href
                         ? "text-primary"
                         : "text-foreground/80 hover:text-primary"
@@ -204,6 +204,30 @@ export const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
+              
+              {/* Driver Links in Mobile */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.35 }}
+                className="flex flex-col items-center gap-2 pt-4 border-t border-border/30"
+              >
+                <span className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Drivers</span>
+                {driverLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    className={`text-lg font-medium transition-colors ${
+                      location.pathname === link.href
+                        ? "text-primary"
+                        : "text-foreground/70 hover:text-primary"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </motion.div>
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

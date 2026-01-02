@@ -36,7 +36,7 @@ export const FreightServicesSection = () => {
     <section ref={ref} className="section-padding bg-background relative overflow-hidden">
       <div className="container-custom relative z-10">
         {/* Fleet Introduction */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16 lg:mb-24">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
