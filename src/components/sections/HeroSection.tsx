@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChevronRight, Phone, Star, Users, Truck } from "lucide-react";
+import { ChevronRight, Phone, Star, Users, Truck, Fuel } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroDriver from "@/assets/hero-driver.png";
 
@@ -88,22 +88,33 @@ export const HeroSection = () => {
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center">
-                  <Star className="w-4 h-4 text-accent" />
+                  <Fuel className="w-4 h-4 text-accent" />
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-foreground">Biggest</div>
+                  <div className="text-xs text-muted-foreground">Fuel Discount</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center">
+                  <Star className="w-4 h-4 text-cyan-400" />
                 </div>
                 <div>
                   <div className="text-sm font-bold text-foreground">$0 Fees</div>
                   <div className="text-xs text-muted-foreground">Zero Hidden</div>
                 </div>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center">
-                  <Users className="w-4 h-4 text-cyan-400" />
-                </div>
-                <div>
-                  <div className="text-sm font-bold text-foreground">Fortune 500</div>
-                  <div className="text-xs text-muted-foreground">Clients</div>
-                </div>
-              </div>
+            </motion.div>
+
+            {/* Fuel Guarantee Badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: 0.22 }}
+              className="inline-flex items-center gap-2 mb-5 px-4 py-2 rounded-xl bg-accent/10 border border-accent/30"
+            >
+              <Fuel className="w-5 h-5 text-accent" />
+              <span className="text-sm font-semibold text-accent">100% Guaranteed Bigger Fuel Discount or We Match It</span>
             </motion.div>
 
             {/* CTA Buttons */}
