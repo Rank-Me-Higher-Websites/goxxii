@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
-import { ChevronRight, Play, Phone, Star, Users, Truck } from "lucide-react";
+import { ChevronRight, Phone, Star, Users, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
 import heroDriver from "@/assets/hero-driver.png";
 
 export const HeroSection = () => {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
     <section className="relative min-h-[100svh] flex items-center overflow-hidden">
@@ -161,39 +159,21 @@ export const HeroSection = () => {
             className="relative"
           >
             <div className="relative rounded-2xl overflow-hidden border-2 border-border/50 shadow-2xl bg-card">
-              {!isVideoPlaying ? (
-                <div 
-                  className="relative aspect-video cursor-pointer group"
-                  onClick={() => setIsVideoPlaying(true)}
-                >
-                  <img
-                    src="https://goxxii.com/wp-content/uploads/2025/01/XXII-Century-Trucking-Hero-1.png"
-                    alt="Watch why drivers choose XXII Century"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-background/40 group-hover:bg-background/30 transition-colors" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform shadow-xl shadow-primary/50">
-                      <Play className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground fill-current ml-1" />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="glass-strong rounded-lg px-3 py-2 text-center">
-                      <p className="text-xs sm:text-sm font-semibold text-foreground">Watch: Why Drivers Choose XXII Century</p>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <div className="aspect-video">
-                  <iframe
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                    title="XXII Century Driver Testimonial"
-                    className="w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              )}
+              <div 
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    <style>
+                      wistia-player[media-id='j33b6mpgm1']:not(:defined) {
+                        background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/j33b6mpgm1/swatch');
+                        display: block;
+                        filter: blur(5px);
+                        padding-top: 56.25%;
+                      }
+                    </style>
+                    <wistia-player media-id="j33b6mpgm1" aspect="1.7777777777777777"></wistia-player>
+                  `
+                }}
+              />
             </div>
 
             {/* Floating social proof - positioned outside video */}
