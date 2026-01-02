@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import OwnerOperators from "./pages/OwnerOperators";
 import CompanyDrivers from "./pages/CompanyDrivers";
 import FleetProgram from "./pages/FleetProgram";
+import FreightServices from "./pages/FreightServices";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/owner-operators" element={<OwnerOperators />} />
           <Route path="/company-drivers" element={<CompanyDrivers />} />
           <Route path="/fleet-program" element={<FleetProgram />} />
+          <Route path="/freight-shipping-services" element={<FreightServices />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
