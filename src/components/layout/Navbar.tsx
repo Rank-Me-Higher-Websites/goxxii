@@ -8,6 +8,7 @@ import logo from "@/assets/logo.svg";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "Freight Services", href: "/freight-shipping-services" },
   { label: "Careers", href: "/careers" },
   { label: "News", href: "/blog" },
   { label: "Contact", href: "/contact" },
