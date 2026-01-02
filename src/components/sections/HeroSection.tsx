@@ -45,7 +45,7 @@ export const HeroSection = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              <span className="text-xs font-semibold text-accent uppercase tracking-wide">Now Hiring — Limited Spots</span>
+              <span className="text-xs font-semibold text-accent uppercase tracking-wide">3 Spots Left This Week</span>
             </motion.div>
 
             <motion.h1
@@ -56,7 +56,9 @@ export const HeroSection = () => {
             >
               <span className="text-gradient">Owner Operators</span>
               <br />
-              <span className="text-foreground">Earn 80% of Gross</span>
+              <span className="text-foreground">Keep 80% of Gross.</span>
+              <br />
+              <span className="text-foreground">No Hidden Fees.</span>
             </motion.h1>
 
             <motion.p
@@ -65,7 +67,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-muted-foreground text-sm sm:text-base max-w-lg mb-4"
             >
-              Partner with Fortune 500 shippers. AI-powered fuel savings. Weekly settlements. 24/7 dispatch support. No forced dispatch.
+              <span className="text-foreground font-semibold">Stop getting robbed by your carrier.</span> No fuel cards skimming you. No dispatch fees eating your check. No ELD charges. You keep what you earn. Fortune 500 freight. Weekly pay. Period.
             </motion.p>
 
             {/* Stats Row */}
@@ -80,8 +82,8 @@ export const HeroSection = () => {
                   <Truck className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-foreground">500+</div>
-                  <div className="text-xs text-muted-foreground">Active Drivers</div>
+                  <div className="text-sm font-bold text-foreground">$8,000+</div>
+                  <div className="text-xs text-muted-foreground">Weekly Avg</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -89,8 +91,8 @@ export const HeroSection = () => {
                   <Star className="w-4 h-4 text-accent" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-foreground">15+ Years</div>
-                  <div className="text-xs text-muted-foreground">In Business</div>
+                  <div className="text-sm font-bold text-foreground">$0 Fees</div>
+                  <div className="text-xs text-muted-foreground">Zero Hidden</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -119,7 +121,7 @@ export const HeroSection = () => {
                   className="flex items-center gap-2"
                 >
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  Apply Now — Takes 5 Min
+                  Apply Now — Only 3 Spots Left
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
@@ -128,6 +130,21 @@ export const HeroSection = () => {
                   224-240-6441
                 </a>
               </Button>
+            </motion.div>
+
+            {/* Company Driver Link */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.35 }}
+              className="mt-4"
+            >
+              <a 
+                href="#company-drivers" 
+                className="text-sm text-muted-foreground hover:text-primary transition-colors underline underline-offset-4"
+              >
+                Looking for a Company Driver position? Click here →
+              </a>
             </motion.div>
 
             {/* Testimonial Card */}
