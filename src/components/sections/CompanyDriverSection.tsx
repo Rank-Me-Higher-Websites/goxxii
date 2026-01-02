@@ -17,7 +17,7 @@ export const CompanyDriverSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="section-padding bg-secondary relative overflow-hidden">
+    <section id="company-drivers" ref={ref} className="section-padding bg-secondary relative overflow-hidden scroll-mt-20">
       {/* Background gradient */}
       <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-accent/5 to-transparent pointer-events-none" />
       
