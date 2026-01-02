@@ -170,7 +170,7 @@ export const HeroSection = () => {
                         padding-top: 56.25%;
                       }
                     </style>
-                    <wistia-player media-id="j33b6mpgm1" aspect="1.7777777777777777"></wistia-player>
+                    <wistia-player media-id="j33b6mpgm1" aspect="1.7777777777777777" muted="false" autoplay="false"></wistia-player>
                   `
                 }}
               />
