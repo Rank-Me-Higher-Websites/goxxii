@@ -174,9 +174,9 @@ const FreightServices = () => {
       </section>
 
       {/* Why Partner Section */}
-      <section className="py-20 bg-background">
+      <section className="py-14 sm:py-20 bg-background">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -217,9 +217,9 @@ const FreightServices = () => {
       </section>
 
       {/* Freight Shippers Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-14 sm:py-20 bg-muted/30">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -333,19 +333,19 @@ const FreightServices = () => {
       </section>
 
       {/* Trusted Brands Section */}
-      <section className="py-20 bg-gradient-to-b from-[#0a1628] via-[#0d1e36] to-[#0a1628]">
+      <section className="py-14 sm:py-20 bg-gradient-to-b from-[#0a1628] via-[#0d1e36] to-[#0a1628] relative">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(59,130,246,0.08)_0%,_transparent_70%)]" />
         <div className="container-custom relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center text-3xl md:text-4xl font-display font-bold uppercase tracking-wider mb-12 text-white"
+            className="text-center text-2xl sm:text-3xl md:text-4xl font-display font-bold uppercase tracking-wider mb-8 sm:mb-12 text-white"
           >
             Leading Brands Rely on Our <span className="text-primary">Freight Shipping Services</span>
           </motion.h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6">
             {brands.map((brand, index) => (
               <motion.div
                 key={brand.name}
@@ -354,13 +354,13 @@ const FreightServices = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -8 }}
-                className="group relative bg-[#1a2d4a] rounded-2xl p-5 flex items-center justify-center min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-[#2a3d5a]/50 hover:border-primary/30"
+                className="group relative bg-[#1a2d4a] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex items-center justify-center min-h-[100px] sm:min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-[#2a3d5a]/50 hover:border-primary/30"
               >
-                <div className="bg-white rounded-lg p-4 w-full h-full flex items-center justify-center min-h-[80px]">
+                <div className="bg-white rounded-lg p-3 sm:p-4 w-full h-full flex items-center justify-center min-h-[60px] sm:min-h-[80px]">
                   <img
                     src={brand.logo}
                     alt={brand.name}
-                    className="max-h-10 md:max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+                    className="max-h-8 sm:max-h-10 md:max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
               </motion.div>
