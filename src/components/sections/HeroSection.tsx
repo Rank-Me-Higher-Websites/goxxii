@@ -56,7 +56,7 @@ export const HeroSection = () => {
             >
               <span className="text-gradient">Owner Operators</span>
               <br />
-              <span className="text-foreground">Earn 90% of Linehaul</span>
+              <span className="text-foreground">Earn 80% of Gross</span>
             </motion.h1>
 
             <motion.p
@@ -158,7 +158,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden border-2 border-border/50 shadow-2xl bg-card">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-card">
               <div 
                 dangerouslySetInnerHTML={{
                   __html: `
