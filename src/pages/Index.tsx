@@ -12,6 +12,7 @@ import { FreightServicesSection } from "@/components/sections/FreightServicesSec
 import { TrailerOptionsSection } from "@/components/sections/TrailerOptionsSection";
 import { TechPoweredSection } from "@/components/sections/TechPoweredSection";
 import { MobileAppSection } from "@/components/sections/MobileAppSection";
+import { CareerSection } from "@/components/sections/CareerSection";
 import { BlogSection } from "@/components/sections/BlogSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 
@@ -31,6 +32,7 @@ const Index = () => {
       <TrailerOptionsSection />
       <TechPoweredSection />
       <MobileAppSection />
+      <CareerSection />
       <BlogSection />
       <FAQSection />
     </Layout>

@@ -8,6 +8,8 @@ import logo from "@/assets/logo.svg";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "Careers", href: "/careers" },
+  { label: "News", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
