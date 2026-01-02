@@ -11,9 +11,7 @@ const positions = [
     title: "OTR Dispatcher",
     description: "Coordinate freight movements, communicate with drivers, and optimize routes for maximum efficiency.",
     benefits: ["Competitive Salary", "Remote Options", "Growth Opportunities", "Team Environment"],
-    link: "https://intelliapp.driverapponline.com/c/goxxii?r=Eve",
-    external: true,
-    cta: "Apply Now",
+    slug: "otr-dispatcher",
     date: "March 20, 2025",
   },
   {
@@ -21,9 +19,7 @@ const positions = [
     title: "Owner-Operator, Nationwide",
     description: "Maximize your earnings with access to premium freight, AI-powered tools, and an 88% revenue share.",
     benefits: ["88% Revenue Share", "Fuel Discounts", "Safety Bonuses", "Dedicated Lanes"],
-    link: "/owner-operators",
-    external: false,
-    cta: "Learn More",
+    slug: "owner-operator-nationwide",
     date: "March 15, 2025",
   },
   {
@@ -31,9 +27,7 @@ const positions = [
     title: "Company Driver",
     description: "Join our team with competitive pay at 63 CPM, modern equipment, and a supportive work environment.",
     benefits: ["63 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
-    link: "/company-drivers",
-    external: false,
-    cta: "Learn More",
+    slug: "company-driver",
     date: "February 20, 2025",
   },
 ];
@@ -181,24 +175,11 @@ const Careers = () => {
                     ))}
                   </ul>
                   
-                  {position.external ? (
-                    <Button variant="hero" className="w-full" asChild>
-                      <a 
-                        href={position.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label={`Apply for ${position.title} position`}
-                      >
-                        {position.cta} <ArrowRight className="w-4 h-4 ml-2" />
-                      </a>
-                    </Button>
-                  ) : (
-                    <Button variant="hero" className="w-full" asChild>
-                      <Link to={position.link} aria-label={`Learn more about ${position.title} opportunities`}>
-                        {position.cta} <ArrowRight className="w-4 h-4 ml-2" />
-                      </Link>
-                    </Button>
-                  )}
+                  <Button variant="hero" className="w-full" asChild>
+                    <Link to={`/careers/${position.slug}`} aria-label={`View details for ${position.title} position`}>
+                      View Details <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
                 </div>
               </motion.article>
             ))}
