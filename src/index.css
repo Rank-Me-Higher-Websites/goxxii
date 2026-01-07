@@ -104,23 +104,6 @@
     overflow-x: hidden;
   }
 
-  /* Mobile text centering - Global */
-  @media (max-width: 767px) {
-    h1, h2, h3, h4, h5, h6, p, .body-large {
-      text-align: center;
-    }
-    
-    /* Exceptions for card-style elements with icons */
-    .flex.items-start h1, .flex.items-start h2, .flex.items-start h3, 
-    .flex.items-start h4, .flex.items-start h5, .flex.items-start h6, 
-    .flex.items-start p,
-    .flex.items-center.gap-2 p, .flex.items-center.gap-3 p, .flex.items-center.gap-4 p,
-    [class*="text-left"] h1, [class*="text-left"] h2, [class*="text-left"] h3,
-    [class*="text-left"] h4, [class*="text-left"] h5, [class*="text-left"] h6,
-    [class*="text-left"] p {
-      text-align: inherit;
-    }
-  }
 }
 
 @layer components {

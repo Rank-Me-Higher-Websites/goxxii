@@ -111,10 +111,12 @@ export const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, delay: 0.22 }}
-              className="inline-flex items-center gap-2 mb-5 px-4 py-2 rounded-xl bg-accent/10 border border-accent/30"
+              className="flex flex-wrap items-center justify-center gap-2 mb-5 px-4 py-2 rounded-xl bg-accent/10 border border-accent/30 max-w-full"
             >
-              <Fuel className="w-5 h-5 text-accent" />
-              <span className="text-sm font-semibold text-accent">100% Guaranteed Bigger Fuel Discount or We Match It</span>
+              <Fuel className="w-5 h-5 text-accent flex-shrink-0" />
+              <span className="text-sm font-semibold text-accent text-center leading-tight">
+                100% Guaranteed Bigger Fuel Discount or We Match It
+              </span>
             </motion.div>
 
             {/* CTA Buttons */}
@@ -129,10 +131,11 @@ export const HeroSection = () => {
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2"
+                  className="flex items-center justify-center gap-2 flex-wrap text-center"
                 >
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  Apply Now — Only 3 Spots Left
+                  <span className="sm:hidden">Apply Now</span>
+                  <span className="hidden sm:inline">Apply Now — Only 3 Spots Left</span>
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>

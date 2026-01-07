@@ -16,6 +16,8 @@ export const Layout = ({ children }: LayoutProps) => {
       <Navbar />
       <main className="flex-1 relative z-10">{children}</main>
       <Footer />
+      {/* Spacer so fixed mobile CTA doesn't cover content */}
+      <div className="h-28 lg:hidden" aria-hidden />
       <FloatingCTA />
       <FloatingContactButtons />
     </div>
