@@ -2,7 +2,8 @@ import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Calendar, Clock, ArrowRight, Search, ChevronLeft, ChevronRight } from "lucide-react";
+import { Calendar, Clock, ArrowRight, Search, ChevronLeft, ChevronRight, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
@@ -257,6 +258,25 @@ const Blog = () => {
             <p className="text-muted-foreground mb-8">
               Whether you're considering <Link to="/owner-operators" className="text-primary hover:underline">becoming an independent owner operator</Link> or exploring <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link>, our articles help you make informed decisions about your <Link to="/careers" className="text-primary hover:underline">trucking career path</Link>.
             </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-4 justify-center mb-8">
+              <Button variant="hero" size="lg" asChild>
+                <a
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply To Drive
+                </a>
+              </Button>
+              <Button variant="heroOutline" size="lg" asChild>
+                <a href="tel:+12242406441" className="flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  Call Us
+                </a>
+              </Button>
+            </div>
             
             {/* Search Bar */}
             <div className="relative max-w-md mx-auto">

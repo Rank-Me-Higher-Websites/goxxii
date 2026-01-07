@@ -82,9 +82,26 @@ const Contact = () => (
           <p className="text-muted-foreground text-lg mb-4">
             Have questions about joining our team or our freight services? Our <strong className="text-foreground">Woodridge, Illinois</strong> team is ready to help you take the next step in your trucking career.
           </p>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground mb-8">
             Whether you're exploring <Link to="/owner-operators" className="text-primary hover:underline">owner operator opportunities</Link>, <Link to="/company-drivers" className="text-primary hover:underline">CDL-A company driver positions</Link>, or <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping solutions</Link>, we respond quickly and honestly.
           </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button variant="hero" size="lg" asChild>
+              <a
+                href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply To Drive
+              </a>
+            </Button>
+            <Button variant="heroOutline" size="lg" asChild>
+              <a href="tel:+12242406441" className="flex items-center gap-2">
+                <Phone className="w-5 h-5" />
+                Call Us
+              </a>
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>

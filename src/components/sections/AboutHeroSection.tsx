@@ -14,7 +14,7 @@ export const AboutHeroSection = () => {
           alt="XXII Century truck fleet"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background" />
       </div>
 
       <div className="container-custom relative z-10 py-20 text-center">
@@ -34,12 +34,24 @@ export const AboutHeroSection = () => {
           <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-8">
             Since 2009, XXII Century has connected professional drivers with premium freight opportunities. Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> with 90% revenue share, or discover <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> starting at 63 CPM with full benefits.
           </p>
-          <Button variant="hero" size="lg" asChild>
-            <a href="tel:630-948-0501" className="flex items-center gap-2">
-              <Phone className="w-5 h-5" />
-              Get In Touch
-            </a>
-          </Button>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button variant="hero" size="lg" asChild>
+              <a
+                href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                Apply To Drive
+              </a>
+            </Button>
+            <Button variant="heroOutline" size="lg" asChild>
+              <a href="tel:630-948-0501" className="flex items-center gap-2">
+                <Phone className="w-5 h-5" />
+                Call Us
+              </a>
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>
