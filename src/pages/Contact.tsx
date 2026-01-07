@@ -33,8 +33,8 @@ const contactInfo = [
     icon: Clock,
     title: "Hours",
     details: ["Mon-Fri: 8AM - 6PM", "Dispatch: 24/7"],
-    action: null,
-    actionLabel: null,
+    action: "/careers",
+    actionLabel: "View Careers",
   },
 ];
 
@@ -135,15 +135,21 @@ const Contact = () => (
                 ))}
               </div>
               {item.action && (
-                <Button variant="hero" size="sm" className="w-full" asChild>
-                  <a
-                    href={item.action}
-                    target={item.action.startsWith("http") ? "_blank" : undefined}
-                    rel={item.action.startsWith("http") ? "noopener noreferrer" : undefined}
-                  >
-                    {item.actionLabel}
-                  </a>
-                </Button>
+                item.action.startsWith("/") ? (
+                  <Button variant="hero" size="sm" className="w-full" asChild>
+                    <Link to={item.action}>{item.actionLabel}</Link>
+                  </Button>
+                ) : (
+                  <Button variant="hero" size="sm" className="w-full" asChild>
+                    <a
+                      href={item.action}
+                      target={item.action.startsWith("http") ? "_blank" : undefined}
+                      rel={item.action.startsWith("http") ? "noopener noreferrer" : undefined}
+                    >
+                      {item.actionLabel}
+                    </a>
+                  </Button>
+                )
               )}
             </motion.div>
           ))}
