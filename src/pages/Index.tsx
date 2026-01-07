@@ -16,6 +16,7 @@ import { CareerSection } from "@/components/sections/CareerSection";
 import { BlogSection } from "@/components/sections/BlogSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { QuickCTABanner } from "@/components/QuickCTABanner";
+import { LocationMapSection } from "@/components/sections/LocationMapSection";
 
 const Index = () => {
   return (
@@ -38,6 +39,7 @@ const Index = () => {
       <MobileAppSection />
       <CareerSection />
       <BlogSection />
+      <LocationMapSection />
       <FAQSection />
     </Layout>
   );
