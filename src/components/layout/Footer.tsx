@@ -195,7 +195,7 @@ export const Footer = () => {
             {/* Social Links */}
             <div className="flex items-center gap-3 order-1 sm:order-3">
               <a
-                href="https://www.facebook.com/xxiicenturyinc"
+                href="https://www.facebook.com/xxiicen/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-white hover:bg-primary/80 transition-colors shadow-lg"
@@ -206,7 +206,7 @@ export const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/xxiicenturyinc"
+                href="https://www.instagram.com/xxii.trucking?igsh=MTZvbnkwMDZxZGRiaw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-white hover:bg-primary/80 transition-colors shadow-lg"
@@ -217,7 +217,7 @@ export const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/company/xxii-century-inc"
+                href="https://www.linkedin.com/company/xxii-century-inc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center text-white hover:bg-primary/80 transition-colors shadow-lg"
