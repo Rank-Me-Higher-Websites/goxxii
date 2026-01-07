@@ -125,28 +125,70 @@ export const FreightServicesSection = () => {
             </div>
           </motion.div>
 
-          {/* Text content - moves down on scroll */}
+          {/* Text content - right column */}
           <motion.div
             ref={partnersRef}
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{ y: partnersY }}
+            className="space-y-6"
           >
-            <h2 className="heading-section text-foreground mb-6">
-              Your Trusted Trucking Partners
-            </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                At XXII Century, we support <Link to="/careers" className="text-foreground font-semibold hover:text-primary transition-colors">CDL truck drivers in Chicago and across the U.S.</Link> with dependable routes, steady freight, and a professional logistics network. Whether you&apos;re hauling <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">dry van</Link>, <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">temperature-controlled freight</Link>, intermodal, or <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">full truckload</Link>, our asset-based fleet and optimized routing help you stay efficient and on the move.
-              </p>
-              <p>
-                We&apos;re more than a carrier — we&apos;re a <Link to="/owner-operators" className="text-foreground font-semibold hover:text-primary transition-colors">driver-focused partner</Link> built on communication, predictable miles, and on-time freight delivery. Our system is designed to reduce wait times, keep loads consistent, and help <Link to="/company-drivers" className="text-foreground font-semibold hover:text-primary transition-colors">drivers get from point A to point B</Link> with confidence.
-              </p>
+            <div>
+              <h2 className="heading-section text-foreground mb-6">
+                Your Trusted Trucking Partners
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  At XXII Century, we support <Link to="/careers" className="text-foreground font-semibold hover:text-primary transition-colors">CDL truck drivers in Chicago and across the U.S.</Link> with dependable routes, steady freight, and a professional logistics network. Whether you&apos;re hauling <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">dry van</Link>, <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">temperature-controlled freight</Link>, intermodal, or <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">full truckload</Link>, our asset-based fleet and optimized routing help you stay efficient and on the move.
+                </p>
+                <p>
+                  We&apos;re more than a carrier — we&apos;re a <Link to="/owner-operators" className="text-foreground font-semibold hover:text-primary transition-colors">driver-focused partner</Link> built on communication, predictable miles, and on-time freight delivery. Our system is designed to reduce wait times, keep loads consistent, and help <Link to="/company-drivers" className="text-foreground font-semibold hover:text-primary transition-colors">drivers get from point A to point B</Link> with confidence.
+                </p>
+              </div>
+              <Button variant="heroOutline" size="lg" className="mt-8" asChild>
+                <Link to="/freight-shipping-services">Learn More</Link>
+              </Button>
             </div>
-            <Button variant="heroOutline" size="lg" className="mt-8" asChild>
-              <Link to="/freight-shipping-services">Learn More</Link>
-            </Button>
+
+            {/* Stats Grid - fills the empty space */}
+            <div className="hidden lg:grid grid-cols-2 gap-4 pt-6">
+              <div className="glass rounded-xl p-5 text-center">
+                <div className="text-3xl font-display font-bold text-primary mb-1">15+</div>
+                <div className="text-sm text-muted-foreground">Years Experience</div>
+              </div>
+              <div className="glass rounded-xl p-5 text-center">
+                <div className="text-3xl font-display font-bold text-accent mb-1">97%</div>
+                <div className="text-sm text-muted-foreground">On-Time Delivery</div>
+              </div>
+              <div className="glass rounded-xl p-5 text-center">
+                <div className="text-3xl font-display font-bold text-primary mb-1">500+</div>
+                <div className="text-sm text-muted-foreground">Active Drivers</div>
+              </div>
+              <div className="glass rounded-xl p-5 text-center">
+                <div className="text-3xl font-display font-bold text-accent mb-1">24/7</div>
+                <div className="text-sm text-muted-foreground">Dispatch Support</div>
+              </div>
+            </div>
+
+            {/* Quick highlights */}
+            <div className="hidden lg:block glass rounded-xl p-5">
+              <h4 className="font-display font-semibold text-foreground mb-3">Why Drivers Choose Us</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                  Fortune 500 freight partners
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                  Weekly settlements with no hidden fees
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                  Modern equipment &amp; AI-powered dispatch
+                </li>
+              </ul>
+            </div>
           </motion.div>
         </div>
 
