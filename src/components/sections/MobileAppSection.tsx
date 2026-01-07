@@ -50,11 +50,21 @@ export const MobileAppSection = () => {
             className="lg:col-span-2"
           >
             <div className="relative max-w-[200px] sm:max-w-[240px] mx-auto group">
-              <img
-                src={mobileApp}
-                alt="XXII Century Mobile App"
-                className="w-full h-auto transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-2"
-              />
+              {/* Glow effect behind phone */}
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-primary/10 to-transparent blur-3xl scale-150 opacity-60" />
+              
+              {/* Soft radial glow */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] bg-gradient-radial from-primary/15 via-transparent to-transparent opacity-50" />
+              
+              <div className="relative">
+                <img
+                  src={mobileApp}
+                  alt="XXII Century Mobile App"
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-2 drop-shadow-[0_20px_50px_rgba(0,184,212,0.25)]"
+                />
+                {/* Bottom fade to blend with background */}
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/50 to-transparent pointer-events-none" />
+              </div>
             </div>
           </motion.div>
         </div>
