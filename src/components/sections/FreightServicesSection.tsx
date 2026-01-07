@@ -80,9 +80,9 @@ export const FreightServicesSection = () => {
         {/* Fleet Introduction - Parallax scroll layout */}
         <div
           ref={introRef}
-          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start lg:min-h-[160vh] lg:pb-[18rem]"
+          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start"
         >
-          {/* Truck images - tall column with extra height for sticky scroll */}
+          {/* Truck images - column */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
