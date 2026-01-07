@@ -55,15 +55,15 @@ export const FloatingCTA = () => {
 
             {/* Buttons */}
             <div className="flex gap-3">
-              <Button variant="hero" className="flex-1 pulse-glow" asChild>
+              <Button variant="hero" className="flex-1 pulse-glow whitespace-nowrap" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2"
                 >
-                  <ChevronRight className="w-4 h-4" />
-                  Apply Now
+                  <ChevronRight className="w-4 h-4 flex-shrink-0" />
+                  <span>Apply Now</span>
                 </a>
               </Button>
               <Button variant="heroOutline" className="flex-shrink-0" asChild>
