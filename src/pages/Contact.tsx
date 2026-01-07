@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
@@ -37,6 +38,12 @@ const contactInfo = [
 
 const Contact = () => (
   <Layout>
+    <SEOHead 
+      title={SEO_CONTENT.contact.title}
+      description={SEO_CONTENT.contact.description}
+      keywords={SEO_CONTENT.contact.keywords}
+      canonicalPath="/contact"
+    />
     {/* Hero Section */}
     <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/10 via-background to-cyan-500/5">
       <div className="container-custom">

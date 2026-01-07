@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Truck, Users, Shield, CheckCircle, DollarSign, Clock, MapPin, Phone, Mail, Headphones } from "lucide-react";
@@ -58,6 +59,12 @@ const whyJoin = [
 const Careers = () => {
   return (
     <Layout>
+      <SEOHead 
+        title={SEO_CONTENT.careers.title}
+        description={SEO_CONTENT.careers.description}
+        keywords={SEO_CONTENT.careers.keywords}
+        canonicalPath="/careers"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-24" aria-label="Career opportunities at XXII Century trucking company">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-cyan-500/10" />
