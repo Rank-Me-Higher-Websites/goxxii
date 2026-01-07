@@ -1,7 +1,8 @@
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 import trucksFleet from "@/assets/trucks-fleet.png";
 import { Lightbulb, Ship, Wrench, Award } from "lucide-react";
 
@@ -31,23 +32,55 @@ const services = [
 export const FreightServicesSection = () => {
   const ref = useRef(null);
   const introRef = useRef<HTMLDivElement | null>(null);
+  const partnersRef = useRef<HTMLDivElement | null>(null);
+  const servicesHeadingRef = useRef<HTMLHeadingElement | null>(null);
+
+  const isMobile = useIsMobile();
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const [maxShift, setMaxShift] = useState(0);
+
+  useLayoutEffect(() => {
+    if (isMobile) {
+      setMaxShift(0);
+      return;
+    }
+
+    const compute = () => {
+      if (!partnersRef.current || !servicesHeadingRef.current) return;
+
+      const partnersRect = partnersRef.current.getBoundingClientRect();
+      const headingRect = servicesHeadingRef.current.getBoundingClientRect();
+
+      const partnersTop = partnersRect.top + window.scrollY;
+      const partnersHeight = partnersRect.height;
+      const headingTop = headingRect.top + window.scrollY;
+
+      // Stop right before the next section title.
+      setMaxShift(Math.max(0, headingTop - partnersTop - partnersHeight - 24));
+    };
+
+    compute();
+    window.addEventListener("resize", compute);
+    return () => window.removeEventListener("resize", compute);
+  }, [isMobile]);
 
   const { scrollYProgress } = useScroll({
     target: introRef,
-    offset: ["start 0.8", "end start"],
+    // Start when the grid hits the top; finish when the grid ends.
+    offset: ["start start", "end start"],
   });
 
-  // Moves the "Your Trusted Trucking Partners" block down as you scroll through this section.
-  const partnersY = useTransform(scrollYProgress, [0, 0.6], [0, 350]);
+  // Move the right-side content down while scrolling through this grid.
+  const partnersY = useTransform(scrollYProgress, [0, 1], [0, maxShift]);
 
   return (
-    <section ref={ref} className="section-padding bg-background relative overflow-hidden">
+    <section ref={ref} className="section-padding bg-background relative">
       <div className="container-custom relative z-10">
         {/* Fleet Introduction - Parallax scroll layout */}
         <div
           ref={introRef}
-          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start"
+          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start lg:min-h-[160vh] lg:pb-[18rem]"
         >
           {/* Truck images - tall column with extra height for sticky scroll */}
           <motion.div
@@ -94,6 +127,7 @@ export const FreightServicesSection = () => {
 
           {/* Text content - moves down on scroll */}
           <motion.div
+            ref={partnersRef}
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -123,7 +157,7 @@ export const FreightServicesSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mb-12"
         >
-          <h2 className="heading-section text-foreground">
+          <h2 ref={servicesHeadingRef} className="heading-section text-foreground">
             Flexible Trucking Routes for Drivers Backed by Our Team
           </h2>
         </motion.div>
