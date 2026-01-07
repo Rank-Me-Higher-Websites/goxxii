@@ -37,12 +37,12 @@ export const FreightServicesSection = () => {
       <div className="container-custom relative z-10">
         {/* Fleet Introduction - Sticky scroll layout */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start">
-          {/* Truck images - tall column with extra height for sticky scroll */}
+          {/* Truck images - sticky on desktop */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-6 lg:sticky lg:top-32 lg:self-start"
           >
             <div className="glass rounded-2xl overflow-hidden">
               <img
@@ -80,12 +80,11 @@ export const FreightServicesSection = () => {
             </div>
           </motion.div>
 
-          {/* Text content - sticky on scroll */}
+          {/* Text content - scrolls normally */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:sticky lg:top-32 lg:self-start"
           >
             <h2 className="heading-section text-foreground mb-6">
               Your Trusted Trucking Partners
