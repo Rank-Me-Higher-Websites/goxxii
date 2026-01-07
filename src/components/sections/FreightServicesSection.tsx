@@ -35,19 +35,19 @@ export const FreightServicesSection = () => {
 
   const { scrollYProgress } = useScroll({
     target: introRef,
-    offset: ["start end", "end start"],
+    offset: ["start 0.8", "end start"],
   });
 
   // Moves the "Your Trusted Trucking Partners" block down as you scroll through this section.
-  const partnersY = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const partnersY = useTransform(scrollYProgress, [0, 0.6], [0, 350]);
 
   return (
-    <section ref={ref} className="section-padding bg-background relative">
+    <section ref={ref} className="section-padding bg-background relative overflow-hidden">
       <div className="container-custom relative z-10">
-        {/* Fleet Introduction - Sticky scroll layout */}
+        {/* Fleet Introduction - Parallax scroll layout */}
         <div
           ref={introRef}
-          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start lg:min-h-[160vh]"
+          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start"
         >
           {/* Truck images - tall column with extra height for sticky scroll */}
           <motion.div
@@ -92,13 +92,12 @@ export const FreightServicesSection = () => {
             </div>
           </motion.div>
 
-          {/* Text content - sticky on scroll */}
+          {/* Text content - moves down on scroll */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{ y: partnersY }}
-            className="lg:sticky lg:top-32 lg:self-start"
           >
             <h2 className="heading-section text-foreground mb-6">
               Your Trusted Trucking Partners
