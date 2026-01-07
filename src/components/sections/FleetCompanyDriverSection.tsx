@@ -46,12 +46,16 @@ export const FleetCompanyDriverSection = () => {
               Company Driver Opportunities
             </span>
 
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-4">
               Drive with Confidence, Earn with Pride
             </h2>
 
-            <p className="text-muted-foreground mb-8">
-              Join XXII Century for reliable routes, top-tier support, and consistent paychecks. We make driving simple and rewarding.
+            <p className="text-muted-foreground mb-4 leading-relaxed">
+              Our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> offer the stability and benefits you deserve without the hassles of truck ownership. Starting at 63 CPM with automatic raises every 75,000 miles, plus performance bonuses that reward your dedication on every run.
+            </p>
+            
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              XXII Century invests in late-model equipment and comprehensive training to set you up for success. From health insurance to 401k matching, our <Link to="/careers" className="text-primary hover:underline">trucking careers</Link> come with the full benefits package professional drivers expect.
             </p>
 
             {/* Feature Grid */}

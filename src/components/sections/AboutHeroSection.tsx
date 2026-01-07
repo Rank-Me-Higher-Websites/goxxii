@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import trucksFleet from "@/assets/trucks-fleet.png";
@@ -26,9 +27,12 @@ export const AboutHeroSection = () => {
             Trusted Trucking Company -{" "}
             <span className="text-primary">XXII Century</span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
             We work with drivers and carriers to deliver reliable trucking and
             logistics services — built for performance, flexibility, and growth.
+          </p>
+          <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-8">
+            Since 2009, XXII Century has connected professional drivers with premium freight opportunities. Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> with 90% revenue share, or discover <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> starting at 63 CPM with full benefits.
           </p>
           <Button variant="hero" size="lg" asChild>
             <a href="tel:630-948-0501" className="flex items-center gap-2">

@@ -40,9 +40,13 @@ export const FleetOwnerOperatorSection = () => {
               Owner Operator Opportunities
             </span>
             
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-4">
               Built for Owner Operators Ready to Succeed
             </h2>
+
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              XXII Century's <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> delivers what independent truckers need most: consistent high-paying loads, transparent settlements, and zero hidden fees. Our Fortune 500 freight network ensures you're never scrambling for loads on broker boards. Whether you prefer dedicated regional runs or flexible OTR schedules, we match opportunities to your goals.
+            </p>
 
             <ul className="space-y-4 mb-8">
               {benefits.map((benefit, index) => (

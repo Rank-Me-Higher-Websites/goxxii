@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import driverFleet from "@/assets/driver-fleet.png";
@@ -28,8 +29,12 @@ export const FleetHeroSection = () => {
             <span className="text-primary">XXII Century</span> — Company & Owner Operator Trucking Jobs with Top Pay
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
             Partnering with Fortune 500 companies — ensuring top pay, exclusive benefits, and dedicated support every step of the way.
+          </p>
+          
+          <p className="text-base text-muted-foreground mb-8 max-w-3xl mx-auto">
+            Whether you're an <Link to="/owner-operators" className="text-primary hover:underline">independent owner operator</Link> looking for premium freight or a <Link to="/company-drivers" className="text-primary hover:underline">CDL-A driver seeking stable employment</Link>, our fleet program delivers the consistency and support you need to succeed. <Link to="/contact" className="text-primary hover:underline">Contact our team</Link> to learn how we can help grow your trucking business.
           </p>
 
           <Button variant="hero" size="lg" asChild>

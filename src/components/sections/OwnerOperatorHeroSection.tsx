@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { ChevronRight, DollarSign, TrendingDown, Clock, Route, Star, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import driverBlue from "@/assets/driver-truck-blue.jpg";
@@ -292,8 +293,11 @@ export const OwnerOperatorHeroSection = () => {
 
           <div className="text-center mt-8">
             <h3 className="text-xl font-bold mb-2">The People-First Logistics Company</h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-4">
               While other companies leave drivers to fight for $2/mile scraps, we've spent 16+ years building relationships with major shippers who pay premium rates for reliable service.
+            </p>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Curious how we compare to <Link to="/company-drivers" className="text-primary hover:underline">company driver opportunities</Link>? Or want to learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link>? Explore what makes XXII Century different from the carriers that treat drivers like numbers.
             </p>
           </div>
         </div>
