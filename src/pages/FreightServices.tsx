@@ -65,6 +65,11 @@ const fleetFeatures = [
     title: "Auto Load Updates",
     description: "Automated status messages keep shippers, drivers, and customers perfectly in sync.",
   },
+  {
+    icon: Clock,
+    title: "24/7 Dispatch Support",
+    description: "Round-the-clock dispatch team ensures drivers and loads stay on schedule.",
+  },
 ];
 
 const brands = [
