@@ -89,7 +89,7 @@ export const Footer = () => {
               </a>
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span>Chicago, IL</span>
+                <span>7501 Lemont Rd Ste 200, Woodridge, IL 60517, United States</span>
               </div>
             </div>
           </div>

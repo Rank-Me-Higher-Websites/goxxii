@@ -22,8 +22,8 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    details: ["Chicago, IL", "Serving Nationwide"],
-    action: "https://maps.google.com/?q=Chicago,IL",
+    details: ["7501 Lemont Rd Ste 200", "Woodridge, IL 60517, United States"],
+    action: "https://maps.google.com/?q=7501+Lemont+Rd+Ste+200+Woodridge+IL+60517",
     actionLabel: "Get Directions",
   },
   {
@@ -115,7 +115,7 @@ const Contact = () => (
           className="text-center mb-8"
         >
           <h2 className="heading-section text-foreground mb-2">Our Location</h2>
-          <p className="text-muted-foreground">Visit us in Chicago, IL</p>
+          <p className="text-muted-foreground">7501 Lemont Rd Ste 200, Woodridge, IL 60517</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
