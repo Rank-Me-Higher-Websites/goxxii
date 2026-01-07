@@ -60,6 +60,8 @@ const Contact = () => (
       </div>
     </section>
 
+    <div className="mt-8 md:mt-12" />
+
     {/* Contact Cards */}
     <section className="section-padding">
       <div className="container-custom">
@@ -103,8 +105,40 @@ const Contact = () => (
       </div>
     </section>
 
+    {/* Google Maps Embed */}
+    <section className="section-padding-sm bg-card">
+      <div className="container-custom">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-8"
+        >
+          <h2 className="heading-section text-foreground mb-2">Our Location</h2>
+          <p className="text-muted-foreground">Visit us in Chicago, IL</p>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.98 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="rounded-2xl overflow-hidden border border-border"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.98992248505!2d-88.01281814500806!3d41.83339674295858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2s!4v1704067200000!5m2!1sen!2s"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="XXII Century Location - Chicago, IL"
+          />
+        </motion.div>
+      </div>
+    </section>
+
     {/* CTA Section */}
-    <section className="section-padding bg-card">
+    <section className="section-padding">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

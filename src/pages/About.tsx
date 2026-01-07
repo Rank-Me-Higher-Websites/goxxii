@@ -5,11 +5,14 @@ import { MissionValuesSection } from "@/components/sections/MissionValuesSection
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { TrustedBrandsSection } from "@/components/sections/TrustedBrandsSection";
 import { IndustryPartnersSection } from "@/components/sections/IndustryPartnersSection";
+import { QuickCTABanner } from "@/components/QuickCTABanner";
 
 const About = () => (
   <Layout>
     <AboutHeroSection />
+    <div className="mt-8 md:mt-12" />
     <MissionValuesSection />
+    <QuickCTABanner variant="compact" />
     <ServicesSection />
     <LeadershipSection />
     <TrustedBrandsSection />

@@ -15,19 +15,23 @@ import { MobileAppSection } from "@/components/sections/MobileAppSection";
 import { CareerSection } from "@/components/sections/CareerSection";
 import { BlogSection } from "@/components/sections/BlogSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { QuickCTABanner } from "@/components/QuickCTABanner";
 
 const Index = () => {
   return (
     <Layout>
       <HeroSection />
+      <div className="mt-8 md:mt-12" />
       <OwnerOperatorSection />
       <AboutSection />
+      <QuickCTABanner variant="compact" />
       <TechBenefitsSection />
       <TrustedBrandsSection />
       <IndustryPartnersSection />
       <LiveTruckSection />
       <TestimonialSection />
       <CompanyDriverSection />
+      <QuickCTABanner />
       <FreightServicesSection />
       <TrailerOptionsSection />
       <TechPoweredSection />
