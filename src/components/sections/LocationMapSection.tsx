@@ -37,8 +37,8 @@ export const LocationMapSection = () => {
                 </div>
                 <div className="text-left">
                   <h3 className="font-display font-bold text-foreground mb-1">Address</h3>
-                  <p className="text-muted-foreground text-sm">Chicago, IL</p>
-                  <p className="text-muted-foreground text-sm">Serving Nationwide</p>
+                  <p className="text-muted-foreground text-sm">7501 Lemont Rd Ste 200</p>
+                  <p className="text-muted-foreground text-sm">Woodridge, IL 60517, United States</p>
                 </div>
               </div>
             </div>
