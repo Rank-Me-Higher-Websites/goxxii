@@ -3,6 +3,7 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { FloatingShapes } from "@/components/FloatingShapes";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { FloatingContactButtons } from "@/components/FloatingContactButtons";
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <main className="flex-1 relative z-10">{children}</main>
       <Footer />
       <FloatingCTA />
+      <FloatingContactButtons />
     </div>
   );
 };
