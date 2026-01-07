@@ -3,6 +3,7 @@ import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { OwnerOperatorHeroSection } from "@/components/sections/OwnerOperatorHeroSection";
 import { TechBenefitsSection } from "@/components/sections/TechBenefitsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
 const OwnerOperators = () => (
   <Layout>
@@ -13,6 +14,7 @@ const OwnerOperators = () => (
       canonicalPath="/owner-operators"
     />
     <OwnerOperatorHeroSection />
+    <SEOContentSection pageKey="ownerOperators" />
     <TechBenefitsSection />
     <FAQSection />
   </Layout>

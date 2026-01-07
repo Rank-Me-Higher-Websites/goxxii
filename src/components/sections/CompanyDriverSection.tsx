@@ -61,7 +61,7 @@ export const CompanyDriverSection = () => {
               Steady Pay, Zero Hassle
             </h2>
             <p className="text-sm text-muted-foreground mb-5">
-              Get consistent miles, competitive CPM, and full benefits without the overhead of ownership.
+              Get consistent miles, competitive CPM, and full benefits without the overhead of ownership. Own your own truck? Explore our <Link to="/owner-operators" className="text-muted-foreground hover:text-primary underline underline-offset-2">owner operator program</Link>.
             </p>
 
             {/* Benefits Grid */}

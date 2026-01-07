@@ -4,6 +4,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
 const contactInfo = [
   {
@@ -183,6 +184,7 @@ const Contact = () => (
       </div>
     </section>
 
+    <SEOContentSection pageKey="contact" />
     <FAQSection />
   </Layout>
 );

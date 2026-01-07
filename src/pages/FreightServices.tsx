@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import freightHero from "@/assets/freight-hero.png";
 import freightBroker from "@/assets/freight-broker.png";
 import freightShipper from "@/assets/freight-shipper.png";
@@ -13,6 +14,7 @@ import millerLogo from "@/assets/brands/miller.png";
 import westrockLogo from "@/assets/brands/westrock.png";
 import petcoLogo from "@/assets/brands/petco.png";
 import wisconsinLogo from "@/assets/brands/wisconsin.png";
+import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
 const trustedFeatures = [
   {
@@ -375,6 +377,8 @@ const FreightServices = () => {
           </div>
         </div>
       </section>
+
+      <SEOContentSection pageKey="freightServices" />
     </Layout>
   );
 };

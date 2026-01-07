@@ -18,6 +18,7 @@ import { BlogSection } from "@/components/sections/BlogSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { QuickCTABanner } from "@/components/QuickCTABanner";
 import { LocationMapSection } from "@/components/sections/LocationMapSection";
+import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
 const Index = () => {
   return (
@@ -44,6 +45,7 @@ const Index = () => {
       <TrailerOptionsSection />
       <TechPoweredSection />
       <MobileAppSection />
+      <SEOContentSection pageKey="home" />
       <CareerSection />
       <BlogSection />
       <LocationMapSection />

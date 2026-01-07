@@ -42,7 +42,7 @@ export const OwnerOperatorSection = () => {
               Keep More of What You Earn
             </h2>
             <p className="text-sm text-muted-foreground mb-5">
-              Industry-leading 90% linehaul pay with premium freight from Fortune 500 shippers.
+              Industry-leading 90% linehaul pay with premium freight from Fortune 500 shippers. Looking for <Link to="/company-drivers" className="text-muted-foreground hover:text-primary underline underline-offset-2">company driver positions</Link> instead? We have those too.
             </p>
 
             {/* Benefits Grid */}

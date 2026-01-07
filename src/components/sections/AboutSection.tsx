@@ -34,10 +34,10 @@ export const AboutSection = () => {
               15+ years in the industry. Chicago-based. We get what matters — <strong className="text-foreground">steady freight, real support, respect on the road</strong>.
             </p>
             <p>
-              For owner-operators: reliable freight, fast settlements, freedom to run your business. For company drivers: dedicated support, competitive pay, consistent miles.
+              For <Link to="/owner-operators" className="text-primary hover:underline">owner-operators</Link>: reliable freight, fast settlements, freedom to run your business. For <Link to="/company-drivers" className="text-primary hover:underline">company drivers</Link>: dedicated support, competitive pay, consistent miles.
             </p>
             <p>
-              24/7 team support. <strong className="text-foreground">Clear communication. Fair treatment. We work with you — not just for you.</strong>
+              24/7 team support. <strong className="text-foreground">Clear communication. Fair treatment. We work with you — not just for you.</strong> Ready to explore <Link to="/careers" className="text-primary hover:underline">trucking careers</Link> with a carrier that values drivers?
             </p>
           </motion.div>
 

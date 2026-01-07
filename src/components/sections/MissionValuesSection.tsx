@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { Target, Heart, Lightbulb, Handshake } from "lucide-react";
 
 const values = [
@@ -46,10 +47,13 @@ export const MissionValuesSection = () => {
             <h2 className="heading-section text-foreground mb-6">Our Mission</h2>
             <p className="text-muted-foreground leading-relaxed text-lg">
               At XXII Century, our mission is to move America forward by
-              empowering the people behind the wheel. We connect owner-operators
-              and truck drivers with premium freight, cutting-edge tools and
+              empowering the people behind the wheel. We connect <Link to="/owner-operators" className="text-primary hover:underline">owner-operators</Link> and <Link to="/company-drivers" className="text-primary hover:underline">truck drivers</Link> with premium freight, cutting-edge tools and
               dedicated support to help them grow stronger, earn more and drive
               smarter every day.
+            </p>
+            
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              Whether you're exploring <Link to="/careers" className="text-primary hover:underline">CDL driver jobs</Link> or looking to <Link to="/fleet-program" className="text-primary hover:underline">partner your fleet</Link>, our team is committed to building lasting relationships that benefit everyone involved.
             </p>
             
             <div className="mt-8 p-6 bg-primary/10 rounded-xl border border-primary/20">

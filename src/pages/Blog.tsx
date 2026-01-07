@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Search, ChevronLeft, ChevronRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
 import dedicatedOwnerOperator from "@/assets/blog/dedicated-owner-operator.jpg";
 import localOwnerOperator from "@/assets/blog/local-owner-operator.jpg";
@@ -427,6 +428,8 @@ const Blog = () => {
           </motion.div>
         </div>
       </section>
+
+      <SEOContentSection pageKey="blog" />
     </Layout>
   );
 };
