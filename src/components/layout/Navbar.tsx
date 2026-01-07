@@ -113,15 +113,15 @@ export const Navbar = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="hero" size="default" asChild>
+            <Button variant="hero" size="default" className="whitespace-nowrap" asChild>
               <a
                 href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <ChevronRight className="w-4 h-4" />
-                Apply To Drive
+                <ChevronRight className="w-4 h-4 flex-shrink-0" />
+                <span className="whitespace-nowrap">Apply To Drive</span>
               </a>
             </Button>
 
