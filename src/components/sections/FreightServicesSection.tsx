@@ -36,19 +36,47 @@ export const FreightServicesSection = () => {
     <section ref={ref} className="section-padding bg-background relative overflow-hidden">
       <div className="container-custom relative z-10">
         {/* Fleet Introduction - Sticky scroll layout */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24">
-          {/* Truck images - tall column */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start">
+          {/* Truck images - tall column with extra height for sticky scroll */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
+            className="space-y-6"
           >
             <div className="glass rounded-2xl overflow-hidden">
               <img
                 src={trucksFleet}
-                alt="XXII Century Fleet"
+                alt="XXII Century Fleet - Dry Van and Refrigerated Trucks"
                 className="w-full h-auto"
               />
+            </div>
+            {/* Additional content to create scroll height */}
+            <div className="hidden lg:block glass rounded-2xl p-6 space-y-4">
+              <h3 className="font-display font-semibold text-foreground text-lg">Our Fleet Includes:</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-primary" />
+                  53' Dry Van Trailers
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-primary" />
+                  Refrigerated Units for Temperature-Sensitive Freight
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-primary" />
+                  Late-Model Tractors with Modern Amenities
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-primary" />
+                  GPS-Tracked Equipment for Real-Time Visibility
+                </li>
+              </ul>
+            </div>
+            <div className="hidden lg:block glass rounded-2xl p-6">
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Every truck in our fleet is maintained to the highest standards, ensuring driver safety and on-time deliveries. We invest in our equipment because we invest in our drivers.
+              </p>
             </div>
           </motion.div>
 
