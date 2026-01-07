@@ -131,17 +131,16 @@ export const HeroSection = () => {
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 flex-wrap text-center"
                 >
-                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  <span className="sm:hidden">Apply Now</span>
-                  <span className="hidden sm:inline">Apply Now — Only 3 Spots Left</span>
+                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  <span className="sm:hidden whitespace-nowrap">Apply Now</span>
+                  <span className="hidden sm:inline whitespace-nowrap">Apply Now — Only 3 Spots Left</span>
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+12242406441" className="flex items-center gap-2">
-                  <Phone className="w-4 h-4" />
-                  224-240-6441
+                <a href="tel:+12242406441">
+                  <Phone className="w-4 h-4 flex-shrink-0" />
+                  <span className="whitespace-nowrap">224-240-6441</span>
                 </a>
               </Button>
             </motion.div>
