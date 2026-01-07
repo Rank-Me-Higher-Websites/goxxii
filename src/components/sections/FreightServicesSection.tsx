@@ -64,10 +64,10 @@ export const FreightServicesSection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                At XXII Century, we support <strong className="text-foreground">CDL truck drivers in Chicago and across the U.S.</strong> with dependable routes, steady freight, and a professional logistics network. Whether you&apos;re hauling dry van, temperature-controlled freight, intermodal, or full truckload, our asset-based fleet and optimized routing help you stay efficient and on the move.
+                At XXII Century, we support <Link to="/careers" className="text-foreground font-semibold hover:text-primary transition-colors">CDL truck drivers in Chicago and across the U.S.</Link> with dependable routes, steady freight, and a professional logistics network. Whether you&apos;re hauling <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">dry van</Link>, <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">temperature-controlled freight</Link>, intermodal, or <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">full truckload</Link>, our asset-based fleet and optimized routing help you stay efficient and on the move.
               </p>
               <p>
-                We&apos;re more than a carrier — we&apos;re a <strong className="text-foreground">driver-focused partner</strong> built on communication, predictable miles, and on-time freight delivery. Our system is designed to reduce wait times, keep loads consistent, and help drivers get from point A to point B with confidence.
+                We&apos;re more than a carrier — we&apos;re a <Link to="/owner-operators" className="text-foreground font-semibold hover:text-primary transition-colors">driver-focused partner</Link> built on communication, predictable miles, and on-time freight delivery. Our system is designed to reduce wait times, keep loads consistent, and help <Link to="/company-drivers" className="text-foreground font-semibold hover:text-primary transition-colors">drivers get from point A to point B</Link> with confidence.
               </p>
             </div>
             <Button variant="heroOutline" size="lg" className="mt-8" asChild>
