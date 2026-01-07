@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -45,8 +46,11 @@ export const FAQSection = () => {
             <h2 className="heading-section text-foreground mb-4">
               Ready to Drive?
             </h2>
+            <p className="text-sm sm:text-base text-muted-foreground mb-4">
+              Questions about <Link to="/owner-operators" className="text-primary hover:underline">owner operator earnings</Link> or <Link to="/company-drivers" className="text-primary hover:underline">company driver benefits</Link>? Our recruiting team responds quickly and honestly.
+            </p>
             <p className="text-sm sm:text-base text-muted-foreground mb-6">
-              Questions? Let&apos;s talk. Our team is ready.
+              Whether you're exploring <Link to="/careers" className="text-primary hover:underline">trucking job openings</Link> or have specific questions about our programs, we're here to help you make the right decision for your career.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button variant="hero" size="default" asChild>

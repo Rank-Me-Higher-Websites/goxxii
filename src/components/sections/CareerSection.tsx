@@ -61,9 +61,12 @@ export const CareerSection = () => {
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Career Opportunities
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-muted-foreground max-w-3xl mx-auto text-lg mb-4">
             Whether you own your truck or want to drive ours, XXII Century offers industry-leading pay, 
             benefits, and support for drivers at every stage of their career.
+          </p>
+          <p className="text-muted-foreground max-w-3xl mx-auto">
+            We're actively hiring for <Link to="/owner-operators" className="text-primary hover:underline">owner operator trucking jobs</Link>, <Link to="/company-drivers" className="text-primary hover:underline">CDL-A company driver roles</Link>, and <Link to="/fleet-program" className="text-primary hover:underline">fleet partnership programs</Link>. Have questions? <Link to="/contact" className="text-primary hover:underline">Contact our recruiting team</Link> today.
           </p>
         </motion.div>
 

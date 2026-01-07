@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { ChevronRight, Phone, Home, Wrench, Award, MapPin, DollarSign, Gift, Clock, Heart, Users, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import companyTruck from "@/assets/company-truck.png";
@@ -184,8 +185,11 @@ export const CompanyDriverHeroSection = () => {
             <h3 className="font-display text-2xl font-bold mb-4">
               Join XXII Century Today and Drive Toward a Brighter Future in Trucking!
             </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+            <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
               Drive with XXII and get the consistency you deserve! With dedicated lanes and flexible home time options, your schedule works for you. Enjoy paid vacations to recharge, and earn big with safety and performance bonuses recognizing your hard work.
+            </p>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Ready to take the wheel? Or would you rather explore <Link to="/owner-operators" className="text-primary hover:underline">owner operator programs</Link> with 90% revenue share? Either way, XXII Century has a <Link to="/careers" className="text-primary hover:underline">trucking career path</Link> that fits your goals.
             </p>
             <Button variant="hero" size="lg" asChild>
               <a href="mailto:hr@goxxii.com">

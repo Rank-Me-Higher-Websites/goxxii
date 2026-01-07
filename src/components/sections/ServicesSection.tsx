@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Truck, Snowflake, ChevronRight } from "lucide-react";
 
@@ -59,9 +60,11 @@ export const ServicesSection = () => {
           <h2 className="heading-section text-foreground mb-4">
             Transportation Divisions
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            At XXII Century, we are a trusted trucking company offering a wide
-            range of transportation services to meet diverse shipping needs.
+          <p className="text-muted-foreground max-w-3xl mx-auto mb-4">
+            At XXII Century, we are a trusted trucking company offering a wide range of <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping services</Link> to meet diverse logistics needs. Our experienced team handles everything from standard dry goods to temperature-sensitive cargo.
+          </p>
+          <p className="text-muted-foreground max-w-3xl mx-auto">
+            Looking to haul for us? Explore our <Link to="/owner-operators" className="text-primary hover:underline">independent driver opportunities</Link> or <Link to="/company-drivers" className="text-primary hover:underline">CDL-A positions</Link> with competitive pay and consistent freight.
           </p>
         </motion.div>
 
