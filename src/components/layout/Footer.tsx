@@ -65,37 +65,37 @@ export const Footer = () => {
       <div className="container-custom py-12 border-t border-border">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Logo & Contact */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 text-center md:text-left">
             <Link to="/" className="inline-block mb-6">
-              <img src={logo} alt="XXII Century" className="h-12 w-auto" />
+              <img src={logo} alt="XXII Century" className="h-12 w-auto mx-auto md:mx-0" />
             </Link>
-            <p className="text-muted-foreground mb-6 max-w-sm">
+            <p className="text-muted-foreground mb-6 max-w-sm mx-auto md:mx-0">
               Your trusted partner in trucking. Building success for owner operators and company drivers since 2009.
             </p>
             <div className="space-y-3">
               <a
                 href="tel:+12242406441"
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground hover:text-primary transition-colors"
               >
-                <Phone className="w-5 h-5 text-primary" />
+                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 224-240-6441
               </a>
               <a
                 href="mailto:hr@goxxii.com"
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground hover:text-primary transition-colors"
               >
-                <Mail className="w-5 h-5 text-primary" />
+                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 hr@goxxii.com
               </a>
-              <div className="flex items-start gap-3 text-muted-foreground">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span>7501 Lemont Rd Ste 200, Woodridge, IL 60517, United States</span>
+              <div className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground">
+                <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
+                <span className="text-left">7501 Lemont Rd Ste 200, Woodridge, IL 60517, United States</span>
               </div>
             </div>
           </div>
 
           {/* Links */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="font-display font-bold text-lg mb-4 text-foreground">Company</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
@@ -111,7 +111,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="font-display font-bold text-lg mb-4 text-foreground">Drivers</h4>
             <ul className="space-y-3">
               {footerLinks.drivers.map((link) => (
@@ -138,7 +138,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="font-display font-bold text-lg mb-4 text-foreground">Resources</h4>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
