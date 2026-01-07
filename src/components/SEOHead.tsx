@@ -55,52 +55,52 @@ export const SEOHead = ({ title, description, canonicalPath, keywords }: SEOHead
   return null;
 };
 
-// SEO content for all pages - ready to copy/paste
+// SEO content for all pages - unique meta titles/descriptions per page
 export const SEO_CONTENT = {
   home: {
-    title: "XXII Century | Owner Operator Jobs Chicago - 90% Pay | Company Drivers 63 CPM",
-    description: "Chicago trucking jobs with XXII Century. Owner operators earn 90% linehaul pay. Company drivers get 63 CPM + benefits. Fortune 500 freight, weekly settlements. Apply today!",
-    keywords: "owner operator jobs Chicago, trucking company Chicago IL, CDL driver jobs, company driver positions, dry van trucking, OTR truck driver jobs",
+    title: "XXII Century | Owner Operator & Company Driver Jobs Chicago | 90% Pay",
+    description: "Join XXII Century trucking in Chicago. Owner operators earn 90% linehaul, company drivers get 63 CPM + benefits. Fortune 500 freight, weekly pay, 24/7 support. Apply now!",
+    keywords: "owner operator jobs Chicago, trucking company Illinois, CDL-A driver jobs, company driver positions, dry van trucking, OTR truck driving jobs",
   },
   ownerOperators: {
-    title: "Owner Operator Truck Driving Jobs | 90% Pay | XXII Century Chicago",
-    description: "Earn 90% of linehaul as an owner operator with XXII Century. Fortune 500 freight, AI fuel savings, no forced dispatch, weekly pay. Join 500+ drivers. Apply in 5 min.",
-    keywords: "owner operator jobs near me, independent truck driver, 90% linehaul pay, OTR owner operator, dry van owner operator Chicago",
+    title: "Owner Operator Trucking Jobs | 90% Linehaul Revenue | Apply Today",
+    description: "High-paying owner operator positions with 90% revenue share. No forced dispatch, AI fuel discounts, Fortune 500 contracts. Chicago-based carrier hiring nationwide.",
+    keywords: "independent truck driver jobs, owner operator trucking, 90% linehaul pay, OTR owner operator positions, dry van trucking Chicago",
   },
   companyDrivers: {
-    title: "Company Driver Jobs Chicago | 63 CPM + Benefits | XXII Century Trucking",
-    description: "Company driver positions paying 63 CPM with full benefits. New equipment, consistent miles, home weekly options. No-touch freight. Apply for CDL-A driver jobs today.",
-    keywords: "company driver jobs, CDL-A driver positions, truck driver benefits, OTR company driver, Chicago trucking careers",
+    title: "CDL-A Company Driver Positions | 63 CPM + Full Benefits | XXII Century",
+    description: "Company truck driver jobs paying 63 CPM with health insurance, 401k, paid vacation. Modern equipment, consistent miles, home weekly options. Start your driving career today.",
+    keywords: "company truck driver jobs, CDL-A positions, trucking careers with benefits, OTR company driver, professional driver employment",
   },
   fleetProgram: {
-    title: "Fleet Owner Program | Partner Your Trucks with XXII Century",
-    description: "Fleet owners: Partner with XXII Century for steady freight, competitive rates, and full dispatch support. Grow your fleet with Fortune 500 contracts. Contact us today.",
-    keywords: "fleet owner program, trucking fleet partnership, owner operator fleet, truck fleet management, carrier partnership",
+    title: "Fleet Partnership Program | Grow Your Trucking Business | XXII Century",
+    description: "Partner your trucks with XXII Century for premium freight access. Fleet owners receive steady loads, competitive rates, full dispatch support. Scale your carrier operation.",
+    keywords: "fleet owner partnership, trucking business growth, carrier partnership program, fleet management services, truck fleet opportunities",
   },
   freightServices: {
-    title: "Freight Shipping Services | Dry Van & Full Truckload | XXII Century",
-    description: "Reliable freight shipping services for businesses. Dry van, FTL, expedited, and temperature-controlled transport. Real-time tracking. Get a free quote today.",
-    keywords: "freight shipping services, dry van freight, full truckload shipping, FTL shipping, freight broker Chicago, logistics solutions",
+    title: "Freight Shipping & Logistics Services | Dry Van & FTL | XXII Century",
+    description: "Professional freight shipping solutions with real-time tracking. Dry van, full truckload, expedited shipping. 97% on-time delivery. Request your logistics quote today.",
+    keywords: "freight shipping company, dry van logistics, FTL freight services, Chicago freight broker, supply chain solutions, truckload shipping",
   },
   about: {
-    title: "About XXII Century Trucking | 15+ Years Serving Drivers Nationwide",
-    description: "Learn about XXII Century - a Chicago-based trucking company built around drivers. 15+ years of experience, 500+ drivers, Fortune 500 freight partners. Our story.",
-    keywords: "XXII Century trucking, trucking company history, Chicago trucking carrier, about our company, driver-focused carrier",
+    title: "About XXII Century | Chicago Trucking Company | 15+ Years Experience",
+    description: "Discover XXII Century - a driver-focused trucking company serving the industry since 2009. 500+ drivers, Fortune 500 partnerships, transparent operations. Learn our story.",
+    keywords: "XXII Century history, Chicago trucking carrier, driver-first company, trucking company values, Midwest logistics provider",
   },
   careers: {
-    title: "Trucking Careers | Driver Jobs & Dispatcher Positions | XXII Century",
-    description: "Explore trucking careers at XXII Century. Owner operator, company driver, and OTR dispatcher positions available. Competitive pay, great benefits. Apply now.",
-    keywords: "trucking careers, CDL driver jobs, dispatcher jobs, trucking industry jobs, OTR careers Chicago",
+    title: "Trucking Jobs & Careers | CDL Drivers & Dispatchers | XXII Century",
+    description: "Now hiring CDL-A drivers and OTR dispatchers. Owner operator, company driver, and fleet positions available. Competitive pay, excellent benefits, career growth. Apply online.",
+    keywords: "trucking job openings, CDL driver employment, dispatcher positions, logistics careers, transportation industry jobs",
   },
   contact: {
-    title: "Contact XXII Century Trucking | Chicago IL | 224-240-6441",
-    description: "Contact XXII Century for trucking jobs or freight services. Call 224-240-6441 or visit us at 7501 Lemont Rd, Woodridge IL. Quick response guaranteed.",
-    keywords: "contact trucking company, XXII Century phone, trucking jobs contact, freight quote, Woodridge IL trucking",
+    title: "Contact XXII Century | Woodridge IL Trucking Company | 224-240-6441",
+    description: "Reach XXII Century recruiting at 224-240-6441 or visit 7501 Lemont Rd, Woodridge IL. Quick response for driver applications and freight inquiries. We're here to help.",
+    keywords: "trucking company contact, driver recruiting phone, freight quote request, Woodridge IL logistics, XXII Century address",
   },
   blog: {
-    title: "Trucking Industry News & CDL Driver Tips | XXII Century Blog",
-    description: "Stay updated with trucking industry news, owner operator tips, CDL driver guides, and career advice. Expert insights from XXII Century trucking professionals.",
-    keywords: "trucking blog, CDL driver tips, owner operator advice, trucking industry news, truck driver guides",
+    title: "Trucking Blog | Industry News, Driver Tips & Career Guides | XXII Century",
+    description: "Expert trucking insights for professional drivers. Owner operator guides, CDL career tips, industry trends, and market updates from XXII Century logistics professionals.",
+    keywords: "trucking industry blog, driver career advice, owner operator tips, CDL guides, freight market news, trucking best practices",
   },
 };
 

@@ -3,6 +3,7 @@ import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { CompanyDriverHeroSection } from "@/components/sections/CompanyDriverHeroSection";
 import { TechBenefitsSection } from "@/components/sections/TechBenefitsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
 const CompanyDrivers = () => (
   <Layout>
@@ -13,6 +14,7 @@ const CompanyDrivers = () => (
       canonicalPath="/company-drivers"
     />
     <CompanyDriverHeroSection />
+    <SEOContentSection pageKey="companyDrivers" />
     <TechBenefitsSection />
     <FAQSection />
   </Layout>

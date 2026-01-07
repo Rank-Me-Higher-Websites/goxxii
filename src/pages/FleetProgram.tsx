@@ -7,6 +7,7 @@ import { FleetContactSection } from "@/components/sections/FleetContactSection";
 import { TechBenefitsSection } from "@/components/sections/TechBenefitsSection";
 import { TrustedBrandsSection } from "@/components/sections/TrustedBrandsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
 const FleetProgram = () => (
   <Layout>
@@ -19,6 +20,7 @@ const FleetProgram = () => (
     <FleetHeroSection />
     <FleetOwnerOperatorSection />
     <FleetCompanyDriverSection />
+    <SEOContentSection pageKey="fleetProgram" />
     <FleetContactSection />
     <TechBenefitsSection />
     <TrustedBrandsSection />

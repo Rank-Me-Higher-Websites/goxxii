@@ -7,6 +7,7 @@ import { ServicesSection } from "@/components/sections/ServicesSection";
 import { TrustedBrandsSection } from "@/components/sections/TrustedBrandsSection";
 import { IndustryPartnersSection } from "@/components/sections/IndustryPartnersSection";
 import { QuickCTABanner } from "@/components/QuickCTABanner";
+import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
 const About = () => (
   <Layout>
@@ -21,6 +22,7 @@ const About = () => (
     <MissionValuesSection />
     <QuickCTABanner variant="compact" />
     <ServicesSection />
+    <SEOContentSection pageKey="about" />
     <LeadershipSection />
     <TrustedBrandsSection />
     <IndustryPartnersSection />
