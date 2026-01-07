@@ -21,9 +21,9 @@ const driverLinks = [
 ];
 
 const socialLinks = [
-  { icon: "facebook", href: "https://facebook.com" },
-  { icon: "instagram", href: "https://instagram.com" },
-  { icon: "linkedin", href: "https://linkedin.com" },
+  { icon: "facebook", href: "https://www.facebook.com/xxiicen/" },
+  { icon: "instagram", href: "https://www.instagram.com/xxii.trucking?igsh=MTZvbnkwMDZxZGRiaw==" },
+  { icon: "linkedin", href: "https://www.linkedin.com/company/xxii-century-inc/" },
 ];
 
 export const Navbar = () => {
