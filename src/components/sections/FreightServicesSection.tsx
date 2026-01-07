@@ -33,7 +33,7 @@ export const FreightServicesSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="section-padding bg-background relative overflow-hidden">
+    <section ref={ref} className="section-padding bg-background relative">
       <div className="container-custom relative z-10">
         {/* Fleet Introduction - Sticky scroll layout */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start">
