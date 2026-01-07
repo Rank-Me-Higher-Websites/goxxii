@@ -1,5 +1,5 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,22 +10,119 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
+const faqs: { question: string; answer: ReactNode }[] = [
   {
     question: "What jobs are available?",
-    answer: "Owner operator and company CDL positions — local, regional, and OTR. Dedicated routes with consistent home time and steady freight.",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          We hire <strong className="text-foreground">CDL-A</strong> drivers for
+          <strong className="text-foreground"> owner operator</strong> and
+          <strong className="text-foreground"> company driver</strong> roles across
+          Chicago and nationwide.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            <Link to="/owner-operators" className="text-primary hover:underline">
+              Owner operator opportunities
+            </Link>{" "}
+            with strong linehaul and transparent settlements
+          </li>
+          <li>
+            <Link to="/company-drivers" className="text-primary hover:underline">
+              Company driver positions
+            </Link>{" "}
+            with consistent miles and weekly pay
+          </li>
+          <li>Local, regional, and OTR lanes depending on availability</li>
+        </ul>
+      </div>
+    ),
   },
   {
     question: "How do I apply?",
-    answer: "Apply online or call a recruiter. We answer questions about pay, routes, insurance, and onboarding. Fast approval process.",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          The fastest way is to submit the short application, then we’ll call you to
+          confirm experience, lanes, and start date.
+        </p>
+        <p>
+          Use our online application (external):{" "}
+          <a
+            href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            Apply here
+          </a>
+          . Or contact recruiting via our{" "}
+          <Link to="/contact" className="text-primary hover:underline">
+            contact page
+          </Link>
+          .
+        </p>
+      </div>
+    ),
   },
   {
     question: "How fast can I start?",
-    answer: "Most drivers start within days. Quick onboarding, doc verification, and immediate dispatch once cleared.",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Many drivers start within a few days once paperwork is verified and you’re
+          cleared for dispatch. We keep onboarding simple and communication clear.
+        </p>
+        <p>
+          For exact timing, reach out to recruiting on the{" "}
+          <Link to="/contact" className="text-primary hover:underline">
+            Contact
+          </Link>{" "}
+          page.
+        </p>
+      </div>
+    ),
   },
   {
     question: "Why choose XXII Century?",
-    answer: "Premium freight, AI tools, fast settlements, 24/7 support. 15+ years experience. Fortune 500 partnerships.",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          We’re built for drivers who want steady freight, honest answers, and a
+          carrier partner that respects your business.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            <strong className="text-foreground">Fortune 500 freight</strong> and
+            dependable lanes
+          </li>
+          <li>
+            <strong className="text-foreground">Transparent pay</strong> (no
+            surprise deductions)
+          </li>
+          <li>
+            24/7 support and tech that helps reduce empty miles and delays
+          </li>
+        </ul>
+        <p>
+          Want to learn more about our logistics side? See{" "}
+          <Link to="/freight-shipping-services" className="text-primary hover:underline">
+            freight shipping services
+          </Link>{" "}
+          or read the official compliance overview at{" "}
+          <a
+            href="https://www.fmcsa.dot.gov/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            FMCSA
+          </a>
+          .
+        </p>
+      </div>
+    ),
   },
 ];
 
@@ -84,7 +181,7 @@ export const FAQSection = () => {
                   <AccordionTrigger className="text-left text-sm font-semibold text-foreground hover:text-primary hover:no-underline py-3">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-sm text-muted-foreground pb-3">
+                  <AccordionContent className="text-sm text-muted-foreground pb-3 [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-4 [&_a]:decoration-primary/40 hover:[&_a]:decoration-primary [&_strong]:font-semibold">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
