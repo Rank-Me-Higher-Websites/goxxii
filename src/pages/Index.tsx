@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { OwnerOperatorSection } from "@/components/sections/OwnerOperatorSection";
 import { AboutSection } from "@/components/sections/AboutSection";
@@ -21,6 +22,12 @@ import { LocationMapSection } from "@/components/sections/LocationMapSection";
 const Index = () => {
   return (
     <Layout>
+      <SEOHead 
+        title={SEO_CONTENT.home.title}
+        description={SEO_CONTENT.home.description}
+        keywords={SEO_CONTENT.home.keywords}
+        canonicalPath="/"
+      />
       <HeroSection />
       <div className="mt-8 md:mt-12" />
       <OwnerOperatorSection />

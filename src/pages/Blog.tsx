@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Search, ChevronLeft, ChevronRight } from "lucide-react";
@@ -227,6 +228,12 @@ const Blog = () => {
 
   return (
     <Layout>
+      <SEOHead 
+        title={SEO_CONTENT.blog.title}
+        description={SEO_CONTENT.blog.description}
+        keywords={SEO_CONTENT.blog.keywords}
+        canonicalPath="/blog"
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/10 via-background to-cyan-500/5">
         <div className="container-custom">

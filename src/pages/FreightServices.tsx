@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
@@ -81,6 +82,12 @@ const FreightServices = () => {
 
   return (
     <Layout>
+      <SEOHead 
+        title={SEO_CONTENT.freightServices.title}
+        description={SEO_CONTENT.freightServices.description}
+        keywords={SEO_CONTENT.freightServices.keywords}
+        canonicalPath="/freight-shipping-services"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-background">
         <div 

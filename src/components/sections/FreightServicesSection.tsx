@@ -35,8 +35,9 @@ export const FreightServicesSection = () => {
   return (
     <section ref={ref} className="section-padding bg-background relative overflow-hidden">
       <div className="container-custom relative z-10">
-        {/* Fleet Introduction */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16 lg:mb-24">
+        {/* Fleet Introduction - Sticky scroll layout */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24">
+          {/* Truck images - tall column */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -51,10 +52,12 @@ export const FreightServicesSection = () => {
             </div>
           </motion.div>
 
+          {/* Text content - sticky on scroll */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
+            className="lg:sticky lg:top-32 lg:self-start"
           >
             <h2 className="heading-section text-foreground mb-6">
               Your Trusted Trucking Partners
@@ -68,7 +71,7 @@ export const FreightServicesSection = () => {
               </p>
             </div>
             <Button variant="heroOutline" size="lg" className="mt-8" asChild>
-              <Link to="/freight-services">Learn More</Link>
+              <Link to="/freight-shipping-services">Learn More</Link>
             </Button>
           </motion.div>
         </div>
