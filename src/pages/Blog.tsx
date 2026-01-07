@@ -250,9 +250,12 @@ const Blog = () => {
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
               Industry News & Insights
             </h1>
-            <p className="text-muted-foreground text-lg mb-8">
-              Explore our trucking blog for CDL driver tips, power-only insights, and pro-level advice. 
-              Stay updated with expert guidance on navigating the road and maximizing earnings.
+            <p className="text-muted-foreground text-lg mb-4">
+              Explore our trucking blog for CDL driver tips, owner operator insights, and pro-level career advice. 
+              Stay updated with expert guidance on navigating the road and maximizing your earnings potential.
+            </p>
+            <p className="text-muted-foreground mb-8">
+              Whether you're considering <Link to="/owner-operators" className="text-primary hover:underline">becoming an independent owner operator</Link> or exploring <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link>, our articles help you make informed decisions about your <Link to="/careers" className="text-primary hover:underline">trucking career path</Link>.
             </p>
             
             {/* Search Bar */}
@@ -410,10 +413,13 @@ const Blog = () => {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Stay Updated
+              Stay Updated on Trucking Industry Trends
             </h2>
+            <p className="text-muted-foreground mb-4">
+              Get the latest industry news and career tips delivered directly to your inbox. From market rate updates to driver wellness advice, we cover what matters most to professional truckers.
+            </p>
             <p className="text-muted-foreground mb-6">
-              Get the latest industry news and career tips delivered directly to your inbox.
+              Ready to start driving? Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> with 90% revenue share or check out <Link to="/company-drivers" className="text-primary hover:underline">company driver jobs</Link> starting at 63 CPM.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <Input

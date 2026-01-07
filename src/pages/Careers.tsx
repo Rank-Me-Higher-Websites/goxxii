@@ -116,16 +116,21 @@ const Careers = () => {
       {/* Company Values */}
       <section className="py-12 bg-card border-y border-border">
         <div className="container-custom">
-          <motion.p
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-center text-muted-foreground max-w-4xl mx-auto leading-relaxed"
+            className="max-w-4xl mx-auto"
           >
-            We value <strong className="text-foreground">hard work</strong>, <strong className="text-foreground">professionalism</strong>, and <strong className="text-foreground">safety</strong>, 
-            and we're committed to offering <strong className="text-primary">competitive pay</strong> and <strong className="text-primary">flexible schedules</strong> to fit your needs. 
-            At XXII Century Inc., you'll be part of a dynamic team that's shaping the future of the transportation industry.
-          </motion.p>
+            <p className="text-center text-muted-foreground leading-relaxed mb-4">
+              We value <strong className="text-foreground">hard work</strong>, <strong className="text-foreground">professionalism</strong>, and <strong className="text-foreground">safety</strong>, 
+              and we're committed to offering <strong className="text-primary">competitive pay</strong> and <strong className="text-primary">flexible schedules</strong> to fit your needs. 
+              At XXII Century Inc., you'll be part of a dynamic team that's shaping the future of the transportation industry.
+            </p>
+            <p className="text-center text-muted-foreground leading-relaxed">
+              Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> offers 90% revenue share for independent truckers, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> provide stable employment with full benefits. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -139,10 +144,13 @@ const Careers = () => {
             className="text-center mb-12"
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Company Careers
+              Current CDL Driver Job Openings
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We are expanding and inviting you to join our team! Apply today!
+            <p className="text-muted-foreground max-w-3xl mx-auto mb-4">
+              We are expanding and inviting professional truck drivers to join our team! Whether you're an experienced OTR driver or looking to transition into the trucking industry, we have positions that match your career goals.
+            </p>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              All positions offer competitive pay, comprehensive benefits, and the support you need to succeed. Questions? <Link to="/contact" className="text-primary hover:underline">Contact our recruiting team</Link> or read our <Link to="/blog" className="text-primary hover:underline">driver career guides</Link>.
             </p>
           </motion.div>
 
@@ -205,10 +213,13 @@ const Careers = () => {
             className="text-center mb-12"
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Drive with XXII Century?
+              Why Professional Drivers Choose XXII Century
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We're committed to your success on the road with industry-leading support and benefits.
+            <p className="text-muted-foreground max-w-3xl mx-auto mb-4">
+              We're committed to your success on the road with industry-leading support, modern technology, and benefits that actually make a difference in your daily life.
+            </p>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              From AI-powered fuel discounts that save you money to 24/7 dispatch support that has your back, we invest in tools and programs that help drivers earn more while working smarter. Learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our driver-first approach.
             </p>
           </motion.div>
 

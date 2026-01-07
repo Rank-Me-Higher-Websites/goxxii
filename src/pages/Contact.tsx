@@ -2,7 +2,8 @@ import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Phone, Mail, MapPin, Clock, Truck, Users, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
@@ -37,6 +38,24 @@ const contactInfo = [
   },
 ];
 
+const contactReasons = [
+  {
+    icon: Truck,
+    title: "Driver Recruiting",
+    description: "Interested in owner operator or company driver positions? Our recruiting team responds within 24 hours to discuss pay, routes, and requirements.",
+  },
+  {
+    icon: Users,
+    title: "Fleet Partnerships",
+    description: "Small carriers and fleet owners looking for steady freight can learn about our partnership programs and dedicated lane opportunities.",
+  },
+  {
+    icon: Building,
+    title: "Shipping Inquiries",
+    description: "Businesses needing reliable freight shipping services can request quotes for dry van, FTL, and expedited transport nationwide.",
+  },
+];
+
 const Contact = () => (
   <Layout>
     <SEOHead 
@@ -58,11 +77,13 @@ const Contact = () => (
             Get In Touch
           </span>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Contact XXII Century
+            Contact XXII Century Trucking
           </h1>
-          <p className="text-muted-foreground text-lg">
-            Have questions about joining our team or our services? We're here to help. 
-            Reach out to our team and we'll get back to you as soon as possible.
+          <p className="text-muted-foreground text-lg mb-4">
+            Have questions about joining our team or our freight services? Our <strong className="text-foreground">Woodridge, Illinois</strong> team is ready to help you take the next step in your trucking career.
+          </p>
+          <p className="text-muted-foreground">
+            Whether you're exploring <Link to="/owner-operators" className="text-primary hover:underline">owner operator opportunities</Link>, <Link to="/company-drivers" className="text-primary hover:underline">CDL-A company driver positions</Link>, or <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping solutions</Link>, we respond quickly and honestly.
           </p>
         </motion.div>
       </div>
@@ -110,6 +131,59 @@ const Contact = () => (
             </motion.div>
           ))}
         </div>
+      </div>
+    </section>
+
+    {/* Why Contact Us Section */}
+    <section className="section-padding bg-muted/30">
+      <div className="container-custom">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-10"
+        >
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
+            How Can We Help You Today?
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            XXII Century serves professional drivers, fleet owners, and businesses across the nation. Here's what our team can assist you with:
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {contactReasons.map((reason, index) => (
+            <motion.div
+              key={reason.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 * index }}
+              className="p-6 rounded-xl border border-border bg-card"
+            >
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <reason.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-display text-lg font-bold text-foreground mb-2">
+                {reason.title}
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                {reason.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-10 text-center"
+        >
+          <p className="text-muted-foreground max-w-3xl mx-auto">
+            Our Chicago-area headquarters serves as the hub for our nationwide operations. From here, we coordinate <Link to="/freight-shipping-services" className="text-primary hover:underline">freight logistics</Link>, dispatch our network of <Link to="/owner-operators" className="text-primary hover:underline">independent owner operators</Link>, and support our <Link to="/company-drivers" className="text-primary hover:underline">company driver team</Link>. Whatever your trucking needs, <Link to="/careers" className="text-primary hover:underline">explore our job openings</Link> or reach out directly.
+          </p>
+        </motion.div>
       </div>
     </section>
 

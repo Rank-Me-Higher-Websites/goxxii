@@ -166,9 +166,12 @@ const FreightServices = () => {
             transition={{ delay: 0.4 }}
             className="grid lg:grid-cols-2 gap-12 items-center"
           >
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-1 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Experience fast, reliable, and secure <strong className="text-foreground">freight shipping services</strong> with XXII Century Inc. We provide nationwide coverage, competitive rates, and tailored solutions to fit your business needs. From LTL to full truckload and expedited freight, our expert team ensures your shipments arrive on time, every time. Get transparent quotes, real-time tracking, and exceptional customer support—ship with confidence today!
+                Experience fast, reliable, and secure <strong className="text-foreground">freight shipping services</strong> with XXII Century Inc. We provide nationwide coverage, competitive rates, and tailored solutions to fit your business needs. From LTL to full truckload and expedited freight, our expert team ensures your shipments arrive on time, every time.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Get transparent quotes, real-time tracking, and exceptional customer support—ship with confidence today! Looking to haul freight with us? Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator trucking jobs</Link> or <Link to="/company-drivers" className="text-primary hover:underline">CDL-A company driver positions</Link> with competitive pay.
               </p>
             </div>
             <div className="order-1 lg:order-2">
@@ -196,10 +199,13 @@ const FreightServices = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  At XXII Century, we make logistics simple and stress-free. Partnering with us means no more time wasted sourcing and vetting carriers—we handle it all for you. Our experienced team ensures every carrier is reliable, professional, and fully accountable.
+                  At XXII Century, we make logistics simple and stress-free. Partnering with us means no more time wasted sourcing and vetting carriers—we handle it all for you. Our experienced team ensures every carrier is reliable, professional, and fully accountable for your freight.
                 </p>
                 <p>
-                  With our strong industry relationships, we deliver competitive rates without compromising service quality. While we manage your freight, you can stay focused on growing your business. No matter the cargo, XXII Century provides a smarter, more efficient way to move freight.
+                  With our strong industry relationships, we deliver competitive rates without compromising service quality. While we manage your freight, you can stay focused on growing your business. No matter the cargo, XXII Century provides a smarter, more efficient way to move freight nationwide.
+                </p>
+                <p>
+                  Interested in becoming a carrier partner? Our <Link to="/fleet-program" className="text-primary hover:underline">fleet partnership program</Link> offers steady loads and dedicated support. We're also hiring <Link to="/careers" className="text-primary hover:underline">professional truck drivers</Link> to join our expanding network.
                 </p>
               </div>
               <Button variant="hero" size="lg" className="mt-8" asChild>
@@ -251,10 +257,13 @@ const FreightServices = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  At XXII Century, our Freight Brokerage Division combines industry expertise with unmatched service and communication. We understand the complexities of modern logistics and are committed to streamlining the freight process for our clients.
+                  At XXII Century, our Freight Brokerage Division combines industry expertise with unmatched service and communication. We understand the complexities of modern logistics and are committed to streamlining the freight process for our clients across the continental United States.
                 </p>
                 <p>
                   Through our <strong className="text-foreground">Trusted Carrier Network</strong>, we connect shippers with thoroughly vetted, high-performing carriers—ensuring every load is handled with precision, safety, and accountability. We don't just move freight; we build lasting partnerships that drive efficiency and growth.
+                </p>
+                <p>
+                  Want to join our carrier network? Explore <Link to="/owner-operators" className="text-primary hover:underline">independent owner operator opportunities</Link> with premium freight access, or <Link to="/contact" className="text-primary hover:underline">contact our logistics team</Link> to discuss partnership options. Learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our commitment to excellence.
                 </p>
               </div>
               <Button variant="hero" size="lg" className="mt-8" asChild>
