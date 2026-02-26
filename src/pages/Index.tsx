@@ -56,7 +56,7 @@ const Index = () => {
       <div className="mt-8 md:mt-12" />
       <OwnerOperatorSection />
       <AboutSection />
-      <QuickCTABanner variant="compact" />
+      <div className="hidden lg:block"><QuickCTABanner variant="compact" /></div>
       <TrustedBrandsSection />
       <TechBenefitsSection />
       <IndustryPartnersSection />
