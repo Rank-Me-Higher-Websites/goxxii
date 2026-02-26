@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import OwnerOperators from "./pages/OwnerOperators";
+import OwnerOperatorState from "./pages/OwnerOperatorState";
 import CompanyDrivers from "./pages/CompanyDrivers";
 import FleetProgram from "./pages/FleetProgram";
 import FreightServices from "./pages/FreightServices";
@@ -31,6 +32,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/owner-operators" element={<OwnerOperators />} />
+          <Route path="/owner-operators/:state" element={<OwnerOperatorState />} />
           <Route path="/company-drivers" element={<CompanyDrivers />} />
           <Route path="/fleet-program" element={<FleetProgram />} />
           <Route path="/freight-shipping-services" element={<FreightServices />} />
