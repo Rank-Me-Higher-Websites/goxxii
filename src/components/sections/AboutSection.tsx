@@ -28,7 +28,7 @@ export const AboutSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed mb-8"
+            className="space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed mb-8 text-center"
           >
             <p>
               15+ years in the industry. Chicago-based. We get what matters — <strong className="text-foreground">steady freight, real support, respect on the road</strong>.
