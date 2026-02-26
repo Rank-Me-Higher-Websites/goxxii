@@ -80,7 +80,7 @@ export const Navbar = () => {
       >
         <div className="container-custom flex items-center justify-between gap-6">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0 group">
+          <Link to="/" className="flex-shrink-0 logo-shine">
             <img
               src={logo}
               alt="XXII Century"
