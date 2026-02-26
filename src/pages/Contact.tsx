@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Truck, Users, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
+import heroBackground from "@/assets/heroes/truck-white-field.png";
 
 const contactInfo = [
   {
