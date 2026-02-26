@@ -206,7 +206,7 @@ const Careers = () => {
               Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> offers 90% revenue share for independent truckers, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> provide stable employment with full benefits. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
             </p>
             <div className="text-center mt-6">
-              <Button variant="heroOutline" size="lg" asChild>
+              <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full uppercase tracking-wider" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
                   target="_blank"
