@@ -32,6 +32,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/owner-operators" element={<OwnerOperators />} />
+          <Route path="/owner-operators/:state" element={<OwnerOperatorState />} />
           <Route path="/company-drivers" element={<CompanyDrivers />} />
           <Route path="/fleet-program" element={<FleetProgram />} />
           <Route path="/freight-shipping-services" element={<FreightServices />} />
