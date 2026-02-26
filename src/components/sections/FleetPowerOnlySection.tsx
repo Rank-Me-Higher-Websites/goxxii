@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const FleetPowerOnlySection = () => {
   const ref = useRef(null);
