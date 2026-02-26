@@ -78,6 +78,8 @@ export const FreightServicesSection = () => {
 
   // Move the right-side content down while scrolling through this grid.
   const partnersY = useTransform(scrollYProgress, [0.1, 0.7], [0, maxShift]);
+  // Extra downward travel for stats & "Why Drivers Choose Us"
+  const bottomY = useTransform(scrollYProgress, [0.3, 0.9], [0, maxBottomShift]);
 
   return (
     <section ref={ref} className="section-padding bg-background relative">
