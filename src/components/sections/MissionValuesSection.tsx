@@ -36,14 +36,14 @@ export const MissionValuesSection = () => {
       {/* Decorative background */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none" />
       
-      <div className="container-custom relative z-10 overflow-hidden">
+      <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Mission */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-center lg:text-left"
+            className="text-center lg:text-left min-w-0"
           >
             <span className="label-tag mb-4 inline-flex">Driven by You</span>
             <h2 className="heading-section text-foreground mb-6">Our Mission</h2>
@@ -70,7 +70,7 @@ export const MissionValuesSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-center lg:text-left"
+            className="text-center lg:text-left min-w-0"
           >
             <span className="label-tag mb-4 inline-flex">What We Stand For</span>
             <h2 className="heading-section text-foreground mb-6">Our Values</h2>
@@ -101,7 +101,7 @@ export const MissionValuesSection = () => {
             </div>
 
             {/* Mobile carousel */}
-            <div className="sm:hidden">
+            <div className="sm:hidden overflow-hidden">
               <Carousel opts={{ align: "start", loop: true }} className="w-full">
                 <CarouselContent className="-ml-3">
                   {values.map((value) => (
