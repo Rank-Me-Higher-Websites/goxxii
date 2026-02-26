@@ -345,7 +345,7 @@ export const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.1 }}
-              className="relative z-10 flex flex-col min-h-screen pt-24 pb-10 px-8"
+              className="relative z-10 flex flex-col min-h-screen pt-20 pb-8 px-8"
             >
               {/* Main Nav Links */}
               <div className="flex-1 flex flex-col justify-center gap-1">
