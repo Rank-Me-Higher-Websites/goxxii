@@ -96,7 +96,7 @@ const Contact = () => (
               </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:+12242406441" className="flex items-center gap-2">
+              <a href="tel:+17735725012" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 Call Us
               </a>
