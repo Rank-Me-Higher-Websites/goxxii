@@ -6,6 +6,7 @@ import { ArrowRight, Truck, Users, Shield, CheckCircle, DollarSign, Clock, MapPi
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
+import heroBackground from "@/assets/heroes/truck-green.png";
 
 const positions = [
   {
