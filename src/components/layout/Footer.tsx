@@ -72,7 +72,7 @@ export const Footer = () => {
             <p className="text-muted-foreground text-sm mb-4 max-w-sm mx-auto md:mx-0">
               Your trusted partner in trucking. Building success for owner operators and company drivers since 2009.
             </p>
-            <div className="space-y-3">
+            <div className="space-y-2">
               <a
                 href="tel:+17735725012"
                 className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground hover:text-primary transition-colors"
