@@ -65,11 +65,11 @@ export const Footer = () => {
       <div className="container-custom py-8 sm:py-12 border-t border-border">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-10">
           {/* Logo & Contact */}
-          <div className="lg:col-span-2 text-center md:text-left">
-            <Link to="/" className="inline-block mb-6 logo-shine">
-              <img src={logo} alt="XXII Century" className="h-12 w-auto mx-auto md:mx-0" />
+          <div className="col-span-2 text-center md:text-left">
+            <Link to="/" className="inline-block mb-4 logo-shine">
+              <img src={logo} alt="XXII Century" className="h-10 sm:h-12 w-auto mx-auto md:mx-0" />
             </Link>
-            <p className="text-muted-foreground mb-6 max-w-sm mx-auto md:mx-0">
+            <p className="text-muted-foreground text-sm mb-4 max-w-sm mx-auto md:mx-0">
               Your trusted partner in trucking. Building success for owner operators and company drivers since 2009.
             </p>
             <div className="space-y-3">
