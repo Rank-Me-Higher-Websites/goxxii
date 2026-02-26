@@ -124,11 +124,6 @@ export const FreightServicesSection = () => {
                 </li>
               </ul>
             </div>
-            <div className="hidden lg:block glass rounded-2xl p-6">
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Every truck in our fleet is maintained to the highest standards, ensuring driver safety and on-time deliveries. We invest in our equipment because we invest in our drivers.
-              </p>
-            </div>
           </motion.div>
 
           {/* Text content - right column */}
