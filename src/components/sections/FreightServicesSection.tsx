@@ -39,11 +39,15 @@ export const FreightServicesSection = () => {
   const isMobile = useIsMobile();
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+  const bottomContentRef = useRef<HTMLDivElement | null>(null);
+
   const [maxShift, setMaxShift] = useState(0);
+  const [maxBottomShift, setMaxBottomShift] = useState(0);
 
   useLayoutEffect(() => {
     if (isMobile) {
       setMaxShift(0);
+      setMaxBottomShift(0);
       return;
     }
 
@@ -53,8 +57,13 @@ export const FreightServicesSection = () => {
       const leftHeight = leftColRef.current.getBoundingClientRect().height;
       const rightHeight = partnersRef.current.getBoundingClientRect().height;
 
-      // Allow the right column to travel until it aligns with the left column's bottom
       setMaxShift(Math.max(0, leftHeight - rightHeight));
+
+      // Extra travel for bottom content (stats + why drivers choose us)
+      if (bottomContentRef.current) {
+        const bottomHeight = bottomContentRef.current.getBoundingClientRect().height;
+        setMaxBottomShift(Math.max(0, leftHeight - rightHeight + bottomHeight * 0.5));
+      }
     };
 
     compute();
