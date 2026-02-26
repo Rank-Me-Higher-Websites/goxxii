@@ -128,9 +128,7 @@ export const Footer = () => {
                   ) : (
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {link.label}
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors">
                     </Link>
                   )}
                 </li>
