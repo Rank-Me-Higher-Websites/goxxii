@@ -32,6 +32,7 @@ const services = [
 export const FreightServicesSection = () => {
   const ref = useRef(null);
   const introRef = useRef<HTMLDivElement | null>(null);
+  const leftColRef = useRef<HTMLDivElement | null>(null);
   const partnersRef = useRef<HTMLDivElement | null>(null);
   const servicesHeadingRef = useRef<HTMLHeadingElement | null>(null);
 
