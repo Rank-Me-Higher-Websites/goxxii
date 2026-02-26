@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import driverFleet from "@/assets/driver-fleet.png";
 
