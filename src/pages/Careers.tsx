@@ -104,7 +104,7 @@ const Careers = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:630-948-0501" className="inline-flex items-center gap-2" aria-label="Call recruiting team">
+                <a href="tel:7735725012" className="inline-flex items-center gap-2" aria-label="Call recruiting team">
                   <Phone className="w-5 h-5" /> Contact Us
                 </a>
               </Button>
