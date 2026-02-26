@@ -220,6 +220,35 @@ export const Navbar = () => {
                 )}
               </AnimatePresence>
             </div>
+
+            {/* Post-Driver Nav Links */}
+            {postDriverLinks.map((link) => {
+              const isActive = location.pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className={`relative px-3 xl:px-4 py-2 rounded-lg font-medium text-[13px] uppercase tracking-[0.08em] transition-all duration-300 whitespace-nowrap group ${
+                    isActive
+                      ? "text-primary"
+                      : "text-foreground/70 hover:text-foreground hover:bg-white/[0.04]"
+                  }`}
+                >
+                  {link.label}
+                  {isActive && (
+                    <motion.div
+                      layoutId="nav-active"
+                      className="absolute bottom-0 left-3 right-3 h-[2px] rounded-full"
+                      style={{ background: "var(--gradient-primary)" }}
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                  {!isActive && (
+                    <span className="absolute bottom-0 left-3 right-3 h-[2px] rounded-full bg-primary/60 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                  )}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* CTA + Socials */}
