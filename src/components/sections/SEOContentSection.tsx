@@ -176,7 +176,7 @@ export const SEOContentSection = ({ pageKey }: SEOContentSectionProps) => {
             className="mt-8 pt-6 border-t border-border"
           >
             <p className="text-sm text-muted-foreground mb-3">Learn more:</p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap justify-center gap-3">
               {content.links.map((link, index) => (
                 link.external ? (
                   <a
