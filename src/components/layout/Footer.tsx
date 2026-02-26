@@ -28,7 +28,7 @@ export const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
       {/* CTA Section */}
-      <div className="container-custom py-16">
+      <div className="container-custom py-10 sm:py-16">
         <div className="glass-strong rounded-2xl p-8 md:p-12 text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10" />
           <div className="relative z-10">
@@ -62,17 +62,17 @@ export const Footer = () => {
       </div>
 
       {/* Main Footer */}
-      <div className="container-custom py-12 border-t border-border">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div className="container-custom py-8 sm:py-12 border-t border-border">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-10">
           {/* Logo & Contact */}
-          <div className="lg:col-span-2 text-center md:text-left">
-            <Link to="/" className="inline-block mb-6 logo-shine">
-              <img src={logo} alt="XXII Century" className="h-12 w-auto mx-auto md:mx-0" />
+          <div className="col-span-2 text-center md:text-left">
+            <Link to="/" className="inline-block mb-4 logo-shine">
+              <img src={logo} alt="XXII Century" className="h-10 sm:h-12 w-auto mx-auto md:mx-0" />
             </Link>
-            <p className="text-muted-foreground mb-6 max-w-sm mx-auto md:mx-0">
+            <p className="text-muted-foreground text-sm mb-4 max-w-sm mx-auto md:mx-0">
               Your trusted partner in trucking. Building success for owner operators and company drivers since 2009.
             </p>
-            <div className="space-y-3">
+            <div className="space-y-2">
               <a
                 href="tel:+17735725012"
                 className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground hover:text-primary transition-colors"
@@ -87,8 +87,8 @@ export const Footer = () => {
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 hr@goxxii.com
               </a>
-              <div className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
+              <div className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground">
+                <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-left">7501 Lemont Rd Ste 200, Woodridge, IL 60517, United States</span>
               </div>
             </div>
@@ -96,8 +96,8 @@ export const Footer = () => {
 
           {/* Links */}
           <div className="text-center md:text-left">
-            <h4 className="font-display font-bold text-lg mb-4 text-foreground">Company</h4>
-            <ul className="space-y-3">
+            <h4 className="font-display font-bold text-sm sm:text-lg mb-3 text-foreground">Company</h4>
+            <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -112,8 +112,8 @@ export const Footer = () => {
           </div>
 
           <div className="text-center md:text-left">
-            <h4 className="font-display font-bold text-lg mb-4 text-foreground">Drivers</h4>
-            <ul className="space-y-3">
+            <h4 className="font-display font-bold text-sm sm:text-lg mb-3 text-foreground">Drivers</h4>
+            <ul className="space-y-2">
               {footerLinks.drivers.map((link) => (
                 <li key={link.href}>
                   {link.href.startsWith("http") ? (
@@ -121,14 +121,14 @@ export const Footer = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       {link.label}
                     </a>
                   ) : (
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -139,8 +139,8 @@ export const Footer = () => {
           </div>
 
           <div className="text-center md:text-left">
-            <h4 className="font-display font-bold text-lg mb-4 text-foreground">Resources</h4>
-            <ul className="space-y-3">
+            <h4 className="font-display font-bold text-sm sm:text-lg mb-3 text-foreground">Resources</h4>
+            <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
                   {link.href.startsWith("http") ? (
@@ -148,14 +148,14 @@ export const Footer = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       {link.label}
                     </a>
                   ) : (
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       {link.label}
                     </Link>
