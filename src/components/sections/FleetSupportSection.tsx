@@ -37,20 +37,20 @@ export const FleetSupportSection = () => {
         </motion.div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mb-12">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 + index * 0.1 }}
-              className="glass p-6 rounded-xl text-center"
+              className="glass p-4 md:p-6 rounded-xl text-center"
             >
-              <stat.icon className="w-10 h-10 text-primary mx-auto mb-3" />
-              <div className="text-2xl md:text-3xl font-bold text-foreground mb-1">
+              <stat.icon className="w-7 h-7 md:w-10 md:h-10 text-primary mx-auto mb-2 md:mb-3" />
+              <div className="text-xl md:text-3xl font-bold text-foreground mb-1">
                 {stat.value}
               </div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wide">
+              <div className="text-xs md:text-sm text-muted-foreground uppercase tracking-wide">
                 {stat.label}
               </div>
             </motion.div>
