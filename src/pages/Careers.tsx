@@ -14,7 +14,7 @@ const positions = [
     description: "Coordinate freight movements, communicate with drivers, and optimize routes for maximum efficiency.",
     benefits: ["Competitive Salary", "Remote Options", "Growth Opportunities", "Team Environment"],
     slug: "otr-dispatcher",
-    date: "March 20, 2025",
+    date: "February 26, 2026",
   },
   {
     icon: Truck,
