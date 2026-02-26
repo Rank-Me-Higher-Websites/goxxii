@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Mail } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 
 import davidMolo from "@/assets/team/david-molo.jpg";
 import paulKruzinauskas from "@/assets/team/paul-kruzinauskas.jpg";
@@ -48,6 +49,34 @@ const leaders = [
   },
 ];
 
+const LeaderCard = ({ leader }: { leader: typeof leaders[number] }) => (
+  <>
+    <div className="aspect-[4/5] overflow-hidden">
+      <img
+        src={leader.image}
+        alt={leader.name}
+        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+      />
+    </div>
+    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+    <div className="absolute bottom-0 left-0 right-0 p-6">
+      <h3 className="text-xl font-display font-bold text-foreground mb-1">
+        {leader.name}
+      </h3>
+      <p className="text-primary font-medium text-sm mb-3">
+        {leader.title}
+      </p>
+      <a
+        href={`mailto:${leader.email}`}
+        className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+      >
+        <Mail className="w-4 h-4" />
+        {leader.email}
+      </a>
+    </div>
+  </>
+);
+
 export const LeadershipSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
@@ -72,7 +101,8 @@ export const LeadershipSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Desktop grid */}
+        <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {leaders.map((leader, index) => (
             <motion.div
               key={leader.name}
@@ -81,31 +111,24 @@ export const LeadershipSection = () => {
               transition={{ duration: 0.5, delay: 0.1 * index }}
               className="group relative bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all duration-300"
             >
-              <div className="aspect-[4/5] overflow-hidden">
-                <img
-                  src={leader.image}
-                  alt={leader.name}
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-xl font-display font-bold text-foreground mb-1">
-                  {leader.name}
-                </h3>
-                <p className="text-primary font-medium text-sm mb-3">
-                  {leader.title}
-                </p>
-                <a
-                  href={`mailto:${leader.email}`}
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <Mail className="w-4 h-4" />
-                  {leader.email}
-                </a>
-              </div>
+              <LeaderCard leader={leader} />
             </motion.div>
           ))}
+        </div>
+
+        {/* Mobile carousel */}
+        <div className="sm:hidden">
+          <Carousel opts={{ align: "start", loop: true }} className="w-full">
+            <CarouselContent className="-ml-3">
+              {leaders.map((leader) => (
+                <CarouselItem key={leader.name} className="pl-3 basis-[85%]">
+                  <div className="group relative bg-card rounded-2xl overflow-hidden border border-border/50">
+                    <LeaderCard leader={leader} />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
     </section>
