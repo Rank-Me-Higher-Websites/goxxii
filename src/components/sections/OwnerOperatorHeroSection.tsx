@@ -54,13 +54,28 @@ const stats = [
 
 const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: string; desc: string }[] }) => {
   const [current, setCurrent] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  const maxIndex = isMobile ? struggles.length - 1 : Math.max(0, struggles.length - 3);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev >= struggles.length - 1 ? 0 : prev + 1));
+      setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1));
     }, 4000);
     return () => clearInterval(timer);
-  }, [struggles.length]);
+  }, [maxIndex]);
+
+  // Clamp current if maxIndex changes
+  useEffect(() => {
+    setCurrent((prev) => Math.min(prev, maxIndex));
+  }, [maxIndex]);
 
   return (
     <div className="relative">
@@ -110,7 +125,7 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
         <ChevronLeft className="w-5 h-5" />
       </button>
       <button
-        onClick={() => setCurrent((p) => Math.min(struggles.length - 1, p + 1))}
+        onClick={() => setCurrent((p) => Math.min(maxIndex, p + 1))}
         className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors"
         aria-label="Next"
       >
@@ -118,7 +133,7 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
       </button>
 
       <div className="flex justify-center gap-2 mt-6">
-        {struggles.map((_, i) => (
+        {Array.from({ length: maxIndex + 1 }).map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
