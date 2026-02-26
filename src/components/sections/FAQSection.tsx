@@ -275,6 +275,7 @@ export const FAQSection = ({ pageKey = "home" }: FAQSectionProps) => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
+            className="text-center lg:text-left"
           >
             <span className="label-tag mb-4">Get Started</span>
             <h2 className="heading-section text-foreground mb-4">
