@@ -32,6 +32,7 @@ const services = [
 export const FreightServicesSection = () => {
   const ref = useRef(null);
   const introRef = useRef<HTMLDivElement | null>(null);
+  const leftColRef = useRef<HTMLDivElement | null>(null);
   const partnersRef = useRef<HTMLDivElement | null>(null);
   const servicesHeadingRef = useRef<HTMLHeadingElement | null>(null);
 
@@ -47,17 +48,13 @@ export const FreightServicesSection = () => {
     }
 
     const compute = () => {
-      if (!partnersRef.current || !servicesHeadingRef.current) return;
+      if (!leftColRef.current || !partnersRef.current) return;
 
-      const partnersRect = partnersRef.current.getBoundingClientRect();
-      const headingRect = servicesHeadingRef.current.getBoundingClientRect();
+      const leftHeight = leftColRef.current.getBoundingClientRect().height;
+      const rightHeight = partnersRef.current.getBoundingClientRect().height;
 
-      const partnersTop = partnersRect.top + window.scrollY;
-      const partnersHeight = partnersRect.height;
-      const headingTop = headingRect.top + window.scrollY;
-
-      // Stop right before the next section title.
-      setMaxShift(Math.max(0, headingTop - partnersTop - partnersHeight - 24));
+      // Allow the right column to travel until it aligns with the left column's bottom
+      setMaxShift(Math.max(0, leftHeight - rightHeight));
     };
 
     compute();
@@ -83,6 +80,7 @@ export const FreightServicesSection = () => {
         >
           {/* Truck images - column */}
           <motion.div
+            ref={leftColRef}
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
