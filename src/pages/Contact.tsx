@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Truck, Users, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
+import heroBackground from "@/assets/heroes/truck-white-field.png";
 
 const contactInfo = [
   {
@@ -65,7 +66,9 @@ const Contact = () => (
       canonicalPath="/contact"
     />
     {/* Hero Section */}
-    <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/10 via-background to-cyan-500/5">
+    <section className="relative pt-32 pb-16 overflow-hidden">
+      <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${heroBackground})` }} />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

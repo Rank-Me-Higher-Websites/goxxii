@@ -6,6 +6,7 @@ import { ArrowRight, Truck, Users, Shield, CheckCircle, DollarSign, Clock, MapPi
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
+import heroBackground from "@/assets/heroes/truck-green.png";
 
 const positions = [
   {
@@ -68,11 +69,8 @@ const Careers = () => {
       />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-24" aria-label="Career opportunities at XXII Century trucking company">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-cyan-500/10" />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-primary rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400 rounded-full blur-3xl" />
-        </div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${heroBackground})` }} />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
         
         <div className="container-custom relative z-10 text-center py-20">
           <motion.div

@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/accordion";
 import { statePages } from "@/data/statePages";
 import driverBlue from "@/assets/driver-truck-blue.jpg";
+import heroBackground from "@/assets/heroes/truck-green-closeup.jpg";
 
 const stats = [
   { value: "2009", label: "Established in" },
@@ -109,7 +110,7 @@ const OwnerOperatorState = () => {
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-background">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${heroBackground})` }} />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
 
         <div className="container-custom relative z-10 pt-24 pb-12">

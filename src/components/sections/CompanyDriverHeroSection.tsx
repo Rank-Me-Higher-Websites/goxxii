@@ -5,6 +5,7 @@ import { ChevronRight, Phone, Home, Wrench, Award, MapPin, DollarSign, Gift, Clo
 import { Button } from "@/components/ui/button";
 import companyTruck from "@/assets/company-truck.png";
 import companyDriver from "@/assets/company-driver.jpg";
+import heroBackground from "@/assets/heroes/truck-white-dock.png";
 
 const features = [
   { icon: Award, title: "Outstanding", subtitle: "PAY-SCALE" },
@@ -46,7 +47,7 @@ export const CompanyDriverHeroSection = () => {
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-background">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: `url(${companyDriver})` }}
+          style={{ backgroundImage: `url(${heroBackground})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
         
