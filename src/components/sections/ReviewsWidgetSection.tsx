@@ -44,12 +44,8 @@ export const ReviewsWidgetSection = () => {
           <div
             ref={widgetRef}
             id="trustindex-widget"
-            className="w-full min-h-[300px] flex items-center justify-center glass rounded-2xl p-8"
-          >
-            <p className="text-muted-foreground text-sm">
-              Reviews widget will load here — paste your TrustIndex embed code to activate.
-            </p>
-          </div>
+            className="w-full min-h-[300px] glass rounded-2xl p-8"
+          />
         </motion.div>
       </div>
     </section>
