@@ -7,12 +7,12 @@ import logo from "@/assets/logo.svg";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
   { label: "Freight Services", href: "/freight-shipping-services" },
 ];
 
 const postDriverLinks = [
   { label: "Careers", href: "/careers" },
+  { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "News", href: "/blog" },
 ];
