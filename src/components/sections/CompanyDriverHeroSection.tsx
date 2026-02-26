@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, Phone, Home, Wrench, Award, MapPin, DollarSign, Gift, Clock, Heart, Users, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import companyTruck from "@/assets/company-truck.png";
 import companyDriver from "@/assets/company-driver.jpg";
 import heroBackground from "@/assets/heroes/truck-white-dock.png";
@@ -232,7 +233,8 @@ export const CompanyDriverHeroSection = () => {
             Truck Drivers Deserve <span className="text-primary">Exceptional Benefits</span>
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Desktop grid */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
@@ -247,6 +249,23 @@ export const CompanyDriverHeroSection = () => {
                 <p className="text-muted-foreground text-sm">{benefit.desc}</p>
               </motion.div>
             ))}
+          </div>
+
+          {/* Mobile carousel */}
+          <div className="md:hidden">
+            <Carousel opts={{ align: "start", loop: true }} className="w-full">
+              <CarouselContent className="-ml-3">
+                {benefits.map((benefit, index) => (
+                  <CarouselItem key={index} className="pl-3 basis-[85%]">
+                    <div className="glass p-6 rounded-xl h-full">
+                      <benefit.icon className="w-10 h-10 text-primary mb-4" />
+                      <h3 className="font-bold text-lg mb-2">{benefit.title}</h3>
+                      <p className="text-muted-foreground text-sm">{benefit.desc}</p>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
 
           <div className="text-center mt-10">
