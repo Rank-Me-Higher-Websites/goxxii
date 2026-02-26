@@ -39,11 +39,15 @@ export const FreightServicesSection = () => {
   const isMobile = useIsMobile();
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+  const bottomContentRef = useRef<HTMLDivElement | null>(null);
+
   const [maxShift, setMaxShift] = useState(0);
+  const [maxBottomShift, setMaxBottomShift] = useState(0);
 
   useLayoutEffect(() => {
     if (isMobile) {
       setMaxShift(0);
+      setMaxBottomShift(0);
       return;
     }
 
@@ -53,8 +57,13 @@ export const FreightServicesSection = () => {
       const leftHeight = leftColRef.current.getBoundingClientRect().height;
       const rightHeight = partnersRef.current.getBoundingClientRect().height;
 
-      // Allow the right column to travel until it aligns with the left column's bottom
       setMaxShift(Math.max(0, leftHeight - rightHeight));
+
+      // Extra travel for bottom content (stats + why drivers choose us)
+      if (bottomContentRef.current) {
+        const bottomHeight = bottomContentRef.current.getBoundingClientRect().height;
+        setMaxBottomShift(Math.max(0, leftHeight - rightHeight + bottomHeight * 0.5));
+      }
     };
 
     compute();
@@ -69,6 +78,8 @@ export const FreightServicesSection = () => {
 
   // Move the right-side content down while scrolling through this grid.
   const partnersY = useTransform(scrollYProgress, [0.1, 0.7], [0, maxShift]);
+  // Extra downward travel for stats & "Why Drivers Choose Us"
+  const bottomY = useTransform(scrollYProgress, [0.3, 0.9], [0, maxBottomShift]);
 
   return (
     <section ref={ref} className="section-padding bg-background relative">
@@ -148,44 +159,45 @@ export const FreightServicesSection = () => {
               </Button>
             </div>
 
-            {/* Stats Grid - fills the empty space */}
-            <div className="hidden lg:grid grid-cols-2 gap-4 pt-6">
-              <div className="glass rounded-xl p-5 text-center">
-                <div className="text-3xl font-display font-bold text-primary mb-1">15+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+            {/* Stats Grid + Why Drivers - extra parallax to fill empty space */}
+            <motion.div ref={bottomContentRef} style={{ y: bottomY }}>
+              <div className="hidden lg:grid grid-cols-2 gap-4 pt-6">
+                <div className="glass rounded-xl p-5 text-center">
+                  <div className="text-3xl font-display font-bold text-primary mb-1">15+</div>
+                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                </div>
+                <div className="glass rounded-xl p-5 text-center">
+                  <div className="text-3xl font-display font-bold text-accent mb-1">97%</div>
+                  <div className="text-sm text-muted-foreground">On-Time Delivery</div>
+                </div>
+                <div className="glass rounded-xl p-5 text-center">
+                  <div className="text-3xl font-display font-bold text-primary mb-1">500+</div>
+                  <div className="text-sm text-muted-foreground">Active Drivers</div>
+                </div>
+                <div className="glass rounded-xl p-5 text-center">
+                  <div className="text-3xl font-display font-bold text-accent mb-1">24/7</div>
+                  <div className="text-sm text-muted-foreground">Dispatch Support</div>
+                </div>
               </div>
-              <div className="glass rounded-xl p-5 text-center">
-                <div className="text-3xl font-display font-bold text-accent mb-1">97%</div>
-                <div className="text-sm text-muted-foreground">On-Time Delivery</div>
-              </div>
-              <div className="glass rounded-xl p-5 text-center">
-                <div className="text-3xl font-display font-bold text-primary mb-1">500+</div>
-                <div className="text-sm text-muted-foreground">Active Drivers</div>
-              </div>
-              <div className="glass rounded-xl p-5 text-center">
-                <div className="text-3xl font-display font-bold text-accent mb-1">24/7</div>
-                <div className="text-sm text-muted-foreground">Dispatch Support</div>
-              </div>
-            </div>
 
-            {/* Quick highlights */}
-            <div className="hidden lg:block glass rounded-xl p-5">
-              <h4 className="font-display font-semibold text-foreground mb-3">Why Drivers Choose Us</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                  Fortune 500 freight partners
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                  Weekly settlements with no hidden fees
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                  Modern equipment &amp; AI-powered dispatch
-                </li>
-              </ul>
-            </div>
+              <div className="hidden lg:block glass rounded-xl p-5 mt-4">
+                <h4 className="font-display font-semibold text-foreground mb-3">Why Drivers Choose Us</h4>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                    Fortune 500 freight partners
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                    Weekly settlements with no hidden fees
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                    Modern equipment &amp; AI-powered dispatch
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
 
