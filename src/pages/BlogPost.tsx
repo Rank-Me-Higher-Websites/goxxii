@@ -294,19 +294,6 @@ const BlogPost = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="space-y-8"
             >
-              {/* Share & Save */}
-              <div className="p-6 bg-card rounded-xl border border-border">
-                <h4 className="font-semibold text-foreground mb-4">Share This Article</h4>
-                <div className="flex gap-3">
-                  <Button variant="outline" size="icon" className="flex-1">
-                    <Share2 className="w-4 h-4" />
-                  </Button>
-                  <Button variant="outline" size="icon" className="flex-1">
-                    <Bookmark className="w-4 h-4" />
-                  </Button>
-                </div>
-              </div>
-
               {/* Related Posts */}
               <div className="p-6 bg-card rounded-xl border border-border">
                 <h4 className="font-semibold text-foreground mb-4">Related Articles</h4>
@@ -331,17 +318,6 @@ const BlogPost = () => {
                     </Link>
                   ))}
                 </div>
-              </div>
-
-              {/* Newsletter */}
-              <div className="p-6 bg-gradient-to-br from-primary/10 to-cyan-500/10 rounded-xl border border-border">
-                <h4 className="font-semibold text-foreground mb-2">Stay Updated</h4>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Get the latest industry news delivered to your inbox.
-                </p>
-                <Button className="w-full" asChild>
-                  <Link to="/contact">Subscribe</Link>
-                </Button>
               </div>
             </motion.aside>
           </div>
