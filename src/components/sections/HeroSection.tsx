@@ -65,7 +65,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15 }}
-              className="text-muted-foreground text-sm sm:text-base max-w-lg mb-4"
+              className="text-muted-foreground text-sm sm:text-base max-w-lg mx-auto lg:mx-0 mb-4"
             >
               <span className="text-foreground font-semibold">Stop getting robbed by your carrier.</span> No fuel cards skimming you. No dispatch fees eating your check. No ELD charges. You keep what you earn. Fortune 500 freight. Weekly pay. Period.
             </motion.p>
