@@ -367,7 +367,7 @@ const FreightServices = () => {
                   Want to join our carrier network? Explore <Link to="/owner-operators" className="text-primary hover:underline">independent owner operator opportunities</Link> with premium freight access, or <Link to="/contact" className="text-primary hover:underline">contact our logistics team</Link> to discuss partnership options. Learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our commitment to excellence.
                 </p>
               </div>
-              <Button variant="hero" size="lg" className="mt-8" asChild>
+              <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
                 <a href="mailto:hr@goxxii.com" className="flex items-center gap-2">
                   <ChevronRight className="w-5 h-5" />
                   Work With Us
