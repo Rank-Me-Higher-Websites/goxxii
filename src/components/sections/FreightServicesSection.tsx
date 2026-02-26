@@ -143,7 +143,7 @@ export const FreightServicesSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{ y: partnersY }}
-            className="space-y-6"
+            className="space-y-6 text-center lg:text-left"
           >
             <div>
               <h2 className="heading-section text-foreground mb-6">
