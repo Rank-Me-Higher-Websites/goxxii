@@ -68,6 +68,75 @@ const contactReasons = [
   },
 ];
 
+const ContactCard = ({ item }: { item: typeof contactInfo[number] }) => (
+  <>
+    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+      <item.icon className="w-6 h-6 text-primary" />
+    </div>
+    <h3 className="font-display text-lg font-bold text-foreground mb-3">
+      {item.title}
+    </h3>
+    <div className="space-y-1 mb-4 flex-1">
+      {item.details.map((detail, i) => (
+        <p key={i} className="text-muted-foreground text-sm">{detail}</p>
+      ))}
+    </div>
+    {item.action && (
+      item.action.startsWith("/") ? (
+        <Button variant="hero" size="sm" className="w-full" asChild>
+          <Link to={item.action}>{item.actionLabel}</Link>
+        </Button>
+      ) : (
+        <Button variant="hero" size="sm" className="w-full" asChild>
+          <a
+            href={item.action}
+            target={item.action.startsWith("http") ? "_blank" : undefined}
+            rel={item.action.startsWith("http") ? "noopener noreferrer" : undefined}
+          >
+            {item.actionLabel}
+          </a>
+        </Button>
+      )
+    )}
+  </>
+);
+
+const ContactMobileCarousel = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+    setCurrent(api.selectedScrollSnap());
+    api.on("select", () => setCurrent(api.selectedScrollSnap()));
+  }, [api]);
+
+  return (
+    <div className="sm:hidden">
+      <Carousel setApi={setApi} opts={{ align: "start", loop: true }} className="w-full">
+        <CarouselContent className="-ml-3">
+          {contactInfo.map((item) => (
+            <CarouselItem key={item.title} className="pl-3 basis-[85%]">
+              <div className="p-6 rounded-2xl border border-border bg-card flex flex-col h-full">
+                <ContactCard item={item} />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+      <div className="flex justify-center gap-2 mt-4">
+        {contactInfo.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => api?.scrollTo(i)}
+            className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-muted-foreground/30"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const Contact = () => {
   const schemas = useMemo(() => [
     getOrganizationSchema(),
