@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import companyDriver from "@/assets/company-driver.jpg";
 
 const benefits = [
-  { icon: DollarSign, text: "63 CPM + Bonuses", highlight: true },
+  { icon: DollarSign, text: "63 CPM + Bonuses" },
   { icon: TrendingUp, text: "Consistent Miles" },
   { icon: Shield, text: "Full Benefits" },
   { icon: MessageSquare, text: "AI Detention Pay" },
