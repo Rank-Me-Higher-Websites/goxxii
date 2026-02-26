@@ -193,7 +193,11 @@ const FreightServices = () => {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {/* Mobile: Carousel */}
+          <MobileFeatureCarousel features={trustedFeatures} />
+
+          {/* Desktop: Grid */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {trustedFeatures.map((feature, index) => (
               <motion.div
                 key={feature.title}
