@@ -16,7 +16,7 @@ const CompanyDrivers = () => (
     <CompanyDriverHeroSection />
     <SEOContentSection pageKey="companyDrivers" />
     <TechBenefitsSection />
-    <FAQSection />
+    <FAQSection pageKey="companyDrivers" />
   </Layout>
 );
 

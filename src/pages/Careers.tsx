@@ -291,7 +291,7 @@ const Careers = () => {
       </section>
 
       <SEOContentSection pageKey="careers" />
-      <FAQSection />
+      <FAQSection pageKey="careers" />
     </Layout>
   );
 };

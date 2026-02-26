@@ -282,7 +282,7 @@ const Contact = () => (
     </section>
 
     <SEOContentSection pageKey="contact" />
-    <FAQSection />
+    <FAQSection pageKey="contact" />
   </Layout>
 );
 

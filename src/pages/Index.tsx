@@ -49,7 +49,7 @@ const Index = () => {
       <CareerSection />
       <ReviewsWidgetSection />
       <LocationMapSection />
-      <FAQSection />
+      <FAQSection pageKey="home" />
       <BlogSection />
     </Layout>
   );

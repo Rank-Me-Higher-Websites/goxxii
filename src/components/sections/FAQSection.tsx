@@ -10,125 +10,262 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs: { question: string; answer: ReactNode }[] = [
+type FAQ = { question: string; answer: ReactNode };
+
+const homeFaqs: FAQ[] = [
   {
-    question: "What jobs are available?",
+    question: "What types of trucking jobs does XXII Century offer?",
     answer: (
       <div className="space-y-3">
-        <p>
-          We hire <strong className="text-foreground">CDL-A</strong> drivers for
-          <strong className="text-foreground"> owner operator</strong> and
-          <strong className="text-foreground"> company driver</strong> roles across
-          Chicago and nationwide.
-        </p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>
-            <Link to="/owner-operators" className="text-primary hover:underline">
-              Owner operator opportunities
-            </Link>{" "}
-            with strong linehaul and transparent settlements
-          </li>
-          <li>
-            <Link to="/company-drivers" className="text-primary hover:underline">
-              Company driver positions
-            </Link>{" "}
-            with consistent miles and weekly pay
-          </li>
-          <li>Local, regional, and OTR lanes depending on availability</li>
-        </ul>
+        <p>We offer both <Link to="/owner-operators" className="text-primary hover:underline">owner operator</Link> and <Link to="/company-drivers" className="text-primary hover:underline">company driver</Link> CDL-A positions. Routes include local, regional, and OTR lanes across the U.S. and Canada, hauling for Fortune 500 shippers.</p>
+        <p>Browse all open positions on our <Link to="/careers" className="text-primary hover:underline">careers page</Link>.</p>
       </div>
     ),
   },
   {
-    question: "How do I apply?",
+    question: "Where is XXII Century based?",
+    answer: (
+      <p>Our headquarters are in <strong className="text-foreground">Chicago, Illinois</strong>. We operate freight lanes nationwide and into Canada. Learn more on our <Link to="/about" className="text-primary hover:underline">about page</Link>.</p>
+    ),
+  },
+  {
+    question: "How do I apply to drive with XXII Century?",
     answer: (
       <div className="space-y-3">
-        <p>
-          The fastest way is to submit the short application, then we’ll call you to
-          confirm experience, lanes, and start date.
-        </p>
-        <p>
-          Use our online application (external):{" "}
-          <a
-            href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:underline"
-          >
-            Apply here
-          </a>
-          . Or contact recruiting via our{" "}
-          <Link to="/contact" className="text-primary hover:underline">
-            contact page
-          </Link>
-          .
-        </p>
+        <p>Apply online through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">driver application</a>. Our recruiting team typically responds within 24 hours. You can also reach us via the <Link to="/contact" className="text-primary hover:underline">contact page</Link>.</p>
       </div>
     ),
   },
   {
-    question: "How fast can I start?",
+    question: "Does XXII Century offer freight shipping services?",
     answer: (
-      <div className="space-y-3">
-        <p>
-          Many drivers start within a few days once paperwork is verified and you’re
-          cleared for dispatch. We keep onboarding simple and communication clear.
-        </p>
-        <p>
-          For exact timing, reach out to recruiting on the{" "}
-          <Link to="/contact" className="text-primary hover:underline">
-            Contact
-          </Link>{" "}
-          page.
-        </p>
-      </div>
+      <p>Yes. We provide <Link to="/freight-shipping-services" className="text-primary hover:underline">dry van, refrigerated, and flatbed freight services</Link> for shippers and brokers. Our network covers the continental U.S. and Canada with dedicated and spot capacity.</p>
     ),
   },
   {
-    question: "Why choose XXII Century?",
+    question: "How long has XXII Century been in business?",
     answer: (
-      <div className="space-y-3">
-        <p>
-          We’re built for drivers who want steady freight, honest answers, and a
-          carrier partner that respects your business.
-        </p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>
-            <strong className="text-foreground">Fortune 500 freight</strong> and
-            dependable lanes
-          </li>
-          <li>
-            <strong className="text-foreground">Transparent pay</strong> (no
-            surprise deductions)
-          </li>
-          <li>
-            24/7 support and tech that helps reduce empty miles and delays
-          </li>
-        </ul>
-        <p>
-          Want to learn more about our logistics side? See{" "}
-          <Link to="/freight-shipping-services" className="text-primary hover:underline">
-            freight shipping services
-          </Link>{" "}
-          or read the official compliance overview at{" "}
-          <a
-            href="https://www.fmcsa.dot.gov/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:underline"
-          >
-            FMCSA
-          </a>
-          .
-        </p>
-      </div>
+      <p>XXII Century has been in the trucking industry for over <strong className="text-foreground">16 years</strong>, building a reputation for reliability, safety, and transparent partnerships. Meet our <Link to="/about" className="text-primary hover:underline">leadership team</Link> to learn about the people behind the company.</p>
     ),
   },
 ];
 
-export const FAQSection = () => {
+const ownerOperatorFaqs: FAQ[] = [
+  {
+    question: "What percentage do owner operators keep at XXII Century?",
+    answer: (
+      <p>Owner operators receive competitive linehaul rates with <strong className="text-foreground">transparent settlements and zero hidden fees</strong>. There are no forced dispatch fees or trailer rental surprises. View full details on our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program page</Link>.</p>
+    ),
+  },
+  {
+    question: "Do I need my own trailer to be an owner operator?",
+    answer: (
+      <p>No. XXII Century offers a large trailer network including dry vans, reefers, and flatbeds. You can use our trailers or bring your own. Learn about trailer options on our <Link to="/fleet-program" className="text-primary hover:underline">fleet program page</Link>.</p>
+    ),
+  },
+  {
+    question: "What fuel discounts are available for owner operators?",
+    answer: (
+      <p>We provide <strong className="text-foreground">large fleet volume fuel discounts</strong> at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route, saving you money on every trip.</p>
+    ),
+  },
+  {
+    question: "Can I choose my own routes as an owner operator?",
+    answer: (
+      <p>Yes. We offer flexible scheduling with both dedicated lanes and open-board freight. Whether you prefer local Chicago-area runs or long-haul OTR, we match loads to your preferences. <Link to="/contact" className="text-primary hover:underline">Talk to recruiting</Link> about available lanes.</p>
+    ),
+  },
+  {
+    question: "Is there a referral bonus for owner operators?",
+    answer: (
+      <p>Yes — we offer an <strong className="text-foreground">unlimited referral bonus program</strong>. Refer qualified drivers and earn $1,000 per referral with no cap. Contact our <Link to="/contact" className="text-primary hover:underline">recruiting team</Link> for details.</p>
+    ),
+  },
+];
+
+const companyDriverFaqs: FAQ[] = [
+  {
+    question: "What is the starting pay for company drivers?",
+    answer: (
+      <p>Company drivers start at <strong className="text-foreground">63 CPM</strong> with automatic raises every 75,000 miles. Performance bonuses are available on top of base pay. See full compensation details on our <Link to="/company-drivers" className="text-primary hover:underline">company driver page</Link>.</p>
+    ),
+  },
+  {
+    question: "What benefits do company drivers receive?",
+    answer: (
+      <div className="space-y-3">
+        <p>Full benefits include:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Health, dental, and vision insurance</li>
+          <li>401(k) with company match</li>
+          <li>Paid vacation and holidays</li>
+          <li>Safety and inspection bonuses</li>
+        </ul>
+        <p>Explore all <Link to="/careers" className="text-primary hover:underline">career opportunities</Link> with XXII Century.</p>
+      </div>
+    ),
+  },
+  {
+    question: "What kind of trucks do company drivers operate?",
+    answer: (
+      <p>We invest in <strong className="text-foreground">late-model, well-maintained equipment</strong>. Company drivers operate modern trucks with the latest safety features and comfort amenities for a better driving experience.</p>
+    ),
+  },
+  {
+    question: "How much home time do company drivers get?",
+    answer: (
+      <p>Home time depends on your route preference. Local drivers are home daily, regional drivers weekly, and OTR drivers every 2–3 weeks. We work with you to balance miles and home time. <Link to="/contact" className="text-primary hover:underline">Contact us</Link> to discuss options.</p>
+    ),
+  },
+  {
+    question: "Do I need experience to drive for XXII Century?",
+    answer: (
+      <p>We require a valid <strong className="text-foreground">CDL-A license</strong> and generally prefer drivers with at least 6 months of verifiable OTR experience. Recent CDL graduates may be considered — <Link to="/contact" className="text-primary hover:underline">reach out</Link> to discuss your qualifications.</p>
+    ),
+  },
+];
+
+const fleetProgramFaqs: FAQ[] = [
+  {
+    question: "What is the XXII Century Power Only program?",
+    answer: (
+      <p>Our Power Only program lets <Link to="/owner-operators" className="text-primary hover:underline">owner operators</Link> use their own tractor with our trailers to haul freight for Fortune 500 companies. We provide the loads, trailer access, and 24/7 dispatch support — you provide the power unit and driving expertise.</p>
+    ),
+  },
+  {
+    question: "What are the requirements to join the fleet program?",
+    answer: (
+      <div className="space-y-3">
+        <p>To qualify you need:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Motor Carrier Authority</li>
+          <li>DOT Number</li>
+          <li>Auto Liability Insurance</li>
+          <li>Cargo Liability Insurance</li>
+          <li>Non-Owned Trailer Interchange Insurance</li>
+        </ul>
+        <p><Link to="/contact" className="text-primary hover:underline">Contact recruiting</Link> if you have questions about any requirement.</p>
+      </div>
+    ),
+  },
+  {
+    question: "What types of trailers are available in the fleet program?",
+    answer: (
+      <p>Our trailer network includes <strong className="text-foreground">dry vans, reefers, and flatbeds</strong>. This diversity ensures you can haul a wide range of freight and stay loaded consistently. Learn more about our <Link to="/freight-shipping-services" className="text-primary hover:underline">freight services</Link>.</p>
+    ),
+  },
+  {
+    question: "What is the average income for fleet program drivers?",
+    answer: (
+      <p>Owner operators in our fleet program average <strong className="text-foreground">$100,000+ annually</strong>. Earnings depend on miles driven, freight type, and route preferences. We also offer a $1,000 referral bonus with no cap.</p>
+    ),
+  },
+  {
+    question: "Does the fleet program operate in Canada?",
+    answer: (
+      <p>Yes. We have freight lanes across the <strong className="text-foreground">continental U.S. and Canada</strong>, partnering with major corporations and government agencies on both sides of the border. Visit our <Link to="/about" className="text-primary hover:underline">about page</Link> to learn more about our operations.</p>
+    ),
+  },
+];
+
+const careersFaqs: FAQ[] = [
+  {
+    question: "What trucking career paths are available at XXII Century?",
+    answer: (
+      <div className="space-y-3">
+        <p>We offer multiple career paths:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li><Link to="/owner-operators" className="text-primary hover:underline">Owner operator</Link> — run your own business with our freight and support</li>
+          <li><Link to="/company-drivers" className="text-primary hover:underline">Company driver</Link> — full employment with benefits and steady pay</li>
+          <li><Link to="/fleet-program" className="text-primary hover:underline">Fleet program</Link> — Power Only opportunities with trailer access</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    question: "Does XXII Century hire drivers in the Chicago area?",
+    answer: (
+      <p>Yes. Our headquarters are in <strong className="text-foreground">Chicago, IL</strong> and many of our dedicated lanes originate from the Chicagoland area. We have local, regional, and OTR positions based out of Chicago. <Link to="/contact" className="text-primary hover:underline">Reach out</Link> to see what's available near you.</p>
+    ),
+  },
+  {
+    question: "What is the hiring process like?",
+    answer: (
+      <div className="space-y-3">
+        <p>Our process is straightforward:</p>
+        <ol className="list-decimal pl-5 space-y-1">
+          <li>Submit your <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a></li>
+          <li>Phone screening with our recruiting team</li>
+          <li>Background and MVR verification</li>
+          <li>Orientation and dispatch — many drivers start within days</li>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    question: "Are there bonuses for safe driving?",
+    answer: (
+      <p>Yes. We offer <strong className="text-foreground">safety and inspection bonuses</strong> that reward clean CSA scores and DOT inspections. These are available to both <Link to="/owner-operators" className="text-primary hover:underline">owner operators</Link> and <Link to="/company-drivers" className="text-primary hover:underline">company drivers</Link>.</p>
+    ),
+  },
+  {
+    question: "Can I drive for XXII Century if I live outside Illinois?",
+    answer: (
+      <p>Absolutely. We have drivers across the country. While our base is in Chicago, our freight network spans the <strong className="text-foreground">entire U.S. and Canada</strong>. <Link to="/contact" className="text-primary hover:underline">Contact us</Link> to find lanes near your location.</p>
+    ),
+  },
+];
+
+const contactFaqs: FAQ[] = [
+  {
+    question: "What is the best way to reach XXII Century recruiting?",
+    answer: (
+      <p>Call us at <a href="tel:6309480501" className="text-primary hover:underline font-semibold">630-948-0501</a> or email <a href="mailto:hr@goxxii.com" className="text-primary hover:underline">hr@goxxii.com</a>. You can also apply directly through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a>.</p>
+    ),
+  },
+  {
+    question: "What are XXII Century's office hours?",
+    answer: (
+      <p>Our dispatch operates <strong className="text-foreground">24/7</strong>. The recruiting and administrative office is available during standard business hours, Monday through Friday. For urgent matters, our dispatch team is always reachable.</p>
+    ),
+  },
+  {
+    question: "Where is XXII Century located?",
+    answer: (
+      <p>Our main office is in <strong className="text-foreground">Chicago, Illinois</strong>. We serve drivers and shippers across all 48 states and Canada. Visit our <Link to="/about" className="text-primary hover:underline">about page</Link> for more details on our operations.</p>
+    ),
+  },
+  {
+    question: "How quickly does the recruiting team respond?",
+    answer: (
+      <p>We typically respond within <strong className="text-foreground">24 hours</strong> of receiving your application or inquiry. For faster results, call our recruiting line directly at <a href="tel:6309480501" className="text-primary hover:underline">630-948-0501</a>.</p>
+    ),
+  },
+  {
+    question: "Can shippers or brokers contact XXII Century for freight services?",
+    answer: (
+      <p>Yes. If you need <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping services</Link> including dry van, refrigerated, or flatbed capacity, contact our logistics team. We partner with Fortune 500 companies and welcome new shipper relationships.</p>
+    ),
+  },
+];
+
+const faqsByPage: Record<string, FAQ[]> = {
+  home: homeFaqs,
+  ownerOperators: ownerOperatorFaqs,
+  companyDrivers: companyDriverFaqs,
+  fleetProgram: fleetProgramFaqs,
+  careers: careersFaqs,
+  contact: contactFaqs,
+};
+
+interface FAQSectionProps {
+  pageKey?: string;
+}
+
+export const FAQSection = ({ pageKey = "home" }: FAQSectionProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const faqs = faqsByPage[pageKey] || homeFaqs;
 
   return (
     <section ref={ref} className="section-padding bg-background">
