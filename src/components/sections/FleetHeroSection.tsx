@@ -15,7 +15,7 @@ export const FleetHeroSection = () => {
           alt="XXII Century fleet of trucks"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/70" />
       </div>
 
       {/* Content */}
