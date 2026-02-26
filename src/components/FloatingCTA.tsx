@@ -39,9 +39,10 @@ export const FloatingCTA = () => {
             {/* Dismiss button */}
             <button
               onClick={() => setIsDismissed(true)}
-              className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+              className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-muted border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted/80 active:scale-95 transition-all z-10"
+              aria-label="Dismiss"
             >
-              <X className="w-3 h-3" />
+              <X className="w-4 h-4" />
             </button>
 
             {/* Urgency text */}
