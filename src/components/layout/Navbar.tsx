@@ -99,9 +99,7 @@ export const Navbar = () => {
                     <Link
                       key={link.href}
                       to={link.href}
-                      className={`block px-4 py-2 text-sm transition-colors hover:bg-primary/10 hover:text-primary ${
-                        index === 2 ? "bg-gradient-to-r from-primary to-cyan-400 text-white mx-2 rounded" : ""
-                      }`}
+                      className="block px-4 py-2 text-sm transition-colors hover:bg-primary/10 hover:text-primary"
                     >
                       {link.label}
                     </Link>
