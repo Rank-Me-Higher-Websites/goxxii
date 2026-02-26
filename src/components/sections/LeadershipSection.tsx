@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Mail } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 
 import davidMolo from "@/assets/team/david-molo.jpg";
 import paulKruzinauskas from "@/assets/team/paul-kruzinauskas.jpg";
