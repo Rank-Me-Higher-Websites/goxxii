@@ -238,11 +238,6 @@ export const FreightServicesSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-10">
-          <Button variant="accent" size="lg" asChild>
-            <a href="mailto:hr@goxxii.com">Partner with XXII</a>
-          </Button>
-        </div>
       </div>
     </section>
   );
