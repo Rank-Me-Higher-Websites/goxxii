@@ -78,7 +78,7 @@ export const FleetCompanyDriverSection = () => {
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               <Button variant="hero" size="lg" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
