@@ -138,7 +138,8 @@ const Contact = () => {
       {/* Contact Cards */}
       <section className="section-padding">
         <div className="container-custom">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Desktop grid */}
+          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactInfo.map((item, index) => (
               <motion.div
                 key={item.title}
@@ -148,39 +149,13 @@ const Contact = () => {
                 transition={{ delay: 0.1 * index }}
                 className="p-6 rounded-2xl border border-border bg-card hover:border-primary/30 transition-all duration-300 flex flex-col"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-display text-lg font-bold text-foreground mb-3">
-                  {item.title}
-                </h3>
-                <div className="space-y-1 mb-4 flex-1">
-                  {item.details.map((detail, i) => (
-                    <p key={i} className="text-muted-foreground text-sm">
-                      {detail}
-                    </p>
-                  ))}
-                </div>
-                {item.action && (
-                  item.action.startsWith("/") ? (
-                    <Button variant="hero" size="sm" className="w-full" asChild>
-                      <Link to={item.action}>{item.actionLabel}</Link>
-                    </Button>
-                  ) : (
-                    <Button variant="hero" size="sm" className="w-full" asChild>
-                      <a
-                        href={item.action}
-                        target={item.action.startsWith("http") ? "_blank" : undefined}
-                        rel={item.action.startsWith("http") ? "noopener noreferrer" : undefined}
-                      >
-                        {item.actionLabel}
-                      </a>
-                    </Button>
-                  )
-                )}
+                <ContactCard item={item} />
               </motion.div>
             ))}
           </div>
+
+          {/* Mobile carousel */}
+          <ContactMobileCarousel />
         </div>
       </section>
 
