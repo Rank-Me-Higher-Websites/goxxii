@@ -130,6 +130,63 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
   );
 };
 
+const AdvantagesCarousel = ({ advantages }: { advantages: { icon: string; title: string; desc: string }[] }) => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev >= advantages.length - 1 ? 0 : prev + 1));
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [advantages.length]);
+
+  return (
+    <div className="relative">
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {advantages.map((adv, index) => (
+            <div key={index} className="w-full flex-shrink-0 px-4">
+              <div className="glass p-6 rounded-xl">
+                <div className="text-3xl mb-3">{adv.icon}</div>
+                <h3 className="font-bold text-lg mb-2">{adv.title}</h3>
+                <p className="text-muted-foreground text-sm">{adv.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <button
+        onClick={() => setCurrent((p) => Math.max(0, p - 1))}
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors"
+        aria-label="Previous"
+      >
+        <ChevronLeft className="w-5 h-5" />
+      </button>
+      <button
+        onClick={() => setCurrent((p) => Math.min(advantages.length - 1, p + 1))}
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors"
+        aria-label="Next"
+      >
+        <ChevronRight className="w-5 h-5" />
+      </button>
+
+      <div className="flex justify-center gap-2 mt-6">
+        {advantages.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-muted-foreground/30"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export const OwnerOperatorHeroSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
