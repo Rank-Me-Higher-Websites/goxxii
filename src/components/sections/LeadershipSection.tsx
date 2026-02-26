@@ -49,6 +49,34 @@ const leaders = [
   },
 ];
 
+const LeaderCard = ({ leader }: { leader: typeof leaders[number] }) => (
+  <>
+    <div className="aspect-[4/5] overflow-hidden">
+      <img
+        src={leader.image}
+        alt={leader.name}
+        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+      />
+    </div>
+    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+    <div className="absolute bottom-0 left-0 right-0 p-6">
+      <h3 className="text-xl font-display font-bold text-foreground mb-1">
+        {leader.name}
+      </h3>
+      <p className="text-primary font-medium text-sm mb-3">
+        {leader.title}
+      </p>
+      <a
+        href={`mailto:${leader.email}`}
+        className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+      >
+        <Mail className="w-4 h-4" />
+        {leader.email}
+      </a>
+    </div>
+  </>
+);
+
 export const LeadershipSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
