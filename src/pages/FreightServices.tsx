@@ -264,7 +264,7 @@ const FreightServices = () => {
             transition={{ delay: 0.4 }}
             className="grid lg:grid-cols-2 gap-12 items-center"
           >
-            <div className="order-2 lg:order-1 space-y-4">
+            <div className="order-2 lg:order-1 space-y-4 text-center lg:text-left">
               <p className="text-muted-foreground leading-relaxed">
                 Experience fast, reliable, and secure <strong className="text-foreground">freight shipping services</strong> with XXII Century Inc. We provide nationwide coverage, competitive rates, and tailored solutions to fit your business needs. From LTL to full truckload and expedited freight, our expert team ensures your shipments arrive on time, every time.
               </p>
