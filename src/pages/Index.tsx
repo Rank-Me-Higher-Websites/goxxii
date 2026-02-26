@@ -7,7 +7,7 @@ import { TechBenefitsSection } from "@/components/sections/TechBenefitsSection";
 import { TrustedBrandsSection } from "@/components/sections/TrustedBrandsSection";
 import { IndustryPartnersSection } from "@/components/sections/IndustryPartnersSection";
 import { LiveTruckSection } from "@/components/sections/LiveTruckSection";
-import { TestimonialSection } from "@/components/sections/TestimonialSection";
+import { ReviewsWidgetSection } from "@/components/sections/ReviewsWidgetSection";
 import { CompanyDriverSection } from "@/components/sections/CompanyDriverSection";
 import { FreightServicesSection } from "@/components/sections/FreightServicesSection";
 import { TrailerOptionsSection } from "@/components/sections/TrailerOptionsSection";
@@ -47,9 +47,10 @@ const Index = () => {
       <MobileAppSection />
       <SEOContentSection pageKey="home" />
       <CareerSection />
-      <BlogSection />
+      <ReviewsWidgetSection />
       <LocationMapSection />
       <FAQSection />
+      <BlogSection />
     </Layout>
   );
 };
