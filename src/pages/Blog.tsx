@@ -13,19 +13,10 @@ import dedicatedOwnerOperator from "@/assets/blog/dedicated-owner-operator.jpg";
 import localOwnerOperator from "@/assets/blog/local-owner-operator.jpg";
 import ownerOperatorGuide from "@/assets/blog/owner-operator-guide.png";
 import dryVanJobs from "@/assets/blog/dry-van-jobs.jpg";
-import localJobsHome from "@/assets/blog/local-jobs-home.png";
-import bestTruckingCompany from "@/assets/blog/best-trucking-company.jpg";
-import chicagoJobs from "@/assets/blog/chicago-jobs.jpg";
-import succeedWithoutBurnout from "@/assets/blog/succeed-without-burnout.jpg";
-import careerChicago from "@/assets/blog/career-chicago.jpg";
-import becomingOwnerOperator from "@/assets/blog/becoming-owner-operator.jpg";
-import driverShortage from "@/assets/blog/driver-shortage.jpg";
-import truckingTechnology from "@/assets/blog/trucking-technology.jpg";
-import tca2025 from "@/assets/blog/tca-2025.jpg";
 import negotiateLinehaul from "@/assets/blog/negotiate-linehaul.jpg";
+import chicagoTips from "@/assets/blog/chicago-tips.jpg";
 
 const blogPosts = [
-  // Page 1
   {
     image: negotiateLinehaul,
     title: "Owner Operator Truck Driver Jobs: How to Negotiate Better Linehaul Rates",
@@ -54,6 +45,15 @@ const blogPosts = [
     category: "Owner Operators",
   },
   {
+    image: chicagoTips,
+    title: "Local Owner Operator Jobs Near Me: Chicago Tips",
+    excerpt: "If you've ever typed 'local owner operator jobs near me' into a search bar and found yourself overwhelmed by options—especially in Chicago—you're not alone.",
+    date: "December 15, 2025",
+    readTime: "10 min read",
+    slug: "local-owner-operator-jobs-chicago-tips",
+    category: "Local Jobs",
+  },
+  {
     image: ownerOperatorGuide,
     title: "Owner Operator Guide: Insurance, Jobs and Carriers",
     excerpt: "Everything you need to know about owner operator insurance requirements, finding the best jobs, and choosing the right carrier.",
@@ -62,149 +62,18 @@ const blogPosts = [
     slug: "owner-operator-guide",
     category: "Guides",
   },
-  // Page 2
   {
     image: dryVanJobs,
     title: "Dry Van Owner Operator Jobs: What to Know",
     excerpt: "If you've been thinking about becoming a dry van owner operator, you're not alone. More drivers than ever are exploring this path.",
     date: "November 21, 2025",
-    readTime: "7 min read",
+    readTime: "10 min read",
     slug: "dry-van-owner-operator-jobs",
     category: "Owner Operators",
   },
-  {
-    image: localJobsHome,
-    title: "Local Owner Operator Jobs That Pay and Let You Stay Home",
-    excerpt: "Becoming an independent driver is one of the most rewarding steps in trucking. The freedom to manage your schedule and choose your loads.",
-    date: "November 13, 2025",
-    readTime: "6 min read",
-    slug: "local-owner-operator-jobs-home",
-    category: "Local Jobs",
-  },
-  {
-    image: dedicatedOwnerOperator,
-    title: "How Regional Trucking Affects Owner Operator Opportunities",
-    excerpt: "Regional trucking demand in 2025 directly shapes your earnings and schedule, influencing everything from freight volume to lane frequency.",
-    date: "November 6, 2025",
-    readTime: "8 min read",
-    slug: "regional-trucking-opportunities",
-    category: "Industry News",
-  },
-  // Page 3
-  {
-    image: bestTruckingCompany,
-    title: "How to Choose the Best Owner Operator Trucking Company",
-    excerpt: "Becoming an independent truck driver is a big step. The freedom to choose loads, set your schedule, and grow your business.",
-    date: "October 16, 2025",
-    readTime: "9 min read",
-    slug: "best-owner-operator-trucking-company",
-    category: "Guides",
-  },
-  {
-    image: chicagoJobs,
-    title: "How to Land the Best Owner Operator Jobs in Chicago",
-    excerpt: "If you've driven through Chicago, you've seen just how busy the highways are with freight trucks. Chicago is a major hub.",
-    date: "October 6, 2025",
-    readTime: "7 min read",
-    slug: "owner-operator-jobs-chicago-best",
-    category: "Local Jobs",
-  },
-  {
-    image: succeedWithoutBurnout,
-    title: "How to Succeed in Owner Operator Position Without Burning Out",
-    excerpt: "Becoming an owner operator in the trucking industry can feel like a dream come true: the freedom to be your own boss.",
-    date: "September 18, 2025",
-    readTime: "8 min read",
-    slug: "succeed-without-burning-out",
-    category: "Guides",
-  },
-  // Page 4
-  {
-    image: careerChicago,
-    title: "How To Build a Truck Driving Career in Chicago",
-    excerpt: "Truck driving career in Chicago opportunities are everywhere if you know where to look. The city offers endless possibilities.",
-    date: "September 8, 2025",
-    readTime: "7 min read",
-    slug: "truck-driving-career-chicago",
-    category: "Local Jobs",
-  },
-  {
-    image: becomingOwnerOperator,
-    title: "Becoming an Owner Operator: Costs and What to Expect",
-    excerpt: "If you've ever spent hours on the highway watching endless streams of big rigs roll by, you've probably wondered what it takes.",
-    date: "August 15, 2025",
-    readTime: "10 min read",
-    slug: "becoming-owner-operator-costs",
-    category: "Guides",
-  },
-  {
-    image: dryVanJobs,
-    title: "Owner Operator Jobs in Chicago: What Truckers Should Know",
-    excerpt: "Thinking about taking control of your trucking career and hitting the road on your own terms? You're not alone.",
-    date: "August 8, 2025",
-    readTime: "6 min read",
-    slug: "owner-operator-jobs-chicago-what-to-know",
-    category: "Local Jobs",
-  },
-  // Page 5
-  {
-    image: localOwnerOperator,
-    title: "Hiring Owner Operators in Chicago: What Need to Know",
-    excerpt: "If you're a trucker in the Windy City looking to take control of your career, now might be the perfect time.",
-    date: "July 23, 2025",
-    readTime: "6 min read",
-    slug: "hiring-owner-operators-chicago",
-    category: "Local Jobs",
-  },
-  {
-    image: dedicatedOwnerOperator,
-    title: "A Guide to Independent Truck Driver Jobs",
-    excerpt: "Thinking about becoming your own boss behind the wheel? You're not alone. More and more drivers are trading in company positions.",
-    date: "July 23, 2025",
-    readTime: "8 min read",
-    slug: "independent-truck-driver-guide",
-    category: "Guides",
-  },
-  {
-    image: driverShortage,
-    title: "The Truck Driver Shortage: Problems and Solutions",
-    excerpt: "If you're thinking about a career in the trucking industry—or already working in it—understanding the labor landscape is essential.",
-    date: "April 28, 2025",
-    readTime: "7 min read",
-    slug: "truck-driver-shortage",
-    category: "Industry News",
-  },
-  // Page 6
-  {
-    image: truckingTechnology,
-    title: "Navigating the Future: Trucking Technology Trends",
-    excerpt: "Staying informed about emerging technologies is crucial in the rapidly evolving logistics sector. Recent advancements have significantly enhanced safety.",
-    date: "April 25, 2025",
-    readTime: "6 min read",
-    slug: "trucking-technology-trends",
-    category: "Industry News",
-  },
-  {
-    image: dedicatedOwnerOperator,
-    title: "Dry Van Market Update: Imports to Drop in May",
-    excerpt: "U.S. Imports Projected to Plummet in May. Import activity at major U.S. ports is expected to take a sharp downturn.",
-    date: "April 22, 2025",
-    readTime: "5 min read",
-    slug: "dry-van-market-update",
-    category: "Industry News",
-  },
-  {
-    image: tca2025,
-    title: "TCA 2025: Key Insights Driving the Trucking Industry",
-    excerpt: "Rising Costs Continue to Challenge the Industry. At the TCA 2025 conference, experts highlighted the ongoing challenge of rising operational costs.",
-    date: "March 18, 2025",
-    readTime: "6 min read",
-    slug: "tca-2025-key-insights",
-    category: "Industry News",
-  },
 ];
 
-const categories = ["All", "Owner Operators", "Company Drivers", "Local Jobs", "Guides", "Industry News"];
+const categories = ["All", "Owner Operators", "Local Jobs", "Guides"];
 const POSTS_PER_PAGE = 6;
 
 const Blog = () => {
