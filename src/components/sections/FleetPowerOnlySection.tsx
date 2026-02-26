@@ -28,13 +28,12 @@ export const FleetPowerOnlySection = () => {
             XXII Century proudly offers a Power Only Trucking program designed for experienced and professional owner operators. We partner with major corporations and government agencies across the U.S. and Canada, providing access to consistent freight. Our power-only services include a wide range of trailer types — flatbeds, dry vans and reefers — ensuring flexibility and steady work for qualified drivers.
           </p>
 
-          <a
-            href="tel:7735725012"
-            className="inline-flex items-center gap-2 text-primary font-semibold text-lg hover:underline"
-          >
-            <Phone className="w-5 h-5" />
-            773-572-5012
-          </a>
+          <Button variant="heroOutline" size="lg" asChild>
+            <a href="tel:7735725012" className="inline-flex items-center gap-2">
+              <Phone className="w-5 h-5" />
+              773-572-5012
+            </a>
+          </Button>
         </motion.div>
       </div>
     </section>

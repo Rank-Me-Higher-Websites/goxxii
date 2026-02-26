@@ -64,13 +64,12 @@ export const FleetSupportSection = () => {
           transition={{ delay: 0.6 }}
           className="text-center"
         >
-          <a
-            href="tel:7735725012"
-            className="inline-flex items-center gap-2 text-primary font-bold text-xl hover:underline"
-          >
-            <Phone className="w-6 h-6" />
-            Reach Us Now: 773-572-5012
-          </a>
+          <Button variant="heroOutline" size="lg" asChild>
+            <a href="tel:7735725012" className="inline-flex items-center gap-2">
+              <Phone className="w-5 h-5" />
+              Reach Us Now: 773-572-5012
+            </a>
+          </Button>
         </motion.div>
       </div>
     </section>
