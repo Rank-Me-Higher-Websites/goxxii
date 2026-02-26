@@ -49,7 +49,7 @@ export const MobileAppSection = () => {
             transition={{ delay: 0.1 }}
             className="lg:col-span-2"
           >
-            <div className="relative max-w-[220px] sm:max-w-[260px] mx-auto">
+            <div className="relative max-w-[220px] sm:max-w-[260px] mx-auto group">
               {/* Multi-layer glow effect */}
               <div className="absolute inset-0 bg-primary/15 blur-[80px] scale-150 rounded-full opacity-50" />
               <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-32 h-32 bg-primary/20 blur-[50px] rounded-full opacity-60" />
@@ -57,16 +57,16 @@ export const MobileAppSection = () => {
               {/* Reflection ring */}
               <div className="absolute inset-0 scale-110 rounded-[2.5rem] border border-primary/10 opacity-40" />
               
-              <div className="relative">
+              <div className="relative overflow-hidden rounded-[2rem]">
                 <img
                   src={mobileApp}
                   alt="XXII Century Mobile App"
-                  className="w-full h-auto rounded-[2rem] drop-shadow-[0_20px_60px_rgba(0,184,212,0.25)] drop-shadow-[0_0_20px_rgba(0,184,212,0.1)]"
+                  className="w-full h-auto drop-shadow-[0_20px_60px_rgba(0,184,212,0.25)] transition-transform duration-500 group-hover:scale-105"
                 />
                 {/* Top shine */}
                 <div className="absolute top-0 left-1/4 right-1/4 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
-                {/* Bottom fade */}
-                <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background via-background/60 to-transparent pointer-events-none" />
+                {/* Bottom fade - smooth blend */}
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
               </div>
             </div>
           </motion.div>
