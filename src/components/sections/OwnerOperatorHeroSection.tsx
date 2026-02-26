@@ -319,7 +319,7 @@ export const OwnerOperatorHeroSection = () => {
             Welcome to the <span className="text-primary">XXII Family</span>
           </motion.h2>
 
-          <div className="flex gap-4 justify-center py-6"gt;
+          <div className="flex gap-4 justify-center py-6">
             {galleryImages.map((img, index) => (
               <motion.div
                 key={index}
