@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import driverFleet from "@/assets/driver-fleet.png";
+import heroBackground from "@/assets/heroes/truck-fleet-mack.jpg";
 
 export const FleetHeroSection = () => {
   return (
