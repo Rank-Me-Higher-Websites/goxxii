@@ -36,6 +36,7 @@ export const OwnerOperatorSection = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
+            className="text-center lg:text-left"
           >
             <span className="label-tag mb-3">Owner Operators</span>
             <h2 className="heading-section text-foreground mb-2">
@@ -67,7 +68,7 @@ export const OwnerOperatorSection = () => {
             </div>
 
             {/* Perks list */}
-            <div className="flex flex-wrap gap-2 mb-5">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-5">
               {perks.map((perk, index) => (
                 <motion.span 
                   key={perk} 
@@ -81,7 +82,7 @@ export const OwnerOperatorSection = () => {
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3">
               <Button variant="hero" size="default" className="group" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"

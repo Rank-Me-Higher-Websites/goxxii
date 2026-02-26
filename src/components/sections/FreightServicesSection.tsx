@@ -143,7 +143,7 @@ export const FreightServicesSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{ y: partnersY }}
-            className="space-y-6"
+            className="space-y-6 text-center lg:text-left"
           >
             <div>
               <h2 className="heading-section text-foreground mb-6">
@@ -157,7 +157,7 @@ export const FreightServicesSection = () => {
                   We&apos;re more than a carrier — we&apos;re a <Link to="/owner-operators" className="text-foreground font-semibold hover:text-primary transition-colors">driver-focused partner</Link> built on communication, predictable miles, and on-time freight delivery. Our system is designed to reduce wait times, keep loads consistent, and help <Link to="/company-drivers" className="text-foreground font-semibold hover:text-primary transition-colors">drivers get from point A to point B</Link> with confidence.
                 </p>
               </div>
-              <Button variant="heroOutline" size="lg" className="mt-8" asChild>
+              <Button variant="heroOutline" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
                 <Link to="/freight-shipping-services">Learn More</Link>
               </Button>
             </div>

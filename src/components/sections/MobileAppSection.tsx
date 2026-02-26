@@ -16,7 +16,7 @@ export const MobileAppSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            className="lg:col-span-3"
+            className="lg:col-span-3 text-center lg:text-left"
           >
             <span className="label-tag mb-4">Driver App</span>
             <h2 className="heading-section text-foreground mb-4">
@@ -26,7 +26,7 @@ export const MobileAppSection = () => {
               24/7 dispatch, real-time loads, digital paperwork, accident reporting, road assistance — all in one app. Efficiency on every mile.
             </p>
 
-            <div className="flex flex-wrap gap-3 mb-6">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
               <Button variant="hero" size="default" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
