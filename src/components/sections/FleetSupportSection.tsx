@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Gift, DollarSign, Headphones, Award, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const stats = [
   { icon: Gift, value: "$1,000", label: "Referral Bonus" },
