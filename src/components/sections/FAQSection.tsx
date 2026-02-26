@@ -275,6 +275,7 @@ export const FAQSection = ({ pageKey = "home" }: FAQSectionProps) => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
+            className="text-center lg:text-left"
           >
             <span className="label-tag mb-4">Get Started</span>
             <h2 className="heading-section text-foreground mb-4">
@@ -286,7 +287,7 @@ export const FAQSection = ({ pageKey = "home" }: FAQSectionProps) => {
             <p className="text-sm sm:text-base text-muted-foreground mb-6">
               Whether you're exploring <Link to="/careers" className="text-primary hover:underline">trucking job openings</Link> or have specific questions about our programs, we're here to help you make the right decision for your career.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3">
               <Button variant="hero" size="default" asChild>
                 <a href="tel:+17735725012" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
