@@ -101,29 +101,7 @@ export const MissionValuesSection = () => {
             </div>
 
             {/* Mobile carousel */}
-            <div className="sm:hidden overflow-hidden">
-              <Carousel opts={{ align: "start", loop: true }} className="w-full">
-                <CarouselContent className="-ml-3">
-                  {values.map((value) => (
-                    <CarouselItem key={value.title} className="pl-3 basis-[85%]">
-                      <div className="flex gap-4 p-4 rounded-xl bg-secondary/50 border border-border/30">
-                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          <value.icon className="w-6 h-6 text-primary" />
-                        </div>
-                        <div>
-                          <h3 className="font-display font-semibold text-foreground mb-1">
-                            {value.title}
-                          </h3>
-                          <p className="text-sm text-muted-foreground">
-                            {value.description}
-                          </p>
-                        </div>
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-              </Carousel>
-            </div>
+            <ValuesMobileCarousel />
           </motion.div>
         </div>
       </div>
