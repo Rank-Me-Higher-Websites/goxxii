@@ -6,7 +6,7 @@ import heroDriver from "@/assets/hero-driver.png";
 export const HeroSection = () => {
 
   return (
-    <section className="relative min-h-[100svh] flex items-center overflow-hidden">
+    <section className="relative min-h-[100svh] flex items-center overflow-x-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
