@@ -40,8 +40,8 @@ const Index = () => {
       <LiveTruckSection />
       <TestimonialSection />
       <CompanyDriverSection />
-      <QuickCTABanner />
       <FreightServicesSection />
+      <QuickCTABanner />
       <TrailerOptionsSection />
       <TechPoweredSection />
       <MobileAppSection />
