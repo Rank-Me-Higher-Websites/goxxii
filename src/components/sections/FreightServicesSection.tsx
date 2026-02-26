@@ -80,6 +80,7 @@ export const FreightServicesSection = () => {
         >
           {/* Truck images - column */}
           <motion.div
+            ref={leftColRef}
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
