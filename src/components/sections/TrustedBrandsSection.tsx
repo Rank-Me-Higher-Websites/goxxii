@@ -59,13 +59,12 @@ const MobileCarousel = () => {
               className="flex-shrink-0 bg-[#1a2d4a] rounded-xl p-3 border border-[#2a3d5a]/50"
               style={{ width: `calc((100% - 12px) / ${itemsPerView})` }}
             >
-              <div className="bg-white rounded-lg p-4 flex flex-col items-center justify-center min-h-[90px]">
+              <div className="bg-white rounded-lg p-4 flex items-center justify-center min-h-[90px]">
                 <img
                   src={brand.logo}
                   alt={brand.name}
-                  className="max-h-10 w-auto object-contain mb-2"
+                  className="max-h-12 w-auto object-contain"
                 />
-                <span className="text-xs font-medium text-gray-700 text-center leading-tight">{brand.name}</span>
               </div>
             </div>
           ))}
