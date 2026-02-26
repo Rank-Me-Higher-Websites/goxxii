@@ -62,8 +62,8 @@ export const Footer = () => {
       </div>
 
       {/* Main Footer */}
-      <div className="container-custom py-12 border-t border-border">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div className="container-custom py-8 sm:py-12 border-t border-border">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-10">
           {/* Logo & Contact */}
           <div className="lg:col-span-2 text-center md:text-left">
             <Link to="/" className="inline-block mb-6 logo-shine">
