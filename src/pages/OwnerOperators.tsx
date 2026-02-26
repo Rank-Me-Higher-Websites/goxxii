@@ -16,7 +16,7 @@ const OwnerOperators = () => (
     <OwnerOperatorHeroSection />
     <SEOContentSection pageKey="ownerOperators" />
     <TechBenefitsSection />
-    <FAQSection />
+    <FAQSection pageKey="ownerOperators" />
   </Layout>
 );
 
