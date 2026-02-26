@@ -30,7 +30,7 @@ export const HeroSection = () => {
       <div className="absolute bottom-0 right-0 w-24 sm:w-32 h-1 bg-gradient-to-l from-accent to-transparent" />
 
       {/* Content */}
-      <div className="container-custom relative z-10 pt-20 pb-8 sm:pt-24 sm:pb-12">
+      <div className="container-custom relative z-10 pt-20 pb-8 sm:pt-24 sm:pb-12 overflow-hidden">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
           {/* Left: Copy */}
           <div className="text-center lg:text-left">
