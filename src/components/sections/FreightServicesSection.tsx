@@ -85,7 +85,7 @@ export const FreightServicesSection = () => {
         {/* Fleet Introduction - Parallax scroll layout */}
         <div
           ref={introRef}
-          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start overflow-hidden"
+          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start"
         >
           {/* Truck images - column */}
           <motion.div
