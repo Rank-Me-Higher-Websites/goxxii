@@ -50,8 +50,7 @@ export const LocationMapSection = () => {
                 </div>
                 <div className="text-left">
                   <h3 className="font-display font-bold text-foreground mb-1">Phone</h3>
-                  <a href="tel:224-240-6441" className="text-muted-foreground text-sm hover:text-primary transition-colors block">224-240-6441</a>
-                  <a href="tel:630-948-0501" className="text-muted-foreground text-sm hover:text-primary transition-colors block">630-948-0501</a>
+                  <a href="tel:7735725012" className="text-muted-foreground text-sm hover:text-primary transition-colors block">773-572-5012</a>
                 </div>
               </div>
             </div>
