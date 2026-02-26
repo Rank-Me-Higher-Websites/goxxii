@@ -398,7 +398,7 @@ export const Navbar = () => {
                         >
                           <Link
                             to={link.href}
-                            className={`flex items-center gap-3 py-2.5 transition-all duration-300 group ${
+                            className={`flex items-center gap-3 py-2 transition-all duration-300 group ${
                               location.pathname === link.href
                                 ? "text-primary"
                                 : "text-foreground/60 hover:text-foreground hover:translate-x-1"
