@@ -15,6 +15,9 @@ import ownerOperatorGuide from "@/assets/blog/owner-operator-guide.png";
 import dryVanJobs from "@/assets/blog/dry-van-jobs.jpg";
 import negotiateLinehaul from "@/assets/blog/negotiate-linehaul.jpg";
 import chicagoTips from "@/assets/blog/chicago-tips.jpg";
+import localJobsHome from "@/assets/blog/local-jobs-home.png";
+import careerChicago from "@/assets/blog/career-chicago.jpg";
+import bestTruckingCompany from "@/assets/blog/best-trucking-company.jpg";
 
 const blogPosts = [
   {
@@ -69,6 +72,33 @@ const blogPosts = [
     date: "November 21, 2025",
     readTime: "10 min read",
     slug: "dry-van-owner-operator-jobs",
+    category: "Owner Operators",
+  },
+  {
+    image: localJobsHome,
+    title: "Local Owner Operator Jobs That Pay and Let You Stay Home",
+    excerpt: "Local owner operator jobs offer a rare balance between solid income and personal time—without sacrificing the moments that matter most.",
+    date: "November 13, 2025",
+    readTime: "10 min read",
+    slug: "local-owner-operator-jobs-home",
+    category: "Local Jobs",
+  },
+  {
+    image: careerChicago,
+    title: "How Regional Trucking Affects Owner Operator Opportunities",
+    excerpt: "Regional trucking demand in 2025 directly shapes your earnings and schedule. This guide covers demand drivers, lane comparisons, and tech strategies.",
+    date: "November 6, 2025",
+    readTime: "15 min read",
+    slug: "owner-operator-opportunities-2025",
+    category: "Owner Operators",
+  },
+  {
+    image: bestTruckingCompany,
+    title: "How to Choose the Best Owner Operator Trucking Company",
+    excerpt: "Choosing the right company to partner with can make or break your success. Learn what to look for in contracts, pay, and support.",
+    date: "October 16, 2025",
+    readTime: "10 min read",
+    slug: "best-owner-operator-trucking-company",
     category: "Owner Operators",
   },
 ];
