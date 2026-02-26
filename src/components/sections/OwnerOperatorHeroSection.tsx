@@ -54,28 +54,45 @@ const stats = [
 
 const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: string; desc: string }[] }) => {
   const [current, setCurrent] = useState(0);
-  const itemsPerView = 3;
-  const maxIndex = Math.max(0, struggles.length - itemsPerView);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1));
+      setCurrent((prev) => (prev >= struggles.length - 1 ? 0 : prev + 1));
     }, 4000);
     return () => clearInterval(timer);
-  }, [maxIndex]);
+  }, [struggles.length]);
 
   return (
     <div className="relative">
-      <div className="overflow-hidden">
+      {/* Mobile: single card carousel */}
+      <div className="block md:hidden overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {struggles.map((item, index) => (
+            <div key={index} className="w-full flex-shrink-0 px-2">
+              <div className="glass p-6 rounded-xl aspect-square flex flex-col justify-center items-center text-center">
+                <div className="text-4xl mb-4">{item.emoji}</div>
+                <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop: 3-per-view */}
+      <div className="hidden md:block overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out gap-6"
-          style={{ transform: `translateX(-${current * (100 / itemsPerView + 2)}%)` }}
+          style={{ transform: `translateX(-${current * (100 / 3 + 2)}%)` }}
         >
           {struggles.map((item, index) => (
             <div
               key={index}
-              className="glass p-6 rounded-xl flex-shrink-0"
-              style={{ width: `calc((100% - ${(itemsPerView - 1) * 24}px) / ${itemsPerView})` }}
+              className="glass p-6 rounded-xl flex-shrink-0 aspect-square flex flex-col justify-center"
+              style={{ width: `calc((100% - 48px) / 3)` }}
             >
               <div className="text-3xl mb-3">{item.emoji}</div>
               <h3 className="font-bold text-lg mb-2">{item.title}</h3>
@@ -93,7 +110,7 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
         <ChevronLeft className="w-5 h-5" />
       </button>
       <button
-        onClick={() => setCurrent((p) => Math.min(maxIndex, p + 1))}
+        onClick={() => setCurrent((p) => Math.min(struggles.length - 1, p + 1))}
         className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors"
         aria-label="Next"
       >
@@ -101,7 +118,7 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
       </button>
 
       <div className="flex justify-center gap-2 mt-6">
-        {Array.from({ length: maxIndex + 1 }).map((_, i) => (
+        {struggles.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
