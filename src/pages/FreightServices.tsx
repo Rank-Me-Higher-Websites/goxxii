@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import freightHero from "@/assets/freight-hero.png";
+import heroBackground from "@/assets/heroes/truck-green-closeup.jpg";
 import freightBroker from "@/assets/freight-broker.png";
 import freightShipper from "@/assets/freight-shipper.png";
 import lgLogo from "@/assets/brands/lg.png";
