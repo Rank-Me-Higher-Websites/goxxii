@@ -295,7 +295,13 @@ export const OwnerOperatorHeroSection = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Mobile carousel */}
+          <div className="block md:hidden relative">
+            <AdvantagesCarousel advantages={advantages} />
+          </div>
+
+          {/* Desktop grid */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((adv, index) => (
               <motion.div
                 key={index}
