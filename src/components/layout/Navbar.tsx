@@ -412,7 +412,7 @@ export const Navbar = () => {
                               <Icon className="w-4 h-4" />
                             </div>
                             <div>
-                              <span className="text-base font-semibold block">{link.label}</span>
+                              <span className="text-sm font-semibold block">{link.label}</span>
                               <span className="text-xs text-muted-foreground">{link.desc}</span>
                             </div>
                           </Link>
