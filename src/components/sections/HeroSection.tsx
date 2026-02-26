@@ -6,7 +6,7 @@ import heroDriver from "@/assets/hero-driver.png";
 export const HeroSection = () => {
 
   return (
-    <section className="relative min-h-[100svh] flex items-center overflow-hidden">
+    <section className="relative min-h-[100svh] flex items-center overflow-x-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -75,7 +75,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mb-5"
+              className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-6 mb-5 w-full"
             >
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -111,7 +111,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, delay: 0.22 }}
-              className="flex flex-wrap items-center justify-center gap-2 mb-5 px-4 py-2 rounded-xl bg-accent/10 border border-accent/30 max-w-full mx-auto lg:mx-0"
+              className="flex flex-wrap items-center justify-center gap-2 mb-5 px-3 py-2 rounded-xl bg-accent/10 border border-accent/30 w-full max-w-md mx-auto lg:mx-0"
             >
               <Fuel className="w-5 h-5 text-accent flex-shrink-0" />
               <span className="text-sm font-semibold text-accent text-center leading-tight">
