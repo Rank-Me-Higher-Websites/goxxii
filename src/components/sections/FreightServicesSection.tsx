@@ -95,7 +95,7 @@ export const FreightServicesSection = () => {
             transition={{ duration: 0.8 }}
             className="space-y-6"
           >
-            <div className="glass rounded-2xl overflow-hidden">
+            <div className="glass rounded-2xl overflow-hidden max-w-md mx-auto">
               <img
                 src={trucksFleet}
                 alt="XXII Century Fleet - Dry Van and Refrigerated Trucks"
