@@ -7,7 +7,7 @@ export const ReviewsWidgetSection = () => {
   const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!widgetRef.current) return;
+    if (!widgetRef.current || !isInView) return;
     const script = document.createElement("script");
     script.src = "https://cdn.trustindex.io/loader.js?e683cf1656ee8452a4467ec649c";
     script.defer = true;
@@ -17,7 +17,7 @@ export const ReviewsWidgetSection = () => {
     return () => {
       script.remove();
     };
-  }, []);
+  }, [isInView]);
 
   return (
     <section ref={ref} className="section-padding bg-background relative">
