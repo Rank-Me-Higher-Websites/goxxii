@@ -1,11 +1,15 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 export const LocationMapSection = () => {
+  const mapRef = useRef(null);
+  const isInView = useInView(mapRef, { once: true, margin: "200px" });
+
   return (
-    <section className="section-padding bg-card">
+    <section className="section-padding bg-card" ref={mapRef}>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,23 +77,29 @@ export const LocationMapSection = () => {
             </Button>
           </motion.div>
 
-          {/* Map */}
+          {/* Map - lazy loaded */}
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             className="lg:col-span-2 rounded-2xl overflow-hidden border border-border"
           >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.888603579934!2d-88.01496617794307!3d41.750511826388085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e500278400037%3A0x1967b72b8a792753!2sXXII%20Century%20Inc!5e0!3m2!1sen!2slt!4v1767799536937!5m2!1sen!2slt"
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: "400px" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="XXII Century Inc Location"
-            />
+            {isInView ? (
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.888603579934!2d-88.01496617794307!3d41.750511826388085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e500278400037%3A0x1967b72b8a792753!2sXXII%20Century%20Inc!5e0!3m2!1sen!2slt!4v1767799536937!5m2!1sen!2slt"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "400px" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="XXII Century Inc Location"
+              />
+            ) : (
+              <div className="w-full bg-muted/50 flex items-center justify-center" style={{ minHeight: "400px" }}>
+                <MapPin className="w-8 h-8 text-muted-foreground animate-pulse" />
+              </div>
+            )}
           </motion.div>
         </div>
       </div>
