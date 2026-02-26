@@ -4,6 +4,9 @@ import ownerOperatorGuide from "@/assets/blog/owner-operator-guide.png";
 import negotiateLinehaul from "@/assets/blog/negotiate-linehaul.jpg";
 import chicagoTips from "@/assets/blog/chicago-tips.jpg";
 import dryVanJobs from "@/assets/blog/dry-van-jobs.jpg";
+import localJobsHome from "@/assets/blog/local-jobs-home.png";
+import careerChicago from "@/assets/blog/career-chicago.jpg";
+import bestTruckingCompany from "@/assets/blog/best-trucking-company.jpg";
 
 export interface BlogPostData {
   image: string;
