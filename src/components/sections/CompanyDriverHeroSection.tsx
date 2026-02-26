@@ -113,6 +113,7 @@ export const CompanyDriverHeroSection = () => {
               initial={{ opacity: 0, x: -30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8 }}
+              className="text-center lg:text-left"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
                 Drive with XXII Century – Company Driver Job with <span className="text-primary">Real Earning Power</span>
