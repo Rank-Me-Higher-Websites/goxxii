@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Truck, Users, Shield, CheckCircle, DollarSign, Clock, MapPin, Phone, Mail, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
 import heroBackground from "@/assets/heroes/truck-green.png";
@@ -67,6 +68,38 @@ const whyJoin = [
     description: "Dispatch, roadside assistance, and a team that has your back around the clock.",
   },
 ];
+
+const PositionCard = ({ position }: { position: typeof positions[number] }) => (
+  <div className="h-full p-8 rounded-2xl border border-border bg-card hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 group">
+    <div className="flex items-center justify-between mb-4">
+      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+        <position.icon className="w-7 h-7 text-primary" />
+      </div>
+      <span className="text-xs text-muted-foreground bg-background px-3 py-1 rounded-full border border-border">
+        {position.date}
+      </span>
+    </div>
+    <h3 className="font-display text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+      {position.title}
+    </h3>
+    <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
+      {position.description}
+    </p>
+    <ul className="space-y-2 mb-6">
+      {position.benefits.map((benefit) => (
+        <li key={benefit} className="flex items-center gap-2 text-sm text-foreground">
+          <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+          {benefit}
+        </li>
+      ))}
+    </ul>
+    <Button variant="hero" className="w-full" asChild>
+      <Link to={`/careers/${position.slug}`} aria-label={`View details for ${position.title} position`}>
+        View Details <ArrowRight className="w-4 h-4 ml-2" />
+      </Link>
+    </Button>
+  </div>
+);
 
 const Careers = () => {
   const schemas = useMemo(() => [
@@ -193,7 +226,8 @@ const Careers = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Desktop grid */}
+          <div className="hidden md:grid md:grid-cols-3 gap-8">
             {positions.map((position, index) => (
               <motion.article
                 key={position.title}
@@ -203,41 +237,22 @@ const Careers = () => {
                 transition={{ delay: 0.1 * index }}
                 className="group"
               >
-                <div className="h-full p-8 rounded-2xl border border-border bg-card hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <position.icon className="w-7 h-7 text-primary" />
-                    </div>
-                    <span className="text-xs text-muted-foreground bg-background px-3 py-1 rounded-full border border-border">
-                      {position.date}
-                    </span>
-                  </div>
-                  
-                  <h3 className="font-display text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                    {position.title}
-                  </h3>
-                  
-                  <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
-                    {position.description}
-                  </p>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {position.benefits.map((benefit) => (
-                      <li key={benefit} className="flex items-center gap-2 text-sm text-foreground">
-                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
-                        {benefit}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <Button variant="hero" className="w-full" asChild>
-                    <Link to={`/careers/${position.slug}`} aria-label={`View details for ${position.title} position`}>
-                      View Details <ArrowRight className="w-4 h-4 ml-2" />
-                    </Link>
-                  </Button>
-                </div>
+                <PositionCard position={position} />
               </motion.article>
             ))}
+          </div>
+
+          {/* Mobile carousel */}
+          <div className="md:hidden">
+            <Carousel opts={{ align: "start", loop: true }} className="w-full">
+              <CarouselContent className="-ml-3">
+                {positions.map((position) => (
+                  <CarouselItem key={position.title} className="pl-3 basis-[85%]">
+                    <PositionCard position={position} />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
         </div>
       </section>
