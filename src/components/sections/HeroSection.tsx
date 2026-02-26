@@ -33,7 +33,7 @@ export const HeroSection = () => {
       <div className="container-custom relative z-10 pt-20 pb-8 sm:pt-24 sm:pb-12">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
           {/* Left: Copy */}
-          <div>
+          <div className="text-center lg:text-left">
             {/* Urgency Badge */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -65,7 +65,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15 }}
-              className="text-muted-foreground text-sm sm:text-base max-w-lg mb-4"
+              className="text-muted-foreground text-sm sm:text-base max-w-lg mx-auto lg:mx-0 mb-4"
             >
               <span className="text-foreground font-semibold">Stop getting robbed by your carrier.</span> No fuel cards skimming you. No dispatch fees eating your check. No ELD charges. You keep what you earn. Fortune 500 freight. Weekly pay. Period.
             </motion.p>
@@ -75,7 +75,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-wrap gap-4 sm:gap-6 mb-5"
+              className="flex flex-nowrap justify-center lg:justify-start gap-4 sm:gap-6 mb-5"
             >
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -111,7 +111,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, delay: 0.22 }}
-              className="flex flex-wrap items-center justify-center gap-2 mb-5 px-4 py-2 rounded-xl bg-accent/10 border border-accent/30 max-w-full"
+              className="flex flex-wrap items-center justify-center gap-2 mb-5 px-4 py-2 rounded-xl bg-accent/10 border border-accent/30 max-w-full mx-auto lg:mx-0"
             >
               <Fuel className="w-5 h-5 text-accent flex-shrink-0" />
               <span className="text-sm font-semibold text-accent text-center leading-tight">
@@ -124,7 +124,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="flex flex-col sm:flex-row gap-3"
+              className="flex flex-col sm:flex-row gap-3 items-center"
             >
               <Button variant="hero" size="lg" className="group pulse-glow" asChild>
                 <a
@@ -165,7 +165,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.35 }}
-              className="mt-6 max-w-sm"
+              className="mt-6 max-w-sm mx-auto lg:mx-0"
             >
               <div className="glass-strong rounded-xl p-4 border border-border/50">
                 <div className="flex items-center gap-1 mb-2">
