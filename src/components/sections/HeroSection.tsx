@@ -33,7 +33,7 @@ export const HeroSection = () => {
       <div className="container-custom relative z-10 pt-20 pb-8 sm:pt-24 sm:pb-12">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
           {/* Left: Copy */}
-          <div>
+          <div className="text-center lg:text-left">
             {/* Urgency Badge */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
