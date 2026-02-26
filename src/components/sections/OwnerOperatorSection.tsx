@@ -36,6 +36,7 @@ export const OwnerOperatorSection = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
+            className="text-center lg:text-left"
           >
             <span className="label-tag mb-3">Owner Operators</span>
             <h2 className="heading-section text-foreground mb-2">
