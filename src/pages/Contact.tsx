@@ -153,7 +153,7 @@ const Contact = () => {
                 <h3 className="font-display text-lg font-bold text-foreground mb-3">
                   {item.title}
                 </h3>
-                <div className="space-y-1 mb-4">
+                <div className="space-y-1 mb-4 flex-1">
                   {item.details.map((detail, i) => (
                     <p key={i} className="text-muted-foreground text-sm">
                       {detail}
