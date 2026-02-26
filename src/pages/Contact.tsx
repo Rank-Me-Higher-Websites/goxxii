@@ -11,8 +11,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["224-240-6441", "630-948-0501"],
-    action: "tel:+12242406441",
+    details: ["773-572-5012"],
+    action: "tel:+17735725012",
     actionLabel: "Call Now",
   },
   {
