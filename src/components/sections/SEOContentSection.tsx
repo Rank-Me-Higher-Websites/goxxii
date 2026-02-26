@@ -204,6 +204,21 @@ export const SEOContentSection = ({ pageKey, sideImage, sideImageAlt }: SEOConte
             </div>
           </motion.div>
         </motion.div>
+        {sideImage && (
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="hidden lg:block lg:w-[45%] flex-shrink-0"
+          >
+            <img
+              src={sideImage}
+              alt={sideImageAlt || ""}
+              className="rounded-2xl object-cover w-full h-[380px] border border-border"
+            />
+          </motion.div>
+        )}
+        </div>
       </div>
     </section>
   );
