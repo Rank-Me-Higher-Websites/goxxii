@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
@@ -92,6 +92,49 @@ const brands = [
   { name: "Petco", logo: petcoLogo },
   { name: "Wisconsin Paper Council", logo: wisconsinLogo },
 ];
+
+const MobileFeatureCarousel = ({ features }: { features: typeof trustedFeatures }) => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev >= features.length - 1 ? 0 : prev + 1));
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [features.length]);
+
+  return (
+    <div className="block md:hidden mb-10">
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {features.map((feature) => (
+            <div key={feature.title} className="flex-shrink-0 w-full px-2">
+              <div className="glass p-6 rounded-xl text-center">
+                <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <feature.icon className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
+                <p className="text-muted-foreground text-sm">{feature.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex justify-center gap-2 mt-4">
+        {features.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-muted-foreground/30"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const FreightServices = () => {
   const featuresRef = useRef(null);
@@ -193,7 +236,11 @@ const FreightServices = () => {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {/* Mobile: Carousel */}
+          <MobileFeatureCarousel features={trustedFeatures} />
+
+          {/* Desktop: Grid */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {trustedFeatures.map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -344,7 +391,11 @@ const FreightServices = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Mobile: Carousel */}
+          <MobileFeatureCarousel features={fleetFeatures} />
+
+          {/* Desktop: Grid */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {fleetFeatures.map((feature, index) => (
               <motion.div
                 key={feature.title}
