@@ -381,7 +381,7 @@ export const Navbar = () => {
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="py-3"
+                  className="py-2"
                 >
                   <span className="text-2xl font-display font-bold uppercase tracking-wider text-foreground/80">
                     Drivers
