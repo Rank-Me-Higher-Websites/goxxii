@@ -18,6 +18,7 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 import { FAQSection } from "@/components/sections/FAQSection";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
 import heroBackground from "@/assets/heroes/truck-green.png";
+import truckMountainsImg from "@/assets/truck-mountains.jpg";
 
 const positions = [
   {
