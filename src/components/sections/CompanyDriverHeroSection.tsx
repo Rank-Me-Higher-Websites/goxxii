@@ -92,13 +92,13 @@ export const CompanyDriverHeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
+            className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mt-12 md:mt-16"
           >
             {features.map((feature, index) => (
-              <div key={index} className="glass p-6 rounded-xl text-center">
-                <feature.icon className="w-10 h-10 text-primary mx-auto mb-3" />
-                <div className="font-bold text-lg">{feature.title}</div>
-                <div className="text-sm text-muted-foreground uppercase tracking-wide">{feature.subtitle}</div>
+              <div key={index} className="glass p-3 md:p-6 rounded-xl text-center">
+                <feature.icon className="w-7 h-7 md:w-10 md:h-10 text-primary mx-auto mb-2 md:mb-3" />
+                <div className="font-bold text-sm md:text-lg">{feature.title}</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wide">{feature.subtitle}</div>
               </div>
             ))}
           </motion.div>
