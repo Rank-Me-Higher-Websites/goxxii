@@ -168,7 +168,7 @@ export const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="container-custom py-6 border-t border-border">
+      <div className="container-custom py-6 pb-28 lg:pb-6 border-t border-border">
         <div className="flex flex-col gap-4">
           {/* Top row - social links on mobile, right on desktop */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">

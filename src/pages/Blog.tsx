@@ -246,8 +246,8 @@ const Blog = () => {
               Whether you're considering <Link to="/owner-operators" className="text-primary hover:underline">becoming an independent owner operator</Link> or exploring <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link>, our articles help you make informed decisions about your <Link to="/careers" className="text-primary hover:underline">trucking career path</Link>.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 justify-center mb-8">
+            {/* CTA Buttons - hidden on mobile since sticky CTA covers this */}
+            <div className="hidden md:flex flex-wrap gap-4 justify-center mb-8">
               <Button variant="hero" size="lg" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"

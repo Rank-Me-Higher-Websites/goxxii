@@ -127,9 +127,8 @@ const Careers = () => {
               Truck Driver Jobs and More
             </p>
             <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-              At <strong className="text-foreground">XXII Century Inc.</strong>, we are always looking to expand our team with passionate and dedicated individuals. 
-              We offer a wide range of <strong className="text-foreground">trucking industry opportunities</strong> to help you grow and succeed. 
-              Whether you're an experienced Company Driver, an independent Owner Operator, or an organized OTR Dispatcher, we have the perfect role for you.
+              At <strong className="text-foreground">XXII Century Inc.</strong>, we offer <strong className="text-foreground">trucking industry opportunities</strong> for experienced Company Drivers, independent Owner Operators, and OTR Dispatchers.
+              <span className="hidden md:inline"> We are always looking to expand our team with passionate and dedicated individuals. Whether you're an experienced driver or just starting out, we have the perfect role for you.</span>
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>

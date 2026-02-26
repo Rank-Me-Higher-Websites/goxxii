@@ -67,7 +67,7 @@ const Index = () => {
       <TrailerOptionsSection />
       <TechPoweredSection />
       <MobileAppSection />
-      <SEOContentSection pageKey="home" />
+      <div className="hidden lg:block"><SEOContentSection pageKey="home" /></div>
       <CareerSection />
       <ReviewsWidgetSection />
       <LocationMapSection />
