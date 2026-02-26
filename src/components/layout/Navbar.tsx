@@ -396,6 +396,27 @@ export const Navbar = () => {
                 })}
               </motion.div>
 
+              {/* Post-Driver Links in Mobile */}
+              {postDriverLinks.map((link, index) => (
+                <motion.div
+                  key={link.href}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.38 + index * 0.04 }}
+                >
+                  <Link
+                    to={link.href}
+                    className={`text-xl font-display font-bold uppercase tracking-wider transition-colors ${
+                      location.pathname === link.href
+                        ? "text-primary"
+                        : "text-foreground/70 hover:text-foreground"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
