@@ -54,7 +54,7 @@ export const CompanyDriverSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="order-1 lg:order-2"
+            className="order-1 lg:order-2 text-center lg:text-left"
           >
             <span className="label-tag mb-3">Company Drivers</span>
             <h2 className="heading-section text-foreground mb-2">
