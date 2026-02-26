@@ -2,6 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Target, Heart, Lightbulb, Handshake } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 
 const values = [
   {
@@ -74,7 +75,8 @@ export const MissionValuesSection = () => {
             <span className="label-tag mb-4 inline-flex">What We Stand For</span>
             <h2 className="heading-section text-foreground mb-6">Our Values</h2>
             
-            <div className="grid gap-4">
+            {/* Desktop */}
+            <div className="hidden sm:grid gap-4">
               {values.map((value, index) => (
                 <motion.div
                   key={value.title}
@@ -96,6 +98,31 @@ export const MissionValuesSection = () => {
                   </div>
                 </motion.div>
               ))}
+            </div>
+
+            {/* Mobile carousel */}
+            <div className="sm:hidden">
+              <Carousel opts={{ align: "start", loop: true }} className="w-full">
+                <CarouselContent className="-ml-3">
+                  {values.map((value) => (
+                    <CarouselItem key={value.title} className="pl-3 basis-[85%]">
+                      <div className="flex gap-4 p-4 rounded-xl bg-secondary/50 border border-border/30">
+                        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                          <value.icon className="w-6 h-6 text-primary" />
+                        </div>
+                        <div>
+                          <h3 className="font-display font-semibold text-foreground mb-1">
+                            {value.title}
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            {value.description}
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </Carousel>
             </div>
           </motion.div>
         </div>
