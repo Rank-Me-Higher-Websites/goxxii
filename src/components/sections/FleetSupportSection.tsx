@@ -64,11 +64,11 @@ export const FleetSupportSection = () => {
           className="text-center"
         >
           <a
-            href="tel:6309480501"
+            href="tel:7735720501"
             className="inline-flex items-center gap-2 text-primary font-bold text-xl hover:underline"
           >
             <Phone className="w-6 h-6" />
-            Reach Us Now: 630-948-0501
+            Reach Us Now: 773-572-0501
           </a>
         </motion.div>
       </div>

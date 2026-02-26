@@ -28,11 +28,11 @@ export const FleetPowerOnlySection = () => {
           </p>
 
           <a
-            href="tel:7735725012"
+            href="tel:7735720501"
             className="inline-flex items-center gap-2 text-primary font-semibold text-lg hover:underline"
           >
             <Phone className="w-5 h-5" />
-            773-572-5012
+            773-572-0501
           </a>
         </motion.div>
       </div>
