@@ -38,6 +38,12 @@ export const MobileAppSection = () => {
                   Apply
                 </a>
               </Button>
+              <Button variant="heroOutline" size="default" asChild>
+                <a href="tel:+16309480501" className="flex items-center gap-2">
+                  <Phone className="w-4 h-4" />
+                  630-948-0501
+                </a>
+              </Button>
             </div>
 
           </motion.div>
