@@ -66,7 +66,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Logo & Contact */}
           <div className="lg:col-span-2 text-center md:text-left">
-            <Link to="/" className="inline-block mb-6">
+            <Link to="/" className="inline-block mb-6 logo-shine">
               <img src={logo} alt="XXII Century" className="h-12 w-auto mx-auto md:mx-0" />
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm mx-auto md:mx-0">
