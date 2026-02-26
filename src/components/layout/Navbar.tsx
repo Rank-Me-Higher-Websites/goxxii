@@ -383,7 +383,7 @@ export const Navbar = () => {
                   transition={{ delay: 0.2 }}
                   className="py-2"
                 >
-                  <span className="text-2xl font-display font-bold uppercase tracking-wider text-foreground/80">
+                  <span className="text-lg font-display font-bold uppercase tracking-wider text-foreground/80">
                     Drivers
                   </span>
                   <div className="mt-3 ml-1 flex flex-col gap-1 border-l-2 border-primary/30 pl-5">
