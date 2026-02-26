@@ -30,7 +30,7 @@ const positions = [
     description: "Join our team with competitive pay at 63 CPM, modern equipment, and a supportive work environment.",
     benefits: ["63 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
     slug: "company-driver",
-    date: "February 20, 2025",
+    date: "February 15, 2026",
   },
 ];
 

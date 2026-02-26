@@ -72,7 +72,7 @@ const jobDetails: Record<string, {
   },
   "company-driver": {
     title: "Company Driver",
-    date: "February 20, 2025",
+    date: "February 15, 2026",
     intro: "XXII Century is seeking a reliable and experienced Company Driver to transport goods across the United States.",
     responsibilities: [
       "Safely and efficiently transport freight according to assigned routes",
