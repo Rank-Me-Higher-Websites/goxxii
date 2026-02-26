@@ -151,12 +151,12 @@ export const ServicesSection = () => {
           </div>
         </motion.div>
 
-        {/* Service Benefits */}
+        {/* Service Benefits - Desktop */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="mt-16 hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {[
             { value: "$2.50+", label: "Per Mile Consistently" },
@@ -175,6 +175,29 @@ export const ServicesSection = () => {
             </div>
           ))}
         </motion.div>
+
+        {/* Service Benefits - Mobile Carousel */}
+        <div className="mt-16 sm:hidden">
+          <Carousel opts={{ align: "start", loop: true }} className="w-full">
+            <CarouselContent className="-ml-3">
+              {[
+                { value: "$2.50+", label: "Per Mile Consistently" },
+                { value: "98%", label: "Utilization Rate" },
+                { value: "Zero", label: "Detention Loss" },
+                { value: "24/7", label: "Support Available" },
+              ].map((stat) => (
+                <CarouselItem key={stat.label} className="pl-3 basis-[60%]">
+                  <div className="text-center p-6 rounded-xl bg-card border border-border/50">
+                    <p className="text-3xl font-display font-bold text-primary mb-2">
+                      {stat.value}
+                    </p>
+                    <p className="text-sm text-muted-foreground">{stat.label}</p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
       </div>
     </section>
   );
