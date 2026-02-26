@@ -60,8 +60,8 @@ export const FreightServicesSection = () => {
       const gap = Math.max(0, leftHeight - rightHeight);
       setMaxShift(gap);
 
-      // Bottom content shifts only enough to fill the gap, never beyond
-      setMaxBottomShift(gap);
+      // Keep bottom motion readable and capped so it never overshoots sections
+      setMaxBottomShift(Math.min(gap * 0.35, 120));
     };
 
     compute();
