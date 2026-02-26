@@ -30,7 +30,7 @@ export const TechPoweredSection = () => {
           </p>
           <a
             href="tel:+17735725012"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-[hsl(142,70%,55%)] text-background shadow-[0_0_16px_hsl(142,70%,55%,0.35)] hover:shadow-[0_0_24px_hsl(142,70%,55%,0.5)] hover:bg-[hsl(142,70%,60%)] transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-[hsl(142,70%,55%)] text-white shadow-[0_0_16px_hsl(142,70%,55%,0.35)] hover:shadow-[0_0_24px_hsl(142,70%,55%,0.5)] hover:bg-[hsl(142,70%,60%)] transition-all duration-300"
           >
             <Phone className="w-5 h-5" />
             Call Today
