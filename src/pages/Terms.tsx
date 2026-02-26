@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
@@ -6,6 +7,12 @@ import { Mail } from "lucide-react";
 const Terms = () => {
   return (
     <Layout>
+      <SEOHead
+        title={SEO_CONTENT.terms.title}
+        description={SEO_CONTENT.terms.description}
+        keywords={SEO_CONTENT.terms.keywords}
+        canonicalPath="/terms"
+      />
       <article className="pt-32 pb-20">
         <div className="container-custom max-w-4xl">
           <motion.div
