@@ -37,14 +37,14 @@ export const FleetRequirementsSection = () => {
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
             {requirements.map((req, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.1 }}
-                className="flex items-center gap-3 glass p-4 rounded-xl"
+                className="flex items-center gap-3 glass p-4 rounded-xl w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.75rem)]"
               >
                 <CheckCircle className="w-6 h-6 text-primary shrink-0" />
                 <span className="text-foreground font-medium">{req}</span>
