@@ -264,7 +264,7 @@ const FreightServices = () => {
             transition={{ delay: 0.4 }}
             className="grid lg:grid-cols-2 gap-12 items-center"
           >
-            <div className="order-2 lg:order-1 space-y-4">
+            <div className="order-2 lg:order-1 space-y-4 text-center lg:text-left">
               <p className="text-muted-foreground leading-relaxed">
                 Experience fast, reliable, and secure <strong className="text-foreground">freight shipping services</strong> with XXII Century Inc. We provide nationwide coverage, competitive rates, and tailored solutions to fit your business needs. From LTL to full truckload and expedited freight, our expert team ensures your shipments arrive on time, every time.
               </p>
@@ -291,6 +291,7 @@ const FreightServices = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="text-center lg:text-left"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
                 Why Partner With a <span className="text-primary">Freight Broker?</span>
@@ -306,7 +307,7 @@ const FreightServices = () => {
                   Interested in becoming a carrier partner? Our <Link to="/fleet-program" className="text-primary hover:underline">fleet partnership program</Link> offers steady loads and dedicated support. We're also hiring <Link to="/careers" className="text-primary hover:underline">professional truck drivers</Link> to join our expanding network.
                 </p>
               </div>
-              <Button variant="hero" size="lg" className="mt-8" asChild>
+              <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
                 <a href="/contact" className="flex items-center gap-2">
                   <ChevronRight className="w-5 h-5" />
                   Contact Us
@@ -350,6 +351,7 @@ const FreightServices = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="text-center lg:text-left"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
                 Freight <span className="text-primary">Shippers</span>
@@ -365,7 +367,7 @@ const FreightServices = () => {
                   Want to join our carrier network? Explore <Link to="/owner-operators" className="text-primary hover:underline">independent owner operator opportunities</Link> with premium freight access, or <Link to="/contact" className="text-primary hover:underline">contact our logistics team</Link> to discuss partnership options. Learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our commitment to excellence.
                 </p>
               </div>
-              <Button variant="hero" size="lg" className="mt-8" asChild>
+              <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
                 <a href="mailto:hr@goxxii.com" className="flex items-center gap-2">
                   <ChevronRight className="w-5 h-5" />
                   Work With Us
