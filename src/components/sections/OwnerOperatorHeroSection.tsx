@@ -241,13 +241,14 @@ export const OwnerOperatorHeroSection = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="text-center lg:text-left"
             >
               <h3 className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Choose Better - Apply Now:</h3>
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
                 What You Get Access To:
               </h2>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 text-left">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -258,18 +259,20 @@ export const OwnerOperatorHeroSection = () => {
                 ))}
               </ul>
 
-              <Button variant="hero" size="lg" asChild>
-                <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <ChevronRight className="w-5 h-5" />
-                  Apply Now
-                </a>
-              </Button>
-              <p className="text-sm text-destructive mt-3">⚠️ Limited spaces available - apply now</p>
+              <div className="flex flex-col items-center lg:items-start">
+                <Button variant="hero" size="lg" asChild>
+                  <a
+                    href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                    Apply Now
+                  </a>
+                </Button>
+                <p className="text-sm text-destructive mt-3">⚠️ Limited spaces available - apply now</p>
+              </div>
             </motion.div>
           </div>
         </div>
