@@ -7,8 +7,16 @@ export const ReviewsWidgetSection = () => {
   const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // TrustIndex widget script can be added here
-    // Example: paste your TrustIndex embed script and it will render inside the widget container
+    if (!widgetRef.current) return;
+    const script = document.createElement("script");
+    script.src = "https://cdn.trustindex.io/loader.js?e683cf1656ee8452a4467ec649c";
+    script.defer = true;
+    script.async = true;
+    widgetRef.current.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
   }, []);
 
   return (
