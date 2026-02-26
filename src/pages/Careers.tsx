@@ -277,7 +277,8 @@ const Careers = () => {
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Desktop grid */}
+          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyJoin.map((item, index) => (
               <motion.div
                 key={item.title}
@@ -299,6 +300,29 @@ const Careers = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* Mobile carousel */}
+          <div className="sm:hidden">
+            <Carousel opts={{ align: "start", loop: true }} className="w-full">
+              <CarouselContent className="-ml-3">
+                {whyJoin.map((item) => (
+                  <CarouselItem key={item.title} className="pl-3 basis-[85%]">
+                    <div className="p-6 rounded-xl border border-border bg-background text-center h-full">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <item.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <h3 className="font-display text-lg font-bold text-foreground mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        {item.description}
+                      </p>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+        </div>
         </div>
       </section>
 
