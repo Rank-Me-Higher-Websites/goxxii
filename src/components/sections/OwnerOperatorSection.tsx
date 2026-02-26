@@ -53,11 +53,11 @@ export const OwnerOperatorSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.1 + index * 0.08 }}
-                  whileHover={{ backgroundColor: "hsl(221 78% 52% / 0.08)" }}
-                  className="glass-strong rounded-xl p-3 flex items-center gap-3 cursor-pointer border-primary/30 hover:border-primary/60 transition-colors duration-300"
+                  whileHover={{ backgroundColor: "hsl(142 70% 45% / 0.08)" }}
+                  className="glass-strong rounded-xl p-3 flex items-center gap-3 cursor-pointer border-emerald-500/30 hover:border-emerald-500/60 transition-colors duration-300"
                 >
-                  <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-primary/20">
-                    <benefit.icon className="w-4 h-4 text-primary" />
+                  <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-emerald-500/20">
+                    <benefit.icon className="w-4 h-4 text-emerald-400" />
                   </div>
                   <span className="text-sm font-medium text-foreground">
                     {benefit.text}
