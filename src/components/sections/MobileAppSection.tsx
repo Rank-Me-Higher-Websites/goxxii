@@ -16,7 +16,7 @@ export const MobileAppSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            className="lg:col-span-3"
+            className="lg:col-span-3 text-center lg:text-left"
           >
             <span className="label-tag mb-4">Driver App</span>
             <h2 className="heading-section text-foreground mb-4">
