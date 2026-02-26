@@ -126,7 +126,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="flex flex-row gap-3 items-center justify-center lg:justify-start"
             >
-              <Button variant="hero" size="lg" className="group pulse-glow" asChild>
+              <Button variant="hero" size="default" className="group pulse-glow sm:h-14 sm:px-10 sm:text-base" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
                   target="_blank"
@@ -137,7 +137,7 @@ export const HeroSection = () => {
                   <span className="hidden sm:inline whitespace-nowrap">Apply Now — Only 3 Spots Left</span>
                 </a>
               </Button>
-              <Button variant="heroOutline" size="lg" asChild>
+              <Button variant="heroOutline" size="default" className="sm:h-14 sm:px-10 sm:text-base" asChild>
                 <a href="tel:+17735725012">
                   <Phone className="w-4 h-4 flex-shrink-0" />
                   <span className="whitespace-nowrap">773-572-5012</span>
