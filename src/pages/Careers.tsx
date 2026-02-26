@@ -194,6 +194,9 @@ const Careers = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
+              Our Values & Culture
+            </h2>
             <p className="text-center text-muted-foreground leading-relaxed mb-4">
               We value <strong className="text-foreground">hard work</strong>, <strong className="text-foreground">professionalism</strong>, and <strong className="text-foreground">safety</strong>, 
               and we're committed to offering <strong className="text-primary">competitive pay</strong> and <strong className="text-primary">flexible schedules</strong> to fit your needs. 
