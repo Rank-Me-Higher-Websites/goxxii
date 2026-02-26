@@ -26,7 +26,7 @@ export const MobileAppSection = () => {
               24/7 dispatch, real-time loads, digital paperwork, accident reporting, road assistance — all in one app. Efficiency on every mile.
             </p>
 
-            <div className="flex flex-wrap gap-3 mb-6">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
               <Button variant="hero" size="default" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"

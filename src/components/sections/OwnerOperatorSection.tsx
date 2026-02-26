@@ -82,7 +82,7 @@ export const OwnerOperatorSection = () => {
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3">
               <Button variant="hero" size="default" className="group" asChild>
                 <a
                   href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
