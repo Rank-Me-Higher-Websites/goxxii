@@ -322,8 +322,7 @@ const Careers = () => {
                 ))}
               </CarouselContent>
             </Carousel>
-          </div>
-          </div>
+        </div>
         </div>
       </section>
 
