@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/accordion";
 import { statePages } from "@/data/statePages";
 import driverBlue from "@/assets/driver-truck-blue.jpg";
+import heroBackground from "@/assets/heroes/truck-green-closeup.jpg";
 
 const stats = [
   { value: "2009", label: "Established in" },
