@@ -9,10 +9,10 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Freight Services", href: "/freight-shipping-services" },
-  { label: "Careers", href: "/careers" },
 ];
 
 const postDriverLinks = [
+  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
   { label: "News", href: "/blog" },
 ];
