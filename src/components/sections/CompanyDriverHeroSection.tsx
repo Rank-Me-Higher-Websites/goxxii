@@ -5,6 +5,7 @@ import { ChevronRight, Phone, Home, Wrench, Award, MapPin, DollarSign, Gift, Clo
 import { Button } from "@/components/ui/button";
 import companyTruck from "@/assets/company-truck.png";
 import companyDriver from "@/assets/company-driver.jpg";
+import heroBackground from "@/assets/heroes/truck-white-dock.png";
 
 const features = [
   { icon: Award, title: "Outstanding", subtitle: "PAY-SCALE" },
