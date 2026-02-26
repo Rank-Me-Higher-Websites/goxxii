@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/SEOHead";
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import { ArrowRight, ArrowLeft, CheckCircle, Phone, Mail, Calendar, Briefcase, MapPin, Clock } from "lucide-react";
