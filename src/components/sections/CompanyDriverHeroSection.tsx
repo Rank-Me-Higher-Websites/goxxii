@@ -132,6 +132,7 @@ export const CompanyDriverHeroSection = () => {
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-center lg:text-left"
             >
               <h3 className="font-display text-2xl font-bold mb-6">
                 Our Commitment to CDL Drivers Goes Beyond the Road
