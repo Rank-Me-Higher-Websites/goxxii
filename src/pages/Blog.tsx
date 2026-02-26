@@ -18,6 +18,8 @@ import chicagoTips from "@/assets/blog/chicago-tips.jpg";
 import localJobsHome from "@/assets/blog/local-jobs-home.png";
 import careerChicago from "@/assets/blog/career-chicago.jpg";
 import bestTruckingCompany from "@/assets/blog/best-trucking-company.jpg";
+import chicagoJobs from "@/assets/blog/chicago-jobs.jpg";
+import succeedWithoutBurnout from "@/assets/blog/succeed-without-burnout.jpg";
 
 const blogPosts = [
   {
@@ -100,6 +102,33 @@ const blogPosts = [
     readTime: "10 min read",
     slug: "best-owner-operator-trucking-company",
     category: "Owner Operators",
+  },
+  {
+    image: chicagoJobs,
+    title: "How to Land the Best Owner Operator Jobs in Chicago",
+    excerpt: "Chicago is the beating heart of America's supply chain. Learn how to compare pay, identify the best routes, and spot a reliable trucking company.",
+    date: "October 6, 2025",
+    readTime: "8 min read",
+    slug: "owner-operator-jobs-chicago",
+    category: "Owner Operators",
+  },
+  {
+    image: succeedWithoutBurnout,
+    title: "How to Succeed in Owner Operator Position Without Burning Out",
+    excerpt: "The freedom to be your own boss is great, but the challenges can be overwhelming. Learn how to thrive without sacrificing your health or happiness.",
+    date: "September 18, 2025",
+    readTime: "10 min read",
+    slug: "succeed-without-burnout",
+    category: "Guides",
+  },
+  {
+    image: careerChicago,
+    title: "How To Build a Truck Driving Career in Chicago",
+    excerpt: "From securing licenses to finding reliable freight, this step-by-step guide covers everything you need to build an owner operator career in Chicago.",
+    date: "September 8, 2025",
+    readTime: "10 min read",
+    slug: "truck-driving-career-chicago",
+    category: "Local Jobs",
   },
 ];
 
