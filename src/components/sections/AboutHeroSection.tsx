@@ -11,7 +11,7 @@ export const AboutHeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src={trucksFleet}
+          src={heroBackground}
           alt="XXII Century truck fleet"
           className="w-full h-full object-cover"
         />
