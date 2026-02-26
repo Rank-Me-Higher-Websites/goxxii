@@ -61,7 +61,7 @@ export const MobileAppSection = () => {
                 <img
                   src={mobileApp}
                   alt="XXII Century Mobile App"
-                  className="w-full h-auto drop-shadow-[0_20px_60px_rgba(0,184,212,0.25)] drop-shadow-[0_0_20px_rgba(0,184,212,0.1)]"
+                  className="w-full h-auto rounded-[2rem] drop-shadow-[0_20px_60px_rgba(0,184,212,0.25)] drop-shadow-[0_0_20px_rgba(0,184,212,0.1)]"
                 />
                 {/* Top shine */}
                 <div className="absolute top-0 left-1/4 right-1/4 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
