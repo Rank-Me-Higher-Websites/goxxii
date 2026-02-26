@@ -36,7 +36,7 @@ export const MissionValuesSection = () => {
       {/* Decorative background */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none" />
       
-      <div className="container-custom relative z-10 overflow-hidden">
+      <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Mission */}
           <motion.div
