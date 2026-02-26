@@ -202,6 +202,49 @@ const AdvantagesCarousel = ({ advantages }: { advantages: { icon: string; title:
   );
 };
 
+const GalleryCarousel = ({ images }: { images: string[] }) => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev >= images.length - 1 ? 0 : prev + 1));
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [images.length]);
+
+  return (
+    <div className="relative">
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {images.map((img, index) => (
+            <div key={index} className="w-full flex-shrink-0 px-4">
+              <div className="w-64 h-64 mx-auto rounded-xl overflow-hidden">
+                <img
+                  src={img}
+                  alt={`XXII Century Family ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex justify-center gap-2 mt-4">
+        {images.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-muted-foreground/30"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export const OwnerOperatorHeroSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -418,7 +461,13 @@ export const OwnerOperatorHeroSection = () => {
             Welcome to the <span className="text-primary">XXII Family</span>
           </motion.h2>
 
-          <div className="flex gap-4 justify-center py-6">
+          {/* Mobile carousel */}
+          <div className="block md:hidden relative py-6">
+            <GalleryCarousel images={galleryImages} />
+          </div>
+
+          {/* Desktop grid */}
+          <div className="hidden md:flex gap-4 justify-center py-6">
             {galleryImages.map((img, index) => (
               <motion.div
                 key={index}
