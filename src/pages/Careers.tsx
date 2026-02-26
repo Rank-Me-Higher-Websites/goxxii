@@ -188,36 +188,50 @@ const Careers = () => {
       {/* Company Values */}
       <section className="py-12 bg-card border-y border-border">
         <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
-              Our Values & Culture
-            </h2>
-            <p className="text-center text-muted-foreground leading-relaxed mb-4">
-              We value <strong className="text-foreground">hard work</strong>, <strong className="text-foreground">professionalism</strong>, and <strong className="text-foreground">safety</strong>, 
-              and we're committed to offering <strong className="text-primary">competitive pay</strong> and <strong className="text-primary">flexible schedules</strong> to fit your needs. 
-              At XXII Century Inc., you'll be part of a dynamic team that's shaping the future of the transportation industry.
-            </p>
-            <p className="text-center text-muted-foreground leading-relaxed">
-              Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> offers 90% revenue share for independent truckers, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> provide stable employment with full benefits. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
-            </p>
-            <div className="text-center mt-6">
-              <Button variant="heroOutline" size="lg" asChild>
-                <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  Apply Now <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
-            </div>
-          </motion.div>
+          <div className="flex flex-col lg:flex-row items-center gap-10">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="max-w-4xl lg:max-w-none lg:flex-1"
+            >
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6 text-center lg:text-left">
+                Our Values & Culture
+              </h2>
+              <p className="text-center lg:text-left text-muted-foreground leading-relaxed mb-4">
+                We value <strong className="text-foreground">hard work</strong>, <strong className="text-foreground">professionalism</strong>, and <strong className="text-foreground">safety</strong>, 
+                and we're committed to offering <strong className="text-primary">competitive pay</strong> and <strong className="text-primary">flexible schedules</strong> to fit your needs. 
+                At XXII Century Inc., you'll be part of a dynamic team that's shaping the future of the transportation industry.
+              </p>
+              <p className="text-center lg:text-left text-muted-foreground leading-relaxed">
+                Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> offers 90% revenue share for independent truckers, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> provide stable employment with full benefits. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
+              </p>
+              <div className="text-center lg:text-left mt-6">
+                <Button variant="heroOutline" size="lg" asChild>
+                  <a
+                    href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    Apply Now <ArrowRight className="w-5 h-5" />
+                  </a>
+                </Button>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="hidden lg:block lg:w-[45%] flex-shrink-0"
+            >
+              <img
+                src={truckMountainsImg}
+                alt="XXII Century truck driving through snowy mountains"
+                className="rounded-2xl object-cover w-full h-[340px] border border-border"
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 
