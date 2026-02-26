@@ -86,7 +86,7 @@ export const CompanyDriverSection = () => {
             </div>
 
             {/* Additional perks */}
-            <div className="flex flex-wrap gap-2 mb-5">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-5">
               {["Health Insurance", "401k Match", "Paid Time Off", "Home Weekly"].map((perk) => (
                 <span key={perk} className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-muted/50 px-2.5 py-1 rounded-full">
                   <Check className="w-3 h-3 text-primary" />
