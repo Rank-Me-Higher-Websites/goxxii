@@ -50,9 +50,9 @@ export const FleetHeroSection = () => {
               </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:7735720501" className="flex items-center gap-2">
+              <a href="tel:7735725012" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                Call 773-572-0501
+                Call 773-572-5012
               </a>
             </Button>
           </div>

@@ -11,8 +11,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["224-240-6441", "630-948-0501"],
-    action: "tel:+12242406441",
+    details: ["773-572-5012"],
+    action: "tel:+17735725012",
     actionLabel: "Call Now",
   },
   {
@@ -96,7 +96,7 @@ const Contact = () => (
               </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:+12242406441" className="flex items-center gap-2">
+              <a href="tel:+17735725012" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 Call Us
               </a>
@@ -270,9 +270,9 @@ const Contact = () => (
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+12242406441" className="flex items-center gap-2">
+                <a href="tel:+17735725012" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  Call: 224-240-6441
+                  Call: 773-572-5012
                 </a>
               </Button>
             </div>

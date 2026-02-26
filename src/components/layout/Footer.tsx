@@ -51,9 +51,9 @@ export const Footer = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+12242406441" className="flex items-center gap-2">
+                <a href="tel:+17735725012" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  Call: 224-240-6441
+                  Call: 773-572-5012
                 </a>
               </Button>
             </div>
@@ -74,11 +74,11 @@ export const Footer = () => {
             </p>
             <div className="space-y-3">
               <a
-                href="tel:+12242406441"
+                href="tel:+17735725012"
                 className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                224-240-6441
+                773-572-5012
               </a>
               <a
                 href="mailto:hr@goxxii.com"
