@@ -1,11 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
 
-  useEffect(() => {
-    // If there's a hash (e.g., #apply-form), scroll to that element
+  // Use useLayoutEffect for instant scroll before paint
+  useLayoutEffect(() => {
     if (hash) {
       const element = document.getElementById(hash.replace("#", ""));
       if (element) {
@@ -15,9 +15,16 @@ export const ScrollToTop = () => {
         return;
       }
     }
-    // Otherwise scroll to top
-    window.scrollTo(0, 0);
+    // Instant scroll to top on route change
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, [pathname, hash]);
+
+  // Disable browser scroll restoration
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }, []);
 
   return null;
 };
