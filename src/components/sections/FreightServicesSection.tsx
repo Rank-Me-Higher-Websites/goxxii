@@ -67,12 +67,11 @@ export const FreightServicesSection = () => {
 
   const { scrollYProgress } = useScroll({
     target: introRef,
-    // Start when the grid hits the top; finish when the grid ends.
-    offset: ["start start", "end start"],
+    offset: ["start end", "end start"],
   });
 
   // Move the right-side content down while scrolling through this grid.
-  const partnersY = useTransform(scrollYProgress, [0, 1], [0, maxShift]);
+  const partnersY = useTransform(scrollYProgress, [0.1, 0.7], [0, maxShift]);
 
   return (
     <section ref={ref} className="section-padding bg-background relative">
