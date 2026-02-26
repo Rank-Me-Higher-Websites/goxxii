@@ -42,7 +42,7 @@ const advantages = [
   { icon: "💵", title: "Friday Payment Guarantee", desc: "Your money hits your account every Friday morning – no delays, no excuses, no stress about when you'll get paid." },
 ];
 
-const galleryImages = [car1, car2, car3, car4, car5];
+const galleryImages = [car1, car2, car3, car5];
 
 const stats = [
   { value: "2009", label: "Established in" },
