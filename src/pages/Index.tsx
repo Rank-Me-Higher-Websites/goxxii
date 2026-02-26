@@ -1,5 +1,16 @@
+import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getLocalBusinessSchema,
+  getWebSiteSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+  getServiceSchema,
+  homeFaqsPlain,
+} from "@/data/schemaData";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { OwnerOperatorSection } from "@/components/sections/OwnerOperatorSection";
 import { AboutSection } from "@/components/sections/AboutSection";
@@ -21,14 +32,26 @@ import { LocationMapSection } from "@/components/sections/LocationMapSection";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
 const Index = () => {
+  const schemas = useMemo(() => [
+    getOrganizationSchema(),
+    getLocalBusinessSchema(),
+    getWebSiteSchema(),
+    getBreadcrumbSchema([{ name: "Home", path: "/" }]),
+    getFAQSchema(homeFaqsPlain),
+    getServiceSchema({ name: "Owner Operator Program", description: "Independent contractor trucking program offering competitive linehaul pay, Fortune 500 freight, fuel discounts, and 24/7 dispatch support.", url: "/owner-operators" }),
+    getServiceSchema({ name: "Company Driver Employment", description: "Full-time CDL-A company driver positions with 63 CPM starting pay, health benefits, 401(k), and modern equipment.", url: "/company-drivers" }),
+    getServiceSchema({ name: "Freight Shipping Services", description: "Nationwide dry van, refrigerated, and flatbed freight shipping for shippers and brokers. Real-time tracking and Fortune 500 carrier network.", url: "/freight-shipping-services" }),
+  ], []);
+
   return (
     <Layout>
-      <SEOHead 
+      <SEOHead
         title={SEO_CONTENT.home.title}
         description={SEO_CONTENT.home.description}
         keywords={SEO_CONTENT.home.keywords}
         canonicalPath="/"
       />
+      <SchemaMarkup schemas={schemas} />
       <HeroSection />
       <div className="mt-8 md:mt-12" />
       <OwnerOperatorSection />
@@ -38,7 +61,6 @@ const Index = () => {
       <TechBenefitsSection />
       <IndustryPartnersSection />
       <LiveTruckSection />
-      
       <CompanyDriverSection />
       <FreightServicesSection />
       <QuickCTABanner />

@@ -1,9 +1,19 @@
+import { useMemo } from "react";
 import { useParams, Navigate, Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { ChevronRight, ChevronLeft, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getLocalBusinessSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+  getJobPostingSchema,
+  getServiceSchema,
+} from "@/data/schemaData";
 import { TechBenefitsSection } from "@/components/sections/TechBenefitsSection";
 import { Button } from "@/components/ui/button";
 import {
@@ -95,6 +105,34 @@ const OwnerOperatorState = () => {
 
   const pageData = state ? statePages[state] : undefined;
 
+  const schemas = useMemo(() => {
+    if (!pageData) return [];
+    return [
+      getOrganizationSchema(),
+      getLocalBusinessSchema(),
+      getBreadcrumbSchema([
+        { name: "Home", path: "/" },
+        { name: "Owner Operators", path: "/owner-operators" },
+        { name: `${pageData.state} Jobs`, path: `/owner-operators/${pageData.slug}` },
+      ]),
+      getFAQSchema(pageData.faqs),
+      getJobPostingSchema({
+        title: `Owner Operator - ${pageData.state}`,
+        description: `Owner operator trucking jobs in ${pageData.state}. Earn competitive linehaul pay with Fortune 500 freight. AI-powered tools, weekly settlements, 24/7 dispatch support.`,
+        employmentType: "CONTRACTOR",
+        minSalary: 150000,
+        maxSalary: 300000,
+        locationState: pageData.slug === "illinois" ? "IL" : pageData.state,
+      }),
+      getServiceSchema({
+        name: `Owner Operator Program - ${pageData.state}`,
+        description: `Independent contractor trucking opportunities in ${pageData.state} with Fortune 500 freight, competitive rates, fuel discounts, and 24/7 dispatch.`,
+        url: `/owner-operators/${pageData.slug}`,
+        areaServed: pageData.state,
+      }),
+    ];
+  }, [pageData]);
+
   if (!pageData) {
     return <Navigate to="/owner-operators" replace />;
   }
@@ -107,6 +145,7 @@ const OwnerOperatorState = () => {
         keywords={pageData.seo.keywords}
         canonicalPath={`/owner-operators/${pageData.slug}`}
       />
+      <SchemaMarkup schemas={schemas} />
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-background">
@@ -168,7 +207,6 @@ const OwnerOperatorState = () => {
         </div>
       </section>
 
-      {/* Tech Benefits */}
       <TechBenefitsSection />
 
       {/* Struggles */}
@@ -254,7 +292,6 @@ const OwnerOperatorState = () => {
       <section ref={faqRef} className="section-padding bg-background">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-            {/* Contact CTA */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={faqInView ? { opacity: 1, y: 0 } : {}}
@@ -291,7 +328,6 @@ const OwnerOperatorState = () => {
               </div>
             </motion.div>
 
-            {/* FAQ Accordion */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={faqInView ? { opacity: 1, y: 0 } : {}}
