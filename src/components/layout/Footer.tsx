@@ -121,14 +121,16 @@ export const Footer = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       {link.label}
                     </a>
                   ) : (
                     <Link
                       to={link.href}
-                      className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
+                    >
+                      {link.label}
                     </Link>
                   )}
                 </li>
