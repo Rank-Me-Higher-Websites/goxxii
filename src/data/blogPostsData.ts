@@ -7,6 +7,8 @@ import dryVanJobs from "@/assets/blog/dry-van-jobs.jpg";
 import localJobsHome from "@/assets/blog/local-jobs-home.png";
 import careerChicago from "@/assets/blog/career-chicago.jpg";
 import bestTruckingCompany from "@/assets/blog/best-trucking-company.jpg";
+import chicagoJobs from "@/assets/blog/chicago-jobs.jpg";
+import succeedWithoutBurnout from "@/assets/blog/succeed-without-burnout.jpg";
 
 export interface BlogPostData {
   image: string;
