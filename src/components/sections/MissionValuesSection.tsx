@@ -101,7 +101,7 @@ export const MissionValuesSection = () => {
             </div>
 
             {/* Mobile carousel */}
-            <div className="sm:hidden">
+            <div className="sm:hidden overflow-hidden">
               <Carousel opts={{ align: "start", loop: true }} className="w-full">
                 <CarouselContent className="-ml-3">
                   {values.map((value) => (
