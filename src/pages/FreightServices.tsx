@@ -351,6 +351,7 @@ const FreightServices = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="text-center lg:text-left"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
                 Freight <span className="text-primary">Shippers</span>
