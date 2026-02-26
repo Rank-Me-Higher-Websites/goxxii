@@ -20,6 +20,9 @@ import careerChicago from "@/assets/blog/career-chicago.jpg";
 import bestTruckingCompany from "@/assets/blog/best-trucking-company.jpg";
 import chicagoJobs from "@/assets/blog/chicago-jobs.jpg";
 import succeedWithoutBurnout from "@/assets/blog/succeed-without-burnout.jpg";
+import becomingOwnerOperator from "@/assets/blog/becoming-owner-operator.jpg";
+import ooJobsChicagoKnow from "@/assets/blog/oo-jobs-chicago-know.jpg";
+import hiringOoChicago from "@/assets/blog/hiring-oo-chicago.jpg";
 
 const blogPosts = [
   {
