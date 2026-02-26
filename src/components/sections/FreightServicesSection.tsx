@@ -29,6 +29,53 @@ const services = [
   },
 ];
 
+const ServiceCarousel = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev >= services.length - 1 ? 0 : prev + 1));
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="block md:hidden">
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {services.map((service) => (
+            <div key={service.title} className="flex-shrink-0 w-full px-2">
+              <div className="glass rounded-2xl p-6 text-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <service.icon className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="font-display font-semibold text-foreground mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex justify-center gap-2 mt-4">
+        {services.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-muted-foreground/30"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export const FreightServicesSection = () => {
   const ref = useRef(null);
   const introRef = useRef<HTMLDivElement | null>(null);
