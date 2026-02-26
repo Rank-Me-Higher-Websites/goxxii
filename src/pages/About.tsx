@@ -36,7 +36,6 @@ const About = () => {
       />
       <SchemaMarkup schemas={schemas} />
       <AboutHeroSection />
-      <div className="mt-8 md:mt-12" />
       <MissionValuesSection />
       <QuickCTABanner variant="compact" />
       <ServicesSection />
