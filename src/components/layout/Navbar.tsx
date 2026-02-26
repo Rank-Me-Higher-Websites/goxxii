@@ -348,7 +348,7 @@ export const Navbar = () => {
               className="relative z-10 flex flex-col min-h-screen pt-20 pb-8 px-8"
             >
               {/* Main Nav Links */}
-              <div className="flex-1 flex flex-col justify-center gap-1">
+              <div className="flex-1 flex flex-col justify-center gap-0">
                 {navLinks.map((link, index) => (
                   <motion.div
                     key={link.href}
