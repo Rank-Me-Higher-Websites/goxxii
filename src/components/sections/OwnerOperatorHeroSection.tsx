@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight, ChevronLeft, DollarSign, TrendingDown, Clock, Route, Star, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import driverBlue from "@/assets/driver-truck-blue.jpg";
+import heroBackground from "@/assets/heroes/truck-green.png";
 import car1 from "@/assets/gallery/car-1.png";
 import car2 from "@/assets/gallery/car-2.png";
 import car3 from "@/assets/gallery/car-3.png";
