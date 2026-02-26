@@ -22,9 +22,28 @@ import becomingOwnerOperator from "@/assets/blog/becoming-owner-operator.jpg";
 import driverShortage from "@/assets/blog/driver-shortage.jpg";
 import truckingTechnology from "@/assets/blog/trucking-technology.jpg";
 import tca2025 from "@/assets/blog/tca-2025.jpg";
+import negotiateLinehaul from "@/assets/blog/negotiate-linehaul.jpg";
 
 const blogPosts = [
   // Page 1
+  {
+    image: negotiateLinehaul,
+    title: "Owner Operator Truck Driver Jobs: How to Negotiate Better Linehaul Rates",
+    excerpt: "If you've ever hung up the phone after booking a load and thought, 'Wait… should I have asked for more?'—you're not alone.",
+    date: "January 19, 2026",
+    readTime: "10 min read",
+    slug: "owner-operator-truck-driver-jobs-negotiate",
+    category: "Owner Operators",
+  },
+  {
+    image: localOwnerOperator,
+    title: "Local Owner Operator Jobs Near Me: What to Ask Before You Sign a Contract",
+    excerpt: "Scrolling through listings for local owner operator jobs near me can feel exciting at first. But the real deal isn't in the listing, it's in the contract.",
+    date: "January 5, 2026",
+    readTime: "12 min read",
+    slug: "local-owner-operator-jobs",
+    category: "Local Jobs",
+  },
   {
     image: dedicatedOwnerOperator,
     title: "Dedicated Owner Operator Jobs: Pros and Cons",
@@ -33,15 +52,6 @@ const blogPosts = [
     readTime: "8 min read",
     slug: "dedicated-owner-operator-jobs",
     category: "Owner Operators",
-  },
-  {
-    image: localOwnerOperator,
-    title: "Local Owner Operator Jobs Near Me: Chicago Tips",
-    excerpt: "If you've ever typed 'local owner operator jobs near me' into a search bar and found yourself overwhelmed by options—especially in Chicago.",
-    date: "December 15, 2025",
-    readTime: "10 min read",
-    slug: "local-owner-operator-jobs",
-    category: "Local Jobs",
   },
   {
     image: ownerOperatorGuide,
