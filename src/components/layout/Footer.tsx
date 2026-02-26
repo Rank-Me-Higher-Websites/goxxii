@@ -87,8 +87,8 @@ export const Footer = () => {
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 hr@goxxii.com
               </a>
-              <div className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
+              <div className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground">
+                <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-left">7501 Lemont Rd Ste 200, Woodridge, IL 60517, United States</span>
               </div>
             </div>
