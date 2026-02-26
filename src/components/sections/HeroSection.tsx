@@ -165,7 +165,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.35 }}
-              className="mt-6 max-w-sm"
+              className="mt-6 max-w-sm mx-auto lg:mx-0"
             >
               <div className="glass-strong rounded-xl p-4 border border-border/50">
                 <div className="flex items-center gap-1 mb-2">
