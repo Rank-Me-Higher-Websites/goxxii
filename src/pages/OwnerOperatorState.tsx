@@ -37,7 +37,18 @@ const INTELLIAPP_URL = "https://intelliapp.driverapponline.com/c/goxxii?r=Eve";
 
 const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: string; desc: string }[] }) => {
   const [current, setCurrent] = useState(0);
-  const itemsPerView = 3;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const [itemsPerView, setItemsPerView] = useState(isMobile ? 1 : 3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setItemsPerView(window.innerWidth < 768 ? 1 : 3);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const maxIndex = Math.max(0, struggles.length - itemsPerView);
 
   useEffect(() => {
@@ -47,18 +58,35 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
     return () => clearInterval(timer);
   }, [maxIndex]);
 
+  // Reset current if it exceeds maxIndex after resize
+  useEffect(() => {
+    if (current > maxIndex) setCurrent(0);
+  }, [maxIndex, current]);
+
+  const gap = itemsPerView === 1 ? 0 : 24;
+  const slideWidth = itemsPerView === 1 ? 100 : (100 - ((itemsPerView - 1) * gap * 100) / (typeof window !== "undefined" ? window.innerWidth : 1000)) / itemsPerView;
+
   return (
-    <div className="relative">
+    <div className="relative px-6 md:px-0">
       <div className="overflow-hidden">
         <div
-          className="flex transition-transform duration-500 ease-in-out gap-6"
-          style={{ transform: `translateX(-${current * (100 / itemsPerView + 2)}%)` }}
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{
+            gap: `${gap}px`,
+            transform: itemsPerView === 1
+              ? `translateX(-${current * 100}%)`
+              : `translateX(-${current * (100 / itemsPerView + 2)}%)`,
+          }}
         >
           {struggles.map((item, index) => (
             <div
               key={index}
               className="glass p-6 rounded-xl flex-shrink-0"
-              style={{ width: `calc((100% - ${(itemsPerView - 1) * 24}px) / ${itemsPerView})` }}
+              style={{
+                width: itemsPerView === 1
+                  ? "100%"
+                  : `calc((100% - ${(itemsPerView - 1) * 24}px) / ${itemsPerView})`,
+              }}
             >
               <div className="text-3xl mb-3">{item.emoji}</div>
               <h3 className="font-bold text-lg mb-2">{item.title}</h3>
