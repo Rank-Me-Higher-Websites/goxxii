@@ -41,22 +41,6 @@ export const AboutSection = () => {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.2 }}
-            className="flex flex-wrap gap-3 justify-center"
-          >
-            <Button variant="heroOutline" size="default" asChild>
-              <Link to="/about">Learn More</Link>
-            </Button>
-            <Button variant="accent" size="default" asChild>
-              <a href="tel:+12242406441" className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                Call Now
-              </a>
-            </Button>
-          </motion.div>
         </div>
       </div>
     </section>
