@@ -404,7 +404,7 @@ export const Navbar = () => {
                                 : "text-foreground/60 hover:text-foreground hover:translate-x-1"
                             }`}
                           >
-                            <div className={`w-9 h-9 rounded-xl flex items-center justify-center transition-colors ${
+                            <div className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${
                               location.pathname === link.href
                                 ? "bg-primary/20 text-primary"
                                 : "bg-white/[0.06] text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary"
