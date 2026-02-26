@@ -112,8 +112,8 @@ export const Footer = () => {
           </div>
 
           <div className="text-center md:text-left">
-            <h4 className="font-display font-bold text-lg mb-4 text-foreground">Drivers</h4>
-            <ul className="space-y-3">
+            <h4 className="font-display font-bold text-sm sm:text-lg mb-3 text-foreground">Drivers</h4>
+            <ul className="space-y-2">
               {footerLinks.drivers.map((link) => (
                 <li key={link.href}>
                   {link.href.startsWith("http") ? (
