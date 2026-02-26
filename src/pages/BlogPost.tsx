@@ -203,6 +203,12 @@ const BlogPost = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title={`${post.title} | XXII Century Trucking Blog`}
+        description={post.excerpt}
+        keywords={`${post.category}, trucking blog, XXII Century, CDL driver tips, owner operator guide`}
+        canonicalPath={`/blog/${slug}`}
+      />
       <SchemaMarkup schemas={schemas} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-16">

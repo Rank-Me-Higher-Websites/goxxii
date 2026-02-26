@@ -125,6 +125,12 @@ const CareerDetail = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title={`${job.title} Jobs | XXII Century Careers`}
+        description={`${job.intro.slice(0, 150)}...`}
+        keywords={`${job.title} jobs, trucking careers, XXII Century hiring, ${job.type}, ${job.location}`}
+        canonicalPath={`/careers/${slug}`}
+      />
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden" aria-label={`${job.title} job listing`}>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-background to-cyan-500/10" />

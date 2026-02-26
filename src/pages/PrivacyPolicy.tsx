@@ -1,10 +1,17 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 
 const PrivacyPolicy = () => {
   return (
     <Layout>
+      <SEOHead
+        title={SEO_CONTENT.privacy.title}
+        description={SEO_CONTENT.privacy.description}
+        keywords={SEO_CONTENT.privacy.keywords}
+        canonicalPath="/privacy-policy"
+      />
       <article className="pt-32 pb-20">
         <div className="container-custom max-w-4xl">
           <motion.div
