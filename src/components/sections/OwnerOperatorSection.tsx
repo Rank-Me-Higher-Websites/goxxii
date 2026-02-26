@@ -73,11 +73,16 @@ export const OwnerOperatorSection = () => {
 
             {/* Perks list */}
             <div className="flex flex-wrap gap-2 mb-5">
-              {perks.map((perk) => (
-                <span key={perk} className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-muted/50 px-2.5 py-1 rounded-full">
+              {perks.map((perk, index) => (
+                <motion.span 
+                  key={perk} 
+                  whileHover={{ scale: 1.08, y: -1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-muted/50 px-2.5 py-1 rounded-full cursor-pointer hover:bg-primary/10 hover:text-foreground transition-colors duration-200"
+                >
                   <Check className="w-3 h-3 text-accent" />
                   {perk}
-                </span>
+                </motion.span>
               ))}
             </div>
 
