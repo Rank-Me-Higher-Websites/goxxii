@@ -16,7 +16,7 @@ const jobDetails: Record<string, {
 }> = {
   "otr-dispatcher": {
     title: "OTR Dispatcher",
-    date: "March 20, 2025",
+    date: "February 26, 2026",
     intro: "We are expanding and inviting you to join our dispatch team! We want to hear from you if you have experience in a similar position!",
     responsibilities: [
       "Planning and managing truck routes",
@@ -40,7 +40,7 @@ const jobDetails: Record<string, {
   },
   "owner-operator-nationwide": {
     title: "Owner-Operator, Nationwide",
-    date: "March 15, 2025",
+    date: "February 20, 2026",
     intro: "XXII Century is looking for motivated and experienced Owner-Operators to join our growing network. We provide consistent loads, transparent settlements, and dedicated support to help you maximize your earnings. Drive independently while benefiting from a strong partnership with a reliable company that values your professionalism and hard work.",
     responsibilities: [
       "Transport freight safely and efficiently across assigned routes",
@@ -72,7 +72,7 @@ const jobDetails: Record<string, {
   },
   "company-driver": {
     title: "Company Driver",
-    date: "February 20, 2025",
+    date: "February 15, 2026",
     intro: "XXII Century is seeking a reliable and experienced Company Driver to transport goods across the United States.",
     responsibilities: [
       "Safely and efficiently transport freight according to assigned routes",

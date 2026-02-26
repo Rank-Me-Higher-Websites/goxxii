@@ -14,7 +14,7 @@ const positions = [
     description: "Coordinate freight movements, communicate with drivers, and optimize routes for maximum efficiency.",
     benefits: ["Competitive Salary", "Remote Options", "Growth Opportunities", "Team Environment"],
     slug: "otr-dispatcher",
-    date: "March 20, 2025",
+    date: "February 26, 2026",
   },
   {
     icon: Truck,
@@ -22,7 +22,7 @@ const positions = [
     description: "Maximize your earnings with access to premium freight, AI-powered tools, and an 88% revenue share.",
     benefits: ["88% Revenue Share", "Fuel Discounts", "Safety Bonuses", "Dedicated Lanes"],
     slug: "owner-operator-nationwide",
-    date: "March 15, 2025",
+    date: "February 20, 2026",
   },
   {
     icon: Users,
@@ -30,7 +30,7 @@ const positions = [
     description: "Join our team with competitive pay at 63 CPM, modern equipment, and a supportive work environment.",
     benefits: ["63 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
     slug: "company-driver",
-    date: "February 20, 2025",
+    date: "February 15, 2026",
   },
 ];
 
