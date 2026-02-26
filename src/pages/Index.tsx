@@ -34,8 +34,8 @@ const Index = () => {
       <OwnerOperatorSection />
       <AboutSection />
       <QuickCTABanner variant="compact" />
-      <TechBenefitsSection />
       <TrustedBrandsSection />
+      <TechBenefitsSection />
       <IndustryPartnersSection />
       <LiveTruckSection />
       
