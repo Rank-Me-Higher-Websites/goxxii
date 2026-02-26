@@ -386,7 +386,7 @@ export const Navbar = () => {
                   <span className="text-lg font-display font-bold uppercase tracking-wider text-foreground/80">
                     Drivers
                   </span>
-                  <div className="mt-3 ml-1 flex flex-col gap-1 border-l-2 border-primary/30 pl-5">
+                  <div className="mt-2 ml-1 flex flex-col gap-0 border-l-2 border-primary/30 pl-4">
                     {driverLinks.map((link, i) => {
                       const Icon = link.icon;
                       return (
