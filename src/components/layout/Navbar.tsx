@@ -432,7 +432,7 @@ export const Navbar = () => {
                   >
                     <Link
                       to={link.href}
-                      className={`block py-3 text-2xl font-display font-bold uppercase tracking-wider transition-all duration-300 ${
+                      className={`block py-2 text-lg font-display font-bold uppercase tracking-wider transition-all duration-300 ${
                         location.pathname === link.href
                           ? "text-primary"
                           : "text-foreground/80 hover:text-foreground hover:translate-x-2"
