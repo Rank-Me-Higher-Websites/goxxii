@@ -6,8 +6,6 @@ import { Button } from "@/components/ui/button";
 import car1 from "@/assets/gallery/car-1.png";
 import car2 from "@/assets/gallery/car-2.png";
 import car3 from "@/assets/gallery/car-3.png";
-import car4 from "@/assets/gallery/car-4.png";
-import car5 from "@/assets/gallery/car-5.png";
 
 const benefits = [
   { icon: Truck, text: "Access to Premium Freight" },
@@ -20,7 +18,7 @@ const benefits = [
   { icon: Gift, text: "Unlimited Referral Bonus" },
 ];
 
-const galleryImages = [car1, car2, car3, car4, car5];
+const galleryImages = [car1, car2, car3];
 
 export const FleetOwnerOperatorSection = () => {
   const ref = useRef(null);
