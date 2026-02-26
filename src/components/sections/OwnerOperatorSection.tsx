@@ -8,9 +8,9 @@ import truck2 from "@/assets/truck-2.png";
 
 const benefits = [
   { icon: DollarSign, text: "90% Linehaul Pay", highlight: true },
-  { icon: Fuel, text: "AI Fuel Savings" },
-  { icon: Clock, text: "Weekly Settlements" },
-  { icon: Headphones, text: "24/7 Live Support" },
+  { icon: Fuel, text: "AI Fuel Savings", highlight: true },
+  { icon: Clock, text: "Weekly Settlements", highlight: true },
+  { icon: Headphones, text: "24/7 Live Support", highlight: true },
 ];
 
 const perks = [
