@@ -139,8 +139,8 @@ export const Footer = () => {
           </div>
 
           <div className="text-center md:text-left">
-            <h4 className="font-display font-bold text-lg mb-4 text-foreground">Resources</h4>
-            <ul className="space-y-3">
+            <h4 className="font-display font-bold text-sm sm:text-lg mb-3 text-foreground">Resources</h4>
+            <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
                   {link.href.startsWith("http") ? (
@@ -148,14 +148,14 @@ export const Footer = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       {link.label}
                     </a>
                   ) : (
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       {link.label}
                     </Link>
