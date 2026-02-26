@@ -1,4 +1,11 @@
+import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getBreadcrumbSchema,
+  getBlogPostingSchema,
+} from "@/data/schemaData";
 import { motion } from "framer-motion";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { Calendar, Clock, ArrowLeft, User } from "lucide-react";
@@ -9,33 +16,28 @@ import React from "react";
 // Parse inline markdown: **bold**, _italic_, [link](url)
 const renderInlineContent = (text: string): React.ReactNode[] => {
   const parts: React.ReactNode[] = [];
-  // Combined regex for bold, italic, and links
   const regex = /(\*\*.*?\*\*)|(_[^_]+_)|\[([^\]]+)\]\(([^)]+)\)/g;
   let lastIndex = 0;
   let match;
 
   while ((match = regex.exec(text)) !== null) {
-    // Add text before the match
     if (match.index > lastIndex) {
       parts.push(text.slice(lastIndex, match.index));
     }
 
     if (match[1]) {
-      // Bold **text**
       parts.push(
         <strong key={match.index} className="text-foreground font-semibold">
           {match[1].replace(/\*\*/g, "")}
         </strong>
       );
     } else if (match[2]) {
-      // Italic _text_
       parts.push(
         <em key={match.index}>
           {match[2].slice(1, -1)}
         </em>
       );
     } else if (match[3] && match[4]) {
-      // Link [text](url)
       const url = match[4];
       const isInternal = url.startsWith("/");
       if (isInternal) {
@@ -56,7 +58,6 @@ const renderInlineContent = (text: string): React.ReactNode[] => {
     lastIndex = match.index + match[0].length;
   }
 
-  // Add remaining text
   if (lastIndex < text.length) {
     parts.push(text.slice(lastIndex));
   }
@@ -64,7 +65,6 @@ const renderInlineContent = (text: string): React.ReactNode[] => {
   return parts.length > 0 ? parts : [text];
 };
 
-// Render content array with support for headings, images, lists, bold, italic, links
 const renderContent = (content: string[]) => {
   const elements: React.ReactNode[] = [];
   let i = 0;
@@ -72,7 +72,6 @@ const renderContent = (content: string[]) => {
   while (i < content.length) {
     const line = content[i];
 
-    // H2
     if (line.startsWith("## ")) {
       elements.push(
         <h2 key={i} className="font-display text-2xl font-bold text-foreground mt-10 mb-4">
@@ -83,7 +82,6 @@ const renderContent = (content: string[]) => {
       continue;
     }
 
-    // H3
     if (line.startsWith("### ")) {
       elements.push(
         <h3 key={i} className="font-display text-xl font-semibold text-foreground mt-8 mb-3">
@@ -94,7 +92,6 @@ const renderContent = (content: string[]) => {
       continue;
     }
 
-    // Image ![alt](url)
     if (line.startsWith("![")) {
       const imgMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
       if (imgMatch) {
@@ -113,7 +110,6 @@ const renderContent = (content: string[]) => {
       }
     }
 
-    // Unordered list items (collect consecutive - items)
     if (line.startsWith("- ")) {
       const listItems: { index: number; text: string }[] = [];
       while (i < content.length && content[i].startsWith("- ")) {
@@ -132,7 +128,6 @@ const renderContent = (content: string[]) => {
       continue;
     }
 
-    // Ordered list items (collect consecutive numbered items)
     if (/^\d+\.\s/.test(line)) {
       const listItems: { index: number; text: string }[] = [];
       while (i < content.length && /^\d+\.\s/.test(content[i])) {
@@ -151,7 +146,6 @@ const renderContent = (content: string[]) => {
       continue;
     }
 
-    // "Also Read" callout
     if (line.startsWith("_Also Read:")) {
       elements.push(
         <div key={i} className="my-8 p-4 bg-card rounded-lg border border-border italic text-muted-foreground">
@@ -162,7 +156,6 @@ const renderContent = (content: string[]) => {
       continue;
     }
 
-    // Regular paragraph
     elements.push(
       <p key={i} className="text-muted-foreground leading-relaxed mb-4">
         {renderInlineContent(line)}
@@ -178,6 +171,26 @@ const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? blogPostsData[slug] : null;
 
+  const schemas = useMemo(() => {
+    if (!post || !slug) return [];
+    return [
+      getOrganizationSchema(),
+      getBreadcrumbSchema([
+        { name: "Home", path: "/" },
+        { name: "Blog", path: "/blog" },
+        { name: post.title, path: `/blog/${slug}` },
+      ]),
+      getBlogPostingSchema({
+        title: post.title,
+        excerpt: post.excerpt,
+        date: post.date,
+        author: post.author,
+        image: typeof post.image === "string" ? post.image : "",
+        slug,
+      }),
+    ];
+  }, [post, slug]);
+
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
@@ -189,6 +202,7 @@ const BlogPost = () => {
 
   return (
     <Layout>
+      <SchemaMarkup schemas={schemas} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-16">
         <div className="container-custom">
@@ -259,7 +273,6 @@ const BlogPost = () => {
       <section className="pb-16">
         <div className="container-custom">
           <div className="grid lg:grid-cols-[1fr_300px] gap-12">
-            {/* Main Content */}
             <motion.article
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -268,7 +281,6 @@ const BlogPost = () => {
             >
               {renderContent(post.content)}
 
-              {/* CTA */}
               <div className="mt-12 p-8 bg-gradient-to-br from-primary/10 via-background to-cyan-500/10 rounded-2xl border border-border">
                 <h3 className="font-display text-2xl font-bold text-foreground mb-3">
                   Ready to Get Started?
@@ -287,14 +299,12 @@ const BlogPost = () => {
               </div>
             </motion.article>
 
-            {/* Sidebar */}
             <motion.aside
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="space-y-8"
             >
-              {/* Related Posts */}
               <div className="p-6 bg-card rounded-xl border border-border">
                 <h4 className="font-semibold text-foreground mb-4">Related Articles</h4>
                 <div className="space-y-4">

@@ -1,5 +1,13 @@
+import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getLocalBusinessSchema,
+  getBreadcrumbSchema,
+  getServiceSchema,
+} from "@/data/schemaData";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
@@ -17,6 +25,7 @@ import petcoLogo from "@/assets/brands/petco.png";
 import wisconsinLogo from "@/assets/brands/wisconsin.png";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
+// Define trusted features
 const trustedFeatures = [
   {
     icon: MapPin,
@@ -40,6 +49,7 @@ const trustedFeatures = [
   },
 ];
 
+// Define fleet features
 const fleetFeatures = [
   {
     icon: Fuel,
@@ -73,6 +83,7 @@ const fleetFeatures = [
   },
 ];
 
+// Define trusted brands
 const brands = [
   { name: "LG", logo: lgLogo },
   { name: "Thermafiber", logo: thermafiberLogo },
@@ -88,14 +99,34 @@ const FreightServices = () => {
   const fleetRef = useRef(null);
   const fleetInView = useInView(fleetRef, { once: true, margin: "-100px" });
 
+  const schemas = useMemo(() => [
+    getOrganizationSchema(),
+    getLocalBusinessSchema(),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Freight Shipping Services", path: "/freight-shipping-services" },
+    ]),
+    getServiceSchema({
+      name: "Freight Shipping Services",
+      description: "Nationwide dry van, refrigerated, and flatbed freight shipping. Real-time tracking, competitive rates, Fortune 500 carrier network, and 24/7 dispatch support.",
+      url: "/freight-shipping-services",
+    }),
+    getServiceSchema({
+      name: "Freight Brokerage",
+      description: "Connect with vetted, high-performing carriers through our Trusted Carrier Network. Full truckload, LTL, and expedited freight solutions across the continental U.S. and Canada.",
+      url: "/freight-shipping-services",
+    }),
+  ], []);
+
   return (
     <Layout>
-      <SEOHead 
+      <SEOHead
         title={SEO_CONTENT.freightServices.title}
         description={SEO_CONTENT.freightServices.description}
         keywords={SEO_CONTENT.freightServices.keywords}
         canonicalPath="/freight-shipping-services"
       />
+      <SchemaMarkup schemas={schemas} />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -372,18 +403,22 @@ const FreightServices = () => {
 
       {/* Trusted Brands Section */}
       <section className="py-14 sm:py-20 bg-gradient-to-b from-[#0a1628] via-[#0d1e36] to-[#0a1628] relative">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(59,130,246,0.08)_0%,_transparent_70%)]" />
         <div className="container-custom relative z-10">
-          <motion.h2
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center text-2xl sm:text-3xl md:text-4xl font-display font-bold uppercase tracking-wider mb-8 sm:mb-12 text-white"
+            className="text-center mb-12"
           >
-            Leading Brands Rely on Our <span className="text-primary">Freight Shipping Services</span>
-          </motion.h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-white">
+              Trusted by <span className="text-primary">Industry Leaders</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              We proudly serve and partner with America's most recognized brands, delivering reliable freight solutions nationwide.
+            </p>
+          </motion.div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
             {brands.map((brand, index) => (
               <motion.div
                 key={brand.name}
@@ -391,16 +426,13 @@ const FreightServices = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                whileHover={{ scale: 1.05, y: -8 }}
-                className="group relative bg-[#1a2d4a] rounded-xl sm:rounded-2xl p-3 sm:p-5 flex items-center justify-center min-h-[100px] sm:min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-[#2a3d5a]/50 hover:border-primary/30"
+                className="flex items-center justify-center p-6 rounded-xl bg-white/5 border border-white/10 hover:border-primary/30 transition-colors"
               >
-                <div className="bg-white rounded-lg p-3 sm:p-4 w-full h-full flex items-center justify-center min-h-[60px] sm:min-h-[80px]">
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="max-h-8 sm:max-h-10 md:max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
-                  />
-                </div>
+                <img
+                  src={brand.logo}
+                  alt={`${brand.name} - XXII Century freight partner`}
+                  className="max-h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                />
               </motion.div>
             ))}
           </div>

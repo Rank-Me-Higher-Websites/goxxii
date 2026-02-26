@@ -1,5 +1,15 @@
+import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getLocalBusinessSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+  getJobPostingSchema,
+  careersFaqsPlain,
+} from "@/data/schemaData";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Truck, Users, Shield, CheckCircle, DollarSign, Clock, MapPin, Phone, Mail, Headphones } from "lucide-react";
@@ -59,6 +69,37 @@ const whyJoin = [
 ];
 
 const Careers = () => {
+  const schemas = useMemo(() => [
+    getOrganizationSchema(),
+    getLocalBusinessSchema(),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Careers", path: "/careers" },
+    ]),
+    getFAQSchema(careersFaqsPlain),
+    getJobPostingSchema({
+      title: "OTR Dispatcher",
+      description: "Coordinate freight movements, communicate with drivers, and optimize routes for maximum efficiency at XXII Century.",
+      employmentType: "FULL_TIME",
+      minSalary: 45000,
+      maxSalary: 65000,
+    }),
+    getJobPostingSchema({
+      title: "Owner-Operator, Nationwide",
+      description: "Maximize your earnings with access to premium Fortune 500 freight, AI-powered tools, and competitive linehaul pay. No forced dispatch.",
+      employmentType: "CONTRACTOR",
+      minSalary: 150000,
+      maxSalary: 300000,
+    }),
+    getJobPostingSchema({
+      title: "Company Driver - CDL-A",
+      description: "Join XXII Century as a company driver. Starting at 63 CPM with automatic raises, full benefits, modern equipment, and weekly pay.",
+      employmentType: "FULL_TIME",
+      minSalary: 65000,
+      maxSalary: 95000,
+    }),
+  ], []);
+
   return (
     <Layout>
       <SEOHead 
@@ -67,6 +108,7 @@ const Careers = () => {
         keywords={SEO_CONTENT.careers.keywords}
         canonicalPath="/careers"
       />
+      <SchemaMarkup schemas={schemas} />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-24" aria-label="Career opportunities at XXII Century trucking company">
         <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${heroBackground})` }} />

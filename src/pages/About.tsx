@@ -1,5 +1,12 @@
+import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getLocalBusinessSchema,
+  getBreadcrumbSchema,
+} from "@/data/schemaData";
 import { AboutHeroSection } from "@/components/sections/AboutHeroSection";
 import { LeadershipSection } from "@/components/sections/LeadershipSection";
 import { MissionValuesSection } from "@/components/sections/MissionValuesSection";
@@ -9,24 +16,36 @@ import { IndustryPartnersSection } from "@/components/sections/IndustryPartnersS
 import { QuickCTABanner } from "@/components/QuickCTABanner";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
 
-const About = () => (
-  <Layout>
-    <SEOHead 
-      title={SEO_CONTENT.about.title}
-      description={SEO_CONTENT.about.description}
-      keywords={SEO_CONTENT.about.keywords}
-      canonicalPath="/about"
-    />
-    <AboutHeroSection />
-    <div className="mt-8 md:mt-12" />
-    <MissionValuesSection />
-    <QuickCTABanner variant="compact" />
-    <ServicesSection />
-    <SEOContentSection pageKey="about" />
-    <LeadershipSection />
-    <TrustedBrandsSection />
-    <IndustryPartnersSection />
-  </Layout>
-);
+const About = () => {
+  const schemas = useMemo(() => [
+    getOrganizationSchema(),
+    getLocalBusinessSchema(),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "About", path: "/about" },
+    ]),
+  ], []);
+
+  return (
+    <Layout>
+      <SEOHead
+        title={SEO_CONTENT.about.title}
+        description={SEO_CONTENT.about.description}
+        keywords={SEO_CONTENT.about.keywords}
+        canonicalPath="/about"
+      />
+      <SchemaMarkup schemas={schemas} />
+      <AboutHeroSection />
+      <div className="mt-8 md:mt-12" />
+      <MissionValuesSection />
+      <QuickCTABanner variant="compact" />
+      <ServicesSection />
+      <SEOContentSection pageKey="about" />
+      <LeadershipSection />
+      <TrustedBrandsSection />
+      <IndustryPartnersSection />
+    </Layout>
+  );
+};
 
 export default About;

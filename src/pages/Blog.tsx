@@ -1,5 +1,12 @@
+import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getBreadcrumbSchema,
+  getBlogCollectionSchema,
+} from "@/data/schemaData";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Search, ChevronLeft, ChevronRight, Phone } from "lucide-react";
@@ -170,6 +177,15 @@ const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
 
+  const schemas = useMemo(() => [
+    getOrganizationSchema(),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Blog", path: "/blog" },
+    ]),
+    getBlogCollectionSchema(),
+  ], []);
+
   const filteredPosts = blogPosts.filter((post) => {
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
@@ -186,7 +202,6 @@ const Blog = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Reset to page 1 when filters change
   const handleCategoryChange = (category: string) => {
     setActiveCategory(category);
     setCurrentPage(1);
@@ -199,12 +214,13 @@ const Blog = () => {
 
   return (
     <Layout>
-      <SEOHead 
+      <SEOHead
         title={SEO_CONTENT.blog.title}
         description={SEO_CONTENT.blog.description}
         keywords={SEO_CONTENT.blog.keywords}
         canonicalPath="/blog"
       />
+      <SchemaMarkup schemas={schemas} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url(${heroBackground})` }} />
@@ -401,26 +417,34 @@ const Blog = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-2xl mx-auto text-center"
+            className="max-w-3xl mx-auto text-center"
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Stay Updated on Trucking Industry Trends
+              Ready to Hit the Road?
             </h2>
-            <p className="text-muted-foreground mb-4">
-              Get the latest industry news and career tips delivered directly to your inbox. From market rate updates to driver wellness advice, we cover what matters most to professional truckers.
+            <p className="text-muted-foreground text-lg mb-8">
+              Join XXII Century and discover why hundreds of drivers trust us with their careers
             </p>
-            <p className="text-muted-foreground mb-6">
-              Ready to start driving? Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> with 90% revenue share or check out <Link to="/company-drivers" className="text-primary hover:underline">company driver jobs</Link> starting at 63 CPM.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="h-12 bg-background"
-              />
-              <button className="h-12 px-6 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-colors whitespace-nowrap">
-                Subscribe
-              </button>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button variant="hero" size="lg" asChild>
+                <a
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply To Drive
+                </a>
+              </Button>
+              <Button variant="heroOutline" size="lg" asChild>
+                <Link to="/owner-operators">
+                  Owner Operators
+                </Link>
+              </Button>
+              <Button variant="heroOutline" size="lg" asChild>
+                <Link to="/company-drivers">
+                  Company Drivers
+                </Link>
+              </Button>
             </div>
           </motion.div>
         </div>
