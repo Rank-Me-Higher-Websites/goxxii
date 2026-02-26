@@ -26,6 +26,18 @@ export const ReviewsWidgetSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
+          className="mb-10"
+        >
+          <span className="label-tag mb-3">Driver Reviews</span>
+          <h2 className="heading-section text-foreground">
+            What Our Drivers Say
+          </h2>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
           className="w-full"
         >
           <div
