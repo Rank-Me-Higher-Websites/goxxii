@@ -21,7 +21,7 @@ export const FleetJoinSection = () => {
             Join Our Power Fleet and Grow Your Owner Operator Trucking Career
           </h2>
 
-          <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+          <div className="space-y-6 text-muted-foreground text-lg leading-relaxed text-center lg:text-left">
             <p>
               At XXII Century, we empower <Link to="/owner-operators" className="text-primary hover:underline">owner operators</Link> with the tools, freight, and flexibility to build a thriving trucking business. Whether you prefer local routes or long-haul runs across the U.S. and Canada, our Power Fleet program offers competitive pay, flexible scheduling, and the freedom to drive on your terms.
             </p>
