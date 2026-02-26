@@ -40,7 +40,7 @@ const jobDetails: Record<string, {
   },
   "owner-operator-nationwide": {
     title: "Owner-Operator, Nationwide",
-    date: "March 15, 2025",
+    date: "February 20, 2026",
     intro: "XXII Century is looking for motivated and experienced Owner-Operators to join our growing network. We provide consistent loads, transparent settlements, and dedicated support to help you maximize your earnings. Drive independently while benefiting from a strong partnership with a reliable company that values your professionalism and hard work.",
     responsibilities: [
       "Transport freight safely and efficiently across assigned routes",
