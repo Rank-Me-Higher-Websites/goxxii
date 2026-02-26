@@ -68,7 +68,7 @@ export const OwnerOperatorSection = () => {
             </div>
 
             {/* Perks list */}
-            <div className="flex flex-wrap gap-2 mb-5">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-5">
               {perks.map((perk, index) => (
                 <motion.span 
                   key={perk} 
