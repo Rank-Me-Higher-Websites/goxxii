@@ -75,7 +75,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-nowrap justify-center lg:justify-start gap-4 sm:gap-6 mb-5"
+              className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mb-5"
             >
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
