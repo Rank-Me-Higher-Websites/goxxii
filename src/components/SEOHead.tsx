@@ -93,8 +93,8 @@ export const SEO_CONTENT = {
     keywords: "trucking job openings, CDL driver employment, dispatcher positions, logistics careers, transportation industry jobs",
   },
   contact: {
-    title: "Contact XXII Century | Woodridge IL Trucking Company | 224-240-6441",
-    description: "Reach XXII Century recruiting at 224-240-6441 or visit 7501 Lemont Rd, Woodridge IL. Quick response for driver applications and freight inquiries. We're here to help.",
+    title: "Contact XXII Century | Woodridge IL Trucking Company | 773-572-5012",
+    description: "Reach XXII Century recruiting at 773-572-5012 or visit 7501 Lemont Rd, Woodridge IL. Quick response for driver applications and freight inquiries. We're here to help.",
     keywords: "trucking company contact, driver recruiting phone, freight quote request, Woodridge IL logistics, XXII Century address",
   },
   blog: {
