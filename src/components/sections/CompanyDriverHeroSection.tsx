@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, Phone, Home, Wrench, Award, MapPin, DollarSign, Gift, Clock, Heart, Users, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import companyTruck from "@/assets/company-truck.png";
 import companyDriver from "@/assets/company-driver.jpg";
 import heroBackground from "@/assets/heroes/truck-white-dock.png";
