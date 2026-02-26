@@ -220,7 +220,7 @@ const contactFaqs: FAQ[] = [
   {
     question: "What is the best way to reach XXII Century recruiting?",
     answer: (
-      <p>Call us at <a href="tel:6309480501" className="text-primary hover:underline font-semibold">630-948-0501</a> or email <a href="mailto:hr@goxxii.com" className="text-primary hover:underline">hr@goxxii.com</a>. You can also apply directly through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a>.</p>
+      <p>Call us at <a href="tel:7735725012" className="text-primary hover:underline font-semibold">773-572-5012</a> or email <a href="mailto:hr@goxxii.com" className="text-primary hover:underline">hr@goxxii.com</a>. You can also apply directly through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a>.</p>
     ),
   },
   {
