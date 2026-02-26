@@ -320,7 +320,7 @@ export const OwnerOperatorHeroSection = () => {
           </motion.h2>
 
           <div className="flex gap-4 overflow-x-auto py-6 -mx-4 px-4">
-            {[...galleryImages, ...galleryImages].map((img, index) => (
+            {galleryImages.map((img, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
