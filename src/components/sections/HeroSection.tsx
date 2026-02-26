@@ -111,7 +111,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, delay: 0.22 }}
-              className="flex flex-wrap items-center justify-center gap-2 mb-5 px-4 py-2 rounded-xl bg-accent/10 border border-accent/30 max-w-full mx-auto lg:mx-0"
+              className="flex flex-wrap items-center justify-center gap-2 mb-5 px-3 py-2 rounded-xl bg-accent/10 border border-accent/30 w-full max-w-md mx-auto lg:mx-0"
             >
               <Fuel className="w-5 h-5 text-accent flex-shrink-0" />
               <span className="text-sm font-semibold text-accent text-center leading-tight">
