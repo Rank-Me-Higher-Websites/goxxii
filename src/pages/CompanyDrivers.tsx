@@ -15,6 +15,7 @@ import { CompanyDriverHeroSection } from "@/components/sections/CompanyDriverHer
 import { TechBenefitsSection } from "@/components/sections/TechBenefitsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
+import xxiiMackTruck from "@/assets/xxii-mack-truck.jpg";
 
 const CompanyDrivers = () => {
   const schemas = useMemo(() => [
@@ -49,7 +50,7 @@ const CompanyDrivers = () => {
       />
       <SchemaMarkup schemas={schemas} />
       <CompanyDriverHeroSection />
-      <SEOContentSection pageKey="companyDrivers" />
+      <SEOContentSection pageKey="companyDrivers" sideImage={xxiiMackTruck} sideImageAlt="XXII Century Mack truck on open road" />
       <TechBenefitsSection />
       <FAQSection pageKey="companyDrivers" />
     </Layout>

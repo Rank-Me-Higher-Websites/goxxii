@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 interface SEOContentSectionProps {
   pageKey: "home" | "ownerOperators" | "companyDrivers" | "fleetProgram" | "freightServices" | "about" | "careers" | "blog" | "contact";
+  sideImage?: string;
+  sideImageAlt?: string;
 }
 
 const seoContent = {
@@ -135,7 +137,7 @@ const seoContent = {
   },
 };
 
-export const SEOContentSection = ({ pageKey }: SEOContentSectionProps) => {
+export const SEOContentSection = ({ pageKey, sideImage, sideImageAlt }: SEOContentSectionProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
   const content = seoContent[pageKey];
@@ -145,11 +147,12 @@ export const SEOContentSection = ({ pageKey }: SEOContentSectionProps) => {
   return (
     <section ref={ref} className="section-padding bg-card border-y border-border">
       <div className="container-custom">
+        <div className={`flex flex-col ${sideImage ? 'lg:flex-row lg:items-center lg:gap-10' : ''}`}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="max-w-4xl mx-auto text-center"
+          className={`${sideImage ? 'lg:flex-1 lg:text-left' : 'max-w-4xl mx-auto'} text-center`}
         >
           <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
             {content.heading}
@@ -201,6 +204,21 @@ export const SEOContentSection = ({ pageKey }: SEOContentSectionProps) => {
             </div>
           </motion.div>
         </motion.div>
+        {sideImage && (
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="hidden lg:block lg:w-[45%] flex-shrink-0"
+          >
+            <img
+              src={sideImage}
+              alt={sideImageAlt || ""}
+              className="rounded-2xl object-cover w-full h-[380px] border border-border"
+            />
+          </motion.div>
+        )}
+        </div>
       </div>
     </section>
   );
