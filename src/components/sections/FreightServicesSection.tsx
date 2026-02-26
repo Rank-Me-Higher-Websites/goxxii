@@ -57,13 +57,11 @@ export const FreightServicesSection = () => {
       const leftHeight = leftColRef.current.getBoundingClientRect().height;
       const rightHeight = partnersRef.current.getBoundingClientRect().height;
 
-      setMaxShift(Math.max(0, leftHeight - rightHeight));
+      const gap = Math.max(0, leftHeight - rightHeight);
+      setMaxShift(gap);
 
-      // Extra travel for bottom content (stats + why drivers choose us)
-      if (bottomContentRef.current) {
-        const bottomHeight = bottomContentRef.current.getBoundingClientRect().height;
-        setMaxBottomShift(Math.max(0, leftHeight - rightHeight + bottomHeight * 0.5));
-      }
+      // Bottom content shifts only enough to fill the gap, never beyond
+      setMaxBottomShift(gap);
     };
 
     compute();
