@@ -307,7 +307,7 @@ const FreightServices = () => {
                   Interested in becoming a carrier partner? Our <Link to="/fleet-program" className="text-primary hover:underline">fleet partnership program</Link> offers steady loads and dedicated support. We're also hiring <Link to="/careers" className="text-primary hover:underline">professional truck drivers</Link> to join our expanding network.
                 </p>
               </div>
-              <Button variant="hero" size="lg" className="mt-8" asChild>
+              <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
                 <a href="/contact" className="flex items-center gap-2">
                   <ChevronRight className="w-5 h-5" />
                   Contact Us
