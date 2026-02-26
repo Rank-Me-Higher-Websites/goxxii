@@ -41,6 +41,7 @@ export const FleetCompanyDriverSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-center lg:text-left"
           >
             <span className="text-primary font-medium uppercase tracking-wider text-sm">
               Company Driver Opportunities
