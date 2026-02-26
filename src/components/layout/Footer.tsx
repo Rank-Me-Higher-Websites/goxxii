@@ -63,7 +63,7 @@ export const Footer = () => {
 
       {/* Main Footer */}
       <div className="container-custom py-8 sm:py-12 border-t border-border">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-10">
           {/* Logo & Contact */}
           <div className="col-span-2 text-center md:text-left">
             <Link to="/" className="inline-block mb-4 logo-shine">
@@ -75,35 +75,35 @@ export const Footer = () => {
             <div className="space-y-2">
               <a
                 href="tel:+17735725012"
-                className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
-                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
                 773-572-5012
               </a>
               <a
                 href="mailto:hr@goxxii.com"
-                className="flex items-center justify-center md:justify-start gap-3 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
-                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+                <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                 hr@goxxii.com
               </a>
-              <div className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-left">7501 Lemont Rd Ste 200, Woodridge, IL 60517, United States</span>
+              <div className="flex items-start justify-center md:justify-start gap-2 text-sm text-muted-foreground">
+                <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                <span className="text-left">
+                  7501 Lemont Rd Ste 200,<br />
+                  Woodridge, IL 60517
+                </span>
               </div>
             </div>
           </div>
 
-          {/* Links */}
+          {/* Company Links */}
           <div className="text-center md:text-left">
             <h4 className="font-display font-bold text-sm sm:text-lg mb-3 text-foreground">Company</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
+                  <Link to={link.href} className="text-muted-foreground text-sm hover:text-primary transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -111,25 +111,18 @@ export const Footer = () => {
             </ul>
           </div>
 
+          {/* Drivers Links */}
           <div className="text-center md:text-left">
             <h4 className="font-display font-bold text-sm sm:text-lg mb-3 text-foreground">Drivers</h4>
             <ul className="space-y-2">
               {footerLinks.drivers.map((link) => (
                 <li key={link.href}>
                   {link.href.startsWith("http") ? (
-                    <a
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                    >
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">
                       {link.label}
                     </a>
                   ) : (
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                    >
+                    <Link to={link.href} className="text-muted-foreground text-sm hover:text-primary transition-colors">
                       {link.label}
                     </Link>
                   )}
@@ -138,25 +131,18 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="text-center md:text-left">
+          {/* Resources Links */}
+          <div className="col-span-2 sm:col-span-1 text-center md:text-left">
             <h4 className="font-display font-bold text-sm sm:text-lg mb-3 text-foreground">Resources</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 grid grid-cols-2 sm:grid-cols-1 gap-x-4 gap-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
                   {link.href.startsWith("http") ? (
-                    <a
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                    >
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">
                       {link.label}
                     </a>
                   ) : (
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                    >
+                    <Link to={link.href} className="text-muted-foreground text-sm hover:text-primary transition-colors">
                       {link.label}
                     </Link>
                   )}
