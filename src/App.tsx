@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import OwnerOperators from "./pages/OwnerOperators";
+import OwnerOperatorState from "./pages/OwnerOperatorState";
 import CompanyDrivers from "./pages/CompanyDrivers";
 import FleetProgram from "./pages/FleetProgram";
 import FreightServices from "./pages/FreightServices";
