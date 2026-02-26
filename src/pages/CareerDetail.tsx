@@ -16,7 +16,7 @@ const jobDetails: Record<string, {
 }> = {
   "otr-dispatcher": {
     title: "OTR Dispatcher",
-    date: "March 20, 2025",
+    date: "February 26, 2026",
     intro: "We are expanding and inviting you to join our dispatch team! We want to hear from you if you have experience in a similar position!",
     responsibilities: [
       "Planning and managing truck routes",
