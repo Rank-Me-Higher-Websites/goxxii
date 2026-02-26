@@ -60,8 +60,8 @@ export const FreightServicesSection = () => {
       const gap = Math.max(0, leftHeight - rightHeight);
       setMaxShift(gap);
 
-      // Bottom content shifts only enough to fill the gap, never beyond
-      setMaxBottomShift(gap);
+      // Keep bottom motion readable and capped so it never overshoots sections
+      setMaxBottomShift(Math.min(gap * 0.35, 120));
     };
 
     compute();
@@ -75,9 +75,9 @@ export const FreightServicesSection = () => {
   });
 
   // Move the right-side content down while scrolling through this grid.
-  const partnersY = useTransform(scrollYProgress, [0.1, 0.7], [0, maxShift]);
+  const partnersY = useTransform(scrollYProgress, [0.1, 0.9], [0, maxShift]);
   // Extra downward travel for stats & "Why Drivers Choose Us"
-  const bottomY = useTransform(scrollYProgress, [0.3, 0.9], [0, maxBottomShift]);
+  const bottomY = useTransform(scrollYProgress, [0.55, 1], [0, maxBottomShift]);
 
   return (
     <section ref={ref} className="section-padding bg-background relative">
@@ -85,7 +85,7 @@ export const FreightServicesSection = () => {
         {/* Fleet Introduction - Parallax scroll layout */}
         <div
           ref={introRef}
-          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start overflow-hidden"
+          className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-24 items-start"
         >
           {/* Truck images - column */}
           <motion.div
