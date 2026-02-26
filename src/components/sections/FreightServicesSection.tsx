@@ -52,16 +52,26 @@ export const FreightServicesSection = () => {
     }
 
     const compute = () => {
-      if (!leftColRef.current || !partnersRef.current) return;
+      if (!leftColRef.current || !partnersRef.current || !servicesHeadingRef.current || !bottomContentRef.current) return;
 
       const leftHeight = leftColRef.current.getBoundingClientRect().height;
       const rightHeight = partnersRef.current.getBoundingClientRect().height;
-
       const gap = Math.max(0, leftHeight - rightHeight);
-      setMaxShift(gap);
 
-      // Keep bottom motion readable and capped so it never overshoots sections
-      setMaxBottomShift(Math.min(gap * 0.6, 250));
+      const partnersTop = partnersRef.current.offsetTop;
+      const partnersBottom = partnersTop + partnersRef.current.offsetHeight;
+      const headingTop = servicesHeadingRef.current.offsetTop;
+
+      // Cap full right-column shift so it never reaches the next heading
+      const roomForPartnersShift = Math.max(0, headingTop - partnersBottom - 24);
+      const cappedPartnersShift = Math.min(gap, roomForPartnersShift);
+      setMaxShift(cappedPartnersShift);
+
+      const bottomBottom = partnersTop + bottomContentRef.current.offsetTop + bottomContentRef.current.offsetHeight;
+      const roomForBottomShift = Math.max(0, headingTop - bottomBottom - 24 - cappedPartnersShift);
+
+      // Extra bottom motion, but always capped before the next section
+      setMaxBottomShift(Math.min(roomForBottomShift, Math.min(cappedPartnersShift * 0.5, 180)));
     };
 
     compute();
