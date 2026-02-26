@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronRight, DollarSign, TrendingDown, Clock, Route, Star, Phone } from "lucide-react";
+import { ChevronRight, ChevronLeft, DollarSign, TrendingDown, Clock, Route, Star, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import driverBlue from "@/assets/driver-truck-blue.jpg";
 import car1 from "@/assets/gallery/car-1.png";
@@ -50,6 +50,67 @@ const stats = [
   { value: "500+", label: "Successful Partnerships" },
   { value: "24/7", label: "Dispatch Support" },
 ];
+
+const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: string; desc: string }[] }) => {
+  const [current, setCurrent] = useState(0);
+  const itemsPerView = 3;
+  const maxIndex = Math.max(0, struggles.length - itemsPerView);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1));
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [maxIndex]);
+
+  return (
+    <div className="relative">
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out gap-6"
+          style={{ transform: `translateX(-${current * (100 / itemsPerView + 2)}%)` }}
+        >
+          {struggles.map((item, index) => (
+            <div
+              key={index}
+              className="glass p-6 rounded-xl flex-shrink-0"
+              style={{ width: `calc((100% - ${(itemsPerView - 1) * 24}px) / ${itemsPerView})` }}
+            >
+              <div className="text-3xl mb-3">{item.emoji}</div>
+              <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+              <p className="text-muted-foreground text-sm">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <button
+        onClick={() => setCurrent((p) => Math.max(0, p - 1))}
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors"
+        aria-label="Previous"
+      >
+        <ChevronLeft className="w-5 h-5" />
+      </button>
+      <button
+        onClick={() => setCurrent((p) => Math.min(maxIndex, p + 1))}
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors"
+        aria-label="Next"
+      >
+        <ChevronRight className="w-5 h-5" />
+      </button>
+
+      <div className="flex justify-center gap-2 mt-6">
+        {Array.from({ length: maxIndex + 1 }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-2.5 h-2.5 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-muted-foreground/30"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export const OwnerOperatorHeroSection = () => {
   const ref = useRef(null);
@@ -128,21 +189,7 @@ export const OwnerOperatorHeroSection = () => {
             We Know the <span className="text-primary">Struggles</span> for Owner Operator Jobs:
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {struggles.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: index * 0.1 }}
-                className="glass p-6 rounded-xl"
-              >
-                <div className="text-3xl mb-3">{item.emoji}</div>
-                <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
+          <StruggleCarousel struggles={struggles} />
 
           <div className="text-center mt-8">
             <Button variant="heroOutline" size="lg" asChild>
