@@ -345,10 +345,10 @@ export const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.1 }}
-              className="relative z-10 flex flex-col min-h-screen pt-24 pb-10 px-8"
+              className="relative z-10 flex flex-col min-h-screen pt-20 pb-8 px-8"
             >
               {/* Main Nav Links */}
-              <div className="flex-1 flex flex-col justify-center gap-1">
+              <div className="flex-1 flex flex-col justify-center gap-0">
                 {navLinks.map((link, index) => (
                   <motion.div
                     key={link.href}
@@ -358,7 +358,7 @@ export const Navbar = () => {
                   >
                     <Link
                       to={link.href}
-                      className={`block py-3 text-2xl font-display font-bold uppercase tracking-wider transition-all duration-300 ${
+                      className={`block py-2 text-lg font-display font-bold uppercase tracking-wider transition-all duration-300 ${
                         location.pathname === link.href
                           ? "text-primary"
                           : "text-foreground/80 hover:text-foreground hover:translate-x-2"
@@ -381,12 +381,12 @@ export const Navbar = () => {
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="py-3"
+                  className="py-2"
                 >
-                  <span className="text-2xl font-display font-bold uppercase tracking-wider text-foreground/80">
+                  <span className="text-lg font-display font-bold uppercase tracking-wider text-foreground/80">
                     Drivers
                   </span>
-                  <div className="mt-3 ml-1 flex flex-col gap-1 border-l-2 border-primary/30 pl-5">
+                  <div className="mt-2 ml-1 flex flex-col gap-0 border-l-2 border-primary/30 pl-4">
                     {driverLinks.map((link, i) => {
                       const Icon = link.icon;
                       return (
@@ -398,13 +398,13 @@ export const Navbar = () => {
                         >
                           <Link
                             to={link.href}
-                            className={`flex items-center gap-3 py-2.5 transition-all duration-300 group ${
+                            className={`flex items-center gap-3 py-2 transition-all duration-300 group ${
                               location.pathname === link.href
                                 ? "text-primary"
                                 : "text-foreground/60 hover:text-foreground hover:translate-x-1"
                             }`}
                           >
-                            <div className={`w-9 h-9 rounded-xl flex items-center justify-center transition-colors ${
+                            <div className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${
                               location.pathname === link.href
                                 ? "bg-primary/20 text-primary"
                                 : "bg-white/[0.06] text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary"
@@ -412,7 +412,7 @@ export const Navbar = () => {
                               <Icon className="w-4 h-4" />
                             </div>
                             <div>
-                              <span className="text-base font-semibold block">{link.label}</span>
+                              <span className="text-sm font-semibold block">{link.label}</span>
                               <span className="text-xs text-muted-foreground">{link.desc}</span>
                             </div>
                           </Link>
@@ -432,7 +432,7 @@ export const Navbar = () => {
                   >
                     <Link
                       to={link.href}
-                      className={`block py-3 text-2xl font-display font-bold uppercase tracking-wider transition-all duration-300 ${
+                      className={`block py-2 text-lg font-display font-bold uppercase tracking-wider transition-all duration-300 ${
                         location.pathname === link.href
                           ? "text-primary"
                           : "text-foreground/80 hover:text-foreground hover:translate-x-2"
@@ -456,7 +456,7 @@ export const Navbar = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="flex flex-col gap-3 mt-6"
+                className="flex flex-col gap-3 mt-4"
               >
                 <Button variant="hero" size="lg" className="w-full" asChild>
                   <a
