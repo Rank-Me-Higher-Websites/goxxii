@@ -42,7 +42,7 @@ const advantages = [
   { icon: "💵", title: "Friday Payment Guarantee", desc: "Your money hits your account every Friday morning – no delays, no excuses, no stress about when you'll get paid." },
 ];
 
-const galleryImages = [car1, car2, car3, car4, car5];
+const galleryImages = [car1, car2, car3, car5];
 
 const stats = [
   { value: "2009", label: "Established in" },
@@ -319,7 +319,7 @@ export const OwnerOperatorHeroSection = () => {
             Welcome to the <span className="text-primary">XXII Family</span>
           </motion.h2>
 
-          <div className="flex gap-4 overflow-x-auto py-6 -mx-4 px-4">
+          <div className="flex gap-4 justify-center py-6">
             {galleryImages.map((img, index) => (
               <motion.div
                 key={index}
