@@ -41,6 +41,53 @@ const services = [
   },
 ];
 
+const statsData = [
+  { value: "$2.50+", label: "Per Mile Consistently" },
+  { value: "98%", label: "Utilization Rate" },
+  { value: "Zero", label: "Detention Loss" },
+  { value: "24/7", label: "Support Available" },
+];
+
+const StatsMobileCarousel = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+    setCurrent(api.selectedScrollSnap());
+    api.on("select", () => setCurrent(api.selectedScrollSnap()));
+  }, [api]);
+
+  return (
+    <div className="mt-16 sm:hidden">
+      <Carousel setApi={setApi} opts={{ align: "start", loop: true }} className="w-full">
+        <CarouselContent className="-ml-3">
+          {statsData.map((stat) => (
+            <CarouselItem key={stat.label} className="pl-3 basis-[60%]">
+              <div className="text-center p-6 rounded-xl bg-card border border-border/50">
+                <p className="text-3xl font-display font-bold text-primary mb-2">
+                  {stat.value}
+                </p>
+                <p className="text-sm text-muted-foreground">{stat.label}</p>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+      <div className="flex justify-center gap-2 mt-4">
+        {statsData.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => api?.scrollTo(i)}
+            className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-muted-foreground/30"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+
 export const ServicesSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
