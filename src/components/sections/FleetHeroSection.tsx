@@ -26,7 +26,7 @@ export const FleetHeroSection = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-tight mb-6">
-            <span className="text-primary">XXII Century</span> — Company & Owner Operator Trucking Jobs with Top Pay
+            <span className="text-primary">XXII Century</span> Fleet Program for Owner Operators
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">

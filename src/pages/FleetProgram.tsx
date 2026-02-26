@@ -1,6 +1,10 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { FleetHeroSection } from "@/components/sections/FleetHeroSection";
+import { FleetPowerOnlySection } from "@/components/sections/FleetPowerOnlySection";
+import { FleetJoinSection } from "@/components/sections/FleetJoinSection";
+import { FleetSupportSection } from "@/components/sections/FleetSupportSection";
+import { FleetRequirementsSection } from "@/components/sections/FleetRequirementsSection";
 import { FleetOwnerOperatorSection } from "@/components/sections/FleetOwnerOperatorSection";
 import { FleetCompanyDriverSection } from "@/components/sections/FleetCompanyDriverSection";
 import { FleetContactSection } from "@/components/sections/FleetContactSection";
@@ -18,6 +22,10 @@ const FleetProgram = () => (
       canonicalPath="/fleet-program"
     />
     <FleetHeroSection />
+    <FleetPowerOnlySection />
+    <FleetJoinSection />
+    <FleetSupportSection />
+    <FleetRequirementsSection />
     <FleetOwnerOperatorSection />
     <FleetCompanyDriverSection />
     <SEOContentSection pageKey="fleetProgram" />
