@@ -71,11 +71,11 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {struggles.map((item, index) => (
-            <div key={index} className="w-full flex-shrink-0 px-2">
-              <div className="glass p-6 rounded-xl aspect-square flex flex-col justify-center items-center text-center">
-                <div className="text-4xl mb-4">{item.emoji}</div>
-                <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.desc}</p>
+            <div key={index} className="w-full flex-shrink-0 px-8">
+              <div className="glass p-5 rounded-xl aspect-square flex flex-col justify-center items-center text-center max-w-[260px] mx-auto">
+                <div className="text-3xl mb-3">{item.emoji}</div>
+                <h3 className="font-bold text-base mb-1.5">{item.title}</h3>
+                <p className="text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
               </div>
             </div>
           ))}
