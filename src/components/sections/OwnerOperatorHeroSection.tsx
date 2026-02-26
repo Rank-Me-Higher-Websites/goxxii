@@ -91,12 +91,12 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
           {struggles.map((item, index) => (
             <div
               key={index}
-              className="glass p-6 rounded-xl flex-shrink-0 aspect-square flex flex-col justify-center"
-              style={{ width: `calc((100% - 48px) / 3)` }}
+              className="glass p-5 rounded-xl flex-shrink-0 flex flex-col justify-center"
+              style={{ width: `calc((100% - 48px) / 3)`, maxHeight: '220px' }}
             >
-              <div className="text-3xl mb-3">{item.emoji}</div>
-              <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-              <p className="text-muted-foreground text-sm">{item.desc}</p>
+              <div className="text-2xl mb-2">{item.emoji}</div>
+              <h3 className="font-bold text-base mb-1.5">{item.title}</h3>
+              <p className="text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
