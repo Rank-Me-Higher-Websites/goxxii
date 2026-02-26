@@ -22,7 +22,7 @@ const positions = [
     description: "Maximize your earnings with access to premium freight, AI-powered tools, and an 88% revenue share.",
     benefits: ["88% Revenue Share", "Fuel Discounts", "Safety Bonuses", "Dedicated Lanes"],
     slug: "owner-operator-nationwide",
-    date: "March 15, 2025",
+    date: "February 20, 2026",
   },
   {
     icon: Users,
