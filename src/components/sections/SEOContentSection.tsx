@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 interface SEOContentSectionProps {
   pageKey: "home" | "ownerOperators" | "companyDrivers" | "fleetProgram" | "freightServices" | "about" | "careers" | "blog" | "contact";
+  sideImage?: string;
+  sideImageAlt?: string;
 }
 
 const seoContent = {
