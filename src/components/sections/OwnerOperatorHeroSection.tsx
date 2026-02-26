@@ -418,7 +418,13 @@ export const OwnerOperatorHeroSection = () => {
             Welcome to the <span className="text-primary">XXII Family</span>
           </motion.h2>
 
-          <div className="flex gap-4 justify-center py-6">
+          {/* Mobile carousel */}
+          <div className="block md:hidden relative py-6">
+            <GalleryCarousel images={galleryImages} />
+          </div>
+
+          {/* Desktop grid */}
+          <div className="hidden md:flex gap-4 justify-center py-6">
             {galleryImages.map((img, index) => (
               <motion.div
                 key={index}
