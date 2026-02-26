@@ -42,6 +42,7 @@ export const MissionValuesSection = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
+            className="text-center lg:text-left"
           >
             <span className="label-tag mb-4 inline-flex">Driven by You</span>
             <h2 className="heading-section text-foreground mb-6">Our Mission</h2>
