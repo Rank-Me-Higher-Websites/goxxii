@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link, useParams, Navigate } from "react-router-dom";
-import { Calendar, Clock, ArrowLeft, Share2, Bookmark, User } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { blogPostsData } from "@/data/blogPostsData";
 import React from "react";
