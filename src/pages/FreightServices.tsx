@@ -126,7 +126,7 @@ const FreightServices = () => {
           >
             <p className="text-muted-foreground uppercase tracking-widest mb-4">Freight Shipping Services</p>
             
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-tight mb-6">
+            <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight mb-6">
               Nationwide Freight Shipping <span className="text-primary">Solutions You Can Rely On</span>
             </h1>
 
