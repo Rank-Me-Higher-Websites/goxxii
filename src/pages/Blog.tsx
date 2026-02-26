@@ -20,6 +20,9 @@ import careerChicago from "@/assets/blog/career-chicago.jpg";
 import bestTruckingCompany from "@/assets/blog/best-trucking-company.jpg";
 import chicagoJobs from "@/assets/blog/chicago-jobs.jpg";
 import succeedWithoutBurnout from "@/assets/blog/succeed-without-burnout.jpg";
+import becomingOwnerOperator from "@/assets/blog/becoming-owner-operator.jpg";
+import ooJobsChicagoKnow from "@/assets/blog/oo-jobs-chicago-know.jpg";
+import hiringOoChicago from "@/assets/blog/hiring-oo-chicago.jpg";
 
 const blogPosts = [
   {
@@ -128,6 +131,33 @@ const blogPosts = [
     date: "September 8, 2025",
     readTime: "10 min read",
     slug: "truck-driving-career-chicago",
+    category: "Local Jobs",
+  },
+  {
+    image: becomingOwnerOperator,
+    title: "Becoming an Owner Operator: Costs and What to Expect",
+    excerpt: "If you've ever spent hours on the highway watching endless streams of big rigs roll by, you've probably wondered what it's like to be the one behind the wheel.",
+    date: "August 15, 2025",
+    readTime: "10 min read",
+    slug: "owner-operator-costs-benefits",
+    category: "Guides",
+  },
+  {
+    image: ooJobsChicagoKnow,
+    title: "Owner Operator Jobs in Chicago: What Truckers Should Know",
+    excerpt: "Thinking about taking control of your trucking career and hitting the road on your own terms? Owner operator jobs in Chicago are booming.",
+    date: "August 8, 2025",
+    readTime: "10 min read",
+    slug: "owner-operator-jobs-chicago-truckers-know",
+    category: "Local Jobs",
+  },
+  {
+    image: hiringOoChicago,
+    title: "Hiring Owner Operators in Chicago: What Truckers Need to Know",
+    excerpt: "If you're a trucker in the Windy City looking to take control of your career, now might be the perfect time to explore owner operator opportunities.",
+    date: "July 23, 2025",
+    readTime: "8 min read",
+    slug: "hiring-owner-operators-chicago",
     category: "Local Jobs",
   },
 ];
