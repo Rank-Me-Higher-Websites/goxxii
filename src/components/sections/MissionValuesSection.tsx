@@ -1,8 +1,8 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Target, Heart, Lightbulb, Handshake } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 
 const values = [
   {
