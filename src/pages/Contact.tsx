@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Truck, Users, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
 import heroBackground from "@/assets/heroes/truck-white-field.png";
 
