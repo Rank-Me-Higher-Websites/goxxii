@@ -42,7 +42,7 @@ export const FloatingContactButtons = () => {
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0, opacity: 0 }}
                   transition={{ delay: 0.1 }}
-                  href="tel:+17735725012"
+                  href="tel:+16309480501"
                   className="flex items-center gap-2 px-4 py-3 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl hover:scale-105 transition-all"
                 >
                   <Phone className="w-5 h-5" />
