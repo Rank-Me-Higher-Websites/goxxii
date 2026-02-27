@@ -5,7 +5,7 @@ const COMPANY = {
   url: "https://goxxii.com",
   logo: "https://goxxii.com/wp-content/uploads/2025/01/cropped-XXII-Century-Logo.png",
   foundingDate: "2009",
-  phone: "+1-773-572-5012",
+  phone: "+1-630-948-0501",
   customerServicePhone: "+1-224-240-6441",
   email: "hr@goxxii.com",
   address: {
