@@ -29,7 +29,7 @@ export const TechPoweredSection = () => {
             XXII Century utilizes highly advanced shipping methods and cutting-edge technology in our operations and business processes. In addition, we invest in our human resources. We hire only the best candidates. We have a record-breaking success rate and many repeat happy customers!
           </p>
           <a
-            href="tel:+17735725012"
+            href="tel:+16309480501"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-[hsl(142,60%,42%)] text-white shadow-[0_0_16px_hsl(142,60%,42%,0.35)] hover:shadow-[0_0_24px_hsl(142,60%,42%,0.5)] hover:bg-[hsl(142,60%,48%)] transition-all duration-300"
           >
             <Phone className="w-5 h-5" />

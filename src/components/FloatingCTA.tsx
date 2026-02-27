@@ -72,7 +72,7 @@ export const FloatingCTA = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" className="flex-shrink-0" asChild>
-                <a href="tel:+17735725012" className="flex items-center gap-2">
+                <a href="tel:+16309480501" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   Call
                 </a>

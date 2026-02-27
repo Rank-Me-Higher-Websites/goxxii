@@ -254,11 +254,11 @@ export const Navbar = () => {
           {/* CTA + Socials */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+17735725012"
+              href="tel:+16309480501"
               className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors mr-1 whitespace-nowrap"
             >
               <Phone className="w-3.5 h-3.5 flex-shrink-0" />
-              (773) 572-5012
+              (630) 948-0501
             </a>
 
             <Button variant="hero" size="default" className="whitespace-nowrap text-xs h-9" asChild>
@@ -468,9 +468,9 @@ export const Navbar = () => {
                   </a>
                 </Button>
                 <Button variant="heroOutline" size="lg" className="w-full" asChild>
-                  <a href="tel:+17735725012" className="flex items-center justify-center gap-2">
+                  <a href="tel:+16309480501" className="flex items-center justify-center gap-2">
                     <Phone size={18} />
-                    (773) 572-5012
+                    (630) 948-0501
                   </a>
                 </Button>
               </motion.div>

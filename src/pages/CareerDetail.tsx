@@ -279,10 +279,10 @@ const CareerDetail = () => {
                       Questions? Contact us
                     </p>
                     <a 
-                      href="tel:7735725012" 
+                      href="tel:+16309480501" 
                       className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      <Phone className="w-4 h-4" /> 773-572-5012
+                      <Phone className="w-4 h-4" /> 630-948-0501
                     </a>
                     <a 
                       href="mailto:hr@goxxii.com" 

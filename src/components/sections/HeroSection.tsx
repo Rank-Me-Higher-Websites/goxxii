@@ -138,9 +138,9 @@ export const HeroSection = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="default" className="sm:h-14 sm:px-10 sm:text-base" asChild>
-                <a href="tel:+17735725012">
+                <a href="tel:+16309480501">
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  <span className="whitespace-nowrap">773-572-5012</span>
+                  <span className="whitespace-nowrap">630-948-0501</span>
                 </a>
               </Button>
             </motion.div>
