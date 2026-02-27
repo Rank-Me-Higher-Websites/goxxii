@@ -238,7 +238,7 @@ const contactFaqs: FAQ[] = [
   {
     question: "How quickly does the recruiting team respond?",
     answer: (
-      <p>We typically respond within <strong className="text-foreground">24 hours</strong> of receiving your application or inquiry. For faster results, call our recruiting line directly at <a href="tel:7735725012" className="text-primary hover:underline">773-572-5012</a>.</p>
+      <p>We typically respond within <strong className="text-foreground">24 hours</strong> of receiving your application or inquiry. For faster results, call our recruiting line directly at <a href="tel:+16309480501" className="text-primary hover:underline">630-948-0501</a>.</p>
     ),
   },
   {
