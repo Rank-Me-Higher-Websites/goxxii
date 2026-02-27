@@ -52,7 +52,7 @@ export const FloatingContactButtons = () => {
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0, opacity: 0 }}
-                  href="sms:+17735725012"
+                  href="sms:+16309480501"
                   className="flex items-center gap-2 px-4 py-3 rounded-full bg-accent text-accent-foreground shadow-lg hover:shadow-xl hover:scale-105 transition-all"
                 >
                   <MessageCircle className="w-5 h-5" />

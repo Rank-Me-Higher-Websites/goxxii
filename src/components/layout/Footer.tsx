@@ -74,11 +74,11 @@ export const Footer = () => {
             </p>
             <div className="space-y-2">
               <a
-                href="tel:+17735725012"
+                href="tel:+16309480501"
                 className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                773-572-5012
+                630-948-0501
               </a>
               <a
                 href="mailto:hr@goxxii.com"

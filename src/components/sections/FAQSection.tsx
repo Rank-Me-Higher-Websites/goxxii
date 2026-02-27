@@ -289,7 +289,7 @@ export const FAQSection = ({ pageKey = "home" }: FAQSectionProps) => {
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-3">
               <Button variant="hero" size="default" asChild>
-                <a href="tel:+17735725012" className="flex items-center gap-2">
+                <a href="tel:+16309480501" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   Call
                 </a>

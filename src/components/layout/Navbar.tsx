@@ -468,9 +468,9 @@ export const Navbar = () => {
                   </a>
                 </Button>
                 <Button variant="heroOutline" size="lg" className="w-full" asChild>
-                  <a href="tel:+17735725012" className="flex items-center justify-center gap-2">
+                  <a href="tel:+16309480501" className="flex items-center justify-center gap-2">
                     <Phone size={18} />
-                    (773) 572-5012
+                    (630) 948-0501
                   </a>
                 </Button>
               </motion.div>

@@ -323,7 +323,7 @@ export const careersFaqsPlain = [
 ];
 
 export const contactFaqsPlain = [
-  { question: "What is the best way to reach XXII Century recruiting?", answer: "Call us at 773-572-5012 or email hr@goxxii.com. You can also apply directly through our online application." },
+  { question: "What is the best way to reach XXII Century recruiting?", answer: "Call us at 630-948-0501 or email hr@goxxii.com. You can also apply directly through our online application." },
   { question: "What are XXII Century's office hours?", answer: "Our dispatch operates 24/7. The recruiting and administrative office is available during standard business hours, Monday through Friday." },
   { question: "Where is XXII Century located?", answer: "Our main office is in Chicago, Illinois. We serve drivers and shippers across all 48 states and Canada." },
   { question: "How quickly does the recruiting team respond?", answer: "We typically respond within 24 hours of receiving your application or inquiry." },
