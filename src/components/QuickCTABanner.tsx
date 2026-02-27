@@ -28,7 +28,7 @@ export const QuickCTABanner = ({ variant = "default" }: QuickCTABannerProps) => 
                 </a>
               </Button>
               <Button variant="heroOutline" size="sm" asChild>
-                <a href="tel:7735725012" className="inline-flex items-center gap-2">
+                <a href="tel:+16309480501" className="inline-flex items-center gap-2">
                   <Phone className="w-4 h-4" /> Call Us
                 </a>
               </Button>
