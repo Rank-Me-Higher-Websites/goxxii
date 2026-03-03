@@ -56,13 +56,13 @@ const MobileCarousel = () => {
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="flex-shrink-0 bg-white rounded-2xl p-6 flex items-center justify-center min-h-[100px]"
+              className="flex-shrink-0 rounded-2xl overflow-hidden"
               style={{ width: `calc((100% - 12px) / ${itemsPerView})` }}
             >
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="max-h-[72px] w-auto object-contain"
+                className="w-full h-[100px] object-cover"
               />
             </div>
           ))}
@@ -135,12 +135,12 @@ export const TrustedBrandsSection = () => {
                 y: -8,
                 transition: { duration: 0.3, ease: "easeOut" },
               }}
-              className="group relative bg-white rounded-2xl p-6 flex items-center justify-center min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
+              className="group relative rounded-2xl overflow-hidden min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
             >
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="max-h-[84px] w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-[140px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
             </motion.div>
           ))}
