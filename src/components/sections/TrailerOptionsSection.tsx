@@ -2,8 +2,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import yourTrailer from "@/assets/driver-selfie-truck.jpg";
-import ourTrailer from "@/assets/driver-selfie-truck-2.jpg";
+import truckMountains from "@/assets/truck-mountains.jpg";
+import dryVanTruck from "@/assets/dry-van-truck.jpg";
 
 export const TrailerOptionsSection = () => {
   const ref = useRef(null);
@@ -21,12 +21,12 @@ export const TrailerOptionsSection = () => {
           >
             <div className="img-hover aspect-[4/3]">
               <img
-                src={yourTrailer}
+                src={truckMountains}
                 alt="Your Truck, Your Trailer"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
             <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-2">
                 Your Truck, Your Trailer
@@ -49,12 +49,12 @@ export const TrailerOptionsSection = () => {
           >
             <div className="img-hover aspect-[4/3]">
               <img
-                src={ourTrailer}
+                src={dryVanTruck}
                 alt="Your Truck, Our Trailer"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
             <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-2">
                 Your Truck, Our Trailer
