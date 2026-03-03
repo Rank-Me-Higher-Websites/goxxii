@@ -13,7 +13,7 @@ const services = [
     description: "We take a hands-on approach and prioritize every customer, no matter the job size.",
   },
   {
-    icon: Ship,
+    icon: Truck,
     title: "Tech-Enabled Logistics Solutions",
     description: "XXII Century provides 24/7 Dry Van, FTL, and Expedited shipping—delivered with precision and reliability.",
   },
