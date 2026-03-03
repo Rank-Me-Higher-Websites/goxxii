@@ -255,7 +255,7 @@ export const Navbar = () => {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+16309480501"
-              className="flex items-center gap-1.5 text-xs font-medium bg-accent/25 hover:bg-accent/35 text-accent px-3 py-2 rounded-lg border border-accent/50 hover:border-accent/70 shadow-[0_0_8px_rgba(34,197,94,0.15)] hover:shadow-[0_0_12px_rgba(34,197,94,0.25)] transition-all whitespace-nowrap"
+              className="flex items-center gap-1.5 text-xs font-semibold bg-accent/25 hover:bg-accent/35 text-accent px-3 py-2 rounded-lg border border-accent/50 hover:border-accent/70 shadow-[0_0_8px_rgba(34,197,94,0.15)] hover:shadow-[0_0_12px_rgba(34,197,94,0.25)] transition-all whitespace-nowrap"
             >
               <Phone className="w-3.5 h-3.5 flex-shrink-0" />
               (630) 948-0501
