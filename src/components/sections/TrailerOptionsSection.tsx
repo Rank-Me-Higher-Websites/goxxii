@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import yourTrailer from "@/assets/driver-selfie-truck.jpg";
-import ourTrailer from "@/assets/our-trailer.png";
+import ourTrailer from "@/assets/driver-selfie-truck-2.jpg";
 
 export const TrailerOptionsSection = () => {
   const ref = useRef(null);
