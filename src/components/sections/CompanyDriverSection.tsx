@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, Check, DollarSign, Shield, TrendingUp, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import companyDriver from "@/assets/company-driver.jpg";
+import companyDriver from "@/assets/company-driver-truck.jpg";
 
 const benefits = [
   { icon: DollarSign, text: "63 CPM + Bonuses" },
