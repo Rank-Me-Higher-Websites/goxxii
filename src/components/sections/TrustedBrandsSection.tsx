@@ -63,7 +63,7 @@ const MobileCarousel = () => {
                 <img
                   src={brand.logo}
                   alt={brand.name}
-                  className="max-h-12 w-auto object-contain"
+                  className="max-h-[72px] w-auto object-contain"
                 />
               </div>
             </div>
