@@ -152,13 +152,13 @@ export const FreightServicesSection = () => {
             transition={{ duration: 0.8 }}
             className="space-y-6"
           >
-            <div className="hidden lg:block glass rounded-2xl overflow-hidden max-w-md mx-auto relative">
+            <div className="hidden lg:block glass rounded-2xl overflow-hidden max-w-md mx-auto relative group cursor-pointer">
               <img
                 src={trucksFleet}
                 alt="XXII Century Fleet - Dry Van and Refrigerated Trucks"
-                className="w-full h-auto"
+                className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/50 to-primary/20 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-emerald-600/25 via-blue-600/20 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
             </div>
             {/* Additional content to create scroll height */}
             <div className="hidden lg:block glass rounded-2xl p-6 space-y-4">
