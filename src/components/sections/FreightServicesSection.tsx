@@ -247,23 +247,6 @@ export const FreightServicesSection = () => {
                 </div>
               </div>
 
-              <div className="hidden lg:block glass rounded-xl p-5 mt-4">
-                <h4 className="font-display font-semibold text-foreground mb-3">Why Drivers Choose Us</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                    Fortune 500 freight partners
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                    Weekly settlements with no hidden fees
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                    Modern equipment &amp; AI-powered dispatch
-                  </li>
-                </ul>
-              </div>
             </motion.div>
           </motion.div>
         </div>
