@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import trucksFleet from "@/assets/trucks-fleet.png";
-import { Lightbulb, Ship, Wrench, Award } from "lucide-react";
+import { Lightbulb, Truck, Wrench, Award } from "lucide-react";
 
 const services = [
   {
@@ -13,7 +13,7 @@ const services = [
     description: "We take a hands-on approach and prioritize every customer, no matter the job size.",
   },
   {
-    icon: Ship,
+    icon: Truck,
     title: "Tech-Enabled Logistics Solutions",
     description: "XXII Century provides 24/7 Dry Van, FTL, and Expedited shipping—delivered with precision and reliability.",
   },
