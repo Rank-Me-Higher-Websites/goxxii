@@ -143,7 +143,7 @@ export const TrustedBrandsSection = () => {
                 <img
                   src={brand.logo}
                   alt={brand.name}
-                  className="max-h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+                  className="max-h-[84px] w-auto object-contain transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
             </motion.div>
