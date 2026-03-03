@@ -17,7 +17,7 @@ export const TrailerOptionsSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            className="group relative rounded-lg overflow-hidden border border-border bg-secondary transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"
+            className="group relative rounded-lg overflow-hidden border border-border bg-secondary transition-all duration-500 hover:-translate-y-1 hover:shadow-xl img-hover-glow"
           >
             <div className="img-hover aspect-[4/3]">
               <img
@@ -45,7 +45,7 @@ export const TrailerOptionsSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1 }}
-            className="group relative rounded-lg overflow-hidden border border-border bg-secondary transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"
+            className="group relative rounded-lg overflow-hidden border border-border bg-secondary transition-all duration-500 hover:-translate-y-1 hover:shadow-xl img-hover-glow"
           >
             <div className="img-hover aspect-[4/3]">
               <img
