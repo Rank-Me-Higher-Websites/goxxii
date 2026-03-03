@@ -113,7 +113,7 @@ export const OwnerOperatorSection = () => {
                   <img
                     src={truck1}
                     alt="Professional owner operator driver"
-                    className="w-full h-32 sm:h-44 object-cover object-top"
+                    className="w-full h-28 sm:h-36 object-cover object-top"
                   />
                 </div>
                 <motion.div 
