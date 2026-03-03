@@ -54,7 +54,7 @@ export const TrailerOptionsSection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
               <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-2">
                 Your Truck, Our Trailer
