@@ -255,7 +255,7 @@ export const Navbar = () => {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+16309480501"
-              className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors mr-1 whitespace-nowrap"
+              className="flex items-center gap-1.5 text-xs font-medium bg-secondary hover:bg-secondary/80 text-foreground px-3 py-2 rounded-lg border border-border hover:border-primary/30 transition-all whitespace-nowrap"
             >
               <Phone className="w-3.5 h-3.5 flex-shrink-0" />
               (630) 948-0501
