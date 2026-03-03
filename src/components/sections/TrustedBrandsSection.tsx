@@ -62,7 +62,7 @@ const MobileCarousel = () => {
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="w-full h-[100px] object-cover"
+                className="w-full h-[80px] object-cover"
               />
             </div>
           ))}
