@@ -158,7 +158,7 @@ export const FreightServicesSection = () => {
                 alt="XXII Century Fleet - Dry Van and Refrigerated Trucks"
                 className="w-full h-auto"
               />
-              <div className="absolute inset-0 bg-background/40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/50 to-primary/20 mix-blend-multiply" />
             </div>
             {/* Additional content to create scroll height */}
             <div className="hidden lg:block glass rounded-2xl p-6 space-y-4">
