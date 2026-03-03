@@ -56,16 +56,14 @@ const MobileCarousel = () => {
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="flex-shrink-0 bg-[#1a2d4a] rounded-xl p-3 border border-[#2a3d5a]/50"
+              className="flex-shrink-0 bg-white rounded-2xl p-6 flex items-center justify-center min-h-[100px]"
               style={{ width: `calc((100% - 12px) / ${itemsPerView})` }}
             >
-              <div className="bg-white rounded-lg p-4 flex items-center justify-center min-h-[90px]">
-                <img
-                  src={brand.logo}
-                  alt={brand.name}
-                  className="max-h-[72px] w-auto object-contain"
-                />
-              </div>
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="max-h-[72px] w-auto object-contain"
+              />
             </div>
           ))}
         </div>
@@ -137,15 +135,13 @@ export const TrustedBrandsSection = () => {
                 y: -8,
                 transition: { duration: 0.3, ease: "easeOut" },
               }}
-              className="group relative bg-[#1a2d4a] rounded-2xl p-5 flex items-center justify-center min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-[#2a3d5a]/50 hover:border-primary/30"
+              className="group relative bg-white rounded-2xl p-6 flex items-center justify-center min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
             >
-              <div className="bg-white rounded-lg p-4 w-full h-full flex items-center justify-center min-h-[80px] group-hover:shadow-inner transition-all duration-300">
-                <img
-                  src={brand.logo}
-                  alt={brand.name}
-                  className="max-h-[84px] w-auto object-contain transition-transform duration-300 group-hover:scale-110"
-                />
-              </div>
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="max-h-[84px] w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+              />
             </motion.div>
           ))}
         </motion.div>
