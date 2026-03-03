@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, Check, DollarSign, Fuel, Clock, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import truck1 from "@/assets/truck-1.png";
+import truck1 from "@/assets/oo-truck-cat.jpg";
 import truck2 from "@/assets/truck-2.png";
 
 const benefits = [
@@ -113,7 +113,7 @@ export const OwnerOperatorSection = () => {
                   <img
                     src={truck1}
                     alt="Professional owner operator driver"
-                    className="w-full h-28 sm:h-36 object-cover object-top"
+                    className="w-full h-36 sm:h-48 object-cover"
                   />
                 </div>
                 <motion.div 
