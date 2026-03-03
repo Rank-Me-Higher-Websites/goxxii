@@ -158,7 +158,7 @@ export const FreightServicesSection = () => {
                 alt="XXII Century Fleet - Dry Van and Refrigerated Trucks"
                 className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-emerald-600/25 via-blue-600/20 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
+              <div className="absolute inset-0 bg-primary/30 transition-opacity duration-500 group-hover:opacity-10" />
             </div>
             {/* Additional content to create scroll height */}
             <div className="hidden lg:block glass rounded-2xl p-6 space-y-4 max-w-md mx-auto">
