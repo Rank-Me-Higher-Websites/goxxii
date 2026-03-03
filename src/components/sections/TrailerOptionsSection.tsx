@@ -2,7 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import yourTrailer from "@/assets/your-trailer.png";
+import yourTrailer from "@/assets/driver-selfie-truck.jpg";
 import ourTrailer from "@/assets/our-trailer.png";
 
 export const TrailerOptionsSection = () => {
