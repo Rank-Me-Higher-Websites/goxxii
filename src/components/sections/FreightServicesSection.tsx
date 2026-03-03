@@ -161,7 +161,7 @@ export const FreightServicesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-emerald-600/25 via-blue-600/20 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
             </div>
             {/* Additional content to create scroll height */}
-            <div className="hidden lg:block glass rounded-2xl p-6 space-y-4">
+            <div className="hidden lg:block glass rounded-2xl p-6 space-y-4 max-w-md mx-auto">
               <h3 className="font-display font-semibold text-foreground text-lg">Our Fleet Includes:</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center gap-2">
