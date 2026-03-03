@@ -152,12 +152,13 @@ export const FreightServicesSection = () => {
             transition={{ duration: 0.8 }}
             className="space-y-6"
           >
-            <div className="hidden lg:block glass rounded-2xl overflow-hidden max-w-md mx-auto">
+            <div className="hidden lg:block glass rounded-2xl overflow-hidden max-w-md mx-auto relative">
               <img
                 src={trucksFleet}
                 alt="XXII Century Fleet - Dry Van and Refrigerated Trucks"
                 className="w-full h-auto"
               />
+              <div className="absolute inset-0 bg-background/40" />
             </div>
             {/* Additional content to create scroll height */}
             <div className="hidden lg:block glass rounded-2xl p-6 space-y-4">
