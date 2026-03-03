@@ -3,7 +3,7 @@ import { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
-import trucksFleet from "@/assets/trucks-fleet.png";
+import trucksFleet from "@/assets/oo-truck-cat.jpg";
 import { Lightbulb, Truck, Wrench, Award } from "lucide-react";
 
 const services = [
