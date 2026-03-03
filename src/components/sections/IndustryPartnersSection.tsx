@@ -88,7 +88,7 @@ export const IndustryPartnersSection = () => {
               className="glass rounded-2xl p-8 hover:border-primary/30 transition-all duration-300"
             >
               <div className="flex gap-6">
-                <div className="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden bg-secondary">
+                <div className="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden bg-white">
                   <img
                     src={partner.logo}
                     alt={partner.name}
@@ -124,7 +124,7 @@ export const IndustryPartnersSection = () => {
             className="glass rounded-2xl p-6"
           >
             <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 rounded-xl overflow-hidden bg-secondary mb-4">
+              <div className="w-20 h-20 rounded-xl overflow-hidden bg-white mb-4">
                 <img
                   src={partners[currentIndex].logo}
                   alt={partners[currentIndex].name}
