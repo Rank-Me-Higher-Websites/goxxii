@@ -181,6 +181,7 @@ export const FreightServicesSection = () => {
                   GPS-Tracked Equipment for Real-Time Visibility
                 </li>
               </ul>
+            </div>
             <div className="hidden lg:block glass rounded-xl p-5 max-w-md mx-auto">
               <h4 className="font-display font-semibold text-foreground mb-3">Why Drivers Choose Us</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
