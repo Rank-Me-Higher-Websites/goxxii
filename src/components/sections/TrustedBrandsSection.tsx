@@ -62,7 +62,7 @@ const MobileCarousel = () => {
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="w-full h-[100px] object-cover"
+                className="w-full h-[80px] object-cover"
               />
             </div>
           ))}
@@ -135,12 +135,12 @@ export const TrustedBrandsSection = () => {
                 y: -8,
                 transition: { duration: 0.3, ease: "easeOut" },
               }}
-              className="group relative rounded-2xl overflow-hidden min-h-[140px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
+              className="group relative rounded-2xl overflow-hidden min-h-[100px] cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
             >
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="w-full h-[140px] object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-[100px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
             </motion.div>
           ))}
