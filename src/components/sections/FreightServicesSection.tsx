@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import trucksFleet from "@/assets/trucks-fleet.png";
-import { Lightbulb, Ship, Wrench, Award } from "lucide-react";
+import { Lightbulb, Truck, Wrench, Award } from "lucide-react";
 
 const services = [
   {
