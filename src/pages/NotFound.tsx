@@ -9,6 +9,12 @@ const NotFound = () => {
 
   useEffect(() => {
     console.error("404 Error:", location.pathname);
+    // Add noindex meta tag to prevent search engines from indexing 404 pages
+    const meta = document.createElement("meta");
+    meta.name = "robots";
+    meta.content = "noindex, nofollow";
+    document.head.appendChild(meta);
+    return () => { document.head.removeChild(meta); };
   }, [location.pathname]);
 
   return (
