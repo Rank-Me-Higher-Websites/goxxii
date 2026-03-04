@@ -1,10 +1,26 @@
+import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getLocalBusinessSchema,
+  getBreadcrumbSchema,
+} from "@/data/schemaData";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 
 const Terms = () => {
+  const schemas = useMemo(() => [
+    getOrganizationSchema(),
+    getLocalBusinessSchema(),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Terms & Conditions", path: "/terms" },
+    ]),
+  ], []);
+
   return (
     <Layout>
       <SEOHead
@@ -13,6 +29,7 @@ const Terms = () => {
         keywords={SEO_CONTENT.terms.keywords}
         canonicalPath="/terms"
       />
+      <SchemaMarkup schemas={schemas} />
       <article className="pt-32 pb-20">
         <div className="container-custom max-w-4xl">
           <motion.div

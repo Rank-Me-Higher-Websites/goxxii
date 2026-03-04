@@ -330,3 +330,25 @@ export const contactFaqsPlain = [
   { question: "How quickly does the recruiting team respond?", answer: "We typically respond within 24 hours of receiving your application or inquiry." },
   { question: "Can shippers or brokers contact XXII Century for freight services?", answer: "Yes. If you need freight shipping services including dry van, refrigerated, or flatbed capacity, contact our logistics team." },
 ];
+
+export const freightServicesFaqsPlain = [
+  { question: "What freight services does XXII Century offer?", answer: "We provide dry van, refrigerated, and flatbed freight shipping across the continental U.S. and Canada. Our asset-based fleet handles FTL shipments with real-time GPS tracking and dedicated account management." },
+  { question: "How does XXII Century ensure on-time delivery?", answer: "We maintain a 97% on-time delivery rate through AI-powered route optimization, real-time tracking, proactive dispatch support, and a modern fleet of well-maintained trucks." },
+  { question: "Can I get a freight shipping quote?", answer: "Yes. Contact our logistics team at 630-948-0501 or email hr@goxxii.com for a free, no-obligation freight quote. We respond within 24 hours." },
+  { question: "Does XXII Century work with freight brokers?", answer: "Yes. We partner with freight brokers and shippers nationwide. Our asset-based fleet provides reliable capacity with competitive rates and full shipment visibility." },
+  { question: "What areas does XXII Century serve for freight shipping?", answer: "We serve all 48 contiguous states and Canada. Our Chicago headquarters coordinates nationwide freight lanes with both dedicated and spot capacity options." },
+];
+
+export const aboutFaqsPlain = [
+  { question: "When was XXII Century founded?", answer: "XXII Century was founded in 2009 in the Chicago, Illinois area. We've grown from a small carrier to a 500+ driver operation serving Fortune 500 companies nationwide." },
+  { question: "Where is XXII Century headquartered?", answer: "Our headquarters are at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517. We serve drivers and shippers across all 48 states and Canada." },
+  { question: "What makes XXII Century different from other trucking companies?", answer: "We're a driver-first company offering AI-powered tools, competitive pay (90% linehaul for owner operators, 65+ CPM for company drivers), Fortune 500 freight, and 24/7 dispatch support." },
+  { question: "How many drivers does XXII Century employ?", answer: "XXII Century has over 500 active drivers including owner operators and company drivers. Our team continues to grow as we expand our freight network." },
+  { question: "Does XXII Century hire owner operators and company drivers?", answer: "Yes. We actively hire both independent owner operators and full-time company drivers. Visit our careers page to view open positions and apply online." },
+];
+
+export const blogFaqsPlain = [
+  { question: "What topics does the XXII Century blog cover?", answer: "Our blog covers owner operator tips, CDL career guides, freight market insights, trucking industry trends, and practical advice for professional truck drivers." },
+  { question: "How often is the blog updated?", answer: "We publish new articles regularly covering timely industry topics, career advice, and operational tips for owner operators and company drivers." },
+  { question: "Can I apply to drive for XXII Century through the blog?", answer: "Yes. Every blog post includes links to our driver application. You can also visit our careers page or call 630-948-0501 to speak with our recruiting team." },
+];

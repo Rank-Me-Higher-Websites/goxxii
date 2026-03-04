@@ -4,6 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
 import {
   getOrganizationSchema,
+  getLocalBusinessSchema,
   getBreadcrumbSchema,
   getBlogPostingSchema,
 } from "@/data/schemaData";
@@ -176,6 +177,7 @@ const BlogPost = () => {
     if (!post || !slug) return [];
     return [
       getOrganizationSchema(),
+      getLocalBusinessSchema(),
       getBreadcrumbSchema([
         { name: "Home", path: "/" },
         { name: "Blog", path: "/blog" },

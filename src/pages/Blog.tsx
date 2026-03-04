@@ -4,8 +4,10 @@ import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
 import {
   getOrganizationSchema,
+  getLocalBusinessSchema,
   getBreadcrumbSchema,
   getBlogCollectionSchema,
+  getServiceSchema,
 } from "@/data/schemaData";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -179,11 +181,17 @@ const Blog = () => {
 
   const schemas = useMemo(() => [
     getOrganizationSchema(),
+    getLocalBusinessSchema(),
     getBreadcrumbSchema([
       { name: "Home", path: "/" },
       { name: "Blog", path: "/blog" },
     ]),
     getBlogCollectionSchema(),
+    getServiceSchema({
+      name: "Trucking Industry Blog",
+      description: "Expert guides, career advice, and industry insights for owner operators and CDL-A company drivers from XXII Century professionals.",
+      url: "/blog",
+    }),
   ], []);
 
   const filteredPosts = blogPosts.filter((post) => {

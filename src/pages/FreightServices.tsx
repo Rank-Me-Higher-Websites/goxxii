@@ -7,6 +7,8 @@ import {
   getLocalBusinessSchema,
   getBreadcrumbSchema,
   getServiceSchema,
+  getFAQSchema,
+  freightServicesFaqsPlain,
 } from "@/data/schemaData";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -149,6 +151,7 @@ const FreightServices = () => {
       { name: "Home", path: "/" },
       { name: "Freight Shipping Services", path: "/freight-shipping-services" },
     ]),
+    getFAQSchema(freightServicesFaqsPlain),
     getServiceSchema({
       name: "Freight Shipping Services",
       description: "Nationwide dry van, refrigerated, and flatbed freight shipping. Real-time tracking, competitive rates, Fortune 500 carrier network, and 24/7 dispatch support.",
