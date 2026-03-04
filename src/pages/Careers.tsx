@@ -112,6 +112,11 @@ const Careers = () => {
       { name: "Careers", path: "/careers" },
     ]),
     getFAQSchema(careersFaqsPlain),
+    getServiceSchema({
+      name: "Trucking Careers & Employment",
+      description: "CDL-A driver, owner operator, and dispatcher career opportunities at XXII Century. Competitive pay, benefits, and career growth in the trucking industry.",
+      url: "/careers",
+    }),
     getJobPostingSchema({
       title: "OTR Dispatcher",
       description: "Coordinate freight movements, communicate with drivers, and optimize routes for maximum efficiency at XXII Century.",

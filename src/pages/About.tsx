@@ -25,6 +25,11 @@ const About = () => {
       { name: "Home", path: "/" },
       { name: "About", path: "/about" },
     ]),
+    getServiceSchema({
+      name: "About XXII Century Trucking",
+      description: "Chicago-based trucking carrier since 2009. 500+ drivers, Fortune 500 partnerships, owner operator and company driver programs with AI-powered fleet management.",
+      url: "/about",
+    }),
   ], []);
 
   return (

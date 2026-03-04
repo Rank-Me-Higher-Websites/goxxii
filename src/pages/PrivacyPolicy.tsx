@@ -1,9 +1,25 @@
+import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getLocalBusinessSchema,
+  getBreadcrumbSchema,
+} from "@/data/schemaData";
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 
 const PrivacyPolicy = () => {
+  const schemas = useMemo(() => [
+    getOrganizationSchema(),
+    getLocalBusinessSchema(),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Privacy Policy", path: "/privacy-policy" },
+    ]),
+  ], []);
+
   return (
     <Layout>
       <SEOHead
@@ -12,6 +28,7 @@ const PrivacyPolicy = () => {
         keywords={SEO_CONTENT.privacy.keywords}
         canonicalPath="/privacy-policy"
       />
+      <SchemaMarkup schemas={schemas} />
       <article className="pt-32 pb-20">
         <div className="container-custom max-w-4xl">
           <motion.div
