@@ -8,6 +8,7 @@ import {
   getBreadcrumbSchema,
   getFAQSchema,
   getJobPostingSchema,
+  getServiceSchema,
   careersFaqsPlain,
 } from "@/data/schemaData";
 import { motion } from "framer-motion";
