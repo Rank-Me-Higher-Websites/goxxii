@@ -4,8 +4,10 @@ import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
 import {
   getOrganizationSchema,
+  getLocalBusinessSchema,
   getBreadcrumbSchema,
   getBlogCollectionSchema,
+  getServiceSchema,
 } from "@/data/schemaData";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
