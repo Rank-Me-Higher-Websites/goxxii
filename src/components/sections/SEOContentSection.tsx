@@ -1,12 +1,53 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { TrendingUp, Shield, Cpu, Users, Clock, DollarSign, Truck, Star } from "lucide-react";
+import truckFleet from "@/assets/trucks-fleet.png";
 
 interface SEOContentSectionProps {
   pageKey: "home" | "ownerOperators" | "companyDrivers" | "fleetProgram" | "freightServices" | "about" | "careers" | "blog" | "contact";
   sideImage?: string;
   sideImageAlt?: string;
 }
+
+const keyPoints: Record<string, { icon: any; label: string }[]> = {
+  home: [
+    { icon: DollarSign, label: "90% Revenue Share" },
+    { icon: Cpu, label: "AI-Powered Dispatch" },
+    { icon: Shield, label: "No Hidden Fees" },
+    { icon: TrendingUp, label: "Fortune 500 Freight" },
+    { icon: Clock, label: "24/7 Support" },
+    { icon: Star, label: "15+ Years Trusted" },
+  ],
+  ownerOperators: [
+    { icon: DollarSign, label: "90% Linehaul Pay" },
+    { icon: Shield, label: "No Forced Dispatch" },
+    { icon: Cpu, label: "AI Fuel Discounts" },
+    { icon: Clock, label: "Weekly Settlements" },
+  ],
+  companyDrivers: [
+    { icon: DollarSign, label: "63 CPM Starting" },
+    { icon: Shield, label: "Full Benefits" },
+    { icon: Truck, label: "Late-Model Equipment" },
+    { icon: Users, label: "Home Weekly" },
+  ],
+  fleetProgram: [
+    { icon: TrendingUp, label: "Premium Freight" },
+    { icon: Shield, label: "Full Autonomy" },
+    { icon: Cpu, label: "Real-Time Visibility" },
+    { icon: Clock, label: "24/7 Support" },
+  ],
+  freightServices: [
+    { icon: TrendingUp, label: "97% On-Time" },
+    { icon: Cpu, label: "GPS Tracking" },
+    { icon: Shield, label: "Vetted Carriers" },
+    { icon: Truck, label: "Nationwide Coverage" },
+  ],
+};
+
+const defaultImages: Record<string, { src: string; alt: string }> = {
+  home: { src: truckFleet, alt: "XXII Century fleet trucks on the road" },
+};
 
 const seoContent = {
   home: {
@@ -141,83 +182,124 @@ export const SEOContentSection = ({ pageKey, sideImage, sideImageAlt }: SEOConte
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
   const content = seoContent[pageKey];
+  const badges = keyPoints[pageKey] || [];
+  const fallbackImage = defaultImages[pageKey];
+  const imageToShow = sideImage || fallbackImage?.src;
+  const imageAlt = sideImageAlt || fallbackImage?.alt || "";
 
   if (!content) return null;
 
   return (
-    <section ref={ref} className="section-padding bg-card border-y border-border">
-      <div className="container-custom">
-        <div className={`flex flex-col ${sideImage ? 'lg:flex-row lg:items-center lg:gap-10' : ''}`}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
-          className={`${sideImage ? 'lg:flex-1 lg:text-left' : 'max-w-4xl mx-auto'} text-center`}
-        >
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
-            {content.heading}
-          </h2>
-          
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            {content.paragraphs.map((paragraph, index) => (
-              <motion.p
-                key={index}
-                initial={{ opacity: 0, y: 15 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.4, delay: 0.1 * (index + 1) }}
-                dangerouslySetInnerHTML={{ __html: paragraph }}
-                className="[&>strong]:text-foreground [&>strong]:font-semibold"
-              />
-            ))}
-          </div>
+    <section ref={ref} className="section-padding bg-card/50 border-y border-border relative overflow-hidden">
+      {/* Subtle background accents */}
+      <div className="absolute top-0 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
 
-          {/* Internal Links */}
+      <div className="container-custom relative z-10">
+        <div className={`flex flex-col ${imageToShow ? 'lg:flex-row lg:gap-12' : ''}`}>
+          {/* Text Content */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.4, delay: 0.4 }}
-            className="mt-8 pt-6 border-t border-border"
+            transition={{ duration: 0.5 }}
+            className={`${imageToShow ? 'lg:flex-1' : 'max-w-4xl mx-auto'} text-center ${imageToShow ? 'lg:text-left' : ''}`}
           >
-            <p className="text-sm text-muted-foreground mb-3">Learn more:</p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {content.links.map((link, index) => (
-                link.external ? (
-                  <a
-                    key={index}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
+              {content.heading}
+            </h2>
+
+            {/* Key Point Badges */}
+            {badges.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.4, delay: 0.15 }}
+                className={`flex flex-wrap gap-2 mb-6 ${imageToShow ? 'justify-center lg:justify-start' : 'justify-center'}`}
+              >
+                {badges.map((badge, i) => (
+                  <motion.span
+                    key={badge.label}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                    transition={{ delay: 0.2 + i * 0.06 }}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20"
                   >
-                    {link.text}
-                  </a>
-                ) : (
-                  <Link
-                    key={index}
-                    to={link.href}
-                    className="text-sm text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
-                  >
-                    {link.text}
-                  </Link>
-                )
+                    <badge.icon className="w-3.5 h-3.5" />
+                    {badge.label}
+                  </motion.span>
+                ))}
+              </motion.div>
+            )}
+            
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              {content.paragraphs.map((paragraph, index) => (
+                <motion.p
+                  key={index}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.4, delay: 0.1 * (index + 1) }}
+                  dangerouslySetInnerHTML={{ __html: paragraph }}
+                  className="[&>strong]:text-foreground [&>strong]:font-semibold"
+                />
               ))}
             </div>
+
+            {/* Internal Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.4, delay: 0.4 }}
+              className="mt-8 pt-6 border-t border-border"
+            >
+              <p className="text-sm text-muted-foreground mb-3">Learn more:</p>
+              <div className={`flex flex-wrap gap-3 ${imageToShow ? 'justify-center lg:justify-start' : 'justify-center'}`}>
+                {content.links.map((link, index) => (
+                  link.external ? (
+                    <a
+                      key={index}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
+                    >
+                      {link.text}
+                    </a>
+                  ) : (
+                    <Link
+                      key={index}
+                      to={link.href}
+                      className="text-sm text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
+                    >
+                      {link.text}
+                    </Link>
+                  )
+                ))}
+              </div>
+            </motion.div>
           </motion.div>
-        </motion.div>
-        {sideImage && (
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="hidden lg:block lg:w-[45%] flex-shrink-0"
-          >
-            <img
-              src={sideImage}
-              alt={sideImageAlt || ""}
-              className="rounded-2xl object-cover w-full h-[380px] border border-border"
-            />
-          </motion.div>
-        )}
+
+          {/* Side Image */}
+          {imageToShow && (
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="hidden lg:flex lg:w-[42%] flex-shrink-0 items-center"
+            >
+              <div className="relative w-full">
+                <div className="rounded-2xl overflow-hidden border border-border img-hover-glow">
+                  <img
+                    src={imageToShow}
+                    alt={imageAlt}
+                    className="w-full h-[400px] object-cover"
+                  />
+                </div>
+                {/* Decorative accent corner */}
+                <div className="absolute -bottom-3 -left-3 w-20 h-20 border-b-2 border-l-2 border-primary/30 rounded-bl-2xl pointer-events-none" />
+                <div className="absolute -top-3 -right-3 w-20 h-20 border-t-2 border-r-2 border-primary/30 rounded-tr-2xl pointer-events-none" />
+              </div>
+            </motion.div>
+          )}
         </div>
       </div>
     </section>
