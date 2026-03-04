@@ -53,7 +53,7 @@ const seoContent = {
   home: {
     heading: "Why Choose XXII Century for Your Trucking Career",
     paragraphs: [
-      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 15 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions with 90% linehaul pay or company driver roles offering 63 CPM with full benefits, our team is committed to your success on the road.",
+      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 15 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions with 90% linehaul pay or company driver roles offering 65 CPM with full benefits, our team is committed to your success on the road.",
       "Our technology-driven approach sets us apart from traditional carriers. AI-powered dispatch optimizes your routes for maximum earnings while minimizing empty miles. Real-time load matching ensures you're never left searching for freight, and our 24/7 support team handles logistics so you can focus on driving. We invest in tools that put more money in your pocket.",
       "From the moment you apply, we prioritize transparency and respect. No hidden fees, no surprise deductions—just honest partnerships that help you build a sustainable trucking career. Join hundreds of drivers who have found their home with a carrier that truly values their contribution to keeping America moving."
     ],
