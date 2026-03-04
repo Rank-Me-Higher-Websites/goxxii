@@ -85,45 +85,6 @@ const ownerOperatorFaqs: FAQ[] = [
 
 const companyDriverFaqs: FAQ[] = [
   {
-    question: "What is the starting pay for company drivers?",
-    answer: (
-      <p>Company drivers start at <strong className="text-foreground">63 CPM</strong> with automatic raises every 75,000 miles. Performance bonuses are available on top of base pay. See full compensation details on our <Link to="/company-drivers" className="text-primary hover:underline">company driver page</Link>.</p>
-    ),
-  },
-  {
-    question: "What benefits do company drivers receive?",
-    answer: (
-      <div className="space-y-3">
-        <p>Full benefits include:</p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>Health, dental, and vision insurance</li>
-          <li>401(k) with company match</li>
-          <li>Paid vacation and holidays</li>
-          <li>Safety and inspection bonuses</li>
-        </ul>
-        <p>Explore all <Link to="/careers" className="text-primary hover:underline">career opportunities</Link> with XXII Century.</p>
-      </div>
-    ),
-  },
-  {
-    question: "What kind of trucks do company drivers operate?",
-    answer: (
-      <p>We invest in <strong className="text-foreground">late-model, well-maintained equipment</strong>. Company drivers operate modern trucks with the latest safety features and comfort amenities for a better driving experience.</p>
-    ),
-  },
-  {
-    question: "How much home time do company drivers get?",
-    answer: (
-      <p>Home time depends on your route preference. Local drivers are home daily, regional drivers weekly, and OTR drivers every 2–3 weeks. We work with you to balance miles and home time. <Link to="/contact" className="text-primary hover:underline">Contact us</Link> to discuss options.</p>
-    ),
-  },
-  {
-    question: "Do I need experience to drive for XXII Century?",
-    answer: (
-      <p>We require a valid <strong className="text-foreground">CDL-A license</strong> and generally prefer drivers with at least 6 months of verifiable OTR experience. Recent CDL graduates may be considered — <Link to="/contact" className="text-primary hover:underline">reach out</Link> to discuss your qualifications.</p>
-    ),
-  },
-  {
     question: "How can I check my current MPG?",
     answer: (
       <p>MPG is calculated weekly and shown on the <strong className="text-foreground">leaderboard on this site</strong>. You can monitor your progress here at any time.</p>
