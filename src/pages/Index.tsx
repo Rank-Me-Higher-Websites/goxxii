@@ -16,6 +16,7 @@ import { OwnerOperatorSection } from "@/components/sections/OwnerOperatorSection
 import { AboutSection } from "@/components/sections/AboutSection";
 import { TechBenefitsSection } from "@/components/sections/TechBenefitsSection";
 import { TrustedBrandsSection } from "@/components/sections/TrustedBrandsSection";
+import xxiiMackMountains from "@/assets/xxii-mack-mountains.jpg";
 import { IndustryPartnersSection } from "@/components/sections/IndustryPartnersSection";
 import { LiveTruckSection } from "@/components/sections/LiveTruckSection";
 import { ReviewsWidgetSection } from "@/components/sections/ReviewsWidgetSection";
@@ -67,7 +68,7 @@ const Index = () => {
       <TrailerOptionsSection />
       <TechPoweredSection />
       <MobileAppSection />
-      <SEOContentSection pageKey="home" />
+      <SEOContentSection pageKey="home" sideImage={xxiiMackMountains} sideImageAlt="XXII Century Mack truck in snowy mountains" />
       <CareerSection />
       <ReviewsWidgetSection />
       <LocationMapSection />
