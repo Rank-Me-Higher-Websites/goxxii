@@ -1,5 +1,13 @@
+import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import {
+  getOrganizationSchema,
+  getLocalBusinessSchema,
+  getBreadcrumbSchema,
+  getJobPostingSchema,
+} from "@/data/schemaData";
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import { ArrowRight, ArrowLeft, CheckCircle, Phone, Mail, Calendar, Briefcase, MapPin, Clock } from "lucide-react";

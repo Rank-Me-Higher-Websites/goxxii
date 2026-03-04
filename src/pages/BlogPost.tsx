@@ -177,6 +177,7 @@ const BlogPost = () => {
     if (!post || !slug) return [];
     return [
       getOrganizationSchema(),
+      getLocalBusinessSchema(),
       getBreadcrumbSchema([
         { name: "Home", path: "/" },
         { name: "Blog", path: "/blog" },
