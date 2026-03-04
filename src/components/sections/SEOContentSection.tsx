@@ -26,7 +26,7 @@ const keyPoints: Record<string, { icon: any; label: string }[]> = {
     { icon: Clock, label: "Weekly Settlements" },
   ],
   companyDrivers: [
-    { icon: DollarSign, label: "63 CPM Starting" },
+    { icon: DollarSign, label: "65 CPM Starting" },
     { icon: Shield, label: "Full Benefits" },
     { icon: Truck, label: "Late-Model Equipment" },
     { icon: Users, label: "Home Weekly" },
