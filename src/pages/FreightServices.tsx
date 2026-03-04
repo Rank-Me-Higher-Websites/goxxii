@@ -155,8 +155,8 @@ const FreightServices = () => {
       url: "/freight-shipping-services",
     }),
     getServiceSchema({
-      name: "Freight Brokerage",
-      description: "Connect with vetted, high-performing carriers through our Trusted Carrier Network. Full truckload, LTL, and expedited freight solutions across the continental U.S. and Canada.",
+      name: "Freight Carrier Services",
+      description: "Asset-based freight carrier with modern fleet, professional drivers, real-time tracking, and nationwide coverage across the continental U.S. and Canada.",
       url: "/freight-shipping-services",
     }),
   ], []);
