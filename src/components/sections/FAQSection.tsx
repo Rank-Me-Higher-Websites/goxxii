@@ -123,6 +123,42 @@ const companyDriverFaqs: FAQ[] = [
       <p>We require a valid <strong className="text-foreground">CDL-A license</strong> and generally prefer drivers with at least 6 months of verifiable OTR experience. Recent CDL graduates may be considered — <Link to="/contact" className="text-primary hover:underline">reach out</Link> to discuss your qualifications.</p>
     ),
   },
+  {
+    question: "How can I check my current MPG?",
+    answer: (
+      <p>MPG is calculated weekly and shown on the <strong className="text-foreground">leaderboard on this site</strong>. You can monitor your progress here at any time.</p>
+    ),
+  },
+  {
+    question: "When are the fuel incentive payouts processed?",
+    answer: (
+      <p>Bonuses are paid on the <strong className="text-foreground">first payroll of the following month</strong>, processed by the Accounting Department.</p>
+    ),
+  },
+  {
+    question: "What if I have questions or suggestions about the program?",
+    answer: (
+      <p>You can reach out to <a href="mailto:mantas@goxxii.com" className="text-primary hover:underline">mantas@goxxii.com</a> directly or submit feedback through the contact form on our <Link to="/contact" className="text-primary hover:underline">contact page</Link>.</p>
+    ),
+  },
+  {
+    question: "Do I need to sign up for the fuel incentive program?",
+    answer: (
+      <p>No — <strong className="text-foreground">all company drivers are automatically included</strong> in the program. No enrollment needed.</p>
+    ),
+  },
+  {
+    question: "What happens if two drivers have the same MPG?",
+    answer: (
+      <p>If two or more drivers achieve the same MPG in a week or month, the driver with the <strong className="text-foreground">lower idling percentage</strong> will be ranked higher on the leaderboard.</p>
+    ),
+  },
+  {
+    question: "Are Owner Operators eligible for monthly rewards?",
+    answer: (
+      <p>No — Owner Operators are <strong className="text-foreground">excluded</strong> from the driver incentive program. This program is for company drivers only.</p>
+    ),
+  },
 ];
 
 const fleetProgramFaqs: FAQ[] = [

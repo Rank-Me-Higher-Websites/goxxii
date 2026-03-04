@@ -304,6 +304,12 @@ export const companyDriverFaqsPlain = [
   { question: "What kind of trucks do company drivers operate?", answer: "We invest in late-model, well-maintained equipment. Company drivers operate modern trucks with the latest safety features and comfort amenities." },
   { question: "How much home time do company drivers get?", answer: "Home time depends on your route preference. Local drivers are home daily, regional drivers weekly, and OTR drivers every 2–3 weeks." },
   { question: "Do I need experience to drive for XXII Century?", answer: "We require a valid CDL-A license and generally prefer drivers with at least 6 months of verifiable OTR experience. Recent CDL graduates may be considered." },
+  { question: "How can I check my current MPG?", answer: "MPG is calculated weekly and shown on the leaderboard on this site. You can monitor your progress there." },
+  { question: "When are the fuel incentive payouts processed?", answer: "On the first payroll of the following month, processed by the Accounting Department." },
+  { question: "What if I have questions or suggestions about the program?", answer: "You can reach out to mantas@goxxii.com directly or submit feedback through the contact form on our contact page." },
+  { question: "Do I need to sign up for the fuel incentive program?", answer: "No, all company drivers are automatically included in the program." },
+  { question: "What happens if two drivers have the same MPG?", answer: "If two or more drivers achieve the same MPG in a week or month, the driver with the lower idling percentage will be ranked higher on the leaderboard." },
+  { question: "Are Owner Operators eligible for monthly rewards?", answer: "No, Owner Operators are excluded from the driver incentive program." },
 ];
 
 export const fleetProgramFaqsPlain = [
