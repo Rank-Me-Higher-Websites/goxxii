@@ -28,10 +28,13 @@ export const SEOHead = ({ title, description, canonicalPath, keywords }: SEOHead
     
     // Update canonical URL if provided
     if (canonicalPath) {
-      const canonical = document.querySelector('link[rel="canonical"]');
-      if (canonical) {
-        canonical.setAttribute("href", `https://goxxii.com${canonicalPath}`);
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.setAttribute("rel", "canonical");
+        document.head.appendChild(canonical);
       }
+      canonical.setAttribute("href", `https://goxxii.com${canonicalPath}`);
     }
     
     // Update OG tags
