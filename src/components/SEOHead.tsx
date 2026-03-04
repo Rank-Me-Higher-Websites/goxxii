@@ -61,39 +61,39 @@ export const SEOHead = ({ title, description, canonicalPath, keywords }: SEOHead
 // SEO content for all pages - unique meta titles/descriptions per page
 export const SEO_CONTENT = {
   home: {
-    title: "Owner Operator & CDL-A Driver Jobs | XXII Century Trucking",
-    description: "Hiring owner operators (90% linehaul) & company drivers (65+ CPM) in Chicago. Fortune 500 freight, weekly pay, full benefits. Apply today.",
-    keywords: "owner operator jobs Chicago, CDL-A driver jobs, trucking company Illinois, company driver positions, dry van trucking, OTR truck driving jobs, Fortune 500 freight",
+    title: "Owner Operator & CDL-A Driver Jobs Chicago | XXII Century",
+    description: "Hiring owner operators (90% linehaul) & company drivers (65+ CPM) in Chicago IL. Fortune 500 freight, weekly pay, full benefits. Apply now.",
+    keywords: "owner operator jobs Chicago, CDL-A driver jobs Illinois, trucking company Chicago, company driver positions, dry van trucking, OTR truck driving jobs, Fortune 500 freight, trucking jobs 2025, hiring now",
   },
   ownerOperators: {
-    title: "Owner Operator Jobs — 90% Linehaul, No Forced Dispatch",
-    description: "Earn 90% of every load with XXII Century. Fuel discounts, weekly settlements, Fortune 500 contracts. CDL-A owner operators apply now.",
-    keywords: "owner operator trucking jobs, 90% linehaul pay, independent truck driver, no forced dispatch, OTR owner operator, dry van owner operator",
+    title: "Owner Operator Jobs — 90% Linehaul | XXII Century",
+    description: "Earn 90% of every load with no forced dispatch. Fuel discounts, weekly settlements, Fortune 500 contracts. CDL-A owner operators apply today.",
+    keywords: "owner operator trucking jobs, 90% linehaul pay, independent truck driver, no forced dispatch, OTR owner operator, dry van owner operator, best owner operator company, owner operator jobs 2025",
   },
   companyDrivers: {
-    title: "Company Driver Jobs — 65 CPM, Health & 401(k) Benefits",
-    description: "CDL-A company drivers start at 65 CPM with automatic raises. Full medical, dental, vision, 401(k), paid time off. Modern trucks, consistent miles.",
-    keywords: "company driver jobs, CDL-A driver positions, trucking jobs with benefits, OTR company driver, truck driver 401k, company driver health insurance",
+    title: "Company Driver Jobs — 65 CPM + Benefits | XXII Century",
+    description: "CDL-A company drivers start at 65 CPM with automatic raises. Full medical, dental, vision, 401(k), paid time off. Apply online today.",
+    keywords: "company driver jobs, CDL-A driver positions, trucking jobs with benefits, OTR company driver, truck driver 401k, company driver health insurance, hiring company drivers 2025, apply online",
   },
   fleetProgram: {
     title: "Fleet Partnership & Power Only Program | XXII Century",
     description: "Grow your carrier business with premium Fortune 500 freight. Power Only trailers, 24/7 dispatch, competitive rates for fleet owners and small carriers.",
-    keywords: "fleet owner partnership, power only trucking, carrier partnership program, fleet management, truck fleet opportunities, small carrier freight",
+    keywords: "fleet owner partnership, power only trucking, carrier partnership program, fleet management, truck fleet opportunities, small carrier freight, fleet owner jobs 2025",
   },
   freightServices: {
     title: "Freight Shipping & Dry Van Logistics | XXII Century",
-    description: "Reliable FTL and dry van freight shipping with 97% on-time delivery. Real-time tracking, dedicated account management. Get a free quote.",
-    keywords: "freight shipping company, dry van logistics, FTL freight services, truckload shipping, supply chain solutions, freight quote Chicago",
+    description: "Reliable FTL and dry van freight shipping with 97% on-time delivery. Real-time tracking, dedicated account management. Get a free quote today.",
+    keywords: "freight shipping company, dry van logistics, FTL freight services, truckload shipping, supply chain solutions, freight quote Chicago, reliable freight carrier",
   },
   about: {
     title: "About XXII Century — Chicago Carrier Since 2009",
-    description: "Driver-first trucking company with 500+ drivers and Fortune 500 partnerships. Based in Woodridge, IL, serving shippers nationwide since 2009.",
-    keywords: "XXII Century trucking, Chicago trucking carrier, driver-first company, Woodridge IL logistics, Midwest trucking provider, about XXII Century",
+    description: "Driver-first trucking company with 500+ drivers and Fortune 500 partnerships. Based in Woodridge, IL. Join our growing team — apply now.",
+    keywords: "XXII Century trucking, Chicago trucking carrier, driver-first company, Woodridge IL logistics, Midwest trucking provider, about XXII Century, join our team",
   },
   careers: {
     title: "Trucking Careers — Drivers & Dispatchers Hiring Now",
-    description: "Open CDL-A driver and OTR dispatcher positions at XXII Century. Competitive pay, benefits, career growth. Browse jobs and apply online.",
-    keywords: "trucking job openings, CDL driver employment, dispatcher positions, logistics careers, transportation jobs, trucking careers Chicago",
+    description: "Open CDL-A driver and OTR dispatcher positions at XXII Century. Competitive pay, benefits, career growth. Browse jobs and apply online today.",
+    keywords: "trucking job openings, CDL driver employment, dispatcher positions, logistics careers, transportation jobs, trucking careers Chicago, hiring now, apply online",
   },
   contact: {
     title: "Contact XXII Century | Call 630-948-0501 Today",
@@ -101,9 +101,9 @@ export const SEO_CONTENT = {
     keywords: "trucking company contact, driver recruiting, freight quote request, Woodridge IL trucking, XXII Century phone number, trucking company address",
   },
   blog: {
-    title: "Trucking Blog — Driver Tips & Industry Insights",
+    title: "Trucking Blog — Driver Tips & Industry Insights | XXII Century",
     description: "Expert guides for owner operators and CDL drivers. Career advice, market trends, and trucking best practices from XXII Century professionals.",
-    keywords: "trucking industry blog, driver career advice, owner operator tips, CDL guides, freight market news, trucking best practices",
+    keywords: "trucking industry blog, driver career advice, owner operator tips, CDL guides, freight market news, trucking best practices, trucking blog 2025",
   },
   privacy: {
     title: "Privacy Policy | XXII Century Trucking",

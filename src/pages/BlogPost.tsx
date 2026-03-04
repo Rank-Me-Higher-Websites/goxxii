@@ -205,8 +205,8 @@ const BlogPost = () => {
     <Layout>
       <SEOHead
         title={`${post.title} | XXII Century Trucking Blog`}
-        description={post.excerpt}
-        keywords={`${post.category}, trucking blog, XXII Century, CDL driver tips, owner operator guide`}
+        description={post.excerpt.length > 155 ? post.excerpt.slice(0, 152) + "..." : post.excerpt}
+        keywords={`${post.category}, ${post.title.split(/[\s:—]+/).slice(0, 4).join(", ")}, trucking blog, XXII Century, CDL driver tips, owner operator guide`}
         canonicalPath={`/blog/${slug}`}
       />
       <SchemaMarkup schemas={schemas} />
