@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import truckChicago from "@/assets/xxii-truck-chicago.jpg";
+import truckChicago from "@/assets/gallery/car-5.png";
 
 export const FleetJoinSection = () => {
   const ref = useRef(null);
