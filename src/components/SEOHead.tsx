@@ -68,8 +68,8 @@ export const SEO_CONTENT = {
     keywords: "owner operator trucking jobs, 90% linehaul pay, independent truck driver, no forced dispatch, OTR owner operator, dry van owner operator",
   },
   companyDrivers: {
-    title: "Company Driver Jobs — 63 CPM, Health & 401(k) Benefits",
-    description: "CDL-A company drivers start at 63 CPM with automatic raises. Full medical, dental, vision, 401(k), paid time off. Modern trucks, consistent miles.",
+    title: "Company Driver Jobs — 65 CPM, Health & 401(k) Benefits",
+    description: "CDL-A company drivers start at 65 CPM with automatic raises. Full medical, dental, vision, 401(k), paid time off. Modern trucks, consistent miles.",
     keywords: "company driver jobs, CDL-A driver positions, trucking jobs with benefits, OTR company driver, truck driver 401k, company driver health insurance",
   },
   fleetProgram: {
