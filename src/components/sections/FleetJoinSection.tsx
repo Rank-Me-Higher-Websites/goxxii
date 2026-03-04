@@ -58,11 +58,29 @@ export const FleetJoinSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="hidden lg:block lg:w-[45%] flex-shrink-0"
           >
-            <img
-              src={truckChicago}
-              alt="XXII Century truck in downtown Chicago"
-              className="rounded-2xl object-cover w-full h-[420px] border border-border"
-            />
+            <div className="relative group">
+              {/* Badge */}
+              <div className="absolute top-4 left-4 z-10 flex items-center gap-2 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                <Truck className="w-4 h-4" />
+                Power Fleet
+              </div>
+
+              {/* Image with hover glow */}
+              <div className="relative overflow-hidden rounded-2xl border border-border">
+                <img
+                  src={truckChicago}
+                  alt="XXII Century owner operators with truck"
+                  className="object-cover w-full h-[420px] transition-transform duration-500 group-hover:scale-105"
+                />
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-60" />
+                {/* Hover glow */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-primary/10 mix-blend-overlay" />
+              </div>
+
+              {/* Glow shadow behind image */}
+              <div className="absolute -inset-1 bg-primary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500 -z-10" />
+            </div>
           </motion.div>
         </div>
       </div>
