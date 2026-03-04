@@ -127,7 +127,7 @@ const Careers = () => {
     }),
     getJobPostingSchema({
       title: "Company Driver - CDL-A",
-      description: "Join XXII Century as a company driver. Starting at 63 CPM with automatic raises, full benefits, modern equipment, and weekly pay.",
+      description: "Join XXII Century as a company driver. Starting at 65 CPM with automatic raises, full benefits, modern equipment, and weekly pay.",
       employmentType: "FULL_TIME",
       minSalary: 65000,
       maxSalary: 95000,

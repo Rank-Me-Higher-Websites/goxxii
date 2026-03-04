@@ -81,7 +81,7 @@ const seoContent = {
   companyDrivers: {
     heading: "Stable Trucking Careers with Full Support",
     paragraphs: [
-      "XXII Century offers <strong>CDL-A company driver positions</strong> designed for professionals who want consistent earnings without the overhead of truck ownership. Starting at 63 CPM with performance bonuses, our drivers earn $83,000–$95,000 annually while enjoying comprehensive health benefits, 401k matching, and paid time off that lets you recharge.",
+      "XXII Century offers <strong>CDL-A company driver positions</strong> designed for professionals who want consistent earnings without the overhead of truck ownership. Starting at 65 CPM with performance bonuses, our drivers earn $83,000–$95,000 annually while enjoying comprehensive health benefits, 401k matching, and paid time off that lets you recharge.",
       "Our modern fleet features late-model equipment with the latest safety technology, ensuring comfortable and efficient runs mile after mile. Automatic pay increases every 75,000 miles reward your loyalty and experience, while safety bonuses and fuel incentives put extra money in your pocket throughout the year. We recognize hard work.",
       "We understand that <strong>home time matters</strong>. That's why we offer flexible scheduling options, dedicated lanes, and regional routes that keep you closer to family. Our dispatch team respects your preferences and works to balance your earning potential with your personal life—because trucking shouldn't mean sacrificing everything else."
     ],

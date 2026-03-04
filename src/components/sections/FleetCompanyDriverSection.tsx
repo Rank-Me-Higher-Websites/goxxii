@@ -52,7 +52,7 @@ export const FleetCompanyDriverSection = () => {
             </h2>
 
             <p className="text-muted-foreground mb-4 leading-relaxed">
-              Our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> offer the stability and benefits you deserve without the hassles of truck ownership. Starting at 63 CPM with automatic raises every 75,000 miles, plus performance bonuses that reward your dedication on every run.
+              Our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> offer the stability and benefits you deserve without the hassles of truck ownership. Starting at 65 CPM with automatic raises every 75,000 miles, plus performance bonuses that reward your dedication on every run.
             </p>
             
             <p className="text-muted-foreground mb-6 leading-relaxed">

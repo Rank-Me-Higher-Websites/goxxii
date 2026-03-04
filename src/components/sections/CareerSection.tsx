@@ -15,9 +15,9 @@ const careerOptions = [
   {
     icon: Users,
     title: "Company Drivers",
-    description: "Enjoy competitive pay at 63 CPM, modern equipment, and a supportive team environment.",
+    description: "Enjoy competitive pay at 65 CPM, modern equipment, and a supportive team environment.",
     link: "/company-drivers",
-    highlight: "63 CPM",
+    highlight: "65 CPM",
   },
   {
     icon: Shield,
