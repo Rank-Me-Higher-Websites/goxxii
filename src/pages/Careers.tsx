@@ -40,8 +40,8 @@ const positions = [
   {
     icon: Users,
     title: "Company Driver",
-    description: "Join our team with competitive pay at 63 CPM, modern equipment, and a supportive work environment.",
-    benefits: ["63 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
+    description: "Join our team with competitive pay at 65 CPM, modern equipment, and a supportive work environment.",
+    benefits: ["65 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
     slug: "company-driver",
     date: "February 15, 2026",
   },
