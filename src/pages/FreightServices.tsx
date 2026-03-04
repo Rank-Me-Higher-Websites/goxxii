@@ -7,6 +7,8 @@ import {
   getLocalBusinessSchema,
   getBreadcrumbSchema,
   getServiceSchema,
+  getFAQSchema,
+  freightServicesFaqsPlain,
 } from "@/data/schemaData";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
