@@ -115,6 +115,32 @@ const CareerDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const job = slug ? jobDetails[slug] : null;
 
+  const schemas = useMemo(() => {
+    if (!job || !slug) return [];
+    const salaryMap: Record<string, { min: number; max: number; type: string }> = {
+      "otr-dispatcher": { min: 45000, max: 65000, type: "FULL_TIME" },
+      "owner-operator-nationwide": { min: 150000, max: 300000, type: "CONTRACTOR" },
+      "company-driver": { min: 65000, max: 95000, type: "FULL_TIME" },
+    };
+    const salary = salaryMap[slug] || { min: 50000, max: 100000, type: "FULL_TIME" };
+    return [
+      getOrganizationSchema(),
+      getLocalBusinessSchema(),
+      getBreadcrumbSchema([
+        { name: "Home", path: "/" },
+        { name: "Careers", path: "/careers" },
+        { name: job.title, path: `/careers/${slug}` },
+      ]),
+      getJobPostingSchema({
+        title: job.title,
+        description: job.intro,
+        employmentType: salary.type,
+        minSalary: salary.min,
+        maxSalary: salary.max,
+      }),
+    ];
+  }, [job, slug]);
+
   if (!job) {
     return (
       <Layout>
@@ -139,6 +165,7 @@ const CareerDetail = () => {
         keywords={`${job.title} jobs, ${job.title} hiring now, trucking careers, XXII Century hiring, ${job.type} trucking jobs, ${job.location} trucking, apply online`}
         canonicalPath={`/careers/${slug}`}
       />
+      <SchemaMarkup schemas={schemas} />
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden" aria-label={`${job.title} job listing`}>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-background to-cyan-500/10" />
