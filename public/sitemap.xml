@@ -58,6 +58,24 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- Career Detail Pages -->
+  <url>
+    <loc>https://goxxii.com/careers/otr-dispatcher</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goxxii.com/careers/owner-operator-nationwide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://goxxii.com/careers/company-driver</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+
   <!-- State Pages — Owner Operators -->
   <url>
     <loc>https://goxxii.com/owner-operators/illinois</loc>
