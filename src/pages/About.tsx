@@ -6,6 +6,7 @@ import {
   getOrganizationSchema,
   getLocalBusinessSchema,
   getBreadcrumbSchema,
+  getServiceSchema,
 } from "@/data/schemaData";
 import { AboutHeroSection } from "@/components/sections/AboutHeroSection";
 import { LeadershipSection } from "@/components/sections/LeadershipSection";
