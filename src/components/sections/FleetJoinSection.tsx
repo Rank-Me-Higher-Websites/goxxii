@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { ChevronRight, Truck } from "lucide-react";
+import { ChevronRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import truckChicago from "@/assets/gallery/car-5.png";
 
@@ -59,11 +59,14 @@ export const FleetJoinSection = () => {
             className="hidden lg:block lg:w-[45%] flex-shrink-0"
           >
             <div className="relative group">
-              {/* Badge */}
-              <div className="absolute top-4 left-4 z-10 flex items-center gap-2 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                <Truck className="w-4 h-4" />
-                Power Fleet
-              </div>
+              {/* Badge CTA */}
+              <a
+                href="tel:+16309480501"
+                className="absolute top-4 left-4 z-10 flex items-center gap-2 bg-primary backdrop-blur-sm text-primary-foreground px-5 py-2.5 rounded-full text-sm font-bold shadow-lg hover:scale-105 hover:shadow-primary/40 hover:shadow-xl transition-all duration-300 cursor-pointer animate-pulse hover:animate-none"
+              >
+                <Phone className="w-4 h-4" />
+                Call Us — Join the Fleet
+              </a>
 
               {/* Image with hover glow */}
               <div className="relative overflow-hidden rounded-2xl border border-border">
