@@ -50,7 +50,7 @@ const CompanyDrivers = () => {
       />
       <SchemaMarkup schemas={schemas} />
       <CompanyDriverHeroSection />
-      <SEOContentSection pageKey="companyDrivers" sideImage={xxiiMackTruck} sideImageAlt="XXII Century Mack truck on open road" />
+      <SEOContentSection pageKey="companyDrivers" sideImage={xxiiMackMountains} sideImageAlt="XXII Century Mack truck in snowy mountains" />
       <TechBenefitsSection />
       <FAQSection pageKey="companyDrivers" />
     </Layout>
