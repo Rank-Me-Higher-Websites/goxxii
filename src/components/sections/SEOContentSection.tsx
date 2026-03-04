@@ -2,7 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { TrendingUp, Shield, Cpu, Users, Clock, DollarSign, Truck, Star } from "lucide-react";
-import truckFleet from "@/assets/trucks-fleet.png";
+import truckMountains from "@/assets/xxii-mack-mountains.jpg";
 
 interface SEOContentSectionProps {
   pageKey: "home" | "ownerOperators" | "companyDrivers" | "fleetProgram" | "freightServices" | "about" | "careers" | "blog" | "contact";
@@ -46,7 +46,7 @@ const keyPoints: Record<string, { icon: any; label: string }[]> = {
 };
 
 const defaultImages: Record<string, { src: string; alt: string }> = {
-  home: { src: truckFleet, alt: "XXII Century fleet trucks on the road" },
+  home: { src: truckMountains, alt: "XXII Century Mack truck in snowy mountains" },
 };
 
 const seoContent = {
