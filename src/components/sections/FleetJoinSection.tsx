@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { ChevronRight, Truck } from "lucide-react";
+import { ChevronRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import truckChicago from "@/assets/gallery/car-5.png";
 
