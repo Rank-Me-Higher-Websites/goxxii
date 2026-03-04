@@ -68,7 +68,7 @@ const Index = () => {
       <TrailerOptionsSection />
       <TechPoweredSection />
       <MobileAppSection />
-      <SEOContentSection pageKey="home" />
+      <SEOContentSection pageKey="home" sideImage={xxiiMackMountains} sideImageAlt="XXII Century Mack truck in snowy mountains" />
       <CareerSection />
       <ReviewsWidgetSection />
       <LocationMapSection />
