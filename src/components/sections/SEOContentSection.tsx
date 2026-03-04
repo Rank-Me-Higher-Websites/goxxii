@@ -46,7 +46,7 @@ const keyPoints: Record<string, { icon: any; label: string }[]> = {
 };
 
 const defaultImages: Record<string, { src: string; alt: string }> = {
-  home: { src: truckFleet, alt: "XXII Century fleet trucks on the road" },
+  home: { src: truckMountains, alt: "XXII Century Mack truck in snowy mountains" },
 };
 
 const seoContent = {
