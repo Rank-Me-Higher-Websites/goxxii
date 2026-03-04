@@ -13,6 +13,8 @@ import {
 } from "@/data/schemaData";
 import { CompanyDriverHeroSection } from "@/components/sections/CompanyDriverHeroSection";
 import { TechBenefitsSection } from "@/components/sections/TechBenefitsSection";
+import { FuelIncentiveSection } from "@/components/sections/FuelIncentiveSection";
+import { FuelTipsSection } from "@/components/sections/FuelTipsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
 import xxiiMackMountains from "@/assets/xxii-mack-mountains.jpg";
