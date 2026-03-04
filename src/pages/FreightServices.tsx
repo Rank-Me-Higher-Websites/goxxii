@@ -155,8 +155,8 @@ const FreightServices = () => {
       url: "/freight-shipping-services",
     }),
     getServiceSchema({
-      name: "Freight Brokerage",
-      description: "Connect with vetted, high-performing carriers through our Trusted Carrier Network. Full truckload, LTL, and expedited freight solutions across the continental U.S. and Canada.",
+      name: "Freight Carrier Services",
+      description: "Asset-based freight carrier with modern fleet, professional drivers, real-time tracking, and nationwide coverage across the continental U.S. and Canada.",
       url: "/freight-shipping-services",
     }),
   ], []);
@@ -294,17 +294,17 @@ const FreightServices = () => {
               className="text-center lg:text-left"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-                Why Partner With a <span className="text-primary">Freight Broker?</span>
+                Why Choose XXII Century for <span className="text-primary">Freight Services?</span>
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  At XXII Century, we make logistics simple and stress-free. Partnering with us means no more time wasted sourcing and vetting carriers—we handle it all for you. Our experienced team ensures every carrier is reliable, professional, and fully accountable for your freight.
+                  XXII Century operates a modern, asset-based fleet built for reliability and performance. With our own trucks, trailers, and professional drivers, we maintain full control over every shipment—delivering consistent service quality that third-party solutions simply can't match.
                 </p>
                 <p>
-                  With our strong industry relationships, we deliver competitive rates without compromising service quality. While we manage your freight, you can stay focused on growing your business. No matter the cargo, XXII Century provides a smarter, more efficient way to move freight nationwide.
+                  Our in-house operations team, advanced tracking technology, and commitment to on-time delivery mean your freight is always in capable hands. From dry van to temperature-controlled loads, we offer flexible capacity and competitive pricing tailored to your supply chain needs.
                 </p>
                 <p>
-                  Interested in becoming a carrier partner? Our <Link to="/fleet-program" className="text-primary hover:underline">fleet partnership program</Link> offers steady loads and dedicated support. We're also hiring <Link to="/careers" className="text-primary hover:underline">professional truck drivers</Link> to join our expanding network.
+                  Ready to streamline your shipping? Our <Link to="/fleet-program" className="text-primary hover:underline">fleet program</Link> keeps capacity available for your freight. We're also hiring <Link to="/careers" className="text-primary hover:underline">professional truck drivers</Link> to support our growing operations.
                 </p>
               </div>
               <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
