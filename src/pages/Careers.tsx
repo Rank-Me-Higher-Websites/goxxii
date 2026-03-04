@@ -40,8 +40,8 @@ const positions = [
   {
     icon: Users,
     title: "Company Driver",
-    description: "Join our team with competitive pay at 63 CPM, modern equipment, and a supportive work environment.",
-    benefits: ["63 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
+    description: "Join our team with competitive pay at 65 CPM, modern equipment, and a supportive work environment.",
+    benefits: ["65 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
     slug: "company-driver",
     date: "February 15, 2026",
   },
@@ -127,7 +127,7 @@ const Careers = () => {
     }),
     getJobPostingSchema({
       title: "Company Driver - CDL-A",
-      description: "Join XXII Century as a company driver. Starting at 63 CPM with automatic raises, full benefits, modern equipment, and weekly pay.",
+      description: "Join XXII Century as a company driver. Starting at 65 CPM with automatic raises, full benefits, modern equipment, and weekly pay.",
       employmentType: "FULL_TIME",
       minSalary: 65000,
       maxSalary: 95000,

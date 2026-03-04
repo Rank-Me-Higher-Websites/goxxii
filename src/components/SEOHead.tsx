@@ -59,7 +59,7 @@ export const SEOHead = ({ title, description, canonicalPath, keywords }: SEOHead
 export const SEO_CONTENT = {
   home: {
     title: "Owner Operator & CDL-A Driver Jobs | XXII Century Trucking",
-    description: "Hiring owner operators (90% linehaul) & company drivers (63+ CPM) in Chicago. Fortune 500 freight, weekly pay, full benefits. Apply today.",
+    description: "Hiring owner operators (90% linehaul) & company drivers (65+ CPM) in Chicago. Fortune 500 freight, weekly pay, full benefits. Apply today.",
     keywords: "owner operator jobs Chicago, CDL-A driver jobs, trucking company Illinois, company driver positions, dry van trucking, OTR truck driving jobs, Fortune 500 freight",
   },
   ownerOperators: {
@@ -68,8 +68,8 @@ export const SEO_CONTENT = {
     keywords: "owner operator trucking jobs, 90% linehaul pay, independent truck driver, no forced dispatch, OTR owner operator, dry van owner operator",
   },
   companyDrivers: {
-    title: "Company Driver Jobs — 63 CPM, Health & 401(k) Benefits",
-    description: "CDL-A company drivers start at 63 CPM with automatic raises. Full medical, dental, vision, 401(k), paid time off. Modern trucks, consistent miles.",
+    title: "Company Driver Jobs — 65 CPM, Health & 401(k) Benefits",
+    description: "CDL-A company drivers start at 65 CPM with automatic raises. Full medical, dental, vision, 401(k), paid time off. Modern trucks, consistent miles.",
     keywords: "company driver jobs, CDL-A driver positions, trucking jobs with benefits, OTR company driver, truck driver 401k, company driver health insurance",
   },
   fleetProgram: {

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import companyDriver from "@/assets/company-driver-truck.jpg";
 
 const benefits = [
-  { icon: DollarSign, text: "63 CPM + Bonuses" },
+  { icon: DollarSign, text: "65 CPM + Bonuses" },
   { icon: TrendingUp, text: "Consistent Miles" },
   { icon: Shield, text: "Full Benefits" },
   { icon: MessageSquare, text: "AI Detention Pay" },
@@ -44,7 +44,7 @@ export const CompanyDriverSection = () => {
               transition={{ delay: 0.4, type: "spring" }}
               className="absolute -bottom-3 -right-3 sm:bottom-4 sm:right-4 glass-strong rounded-xl px-4 py-3 border border-primary/30"
             >
-              <div className="text-xl sm:text-2xl font-display font-bold text-gradient">63¢/mi</div>
+              <div className="text-xl sm:text-2xl font-display font-bold text-gradient">65¢/mi</div>
               <div className="text-xs text-muted-foreground">Starting Pay</div>
             </motion.div>
           </motion.div>
