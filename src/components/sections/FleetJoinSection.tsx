@@ -62,7 +62,7 @@ export const FleetJoinSection = () => {
               {/* Badge CTA */}
               <a
                 href="tel:+16309480501"
-                className="absolute top-4 left-4 z-10 flex items-center gap-2 bg-primary backdrop-blur-sm text-primary-foreground px-5 py-2.5 rounded-full text-sm font-bold shadow-lg hover:scale-105 hover:shadow-primary/40 hover:shadow-xl transition-all duration-300 cursor-pointer animate-pulse hover:animate-none"
+                className="absolute top-4 left-4 z-10 flex items-center gap-2 bg-primary backdrop-blur-sm text-primary-foreground px-5 py-2.5 rounded-full text-sm font-bold shadow-lg hover:scale-105 hover:shadow-primary/40 hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
                 <Phone className="w-4 h-4" />
                 Call Us — Join the Fleet
