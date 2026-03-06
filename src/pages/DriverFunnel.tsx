@@ -246,17 +246,15 @@ const DriverFunnel = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-4xl mx-auto">
             {highlights.map((item, i) => (
               <motion.div key={item.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.04 }}
-                className="group relative rounded-xl glass-strong border border-border/50 hover:border-accent/40 transition-all duration-300 p-4 overflow-hidden h-full"
+                className="group relative rounded-xl bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute top-0 right-0 w-20 h-20 bg-accent/5 rounded-full blur-[40px] translate-x-1/2 -translate-y-1/2" />
-                <div className="relative z-10 flex items-start gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center flex-shrink-0 border border-accent/10">
-                    <item.icon className="w-4 h-4 text-accent" />
+                <div className="flex items-center gap-3 px-4 py-5 min-h-[76px]">
+                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
+                    <item.icon className="w-[18px] h-[18px] text-accent" />
                   </div>
-                  <div>
-                    <h3 className="text-sm font-semibold text-foreground mb-0.5">{item.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                  <div className="min-w-0">
+                    <h3 className="text-sm font-bold text-foreground leading-tight">{item.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-snug mt-0.5">{item.desc}</p>
                   </div>
                 </div>
               </motion.div>
