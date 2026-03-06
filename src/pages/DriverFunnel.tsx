@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useParams, Navigate } from "react-router-dom";
+import { useState } from "react";
 import {
   ChevronRight, Phone, Star, Check, Truck, Clock, Shield,
   DollarSign, MapPin, Fuel, Users, Package, Wrench, ParkingCircle,
@@ -9,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
-import { useMemo } from "react";
+import { LeadFormDialog } from "@/components/LeadFormDialog";
 import {
   getOrganizationSchema,
   getLocalBusinessSchema,
