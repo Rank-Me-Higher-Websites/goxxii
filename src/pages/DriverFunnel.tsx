@@ -264,34 +264,41 @@ const DriverFunnel = () => {
       </section>
 
       {/* ═══ TIME ON/OFF ═══ */}
-      <section className="py-10 bg-secondary relative overflow-hidden">
+      <section className="py-12 bg-secondary relative overflow-hidden">
         <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary/5 rounded-full blur-[100px]" />
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
         <div className="container-custom max-w-3xl mx-auto relative z-10">
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-6">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-semibold text-primary uppercase tracking-wider mb-3">
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-[11px] font-bold text-primary uppercase tracking-[0.2em] mb-4">
               <Clock className="w-3 h-3" /> Flexible Schedule
             </span>
-            <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground">Time On / Time Off</h2>
+            <h2 className="text-2xl sm:text-3xl font-display font-black text-foreground tracking-tight">Time On / Time Off</h2>
           </motion.div>
 
-          {/* Visual schedule cards */}
-          <div className="grid grid-cols-3 gap-3 mb-4">
+          <div className="grid grid-cols-3 gap-4 mb-5">
             {timeOff.map((item, i) => (
               <motion.div key={item.weeks} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="relative rounded-xl glass-strong border border-primary/20 hover:border-primary/40 transition-all duration-300 p-4 text-center overflow-hidden group"
+                className="relative rounded-2xl bg-background/60 backdrop-blur-sm border border-primary/15 hover:border-primary/35 transition-all duration-300 p-6 text-center group"
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="relative z-10">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mx-auto mb-3 border border-primary/15">
-                    <span className="text-lg font-display font-bold text-primary">{item.weeks}</span>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/[0.03] to-transparent" />
+                <div className="relative z-10 flex flex-col items-center">
+                  {/* Weeks number */}
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/25 to-primary/5 flex items-center justify-center mb-3 border border-primary/20 shadow-[0_0_20px_-5px_hsl(var(--primary)/0.3)]">
+                    <span className="text-2xl font-display font-black text-primary">{item.weeks}</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mb-2">{item.label}</p>
-                  <div className="w-6 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent mx-auto mb-2" />
-                  <ArrowRight className="w-3 h-3 text-primary/40 mx-auto mb-2" />
-                  <div className="text-xl font-display font-bold text-gradient">{item.days}</div>
-                  <p className="text-xs text-muted-foreground">{item.result}</p>
+                  <p className="text-[11px] font-bold text-muted-foreground/60 uppercase tracking-[0.15em] mb-4">{item.label}</p>
+                  
+                  {/* Divider with arrow */}
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/30" />
+                    <ArrowRight className="w-3 h-3 text-primary/50" />
+                    <div className="w-8 h-px bg-gradient-to-l from-transparent to-primary/30" />
+                  </div>
+
+                  {/* Days off */}
+                  <div className="text-3xl font-display font-black bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">{item.days}</div>
+                  <p className="text-[11px] font-bold text-muted-foreground/60 uppercase tracking-[0.15em] mt-1">{item.result}</p>
                 </div>
               </motion.div>
             ))}
@@ -299,11 +306,11 @@ const DriverFunnel = () => {
 
           {/* Bonus row */}
           <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-xl glass-strong border border-primary/30 bg-primary/5 p-3 text-center"
+            className="rounded-xl border border-primary/25 bg-gradient-to-r from-primary/[0.06] via-primary/[0.03] to-primary/[0.06] px-5 py-3.5 text-center backdrop-blur-sm"
           >
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-2.5">
               <Zap className="w-4 h-4 text-primary" />
-              <span className="text-sm font-semibold text-primary">+1 extra day off for each additional week out</span>
+              <span className="text-[13px] font-black text-primary tracking-tight">+1 extra day off for each additional week out</span>
               <Zap className="w-4 h-4 text-primary" />
             </div>
           </motion.div>
