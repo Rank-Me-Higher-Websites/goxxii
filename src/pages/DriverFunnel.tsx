@@ -66,7 +66,9 @@ const requirements = [
 
 const DriverFunnel = () => {
   const { recruiter } = useParams<{ recruiter: string }>();
-  const data = recruiterData[recruiter || ""] || recruiterData.ben;
+  const data = recruiterData[recruiter || ""];
+  
+  if (!data) return <Navigate to="/404" replace />;
 
   const schemas = useMemo(() => [
     getOrganizationSchema(),
