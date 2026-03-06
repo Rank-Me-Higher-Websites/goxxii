@@ -243,12 +243,12 @@ const DriverFunnel = () => {
             </span>
             <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground">What You Get</h2>
           </motion.div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-4xl mx-auto auto-rows-fr">
             {highlights.map((item, i) => (
               <motion.div key={item.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.04 }}
                 className="group relative rounded-xl bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
               >
-                <div className="flex items-center gap-3 px-4 py-5 min-h-[76px]">
+                <div className="flex items-center gap-3 px-4 py-5 h-full">
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
                     <item.icon className="w-[18px] h-[18px] text-accent" />
                   </div>
