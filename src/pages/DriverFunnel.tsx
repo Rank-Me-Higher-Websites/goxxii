@@ -415,6 +415,14 @@ const DriverFunnel = () => {
           </div>
         </div>
       </section>
+
+      <LeadFormDialog
+        open={leadFormOpen}
+        onOpenChange={setLeadFormOpen}
+        recruiterName={data.name}
+        recruiterPhone={data.phone}
+        recruiterPhoneFormatted={data.phoneFormatted}
+      />
     </Layout>
   );
 };
