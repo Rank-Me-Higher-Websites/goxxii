@@ -385,11 +385,9 @@ const DriverFunnel = () => {
           <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-2">Ready to Earn $2,100–$2,400/Week?</h2>
           <p className="text-sm text-muted-foreground mb-5">Takes 2 min • No commitment • CDL-A Required</p>
           <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
-            <Button variant="hero" size="lg" className="group pulse-glow" asChild>
-              <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer">
+            <Button variant="hero" size="lg" className="group pulse-glow" onClick={() => setLeadFormOpen(true)}>
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 Apply Now
-              </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
               <a href={`tel:${data.phone}`}>
