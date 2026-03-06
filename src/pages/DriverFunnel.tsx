@@ -31,22 +31,21 @@ const perks = [
 ];
 
 const highlights = [
-  "New & Brand New Volvos and Freightliners",
-  "Trucks Equipped with Fridges, Microwaves, Inverters, APU & Disc Brakes",
-  "Dedicated Lanes – Consistent freight, steady miles",
-  "Dry Van Only – No-touch freight",
-  "Midwest, East, North & South Running Areas",
-  "Extra Stops, Detentions & Layovers – Paid!",
-  "Friend Referral Bonus ($1,500)",
-  "Weekly Direct Deposits",
-  "1099 Position",
+  { icon: Truck, title: "New Volvos & Freightliners", desc: "Brand new equipment with all the comforts" },
+  { icon: Package, title: "Fridges, Microwaves, APU", desc: "Inverters & disc brakes on every truck" },
+  { icon: MapPin, title: "Dedicated Lanes", desc: "Consistent freight, steady miles every week" },
+  { icon: Shield, title: "Dry Van Only", desc: "No-touch freight — less hassle" },
+  { icon: MapPin, title: "Midwest, East, N & S", desc: "Wide running areas, more opportunities" },
+  { icon: DollarSign, title: "Stops & Detention Paid", desc: "Extra stops, layovers — all compensated" },
+  { icon: Users, title: "$1,500 Referral Bonus", desc: "Bring a friend, earn a bonus" },
+  { icon: DollarSign, title: "Weekly Direct Deposits", desc: "Get paid every week, on time" },
+  { icon: Star, title: "1099 Position", desc: "Independent contractor flexibility" },
 ];
 
 const timeOff = [
-  "2 Weeks OTR = 2 Days Off",
-  "3 Weeks OTR = 3 Days Off",
-  "4 Weeks OTR = 4+ Days Off",
-  "Additional day off for each extra week out",
+  { weeks: "2", days: "2", label: "Weeks OTR", result: "Days Off" },
+  { weeks: "3", days: "3", label: "Weeks OTR", result: "Days Off" },
+  { weeks: "4", days: "4+", label: "Weeks OTR", result: "Days Off" },
 ];
 
 const extras = [
@@ -59,10 +58,10 @@ const extras = [
 ];
 
 const requirements = [
-  "2 Years CDL-A Experience",
-  "Clean Record",
-  "No DUI / No SAP",
-  "Desire to Make Money!",
+  { icon: BadgeCheck, text: "2 Years CDL-A Experience", emphasis: true },
+  { icon: Shield, text: "Clean Record", emphasis: false },
+  { icon: Shield, text: "No DUI / No SAP", emphasis: false },
+  { icon: Zap, text: "Desire to Make Money!", emphasis: true },
 ];
 
 const DriverFunnel = () => {
