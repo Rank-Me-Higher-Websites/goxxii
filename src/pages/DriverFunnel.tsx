@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import {
   ChevronRight, Phone, Star, Check, Truck, Clock, Shield,
   DollarSign, MapPin, Fuel, Users, Package, Wrench, ParkingCircle
