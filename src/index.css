@@ -179,13 +179,14 @@
   }
 
   /* Pulse Glow */
-  .pulse-glow {
+  .pulse-glow,
+  .pulse-glow-uniform {
     animation: pulseGlow 2s ease-in-out infinite;
   }
 
   @keyframes pulseGlow {
-    0%, 100% { box-shadow: 0 0 20px hsl(221 78% 52% / 0.3); }
-    50% { box-shadow: 0 0 40px hsl(221 78% 52% / 0.6); }
+    0%, 100% { box-shadow: 0 0 20px 4px hsl(221 78% 52% / 0.3); }
+    50% { box-shadow: 0 0 40px 8px hsl(221 78% 52% / 0.5); }
   }
 
   /* Shimmer Effect */

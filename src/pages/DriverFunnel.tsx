@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useParams, Navigate } from "react-router-dom";
+import { useState, useMemo } from "react";
 import {
   ChevronRight, Phone, Star, Check, Truck, Clock, Shield,
   DollarSign, MapPin, Fuel, Users, Package, Wrench, ParkingCircle,
@@ -9,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
-import { useMemo } from "react";
+import { LeadFormDialog } from "@/components/LeadFormDialog";
 import {
   getOrganizationSchema,
   getLocalBusinessSchema,
@@ -67,7 +68,7 @@ const requirements = [
 const DriverFunnel = () => {
   const { recruiter } = useParams<{ recruiter: string }>();
   const data = recruiterData[recruiter || ""];
-
+  const [leadFormOpen, setLeadFormOpen] = useState(false);
   const schemas = useMemo(() => [
     getOrganizationSchema(),
     getLocalBusinessSchema(),
@@ -150,11 +151,9 @@ const DriverFunnel = () => {
 
               {/* CTAs */}
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="flex flex-row gap-3 items-center justify-center lg:justify-start">
-                <Button variant="hero" size="default" className="group pulse-glow sm:h-14 sm:px-10 sm:text-base" asChild>
-                  <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer">
+                <Button variant="hero" size="default" className="group pulse-glow sm:h-14 sm:px-10 sm:text-base" onClick={() => setLeadFormOpen(true)}>
                     <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                     <span>Apply Now</span>
-                  </a>
                 </Button>
                 <Button variant="heroOutline" size="default" className="sm:h-14 sm:px-10 sm:text-base" asChild>
                   <a href={`tel:${data.phone}`}>
@@ -386,11 +385,9 @@ const DriverFunnel = () => {
           <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-2">Ready to Earn $2,100–$2,400/Week?</h2>
           <p className="text-sm text-muted-foreground mb-5">Takes 2 min • No commitment • CDL-A Required</p>
           <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
-            <Button variant="hero" size="lg" className="group pulse-glow" asChild>
-              <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer">
+            <Button variant="hero" size="lg" className="group pulse-glow" onClick={() => setLeadFormOpen(true)}>
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 Apply Now
-              </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
               <a href={`tel:${data.phone}`}>
@@ -418,6 +415,14 @@ const DriverFunnel = () => {
           </div>
         </div>
       </section>
+
+      <LeadFormDialog
+        open={leadFormOpen}
+        onOpenChange={setLeadFormOpen}
+        recruiterName={data.name}
+        recruiterPhone={data.phone}
+        recruiterPhoneFormatted={data.phoneFormatted}
+      />
     </Layout>
   );
 };
