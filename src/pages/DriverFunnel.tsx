@@ -297,7 +297,7 @@ const DriverFunnel = () => {
                   </div>
 
                   {/* Days off */}
-                  <div className="text-3xl font-display font-black bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">{item.days}</div>
+                  <div className="text-3xl font-display font-black bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">{item.days}</div>
                   <p className="text-[11px] font-bold text-muted-foreground/60 uppercase tracking-[0.15em] mt-1">{item.result}</p>
                 </div>
               </motion.div>
