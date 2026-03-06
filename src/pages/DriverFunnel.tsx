@@ -68,6 +68,9 @@ const requirements = [
 const DriverFunnel = () => {
   const { recruiter } = useParams<{ recruiter: string }>();
   const data = recruiterData[recruiter || ""];
+  const [leadFormOpen, setLeadFormOpen] = useState(false);
+
+  const { useMemo } = await import("react");
 
   const schemas = useMemo(() => [
     getOrganizationSchema(),
