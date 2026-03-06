@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { useParams, Navigate } from "react-router-dom";
 import {
   ChevronRight, Phone, Star, Check, Truck, Clock, Shield,
-  DollarSign, MapPin, Fuel, Users, Package, Wrench, ParkingCircle
+  DollarSign, MapPin, Fuel, Users, Package, Wrench, ParkingCircle,
+  CalendarDays, BadgeCheck, Zap, ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
