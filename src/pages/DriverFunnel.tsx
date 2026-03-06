@@ -233,28 +233,28 @@ const DriverFunnel = () => {
       </section>
 
       {/* ═══ WHAT YOU GET ═══ */}
-      <section className="py-10 bg-background relative overflow-hidden">
+      <section className="py-6 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px]" />
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
         <div className="container-custom relative z-10">
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-[11px] font-bold text-accent uppercase tracking-[0.2em] mb-4">
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-[10px] font-bold text-accent uppercase tracking-[0.2em] mb-2">
               <Package className="w-3 h-3" /> Full Package
             </span>
-            <h2 className="text-2xl sm:text-3xl font-display font-black text-foreground tracking-tight">What You Get</h2>
+            <h2 className="text-xl sm:text-2xl font-display font-black text-foreground tracking-tight">What You Get</h2>
           </motion.div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-4xl mx-auto auto-rows-fr">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 max-w-4xl mx-auto auto-rows-fr">
             {highlights.map((item, i) => (
-              <motion.div key={item.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.04 }}
-                className="group relative rounded-xl bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
+              <motion.div key={item.title} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.03 }}
+                className="group relative rounded-lg bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
               >
-                <div className="flex items-center gap-3.5 px-5 py-5 h-full">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
-                    <item.icon className="w-[18px] h-[18px] text-accent" />
+                <div className="flex items-center gap-3 px-3 py-3 h-full">
+                  <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
+                    <item.icon className="w-4 h-4 text-accent" />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-[13px] font-black text-foreground leading-tight tracking-tight">{item.title}</h3>
-                    <p className="text-[11px] text-muted-foreground/70 leading-snug mt-1 tracking-wide">{item.desc}</p>
+                    <h3 className="text-xs font-black text-foreground leading-tight tracking-tight">{item.title}</h3>
+                    <p className="text-[10px] text-muted-foreground/70 leading-snug mt-0.5">{item.desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -264,80 +264,68 @@ const DriverFunnel = () => {
       </section>
 
       {/* ═══ TIME ON/OFF ═══ */}
-      <section className="py-12 bg-secondary relative overflow-hidden">
+      <section className="py-6 bg-secondary relative overflow-hidden">
         <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary/5 rounded-full blur-[100px]" />
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-        <div className="container-custom max-w-3xl mx-auto relative z-10">
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-[11px] font-bold text-primary uppercase tracking-[0.2em] mb-4">
+        <div className="container-custom max-w-2xl mx-auto relative z-10">
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">
               <Clock className="w-3 h-3" /> Flexible Schedule
             </span>
-            <h2 className="text-2xl sm:text-3xl font-display font-black text-foreground tracking-tight">Time On / Time Off</h2>
+            <h2 className="text-xl sm:text-2xl font-display font-black text-foreground tracking-tight">Time On / Time Off</h2>
           </motion.div>
 
-          <div className="grid grid-cols-3 gap-4 mb-5">
+          <div className="grid grid-cols-3 gap-2 mb-3">
             {timeOff.map((item, i) => (
-              <motion.div key={item.weeks} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="relative rounded-2xl bg-background/60 backdrop-blur-sm border border-primary/15 hover:border-primary/35 transition-all duration-300 p-6 text-center group"
+              <motion.div key={item.weeks} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+                className="relative rounded-xl bg-background/60 backdrop-blur-sm border border-primary/15 hover:border-primary/35 transition-all duration-300 p-4 text-center group"
               >
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/[0.03] to-transparent" />
                 <div className="relative z-10 flex flex-col items-center">
-                  {/* Weeks number */}
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/25 to-primary/5 flex items-center justify-center mb-3 border border-primary/20 shadow-[0_0_20px_-5px_hsl(var(--primary)/0.3)]">
-                    <span className="text-2xl font-display font-black text-primary">{item.weeks}</span>
+                  <div className="w-11 h-11 rounded-full bg-gradient-to-br from-primary/25 to-primary/5 flex items-center justify-center mb-2 border border-primary/20 shadow-[0_0_15px_-5px_hsl(var(--primary)/0.3)]">
+                    <span className="text-xl font-display font-black text-primary">{item.weeks}</span>
                   </div>
-                  <p className="text-[11px] font-bold text-muted-foreground/60 uppercase tracking-[0.15em] mb-4">{item.label}</p>
-                  
-                  {/* Divider with arrow */}
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="w-8 h-px bg-gradient-to-r from-transparent to-primary/30" />
-                    <ArrowRight className="w-3 h-3 text-primary/50" />
-                    <div className="w-8 h-px bg-gradient-to-l from-transparent to-primary/30" />
-                  </div>
-
-                  {/* Days off */}
-                  <div className="text-3xl font-display font-black bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">{item.days}</div>
-                  <p className="text-[11px] font-bold text-muted-foreground/60 uppercase tracking-[0.15em] mt-1">{item.result}</p>
+                  <p className="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-[0.1em] mb-2">{item.label}</p>
+                  <ArrowRight className="w-3 h-3 text-primary/40 mb-2 rotate-90" />
+                  <div className="text-2xl font-display font-black bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">{item.days}</div>
+                  <p className="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-[0.1em] mt-0.5">{item.result}</p>
                 </div>
               </motion.div>
             ))}
           </div>
 
-          {/* Bonus row */}
           <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-xl border border-primary/25 bg-gradient-to-r from-primary/[0.06] via-primary/[0.03] to-primary/[0.06] px-5 py-3.5 text-center backdrop-blur-sm"
+            className="rounded-lg border border-primary/25 bg-gradient-to-r from-primary/[0.06] via-primary/[0.03] to-primary/[0.06] px-4 py-2.5 text-center"
           >
-            <div className="flex items-center justify-center gap-2.5">
-              <Zap className="w-4 h-4 text-primary" />
-              <span className="text-[13px] font-black text-primary tracking-tight">+1 extra day off for each additional week out</span>
-              <Zap className="w-4 h-4 text-primary" />
+            <div className="flex items-center justify-center gap-2">
+              <Zap className="w-3.5 h-3.5 text-primary" />
+              <span className="text-xs font-black text-primary tracking-tight">+1 extra day off for each additional week out</span>
+              <Zap className="w-3.5 h-3.5 text-primary" />
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* ═══ REQUIREMENTS ═══ */}
-      <section className="py-12 bg-background relative overflow-hidden">
+      <section className="py-6 bg-background relative overflow-hidden">
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-[130px]" />
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <div className="container-custom max-w-2xl mx-auto relative z-10">
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-[11px] font-bold text-accent uppercase tracking-[0.2em]">
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-[10px] font-bold text-accent uppercase tracking-[0.2em]">
               <Shield className="w-3 h-3" /> Requirements
             </span>
           </motion.div>
-          <div className="grid sm:grid-cols-2 gap-3">
+          <div className="grid sm:grid-cols-2 gap-2">
             {requirements.map((r, i) => (
-              <motion.div key={r.text} initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-                className="group relative rounded-xl bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
+              <motion.div key={r.text} initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
+                className="group relative rounded-lg bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
               >
-                <div className="flex items-center gap-3.5 px-5 py-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
-                    <r.icon className="w-[18px] h-[18px] text-accent" />
+                <div className="flex items-center gap-3 px-3 py-3">
+                  <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
+                    <r.icon className="w-4 h-4 text-accent" />
                   </div>
-                  <span className="text-[13px] font-black text-foreground tracking-tight flex-1">{r.text}</span>
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
+                  <span className="text-xs font-black text-foreground tracking-tight flex-1">{r.text}</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0" />
                 </div>
               </motion.div>
             ))}
@@ -346,32 +334,31 @@ const DriverFunnel = () => {
       </section>
 
       {/* ═══ EXTRAS ═══ */}
-      <section className="py-12 bg-secondary relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[150px]" />
+      <section className="py-6 bg-secondary relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <div className="container-custom max-w-3xl mx-auto relative z-10">
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-[11px] font-bold text-accent uppercase tracking-[0.2em]">
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-[10px] font-bold text-accent uppercase tracking-[0.2em]">
               <Star className="w-3 h-3" /> Extra Perks
             </span>
           </motion.div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2">
             {extras.map((e, i) => (
-              <motion.div key={e.text} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
-                className="group relative rounded-xl bg-background/60 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
+              <motion.div key={e.text} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.04 }}
+                className="group relative rounded-lg bg-background/60 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
               >
-                <div className="flex items-center gap-3.5 px-5 py-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
-                    <e.icon className="w-[18px] h-[18px] text-accent" />
+                <div className="flex items-center gap-3 px-3 py-3">
+                  <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
+                    <e.icon className="w-4 h-4 text-accent" />
                   </div>
-                  <span className="text-[13px] font-black text-foreground tracking-tight flex-1">{e.text}</span>
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
+                  <span className="text-xs font-black text-foreground tracking-tight flex-1">{e.text}</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0" />
                 </div>
               </motion.div>
             ))}
           </div>
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="flex justify-center mt-5">
-            <div className="bg-secondary/80 px-5 py-2.5 rounded-full border border-border/30 text-[11px] font-bold text-muted-foreground/70 tracking-wide">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="flex justify-center mt-3">
+            <div className="bg-secondary/80 px-4 py-2 rounded-full border border-border/30 text-[10px] font-bold text-muted-foreground/70 tracking-wide">
               💡 Total Insurance Deductible: $2,500 ($100 deducted weekly)
             </div>
           </motion.div>
@@ -379,12 +366,12 @@ const DriverFunnel = () => {
       </section>
 
       {/* ═══ BOTTOM CTA ═══ */}
-      <section className="py-10 bg-background relative overflow-hidden">
+      <section className="py-6 bg-background relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-accent/10" />
         <div className="container-custom relative z-10 text-center">
-          <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-2">Ready to Earn $2,100–$2,400/Week?</h2>
-          <p className="text-sm text-muted-foreground mb-5">Takes 2 min • No commitment • CDL-A Required</p>
-          <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
+          <h2 className="text-lg sm:text-xl font-display font-bold text-foreground mb-1">Ready to Earn $2,100–$2,400/Week?</h2>
+          <p className="text-xs text-muted-foreground mb-4">Takes 2 min • No commitment • CDL-A Required</p>
+          <div className="flex flex-col sm:flex-row gap-2 items-center justify-center">
             <Button variant="hero" size="lg" className="group pulse-glow" onClick={() => setLeadFormOpen(true)}>
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 Apply Now
@@ -400,18 +387,18 @@ const DriverFunnel = () => {
       </section>
 
       {/* ═══ TESTIMONIAL ═══ */}
-      <section className="py-8 bg-secondary">
+      <section className="py-5 bg-secondary">
         <div className="container-custom max-w-md mx-auto">
-          <div className="glass-strong rounded-xl p-4 border border-border/50 text-center">
-            <div className="flex items-center justify-center gap-1 mb-2">
+          <div className="bg-secondary/80 rounded-lg p-3 border border-border/50 text-center">
+            <div className="flex items-center justify-center gap-0.5 mb-1.5">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
               ))}
             </div>
-            <p className="text-sm text-muted-foreground italic mb-2">
+            <p className="text-xs text-muted-foreground italic mb-1.5">
               "Best carrier I have worked with in 20 years. Pay is always on time, support is amazing."
             </p>
-            <p className="text-sm font-semibold text-foreground">— Mike D., OTR Driver</p>
+            <p className="text-xs font-semibold text-foreground">— Mike D., OTR Driver</p>
           </div>
         </div>
       </section>
