@@ -246,7 +246,7 @@ const DriverFunnel = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-4xl mx-auto">
             {highlights.map((item, i) => (
               <motion.div key={item.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.04 }}
-                className="group relative rounded-xl glass-strong border border-border/50 hover:border-accent/40 transition-all duration-300 p-4 overflow-hidden"
+                className="group relative rounded-xl glass-strong border border-border/50 hover:border-accent/40 transition-all duration-300 p-4 overflow-hidden h-full"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute top-0 right-0 w-20 h-20 bg-accent/5 rounded-full blur-[40px] translate-x-1/2 -translate-y-1/2" />
