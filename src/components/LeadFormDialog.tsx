@@ -189,9 +189,7 @@ export const LeadFormDialog = ({ open, onOpenChange, recruiterName, recruiterPho
                             onClick={() => handleChange("sap", opt)}
                             className={`px-3 py-2.5 rounded-lg text-sm font-medium border transition-all duration-200 ${
                               formData.sap === opt
-                                ? opt === "No"
-                                  ? "bg-accent/20 border-accent/50 text-accent"
-                                  : "bg-destructive/20 border-destructive/50 text-destructive"
+                                ? "bg-primary/20 border-primary/50 text-primary"
                                 : "bg-muted/30 border-border/50 text-muted-foreground hover:border-primary/30 hover:text-foreground"
                             }`}
                           >
