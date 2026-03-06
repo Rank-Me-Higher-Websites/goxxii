@@ -67,8 +67,6 @@ const requirements = [
 const DriverFunnel = () => {
   const { recruiter } = useParams<{ recruiter: string }>();
   const data = recruiterData[recruiter || ""];
-  
-  if (!data) return <Navigate to="/404" replace />;
 
   const schemas = useMemo(() => [
     getOrganizationSchema(),
@@ -85,6 +83,8 @@ const DriverFunnel = () => {
       maxSalary: 124800,
     }),
   ], [recruiter]);
+
+  if (!data) return <Navigate to="/404" replace />;
 
   return (
     <Layout>
