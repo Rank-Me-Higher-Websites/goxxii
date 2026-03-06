@@ -237,24 +237,24 @@ const DriverFunnel = () => {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px]" />
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
         <div className="container-custom relative z-10">
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-6">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-xs font-semibold text-accent uppercase tracking-wider mb-3">
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-[11px] font-bold text-accent uppercase tracking-[0.2em] mb-4">
               <Package className="w-3 h-3" /> Full Package
             </span>
-            <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground">What You Get</h2>
+            <h2 className="text-2xl sm:text-3xl font-display font-black text-foreground tracking-tight">What You Get</h2>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-4xl mx-auto auto-rows-fr">
             {highlights.map((item, i) => (
               <motion.div key={item.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.04 }}
                 className="group relative rounded-xl bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
               >
-                <div className="flex items-center gap-3 px-4 py-5 h-full">
+                <div className="flex items-center gap-3.5 px-5 py-5 h-full">
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
                     <item.icon className="w-[18px] h-[18px] text-accent" />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-sm font-bold text-foreground leading-tight">{item.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-snug mt-0.5">{item.desc}</p>
+                    <h3 className="text-[13px] font-black text-foreground leading-tight tracking-tight">{item.title}</h3>
+                    <p className="text-[11px] text-muted-foreground/70 leading-snug mt-1 tracking-wide">{item.desc}</p>
                   </div>
                 </div>
               </motion.div>
