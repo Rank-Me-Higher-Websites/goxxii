@@ -19,6 +19,8 @@ import {
   getJobPostingSchema,
 } from "@/data/schemaData";
 import heroDriver from "@/assets/hero-driver.png";
+import truckRoad from "@/assets/xxii-truck-road-clean.png";
+import dispatchOffice from "@/assets/dispatch-office.png";
 
 const recruiterData: Record<string, { name: string; phone: string; phoneFormatted: string }> = {
   ben: { name: "Ben", phone: "+17735725012", phoneFormatted: "(773) 572-5012" },
