@@ -53,7 +53,7 @@ export const InlineLeadForm = ({ recruiterName, recruiterPhone, recruiterPhoneFo
       <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-[60px] translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 left-0 w-24 h-24 bg-accent/10 rounded-full blur-[50px] -translate-x-1/2 translate-y-1/2" />
 
-      <div className="relative z-10 p-6">
+      <div className="relative z-10 p-4 lg:p-6">
         {!isSubmitted ? (
           <>
             <div className="text-center mb-5">
