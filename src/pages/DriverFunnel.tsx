@@ -19,7 +19,7 @@ import {
   getJobPostingSchema,
 } from "@/data/schemaData";
 import heroDriver from "@/assets/hero-driver.png";
-import truckRoad from "@/assets/xxii-truck-road.png";
+import truckRoad from "@/assets/company-truck.png";
 import dispatchOffice from "@/assets/dispatch-clean.jpg";
 
 const recruiterData: Record<string, { name: string; phone: string; phoneFormatted: string }> = {
