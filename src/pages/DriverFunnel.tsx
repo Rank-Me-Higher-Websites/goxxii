@@ -39,11 +39,12 @@ const highlights = [
   { icon: Package, title: "Fridges, Microwaves, APU", desc: "Inverters & disc brakes on every truck" },
   { icon: MapPin, title: "Dedicated Lanes", desc: "Consistent freight, steady miles every week" },
   { icon: Shield, title: "Dry Van Only", desc: "No-touch freight — less hassle" },
-  { icon: MapPin, title: "Midwest, East, N & S", desc: "Wide running areas, more opportunities" },
+  { icon: Fuel, title: "Midwest, East, N & S", desc: "Wide running areas, more opportunities" },
   { icon: DollarSign, title: "Stops & Detention Paid", desc: "Extra stops, layovers — all compensated" },
   { icon: Users, title: "$1,500 Referral Bonus", desc: "Bring a friend, earn a bonus" },
   { icon: DollarSign, title: "Weekly Direct Deposits", desc: "Get paid every week, on time" },
   { icon: Star, title: "1099 Position", desc: "Independent contractor flexibility" },
+  { icon: Clock, title: "Raises Every 6 Months", desc: "Consistent pay increases on schedule" },
 ];
 
 const timeOff = [
