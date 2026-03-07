@@ -212,32 +212,30 @@ const DriverFunnel = () => {
             </span>
             <h2 className="text-xl sm:text-2xl font-display font-black text-foreground tracking-tight">What You Get</h2>
           </motion.div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 max-w-4xl mx-auto auto-rows-fr">
-            {highlights.map((item, i) => (
-              <motion.div key={item.title} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.03 }}
-                className="group relative rounded-lg bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
-              >
-                <div className="flex items-center gap-3 px-3 py-3 h-full">
-                  <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
-                    <item.icon className="w-4 h-4 text-accent" />
+          <div className="flex flex-col lg:flex-row gap-4 max-w-5xl mx-auto">
+            {/* Benefits grid - left side */}
+            <div className="grid sm:grid-cols-2 gap-2 flex-1 auto-rows-fr">
+              {highlights.map((item, i) => (
+                <motion.div key={item.title} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.03 }}
+                  className="group relative rounded-lg bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
+                >
+                  <div className="flex items-center gap-3 px-3 py-3 h-full">
+                    <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
+                      <item.icon className="w-4 h-4 text-accent" />
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-xs font-black text-foreground leading-tight tracking-tight">{item.title}</h3>
+                      <p className="text-[10px] text-muted-foreground/70 leading-snug mt-0.5">{item.desc}</p>
+                    </div>
                   </div>
-                  <div className="min-w-0">
-                    <h3 className="text-xs font-black text-foreground leading-tight tracking-tight">{item.title}</h3>
-                    <p className="text-[10px] text-muted-foreground/70 leading-snug mt-0.5">{item.desc}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-          {/* Fleet truck image */}
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-4 max-w-4xl mx-auto relative rounded-xl overflow-hidden group">
-            <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
-            <div className="absolute bottom-3 left-4">
-              <span className="text-sm font-display font-bold text-foreground">Late-Model Mack Trucks</span>
-              <p className="text-xs text-muted-foreground">Equipped with full amenities for the road</p>
+                </motion.div>
+              ))}
             </div>
-          </motion.div>
+            {/* Truck image - right side */}
+            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-[380px] flex-shrink-0 relative rounded-xl overflow-hidden group">
+              <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-64 lg:h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            </motion.div>
+          </div>
         </div>
       </section>
 
