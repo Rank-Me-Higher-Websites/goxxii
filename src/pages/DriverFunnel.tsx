@@ -116,7 +116,7 @@ const DriverFunnel = () => {
         <div className="absolute bottom-0 right-0 w-1 h-24 bg-gradient-to-t from-accent to-transparent" />
         <div className="absolute bottom-0 right-0 w-24 h-1 bg-gradient-to-l from-accent to-transparent" />
 
-        <div className="relative z-10 pt-16 pb-2 lg:pt-20 lg:pb-8 px-4 sm:px-6 w-full max-w-6xl mx-auto">
+        <div className="relative z-10 pt-14 pb-1 lg:pt-20 lg:pb-8 px-3 sm:px-6 w-full max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-10">
             {/* Left: Text Content */}
             <div className="max-w-2xl flex-1">
