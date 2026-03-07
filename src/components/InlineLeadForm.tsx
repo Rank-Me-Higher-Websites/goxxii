@@ -1,0 +1,202 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { ChevronRight, Loader2, CheckCircle, User, Phone, Mail, Award, ShieldAlert } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+
+interface InlineLeadFormProps {
+  recruiterName: string;
+  recruiterPhone: string;
+  recruiterPhoneFormatted: string;
+}
+
+export const InlineLeadForm = ({ recruiterName, recruiterPhone, recruiterPhoneFormatted }: InlineLeadFormProps) => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    cdlExperience: "",
+    sap: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (field: string, value: string) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const isValid = formData.fullName && formData.phone && formData.email && formData.cdlExperience && formData.sap;
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!isValid) return;
+    setIsSubmitting(true);
+    await new Promise((r) => setTimeout(r, 1500));
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+  };
+
+  const cdlOptions = ["Less than 1 year", "1-2 years", "2-5 years", "5-10 years", "10+ years"];
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3 }}
+      className="relative glass-strong rounded-2xl border border-border/50 shadow-2xl overflow-hidden"
+    >
+      {/* Top accent line */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary" />
+
+      {/* Decorative blurs */}
+      <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-[60px] translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 left-0 w-24 h-24 bg-accent/10 rounded-full blur-[50px] -translate-x-1/2 translate-y-1/2" />
+
+      <div className="relative z-10 p-6">
+        {!isSubmitted ? (
+          <>
+            <div className="text-center mb-5">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-xs font-semibold text-accent uppercase tracking-wider mb-3">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
+                </span>
+                Quick Apply
+              </div>
+              <h2 className="text-xl font-display font-bold text-foreground">Start Your Application</h2>
+              <p className="text-sm text-muted-foreground mt-1">Takes 30 seconds • {recruiterName} will follow up</p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-3">
+              <div className="space-y-1.5">
+                <Label htmlFor="inline-fullName" className="text-xs font-medium text-muted-foreground flex items-center gap-1.5">
+                  <User className="w-3 h-3" /> Full Name
+                </Label>
+                <Input
+                  id="inline-fullName"
+                  placeholder="John Smith"
+                  value={formData.fullName}
+                  onChange={(e) => handleChange("fullName", e.target.value)}
+                  className="bg-muted/50 border-border/50 focus:border-primary/50 h-10"
+                  required
+                />
+              </div>
+
+              <div className="space-y-1.5">
+                <Label htmlFor="inline-phone" className="text-xs font-medium text-muted-foreground flex items-center gap-1.5">
+                  <Phone className="w-3 h-3" /> Phone Number
+                </Label>
+                <Input
+                  id="inline-phone"
+                  type="tel"
+                  placeholder="(555) 123-4567"
+                  value={formData.phone}
+                  onChange={(e) => handleChange("phone", e.target.value)}
+                  className="bg-muted/50 border-border/50 focus:border-primary/50 h-10"
+                  required
+                />
+              </div>
+
+              <div className="space-y-1.5">
+                <Label htmlFor="inline-email" className="text-xs font-medium text-muted-foreground flex items-center gap-1.5">
+                  <Mail className="w-3 h-3" /> Email
+                </Label>
+                <Input
+                  id="inline-email"
+                  type="email"
+                  placeholder="john@email.com"
+                  value={formData.email}
+                  onChange={(e) => handleChange("email", e.target.value)}
+                  className="bg-muted/50 border-border/50 focus:border-primary/50 h-10"
+                  required
+                />
+              </div>
+
+              <div className="space-y-1.5">
+                <Label className="text-xs font-medium text-muted-foreground flex items-center gap-1.5">
+                  <Award className="w-3 h-3" /> CDL-A Experience
+                </Label>
+                <div className="grid grid-cols-3 gap-1.5">
+                  {cdlOptions.map((opt) => (
+                    <button
+                      key={opt}
+                      type="button"
+                      onClick={() => handleChange("cdlExperience", opt)}
+                      className={`px-2 py-1.5 rounded-lg text-xs font-medium border transition-all duration-200 ${
+                        formData.cdlExperience === opt
+                          ? "bg-primary/20 border-primary/50 text-primary"
+                          : "bg-muted/30 border-border/50 text-muted-foreground hover:border-primary/30 hover:text-foreground"
+                      }`}
+                    >
+                      {opt}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="space-y-1.5">
+                <Label className="text-xs font-medium text-muted-foreground flex items-center gap-1.5">
+                  <ShieldAlert className="w-3 h-3" /> SAP (Substance Abuse Program)?
+                </Label>
+                <div className="grid grid-cols-2 gap-2">
+                  {["No", "Yes"].map((opt) => (
+                    <button
+                      key={opt}
+                      type="button"
+                      onClick={() => handleChange("sap", opt)}
+                      className={`px-3 py-2 rounded-lg text-sm font-medium border transition-all duration-200 ${
+                        formData.sap === opt
+                          ? "bg-primary/20 border-primary/50 text-primary"
+                          : "bg-muted/30 border-border/50 text-muted-foreground hover:border-primary/30 hover:text-foreground"
+                      }`}
+                    >
+                      {opt}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <Button
+                type="submit"
+                variant="hero"
+                disabled={!isValid || isSubmitting}
+                className="w-full h-11 text-base font-semibold pulse-glow"
+              >
+                {isSubmitting ? (
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                ) : (
+                  <>
+                    <ChevronRight className="w-5 h-5" />
+                    Submit Application
+                  </>
+                )}
+              </Button>
+
+              <p className="text-center text-xs text-muted-foreground">
+                Or call directly:{" "}
+                <a href={`tel:${recruiterPhone}`} className="text-primary hover:underline font-medium">
+                  {recruiterPhoneFormatted}
+                </a>
+              </p>
+            </form>
+          </>
+        ) : (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="text-center py-8"
+          >
+            <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+              <CheckCircle className="w-8 h-8 text-accent" />
+            </div>
+            <h3 className="text-xl font-display font-bold text-foreground mb-2">Application Received!</h3>
+            <p className="text-sm text-muted-foreground">
+              {recruiterName} will reach out within 24 hours.
+            </p>
+          </motion.div>
+        )}
+      </div>
+    </motion.div>
+  );
+};
