@@ -7,6 +7,7 @@ import { FloatingContactButtons } from "@/components/FloatingContactButtons";
 
 interface LayoutProps {
   children: ReactNode;
+  onApplyClick?: () => void;
 }
 
 export const Layout = ({ children }: LayoutProps) => {
