@@ -102,7 +102,7 @@ const DriverFunnel = () => {
       <SchemaMarkup schemas={schemas} />
 
       {/* ═══ HERO ═══ */}
-      <section className="relative min-h-[85svh] flex items-center overflow-x-hidden">
+      <section className="relative min-h-[100svh] lg:min-h-[85svh] flex items-center overflow-x-hidden">
         <div className="absolute inset-0">
           <img src={heroDriver} alt="Professional OTR truck driver" className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
@@ -116,50 +116,46 @@ const DriverFunnel = () => {
         <div className="absolute bottom-0 right-0 w-1 h-24 bg-gradient-to-t from-accent to-transparent" />
         <div className="absolute bottom-0 right-0 w-24 h-1 bg-gradient-to-l from-accent to-transparent" />
 
-        <div className="relative z-10 pt-20 pb-8 px-4 sm:px-6 lg:px-12 xl:px-20 w-full">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-12">
+        <div className="relative z-10 pt-16 pb-4 lg:pt-20 lg:pb-8 px-4 sm:px-6 lg:px-12 xl:px-20 w-full">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 lg:gap-12">
             {/* Left: Text Content */}
             <div className="max-w-2xl flex-1">
-              <div className="text-left max-w-full overflow-hidden">
-                <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 mb-3 px-3 py-1.5 rounded-full glass-strong border border-accent/30">
+              <div className="text-left max-w-full">
+                <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 mb-2 px-3 py-1 rounded-full glass-strong border border-accent/30">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
                   </span>
-                  <span className="text-xs font-semibold text-accent uppercase tracking-wide">Now Hiring – Limited Spots</span>
+                  <span className="text-[10px] lg:text-xs font-semibold text-accent uppercase tracking-wide">Now Hiring – Limited Spots</span>
                 </motion.div>
 
-                <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight leading-[1.1] mb-2">
+                <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight leading-[1.1] mb-1 lg:mb-2">
                   <span className="text-gradient">$2,100–$2,400/Week</span>
                   <br />
-                  <span className="text-foreground text-xl sm:text-2xl md:text-3xl">Drop & Hook OTR Driver</span>
+                  <span className="text-foreground text-lg sm:text-2xl md:text-3xl">Drop & Hook OTR Driver</span>
                 </motion.h1>
 
-                <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="text-muted-foreground text-sm max-w-xl mb-4">
-                  <span className="text-foreground font-semibold">65 CPM Empty & Loaded + 2 CPM Fuel Bonus</span> starting Day 1. Get a raise every 6 months. New trucks, dedicated lanes, dry van only.
+                <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="text-muted-foreground text-xs lg:text-sm max-w-xl mb-2 lg:mb-4">
+                  <span className="text-foreground font-semibold">65 CPM Empty & Loaded + 2 CPM Fuel Bonus</span> starting Day 1. Raise every 6 months. New trucks, dedicated lanes, dry van only.
                 </motion.p>
 
                 {/* Stat Pills */}
-                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-wrap justify-start gap-3 mb-5">
+                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-wrap justify-start gap-2 lg:gap-3 mb-3 lg:mb-5">
                   {perks.map((p) => (
-                    <div key={p.label} className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-                        <p.icon className="w-4 h-4 text-primary" />
+                    <div key={p.label} className="flex items-center gap-1.5 lg:gap-2">
+                      <div className="w-6 h-6 lg:w-8 lg:h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                        <p.icon className="w-3 h-3 lg:w-4 lg:h-4 text-primary" />
                       </div>
                       <div>
-                        <div className="text-sm font-bold text-foreground">{p.label}</div>
-                        <div className="text-xs text-muted-foreground">{p.sub}</div>
+                        <div className="text-xs lg:text-sm font-bold text-foreground">{p.label}</div>
+                        <div className="text-[10px] lg:text-xs text-muted-foreground">{p.sub}</div>
                       </div>
                     </div>
                   ))}
                 </motion.div>
 
-                {/* CTAs - mobile only shows buttons, desktop has form on right */}
-                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="flex flex-row gap-3 items-center justify-start">
-                  <Button variant="hero" size="default" className="group pulse-glow sm:h-14 sm:px-10 sm:text-base lg:hidden" onClick={() => setLeadFormOpen(true)}>
-                    <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                    <span>Apply Now</span>
-                  </Button>
+                {/* Phone CTA - visible on all sizes */}
+                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="hidden lg:flex flex-row gap-3 items-center justify-start">
                   <Button variant="heroOutline" size="default" className="sm:h-14 sm:px-10 sm:text-base" asChild>
                     <a href={`tel:${data.phone}`}>
                       <Phone className="w-4 h-4 flex-shrink-0" />
@@ -170,8 +166,8 @@ const DriverFunnel = () => {
               </div>
             </div>
 
-            {/* Right: Inline Form (desktop only) */}
-            <div className="hidden lg:block w-full max-w-md flex-shrink-0">
+            {/* Right: Inline Form (always visible) */}
+            <div className="w-full max-w-md flex-shrink-0 mx-auto lg:mx-0">
               <InlineLeadForm
                 recruiterName={data.name}
                 recruiterPhone={data.phone}
