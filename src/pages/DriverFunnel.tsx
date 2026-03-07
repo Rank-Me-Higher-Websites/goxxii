@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { InlineLeadForm } from "@/components/InlineLeadForm";
 import { useParams, Navigate } from "react-router-dom";
 import { useState, useMemo } from "react";
 import {
