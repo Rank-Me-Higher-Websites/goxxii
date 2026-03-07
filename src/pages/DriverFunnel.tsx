@@ -92,7 +92,7 @@ const DriverFunnel = () => {
   if (!data) return <Navigate to="/404" replace />;
 
   return (
-    <Layout>
+    <Layout onApplyClick={() => setLeadFormOpen(true)}>
       <SEOHead
         title="OTR Driver Jobs – $2,100–$2,400/Week | XXII Century"
         description="65 CPM + 2 CPM fuel bonus. Drop & hook dry van, new trucks, dedicated lanes. Apply now for OTR company driver positions."
