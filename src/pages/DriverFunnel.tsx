@@ -113,9 +113,8 @@ const DriverFunnel = () => {
         <div className="absolute bottom-0 right-0 w-24 h-1 bg-gradient-to-l from-accent to-transparent" />
 
         <div className="container-custom relative z-10 pt-20 pb-8">
-          <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
-            {/* Left: Copy */}
-            <div className="text-center lg:text-left max-w-full overflow-hidden">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center max-w-full overflow-hidden">
               <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 mb-3 px-3 py-1.5 rounded-full glass-strong border border-accent/30">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
