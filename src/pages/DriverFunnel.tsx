@@ -280,13 +280,8 @@ const DriverFunnel = () => {
             </div>
           </motion.div>
           {/* Dispatch support image */}
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-4 relative rounded-xl overflow-hidden group">
-            <img src={dispatchOffice} alt="XXII Century dispatch team" className="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent" />
-            <div className="absolute bottom-3 left-4">
-              <span className="text-sm font-display font-bold text-foreground">24/7 Dispatch Support</span>
-              <p className="text-xs text-muted-foreground">Dedicated team keeping you moving</p>
-            </div>
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-4">
+            <img src={dispatchOffice} alt="XXII Century dispatch team" className="w-full h-auto" />
           </motion.div>
         </div>
       </section>
