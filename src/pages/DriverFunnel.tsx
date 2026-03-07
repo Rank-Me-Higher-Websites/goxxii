@@ -102,7 +102,7 @@ const DriverFunnel = () => {
       <SchemaMarkup schemas={schemas} />
 
       {/* ═══ HERO ═══ */}
-      <section className="relative min-h-[100svh] lg:min-h-[85svh] flex items-center overflow-x-hidden">
+      <section className="relative min-h-fit lg:min-h-[85svh] flex items-center overflow-x-hidden">
         <div className="absolute inset-0">
           <img src={heroDriver} alt="Professional OTR truck driver" className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
@@ -116,8 +116,8 @@ const DriverFunnel = () => {
         <div className="absolute bottom-0 right-0 w-1 h-24 bg-gradient-to-t from-accent to-transparent" />
         <div className="absolute bottom-0 right-0 w-24 h-1 bg-gradient-to-l from-accent to-transparent" />
 
-        <div className="relative z-10 pt-16 pb-4 lg:pt-20 lg:pb-8 px-4 sm:px-6 lg:px-12 xl:px-20 w-full">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 lg:gap-12">
+        <div className="relative z-10 pt-16 pb-2 lg:pt-20 lg:pb-8 px-4 sm:px-6 lg:px-12 xl:px-20 w-full">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-start gap-3 lg:gap-16">
             {/* Left: Text Content */}
             <div className="max-w-2xl flex-1">
               <div className="text-left max-w-full">
