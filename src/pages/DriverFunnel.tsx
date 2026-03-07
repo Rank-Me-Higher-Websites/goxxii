@@ -240,7 +240,7 @@ const DriverFunnel = () => {
       <section className="py-6 bg-secondary relative overflow-hidden">
         <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-[120px]" />
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-        <div className="container-custom max-w-2xl mx-auto relative z-10">
+        <div className="container-custom max-w-5xl mx-auto relative z-10">
           <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-4">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-2">
               <Clock className="w-3 h-3" /> Flexible Schedule
@@ -248,37 +248,43 @@ const DriverFunnel = () => {
             <h2 className="text-xl sm:text-2xl font-display font-black text-foreground tracking-tight">Time On / Time Off</h2>
           </motion.div>
 
-          <div className="grid grid-cols-3 gap-2 mb-3">
-            {timeOff.map((item, i) => (
-              <motion.div key={item.weeks} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-                className="relative rounded-xl bg-background/60 backdrop-blur-sm border border-primary/15 hover:border-primary/35 transition-all duration-300 p-4 text-center group"
+          <div className="flex flex-col lg:flex-row lg:items-stretch gap-4">
+            {/* Left: Dispatch image */}
+            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-[380px] flex-shrink-0 rounded-lg overflow-hidden">
+              <img src={dispatchOffice} alt="XXII Century dispatch team" className="w-full h-full object-cover" />
+            </motion.div>
+
+            {/* Right: Time cards + bonus */}
+            <div className="flex-1 flex flex-col justify-center gap-3">
+              <div className="grid grid-cols-3 gap-2">
+                {timeOff.map((item, i) => (
+                  <motion.div key={item.weeks} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+                    className="relative rounded-xl bg-background/60 backdrop-blur-sm border border-primary/15 hover:border-primary/35 transition-all duration-300 p-4 text-center group"
+                  >
+                    <div className="relative z-10 flex flex-col items-center">
+                      <div className="w-11 h-11 rounded-full bg-gradient-to-br from-primary/25 to-primary/5 flex items-center justify-center mb-2 border border-primary/20 shadow-[0_0_15px_-5px_hsl(var(--primary)/0.3)]">
+                        <span className="text-xl font-display font-black text-primary">{item.weeks}</span>
+                      </div>
+                      <p className="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-[0.1em] mb-2">{item.label}</p>
+                      <ArrowRight className="w-3 h-3 text-primary/40 mb-2 rotate-90" />
+                      <div className="text-2xl font-display font-black bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">{item.days}</div>
+                      <p className="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-[0.1em] mt-0.5">{item.result}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+
+              <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+                className="rounded-lg border border-primary/25 bg-gradient-to-r from-primary/[0.06] via-primary/[0.03] to-primary/[0.06] px-4 py-2.5 text-center"
               >
-                <div className="relative z-10 flex flex-col items-center">
-                  <div className="w-11 h-11 rounded-full bg-gradient-to-br from-primary/25 to-primary/5 flex items-center justify-center mb-2 border border-primary/20 shadow-[0_0_15px_-5px_hsl(var(--primary)/0.3)]">
-                    <span className="text-xl font-display font-black text-primary">{item.weeks}</span>
-                  </div>
-                  <p className="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-[0.1em] mb-2">{item.label}</p>
-                  <ArrowRight className="w-3 h-3 text-primary/40 mb-2 rotate-90" />
-                  <div className="text-2xl font-display font-black bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">{item.days}</div>
-                  <p className="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-[0.1em] mt-0.5">{item.result}</p>
+                <div className="flex items-center justify-center gap-2">
+                  <Zap className="w-3.5 h-3.5 text-primary" />
+                  <span className="text-xs font-black text-primary tracking-tight">+1 extra day off for each additional week out</span>
+                  <Zap className="w-3.5 h-3.5 text-primary" />
                 </div>
               </motion.div>
-            ))}
-          </div>
-
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            className="rounded-lg border border-primary/25 bg-gradient-to-r from-primary/[0.06] via-primary/[0.03] to-primary/[0.06] px-4 py-2.5 text-center"
-          >
-            <div className="flex items-center justify-center gap-2">
-              <Zap className="w-3.5 h-3.5 text-primary" />
-              <span className="text-xs font-black text-primary tracking-tight">+1 extra day off for each additional week out</span>
-              <Zap className="w-3.5 h-3.5 text-primary" />
             </div>
-          </motion.div>
-          {/* Dispatch support image */}
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-4 rounded-lg overflow-hidden">
-            <img src={dispatchOffice} alt="XXII Century dispatch team" className="w-full h-auto block" />
-          </motion.div>
+          </div>
         </div>
       </section>
 
