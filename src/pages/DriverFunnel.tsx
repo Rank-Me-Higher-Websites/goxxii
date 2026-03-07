@@ -229,6 +229,15 @@ const DriverFunnel = () => {
               </motion.div>
             ))}
           </div>
+          {/* Fleet truck image */}
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-4 max-w-4xl mx-auto relative rounded-xl overflow-hidden group">
+            <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+            <div className="absolute bottom-3 left-4">
+              <span className="text-sm font-display font-bold text-foreground">Late-Model Mack Trucks</span>
+              <p className="text-xs text-muted-foreground">Equipped with full amenities for the road</p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
