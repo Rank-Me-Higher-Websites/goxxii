@@ -112,7 +112,7 @@ const DriverFunnel = () => {
         <div className="absolute bottom-0 right-0 w-1 h-24 bg-gradient-to-t from-accent to-transparent" />
         <div className="absolute bottom-0 right-0 w-24 h-1 bg-gradient-to-l from-accent to-transparent" />
 
-        <div className="container-custom relative z-10 pt-20 pb-8">
+        <div className="relative z-10 pt-20 pb-8 px-4 sm:px-6 lg:px-12 xl:px-20">
           <div className="max-w-3xl">
             <div className="text-left max-w-full overflow-hidden">
               <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 mb-3 px-3 py-1.5 rounded-full glass-strong border border-accent/30">
