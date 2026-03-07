@@ -220,11 +220,11 @@ const DriverFunnel = () => {
                 <motion.div key={item.title} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.03 }}
                   className="rounded-lg bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300"
                 >
-                  <div className="flex items-center gap-3 px-4 py-3.5">
+                  <div className="flex flex-col items-center text-center gap-2 px-4 py-4">
                     <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
                       <item.icon className="w-4 h-4 text-accent" />
                     </div>
-                    <div className="min-w-0">
+                    <div>
                       <h3 className="text-xs font-black text-foreground leading-tight tracking-tight">{item.title}</h3>
                       <p className="text-[10px] text-muted-foreground/70 leading-snug mt-0.5">{item.desc}</p>
                     </div>
