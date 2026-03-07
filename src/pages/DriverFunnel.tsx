@@ -102,7 +102,7 @@ const DriverFunnel = () => {
       <SchemaMarkup schemas={schemas} />
 
       {/* ═══ HERO ═══ */}
-      <section className="relative min-h-[100svh] lg:min-h-[85svh] flex items-center overflow-x-hidden">
+      <section className="relative min-h-fit lg:min-h-[85svh] flex items-center overflow-x-hidden">
         <div className="absolute inset-0">
           <img src={heroDriver} alt="Professional OTR truck driver" className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
