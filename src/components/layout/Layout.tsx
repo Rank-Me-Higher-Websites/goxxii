@@ -7,15 +7,16 @@ import { FloatingContactButtons } from "@/components/FloatingContactButtons";
 
 interface LayoutProps {
   children: ReactNode;
+  onApplyClick?: () => void;
 }
 
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children, onApplyClick }: LayoutProps) => {
   return (
     <div className="min-h-screen flex flex-col relative">
       <FloatingShapes />
       <Navbar />
       <main className="flex-1 relative z-10">{children}</main>
-      <Footer />
+      <Footer onApplyClick={onApplyClick} />
       {/* Spacer so fixed mobile CTA doesn't cover content */}
       <div className="h-28 lg:hidden" aria-hidden />
       <FloatingCTA />
