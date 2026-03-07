@@ -19,8 +19,8 @@ import {
   getJobPostingSchema,
 } from "@/data/schemaData";
 import heroDriver from "@/assets/hero-driver.png";
-import truckRoad from "@/assets/xxii-truck-road-clean.png";
-import dispatchOffice from "@/assets/dispatch-office.png";
+import truckRoad from "@/assets/xxii-truck-road.png";
+import dispatchOffice from "@/assets/dispatch-clean.jpg";
 
 const recruiterData: Record<string, { name: string; phone: string; phoneFormatted: string }> = {
   ben: { name: "Ben", phone: "+17735725012", phoneFormatted: "(773) 572-5012" },
@@ -232,10 +232,12 @@ const DriverFunnel = () => {
                 </motion.div>
               ))}
             </div>
-            {/* Truck image - right side, no borders, full visibility */}
-            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-[400px] flex-shrink-0">
-              <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-auto" />
-            </motion.div>
+            {/* Truck image - right side */}
+            <div className="lg:w-[400px] flex-shrink-0 overflow-hidden">
+              <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+                <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-[calc(100%+40px)] h-auto -m-[20px] scale-[1.08]" />
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -280,9 +282,11 @@ const DriverFunnel = () => {
             </div>
           </motion.div>
           {/* Dispatch support image */}
-          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-4">
-            <img src={dispatchOffice} alt="XXII Century dispatch team" className="w-full h-auto" />
-          </motion.div>
+          <div className="mt-4 overflow-hidden">
+            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <img src={dispatchOffice} alt="XXII Century dispatch team" className="w-full h-auto block" />
+            </motion.div>
+          </div>
         </div>
       </section>
 
