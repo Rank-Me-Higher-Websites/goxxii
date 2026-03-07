@@ -212,14 +212,14 @@ const DriverFunnel = () => {
             </span>
             <h2 className="text-xl sm:text-2xl font-display font-black text-foreground tracking-tight">What You Get</h2>
           </motion.div>
-          <div className="flex flex-col lg:flex-row gap-4 max-w-5xl mx-auto">
+          <div className="flex flex-col lg:flex-row lg:items-stretch gap-0 max-w-5xl mx-auto rounded-xl overflow-hidden border border-border/40">
             {/* Benefits grid - left side */}
-            <div className="grid sm:grid-cols-2 gap-2 flex-1 auto-rows-fr">
+            <div className="grid sm:grid-cols-2 gap-px bg-border/30 flex-1">
               {highlights.map((item, i) => (
                 <motion.div key={item.title} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.03 }}
-                  className="group relative rounded-lg bg-secondary/80 border border-border/40 hover:border-accent/30 transition-all duration-300 overflow-hidden"
+                  className="bg-secondary/80 hover:bg-secondary transition-colors duration-300"
                 >
-                  <div className="flex items-center gap-3 px-3 py-3 h-full">
+                  <div className="flex items-center gap-3 px-4 py-3.5 h-full">
                     <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center flex-shrink-0 border border-accent/20">
                       <item.icon className="w-4 h-4 text-accent" />
                     </div>
@@ -232,8 +232,8 @@ const DriverFunnel = () => {
               ))}
             </div>
             {/* Truck image - right side */}
-            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-[380px] flex-shrink-0 relative rounded-xl overflow-hidden group">
-              <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-64 lg:h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-[400px] flex-shrink-0 relative">
+              <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-64 lg:h-full object-cover" />
             </motion.div>
           </div>
         </div>
