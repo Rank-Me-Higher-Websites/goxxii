@@ -113,9 +113,8 @@ const DriverFunnel = () => {
         <div className="absolute bottom-0 right-0 w-24 h-1 bg-gradient-to-l from-accent to-transparent" />
 
         <div className="container-custom relative z-10 pt-20 pb-8">
-          <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
-            {/* Left: Copy */}
-            <div className="text-center lg:text-left max-w-full overflow-hidden">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center max-w-full overflow-hidden">
               <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 mb-3 px-3 py-1.5 rounded-full glass-strong border border-accent/30">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
@@ -135,7 +134,7 @@ const DriverFunnel = () => {
               </motion.p>
 
               {/* Stat Pills */}
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-wrap justify-center lg:justify-start gap-3 mb-5">
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-wrap justify-center gap-3 mb-5">
                 {perks.map((p) => (
                   <div key={p.label} className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -150,7 +149,7 @@ const DriverFunnel = () => {
               </motion.div>
 
               {/* CTAs */}
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="flex flex-row gap-3 items-center justify-center lg:justify-start">
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="flex flex-row gap-3 items-center justify-center">
                 <Button variant="hero" size="default" className="group pulse-glow sm:h-14 sm:px-10 sm:text-base" onClick={() => setLeadFormOpen(true)}>
                     <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                     <span>Apply Now</span>
@@ -164,51 +163,6 @@ const DriverFunnel = () => {
               </motion.div>
             </div>
 
-            {/* Right: VSL Video */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-card">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                      <style>
-                        wistia-player[media-id='j33b6mpgm1']:not(:defined) {
-                          background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/j33b6mpgm1/swatch');
-                          display: block;
-                          filter: blur(5px);
-                          padding-top: 56.25%;
-                        }
-                      </style>
-                      <wistia-player media-id="j33b6mpgm1" aspect="1.7777777777777777" muted="false" autoplay="false"></wistia-player>
-                    `
-                  }}
-                />
-              </div>
-
-              {/* Floating social proof */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="mt-4 glass-strong rounded-xl px-4 py-3 border border-accent/30 hidden lg:inline-flex"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="flex -space-x-2">
-                    <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-xs font-bold text-primary-foreground border-2 border-card">M</div>
-                    <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-xs font-bold text-accent-foreground border-2 border-card">J</div>
-                    <div className="w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center text-xs font-bold text-white border-2 border-card">R</div>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-foreground">12 drivers joined</p>
-                    <p className="text-xs text-muted-foreground">this week</p>
-                  </div>
-                </div>
-              </motion.div>
-            </motion.div>
           </div>
         </div>
       </section>
