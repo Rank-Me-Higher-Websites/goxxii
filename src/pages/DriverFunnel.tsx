@@ -19,6 +19,8 @@ import {
   getJobPostingSchema,
 } from "@/data/schemaData";
 import heroDriver from "@/assets/hero-driver.png";
+import truckRoad from "@/assets/xxii-truck-road-clean.png";
+import dispatchOffice from "@/assets/dispatch-office.png";
 
 const recruiterData: Record<string, { name: string; phone: string; phoneFormatted: string }> = {
   ben: { name: "Ben", phone: "+17735725012", phoneFormatted: "(773) 572-5012" },
@@ -194,6 +196,30 @@ const DriverFunnel = () => {
                 <div className="text-xs text-muted-foreground">{s.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ FLEET & SUPPORT ═══ */}
+      <section className="py-6 bg-background relative overflow-hidden">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-2 gap-4">
+            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative rounded-xl overflow-hidden group">
+              <img src={truckRoad} alt="XXII Century truck on the road" className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4">
+                <span className="text-sm font-display font-bold text-foreground">Our Fleet</span>
+                <p className="text-xs text-muted-foreground">Late-model Mack trucks with full amenities</p>
+              </div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative rounded-xl overflow-hidden group">
+              <img src={dispatchOffice} alt="XXII Century dispatch office" className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4">
+                <span className="text-sm font-display font-bold text-foreground">24/7 Dispatch Support</span>
+                <p className="text-xs text-muted-foreground">Dedicated team keeping you moving</p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
