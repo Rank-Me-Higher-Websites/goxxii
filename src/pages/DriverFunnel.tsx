@@ -234,7 +234,7 @@ const DriverFunnel = () => {
             </div>
             {/* Truck image - right side, no borders, full visibility */}
             <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-[400px] flex-shrink-0">
-              <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-auto rounded-xl" />
+              <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-auto" />
             </motion.div>
           </div>
         </div>
