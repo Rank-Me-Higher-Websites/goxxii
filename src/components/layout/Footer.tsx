@@ -43,17 +43,24 @@ export const Footer = ({ onApplyClick }: FooterProps) => {
               Join the XXII Century family and take your trucking career to the next level
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" asChild>
-                <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
+              {onApplyClick ? (
+                <Button variant="hero" size="lg" onClick={onApplyClick} className="flex items-center gap-2">
                   <ChevronRight className="w-5 h-5" />
                   Apply To Drive
-                </a>
-              </Button>
+                </Button>
+              ) : (
+                <Button variant="hero" size="lg" asChild>
+                  <a
+                    href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                    Apply To Drive
+                  </a>
+                </Button>
+              )}
               <Button variant="heroOutline" size="lg" asChild>
                 <a href="tel:+16309480501" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
