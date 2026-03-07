@@ -116,12 +116,12 @@ const DriverFunnel = () => {
         <div className="absolute bottom-0 right-0 w-1 h-24 bg-gradient-to-t from-accent to-transparent" />
         <div className="absolute bottom-0 right-0 w-24 h-1 bg-gradient-to-l from-accent to-transparent" />
 
-        <div className="relative z-10 pt-16 pb-2 lg:pt-20 lg:pb-8 px-4 sm:px-6 w-full max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-10">
+        <div className="relative z-10 pt-14 pb-1 lg:pt-20 lg:pb-8 px-3 sm:px-6 w-full max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-10">
             {/* Left: Text Content */}
             <div className="max-w-2xl flex-1">
               <div className="text-left max-w-full">
-                <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 mb-2 px-3 py-1 rounded-full glass-strong border border-accent/30">
+                <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 mb-1 px-3 py-0.5 rounded-full glass-strong border border-accent/30">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
