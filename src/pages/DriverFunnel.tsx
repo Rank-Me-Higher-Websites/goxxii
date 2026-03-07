@@ -163,51 +163,6 @@ const DriverFunnel = () => {
               </motion.div>
             </div>
 
-            {/* Right: VSL Video */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-card">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                      <style>
-                        wistia-player[media-id='j33b6mpgm1']:not(:defined) {
-                          background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/j33b6mpgm1/swatch');
-                          display: block;
-                          filter: blur(5px);
-                          padding-top: 56.25%;
-                        }
-                      </style>
-                      <wistia-player media-id="j33b6mpgm1" aspect="1.7777777777777777" muted="false" autoplay="false"></wistia-player>
-                    `
-                  }}
-                />
-              </div>
-
-              {/* Floating social proof */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="mt-4 glass-strong rounded-xl px-4 py-3 border border-accent/30 hidden lg:inline-flex"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="flex -space-x-2">
-                    <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-xs font-bold text-primary-foreground border-2 border-card">M</div>
-                    <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-xs font-bold text-accent-foreground border-2 border-card">J</div>
-                    <div className="w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center text-xs font-bold text-white border-2 border-card">R</div>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-foreground">12 drivers joined</p>
-                    <p className="text-xs text-muted-foreground">this week</p>
-                  </div>
-                </div>
-              </motion.div>
-            </motion.div>
           </div>
         </div>
       </section>
