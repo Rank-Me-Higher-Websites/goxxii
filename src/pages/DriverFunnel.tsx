@@ -134,7 +134,7 @@ const DriverFunnel = () => {
               </motion.p>
 
               {/* Stat Pills */}
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-wrap justify-center gap-3 mb-5">
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="flex flex-wrap justify-start gap-3 mb-5">
                 {perks.map((p) => (
                   <div key={p.label} className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
