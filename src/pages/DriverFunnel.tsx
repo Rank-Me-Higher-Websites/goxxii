@@ -129,7 +129,7 @@ const DriverFunnel = () => {
                 <span className="text-foreground text-xl sm:text-2xl md:text-3xl">Drop & Hook OTR Driver</span>
               </motion.h1>
 
-              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="text-muted-foreground text-sm max-w-xl mx-auto lg:mx-0 mb-4">
+              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="text-muted-foreground text-sm max-w-xl mb-4">
                 <span className="text-foreground font-semibold">65 CPM Empty & Loaded + 2 CPM Fuel Bonus</span> starting Day 1. Get a raise every 6 months. New trucks, dedicated lanes, dry van only.
               </motion.p>
 
