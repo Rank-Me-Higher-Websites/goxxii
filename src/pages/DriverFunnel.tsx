@@ -129,10 +129,10 @@ const DriverFunnel = () => {
                   <span className="text-[10px] lg:text-xs font-semibold text-accent uppercase tracking-wide">Now Hiring – Limited Spots</span>
                 </motion.div>
 
-                <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight leading-[1.1] mb-1 lg:mb-2">
+                <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight leading-[1.1] mb-1 lg:mb-2">
                   <span className="text-gradient">$2,100–$2,400/Week</span>
                   <br />
-                  <span className="text-foreground text-lg sm:text-2xl md:text-3xl">Drop & Hook OTR Driver</span>
+                  <span className="text-foreground text-base sm:text-2xl md:text-3xl">Drop & Hook OTR Driver</span>
                 </motion.h1>
 
                 <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="text-muted-foreground text-xs lg:text-sm max-w-xl mb-2 lg:mb-4">
