@@ -232,10 +232,12 @@ const DriverFunnel = () => {
                 </motion.div>
               ))}
             </div>
-            {/* Truck image - right side, no borders, full visibility */}
-            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-[400px] flex-shrink-0">
-              <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-auto" />
-            </motion.div>
+            {/* Truck image - right side */}
+            <div className="lg:w-[400px] flex-shrink-0 overflow-hidden">
+              <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+                <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-[calc(100%+40px)] h-auto -m-[20px] scale-[1.08]" />
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
