@@ -29,6 +29,7 @@ interface FooterProps {
 }
 
 export const Footer = ({ onApplyClick }: FooterProps) => {
+  return (
     <footer className="bg-card border-t border-border">
       {/* CTA Section */}
       <div className="container-custom py-10 sm:py-16">
