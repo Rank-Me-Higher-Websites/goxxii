@@ -200,29 +200,6 @@ const DriverFunnel = () => {
         </div>
       </section>
 
-      {/* ═══ FLEET & SUPPORT ═══ */}
-      <section className="py-6 bg-background relative overflow-hidden">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-4">
-            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative rounded-xl overflow-hidden group">
-              <img src={truckRoad} alt="XXII Century truck on the road" className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4">
-                <span className="text-sm font-display font-bold text-foreground">Our Fleet</span>
-                <p className="text-xs text-muted-foreground">Late-model Mack trucks with full amenities</p>
-              </div>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative rounded-xl overflow-hidden group">
-              <img src={dispatchOffice} alt="XXII Century dispatch office" className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4">
-                <span className="text-sm font-display font-bold text-foreground">24/7 Dispatch Support</span>
-                <p className="text-xs text-muted-foreground">Dedicated team keeping you moving</p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
 
       {/* ═══ WHAT YOU GET ═══ */}
       <section className="py-6 bg-background relative overflow-hidden">
@@ -252,6 +229,15 @@ const DriverFunnel = () => {
               </motion.div>
             ))}
           </div>
+          {/* Fleet truck image */}
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-4 max-w-4xl mx-auto relative rounded-xl overflow-hidden group">
+            <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+            <div className="absolute bottom-3 left-4">
+              <span className="text-sm font-display font-bold text-foreground">Late-Model Mack Trucks</span>
+              <p className="text-xs text-muted-foreground">Equipped with full amenities for the road</p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -292,6 +278,15 @@ const DriverFunnel = () => {
               <Zap className="w-3.5 h-3.5 text-primary" />
               <span className="text-xs font-black text-primary tracking-tight">+1 extra day off for each additional week out</span>
               <Zap className="w-3.5 h-3.5 text-primary" />
+            </div>
+          </motion.div>
+          {/* Dispatch support image */}
+          <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-4 relative rounded-xl overflow-hidden group">
+            <img src={dispatchOffice} alt="XXII Century dispatch team" className="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent" />
+            <div className="absolute bottom-3 left-4">
+              <span className="text-sm font-display font-bold text-foreground">24/7 Dispatch Support</span>
+              <p className="text-xs text-muted-foreground">Dedicated team keeping you moving</p>
             </div>
           </motion.div>
         </div>
