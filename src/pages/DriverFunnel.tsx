@@ -149,7 +149,7 @@ const DriverFunnel = () => {
               </motion.div>
 
               {/* CTAs */}
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="flex flex-row gap-3 items-center justify-center">
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="flex flex-row gap-3 items-center justify-start">
                 <Button variant="hero" size="default" className="group pulse-glow sm:h-14 sm:px-10 sm:text-base" onClick={() => setLeadFormOpen(true)}>
                     <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                     <span>Apply Now</span>
