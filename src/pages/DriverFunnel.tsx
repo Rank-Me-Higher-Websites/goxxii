@@ -213,7 +213,7 @@ const DriverFunnel = () => {
             </span>
             <h2 className="text-xl sm:text-2xl font-display font-black text-foreground tracking-tight">What You Get</h2>
           </motion.div>
-          <div className="flex flex-col lg:flex-row lg:items-start gap-6 max-w-5xl mx-auto">
+          <div className="flex flex-col lg:flex-row lg:items-stretch gap-4 max-w-5xl mx-auto">
             {/* Benefits grid - left side */}
             <div className="grid sm:grid-cols-2 gap-2 flex-1">
               {highlights.map((item, i) => (
@@ -232,12 +232,10 @@ const DriverFunnel = () => {
                 </motion.div>
               ))}
             </div>
-            {/* Truck image - right side */}
-            <div className="lg:w-[400px] flex-shrink-0 overflow-hidden">
-              <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <img src={truckRoad} alt="XXII Century Mack truck on the road" className="w-[calc(100%+40px)] h-auto -m-[20px] scale-[1.08]" />
-              </motion.div>
-            </div>
+            {/* Truck image - right side, aligned with benefits height */}
+            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:w-[380px] flex-shrink-0 rounded-lg overflow-hidden">
+              <img src={truckRoad} alt="XXII Century truck" className="w-full h-full object-cover" />
+            </motion.div>
           </div>
         </div>
       </section>
