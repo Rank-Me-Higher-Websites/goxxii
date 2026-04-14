@@ -1,3 +1,4 @@
+modules = ["nodejs-20"]
 [deployment]
 deploymentTarget = "static"
 run = ["npx", "tsx", "server/index.ts"]
