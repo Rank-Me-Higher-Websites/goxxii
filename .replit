@@ -2,7 +2,7 @@ modules = ["nodejs-20"]
 [deployment]
 deploymentTarget = "static"
 run = ["npx", "tsx", "server/index.ts"]
-build = ["bash", "-c", "npm run build && cp dist/index.html dist/404.html"]
+build = ["bash", "build.sh"]
 publicDir = "dist"
 
 [[ports]]
