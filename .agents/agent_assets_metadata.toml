@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "oEcej82gGTD7a3URWYC24"
+uri = "file://XXII_Century_Website_Report.md"
+type = "text"
+title = "XXII Century Trucking — Website Development Report"
