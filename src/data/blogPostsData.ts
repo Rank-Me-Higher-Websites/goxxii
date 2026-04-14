@@ -1841,5 +1841,66 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Ready to get started? [Contact us today](/contact) to learn more about our current openings, or check out our resources for independent truckers who want to take control of their future."
     ]
+  },
+
+  "chicago-cdl-a-truck-driving-jobs-owner-operator": {
+    image: chicagoJobs,
+    title: "Top CDL-A Truck Driving Jobs & Owner Operator Opportunities in Chicago",
+    excerpt: "Looking for the best CDL-A truck driving jobs in Chicago? Discover why XXII Century is the top choice for company drivers and owner operators, offering high pay, great miles, and unmatched support.",
+    date: "April 15, 2026",
+    readTime: "8 min read",
+    category: "Careers",
+    author: "XXII Century Team",
+    content: [
+      "If you are searching for the best **CDL-A truck driving jobs** or **owner operator opportunities** in Chicago, IL, you know that not all carriers are created equal. The trucking industry is full of promises, but finding a company that actually delivers on pay, miles, and respect can be a challenge.",
+
+      "At XXII Century, we do things differently. Based right here in Chicago, we are a trucking carrier built on transparency, reliability, and driver success. Whether you are a company driver looking for a stable income or an owner operator ready to maximize your profits, we have the freight, the rates, and the support to help you thrive.",
+
+      "## Why Choose XXII Century for Your Trucking Career?",
+
+      "![Chicago Truck Driving Jobs](https://goxxii.com/wp-content/uploads/2025/06/tanker-1024x682.jpg)",
+
+      "Chicago is one of the busiest freight hubs in the country, which means there is no shortage of freight to move. But moving freight is only half the battle—you need a carrier that pays you what you are worth and keeps you rolling.",
+
+      "We specialize in dry van freight, working with Fortune 500 customers to ensure our drivers have consistent, high-quality loads. Our drivers average between **2,500 and 3,500 miles per week**, meaning you never have to worry about sitting empty when you want to be earning.",
+
+      "## Unbeatable Pay for Company Drivers",
+
+      "For company drivers, predictability and high pay are the top priorities. At XXII Century, we offer an industry-leading rate of **63 CPM (Cents Per Mile)**. When you combine that with our consistent 2,500-3,500 weekly miles, you are looking at a highly competitive and reliable weekly paycheck.",
+
+      "But it is not just about the per-mile rate. We believe in taking care of our drivers with top-tier equipment, dedicated dispatch support available 24/7, and a culture that respects your time on and off the road.",
+
+      "## Maximize Your Earnings as an Owner Operator",
+
+      "![Owner Operator Opportunities](https://goxxii.com/wp-content/uploads/2025/07/paddock-parking-lot-325-1024x683.png)",
+
+      "If you own your truck, you deserve to keep the lion's share of the revenue. That is why our owner operator program is designed to put more money in your pocket.",
+
+      "We pay our owner operators **90% of the linehaul**. With our strong customer base and consistent freight network, our owner operators average **$8,000+ in gross weekly earnings**.",
+
+      "We also eliminate the financial friction that slows down your business. We offer **Friday settlements** with **no factoring fees**, meaning you get paid fast and keep more of what you earn.",
+
+      "## Perks and Benefits That Make a Difference",
+
+      "Whether you are a company driver or an owner operator, partnering with XXII Century comes with a suite of benefits designed to lower your costs and make your life easier:",
+
+      "- **Free ELD & PrePass:** We cover the technology you need to stay compliant and bypass the scales.",
+      "- **Free Quarterly Inspections:** Keep your equipment in top shape without the out-of-pocket expense.",
+      "- **Cargo & Liability Insurance Included:** We handle the heavy lifting on insurance so you can focus on driving.",
+      "- **Fleet Fuel Discounts:** Save big at the pump with our negotiated fleet rates.",
+      "- **24/7 Dispatch Support:** You are never alone on the road. Our team is always available to help you navigate issues and find your next load.",
+      "- **$1,000 Referral Bonus:** Know other great drivers? Bring them aboard and get rewarded.",
+
+      "## Ready to Upgrade Your Trucking Career?",
+
+      "![Join XXII Century](https://goxxii.com/wp-content/uploads/2025/04/blog-1-1024x683.jpg)",
+
+      "If you are tired of empty promises and ready to work with a carrier that values your hard work, XXII Century is ready to welcome you to the team.",
+
+      "We are actively hiring CDL-A company drivers and owner operators in the Chicago area. With our top-tier pay, consistent Fortune 500 freight, and unmatched driver support, there has never been a better time to make the switch.",
+
+      "Stop settling for less. **[Apply today](/contact)** or call our recruiting team to learn more about how XXII Century can help you take your trucking career to the next level."
+    ]
   }
 };
+
