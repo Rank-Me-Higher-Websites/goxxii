@@ -2,7 +2,7 @@ modules = ["nodejs-20"]
 [deployment]
 deploymentTarget = "autoscale"
 run = ["npx", "tsx", "server/index.ts"]
-build = ["bash", "build.sh"]
+build = ["npm", "run", "build"]
 publicDir = "dist"
 
 [[ports]]
