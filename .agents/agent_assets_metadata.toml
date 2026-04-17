@@ -2,7 +2,7 @@ uploads = []
 generated = []
 
 [[outputs]]
-id = "oEcej82gGTD7a3URWYC24"
-uri = "file://XXII_Century_Website_Report.md"
-type = "text"
-title = "XXII Century Trucking — Today's Update Report (April 14)"
+id = "o-ijC_DYnR0n7XDFeubs9"
+uri = "file://exports/logo.png"
+type = "image"
+title = "XXII Century Logo (PNG)"

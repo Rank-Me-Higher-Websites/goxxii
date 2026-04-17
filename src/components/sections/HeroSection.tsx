@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronRight, Phone, Star, Users, Truck, Fuel } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { QualifyFormDialog } from "@/components/QualifyFormDialog";
 import heroDriver from "@/assets/hero-driver.png";
 
 export const HeroSection = () => {
+  const [qualifyOpen, setQualifyOpen] = useState(false);
 
   return (
     <section className="relative min-h-[100svh] flex items-center overflow-x-hidden">
@@ -126,16 +129,16 @@ export const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="flex flex-row gap-3 items-center justify-center lg:justify-start"
             >
-              <Button variant="hero" size="default" className="group pulse-glow sm:h-14 sm:px-10 sm:text-base" asChild>
-                <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                  <span className="sm:hidden whitespace-nowrap">Apply Now</span>
-                  <span className="hidden sm:inline whitespace-nowrap">Apply Now — Only 3 Spots Left</span>
-                </a>
+              <Button
+                variant="hero"
+                size="default"
+                className="group pulse-glow sm:h-14 sm:px-10 sm:text-base"
+                onClick={() => setQualifyOpen(true)}
+                data-testid="button-apply-now"
+              >
+                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                <span className="sm:hidden whitespace-nowrap">Apply Now</span>
+                <span className="hidden sm:inline whitespace-nowrap">Apply Now — Only 3 Spots Left</span>
               </Button>
               <Button variant="heroOutline" size="default" className="sm:h-14 sm:px-10 sm:text-base" asChild>
                 <a href="tel:+16309480501">
@@ -181,53 +184,77 @@ export const HeroSection = () => {
             </motion.div>
           </div>
 
-          {/* Right: VSL Video */}
+          {/* Right: VSL Video + Apply CTA */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
+            className="relative flex flex-col"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-card">
-              <div 
-                dangerouslySetInnerHTML={{
-                  __html: `
-                    <style>
-                      wistia-player[media-id='j33b6mpgm1']:not(:defined) {
-                        background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/j33b6mpgm1/swatch');
-                        display: block;
-                        filter: blur(5px);
-                        padding-top: 56.25%;
-                      }
-                    </style>
-                    <wistia-player media-id="j33b6mpgm1" aspect="1.7777777777777777" muted="false" autoplay="false"></wistia-player>
-                  `
-                }}
-              />
+              <video
+                className="w-full h-auto"
+                controls
+                playsInline
+                autoPlay
+                muted
+                preload="auto"
+                poster="https://vz-2fd304ff-2c7.b-cdn.net/abd64adf-5822-4788-9d14-2bc7bc6e7d46/thumbnail.jpg"
+              >
+                <source src="https://vz-2fd304ff-2c7.b-cdn.net/abd64adf-5822-4788-9d14-2bc7bc6e7d46/playlist.m3u8" type="application/x-mpegURL" />
+                <source src="https://vz-2fd304ff-2c7.b-cdn.net/abd64adf-5822-4788-9d14-2bc7bc6e7d46/play_720p.mp4" type="video/mp4" />
+              </video>
             </div>
 
-            {/* Floating social proof - positioned outside video */}
+            {/* Apply Now CTA below video */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="mt-5"
+            >
+              <Button
+                variant="hero"
+                size="lg"
+                className="w-full h-14 text-base font-bold uppercase tracking-wider pulse-glow-uniform group"
+                onClick={() => setQualifyOpen(true)}
+                data-testid="button-apply-now-vsl"
+              >
+                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                Apply Now — See If You Qualify
+              </Button>
+            </motion.div>
+
+            {/* Social proof row */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="mt-4 glass-strong rounded-xl px-4 py-3 border border-accent/30 hidden lg:inline-flex"
+              className="mt-4 flex items-center justify-between"
             >
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-xs font-bold text-primary-foreground border-2 border-card">M</div>
-                  <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-xs font-bold text-accent-foreground border-2 border-card">J</div>
-                  <div className="w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center text-xs font-bold text-white border-2 border-card">R</div>
+              <div className="glass-strong rounded-xl px-4 py-3 border border-accent/30 inline-flex">
+                <div className="flex items-center gap-3">
+                  <div className="flex -space-x-2">
+                    <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-xs font-bold text-primary-foreground border-2 border-card">M</div>
+                    <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-xs font-bold text-accent-foreground border-2 border-card">J</div>
+                    <div className="w-8 h-8 rounded-full bg-cyan-500 flex items-center justify-center text-xs font-bold text-white border-2 border-card">R</div>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-foreground">12 drivers joined</p>
+                    <p className="text-xs text-muted-foreground">this week</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-xs font-semibold text-foreground">12 drivers joined</p>
-                  <p className="text-xs text-muted-foreground">this week</p>
-                </div>
+              </div>
+              <div className="hidden sm:flex items-center gap-1.5 text-xs text-muted-foreground">
+                <Star className="w-3.5 h-3.5 fill-accent text-accent" />
+                <span>Takes 30 seconds to apply</span>
               </div>
             </motion.div>
           </motion.div>
         </div>
       </div>
+
+      <QualifyFormDialog open={qualifyOpen} onOpenChange={setQualifyOpen} />
     </section>
   );
 };

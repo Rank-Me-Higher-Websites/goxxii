@@ -244,6 +244,12 @@ const contactFaqs: FAQ[] = [
       <p>Yes. If you need <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping services</Link> including dry van, refrigerated, or flatbed capacity, contact our logistics team. We partner with Fortune 500 companies and welcome new shipper relationships.</p>
     ),
   },
+  {
+    question: "Where can owner operators find tax help?",
+    answer: (
+      <p>Owner operators often benefit from working with professionals who understand trucking-specific deductions and compliance. You can explore <a href="https://qtatax.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">tax services</a> tailored to the transportation industry to make sure you're maximizing your write-offs each year.</p>
+    ),
+  },
 ];
 
 const faqsByPage: Record<string, FAQ[]> = {

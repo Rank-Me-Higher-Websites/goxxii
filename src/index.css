@@ -7,13 +7,13 @@
 @layer base {
   :root {
     /* XXII Century Dark Theme - Navy/Charcoal base with blue/green accents */
-    --background: 222 47% 8%;
+    --background: 222 42% 12%;
     --foreground: 210 40% 98%;
 
-    --card: 222 47% 11%;
+    --card: 222 42% 15%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222 47% 11%;
+    --popover: 222 42% 15%;
     --popover-foreground: 210 40% 98%;
 
     /* Primary Blue - Brand CTA color #265ee1 */
@@ -21,11 +21,11 @@
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Muted dark surface */
-    --secondary: 222 40% 14%;
+    --secondary: 222 36% 18%;
     --secondary-foreground: 210 40% 98%;
 
     /* Muted - Subtle backgrounds */
-    --muted: 222 30% 17%;
+    --muted: 222 28% 21%;
     --muted-foreground: 215 20% 65%;
 
     /* Accent Green - Logo accent color */
@@ -35,17 +35,17 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 222 30% 20%;
-    --input: 222 30% 17%;
+    --border: 222 28% 24%;
+    --input: 222 28% 21%;
     --ring: 221 78% 52%;
 
     --radius: 0.75rem;
 
     /* Custom Extended Palette */
-    --navy-900: 222 47% 8%;
-    --navy-800: 222 47% 11%;
-    --navy-700: 222 40% 14%;
-    --navy-600: 222 30% 20%;
+    --navy-900: 222 42% 12%;
+    --navy-800: 222 42% 15%;
+    --navy-700: 222 36% 18%;
+    --navy-600: 222 28% 23%;
     
     --blue-500: 221 78% 52%;
     --blue-400: 221 78% 62%;

@@ -1,7 +1,8 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { queryClient } from "@/lib/queryClient";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
 import Index from "./pages/Index";
@@ -20,8 +21,17 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import DriverFunnel from "./pages/DriverFunnel";
-
-const queryClient = new QueryClient();
+import PortalLayout from "./components/portal/PortalLayout";
+import Login from "./pages/portal/Login";
+import Dashboard from "./pages/portal/Dashboard";
+import Drivers from "./pages/portal/Drivers";
+import DriverDetail from "./pages/portal/DriverDetail";
+import Retention from "./pages/portal/Retention";
+import NewCheckIn from "./pages/portal/NewCheckIn";
+import CheckInDetail from "./pages/portal/CheckInDetail";
+import SurveyLinks from "./pages/portal/SurveyLinks";
+import PublicSurvey from "./pages/PublicSurvey";
+import PublicRegister from "./pages/PublicRegister";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -45,6 +55,22 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
+
+          <Route path="/survey/register" element={<PublicRegister />} />
+          <Route path="/survey/:token/:week" element={<PublicSurvey />} />
+          <Route path="/survey/:token" element={<PublicSurvey />} />
+
+          <Route path="/portal/login" element={<Login />} />
+          <Route path="/portal" element={<PortalLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="drivers" element={<Drivers />} />
+            <Route path="drivers/:id" element={<DriverDetail />} />
+            <Route path="retention" element={<Retention />} />
+            <Route path="retention/new" element={<NewCheckIn />} />
+            <Route path="retention/:id" element={<CheckInDetail />} />
+            <Route path="survey-links" element={<SurveyLinks />} />
+          </Route>
+
           <Route path="/:recruiter" element={<DriverFunnel />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

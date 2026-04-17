@@ -2,10 +2,14 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import chRobinsonLogo from "@/assets/brands/ch-robinson.jpg";
+import americanPacificLogo from "@/assets/brands/american-pacific.jpg";
+import menardsLogo from "@/assets/brands/menards.webp";
+import fmToolLogo from "@/assets/brands/fm-tool.jpg";
 
 const partners = [
   {
-    logo: "https://goxxii.com/wp-content/uploads/2025/08/C._H._Robinson_logo.svg-1.png",
+    logo: chRobinsonLogo,
     category: "2024 Fortune-200 Logistics Tech Leader",
     name: "CH Robinson",
     knownFor: "2024 Fortune-200 logistics tech leader; 2024 AI 50 (Forbes)",
@@ -14,7 +18,7 @@ const partners = [
     reach: "37M shipments/year for 83k customers",
   },
   {
-    logo: "https://goxxii.com/wp-content/uploads/2025/08/antiracism-1.jpg",
+    logo: americanPacificLogo,
     category: "Leading Green Building-Materials Brand",
     name: "American Pacific – CedarSafe",
     knownFor: "Member of the U.S. Green Building Council",
@@ -22,7 +26,7 @@ const partners = [
     reach: "Ships from TN & AR mills → home-center chains nationwide",
   },
   {
-    logo: "https://goxxii.com/wp-content/uploads/2025/08/Menards-logo-scaled-1.png",
+    logo: menardsLogo,
     category: "2024 Forbes \"America's Top Private Companies\"",
     name: "Menards",
     knownFor: "Large U.S. home-improvement retailer",
@@ -30,7 +34,7 @@ const partners = [
     reach: "300+ stores • 14 DCs across the Midwest",
   },
   {
-    logo: "https://goxxii.com/wp-content/uploads/2025/08/FM-Tool-GSC.jpg",
+    logo: fmToolLogo,
     category: "Trusted Retail Supply Partner",
     name: "F&M Tool and Plastics",
     knownFor: "Supplier of proprietary storage totes to Target, Lowe's, Walmart, and more",

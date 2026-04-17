@@ -54,7 +54,6 @@ const Index = () => {
       />
       <SchemaMarkup schemas={schemas} />
       <HeroSection />
-      <div className="mt-8 md:mt-12" />
       <OwnerOperatorSection />
       <AboutSection />
       <div className="hidden lg:block"><QuickCTABanner variant="compact" /></div>

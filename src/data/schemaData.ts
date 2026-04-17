@@ -329,6 +329,7 @@ export const contactFaqsPlain = [
   { question: "Where is XXII Century located?", answer: "Our main office is in Chicago, Illinois. We serve drivers and shippers across all 48 states and Canada." },
   { question: "How quickly does the recruiting team respond?", answer: "We typically respond within 24 hours of receiving your application or inquiry." },
   { question: "Can shippers or brokers contact XXII Century for freight services?", answer: "Yes. If you need freight shipping services including dry van, refrigerated, or flatbed capacity, contact our logistics team." },
+  { question: "Where can owner operators find tax help?", answer: "Owner operators often benefit from working with professionals who understand trucking-specific deductions and compliance. You can explore tax services tailored to the transportation industry to make sure you're maximizing your write-offs each year." },
 ];
 
 export const freightServicesFaqsPlain = [

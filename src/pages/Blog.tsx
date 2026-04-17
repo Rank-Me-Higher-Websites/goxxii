@@ -35,16 +35,6 @@ import hiringOoChicago from "@/assets/blog/hiring-oo-chicago.jpg";
 
 const blogPosts = [
   {
-    image: chicagoJobs,
-    title: "Top CDL-A Truck Driving Jobs & Owner Operator Opportunities in Chicago",
-    excerpt: "Looking for the best CDL-A truck driving jobs in Chicago? Discover why XXII Century is the top choice for company drivers and owner operators, offering high pay, great miles, and unmatched support.",
-    date: "April 15, 2026",
-    readTime: "8 min read",
-    slug: "chicago-cdl-a-truck-driving-jobs-owner-operator",
-    category: "Careers",
-  },
-
-  {
     image: negotiateLinehaul,
     title: "Owner Operator Truck Driver Jobs: How to Negotiate Better Linehaul Rates",
     excerpt: "If you've ever hung up the phone after booking a load and thought, 'Wait… should I have asked for more?'—you're not alone.",
