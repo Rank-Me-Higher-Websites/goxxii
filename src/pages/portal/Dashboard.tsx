@@ -97,12 +97,10 @@ export default function Dashboard() {
               data-testid={`column-${col.id}`}
             >
               <div className="px-4 py-3 flex items-center justify-between">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <div className={`w-2 h-2 rounded-full ${col.dotColor}`} />
-                    <span className="text-sm font-semibold text-foreground font-display">{col.label}</span>
-                  </div>
-                  <span className="text-xs text-muted-foreground">{col.sublabel}</span>
+                <div className="flex items-center gap-2 min-w-0">
+                  <div className={`w-2 h-2 rounded-full ${col.dotColor} shrink-0`} />
+                  <span className="text-sm font-semibold text-foreground font-display">{col.label}</span>
+                  <span className="text-xs text-muted-foreground truncate">{col.sublabel}</span>
                 </div>
                 <span className="text-xs text-muted-foreground bg-background px-2 py-0.5 rounded-full border border-border">
                   {colDrivers.length}
