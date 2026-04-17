@@ -45,6 +45,7 @@ export const surveyQuestions: Record<string, SurveySection> = {
         { value: "average", label: "Average" },
         { value: "poor", label: "Poor" },
       ]},
+      { key: "dispatcher_responsiveness_detail", label: "What could your dispatcher do better?", sublabel: "Please share specific examples so we can improve.", type: "textarea", condition: "dispatcher_responsiveness:good,average,poor" },
       { key: "unexpected_delays", label: "Have you encountered any unexpected delays at regular pickup or drop-off locations?", type: "textarea" },
       { key: "feel_respected", label: "Do you feel respected by dispatch, safety, payroll, and management?", type: "yesno" },
       { key: "tension_detail", label: "If there is tension, where exactly?", type: "textarea", condition: "feel_respected:no" },
