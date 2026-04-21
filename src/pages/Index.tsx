@@ -16,6 +16,7 @@ import { OwnerOperatorSection } from "@/components/sections/OwnerOperatorSection
 import { AboutSection } from "@/components/sections/AboutSection";
 import { TechBenefitsSection } from "@/components/sections/TechBenefitsSection";
 import { TrustedBrandsSection } from "@/components/sections/TrustedBrandsSection";
+import { TrustedByStripSection } from "@/components/sections/TrustedByStripSection";
 import xxiiMackMountains from "@/assets/xxii-mack-mountains.jpg";
 import { IndustryPartnersSection } from "@/components/sections/IndustryPartnersSection";
 import { LiveTruckSection } from "@/components/sections/LiveTruckSection";
@@ -54,6 +55,7 @@ const Index = () => {
       />
       <SchemaMarkup schemas={schemas} />
       <HeroSection />
+      <TrustedByStripSection />
       <OwnerOperatorSection />
       <AboutSection />
       <div className="hidden lg:block"><QuickCTABanner variant="compact" /></div>
