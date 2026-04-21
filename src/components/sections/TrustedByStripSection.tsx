@@ -40,50 +40,34 @@ export const TrustedByStripSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white/50 mb-8 sm:mb-12"
+          className="text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white/60 mb-8 sm:mb-12"
           data-testid="text-trusted-by-eyebrow"
         >
           Trusted by Shippers &amp; Brokers Nationwide
         </motion.p>
+      </div>
 
-        {/* Desktop / tablet: wrapping centered grid */}
-        <div className="hidden sm:flex flex-wrap items-center justify-center gap-x-12 gap-y-10 md:gap-x-16 md:gap-y-12">
-          {logos.map((logo, i) => (
-            <motion.img
-              key={logo.name}
+      {/* Continuous left-to-right marquee */}
+      <div
+        className="relative overflow-hidden"
+        style={{
+          maskImage:
+            "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+          WebkitMaskImage:
+            "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+        }}
+      >
+        <div className="flex items-center gap-12 sm:gap-16 md:gap-20 animate-[marquee_40s_linear_infinite] w-max">
+          {[...logos, ...logos].map((logo, i) => (
+            <img
+              key={`${logo.name}-${i}`}
               src={logo.src}
               alt={logo.name}
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.04 }}
-              className="h-12 md:h-14 w-auto max-w-[200px] object-contain"
+              className="h-10 sm:h-12 md:h-14 w-auto max-w-[200px] object-contain flex-shrink-0"
               loading="lazy"
               data-testid={`img-logo-${i}`}
             />
           ))}
-        </div>
-
-        {/* Mobile: continuous marquee */}
-        <div
-          className="sm:hidden relative overflow-hidden"
-          style={{
-            maskImage:
-              "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
-            WebkitMaskImage:
-              "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
-          }}
-        >
-          <div className="flex items-center gap-12 animate-[marquee_45s_linear_infinite] w-max">
-            {[...logos, ...logos].map((logo, i) => (
-              <img
-                key={`${logo.name}-${i}`}
-                src={logo.src}
-                alt={logo.name}
-                className="h-10 w-auto max-w-[160px] object-contain flex-shrink-0"
-              />
-            ))}
-          </div>
         </div>
       </div>
 
