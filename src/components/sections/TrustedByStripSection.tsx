@@ -31,20 +31,16 @@ const logos: Logo[] = [
 export const TrustedByStripSection = () => {
   return (
     <section
-      className="py-12 sm:py-16 bg-[#0a1628] border-y border-white/5 relative overflow-hidden"
+      className="py-6 sm:py-8 bg-[#0a1628] border-y border-white/5 relative overflow-hidden"
       data-testid="section-trusted-by"
     >
       <div className="container-custom relative z-10">
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white/60 mb-8 sm:mb-12"
+        <p
+          className="text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-gray-400 mb-4 sm:mb-5"
           data-testid="text-trusted-by-eyebrow"
         >
-          Trusted by Shippers &amp; Brokers Nationwide
-        </motion.p>
+          Trusted By
+        </p>
       </div>
 
       {/* Continuous left-to-right marquee */}
