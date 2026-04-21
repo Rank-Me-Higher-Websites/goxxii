@@ -1,58 +1,37 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import americanPacific from "@assets/customers/american-pacific.png";
+import magickWoods from "@assets/customers/magickwoods.png";
+import globalHarvest from "@assets/customers/global-harvest.png";
+import musser from "@assets/customers/musser.png";
+import ndPaper from "@assets/customers/nd-paper.png";
+import imcOutdoor from "@assets/customers/imc-outdoor.png";
+import dinos from "@assets/customers/dinos-logistics.png";
+import arrive from "@assets/customers/arrive-logistics.png";
+import forsla from "@assets/customers/forsla.png";
+import martins from "@assets/customers/martins-milk.png";
 
-interface Customer {
+interface Logo {
   name: string;
-  domain: string;
+  src: string;
 }
 
-const customers: Customer[] = [
-  { name: "Menards", domain: "menards.com" },
-  { name: "American Pacific", domain: "cedarsafe.com" },
-  { name: "MagickWoods", domain: "magickwoods.com" },
-  { name: "Global Harvest Foods", domain: "globalharvestfoods.com" },
-  { name: "Musser Lumber", domain: "musserlumber.com" },
-  { name: "Rural Retreat Transport", domain: "ruralretreattransport.com" },
-  { name: "ND Paper", domain: "ndpaper.com" },
-  { name: "IMC Outdoor Living", domain: "imcoutdoorliving.com" },
-  { name: "Dino's Logistics", domain: "dinoslogistics.com" },
-  { name: "Arrive", domain: "arrivelogistics.com" },
-  { name: "TTS, LLC", domain: "ttsllc.com" },
-  { name: "FORSLA", domain: "forsla.com" },
-  { name: "Universal Traffic Service", domain: "utsi.com" },
-  { name: "Martins Milk Service", domain: "martinsmilkservice.com" },
-  { name: "Sub-Zero", domain: "subzero-wolf.com" },
+const logos: Logo[] = [
+  { name: "American Pacific", src: americanPacific },
+  { name: "MagickWoods", src: magickWoods },
+  { name: "Global Harvest Foods", src: globalHarvest },
+  { name: "Musser Biomass and Wood Products", src: musser },
+  { name: "ND Paper", src: ndPaper },
+  { name: "IMC Outdoor Living", src: imcOutdoor },
+  { name: "Dino's Logistics", src: dinos },
+  { name: "Arrive Logistics", src: arrive },
+  { name: "FORSLA", src: forsla },
+  { name: "Martin's Milk Service", src: martins },
 ];
-
-const logoUrl = (domain: string) =>
-  `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
-
-const Tile = ({ customer, index }: { customer: Customer; index: number }) => {
-  const [failed, setFailed] = useState(false);
-
-  if (failed) return null;
-
-  return (
-    <div
-      className="flex items-center justify-center p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 transition-colors duration-200"
-      data-testid={`tile-customer-${index}`}
-      title={customer.name}
-    >
-      <img
-        src={logoUrl(customer.domain)}
-        alt={customer.name}
-        onError={() => setFailed(true)}
-        className="w-12 h-12 md:w-14 md:h-14 rounded-md object-contain bg-white p-1 flex-shrink-0"
-        loading="lazy"
-      />
-    </div>
-  );
-};
 
 export const TrustedByStripSection = () => {
   return (
     <section
-      className="py-10 sm:py-14 bg-[#0a1628] border-y border-white/5 relative overflow-hidden"
+      className="py-12 sm:py-16 bg-[#0a1628] border-y border-white/5 relative overflow-hidden"
       data-testid="section-trusted-by"
     >
       <div className="container-custom relative z-10">
@@ -61,24 +40,27 @@ export const TrustedByStripSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 sm:mb-8"
+          className="text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-white/50 mb-8 sm:mb-12"
           data-testid="text-trusted-by-eyebrow"
         >
           Trusted by Shippers &amp; Brokers Nationwide
         </motion.p>
 
-        {/* Desktop / tablet: wrapping flex grid */}
-        <div className="hidden sm:flex flex-wrap items-center justify-center gap-3 md:gap-4">
-          {customers.map((c, i) => (
-            <motion.div
-              key={c.name}
+        {/* Desktop / tablet: wrapping centered grid */}
+        <div className="hidden sm:flex flex-wrap items-center justify-center gap-x-12 gap-y-10 md:gap-x-16 md:gap-y-12">
+          {logos.map((logo, i) => (
+            <motion.img
+              key={logo.name}
+              src={logo.src}
+              alt={logo.name}
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.03 }}
-            >
-              <Tile customer={c} index={i} />
-            </motion.div>
+              transition={{ duration: 0.4, delay: i * 0.04 }}
+              className="h-12 md:h-14 w-auto max-w-[200px] object-contain"
+              loading="lazy"
+              data-testid={`img-logo-${i}`}
+            />
           ))}
         </div>
 
@@ -92,9 +74,14 @@ export const TrustedByStripSection = () => {
               "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
           }}
         >
-          <div className="flex items-center gap-3 animate-[marquee_45s_linear_infinite] w-max">
-            {[...customers, ...customers].map((c, i) => (
-              <Tile key={`${c.name}-${i}`} customer={c} index={i} />
+          <div className="flex items-center gap-12 animate-[marquee_45s_linear_infinite] w-max">
+            {[...logos, ...logos].map((logo, i) => (
+              <img
+                key={`${logo.name}-${i}`}
+                src={logo.src}
+                alt={logo.name}
+                className="h-10 w-auto max-w-[160px] object-contain flex-shrink-0"
+              />
             ))}
           </div>
         </div>
