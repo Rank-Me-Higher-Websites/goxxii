@@ -30,20 +30,20 @@ const logoUrl = (domain: string) =>
 const Tile = ({ customer, index }: { customer: Customer; index: number }) => {
   const [failed, setFailed] = useState(false);
 
+  if (failed) return null;
+
   return (
     <div
       className="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 transition-colors duration-200 min-h-[56px]"
       data-testid={`tile-customer-${index}`}
     >
-      {!failed && (
-        <img
-          src={logoUrl(customer.domain)}
-          alt=""
-          onError={() => setFailed(true)}
-          className="w-7 h-7 rounded-md object-contain bg-white p-0.5 flex-shrink-0"
-          loading="lazy"
-        />
-      )}
+      <img
+        src={logoUrl(customer.domain)}
+        alt={customer.name}
+        onError={() => setFailed(true)}
+        className="w-7 h-7 rounded-md object-contain bg-white p-0.5 flex-shrink-0"
+        loading="lazy"
+      />
       <span
         className="font-display text-sm md:text-[15px] font-bold tracking-wide text-white/85 whitespace-nowrap"
         data-testid={`text-customer-${index}`}
