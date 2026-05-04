@@ -32,8 +32,18 @@ import succeedWithoutBurnout from "@/assets/blog/succeed-without-burnout.jpg";
 import becomingOwnerOperator from "@/assets/blog/becoming-owner-operator.jpg";
 import ooJobsChicagoKnow from "@/assets/blog/oo-jobs-chicago-know.jpg";
 import hiringOoChicago from "@/assets/blog/hiring-oo-chicago.jpg";
+import driverShortage from "@/assets/blog/driver-shortage.jpg";
 
 const blogPosts = [
+  {
+    image: driverShortage,
+    title: "How Much Do Owner Operator Truck Drivers Make in 2026? Real Numbers, Real Take-Home Pay",
+    excerpt: "Wondering how much owner operator truck drivers really make in 2026? We break down gross revenue, true take-home pay, expenses, and what the highest earners are doing differently.",
+    date: "May 4, 2026",
+    readTime: "11 min read",
+    slug: "owner-operator-salary-2026",
+    category: "Owner Operators",
+  },
   {
     image: chicagoJobs,
     title: "Top CDL-A Truck Driving Jobs & Owner Operator Opportunities in Chicago",
