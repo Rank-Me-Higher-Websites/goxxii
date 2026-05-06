@@ -1,0 +1,47 @@
+Build me a backend lead logging system for my website with these exact requirements:
+
+1. Database
+
+Use Replit's built-in PostgreSQL database
+Create a leads table with these columns: id (serial primary key), name, phone, email, vehicle, message, source, created_at (timestamp default now)
+2. Backend (Express server in server.ts)
+
+Use Express 5 + the pg package + tsx to run TypeScript directly
+Server listens on port 3001 in development, port 5000 in production (based on NODE_ENV)
+Connect to the database via DATABASE_URL env var
+Endpoints:
+POST /api/leads — validates required fields (name, phone, message), trims and length-limits all inputs, sanitizes the source field against an allowlist, saves to DB. Returns {success: true} or 400/500 on errors.
+GET /api/leads — protected by a Bearer token from the LEADS_ADMIN_TOKEN env var (auto-generates a random one if not set). Returns all leads ordered by created_at DESC.
+In production (when dist/ exists), serve the Vite build as static files and fall back to index.html for client-side routing. Important: Express 5 doesn't support app.get("*") — use app.use((_req, res) => ...) as a fallthrough middleware instead.
+Use a JSON body limit of 10kb to prevent abuse
+3. Frontend integration
+
+Find every form on the site that submits leads
+Each form should Promise.all two POST requests: the existing webhook (if any) AND fetch("/api/leads", ...) with the same payload
+Wrap the /api/leads fetch in .catch(() => {}) so a backend failure never breaks the user-facing success message
+Each form must pass a unique source value (e.g., "website-estimate-form", "website-contact-form") that matches the allowlist in the backend
+4. Vite dev setup
+
+In vite.config.ts, add a proxy so /api requests in development go to http://localhost:3001
+Keep Vite on port 5000 (so Replit's preview shows the frontend)
+5. Workflow
+
+Configure the "Start application" workflow to run both servers: npx tsx server.ts & vite
+waitForPort: 5000, outputType: webview
+6. Deployment (autoscale)
+
+Target: autoscale
+Build: bash -c "npm install --include=dev && npm run build" (the --include=dev is critical because Vite is a devDependency and autoscale builds skip devDeps by default)
+Run: bash -c "NODE_ENV=production npx tsx server.ts"
+Set NODE_ENV=production as a production environment variable
+7. Persistent admin token
+
+Generate a 32-byte random hex token, save it as the LEADS_ADMIN_TOKEN shared environment variable so it survives restarts and deployments, and tell me the value
+8. Verification
+
+After everything is built, do a test POST to /api/leads, confirm the row appears in the DB, then delete the test row
+Verify GET /api/leads returns 401 without the token
+Confirm the production build succeeds locally with npm run build
+9. Usage
+
+I'll be able to ask you in chat at any time ("show me my leads", "any new submissions?") and you'll query the database directly and return them with all fields and timestamps. Confirm this workflow at the end.

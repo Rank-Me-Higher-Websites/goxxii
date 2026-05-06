@@ -29,8 +29,19 @@ export const FleetContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await fetch("/api/leads", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: `${formData.firstName} ${formData.lastName}`.trim(),
+        phone: formData.phone,
+        email: formData.email,
+        message: formData.message,
+        source: "website-fleet-contact",
+        cityState: formData.cityState,
+        experience: formData.experience,
+      }),
+    }).catch(() => {});
 
     toast({
       title: "Message Sent!",

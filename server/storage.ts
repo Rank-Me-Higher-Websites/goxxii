@@ -1,8 +1,9 @@
 import { db } from "./db";
 import { eq, desc } from "drizzle-orm";
 import {
-  users, drivers, retentionCheckIns,
-  InsertUser, User, InsertDriver, Driver, InsertCheckIn, RetentionCheckIn
+  users, drivers, retentionCheckIns, leads,
+  InsertUser, User, InsertDriver, Driver, InsertCheckIn, RetentionCheckIn,
+  InsertLead, Lead
 } from "../shared/schema";
 
 export interface IStorage {
@@ -21,6 +22,10 @@ export interface IStorage {
   getCheckIn(id: number): Promise<RetentionCheckIn | undefined>;
   createCheckIn(checkIn: InsertCheckIn): Promise<RetentionCheckIn>;
   updateCheckIn(id: number, data: Partial<RetentionCheckIn>): Promise<RetentionCheckIn | undefined>;
+
+  createLead(lead: InsertLead): Promise<Lead>;
+  getLeads(): Promise<Lead[]>;
+  deleteLead(id: number): Promise<void>;
 
   getDashboardStats(): Promise<{
     totalDrivers: number;
@@ -97,6 +102,19 @@ export class DatabaseStorage implements IStorage {
   async updateCheckIn(id: number, data: Partial<RetentionCheckIn>): Promise<RetentionCheckIn | undefined> {
     const [updated] = await db.update(retentionCheckIns).set(data).where(eq(retentionCheckIns.id, id)).returning();
     return updated;
+  }
+
+  async createLead(lead: InsertLead): Promise<Lead> {
+    const [created] = await db.insert(leads).values(lead).returning();
+    return created;
+  }
+
+  async getLeads(): Promise<Lead[]> {
+    return db.select().from(leads).orderBy(desc(leads.createdAt));
+  }
+
+  async deleteLead(id: number): Promise<void> {
+    await db.delete(leads).where(eq(leads.id, id));
   }
 
   async getDashboardStats() {

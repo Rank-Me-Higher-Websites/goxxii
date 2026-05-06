@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { requireAuth } from "./auth";
 import { storage } from "./storage";
-import { insertDriverSchema, insertCheckInSchema } from "../shared/schema";
+import { insertDriverSchema, insertCheckInSchema, insertLeadSchema } from "../shared/schema";
 import crypto from "crypto";
 
 function generateToken(): string {
@@ -328,6 +328,82 @@ export function registerRoutes(router: Router) {
 
       res.json({ success: true, token: driver.surveyToken, driverId: driver.id });
     } catch (err) { next(err); }
+  });
+
+  // ===== LEAD LOGGING =====
+  // Public: log lead to DB. Frontends call this in parallel with any external webhook.
+  const ALLOWED_SOURCES = new Set([
+    "website-qualify-form",
+    "website-fleet-contact",
+    "website-inline-lead",
+    "website-lead-dialog",
+    "website-driver-funnel",
+    "website-contact-form",
+    "website-estimate-form",
+    "other",
+  ]);
+
+  function clean(v: unknown, max = 500): string | null {
+    if (v === undefined || v === null) return null;
+    const s = String(v).trim();
+    if (!s) return null;
+    return s.slice(0, max);
+  }
+
+  router.post("/api/leads", async (req, res) => {
+    try {
+      const body = req.body || {};
+      const name = clean(body.name, 255);
+      const phone = clean(body.phone, 50);
+      const message = clean(body.message, 2000);
+      const email = clean(body.email, 255);
+      const vehicle = clean(body.vehicle, 255);
+      const recruiter = clean(body.recruiter, 100);
+      const rawSource = clean(body.source, 100) || "other";
+      const source = ALLOWED_SOURCES.has(rawSource) ? rawSource : "other";
+
+      if (!name || !phone) {
+        return res.status(400).json({ success: false, message: "name and phone are required" });
+      }
+
+      const lead = await storage.createLead({
+        name, phone, email, vehicle, message, source, recruiter,
+        payload: body,
+      });
+
+      sendTelegramNotification(
+        `📥 <b>New Lead</b>\n` +
+        `<b>Name:</b> ${name}\n` +
+        `<b>Phone:</b> ${phone}\n` +
+        (email ? `<b>Email:</b> ${email}\n` : "") +
+        (vehicle ? `<b>Vehicle:</b> ${vehicle}\n` : "") +
+        (recruiter ? `<b>Recruiter:</b> ${recruiter}\n` : "") +
+        `<b>Source:</b> ${source}\n` +
+        (message ? `<b>Message:</b> ${message.slice(0, 300)}\n` : "")
+      );
+
+      res.json({ success: true, id: lead.id });
+    } catch (err: any) {
+      console.error("Lead insert error:", err);
+      res.status(500).json({ success: false, message: "Failed to save lead" });
+    }
+  });
+
+  // Admin: list all leads. Bearer token from LEADS_ADMIN_TOKEN.
+  router.get("/api/leads", async (req, res) => {
+    try {
+      const token = process.env.LEADS_ADMIN_TOKEN;
+      if (!token) return res.status(500).json({ message: "LEADS_ADMIN_TOKEN not configured" });
+      const auth = req.headers.authorization || "";
+      if (auth !== `Bearer ${token}`) {
+        return res.status(401).json({ message: "Unauthorized" });
+      }
+      const leads = await storage.getLeads();
+      res.json({ count: leads.length, leads });
+    } catch (err) {
+      console.error("Lead fetch error:", err);
+      res.status(500).json({ message: "Failed to fetch leads" });
+    }
   });
 
   router.post("/api/qualify", async (req, res, next) => {

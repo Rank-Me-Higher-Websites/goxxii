@@ -54,19 +54,34 @@ export const QualifyFormDialog = ({ open, onOpenChange, recruiter }: QualifyForm
     e.preventDefault();
     if (!isValid) return;
     setIsSubmitting(true);
-    try {
-      await fetch("/api/qualify", {
+    const payload = {
+      ...formData,
+      recruiter: recruiter || "unknown",
+      source: window.location.pathname,
+      submittedAt: new Date().toISOString(),
+    };
+    const leadPayload = {
+      name: formData.fullName,
+      phone: formData.phone,
+      email: formData.email,
+      vehicle: [formData.truckYear, formData.truckBrand].filter(Boolean).join(" "),
+      message: `CDL Experience: ${formData.cdlExperience}`,
+      source: "website-qualify-form",
+      recruiter: recruiter || "unknown",
+      ...formData,
+    };
+    await Promise.all([
+      fetch("/api/qualify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          recruiter: recruiter || "unknown",
-          source: window.location.pathname,
-          submittedAt: new Date().toISOString(),
-        }),
-      });
-    } catch {
-    }
+        body: JSON.stringify(payload),
+      }).catch(() => {}),
+      fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(leadPayload),
+      }).catch(() => {}),
+    ]);
     setIsSubmitting(false);
     setIsSubmitted(true);
   };

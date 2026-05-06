@@ -34,8 +34,21 @@ export const LeadFormDialog = ({ open, onOpenChange, recruiterName, recruiterPho
     e.preventDefault();
     if (!isValid) return;
     setIsSubmitting(true);
-    // Simulate submission — replace with real endpoint
-    await new Promise((r) => setTimeout(r, 1500));
+    await fetch("/api/leads", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.fullName,
+        phone: formData.phone,
+        email: formData.email,
+        message: `CDL Experience: ${formData.cdlExperience}. SAP: ${formData.sap}.`,
+        source: "website-lead-dialog",
+        recruiter: recruiterName,
+        recruiterPhone,
+        cdlExperience: formData.cdlExperience,
+        sap: formData.sap,
+      }),
+    }).catch(() => {});
     setIsSubmitting(false);
     setIsSubmitted(true);
   };

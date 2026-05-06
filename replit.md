@@ -28,7 +28,21 @@ A full-stack React + Express + TypeScript platform for XXII Century Trucking, a 
 - `users` — Portal admin/dispatcher users (id, username, password, name, role)
 - `drivers` — Tracked owner operators (id, firstName, lastName, phone, email, hireDate, status, truckNumber, recruiter, retentionScore, riskLevel, notes, surveyToken, nextSurveyEmailAt)
 - `retention_check_ins` — Survey check-in records (id, driverId, checkInType, status, responses as JSONB, aiRiskScore, aiSummary)
+- `leads` — All marketing-site form submissions (id, name, phone, email, vehicle, message, source, recruiter, payload as JSONB, createdAt)
 - `session` — express-session store (auto-created by connect-pg-simple)
+
+## Lead Logging System
+Every public-facing form on the marketing site POSTs to `/api/leads` (in parallel with any existing webhook like n8n). Source allowlist defined in `server/routes.ts`:
+- `website-qualify-form` — QualifyFormDialog (Index, DriverFunnel)
+- `website-fleet-contact` — FleetContactSection (FleetProgram page)
+- `website-inline-lead` — InlineLeadForm (Contact page)
+- `website-lead-dialog` — LeadFormDialog (Contact page)
+
+Endpoints:
+- `POST /api/leads` — public, validates `name` + `phone` required, sanitizes inputs, stores full payload as JSONB, fires Telegram notification
+- `GET /api/leads` — Bearer-token protected via `LEADS_ADMIN_TOKEN` env var, returns all leads ordered by `createdAt DESC`
+
+Frontend always wraps `/api/leads` in `.catch(() => {})` so backend failure never breaks the user's success message.
 
 ## Key Pages
 

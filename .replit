@@ -39,3 +39,8 @@ waitForPort = 5000
 
 [workflows.workflow.metadata]
 outputType = "webview"
+
+[userenv]
+
+[userenv.shared]
+LEADS_ADMIN_TOKEN = "31a706e2217adb5d33a6c7c2c492818745fa73b9cb16b6fafd9c5826d959c28a"

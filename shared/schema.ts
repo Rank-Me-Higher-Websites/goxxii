@@ -40,9 +40,23 @@ export const retentionCheckIns = pgTable("retention_check_ins", {
   responses: jsonb("responses"),
 });
 
+export const leads = pgTable("leads", {
+  id: serial("id").primaryKey(),
+  name: varchar("name", { length: 255 }).notNull(),
+  phone: varchar("phone", { length: 50 }).notNull(),
+  email: varchar("email", { length: 255 }),
+  vehicle: varchar("vehicle", { length: 255 }),
+  message: text("message"),
+  source: varchar("source", { length: 100 }).notNull(),
+  recruiter: varchar("recruiter", { length: 100 }),
+  payload: jsonb("payload"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
 export const insertUserSchema = createInsertSchema(users).omit({ id: true });
 export const insertDriverSchema = createInsertSchema(drivers).omit({ id: true, retentionScore: true, riskLevel: true });
 export const insertCheckInSchema = createInsertSchema(retentionCheckIns).omit({ id: true, createdAt: true, aiRiskScore: true, aiSummary: true });
+export const insertLeadSchema = createInsertSchema(leads).omit({ id: true, createdAt: true });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
@@ -50,3 +64,5 @@ export type InsertDriver = z.infer<typeof insertDriverSchema>;
 export type Driver = typeof drivers.$inferSelect;
 export type InsertCheckIn = z.infer<typeof insertCheckInSchema>;
 export type RetentionCheckIn = typeof retentionCheckIns.$inferSelect;
+export type InsertLead = z.infer<typeof insertLeadSchema>;
+export type Lead = typeof leads.$inferSelect;
