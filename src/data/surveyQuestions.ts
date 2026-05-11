@@ -37,7 +37,7 @@ export const surveyQuestions: Record<string, SurveySection> = {
     focus: "Identifying communication or equipment bottlenecks that may cause frustration.",
     questions: [
       { key: "feel_supported", label: "During your first week, did you feel supported by the team?", type: "yesno" },
-      { key: "tech_issues", label: "Are you experiencing any technical issues with Sparkle ELD, Open Road, or communication tools?", sublabel: "Phone, Telegram, WhatsApp", type: "textarea" },
+      { key: "tech_issues", label: "Are you experiencing any technical issues with Stellar ELD, Open Road, or communication tools?", sublabel: "Phone, Telegram, WhatsApp", type: "textarea" },
       { key: "pay_understanding", label: "Do you clearly understand how your pay is calculated?", sublabel: "Rate per mile, deductions, fuel, escrow, etc.", type: "yesno" },
       { key: "dispatcher_responsiveness", label: "How would you rate the responsiveness of your primary dispatcher?", type: "select", options: [
         { value: "excellent", label: "Excellent" },
