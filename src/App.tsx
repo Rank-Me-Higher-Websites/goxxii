@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/lib/queryClient";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import OwnerOperators from "./pages/OwnerOperators";
@@ -56,6 +56,7 @@ const App = () => (
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
 
+          <Route path="/survey" element={<Navigate to="/survey/register" replace />} />
           <Route path="/survey/register" element={<PublicRegister />} />
           <Route path="/survey/:token/:week" element={<PublicSurvey />} />
           <Route path="/survey/:token" element={<PublicSurvey />} />
