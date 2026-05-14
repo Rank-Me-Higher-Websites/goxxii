@@ -210,10 +210,25 @@ export const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider text-primary hover:bg-primary/10 transition-colors duration-200"
+                          data-testid="link-apply-now"
                         >
                           <ChevronRight className="w-3.5 h-3.5" />
                           Apply Now
                         </a>
+                        <Link
+                          to="/survey/register"
+                          className="flex items-center justify-center gap-2 py-2 rounded-lg text-[11px] font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground hover:bg-white/[0.04] transition-colors duration-200"
+                          data-testid="link-driver-survey"
+                        >
+                          Driver Check-In Survey
+                        </Link>
+                        <Link
+                          to="/portal/login"
+                          className="flex items-center justify-center gap-2 py-2 rounded-lg text-[11px] font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground hover:bg-white/[0.04] transition-colors duration-200"
+                          data-testid="link-portal-login"
+                        >
+                          Staff Portal Login
+                        </Link>
                       </div>
                     </div>
                   </motion.div>
