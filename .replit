@@ -1,4 +1,4 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "postgresql-16"]
 [deployment]
 deploymentTarget = "autoscale"
 run = ["npx", "tsx", "server/index.ts"]
@@ -44,3 +44,6 @@ outputType = "webview"
 
 [userenv.shared]
 LEADS_ADMIN_TOKEN = "31a706e2217adb5d33a6c7c2c492818745fa73b9cb16b6fafd9c5826d959c28a"
+
+[nix]
+channel = "stable-25_05"
