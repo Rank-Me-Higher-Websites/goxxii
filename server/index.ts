@@ -8,6 +8,7 @@ import { sql } from "drizzle-orm";
 import { storage } from "./storage";
 
 const app = express();
+app.set("trust proxy", 1);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
