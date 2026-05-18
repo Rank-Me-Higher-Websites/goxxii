@@ -1,0 +1,115 @@
+{
+  "site": "goxxii",
+  "brand": "XXII Century Trucking",
+  "shortBrand": "XXII Century",
+  "domain": "goxxii.com",
+  "tagline": "Chicago-based trucking carrier for owner operators and CDL-A drivers",
+  "primaryAudience": "Owner operators and CDL-A company drivers (Chicago / Midwest focus)",
+  "secondaryAudience": "Fleet operators considering a switch; shippers needing freight services",
+
+  "voice": {
+    "tone": "Direct, confident, no-fluff. Talks to drivers like a knowledgeable peer who has run the numbers, not a corporate marketer.",
+    "personality": "Honest about trade-offs. Names specific dollar amounts and percentages, never vague ranges. Counters generic advice with evidence.",
+    "perspective": "Written from an insider's seat — dispatcher / carrier ops / experienced operator. Acknowledges driver frustrations openly."
+  },
+
+  "doSay": [
+    "Specific dollar amounts, miles, percentages, dates ($240K-$290K, 6.5 MPG, 95,000 miles)",
+    "Empathy openers: 'If you've been searching X, you've probably noticed Y'",
+    "Bold lead-ins on numbered insights: **1. They run higher-paying freight, not more miles.**",
+    "Bullet lists with $$$ ranges or hard data per line",
+    "Internal links woven naturally into sentences (not a 'see also' dump)",
+    "Subtle carrier framing — 'the right carrier' / 'a carrier built around drivers, not against them'",
+    "Honest trade-offs (maintenance risk, slow weeks, transmission failures)",
+    "Long-form, 1,500-2,500 words",
+    "Em-dashes for emphasis — they fit this voice"
+  ],
+
+  "dontSay": [
+    "Welcome to our blog / Welcome back",
+    "In today's fast-paced trucking industry",
+    "Buckle up, let's dive in, let's explore",
+    "Synergy, leverage, paradigm, ecosystem",
+    "It's important to note / It goes without saying / In conclusion",
+    "Click-baity questions ('Did you know...?', 'What if I told you...?')",
+    "Vague 'experts say' / 'studies show' without specifics",
+    "Emojis in body text",
+    "AI-tells like 'In the realm of', 'When it comes to', 'At the end of the day'"
+  ],
+
+  "entities": {
+    "company": "XXII Century Trucking",
+    "phone": "+1 (630) 948-0501",
+    "applyUrl": "https://intelliapp.driverapponline.com/c/goxxii?r=Eve",
+    "primaryHub": "Chicago",
+    "regions": ["Chicago", "Midwest", "Illinois", "Indiana", "Wisconsin", "Michigan", "Ohio"]
+  },
+
+  "internalLinks": {
+    "/": "XXII Century home / Owner Operators landing",
+    "/owner-operators": "owner operator opportunities + comp details",
+    "/company-drivers": "company driver positions",
+    "/fleet-program": "fleet program for established operators",
+    "/freight-shipping-services": "freight shipping services for shippers",
+    "/careers": "all open positions",
+    "/contact": "contact form",
+    "/about": "company background"
+  },
+
+  "categories": ["Owner Operators", "Local Jobs", "Guides", "Careers"],
+
+  "topicClusters": [
+    {
+      "cluster": "Owner Operator Economics",
+      "examples": ["take-home pay math", "linehaul rate negotiation", "cost-per-mile control", "lease vs own decision", "fuel network discounts"]
+    },
+    {
+      "cluster": "Driver Retention & Career",
+      "examples": ["why drivers leave in first 90 days", "burnout prevention", "career path from company driver to owner op", "dispatcher relationship signals"]
+    },
+    {
+      "cluster": "Chicago / Midwest Freight",
+      "examples": ["Chicago lanes", "regional vs OTR economics", "Midwest freight market", "dedicated route availability"]
+    },
+    {
+      "cluster": "Industry & Regulatory",
+      "examples": ["ELD compliance", "FMCSA updates", "fuel surcharge mechanics", "insurance market trends"]
+    },
+    {
+      "cluster": "Practical Operations",
+      "examples": ["maintenance scheduling", "factoring vs net-30", "tax planning", "load board strategy"]
+    }
+  ],
+
+  "structureRules": {
+    "wordCount": "1500-2500",
+    "headings": "H1 title + 4-6 H2 sections + optional H3 subsections",
+    "openingPattern": "Hook addressing the reader's frustration or specific question — never a generic intro",
+    "internalLinkCount": "2-4 per post, woven into sentences",
+    "ctaPlacement": "End with a CTA mentioning phone + apply URL",
+    "images": "1 hero (Fal-generated) at the top; optional 1-2 in-body images via ![alt](url)",
+    "alsoReadCallout": "Optional `_Also Read: [title](/blog/slug)` line linking one existing post"
+  },
+
+  "existingPostSlugs": [
+    "owner-operator-salary-2026",
+    "chicago-cdl-a-truck-driving-jobs-owner-operator",
+    "owner-operator-truck-driver-jobs-negotiate",
+    "local-owner-operator-jobs",
+    "dedicated-owner-operator-jobs",
+    "local-owner-operator-jobs-chicago-tips",
+    "owner-operator-guide",
+    "dry-van-owner-operator-jobs",
+    "local-owner-operator-jobs-home",
+    "owner-operator-opportunities-2025",
+    "best-owner-operator-trucking-company",
+    "owner-operator-jobs-chicago",
+    "succeed-without-burnout",
+    "truck-driving-career-chicago",
+    "owner-operator-costs-benefits",
+    "owner-operator-jobs-chicago-truckers-know",
+    "hiring-owner-operators-chicago"
+  ],
+
+  "_note": "Read by the n8n blog-automation workflow before drafting. Update as the brand voice or service lineup evolves. Existing-post slugs prevent the LLM from re-pitching topics that already exist."
+}

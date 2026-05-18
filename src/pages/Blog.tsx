@@ -34,7 +34,10 @@ import ooJobsChicagoKnow from "@/assets/blog/oo-jobs-chicago-know.jpg";
 import hiringOoChicago from "@/assets/blog/hiring-oo-chicago.jpg";
 import driverShortage from "@/assets/blog/driver-shortage.jpg";
 
+import { autoBlogPostsList } from "@/data/autoBlogPosts";
+
 const blogPosts = [
+  ...autoBlogPostsList,
   {
     image: driverShortage,
     title: "How Much Do Owner Operator Truck Drivers Make in 2026? Real Numbers, Real Take-Home Pay",
