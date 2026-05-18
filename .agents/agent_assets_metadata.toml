@@ -6,3 +6,9 @@ id = "o-ijC_DYnR0n7XDFeubs9"
 uri = "file://exports/logo.png"
 type = "image"
 title = "XXII Century Logo (PNG)"
+
+[[outputs]]
+id = "1lcGL60lQIlPZwUNm4XuO"
+uri = "file://exports/xxii_data_backup.sql.tar.gz"
+type = "unspecified"
+title = "XXII Century DB Backup (download, then untar on VPS)"
