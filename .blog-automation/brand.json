@@ -3,91 +3,122 @@
   "brand": "XXII Century Trucking",
   "shortBrand": "XXII Century",
   "domain": "goxxii.com",
-  "tagline": "Chicago-based trucking carrier for owner operators and CDL-A drivers",
-  "primaryAudience": "Owner operators and CDL-A company drivers (Chicago / Midwest focus)",
-  "secondaryAudience": "Fleet operators considering a switch; shippers needing freight services",
+  "tagline": "Chicago-area trucking carrier — owner operators keep 90% linehaul; company drivers start at 65 CPM with raises to 80 CPM",
+  "primaryAudience": "Owner operators and CDL-A company drivers (Chicago/Midwest)",
+  "secondaryAudience": "Fleet owners considering a Power Only partnership; shippers needing dry-van freight",
 
   "voice": {
     "tone": "Direct, confident, no-fluff. Talks to drivers like a knowledgeable peer who has run the numbers, not a corporate marketer.",
     "personality": "Honest about trade-offs. Names specific dollar amounts and percentages, never vague ranges. Counters generic advice with evidence.",
-    "perspective": "Written from an insider's seat — dispatcher / carrier ops / experienced operator. Acknowledges driver frustrations openly."
+    "perspective": "Insider perspective — dispatcher / carrier ops / experienced operator."
   },
 
   "doSay": [
-    "Specific dollar amounts, miles, percentages, dates ($240K-$290K, 6.5 MPG, 95,000 miles)",
+    "Specific dollar amounts, miles, percentages, dates (the ones in siteFacts below)",
     "Empathy openers: 'If you've been searching X, you've probably noticed Y'",
-    "Bold lead-ins on numbered insights: **1. They run higher-paying freight, not more miles.**",
-    "Bullet lists with $$$ ranges or hard data per line",
-    "Internal links woven naturally into sentences (not a 'see also' dump)",
-    "Subtle carrier framing — 'the right carrier' / 'a carrier built around drivers, not against them'",
-    "Honest trade-offs (maintenance risk, slow weeks, transmission failures)",
-    "Long-form, 1,500-2,500 words",
-    "Em-dashes for emphasis — they fit this voice"
+    "Bold lead-ins on numbered insights",
+    "Internal links woven naturally into sentences",
+    "Subtle carrier framing — 'the right carrier' / 'a carrier built around drivers'",
+    "Honest trade-offs",
+    "Em-dashes for emphasis"
   ],
 
   "dontSay": [
     "Welcome to our blog / Welcome back",
     "In today's fast-paced trucking industry",
-    "Buckle up, let's dive in, let's explore",
+    "Buckle up / let's dive in / let's explore",
     "Synergy, leverage, paradigm, ecosystem",
-    "It's important to note / It goes without saying / In conclusion",
-    "Click-baity questions ('Did you know...?', 'What if I told you...?')",
-    "Vague 'experts say' / 'studies show' without specifics",
-    "Emojis in body text",
-    "AI-tells like 'In the realm of', 'When it comes to', 'At the end of the day'"
+    "It's important to note / At the end of the day / In conclusion",
+    "Click-baity questions",
+    "Hyperbolic claims ('absolutely the best', 'unbeatable', 'world-class')",
+    "Emojis in body text"
+  ],
+
+  "groundingRules": [
+    "CRITICAL: Use ONLY facts that appear in the siteFacts section below or in entities. Do NOT invent operational specifics, numbers, lane lists, dispatcher policies, fleet sizes, or service details. If a topic requires a fact not in siteFacts, write generically (industry-wide, not company-specific) or omit that detail.",
+    "When citing specific company numbers (pay percent, CPM, referral bonus, etc.), use the EXACT values from siteFacts — never approximate or substitute.",
+    "When referencing location, use 'Woodridge, IL (Chicago metro)' or 'Chicago-area' — not just 'Chicago' since HQ is actually in Woodridge.",
+    "Lane specifics (which states / cities the company runs to): do NOT name specific lanes unless they appear in siteFacts.",
+    "Pay structure: owner operators are on 90% linehaul revenue with transparent settlements; company drivers earn 65 CPM starting, with raises to 80 CPM. Don't invent alternative structures.",
+    "Equipment: dry vans, reefers, and flatbeds available. Power Only program for fleet owners with their own trucks.",
+    "Always include the phone number 630-948-0501 in the closing CTA paragraph."
   ],
 
   "entities": {
     "company": "XXII Century Trucking",
-    "phone": "+1 (630) 948-0501",
+    "phone": "630-948-0501",
     "applyUrl": "https://intelliapp.driverapponline.com/c/goxxii?r=Eve",
-    "primaryHub": "Chicago",
-    "regions": ["Chicago", "Midwest", "Illinois", "Indiana", "Wisconsin", "Michigan", "Ohio"]
+    "headquarters": "7501 Lemont Rd, Woodridge, IL",
+    "primaryHub": "Woodridge, IL (Chicago metro)",
+    "regions": ["Chicago", "Woodridge", "Illinois", "Midwest"],
+    "foundedYear": 2009,
+    "fleetSize": "500+ drivers"
+  },
+
+  "siteFacts": {
+    "ownerOperatorPay": "Owner operators keep 90% of linehaul revenue with transparent weekly settlements and zero hidden fees. No forced dispatch fees, no trailer rental surprises.",
+    "companyDriverPay": "Company drivers start at 65 CPM with raises to 80 CPM. Full benefits: medical, dental, 401(k), paid vacation. Late-model trucks.",
+    "topEarnings": "Top owner operators average $8,000+/week gross. Company driver career pay path reaches up to $300K.",
+    "trailers": "Large trailer network: dry vans, reefers, and flatbeds. Drivers can use XXII Century trailers or bring their own.",
+    "fuelProgram": "Large fleet volume fuel discounts at major truck stops nationwide. AI-powered fuel management tool to find cheapest fuel on your route.",
+    "dispatchModel": "No forced dispatch — you see the load, you see the rate, you decide. Flexible scheduling: dedicated lanes + open-board freight. Both local Chicago-area and long-haul OTR available.",
+    "freight": "Fortune 500 freight partners. 97% on-time delivery rate.",
+    "powerOnlyProgram": "Fleet owners and small carriers: Power Only program. Trailer provided by XXII Century, 24/7 dispatch, fast pay.",
+    "referralBonus": "$1,000 per qualified driver referral, unlimited (no cap).",
+    "applicationProcess": "Apply online in roughly 5 minutes at intelliapp.driverapponline.com/c/goxxii?r=Eve, or call 630-948-0501.",
+    "freightServices": "Nationwide FTL dry van shipping with 97% on-time rate. Real-time GPS tracking, dedicated account management."
+  },
+
+  "siteFAQs": {
+    "ownerOperators": [
+      {"q": "What percentage do owner operators keep at XXII Century?", "a": "Owner operators receive competitive linehaul rates (90% linehaul) with transparent settlements and zero hidden fees. There are no forced dispatch fees or trailer rental surprises."},
+      {"q": "Do I need my own trailer to be an owner operator?", "a": "No. XXII Century offers a large trailer network including dry vans, reefers, and flatbeds. You can use our trailers or bring your own."},
+      {"q": "What fuel discounts are available for owner operators?", "a": "We provide large fleet volume fuel discounts at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route."},
+      {"q": "Can I choose my own routes as an owner operator?", "a": "Yes. We offer flexible scheduling with both dedicated lanes and open-board freight. Whether you prefer local Chicago-area runs or long-haul OTR, we match loads to your preferences."},
+      {"q": "Is there a referral bonus for owner operators?", "a": "Yes — $1,000 per qualified driver referral, unlimited (no cap)."}
+    ]
   },
 
   "internalLinks": {
-    "/": "XXII Century home / Owner Operators landing",
-    "/owner-operators": "owner operator opportunities + comp details",
-    "/company-drivers": "company driver positions",
-    "/fleet-program": "fleet program for established operators",
+    "/": "homepage / Owner Operators landing",
+    "/owner-operators": "owner operator opportunities + 90% linehaul comp details",
+    "/owner-operators/:state": "state-specific owner operator pages",
+    "/company-drivers": "company driver positions (65-80 CPM + benefits)",
+    "/fleet-program": "Power Only program for fleet owners",
     "/freight-shipping-services": "freight shipping services for shippers",
     "/careers": "all open positions",
-    "/contact": "contact form",
-    "/about": "company background"
+    "/contact": "contact form + phone 630-948-0501",
+    "/about": "company background (since 2009, Woodridge IL)"
   },
 
   "categories": ["Owner Operators", "Local Jobs", "Guides", "Careers"],
 
   "topicClusters": [
-    {
-      "cluster": "Owner Operator Economics",
-      "examples": ["take-home pay math", "linehaul rate negotiation", "cost-per-mile control", "lease vs own decision", "fuel network discounts"]
-    },
-    {
-      "cluster": "Driver Retention & Career",
-      "examples": ["why drivers leave in first 90 days", "burnout prevention", "career path from company driver to owner op", "dispatcher relationship signals"]
-    },
-    {
-      "cluster": "Chicago / Midwest Freight",
-      "examples": ["Chicago lanes", "regional vs OTR economics", "Midwest freight market", "dedicated route availability"]
-    },
-    {
-      "cluster": "Industry & Regulatory",
-      "examples": ["ELD compliance", "FMCSA updates", "fuel surcharge mechanics", "insurance market trends"]
-    },
-    {
-      "cluster": "Practical Operations",
-      "examples": ["maintenance scheduling", "factoring vs net-30", "tax planning", "load board strategy"]
-    }
+    {"cluster": "Owner Operator Economics", "examples": ["90% linehaul math vs other carriers", "owner-op take-home with XXII fuel discount", "cost-per-mile control", "owner-op vs company-driver economics"]},
+    {"cluster": "Driver Retention & Career", "examples": ["why drivers stay long-term at XXII", "first 90 days as an owner operator", "career path: company driver to owner operator", "what good dispatch looks like"]},
+    {"cluster": "Chicago / Midwest Freight", "examples": ["Woodridge IL hub advantages", "Chicago freight market", "Midwest regional vs OTR economics", "Fortune 500 freight access"]},
+    {"cluster": "Practical Operations", "examples": ["XXII trailer network: dry vans/reefers/flatbeds", "fuel management AI tool", "Power Only program for fleet owners", "referral bonus program"]},
+    {"cluster": "Industry & Regulatory", "examples": ["ELD compliance", "FMCSA updates", "fuel surcharge mechanics", "DOT inspection tips"]}
+  ],
+
+  "blogCoverImages": [
+    "/blog-images/truck-mountains.jpg",
+    "/blog-images/xxii-truck-road.jpg",
+    "/blog-images/company-driver-truck.jpg",
+    "/blog-images/truck-fleet-mack.jpg",
+    "/blog-images/driver-truck-blue.jpg",
+    "/blog-images/dispatch-clean.jpg",
+    "/blog-images/oo-truck-cat.jpg",
+    "/blog-images/truck-green-closeup.jpg"
   ],
 
   "structureRules": {
     "wordCount": "1500-2500",
     "headings": "H1 title + 4-6 H2 sections + optional H3 subsections",
-    "openingPattern": "Hook addressing the reader's frustration or specific question — never a generic intro",
+    "openingPattern": "Hook addressing the reader's specific frustration or question, NOT a generic intro",
     "internalLinkCount": "2-4 per post, woven into sentences",
-    "ctaPlacement": "End with a CTA mentioning phone + apply URL",
-    "images": "1 hero (Fal-generated) at the top; optional 1-2 in-body images via ![alt](url)",
+    "ctaPlacement": "End with a CTA mentioning phone 630-948-0501 + apply URL",
+    "images": "Hero image picked from blogCoverImages (workflow picks one). Optional 1-2 in-body via ![alt](url)",
     "alsoReadCallout": "Optional `_Also Read: [title](/blog/slug)` line linking one existing post"
   },
 
@@ -111,5 +142,5 @@
     "hiring-owner-operators-chicago"
   ],
 
-  "_note": "Read by the n8n blog-automation workflow before drafting. Update as the brand voice or service lineup evolves. Existing-post slugs prevent the LLM from re-pitching topics that already exist."
+  "_note": "siteFacts + siteFAQs are the source of truth for company-specific claims. The LLM workflow is instructed to use ONLY these facts when making company-specific assertions. Update this file when XXII Century's pay structure, location, or service offerings change."
 }
