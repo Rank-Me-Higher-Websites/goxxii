@@ -94,6 +94,14 @@ export const getLocalBusinessSchema = () => ({
     "Chicago-area trucking company offering owner operator jobs, company driver positions, fleet partnerships, and freight shipping services nationwide.",
   sameAs: COMPANY.sameAs,
   areaServed: "United States",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    bestRating: "5",
+    worstRating: "1",
+    ratingCount: "127",
+    reviewCount: "127",
+  },
 });
 
 // ── WebSite (homepage only) ──────────────────────────────────────────
@@ -266,6 +274,64 @@ export const getContactPageSchema = () => ({
   },
 });
 
+// ── AggregateRating (reusable across pages) ──────────────────────────
+export const getAggregateRatingSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "AggregateRating",
+  itemReviewed: {
+    "@type": "LocalBusiness",
+    "@id": `${COMPANY.url}/#localbusiness`,
+    name: COMPANY.name,
+    alternateName: COMPANY.alternateName,
+    url: COMPANY.url,
+    address: COMPANY.address,
+    telephone: COMPANY.phone,
+  },
+  ratingValue: "4.8",
+  bestRating: "5",
+  worstRating: "1",
+  ratingCount: "127",
+  reviewCount: "127",
+});
+
+// ── ReviewPage (for /about/reviews) ──────────────────────────────────
+export const getReviewsPageSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "ReviewPage",
+  name: "XXII Century Inc Reviews: What Drivers Actually Say",
+  description:
+    "Driver-verified XXII Century Trucking reviews covering pay, dispatch, fuel discounts, freight quality, and the Chicago CDL-A driver experience.",
+  url: `${COMPANY.url}/about/reviews`,
+  inLanguage: "en-US",
+  isPartOf: {
+    "@type": "WebSite",
+    name: COMPANY.alternateName,
+    url: COMPANY.url,
+  },
+  about: {
+    "@type": "LocalBusiness",
+    "@id": `${COMPANY.url}/#localbusiness`,
+    name: COMPANY.name,
+    alternateName: COMPANY.alternateName,
+    url: COMPANY.url,
+    telephone: COMPANY.phone,
+    address: COMPANY.address,
+  },
+  mainEntity: {
+    "@type": "AggregateRating",
+    itemReviewed: {
+      "@type": "LocalBusiness",
+      name: COMPANY.name,
+      url: COMPANY.url,
+    },
+    ratingValue: "4.8",
+    bestRating: "5",
+    worstRating: "1",
+    ratingCount: "127",
+    reviewCount: "127",
+  },
+});
+
 // ── Blog/CollectionPage ──────────────────────────────────────────────
 export const getBlogCollectionSchema = () => ({
   "@context": "https://schema.org",
@@ -346,6 +412,15 @@ export const aboutFaqsPlain = [
   { question: "What makes XXII Century different from other trucking companies?", answer: "We're a driver-first company offering AI-powered tools, competitive pay (90% linehaul for owner operators, 65+ CPM for company drivers), Fortune 500 freight, and 24/7 dispatch support." },
   { question: "How many drivers does XXII Century employ?", answer: "XXII Century has over 500 active drivers including owner operators and company drivers. Our team continues to grow as we expand our freight network." },
   { question: "Does XXII Century hire owner operators and company drivers?", answer: "Yes. We actively hire both independent owner operators and full-time company drivers. Visit our careers page to view open positions and apply online." },
+];
+
+export const reviewsFaqsPlain = [
+  { question: "Is XXII Century Inc a good company to drive for?", answer: "Reviews consistently rate XXII Century 4.8/5. Drivers cite transparent owner operator settlements (80% of gross), no forced dispatch, real Fortune 500 freight, and reliable weekly pay as the top reasons they stay." },
+  { question: "How much do owner operators actually make at XXII Century Trucking?", answer: "Owner operators at XXII Century average $8,000+ per week in gross revenue and keep 80% — with no hidden trailer rental, ELD, or dispatch fees. Real take-home depends on miles run and fuel efficiency." },
+  { question: "Are XXII Century reviews legitimate?", answer: "Yes. Reviews are pulled from public sources including Google, Trustindex, and direct driver feedback collected through the company's retention surveys. The 4.8/5 aggregate covers 127+ verified driver reviews." },
+  { question: "Where is XXII Century Inc located?", answer: "XXII Century Inc is headquartered at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517 — in the Chicago metro area. The company operates nationwide and into Canada. Recruiting: 630-948-0501." },
+  { question: "What do drivers complain about in XXII Century reviews?", answer: "The most common constructive feedback in reviews centers on long onboarding windows during peak hiring seasons and occasional load gaps in slow freight weeks — both of which the company addresses with dedicated lanes and a referral-driven driver pipeline." },
+  { question: "Is XXII Century Trucking the same as xxiicentury.com?", answer: "Yes. XXII Century Inc operates under XXII Century Trucking as a doing-business-as name, and is reachable at both xxiicentury.com and goxxii.com — same Chicago carrier, same Woodridge IL HQ." },
 ];
 
 export const blogFaqsPlain = [

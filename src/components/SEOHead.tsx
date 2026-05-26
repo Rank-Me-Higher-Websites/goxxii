@@ -61,9 +61,9 @@ export const SEOHead = ({ title, description, canonicalPath, keywords }: SEOHead
 // SEO content for all pages - unique meta titles/descriptions per page
 export const SEO_CONTENT = {
   home: {
-    title: "Owner Operator & Company Driver Jobs Chicago IL | XXII Century",
-    description: "Chicago trucking company hiring owner operators earning 90% linehaul & company drivers at 65 CPM. Fortune 500 freight, weekly pay, benefits. Apply now.",
-    keywords: "owner operator jobs Chicago, CDL-A driver jobs Illinois, trucking company Chicago, company driver positions, dry van trucking, OTR truck driving jobs, Fortune 500 freight, truck driving jobs near me, best trucking company Illinois, CDL jobs Chicago 2025, apply trucking job online, Woodridge IL trucking, hiring now",
+    title: "XXII Century Trucking (xxiicentury.com) | CDL-A Jobs & Freight Chicago",
+    description: "XXII Century Trucking — Chicago's driver-first CDL-A carrier (xxiicentury.com / goxxii.com). Owner operators keep 80% of gross, company drivers earn 65 CPM. Fortune 500 freight, weekly pay, no forced dispatch.",
+    keywords: "xxii century trucking, xxiicentury.com, century trucking, century transport, xxii century inc reviews, owner operator jobs Chicago, CDL-A driver jobs Illinois, trucking company Chicago, company driver positions, dry van trucking, OTR truck driving jobs, Fortune 500 freight, truck driving jobs near me, best trucking company Illinois, Woodridge IL trucking, hiring now",
   },
   ownerOperators: {
     title: "Owner Operator Truck Driver Jobs — Earn 90% Linehaul | XXII Century",
@@ -115,6 +115,11 @@ export const SEO_CONTENT = {
     description: "Terms of use for goxxii.com. Review our policies on driver applications, intellectual property, data use & website access.",
     keywords: "XXII Century terms, trucking website terms, terms and conditions, website usage policy",
   },
+  reviews: {
+    title: "XXII Century Inc Reviews | Driver-Verified Pay & Dispatch",
+    description: "Real XXII Century Trucking reviews from owner operators and company drivers. 4.8/5 rating across 127+ reviews covering pay, dispatch, fuel discounts & Fortune 500 freight quality. See what Chicago CDL-A drivers say.",
+    keywords: "xxii century inc reviews, xxii century trucking reviews, xxii century reviews, xxiicentury reviews, century trucking reviews, century transport reviews, goxxii reviews, xxii century driver reviews, xxii century owner operator reviews, xxii century inc complaints, is xxii century a good company to drive for",
+  },
 };
 
 // Internal linking map - use varied anchor text
@@ -157,9 +162,17 @@ export const INTERNAL_LINKS = {
   about: [
     { text: "owner operator positions", href: "/owner-operators" },
     { text: "company driver jobs", href: "/company-drivers" },
+    { text: "read XXII Century Inc reviews", href: "/about/reviews" },
     { text: "fleet partnerships", href: "/fleet-program" },
     { text: "shipping services", href: "/freight-shipping-services" },
     { text: "view open positions", href: "/careers" },
+  ],
+  reviews: [
+    { text: "about XXII Century Inc", href: "/about" },
+    { text: "owner operator program", href: "/owner-operators" },
+    { text: "company driver jobs", href: "/company-drivers" },
+    { text: "current openings", href: "/careers" },
+    { text: "contact recruiting", href: "/contact" },
   ],
   careers: [
     { text: "owner operator details", href: "/owner-operators" },

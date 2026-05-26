@@ -57,6 +57,9 @@ export const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight leading-[1.05] mb-3 sm:mb-4"
             >
+              <span className="block text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-2 sm:mb-3">
+                XXII Century Trucking — Chicago&apos;s Driver-First CDL-A Carrier
+              </span>
               <span className="text-gradient">Owner Operators</span>
               <br />
               <span className="text-foreground">Keep 80% of Gross.</span>

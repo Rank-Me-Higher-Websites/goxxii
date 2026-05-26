@@ -12,6 +12,7 @@ import CompanyDrivers from "./pages/CompanyDrivers";
 import FleetProgram from "./pages/FleetProgram";
 import FreightServices from "./pages/FreightServices";
 import About from "./pages/About";
+import AboutReviews from "./pages/AboutReviews";
 import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
 import CareerDetail from "./pages/CareerDetail";
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/fleet-program" element={<FleetProgram />} />
           <Route path="/freight-shipping-services" element={<FreightServices />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about/reviews" element={<AboutReviews />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/careers/:slug" element={<CareerDetail />} />
