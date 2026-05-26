@@ -63,10 +63,9 @@ const AboutReviews = () => {
             to other Chicago CDL-A carriers.
           </p>
           <p className="text-muted-foreground max-w-2xl">
-            Headquartered in Woodridge, IL, XXII Century Inc (also known as XXII Century Trucking,
-            and reachable at xxiicentury.com or goxxii.com) has been hauling Fortune 500 freight
-            since 2009. Below are aggregated ratings and recurring themes drivers mention in their
-            reviews.
+            Headquartered in Woodridge, IL, XXII Century Inc (operating as XXII Century Trucking,
+            reachable at goxxii.com) has been hauling Fortune 500 freight since 2009. Below are
+            aggregated ratings and recurring themes drivers mention in their reviews.
           </p>
         </div>
       </section>
@@ -140,7 +139,7 @@ const AboutReviews = () => {
           </div>
 
           <h2 className="heading-section text-foreground mb-4">
-            About XXII Century Inc (xxiicentury.com / goxxii.com)
+            About XXII Century Inc (goxxii.com)
           </h2>
           <p className="text-muted-foreground mb-3">
             XXII Century Trucking is an asset-based Chicago CDL-A carrier founded in 2009 and based

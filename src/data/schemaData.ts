@@ -420,7 +420,7 @@ export const reviewsFaqsPlain = [
   { question: "Are XXII Century reviews legitimate?", answer: "Yes. Reviews are pulled from public sources including Google, Trustindex, and direct driver feedback collected through the company's retention surveys. The 4.8/5 aggregate covers 127+ verified driver reviews." },
   { question: "Where is XXII Century Inc located?", answer: "XXII Century Inc is headquartered at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517 — in the Chicago metro area. The company operates nationwide and into Canada. Recruiting: 630-948-0501." },
   { question: "What do drivers complain about in XXII Century reviews?", answer: "The most common constructive feedback in reviews centers on long onboarding windows during peak hiring seasons and occasional load gaps in slow freight weeks — both of which the company addresses with dedicated lanes and a referral-driven driver pipeline." },
-  { question: "Is XXII Century Trucking the same as xxiicentury.com?", answer: "Yes. XXII Century Inc operates under XXII Century Trucking as a doing-business-as name, and is reachable at both xxiicentury.com and goxxii.com — same Chicago carrier, same Woodridge IL HQ." },
+  { question: "How do I apply to XXII Century Trucking after reading reviews?", answer: "Apply online at goxxii.com — the application takes about 5 minutes. Recruiting typically responds within 24 hours by phone (630-948-0501) or email (hr@goxxii.com). Owner operators, company drivers, and fleet owners all use the same application form." },
 ];
 
 export const blogFaqsPlain = [
