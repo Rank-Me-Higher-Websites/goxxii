@@ -5,7 +5,7 @@ excerpt: "Owner Operator Jobs at XXII Century Trucking: Real Pay, Real Lanes, Re
 date: "2026-05-19"
 readTime: 8
 author: "XXII Century Team"
-image: "/placeholder.svg"
+image: "/blog-images/xxii-truck-road.jpg"
 imageAlt: "Owner Operator Jobs at XXII Century Trucking: Real Pay, Real Lanes, Real Dispatcher Support — A Chicago Drivers Guide for 2026"
 category: "Owner Operators"
 metaDescription: "Owner Operator Jobs at XXII Century Trucking: Real Pay, Real Lanes, Real Dispatcher Support"
