@@ -22,6 +22,7 @@ export interface BlogPostData {
   readTime: string;
   category: string;
   author: string;
+  htmlBody?: string;
   content: string[];
 }
 
