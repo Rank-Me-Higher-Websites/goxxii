@@ -73,6 +73,9 @@ export const autoBlogPosts: Record<string, BlogPostData> = (() => {
       category: fm.category || "Guides",
       author: fm.author || "XXII Century Team",
       content: parseBody(body),
+      // When the body looks like HTML (auto-posts produced in HTML mode),
+      // pass it through to BlogPost.tsx for dangerouslySetInnerHTML rendering.
+      htmlBody: /<[a-z][\s\S]*?>/i.test(body) ? body.trim() : undefined,
     };
   }
   return result;
