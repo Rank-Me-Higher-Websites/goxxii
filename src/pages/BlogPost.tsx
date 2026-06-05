@@ -289,7 +289,9 @@ const BlogPost = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="prose prose-lg max-w-none"
             >
-              {renderContent(post.content)}
+              {(post as any).htmlBody
+                ? <div className="prose prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: (post as any).htmlBody }} />
+                : renderContent(post.content)}
 
               <div className="mt-12 p-8 bg-gradient-to-br from-primary/10 via-background to-cyan-500/10 rounded-2xl border border-border">
                 <h3 className="font-display text-2xl font-bold text-foreground mb-3">
