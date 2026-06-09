@@ -16,7 +16,6 @@ export default function Retention() {
     week2: checkIns.filter((c: any) => c.checkInType === "week2"),
     week3: checkIns.filter((c: any) => c.checkInType === "week3"),
     week4: checkIns.filter((c: any) => c.checkInType === "week4"),
-    exit: checkIns.filter((c: any) => c.checkInType === "exit"),
   };
 
   const columns = [
@@ -24,7 +23,6 @@ export default function Retention() {
     { id: "week2" as const, label: "Week 2", sublabel: "First Week with XXII Century", dotColor: "bg-cyan-400", borderColor: "border-t-cyan-400" },
     { id: "week3" as const, label: "Week 3", sublabel: "Second Week with XXII Century", dotColor: "bg-violet-400", borderColor: "border-t-violet-400" },
     { id: "week4" as const, label: "Week 4", sublabel: "Partnership Fit with XXII Century", dotColor: "bg-emerald-400", borderColor: "border-t-emerald-400" },
-    { id: "exit" as const, label: "Exit Survey", sublabel: "Departure Feedback", dotColor: "bg-rose-500", borderColor: "border-t-rose-500" },
   ];
 
   return (
@@ -45,8 +43,8 @@ export default function Retention() {
       </div>
 
       {isLoading ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4">
-          {[1, 2, 3, 4, 5].map(i => (
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          {[1, 2, 3, 4].map(i => (
             <div key={i} className="bg-secondary/50 border border-border rounded-xl h-64 animate-pulse" />
           ))}
         </div>
@@ -57,7 +55,7 @@ export default function Retention() {
           <p className="text-muted-foreground/50 text-sm mt-1">Start a retention check-in for any active driver</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4" data-testid="retention-board">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4" data-testid="retention-board">
           {columns.map((col) => {
             const items = grouped[col.id];
             return (

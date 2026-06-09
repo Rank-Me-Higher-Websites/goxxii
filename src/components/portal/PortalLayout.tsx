@@ -1,7 +1,7 @@
 import { useAuth, useLogout } from "@/hooks/use-auth";
 import { Navigate, Outlet, Link, useLocation } from "react-router-dom";
 import {
-  LayoutDashboard, Users, ClipboardCheck, LogOut, Menu, X, Link as LinkIcon
+  LayoutDashboard, Users, ClipboardCheck, LogOut, Menu, X, Link as LinkIcon, DoorOpen
 } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.svg";
@@ -10,6 +10,7 @@ const navItems = [
   { path: "/portal", label: "Dashboard", icon: LayoutDashboard },
   { path: "/portal/drivers", label: "Drivers", icon: Users },
   { path: "/portal/retention", label: "Check-Ins", icon: ClipboardCheck },
+  { path: "/portal/exit-surveys", label: "Exit Surveys", icon: DoorOpen },
   { path: "/portal/survey-links", label: "Survey Links", icon: LinkIcon },
 ];
 

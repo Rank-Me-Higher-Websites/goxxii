@@ -31,6 +31,7 @@ import Retention from "./pages/portal/Retention";
 import NewCheckIn from "./pages/portal/NewCheckIn";
 import CheckInDetail from "./pages/portal/CheckInDetail";
 import SurveyLinks from "./pages/portal/SurveyLinks";
+import ExitSurveys from "./pages/portal/ExitSurveys";
 import PublicSurvey from "./pages/PublicSurvey";
 import PublicRegister from "./pages/PublicRegister";
 
@@ -71,6 +72,7 @@ const App = () => (
             <Route path="retention" element={<Retention />} />
             <Route path="retention/new" element={<NewCheckIn />} />
             <Route path="retention/:id" element={<CheckInDetail />} />
+            <Route path="exit-surveys" element={<ExitSurveys />} />
             <Route path="survey-links" element={<SurveyLinks />} />
           </Route>
 
