@@ -1,7 +1,7 @@
 import { useQuery, useMutation } from "@tanstack/react-query";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useState } from "react";
-import { Link as LinkIcon, Copy, Check, Send, ExternalLink, RefreshCw, LogOut } from "lucide-react";
+import { Link as LinkIcon, Copy, Check, Send, ExternalLink, RefreshCw } from "lucide-react";
 
 const WEEKS = ["week1", "week2", "week3", "week4"] as const;
 const WEEK_LABELS: Record<string, string> = {
@@ -194,33 +194,6 @@ export default function SurveyLinks() {
                           className="p-1.5 rounded-lg border border-border hover:border-primary/30 transition-all"
                           title="Open generic survey"
                           data-testid={`link-open-generic-${driver.id}`}
-                        >
-                          <ExternalLink className="w-3 h-3 text-muted-foreground" />
-                        </a>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="flex items-center gap-1.5 shrink-0 text-rose-400">
-                          <LogOut className="w-3 h-3" />
-                          <span className="text-xs font-medium">Exit Survey</span>
-                        </div>
-                        <code className="flex-1 bg-rose-500/5 border border-rose-500/20 rounded-lg px-3 py-1.5 text-xs text-muted-foreground font-mono truncate" data-testid={`text-exit-url-${driver.id}`}>
-                          {`${baseUrl}/survey/${driver.surveyToken}/exit`}
-                        </code>
-                        <button
-                          onClick={() => copyToClipboard(`${baseUrl}/survey/${driver.surveyToken}/exit`, `exit-${driver.id}`)}
-                          className="p-1.5 rounded-lg border border-border hover:border-rose-500/30 transition-all"
-                          title="Copy exit survey link"
-                          data-testid={`button-copy-exit-${driver.id}`}
-                        >
-                          {copiedKey === `exit-${driver.id}` ? <Check className="w-3 h-3 text-accent" /> : <Copy className="w-3 h-3 text-muted-foreground" />}
-                        </button>
-                        <a
-                          href={`${baseUrl}/survey/${driver.surveyToken}/exit`}
-                          target="_blank"
-                          rel="noopener"
-                          className="p-1.5 rounded-lg border border-border hover:border-rose-500/30 transition-all"
-                          title="Open exit survey"
-                          data-testid={`link-open-exit-${driver.id}`}
                         >
                           <ExternalLink className="w-3 h-3 text-muted-foreground" />
                         </a>
