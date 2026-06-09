@@ -1,11 +1,12 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { ChevronRight, Check, DollarSign, Shield, TrendingUp, MessageSquare } from "lucide-react";
+import { ChevronRight, Check, DollarSign, Shield, TrendingUp, MessageSquare, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import companyDriver from "@/assets/company-driver-truck.jpg";
 
 const benefits = [
+  { icon: Truck, text: "70–80% Drop & Hook", highlight: true },
   { icon: DollarSign, text: "65 CPM + Bonuses" },
   { icon: TrendingUp, text: "Consistent Miles" },
   { icon: Shield, text: "Full Benefits" },
@@ -72,15 +73,24 @@ export const CompanyDriverSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.15 + index * 0.08 }}
-                  whileHover={{ backgroundColor: "hsl(142 70% 45% / 0.08)" }}
-                  className="glass-strong rounded-xl p-3 flex items-center gap-3 cursor-pointer border-emerald-500/30 hover:border-emerald-500/60 transition-colors duration-300"
+                  whileHover={{ backgroundColor: benefit.highlight ? "hsl(142 70% 45% / 0.18)" : "hsl(142 70% 45% / 0.08)" }}
+                  className={`glass-strong rounded-xl p-3 flex items-center gap-3 cursor-pointer transition-colors duration-300 ${
+                    benefit.highlight
+                      ? "col-span-2 border-2 border-emerald-500/60 bg-emerald-500/10 shadow-[0_0_24px_hsl(142_70%_45%/0.25)]"
+                      : "border-emerald-500/30 hover:border-emerald-500/60"
+                  }`}
                 >
-                  <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-emerald-500/20">
-                    <benefit.icon className="w-4 h-4 text-emerald-400" />
+                  <div className={`rounded-lg flex items-center justify-center bg-emerald-500/20 ${benefit.highlight ? "w-11 h-11" : "w-9 h-9"}`}>
+                    <benefit.icon className={`text-emerald-400 ${benefit.highlight ? "w-5 h-5" : "w-4 h-4"}`} />
                   </div>
-                  <span className="text-sm font-medium text-foreground">
+                  <span className={`font-medium text-foreground ${benefit.highlight ? "text-base font-bold" : "text-sm"}`}>
                     {benefit.text}
                   </span>
+                  {benefit.highlight && (
+                    <span className="ml-auto text-[10px] uppercase tracking-wide font-semibold text-emerald-400 bg-emerald-500/15 px-2 py-0.5 rounded-full">
+                      No-Touch
+                    </span>
+                  )}
                 </motion.div>
               ))}
             </div>
