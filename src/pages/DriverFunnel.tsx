@@ -29,7 +29,7 @@ const recruiterData: Record<string, { name: string; phone: string; phoneFormatte
 const perks = [
   { icon: DollarSign, label: "65 CPM", sub: "Empty & Loaded" },
   { icon: Fuel, label: "+2 CPM", sub: "Fuel Bonus Day 1" },
-  { icon: Truck, label: "Drop & Hook", sub: "70–80% No-Touch" },
+  { icon: Truck, label: "Drop & Hook", sub: "70–80% No-Touch", highlight: true },
   { icon: MapPin, label: "3,000+ Mi", sub: "Weekly Miles" },
 ];
 
@@ -142,17 +142,20 @@ const DriverFunnel = () => {
                 </motion.h1>
 
                 <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="text-muted-foreground text-xs lg:text-sm max-w-xl mb-2 lg:mb-4">
-                  <span className="text-foreground font-semibold">65 CPM Empty & Loaded + 2 CPM Fuel Bonus</span> starting Day 1. Raise every 6 months. New trucks, dedicated lanes, dry van only.
+                  <span className="text-foreground font-semibold">65 CPM Empty & Loaded + 2 CPM Fuel Bonus</span> starting Day 1. <span className="text-accent font-semibold">70–80% Drop &amp; Hook</span> — no-touch freight, less waiting, more miles. New trucks, dedicated lanes, dry van only.
                 </motion.p>
 
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 lg:gap-3 mb-3 lg:mb-5">
                   {perks.map((p) => (
-                    <div key={p.label} className="flex items-center gap-1.5">
-                      <div className="w-6 h-6 lg:w-8 lg:h-8 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
-                        <p.icon className="w-3 h-3 lg:w-4 lg:h-4 text-primary" />
+                    <div
+                      key={p.label}
+                      className={`flex items-center gap-1.5 ${p.highlight ? "rounded-lg border border-accent/40 bg-accent/10 px-2 py-1 -my-1 shadow-[0_0_18px_hsl(var(--accent)/0.25)]" : ""}`}
+                    >
+                      <div className={`w-6 h-6 lg:w-8 lg:h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${p.highlight ? "bg-accent/25" : "bg-primary/20"}`}>
+                        <p.icon className={`w-3 h-3 lg:w-4 lg:h-4 ${p.highlight ? "text-accent" : "text-primary"}`} />
                       </div>
                       <div className="min-w-0">
-                        <div className="text-[11px] lg:text-sm font-bold text-foreground leading-tight">{p.label}</div>
+                        <div className={`text-[11px] lg:text-sm font-bold leading-tight ${p.highlight ? "text-accent" : "text-foreground"}`}>{p.label}</div>
                         <div className="text-[9px] lg:text-xs text-muted-foreground leading-tight">{p.sub}</div>
                       </div>
                     </div>
