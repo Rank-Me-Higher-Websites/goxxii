@@ -260,6 +260,6 @@ function StatusDot({ status }: { status: string }) {
 }
 
 function formatType(type: string) {
-  const map: Record<string, string> = { week1: "Week 1", week2: "Week 2", week4: "Week 4" };
+  const map: Record<string, string> = { week1: "Week 1", week2: "Week 2", week3: "Week 3", week4: "Week 4", exit: "Exit Survey" };
   return map[type] || type;
 }

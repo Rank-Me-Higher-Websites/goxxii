@@ -143,20 +143,22 @@ export default function PublicSurvey() {
           <p className="text-muted-foreground text-sm mt-1">{survey.focus}</p>
         </div>
 
-        <div className="flex gap-2 mb-2">
-          {["week1", "week2", "week3", "week4"].map((w) => {
-            const done = data.completedWeeks.includes(w);
-            const current = w === currentWeek;
-            return (
-              <div
-                key={w}
-                className={`flex-1 h-1.5 rounded-full ${
-                  done ? "bg-accent" : current ? "bg-primary" : "bg-border"
-                }`}
-              />
-            );
-          })}
-        </div>
+        {currentWeek?.startsWith("week") && (
+          <div className="flex gap-2 mb-2">
+            {["week1", "week2", "week3", "week4"].map((w) => {
+              const done = data.completedWeeks.includes(w);
+              const current = w === currentWeek;
+              return (
+                <div
+                  key={w}
+                  className={`flex-1 h-1.5 rounded-full ${
+                    done ? "bg-accent" : current ? "bg-primary" : "bg-border"
+                  }`}
+                />
+              );
+            })}
+          </div>
+        )}
 
         <SurveyForm questions={survey.questions} responses={responses} onChange={setResponses} />
 

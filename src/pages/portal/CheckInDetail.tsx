@@ -40,6 +40,22 @@ const questionLabels: Record<string, string> = {
   considered_leaving: "Considered leaving",
   leaving_reason: "Reason for considering leaving",
   dream_feature: "Dream feature for the company",
+  primary_reason: "Primary reason for leaving",
+  primary_reason_detail: "Reason for leaving (details)",
+  influencing_events: "Events that influenced the decision",
+  job_satisfaction: "Overall job satisfaction (1-10)",
+  liked_most: "Liked most about the role",
+  liked_least: "Liked least about the role",
+  pay_competitiveness: "Pay & benefits vs. other companies",
+  equipment_rating: "Truck & equipment condition",
+  schedule_reasonable: "Routes/schedule/workload reasonable",
+  management_support: "Felt supported by dispatch/management",
+  communication_effective: "Company communication effective",
+  felt_safe: "Felt safe on the road",
+  safety_concerns: "Safety concerns or suggestions",
+  improvement_suggestions: "Changes to improve for future drivers",
+  would_recommend: "Would recommend the company",
+  recommend_reason: "Why / why not recommend",
 };
 
 export default function CheckInDetail() {
@@ -159,6 +175,7 @@ function formatType(type: string) {
     week2: "Week 2 — First Week with XXII Century",
     week3: "Week 3 — Second Week with XXII Century",
     week4: "Week 4 — Partnership Fit with XXII Century",
+    exit: "Exit Survey — Departure Feedback",
   };
   return map[type] || type;
 }
@@ -193,6 +210,24 @@ function formatValue(value: any): string {
     no_issues: "Haven't needed any",
     great: "Great — We work well together",
     strained: "Strained — Some tension",
+    better_pay: "Better pay elsewhere",
+    home_time: "Home time / schedule",
+    equipment: "Truck / equipment issues",
+    dispatch_management: "Dispatch or management",
+    miles_freight: "Miles / freight quality",
+    safety: "Safety concerns",
+    other_opportunity: "Found another opportunity",
+    personal: "Personal / family reasons",
+    retiring: "Retiring / leaving the industry",
+    other: "Other",
+    much_better: "Much better than others",
+    better: "Somewhat better",
+    same: "About the same",
+    worse: "Somewhat worse",
+    much_worse: "Much worse than others",
+    yes_reasonable: "Yes, reasonable",
+    mostly: "Mostly reasonable",
+    sometimes: "Sometimes unreasonable",
   };
   return labelMap[value] || String(value);
 }

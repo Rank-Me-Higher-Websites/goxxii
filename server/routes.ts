@@ -180,7 +180,7 @@ export function registerRoutes(router: Router) {
         },
         completedWeeks: completedTypes,
         nextWeek,
-        allComplete: completedTypes.length >= 4,
+        allComplete: weekOrder.every(w => completedTypes.includes(w)),
       });
     } catch (err) { next(err); }
   });
@@ -237,7 +237,7 @@ export function registerRoutes(router: Router) {
       const driver = await storage.getDriverByToken(req.params.token);
       if (!driver) return res.status(404).json({ message: "Survey not found" });
 
-      const validWeeks = ["week1", "week2", "week3", "week4"];
+      const validWeeks = ["week1", "week2", "week3", "week4", "exit"];
       const week = req.params.week;
       if (!validWeeks.includes(week)) {
         return res.status(400).json({ message: "Invalid week" });
@@ -269,7 +269,7 @@ export function registerRoutes(router: Router) {
       const driver = await storage.getDriverByToken(req.params.token);
       if (!driver) return res.status(404).json({ message: "Survey not found" });
 
-      const validWeeks = ["week1", "week2", "week3", "week4"];
+      const validWeeks = ["week1", "week2", "week3", "week4", "exit"];
       const week = req.params.week;
       if (!validWeeks.includes(week)) {
         return res.status(400).json({ message: "Invalid week" });
@@ -658,6 +658,39 @@ async function recalculateDriverScore(driverId: number) {
     if (responses.overall_satisfaction) {
       const satMap: Record<string, number> = { very_satisfied: 100, satisfied: 80, neutral: 50, dissatisfied: 25, very_dissatisfied: 10 };
       totalScore += satMap[responses.overall_satisfaction] || 50;
+      factors++;
+    }
+
+    // ===== Exit survey factors =====
+    if (responses.job_satisfaction !== undefined) {
+      totalScore += (Number(responses.job_satisfaction) / 10) * 100;
+      factors++;
+    }
+
+    if (responses.would_recommend !== undefined) {
+      totalScore += responses.would_recommend === "yes" ? 100 : 20;
+      factors++;
+    }
+
+    if (responses.pay_competitiveness) {
+      const compMap: Record<string, number> = { much_better: 100, better: 80, same: 60, worse: 30, much_worse: 10 };
+      totalScore += compMap[responses.pay_competitiveness] ?? 50;
+      factors++;
+    }
+
+    if (responses.management_support) {
+      const ratingMap: Record<string, number> = { excellent: 100, good: 75, average: 50, poor: 20 };
+      totalScore += ratingMap[responses.management_support] ?? 50;
+      factors++;
+    }
+
+    if (responses.communication_effective !== undefined) {
+      totalScore += responses.communication_effective === "yes" ? 100 : 30;
+      factors++;
+    }
+
+    if (responses.felt_safe !== undefined) {
+      totalScore += responses.felt_safe === "yes" ? 100 : 20;
       factors++;
     }
   }
