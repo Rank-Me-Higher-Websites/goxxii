@@ -110,6 +110,15 @@ export const HeroSection = () => {
                   <div className="text-xs text-muted-foreground">Zero Hidden</div>
                 </div>
               </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
+                  <Truck className="w-4 h-4 text-emerald-400" />
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-foreground">Drop &amp; Hook</div>
+                  <div className="text-xs text-muted-foreground">No-Touch Only</div>
+                </div>
+              </div>
             </motion.div>
 
             {/* Fuel Guarantee Badge */}
