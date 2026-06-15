@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { ChevronRight, Check, DollarSign, Fuel, Clock, Headphones } from "lucide-react";
+import { ChevronRight, Check, DollarSign, Fuel, Clock, Headphones, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import truck1 from "@/assets/oo-truck-cat.jpg";
 import truck2 from "@/assets/truck-2.png";
@@ -26,8 +26,22 @@ export const OwnerOperatorSection = () => {
 
   return (
     <section ref={ref} className="section-padding bg-secondary relative overflow-hidden">
-      {/* Background gradient */}
+      {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none" />
+      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-emerald-500/10 rounded-full blur-[130px] pointer-events-none" />
+      <div className="absolute top-10 right-10 w-72 h-72 bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.12]"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, rgba(255,255,255,0.25) 1px, transparent 1px)",
+          backgroundSize: "26px 26px",
+          maskImage: "radial-gradient(ellipse at center, black 35%, transparent 75%)",
+          WebkitMaskImage: "radial-gradient(ellipse at center, black 35%, transparent 75%)",
+        }}
+      />
+      <div className="absolute top-0 left-0 w-24 h-1 bg-gradient-to-r from-primary to-transparent" />
+      <div className="absolute top-0 left-0 w-1 h-24 bg-gradient-to-b from-primary to-transparent" />
       
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
@@ -107,7 +121,8 @@ export const OwnerOperatorSection = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="relative"
           >
-            <div className="grid grid-cols-5 gap-3">
+            <div className="absolute -inset-4 bg-gradient-to-tr from-primary/10 via-transparent to-emerald-500/10 rounded-[2rem] blur-2xl pointer-events-none" />
+            <div className="relative grid grid-cols-5 gap-3">
               <div className="col-span-3 space-y-3">
                 <div className="img-hover-lift rounded-xl border border-border overflow-hidden">
                   <img
@@ -120,10 +135,12 @@ export const OwnerOperatorSection = () => {
                   initial={{ scale: 0.9, opacity: 0 }}
                   animate={isInView ? { scale: 1, opacity: 1 } : {}}
                   transition={{ delay: 0.4 }}
-                  className="glass-strong rounded-xl p-3 text-center border border-primary/20"
+                  className="glass-strong rounded-xl p-3 text-center border border-primary/20 relative overflow-hidden"
                 >
-                  <div className="text-2xl sm:text-3xl font-display font-bold text-gradient">$200K+</div>
-                  <div className="text-xs text-muted-foreground">Avg Annual Earnings</div>
+                  <div className="absolute -top-8 -right-8 w-20 h-20 bg-primary/20 rounded-full blur-2xl pointer-events-none" />
+                  <TrendingUp className="w-5 h-5 text-primary mx-auto mb-1 relative" />
+                  <div className="text-2xl sm:text-3xl font-display font-bold text-gradient relative">$200K+</div>
+                  <div className="text-xs text-muted-foreground relative">Avg Annual Earnings</div>
                 </motion.div>
               </div>
               <div className="col-span-2 space-y-3 pt-8">
@@ -131,10 +148,12 @@ export const OwnerOperatorSection = () => {
                   initial={{ scale: 0.9, opacity: 0 }}
                   animate={isInView ? { scale: 1, opacity: 1 } : {}}
                   transition={{ delay: 0.3 }}
-                  className="glass rounded-xl p-3 text-center"
+                  className="glass rounded-xl p-3 text-center relative overflow-hidden"
                 >
-                  <div className="text-2xl sm:text-3xl font-display font-bold text-accent">15+</div>
-                  <div className="text-xs text-muted-foreground">Years Strong</div>
+                  <div className="absolute -top-8 -left-8 w-20 h-20 bg-accent/20 rounded-full blur-2xl pointer-events-none" />
+                  <Award className="w-5 h-5 text-accent mx-auto mb-1 relative" />
+                  <div className="text-2xl sm:text-3xl font-display font-bold text-accent relative">15+</div>
+                  <div className="text-xs text-muted-foreground relative">Years Strong</div>
                 </motion.div>
                 <div className="img-hover-lift rounded-xl border border-border overflow-hidden">
                   <img

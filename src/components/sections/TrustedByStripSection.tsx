@@ -9,6 +9,12 @@ import dinos from "@assets/customers/dinos-logistics.png";
 import arrive from "@assets/customers/arrive-logistics.png";
 import forsla from "@assets/customers/forsla.png";
 import martins from "@assets/customers/martins-milk.png";
+import lgLogo from "@assets/brands/lg-color.png";
+import thermafiberLogo from "@assets/brands/thermafiber-color.png";
+import millerLogo from "@assets/brands/miller-color.png";
+import westrockLogo from "@assets/brands/westrock-color.png";
+import petcoLogo from "@assets/brands/petco-color.png";
+import wisconsinLogo from "@assets/brands/wisconsin-color.png";
 
 interface Logo {
   name: string;
@@ -26,6 +32,12 @@ const logos: Logo[] = [
   { name: "Arrive Logistics", src: arrive },
   { name: "FORSLA", src: forsla },
   { name: "Martin's Milk Service", src: martins },
+  { name: "Miller", src: millerLogo },
+  { name: "WestRock", src: westrockLogo },
+  { name: "Petco", src: petcoLogo },
+  { name: "Wisconsin Paper Council", src: wisconsinLogo },
+  { name: "LG", src: lgLogo },
+  { name: "Thermafiber", src: thermafiberLogo },
 ];
 
 export const TrustedByStripSection = () => {

@@ -15,7 +15,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
-import freightHero from "@/assets/freight-hero.png";
+import freightTruck from "@/assets/heroes/truck-green.png";
 import heroBackground from "@/assets/heroes/truck-green-closeup.jpg";
 import freightBroker from "@/assets/freight-broker.png";
 import freightShipper from "@/assets/freight-shipper.png";
@@ -181,8 +181,8 @@ const FreightServices = () => {
             alt="Freight shipping services"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/45 to-background/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/25 to-transparent" />
         </div>
 
         {/* Floating gradient shapes */}
@@ -277,9 +277,9 @@ const FreightServices = () => {
             </div>
             <div className="order-1 lg:order-2">
               <img
-                src={freightHero}
-                alt="Fleet program for owner operators"
-                className="rounded-2xl w-full"
+                src={freightTruck}
+                alt="XXII Century green freight truck on the highway"
+                className="rounded-2xl w-full shadow-2xl"
               />
             </div>
           </motion.div>
