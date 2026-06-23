@@ -19,7 +19,7 @@ const stats = [
   { value: "$1000", label: "Referral Bonus" },
   { value: "$100k+", label: "Average Annual Income" },
   { value: "$2,200+", label: "Average Weekly" },
-  { value: "68¢", label: "CPM" },
+  { value: "68 + 2", label: "CPM" },
 ];
 
 const stats2 = [
