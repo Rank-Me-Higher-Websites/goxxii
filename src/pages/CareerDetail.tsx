@@ -71,7 +71,7 @@ const jobDetails: Record<string, {
     ],
     offers: [
       "Competitive pay with weekly settlements and transparent payment structure",
-      "Consistent freight with dedicated lanes and flexible scheduling",
+      "Consistent freight with customer lanes and flexible scheduling",
       "Fuel discounts, maintenance support, and other cost-saving programs",
       "Partnership with a trusted company that values your independence and hard work",
       "Professional support from our logistics and dispatch teams",
@@ -120,7 +120,7 @@ const CareerDetail = () => {
     const salaryMap: Record<string, { min: number; max: number; type: string }> = {
       "otr-dispatcher": { min: 45000, max: 65000, type: "FULL_TIME" },
       "owner-operator-nationwide": { min: 150000, max: 300000, type: "CONTRACTOR" },
-      "company-driver": { min: 65000, max: 95000, type: "FULL_TIME" },
+      "company-driver": { min: 65000, max: 120000, type: "FULL_TIME" },
     };
     const salary = salaryMap[slug] || { min: 50000, max: 100000, type: "FULL_TIME" };
     return [

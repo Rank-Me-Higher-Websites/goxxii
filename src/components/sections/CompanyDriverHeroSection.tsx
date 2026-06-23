@@ -17,21 +17,21 @@ const features = [
 
 const stats = [
   { value: "$1000", label: "Referral Bonus" },
-  { value: "$90k", label: "Average Annual Income" },
-  { value: "$1750", label: "Average Weekly" },
-  { value: "65¢", label: "CPM" },
+  { value: "$100k+", label: "Average Annual Income" },
+  { value: "$2,200+", label: "Average Weekly" },
+  { value: "68¢", label: "CPM" },
 ];
 
 const stats2 = [
   { value: "$1000", label: "Referral Bonus" },
-  { value: "$100", label: "Layovers" },
+  { value: "$150", label: "Layovers" },
   { value: "24/7", label: "Dispatch & Roadside" },
   { value: "$500", label: "Inspection Bonus" },
 ];
 
 const benefits = [
   { icon: DollarSign, title: "Paid Detention", desc: "Company-matched plan – helping you prepare for retirement." },
-  { icon: Award, title: "65 CPM", desc: "Earn $83,000–$95,000 in your first year with XXII Century." },
+  { icon: Award, title: "68 + 2 CPM", desc: "Earn $104,000–$120,000 annually with XXII Century." },
   { icon: Gift, title: "Driver Bonuses", desc: "Enjoy performance bonuses, monthly rewards, photo contests, and year-round giveaways!" },
   { icon: Heart, title: "Paid Layover", desc: "Awesome health plans to choose from. Includes dental and vision too." },
   { icon: Users, title: "Referral Bonus", desc: "On-site maintenance available—relax at HQ or head home while we service your truck." },
@@ -190,10 +190,10 @@ export const CompanyDriverHeroSection = () => {
               Join XXII Century Today and Drive Toward a Brighter Future in Trucking!
             </h3>
             <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
-              Drive with XXII and get the consistency you deserve! With dedicated lanes and flexible home time options, your schedule works for you. Enjoy paid vacations to recharge, and earn big with safety and performance bonuses recognizing your hard work.
+              Drive with XXII and get the consistency you deserve! With customer lanes and flexible home time options, your schedule works for you. Enjoy paid vacations to recharge, and earn big with safety and performance bonuses recognizing your hard work.
             </p>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Ready to take the wheel? Or would you rather explore <Link to="/owner-operators" className="text-primary hover:underline">owner operator programs</Link> with 90% revenue share? Either way, XXII Century has a <Link to="/careers" className="text-primary hover:underline">trucking career path</Link> that fits your goals.
+              Ready to take the wheel? Or would you rather explore <Link to="/owner-operators" className="text-primary hover:underline">owner operator programs</Link> with 80% revenue share? Either way, XXII Century has a <Link to="/careers" className="text-primary hover:underline">trucking career path</Link> that fits your goals.
             </p>
             <Button variant="hero" size="lg" asChild>
               <a href="mailto:hr@goxxii.com">

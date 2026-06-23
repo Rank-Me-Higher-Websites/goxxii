@@ -30,10 +30,10 @@ const CompanyDrivers = () => {
     getFAQSchema(companyDriverFaqsPlain),
     getJobPostingSchema({
       title: "Company Driver - CDL-A",
-      description: "Join XXII Century as a company driver. Starting at 65 CPM with automatic raises. Full benefits including health, dental, vision, 401(k). Modern equipment, weekly pay.",
+      description: "Join XXII Century as a company driver. Starting at 68 + 2 CPM with automatic raises. Full benefits including health, dental, vision, 401(k). Modern equipment, weekly pay.",
       employmentType: "FULL_TIME",
       minSalary: 65000,
-      maxSalary: 95000,
+      maxSalary: 120000,
     }),
     getServiceSchema({
       name: "Company Driver Employment",

@@ -352,15 +352,15 @@ export const homeFaqsPlain = [
   { question: "What types of trucking jobs does XXII Century offer?", answer: "We offer both owner operator and company driver CDL-A positions. Routes include local, regional, and OTR lanes across the U.S. and Canada, hauling for Fortune 500 shippers." },
   { question: "Where is XXII Century based?", answer: "Our headquarters are in Chicago, Illinois. We operate freight lanes nationwide and into Canada." },
   { question: "How do I apply to drive with XXII Century?", answer: "Apply online through our driver application at intelliapp.driverapponline.com. Our recruiting team typically responds within 24 hours." },
-  { question: "Does XXII Century offer freight shipping services?", answer: "Yes. We provide dry van, refrigerated, and flatbed freight services for shippers and brokers. Our network covers the continental U.S. and Canada with dedicated and spot capacity." },
+  { question: "Does XXII Century offer freight shipping services?", answer: "Yes. We provide dry van and flatbed freight services for shippers and brokers. Our network covers the continental U.S. and Canada with dedicated and spot capacity." },
   { question: "How long has XXII Century been in business?", answer: "XXII Century has been in the trucking industry for over 16 years, building a reputation for reliability, safety, and transparent partnerships." },
 ];
 
 export const ownerOperatorFaqsPlain = [
   { question: "What percentage do owner operators keep at XXII Century?", answer: "Owner operators receive competitive linehaul rates with transparent settlements and zero hidden fees. There are no forced dispatch fees or trailer rental surprises." },
-  { question: "Do I need my own trailer to be an owner operator?", answer: "No. XXII Century offers a large trailer network including dry vans, reefers, and flatbeds. You can use our trailers or bring your own." },
+  { question: "Do I need my own trailer to be an owner operator?", answer: "No. XXII Century offers a large trailer network including dry vans and flatbeds. You can use our trailers or bring your own." },
   { question: "What fuel discounts are available for owner operators?", answer: "We provide large fleet volume fuel discounts at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route." },
-  { question: "Can I choose my own routes as an owner operator?", answer: "Yes. We offer flexible scheduling with both dedicated lanes and open-board freight. Whether you prefer local Chicago-area runs or long-haul OTR, we match loads to your preferences." },
+  { question: "Can I choose my own routes as an owner operator?", answer: "Yes. We offer flexible scheduling with both customer lanes and open-board freight. Whether you prefer local Chicago-area runs or long-haul OTR, we match loads to your preferences." },
   { question: "Is there a referral bonus for owner operators?", answer: "Yes — we offer an unlimited referral bonus program. Refer qualified drivers and earn $1,000 per referral with no cap." },
 ];
 
@@ -376,14 +376,14 @@ export const companyDriverFaqsPlain = [
 export const fleetProgramFaqsPlain = [
   { question: "What is the XXII Century Power Only program?", answer: "Our Power Only program lets owner operators use their own tractor with our trailers to haul freight for Fortune 500 companies. We provide the loads, trailer access, and 24/7 dispatch support." },
   { question: "What are the requirements to join the fleet program?", answer: "Requirements include Motor Carrier Authority, DOT Number, Auto Liability Insurance, Cargo Liability Insurance, and Non-Owned Trailer Interchange Insurance." },
-  { question: "What types of trailers are available in the fleet program?", answer: "Our trailer network includes dry vans, reefers, and flatbeds. This diversity ensures you can haul a wide range of freight and stay loaded consistently." },
+  { question: "What types of trailers are available in the fleet program?", answer: "Our trailer network includes dry vans and flatbeds. This diversity ensures you can haul a wide range of freight and stay loaded consistently." },
   { question: "What is the average income for fleet program drivers?", answer: "Owner operators in our fleet program average $100,000+ annually. Earnings depend on miles driven, freight type, and route preferences." },
   { question: "Does the fleet program operate in Canada?", answer: "Yes. We have freight lanes across the continental U.S. and Canada, partnering with major corporations and government agencies on both sides of the border." },
 ];
 
 export const careersFaqsPlain = [
   { question: "What trucking career paths are available at XXII Century?", answer: "We offer multiple career paths: Owner operator — run your own business with our freight and support; Company driver — full employment with benefits and steady pay; Fleet program — Power Only opportunities with trailer access." },
-  { question: "Does XXII Century hire drivers in the Chicago area?", answer: "Yes. Our headquarters are in Chicago, IL and many of our dedicated lanes originate from the Chicagoland area. We have local, regional, and OTR positions based out of Chicago." },
+  { question: "Does XXII Century hire drivers in the Chicago area?", answer: "Yes. Our headquarters are in Chicago, IL and many of our customer lanes originate from the Chicagoland area. We have local, regional, and OTR positions based out of Chicago." },
   { question: "What is the hiring process like?", answer: "Our process is straightforward: Submit your online application, phone screening with our recruiting team, background and MVR verification, orientation and dispatch — many drivers start within days." },
   { question: "Are there bonuses for safe driving?", answer: "Yes. We offer safety and inspection bonuses that reward clean CSA scores and DOT inspections. These are available to both owner operators and company drivers." },
   { question: "Can I drive for XXII Century if I live outside Illinois?", answer: "Absolutely. We have drivers across the country. While our base is in Chicago, our freight network spans the entire U.S. and Canada." },
@@ -394,12 +394,12 @@ export const contactFaqsPlain = [
   { question: "What are XXII Century's office hours?", answer: "Our dispatch operates 24/7. The recruiting and administrative office is available during standard business hours, Monday through Friday." },
   { question: "Where is XXII Century located?", answer: "Our main office is in Chicago, Illinois. We serve drivers and shippers across all 48 states and Canada." },
   { question: "How quickly does the recruiting team respond?", answer: "We typically respond within 24 hours of receiving your application or inquiry." },
-  { question: "Can shippers or brokers contact XXII Century for freight services?", answer: "Yes. If you need freight shipping services including dry van, refrigerated, or flatbed capacity, contact our logistics team." },
+  { question: "Can shippers or brokers contact XXII Century for freight services?", answer: "Yes. If you need freight shipping services including dry van or flatbed capacity, contact our logistics team." },
   { question: "Where can owner operators find tax help?", answer: "Owner operators often benefit from working with professionals who understand trucking-specific deductions and compliance. You can explore tax services tailored to the transportation industry to make sure you're maximizing your write-offs each year." },
 ];
 
 export const freightServicesFaqsPlain = [
-  { question: "What freight services does XXII Century offer?", answer: "We provide dry van, refrigerated, and flatbed freight shipping across the continental U.S. and Canada. Our asset-based fleet handles FTL shipments with real-time GPS tracking and dedicated account management." },
+  { question: "What freight services does XXII Century offer?", answer: "We provide dry van and flatbed freight shipping across the continental U.S. and Canada. Our asset-based fleet handles FTL shipments with real-time GPS tracking and dedicated account management." },
   { question: "How does XXII Century ensure on-time delivery?", answer: "We maintain a 97% on-time delivery rate through AI-powered route optimization, real-time tracking, proactive dispatch support, and a modern fleet of well-maintained trucks." },
   { question: "Can I get a freight shipping quote?", answer: "Yes. Contact our logistics team at 630-948-0501 or email hr@goxxii.com for a free, no-obligation freight quote. We respond within 24 hours." },
   { question: "Does XXII Century work with freight brokers?", answer: "Yes. We partner with freight brokers and shippers nationwide. Our asset-based fleet provides reliable capacity with competitive rates and full shipment visibility." },
@@ -409,7 +409,7 @@ export const freightServicesFaqsPlain = [
 export const aboutFaqsPlain = [
   { question: "When was XXII Century founded?", answer: "XXII Century was founded in 2009 in the Chicago, Illinois area. We've grown from a small carrier to a 500+ driver operation serving Fortune 500 companies nationwide." },
   { question: "Where is XXII Century headquartered?", answer: "Our headquarters are at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517. We serve drivers and shippers across all 48 states and Canada." },
-  { question: "What makes XXII Century different from other trucking companies?", answer: "We're a driver-first company offering AI-powered tools, competitive pay (90% linehaul for owner operators, 65+ CPM for company drivers), Fortune 500 freight, and 24/7 dispatch support." },
+  { question: "What makes XXII Century different from other trucking companies?", answer: "We're a driver-first company offering AI-powered tools, competitive pay (80% linehaul for owner operators, 68+ CPM for company drivers), Fortune 500 freight, and 24/7 dispatch support." },
   { question: "How many drivers does XXII Century employ?", answer: "XXII Century has over 500 active drivers including owner operators and company drivers. Our team continues to grow as we expand our freight network." },
   { question: "Does XXII Century hire owner operators and company drivers?", answer: "Yes. We actively hire both independent owner operators and full-time company drivers. Visit our careers page to view open positions and apply online." },
 ];
@@ -419,7 +419,7 @@ export const reviewsFaqsPlain = [
   { question: "How much do owner operators actually make at XXII Century Trucking?", answer: "Owner operators at XXII Century average $8,000+ per week in gross revenue and keep 80% — with no hidden trailer rental, ELD, or dispatch fees. Real take-home depends on miles run and fuel efficiency." },
   { question: "Are XXII Century reviews legitimate?", answer: "Yes. Reviews are pulled from public sources including Google, Trustindex, and direct driver feedback collected through the company's retention surveys. The 4.8/5 aggregate covers 127+ verified driver reviews." },
   { question: "Where is XXII Century Inc located?", answer: "XXII Century Inc is headquartered at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517 — in the Chicago metro area. The company operates nationwide and into Canada. Recruiting: 630-948-0501." },
-  { question: "What do drivers complain about in XXII Century reviews?", answer: "The most common constructive feedback in reviews centers on long onboarding windows during peak hiring seasons and occasional load gaps in slow freight weeks — both of which the company addresses with dedicated lanes and a referral-driven driver pipeline." },
+  { question: "What do drivers complain about in XXII Century reviews?", answer: "The most common constructive feedback in reviews centers on long onboarding windows during peak hiring seasons and occasional load gaps in slow freight weeks — both of which the company addresses with customer lanes and a referral-driven driver pipeline." },
   { question: "How do I apply to XXII Century Trucking after reading reviews?", answer: "Apply online at goxxii.com — the application takes about 5 minutes. Recruiting typically responds within 24 hours by phone (630-948-0501) or email (hr@goxxii.com). Owner operators, company drivers, and fleet owners all use the same application form." },
 ];
 

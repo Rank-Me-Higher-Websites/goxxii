@@ -39,7 +39,7 @@ const homeFaqs: FAQ[] = [
   {
     question: "Does XXII Century offer freight shipping services?",
     answer: (
-      <p>Yes. We provide <Link to="/freight-shipping-services" className="text-primary hover:underline">dry van, refrigerated, and flatbed freight services</Link> for shippers and brokers. Our network covers the continental U.S. and Canada with dedicated and spot capacity.</p>
+      <p>Yes. We provide <Link to="/freight-shipping-services" className="text-primary hover:underline">dry van and flatbed freight services</Link> for shippers and brokers. Our network covers the continental U.S. and Canada with dedicated and spot capacity.</p>
     ),
   },
   {
@@ -60,7 +60,7 @@ const ownerOperatorFaqs: FAQ[] = [
   {
     question: "Do I need my own trailer to be an owner operator?",
     answer: (
-      <p>No. XXII Century offers a large trailer network including dry vans, reefers, and flatbeds. You can use our trailers or bring your own. Learn about trailer options on our <Link to="/fleet-program" className="text-primary hover:underline">fleet program page</Link>.</p>
+      <p>No. XXII Century offers a large trailer network including dry vans and flatbeds. You can use our trailers or bring your own. Learn about trailer options on our <Link to="/fleet-program" className="text-primary hover:underline">fleet program page</Link>.</p>
     ),
   },
   {
@@ -72,7 +72,7 @@ const ownerOperatorFaqs: FAQ[] = [
   {
     question: "Can I choose my own routes as an owner operator?",
     answer: (
-      <p>Yes. We offer flexible scheduling with both dedicated lanes and open-board freight. Whether you prefer local Chicago-area runs or long-haul OTR, we match loads to your preferences. <Link to="/contact" className="text-primary hover:underline">Talk to recruiting</Link> about available lanes.</p>
+      <p>Yes. We offer flexible scheduling with both customer lanes and open-board freight. Whether you prefer local Chicago-area runs or long-haul OTR, we match loads to your preferences. <Link to="/contact" className="text-primary hover:underline">Talk to recruiting</Link> about available lanes.</p>
     ),
   },
   {
@@ -148,7 +148,7 @@ const fleetProgramFaqs: FAQ[] = [
   {
     question: "What types of trailers are available in the fleet program?",
     answer: (
-      <p>Our trailer network includes <strong className="text-foreground">dry vans, reefers, and flatbeds</strong>. This diversity ensures you can haul a wide range of freight and stay loaded consistently. Learn more about our <Link to="/freight-shipping-services" className="text-primary hover:underline">freight services</Link>.</p>
+      <p>Our trailer network includes <strong className="text-foreground">dry vans and flatbeds</strong>. This diversity ensures you can haul a wide range of freight and stay loaded consistently. Learn more about our <Link to="/freight-shipping-services" className="text-primary hover:underline">freight services</Link>.</p>
     ),
   },
   {
@@ -182,7 +182,7 @@ const careersFaqs: FAQ[] = [
   {
     question: "Does XXII Century hire drivers in the Chicago area?",
     answer: (
-      <p>Yes. Our headquarters are in <strong className="text-foreground">Chicago, IL</strong> and many of our dedicated lanes originate from the Chicagoland area. We have local, regional, and OTR positions based out of Chicago. <Link to="/contact" className="text-primary hover:underline">Reach out</Link> to see what's available near you.</p>
+      <p>Yes. Our headquarters are in <strong className="text-foreground">Chicago, IL</strong> and many of our customer lanes originate from the Chicagoland area. We have local, regional, and OTR positions based out of Chicago. <Link to="/contact" className="text-primary hover:underline">Reach out</Link> to see what's available near you.</p>
     ),
   },
   {
@@ -241,7 +241,7 @@ const contactFaqs: FAQ[] = [
   {
     question: "Can shippers or brokers contact XXII Century for freight services?",
     answer: (
-      <p>Yes. If you need <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping services</Link> including dry van, refrigerated, or flatbed capacity, contact our logistics team. We partner with Fortune 500 companies and welcome new shipper relationships.</p>
+      <p>Yes. If you need <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping services</Link> including dry van or flatbed capacity, contact our logistics team. We partner with Fortune 500 companies and welcome new shipper relationships.</p>
     ),
   },
   {

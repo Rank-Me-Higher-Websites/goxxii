@@ -22,8 +22,8 @@ export const statePages: Record<string, StatePageData> = {
     slug: "illinois",
     state: "Illinois",
     seo: {
-      title: "Owner Operator Jobs Illinois | 90% Linehaul Revenue | XXII Century",
-      description: "High-paying owner operator trucking jobs in Illinois. Earn 90% linehaul revenue, Fortune 500 contracts, weekly pay. Chicago-based carrier hiring now. Apply today!",
+      title: "Owner Operator Jobs Illinois | 80% Linehaul Revenue | XXII Century",
+      description: "High-paying owner operator trucking jobs in Illinois. Earn 80% linehaul revenue, Fortune 500 contracts, weekly pay. Chicago-based carrier hiring now. Apply today!",
       keywords: "owner operator jobs Illinois, trucking jobs Chicago, CDL-A driver Illinois, owner operator Chicago, dry van trucking Illinois",
     },
     hero: {
@@ -57,7 +57,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Do I need my own trailer to drive in Illinois?",
-        answer: "No. XXII Century provides trailer access through our fleet network including dry vans, reefers, and flatbeds. You can use our trailers or bring your own for Illinois routes.",
+        answer: "No. XXII Century provides trailer access through our fleet network including dry vans and flatbeds. You can use our trailers or bring your own for Illinois routes.",
       },
       {
         question: "What fuel discounts are available for Illinois drivers?",
@@ -77,7 +77,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "What types of freight are available in Illinois?",
-        answer: "We haul Fortune 500 freight including dry van, refrigerated, and flatbed loads. Illinois is a major freight hub with consistent volume from Chicago-area shippers and distribution centers.",
+        answer: "We haul Fortune 500 freight including dry van and flatbed loads. Illinois is a major freight hub with consistent volume from Chicago-area shippers and distribution centers.",
       },
       {
         question: "Does XXII Century offer detention pay in Illinois?",
@@ -128,7 +128,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Do Iowa drivers need their own trailer?",
-        answer: "No. We provide trailer access including dry vans, reefers, and flatbeds. Iowa drivers can use our equipment or bring their own — your choice.",
+        answer: "No. We provide trailer access including dry vans and flatbeds. Iowa drivers can use our equipment or bring their own — your choice.",
       },
       {
         question: "What fuel discounts are available for Iowa drivers?",
@@ -148,7 +148,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "What freight is available from Iowa?",
-        answer: "Iowa is a strong agricultural and manufacturing freight market. We haul Fortune 500 loads including dry van and refrigerated freight from Iowa shippers.",
+        answer: "Iowa is a strong agricultural and manufacturing freight market. We haul Fortune 500 loads including dry van and flatbed freight from Iowa shippers.",
       },
       {
         question: "Does XXII Century pay detention for Iowa loads?",
@@ -199,7 +199,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Do Kentucky drivers need their own trailer?",
-        answer: "No. We offer trailer access including dry vans, reefers, and flatbeds for Kentucky-based drivers. Use ours or bring your own.",
+        answer: "No. We offer trailer access including dry vans and flatbeds for Kentucky-based drivers. Use ours or bring your own.",
       },
       {
         question: "Are there fuel discounts for Kentucky owner operators?",
@@ -270,7 +270,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Do Ohio drivers need their own trailer?",
-        answer: "No. We provide trailer access including dry vans, reefers, and flatbeds for Ohio-based drivers. Use our equipment or haul with your own.",
+        answer: "No. We provide trailer access including dry vans and flatbeds for Ohio-based drivers. Use our equipment or haul with your own.",
       },
       {
         question: "What fuel discounts do Ohio drivers get?",
@@ -341,7 +341,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Do Mississippi drivers need their own trailer?",
-        answer: "No. We offer trailer access including dry vans, reefers, and flatbeds for Mississippi-based drivers. Bring your own or use ours.",
+        answer: "No. We offer trailer access including dry vans and flatbeds for Mississippi-based drivers. Bring your own or use ours.",
       },
       {
         question: "What fuel discounts are available in Mississippi?",
@@ -412,7 +412,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Do South Dakota drivers need their own trailer?",
-        answer: "No. We provide trailer access including dry vans, reefers, and flatbeds. South Dakota drivers can use our equipment or bring their own.",
+        answer: "No. We provide trailer access including dry vans and flatbeds. South Dakota drivers can use our equipment or bring their own.",
       },
       {
         question: "What fuel discounts are available for South Dakota drivers?",
@@ -420,7 +420,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Can South Dakota drivers choose their lanes?",
-        answer: "Yes. We offer dedicated lanes and flexible options. Whether you prefer regional Great Plains runs or longer cross-country hauls from South Dakota, we match your preference.",
+        answer: "Yes. We offer customer lanes and flexible options. Whether you prefer regional Great Plains runs or longer cross-country hauls from South Dakota, we match your preference.",
       },
       {
         question: "Is there a referral program for South Dakota drivers?",
@@ -483,7 +483,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Do WV drivers need their own trailer?",
-        answer: "No. We provide trailer access including dry vans, reefers, and flatbeds for West Virginia-based drivers. Use ours or bring your own.",
+        answer: "No. We provide trailer access including dry vans and flatbeds for West Virginia-based drivers. Use ours or bring your own.",
       },
       {
         question: "What fuel discounts are available for WV drivers?",

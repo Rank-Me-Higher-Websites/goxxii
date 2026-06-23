@@ -154,7 +154,7 @@ const FreightServices = () => {
     getFAQSchema(freightServicesFaqsPlain),
     getServiceSchema({
       name: "Freight Shipping Services",
-      description: "Nationwide dry van, refrigerated, and flatbed freight shipping. Real-time tracking, competitive rates, Fortune 500 carrier network, and 24/7 dispatch support.",
+      description: "Nationwide dry van and flatbed freight shipping. Real-time tracking, competitive rates, Fortune 500 carrier network, and 24/7 dispatch support.",
       url: "/freight-shipping-services",
     }),
     getServiceSchema({
@@ -304,7 +304,7 @@ const FreightServices = () => {
                   XXII Century operates a modern, asset-based fleet built for reliability and performance. With our own trucks, trailers, and professional drivers, we maintain full control over every shipment—delivering consistent service quality that third-party solutions simply can't match.
                 </p>
                 <p>
-                  Our in-house operations team, advanced tracking technology, and commitment to on-time delivery mean your freight is always in capable hands. From dry van to temperature-controlled loads, we offer flexible capacity and competitive pricing tailored to your supply chain needs.
+                  Our in-house operations team, advanced tracking technology, and commitment to on-time delivery mean your freight is always in capable hands. With our dry van fleet, we offer flexible capacity and competitive pricing tailored to your supply chain needs.
                 </p>
                 <p>
                   Ready to streamline your shipping? Our <Link to="/fleet-program" className="text-primary hover:underline">fleet program</Link> keeps capacity available for your freight. We're also hiring <Link to="/careers" className="text-primary hover:underline">professional truck drivers</Link> to support our growing operations.

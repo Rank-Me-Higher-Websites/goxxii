@@ -29,7 +29,7 @@ export const FleetJoinSection = () => {
               </p>
 
               <p>
-                From dry vans and reefers to tankers, we connect you with diverse freight options that keep your wheels turning. Our <Link to="/owner-operators" className="text-primary hover:underline">dry van owner operator jobs</Link> are among the most in-demand, with dedicated lanes and consistent miles. Plus, our 24/7 dispatch support team is always ready to assist — day or night.
+                From dry vans to flatbeds, we connect you with diverse freight options that keep your wheels turning. Our <Link to="/owner-operators" className="text-primary hover:underline">dry van owner operator jobs</Link> are among the most in-demand, with customer lanes and consistent miles. Plus, our 24/7 dispatch support team is always ready to assist — day or night.
               </p>
 
               <p>

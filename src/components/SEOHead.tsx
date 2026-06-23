@@ -62,17 +62,17 @@ export const SEOHead = ({ title, description, canonicalPath, keywords }: SEOHead
 export const SEO_CONTENT = {
   home: {
     title: "XXII Century Trucking | Chicago CDL-A Jobs & Freight | goxxii.com",
-    description: "XXII Century Trucking — Chicago's driver-first CDL-A carrier. Owner operators keep 80% of gross, company drivers earn 65 CPM. Fortune 500 freight, weekly pay, no forced dispatch. Apply at goxxii.com.",
+    description: "XXII Century Trucking — Chicago's driver-first CDL-A carrier. Owner operators keep 80% of gross, company drivers earn 68 + 2 CPM. Fortune 500 freight, weekly pay, no forced dispatch. Apply at goxxii.com.",
     keywords: "xxii century trucking, xxii century inc, century trucking, century transport, xxii century inc reviews, owner operator jobs Chicago, CDL-A driver jobs Illinois, trucking company Chicago, company driver positions, dry van trucking, OTR truck driving jobs, Fortune 500 freight, truck driving jobs near me, best trucking company Illinois, Woodridge IL trucking, hiring now, goxxii.com",
   },
   ownerOperators: {
-    title: "Owner Operator Truck Driver Jobs — Earn 90% Linehaul | XXII Century",
-    description: "Owner operator trucking jobs paying 90% linehaul revenue. No forced dispatch, fuel discounts, Fortune 500 loads, weekly settlements. CDL-A contractors apply.",
-    keywords: "owner operator trucking jobs, 90% linehaul pay, independent truck driver, no forced dispatch, OTR owner operator, dry van owner operator, owner operator pay per mile, best owner operator trucking company 2025, independent trucker jobs, 1099 truck driver, owner operator dry van loads",
+    title: "Owner Operator Truck Driver Jobs — Earn 80% Linehaul | XXII Century",
+    description: "Owner operator trucking jobs paying 80% linehaul revenue. No forced dispatch, fuel discounts, Fortune 500 loads, weekly settlements. CDL-A contractors apply.",
+    keywords: "owner operator trucking jobs, 80% linehaul pay, independent truck driver, no forced dispatch, OTR owner operator, dry van owner operator, owner operator pay per mile, best owner operator trucking company 2025, independent trucker jobs, 1099 truck driver, owner operator dry van loads",
   },
   companyDrivers: {
-    title: "CDL-A Company Driver Jobs — 65 CPM + Full Benefits | XXII Century",
-    description: "Company driver positions starting 65 CPM with raises to 80 CPM. Medical, dental, 401(k), paid vacation. Late-model trucks. Apply online in 5 minutes.",
+    title: "CDL-A Company Driver Jobs — 68 + 2 CPM + Full Benefits | XXII Century",
+    description: "Company driver positions starting at 68 + 2 CPM. Medical, dental, 401(k), paid vacation. Late-model trucks. Apply online in 5 minutes.",
     keywords: "company driver jobs, CDL-A driver positions, trucking jobs with benefits, OTR company driver, truck driver 401k, CDL-A truck driver salary, company driver pay per mile, truck driver benefits package, OTR driver jobs 2025, truck driving career",
   },
   fleetProgram: {

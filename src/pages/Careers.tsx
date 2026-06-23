@@ -33,16 +33,16 @@ const positions = [
   {
     icon: Truck,
     title: "Owner-Operator, Nationwide",
-    description: "Maximize your earnings with access to premium freight, AI-powered tools, and an 88% revenue share.",
-    benefits: ["88% Revenue Share", "Fuel Discounts", "Safety Bonuses", "Dedicated Lanes"],
+    description: "Maximize your earnings with access to premium freight, AI-powered tools, and an 80% revenue share.",
+    benefits: ["80% Revenue Share", "Fuel Discounts", "Safety Bonuses", "Customer Lanes"],
     slug: "owner-operator-nationwide",
     date: "February 20, 2026",
   },
   {
     icon: Users,
     title: "Company Driver",
-    description: "Join our team with competitive pay at 65 CPM, modern equipment, and a supportive work environment.",
-    benefits: ["65 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
+    description: "Join our team with competitive pay at 68 + 2 CPM, modern equipment, and a supportive work environment.",
+    benefits: ["68 + 2 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
     slug: "company-driver",
     date: "February 15, 2026",
   },
@@ -133,10 +133,10 @@ const Careers = () => {
     }),
     getJobPostingSchema({
       title: "Company Driver - CDL-A",
-      description: "Join XXII Century as a company driver. Starting at 65 CPM with automatic raises, full benefits, modern equipment, and weekly pay.",
+      description: "Join XXII Century as a company driver. Starting at 68 + 2 CPM with automatic raises, full benefits, modern equipment, and weekly pay.",
       employmentType: "FULL_TIME",
       minSalary: 65000,
-      maxSalary: 95000,
+      maxSalary: 120000,
     }),
   ], []);
 
@@ -211,7 +211,7 @@ const Careers = () => {
                 At XXII Century Inc., you'll be part of a dynamic team that's shaping the future of the transportation industry.
               </p>
               <p className="text-center lg:text-left text-muted-foreground leading-relaxed">
-                Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> offers 90% revenue share for independent truckers, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> provide stable employment with full benefits. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
+                Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> offers 80% revenue share for independent truckers, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> provide stable employment with full benefits. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
               </p>
               <div className="text-center lg:text-left mt-6">
                 <Button variant="heroOutline" size="lg" asChild>

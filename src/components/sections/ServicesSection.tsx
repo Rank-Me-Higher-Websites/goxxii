@@ -3,10 +3,9 @@ import { useRef, useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
-import { Truck, Snowflake, ChevronRight } from "lucide-react";
+import { Truck, ChevronRight } from "lucide-react";
 
 import dryVanTruck from "@/assets/dry-van-truck.jpg";
-import refrigeratedTruck from "@/assets/refrigerated-truck.jpg";
 
 const services = [
   {
@@ -21,22 +20,7 @@ const services = [
       "Full Truckload (FTL) & LTL options",
       "On-time delivery guarantee",
       "Fortune 500 freight partners",
-      "Dedicated lanes available",
-    ],
-  },
-  {
-    id: "refrigerated",
-    icon: Snowflake,
-    title: "Refrigerated Freight Shipping",
-    subtitle: "Temperature-Controlled Transport",
-    image: refrigeratedTruck,
-    description:
-      "We specialize in refrigerated freight shipping across North America. Our fleet of temperature-controlled trucks delivers fresh, frozen, chilled, and dry goods — including meats, produce, flowers, medical supplies, cosmetics, and other temperature-sensitive freight.",
-    features: [
-      "24/7, 365-day service",
-      "Line-Haul, OTR, Dedicated routes",
-      "Real-time temperature monitoring",
-      "Multi-Stop deliveries",
+      "Customer lanes available",
     ],
   },
 ];
@@ -109,7 +93,7 @@ export const ServicesSection = () => {
             Transportation Divisions
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto mb-4">
-            At XXII Century, we are a trusted trucking company offering a wide range of <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping services</Link> to meet diverse logistics needs. Our experienced team handles everything from standard dry goods to temperature-sensitive cargo.
+            At XXII Century, we are a trusted trucking company offering <Link to="/freight-shipping-services" className="text-primary hover:underline">dry van freight shipping services</Link> to meet diverse logistics needs. Our experienced team handles standard dry goods and full truckload shipments nationwide.
           </p>
           <p className="text-muted-foreground max-w-3xl mx-auto">
             Looking to haul for us? Explore our <Link to="/owner-operators" className="text-primary hover:underline">independent driver opportunities</Link> or <Link to="/company-drivers" className="text-primary hover:underline">CDL-A positions</Link> with competitive pay and consistent freight.
@@ -117,24 +101,26 @@ export const ServicesSection = () => {
         </motion.div>
 
         {/* Service Tabs */}
-        <div className="flex justify-center gap-2 sm:gap-4 mb-10 overflow-x-auto pb-2">
-          {services.map((service) => (
-            <button
-              key={service.id}
-              onClick={() => setActiveService(service.id)}
-              className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
-                activeService === service.id
-                  ? "bg-primary text-primary-foreground shadow-lg"
-                  : "bg-card text-muted-foreground hover:text-foreground border border-border"
-              }`}
-            >
-              <span className="flex items-center gap-2">
-                <service.icon className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="text-sm sm:text-base">{service.id === "dry-van" ? "Dry Van" : "Refrigerated"}</span>
-              </span>
-            </button>
-          ))}
-        </div>
+        {services.length > 1 && (
+          <div className="flex justify-center gap-2 sm:gap-4 mb-10 overflow-x-auto pb-2">
+            {services.map((service) => (
+              <button
+                key={service.id}
+                onClick={() => setActiveService(service.id)}
+                className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
+                  activeService === service.id
+                    ? "bg-primary text-primary-foreground shadow-lg"
+                    : "bg-card text-muted-foreground hover:text-foreground border border-border"
+                }`}
+              >
+                <span className="flex items-center gap-2">
+                  <service.icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <span className="text-sm sm:text-base">{service.title.split(' ')[0]}</span>
+                </span>
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Service Content */}
         <motion.div

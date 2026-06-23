@@ -12,7 +12,7 @@ interface SEOContentSectionProps {
 
 const keyPoints: Record<string, { icon: any; label: string }[]> = {
   home: [
-    { icon: DollarSign, label: "90% Revenue Share" },
+    { icon: DollarSign, label: "80% Revenue Share" },
     { icon: Cpu, label: "AI-Powered Dispatch" },
     { icon: Shield, label: "No Hidden Fees" },
     { icon: TrendingUp, label: "Fortune 500 Freight" },
@@ -20,13 +20,13 @@ const keyPoints: Record<string, { icon: any; label: string }[]> = {
     { icon: Star, label: "15+ Years Trusted" },
   ],
   ownerOperators: [
-    { icon: DollarSign, label: "90% Linehaul Pay" },
+    { icon: DollarSign, label: "80% Linehaul Pay" },
     { icon: Shield, label: "No Forced Dispatch" },
     { icon: Cpu, label: "AI Fuel Discounts" },
     { icon: Clock, label: "Weekly Settlements" },
   ],
   companyDrivers: [
-    { icon: DollarSign, label: "65 CPM Starting" },
+    { icon: DollarSign, label: "68 + 2 CPM" },
     { icon: Shield, label: "Full Benefits" },
     { icon: Truck, label: "Late-Model Equipment" },
     { icon: Users, label: "Home Weekly" },
@@ -53,7 +53,7 @@ const seoContent = {
   home: {
     heading: "Why Choose XXII Century for Your Trucking Career",
     paragraphs: [
-      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 15 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions with 90% linehaul pay or company driver roles offering 65 CPM with full benefits, our team is committed to your success on the road.",
+      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 15 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions with 80% linehaul pay or company driver roles offering 68 + 2 CPM with full benefits, our team is committed to your success on the road.",
       "Our technology-driven approach sets us apart from traditional carriers. AI-powered dispatch optimizes your routes for maximum earnings while minimizing empty miles. Real-time load matching ensures you're never left searching for freight, and our 24/7 support team handles logistics so you can focus on driving. We invest in tools that put more money in your pocket.",
       "From the moment you apply, we prioritize transparency and respect. No hidden fees, no surprise deductions—just honest partnerships that help you build a sustainable trucking career. Join hundreds of drivers who have found their home with a carrier that truly values their contribution to keeping America moving."
     ],
@@ -67,7 +67,7 @@ const seoContent = {
   ownerOperators: {
     heading: "Independent Trucking Excellence with XXII Century",
     paragraphs: [
-      "Owner operators choose XXII Century because we understand what it takes to run a <strong>successful independent trucking business</strong>. Our 90% linehaul revenue share means you keep more of every load, while our exclusive Fortune 500 contracts provide the steady freight volume you need to plan ahead and grow your operation without gambling on spot market rates.",
+      "Owner operators choose XXII Century because we understand what it takes to run a <strong>successful independent trucking business</strong>. Our 80% linehaul revenue share means you keep more of every load, while our exclusive Fortune 500 contracts provide the steady freight volume you need to plan ahead and grow your operation without gambling on spot market rates.",
       "Unlike carriers that nickel-and-dime you with hidden fees, we believe in complete transparency. No ELD charges, no dispatch fees, no forced dispatch—just straightforward partnerships that respect your autonomy as a business owner. Our AI-powered fuel network delivers industry-leading discounts, and weekly settlements mean your money arrives reliably every Friday.",
       "Based in the <strong>Chicago logistics hub</strong>, we offer strategic access to major shipping lanes across the Midwest and nationwide. Whether you prefer dedicated routes for predictable schedules or flexible OTR runs for maximum earning potential, our experienced dispatch team works with you to build a schedule that fits your lifestyle and income goals."
     ],
@@ -81,9 +81,9 @@ const seoContent = {
   companyDrivers: {
     heading: "Stable Trucking Careers with Full Support",
     paragraphs: [
-      "XXII Century offers <strong>CDL-A company driver positions</strong> designed for professionals who want consistent earnings without the overhead of truck ownership. Starting at 65 CPM with performance bonuses, our drivers earn $83,000–$95,000 annually while enjoying comprehensive health benefits, 401k matching, and paid time off that lets you recharge.",
+      "XXII Century offers <strong>CDL-A company driver positions</strong> designed for professionals who want consistent earnings without the overhead of truck ownership. Starting at 68 + 2 CPM with performance bonuses, our drivers earn $104,000–$120,000 annually while enjoying comprehensive health benefits, 401k matching, and paid time off that lets you recharge.",
       "Our modern fleet features late-model equipment with the latest safety technology, ensuring comfortable and efficient runs mile after mile. Automatic pay increases every 75,000 miles reward your loyalty and experience, while safety bonuses and fuel incentives put extra money in your pocket throughout the year. We recognize hard work.",
-      "We understand that <strong>home time matters</strong>. That's why we offer flexible scheduling options, dedicated lanes, and regional routes that keep you closer to family. Our dispatch team respects your preferences and works to balance your earning potential with your personal life—because trucking shouldn't mean sacrificing everything else."
+      "We understand that <strong>home time matters</strong>. That's why we offer flexible scheduling options, customer lanes, and regional routes that keep you closer to family. Our dispatch team respects your preferences and works to balance your earning potential with your personal life—because trucking shouldn't mean sacrificing everything else."
     ],
     links: [
       { text: "Submit your driver application", href: "https://intelliapp.driverapponline.com/c/goxxii?r=Eve", external: true },

@@ -7,7 +7,7 @@ import truck1 from "@/assets/oo-truck-cat.jpg";
 import truck2 from "@/assets/truck-2.png";
 
 const benefits = [
-  { icon: DollarSign, text: "90% Linehaul Pay", highlight: true },
+  { icon: DollarSign, text: "80% Linehaul Pay", highlight: true },
   { icon: Fuel, text: "AI Fuel Savings", highlight: true },
   { icon: Clock, text: "Weekly Settlements", highlight: true },
   { icon: Headphones, text: "24/7 Live Support", highlight: true },
@@ -57,7 +57,7 @@ export const OwnerOperatorSection = () => {
               Keep More of What You Earn
             </h2>
             <p className="text-sm text-muted-foreground mb-5">
-              Industry-leading 90% linehaul pay with premium freight from Fortune 500 shippers. Looking for <Link to="/company-drivers" className="text-muted-foreground hover:text-primary underline underline-offset-2">company driver positions</Link> instead? We have those too.
+              Industry-leading 80% linehaul pay with premium freight from Fortune 500 shippers. Looking for <Link to="/company-drivers" className="text-muted-foreground hover:text-primary underline underline-offset-2">company driver positions</Link> instead? We have those too.
             </p>
 
             {/* Benefits Grid */}
