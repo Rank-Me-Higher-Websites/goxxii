@@ -409,7 +409,7 @@ export const freightServicesFaqsPlain = [
 export const aboutFaqsPlain = [
   { question: "When was XXII Century founded?", answer: "XXII Century was founded in 2009 in the Chicago, Illinois area. We've grown from a small carrier to a 500+ driver operation serving Fortune 500 companies nationwide." },
   { question: "Where is XXII Century headquartered?", answer: "Our headquarters are at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517. We serve drivers and shippers across all 48 states and Canada." },
-  { question: "What makes XXII Century different from other trucking companies?", answer: "We're a driver-first company offering AI-powered tools, competitive pay (80% linehaul for owner operators, 68+ CPM for company drivers), Fortune 500 freight, and 24/7 dispatch support." },
+  { question: "What makes XXII Century different from other trucking companies?", answer: "We're a driver-first company offering AI-powered tools, competitive pay (80% linehaul for owner operators, 68 + 2 CPM for company drivers), Fortune 500 freight, and 24/7 dispatch support." },
   { question: "How many drivers does XXII Century employ?", answer: "XXII Century has over 500 active drivers including owner operators and company drivers. Our team continues to grow as we expand our freight network." },
   { question: "Does XXII Century hire owner operators and company drivers?", answer: "Yes. We actively hire both independent owner operators and full-time company drivers. Visit our careers page to view open positions and apply online." },
 ];
