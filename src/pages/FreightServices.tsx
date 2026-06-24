@@ -376,7 +376,7 @@ const FreightServices = () => {
                 </p>
               </div>
               <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
-                <a href="mailto:hr@goxxii.com" className="flex items-center gap-2">
+                <a href="mailto:milos@goxxii.com" className="flex items-center gap-2">
                   <ChevronRight className="w-5 h-5" />
                   Work With Us
                 </a>

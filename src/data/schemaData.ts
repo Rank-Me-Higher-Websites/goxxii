@@ -7,7 +7,7 @@ const COMPANY = {
   foundingDate: "2009",
   phone: "+1-630-914-6037",
   customerServicePhone: "+1-224-240-6441",
-  email: "hr@goxxii.com",
+  email: "milos@goxxii.com",
   address: {
     "@type": "PostalAddress" as const,
     streetAddress: "7501 Lemont Rd Ste 200",
@@ -390,7 +390,7 @@ export const careersFaqsPlain = [
 ];
 
 export const contactFaqsPlain = [
-  { question: "What is the best way to reach XXII Century recruiting?", answer: "Call us at 630-914-6037 or email hr@goxxii.com. You can also apply directly through our online application." },
+  { question: "What is the best way to reach XXII Century recruiting?", answer: "Call us at 630-914-6037 or email milos@goxxii.com. You can also apply directly through our online application." },
   { question: "What are XXII Century's office hours?", answer: "Our dispatch operates 24/7. The recruiting and administrative office is available during standard business hours, Monday through Friday." },
   { question: "Where is XXII Century located?", answer: "Our main office is in Chicago, Illinois. We serve drivers and shippers across all 48 states and Canada." },
   { question: "How quickly does the recruiting team respond?", answer: "We typically respond within 24 hours of receiving your application or inquiry." },
@@ -401,7 +401,7 @@ export const contactFaqsPlain = [
 export const freightServicesFaqsPlain = [
   { question: "What freight services does XXII Century offer?", answer: "We provide dry van freight shipping across the continental U.S. and Canada. Our asset-based fleet handles FTL shipments with real-time GPS tracking and dedicated account management." },
   { question: "How does XXII Century ensure on-time delivery?", answer: "We maintain a 97% on-time delivery rate through AI-powered route optimization, real-time tracking, proactive dispatch support, and a modern fleet of well-maintained trucks." },
-  { question: "Can I get a freight shipping quote?", answer: "Yes. Contact our logistics team at 630-914-6037 or email hr@goxxii.com for a free, no-obligation freight quote. We respond within 24 hours." },
+  { question: "Can I get a freight shipping quote?", answer: "Yes. Contact our logistics team at 630-914-6037 or email milos@goxxii.com for a free, no-obligation freight quote. We respond within 24 hours." },
   { question: "Does XXII Century work with freight brokers?", answer: "Yes. We partner with freight brokers and shippers nationwide. Our asset-based fleet provides reliable capacity with competitive rates and full shipment visibility." },
   { question: "What areas does XXII Century serve for freight shipping?", answer: "We serve all 48 contiguous states and Canada. Our Chicago headquarters coordinates nationwide freight lanes with both dedicated and spot capacity options." },
 ];
@@ -420,7 +420,7 @@ export const reviewsFaqsPlain = [
   { question: "Are XXII Century reviews legitimate?", answer: "Yes. Reviews are pulled from public sources including Google, Trustindex, and direct driver feedback collected through the company's retention surveys. The 4.8/5 aggregate covers 127+ verified driver reviews." },
   { question: "Where is XXII Century Inc located?", answer: "XXII Century Inc is headquartered at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517 - in the Chicago metro area. The company operates nationwide and into Canada. Recruiting: 630-914-6037." },
   { question: "What do drivers complain about in XXII Century reviews?", answer: "The most common constructive feedback in reviews centers on long onboarding windows during peak hiring seasons and occasional load gaps in slow freight weeks - both of which the company addresses with customer lanes and a referral-driven driver pipeline." },
-  { question: "How do I apply to XXII Century Trucking after reading reviews?", answer: "Apply online at goxxii.com - the application takes about 5 minutes. Recruiting typically responds within 24 hours by phone (630-914-6037) or email (hr@goxxii.com). Owner operators, company drivers, and fleet owners all use the same application form." },
+  { question: "How do I apply to XXII Century Trucking after reading reviews?", answer: "Apply online at goxxii.com - the application takes about 5 minutes. Recruiting typically responds within 24 hours by phone (630-914-6037) or email (milos@goxxii.com). Owner operators, company drivers, and fleet owners all use the same application form." },
 ];
 
 export const blogFaqsPlain = [

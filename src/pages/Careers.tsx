@@ -396,8 +396,8 @@ const Careers = () => {
               <a href="tel:+16309146037" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
                 <Phone className="w-4 h-4" /> 630-914-6037
               </a>
-              <a href="mailto:hr@goxxii.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                <Mail className="w-4 h-4" /> hr@goxxii.com
+              <a href="mailto:milos@goxxii.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="w-4 h-4" /> milos@goxxii.com
               </a>
             </div>
           </motion.div>

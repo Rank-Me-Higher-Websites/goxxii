@@ -17,7 +17,6 @@ const features = [
 
 const stats = [
   { value: "$1000", label: "Referral Bonus" },
-  { value: "$100k+", label: "Average Annual Income" },
   { value: "$2,200+", label: "Average Weekly" },
   { value: "68 + 2", label: "CPM" },
 ];
@@ -30,8 +29,8 @@ const stats2 = [
 ];
 
 const benefits = [
-  { icon: DollarSign, title: "Paid Detention", desc: "Company-matched plan – helping you prepare for retirement." },
-  { icon: Award, title: "68 + 2 CPM", desc: "Earn $104,000–$120,000 annually with XXII Century." },
+  { icon: DollarSign, title: "Paid Detention", desc: "Company-matched plan - helping you prepare for retirement." },
+  { icon: Award, title: "68 + 2 CPM", desc: "Earn $104,000-$120,000 annually with XXII Century." },
   { icon: Gift, title: "Driver Bonuses", desc: "Enjoy performance bonuses, monthly rewards, photo contests, and year-round giveaways!" },
   { icon: Heart, title: "Paid Layover", desc: "Awesome health plans to choose from. Includes dental and vision too." },
   { icon: Users, title: "Referral Bonus", desc: "On-site maintenance available-relax at HQ or head home while we service your truck." },
@@ -140,7 +139,7 @@ export const CompanyDriverHeroSection = () => {
               </h3>
               
               <p className="text-muted-foreground mb-8">
-                Join XXII Century and experience a carrier that puts CDL drivers first-on and off the road. Whether you're based near <strong className="text-foreground">Lemont, IL</strong> or hauling across the country, we offer <strong className="text-foreground">Class A company drivers</strong> competitive pay, modern equipment, and a reliable support team. From day one, we're committed to your long-term success, with consistent freight and the respect you deserve.
+                Join XXII Century and experience a carrier that puts CDL drivers first. We offer <strong className="text-foreground">Class A company drivers</strong> competitive pay, modern equipment, and a reliable support team committed to your long-term success, with consistent freight and the respect you deserve.
               </p>
 
               {/* Stats Grid */}
@@ -193,10 +192,10 @@ export const CompanyDriverHeroSection = () => {
               Drive with XXII and get the consistency you deserve! With customer lanes and flexible home time options, your schedule works for you. Enjoy paid vacations to recharge, and earn big with safety and performance bonuses recognizing your hard work.
             </p>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Ready to take the wheel? Or would you rather explore <Link to="/owner-operators" className="text-primary hover:underline">owner operator programs</Link> with 80% revenue share? Either way, XXII Century has a <Link to="/careers" className="text-primary hover:underline">trucking career path</Link> that fits your goals.
+              Ready to take the wheel? or do you have your own truck and you would like to explore <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link>?
             </p>
             <Button variant="hero" size="lg" asChild>
-              <a href="mailto:hr@goxxii.com">
+              <a href="mailto:milos@goxxii.com">
                 Email Us
               </a>
             </Button>

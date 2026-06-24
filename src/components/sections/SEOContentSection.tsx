@@ -67,8 +67,8 @@ const seoContent = {
   ownerOperators: {
     heading: "Independent Trucking Excellence with XXII Century",
     paragraphs: [
-      "Owner operators choose XXII Century because we understand what it takes to run a <strong>successful independent trucking business</strong>. Our 80% linehaul revenue share means you keep more of every load, while our exclusive Fortune 500 contracts provide the steady freight volume you need to plan ahead and grow your operation without gambling on spot market rates.",
       "Unlike carriers that nickel-and-dime you with hidden fees, we believe in complete transparency. No ELD charges, no dispatch fees, no forced dispatch-just straightforward partnerships that respect your autonomy as a business owner. Our AI-powered fuel network delivers industry-leading discounts, and weekly settlements mean your money arrives reliably every Friday.",
+      "Owner operators choose XXII Century because we understand what it takes to run a <strong>successful independent trucking business</strong>. Our 80% linehaul revenue share means you keep more of every load, while our exclusive Fortune 500 contracts provide the steady freight volume you need to plan ahead and grow your operation without gambling on spot market rates.",
       "Based in the <strong>Chicago logistics hub</strong>, we offer strategic access to major shipping lanes across the Midwest and nationwide. Whether you prefer dedicated routes for predictable schedules or flexible OTR runs for maximum earning potential, our experienced dispatch team works with you to build a schedule that fits your lifestyle and income goals."
     ],
     links: [

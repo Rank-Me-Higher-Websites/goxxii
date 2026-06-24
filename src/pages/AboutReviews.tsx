@@ -150,7 +150,7 @@ const AboutReviews = () => {
           <p className="text-muted-foreground mb-3">
             Phone: <a href="tel:+16309146037" className="text-accent hover:underline">630-914-6037</a> ·
             Recruiting:{" "}
-            <a href="mailto:hr@goxxii.com" className="text-accent hover:underline">hr@goxxii.com</a>
+            <a href="mailto:milos@goxxii.com" className="text-accent hover:underline">milos@goxxii.com</a>
           </p>
           <p className="text-muted-foreground">
             See current openings on the{" "}
