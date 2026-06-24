@@ -72,7 +72,7 @@ const seoContent = {
       "Based in the <strong>Chicago logistics hub</strong>, we offer strategic access to major shipping lanes across the Midwest and nationwide. Whether you prefer dedicated routes for predictable schedules or flexible OTR runs for maximum earning potential, our experienced dispatch team works with you to build a schedule that fits your lifestyle and income goals."
     ],
     links: [
-      { text: "Apply for independent driver positions", href: "https://intelliapp.driverapponline.com/c/goxxii?r=Eve", external: true },
+      { text: "Apply for independent driver positions", href: "https://intelliapp.driverapponline.com/c/goxxii?r=bodan", external: true },
       { text: "Compare company driver opportunities", href: "/company-drivers" },
       { text: "Read driver success stories", href: "/blog" },
       { text: "Contact our recruiting team", href: "/contact" },
@@ -86,7 +86,7 @@ const seoContent = {
       "We understand that <strong>home time matters</strong>. That's why we offer flexible scheduling options, customer lanes, and regional routes that keep you closer to family. Our dispatch team respects your preferences and works to balance your earning potential with your personal life-because trucking shouldn't mean sacrificing everything else."
     ],
     links: [
-      { text: "Submit your driver application", href: "https://intelliapp.driverapponline.com/c/goxxii?r=Eve", external: true },
+      { text: "Submit your driver application", href: "https://intelliapp.driverapponline.com/c/goxxii?r=bodan", external: true },
       { text: "Explore owner operator programs", href: "/owner-operators" },
       { text: "Meet our leadership team", href: "/about" },
       { text: "Browse available positions", href: "/careers" },

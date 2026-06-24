@@ -443,7 +443,7 @@ const FreightServices = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="hero" size="lg" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

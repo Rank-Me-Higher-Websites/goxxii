@@ -33,7 +33,7 @@ const stats = [
   { value: "24/7", label: "Dispatch Support" },
 ];
 
-const INTELLIAPP_URL = "https://intelliapp.driverapponline.com/c/goxxii?r=Eve";
+const INTELLIAPP_URL = "https://intelliapp.driverapponline.com/c/goxxii?r=bodan";
 
 const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: string; desc: string }[] }) => {
   const [current, setCurrent] = useState(0);

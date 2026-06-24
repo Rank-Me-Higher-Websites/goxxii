@@ -19,7 +19,7 @@ export const QuickCTABanner = ({ variant = "default" }: QuickCTABannerProps) => 
             <div className="flex flex-wrap gap-3 justify-center">
               <Button variant="hero" size="sm" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2"
@@ -62,7 +62,7 @@ export const QuickCTABanner = ({ variant = "default" }: QuickCTABannerProps) => 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
               <a
-                href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"

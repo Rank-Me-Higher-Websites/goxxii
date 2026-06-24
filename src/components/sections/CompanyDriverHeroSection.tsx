@@ -70,7 +70,7 @@ export const CompanyDriverHeroSection = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="hero" size="lg" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
@@ -271,7 +271,7 @@ export const CompanyDriverHeroSection = () => {
           <div className="text-center mt-10">
             <Button variant="hero" size="lg" asChild>
               <a
-                href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

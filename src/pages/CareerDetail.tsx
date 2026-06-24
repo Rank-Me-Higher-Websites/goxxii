@@ -300,7 +300,7 @@ const CareerDetail = () => {
 
                   <Button variant="hero" className="w-full mb-4" size="lg" asChild>
                     <a
-                      href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                      href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Apply now for ${job.title} position`}
@@ -368,7 +368,7 @@ const CareerDetail = () => {
             </p>
             <Button variant="hero" size="lg" asChild>
               <a
-                href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                 target="_blank"
                 rel="noopener noreferrer"
               >

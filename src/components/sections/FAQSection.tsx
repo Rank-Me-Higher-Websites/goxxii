@@ -32,7 +32,7 @@ const homeFaqs: FAQ[] = [
     question: "How do I apply to drive with XXII Century?",
     answer: (
       <div className="space-y-3">
-        <p>Apply online through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">driver application</a>. Our recruiting team typically responds within 24 hours. You can also reach us via the <Link to="/contact" className="text-primary hover:underline">contact page</Link>.</p>
+        <p>Apply online through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">driver application</a>. Our recruiting team typically responds within 24 hours. You can also reach us via the <Link to="/contact" className="text-primary hover:underline">contact page</Link>.</p>
       </div>
     ),
   },
@@ -191,7 +191,7 @@ const careersFaqs: FAQ[] = [
       <div className="space-y-3">
         <p>Our process is straightforward:</p>
         <ol className="list-decimal pl-5 space-y-1">
-          <li>Submit your <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a></li>
+          <li>Submit your <a href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a></li>
           <li>Phone screening with our recruiting team</li>
           <li>Background and MVR verification</li>
           <li>Orientation and dispatch - many drivers start within days</li>
@@ -217,7 +217,7 @@ const contactFaqs: FAQ[] = [
   {
     question: "What is the best way to reach XXII Century recruiting?",
     answer: (
-      <p>Call us at <a href="tel:+16309146037" className="text-primary hover:underline font-semibold">630-914-6037</a> or email <a href="mailto:hr@goxxii.com" className="text-primary hover:underline">hr@goxxii.com</a>. You can also apply directly through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a>.</p>
+      <p>Call us at <a href="tel:+16309146037" className="text-primary hover:underline font-semibold">630-914-6037</a> or email <a href="mailto:hr@goxxii.com" className="text-primary hover:underline">hr@goxxii.com</a>. You can also apply directly through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a>.</p>
     ),
   },
   {

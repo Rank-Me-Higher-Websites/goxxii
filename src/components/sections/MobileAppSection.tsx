@@ -29,7 +29,7 @@ export const MobileAppSection = () => {
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
               <Button variant="hero" size="default" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

@@ -137,7 +137,7 @@ export const CareerSection = () => {
         >
           <Button variant="hero" size="lg" asChild>
             <a
-              href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+              href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2"

@@ -40,7 +40,7 @@ export const FleetJoinSection = () => {
             <div className="flex justify-center lg:justify-start mt-10">
               <Button variant="hero" size="lg" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

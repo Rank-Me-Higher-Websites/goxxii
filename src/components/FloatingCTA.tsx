@@ -62,7 +62,7 @@ export const FloatingCTA = () => {
             <div className="flex gap-3">
               <Button variant="hero" className="flex-1 pulse-glow whitespace-nowrap" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2"

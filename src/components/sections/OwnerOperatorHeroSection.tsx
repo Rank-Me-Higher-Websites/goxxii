@@ -1,7 +1,7 @@
-﻿import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronRight, ChevronLeft, DollarSign, TrendingDown, Clock, Route, Star, Phone } from "lucide-react";
+import { ChevronRight, ChevronLeft, DollarSign, TrendingDown, Clock, Route, Phone, Wrench, AlertTriangle, Shield, MapPin, Package, Home, Cpu, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import driverBlue from "@/assets/driver-truck-blue.jpg";
 import heroBackground from "@/assets/heroes/truck-green.png";
@@ -11,12 +11,17 @@ import car3 from "@/assets/gallery/car-3.png";
 import car4 from "@/assets/gallery/car-4.png";
 import car5 from "@/assets/gallery/car-5.png";
 
-const struggles = [
-  { emoji: "💸", title: "Spot Market GAMBLING", desc: "Fighting for $2/mile scraps while brokers profit more from your work than you do" },
-  { emoji: "🔧", title: "Equipment WEARING", desc: "Long hauls destroying your truck with high maintenance costs eating your profits" },
-  { emoji: "📉", title: "Income UNCERTAINTY", desc: "Not knowing if you'll have freight next week to pay your bills and support your family" },
-  { emoji: "⏰", title: "Payment DELAYS", desc: "Wondering IF and WHEN you'll get paid for loads already delivered weeks ago" },
-  { emoji: "🛣️", title: "Empty Miles NIGHTMARES", desc: "Driving hundreds of unpaid miles because the \"good freight\" is always somewhere else" },
+type IconType = React.ElementType;
+
+interface StruggleItem { Icon: IconType; title: string; desc: string; }
+interface AdvantageItem { Icon: IconType; title: string; desc: string; }
+
+const struggles: StruggleItem[] = [
+  { Icon: TrendingDown, title: "Spot Market GAMBLING", desc: "Fighting for $2/mile scraps while brokers profit more from your work than you do" },
+  { Icon: Wrench, title: "Equipment WEARING", desc: "Long hauls destroying your truck with high maintenance costs eating your profits" },
+  { Icon: AlertTriangle, title: "Income UNCERTAINTY", desc: "Not knowing if you'll have freight next week to pay your bills and support your family" },
+  { Icon: Clock, title: "Payment DELAYS", desc: "Wondering IF and WHEN you'll get paid for loads already delivered weeks ago" },
+  { Icon: Route, title: "Empty Miles NIGHTMARES", desc: "Driving hundreds of unpaid miles because the \"good freight\" is always somewhere else" },
 ];
 
 const benefits = [
@@ -31,16 +36,16 @@ const benefits = [
   "Earn $1,000 per qualified driver referred",
 ];
 
-const advantages = [
-  { icon: "🚛", title: "Guaranteed Freight", desc: "97% dedicated freight means no more hunting loads on broker boards or wondering where your next paycheck comes from." },
-  { icon: "🛡️", title: "Premium Rate Protection", desc: "You'll have the security of rates with long-term contracts that don't fluctuate when markets crash or fuel prices spike." },
-  { icon: "📍", title: "Shorter High-Value Routes", desc: "Make the same money driving 400-600 miles instead of 1,000+ mile runs that destroy your truck and your life." },
-  { icon: "💰", title: "80% of Gross Revenue", desc: "Keep 80% of every load's profit while we handle freight sourcing and logistics – you maintain control of your earnings" },
-  { icon: "🔧", title: "In-House Maintenance", desc: "Get your truck fixed while you're home instead of breaking down on the road with our in-house trusted service stations." },
-  { icon: "🏠", title: "Guaranteed Home Time", desc: "Your home time plans won't fall through – we understand family comes first and plan routes accordingly" },
-  { icon: "📞", title: "24/7 Dispatch Support", desc: "Professional dispatch team handling logistics, routing, and customer service so you focus on driving and earning." },
-  { icon: "🤖", title: "AI-Powered Management", desc: "Smart fuel management, detention tracking, and route optimization that maximizes your efficiency and profits." },
-  { icon: "💵", title: "Friday Payment Guarantee", desc: "Your money hits your account every Friday morning – no delays, no excuses, no stress about when you'll get paid." },
+const advantages: AdvantageItem[] = [
+  { Icon: Package, title: "Guaranteed Freight", desc: "97% dedicated freight means no more hunting loads on broker boards or wondering where your next paycheck comes from." },
+  { Icon: Cpu, title: "AI-Powered Management", desc: "Smart fuel management, detention tracking, and route optimization that maximizes your efficiency and profits." },
+  { Icon: Shield, title: "Premium Rate Protection", desc: "You'll have the security of rates with long-term contracts that don't fluctuate when markets crash or fuel prices spike." },
+  { Icon: MapPin, title: "Shorter High-Value Routes", desc: "Make the same money driving 400-600 miles instead of 1,000+ mile runs that destroy your truck and your life." },
+  { Icon: DollarSign, title: "80% of Gross Revenue", desc: "Keep 80% of every load's profit while we handle freight sourcing and logistics - you maintain control of your earnings" },
+  { Icon: Wrench, title: "In-House Maintenance", desc: "Get your truck fixed while you're home instead of breaking down on the road with our in-house trusted service stations." },
+  { Icon: Home, title: "Guaranteed Home Time", desc: "Your home time plans won't fall through - we understand family comes first and plan routes accordingly" },
+  { Icon: Phone, title: "24/7 Dispatch Support", desc: "Professional dispatch team handling logistics, routing, and customer service so you focus on driving and earning." },
+  { Icon: Wallet, title: "Friday Payment Guarantee", desc: "Your money hits your account every Friday morning - no delays, no excuses, no stress about when you'll get paid." },
 ];
 
 const galleryImages = [car1, car2, car3, car5];
@@ -52,7 +57,7 @@ const stats = [
   { value: "24/7", label: "Dispatch Support" },
 ];
 
-const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: string; desc: string }[] }) => {
+const StruggleCarousel = ({ struggles }: { struggles: StruggleItem[] }) => {
   const [current, setCurrent] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -72,7 +77,6 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
     return () => clearInterval(timer);
   }, [maxIndex]);
 
-  // Clamp current if maxIndex changes
   useEffect(() => {
     setCurrent((prev) => Math.min(prev, maxIndex));
   }, [maxIndex]);
@@ -88,7 +92,9 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
           {struggles.map((item, index) => (
             <div key={index} className="w-full flex-shrink-0 px-8">
               <div className="glass p-5 rounded-xl aspect-square flex flex-col justify-center items-center text-center max-w-[260px] mx-auto">
-                <div className="text-3xl mb-3">{item.emoji}</div>
+                <div className="w-10 h-10 mb-3 flex items-center justify-center rounded-lg bg-primary/10">
+                  <item.Icon className="w-5 h-5 text-primary" />
+                </div>
                 <h3 className="font-bold text-base mb-1.5">{item.title}</h3>
                 <p className="text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
               </div>
@@ -109,7 +115,9 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
               className="glass p-5 rounded-xl flex-shrink-0 flex flex-col justify-center"
               style={{ width: `calc((100% - 48px) / 3)`, maxHeight: '220px' }}
             >
-              <div className="text-2xl mb-2">{item.emoji}</div>
+              <div className="w-10 h-10 mb-2 flex items-center justify-center rounded-lg bg-primary/10">
+                <item.Icon className="w-5 h-5 text-primary" />
+              </div>
               <h3 className="font-bold text-base mb-1.5">{item.title}</h3>
               <p className="text-muted-foreground text-xs leading-relaxed">{item.desc}</p>
             </div>
@@ -145,7 +153,7 @@ const StruggleCarousel = ({ struggles }: { struggles: { emoji: string; title: st
   );
 };
 
-const AdvantagesCarousel = ({ advantages }: { advantages: { icon: string; title: string; desc: string }[] }) => {
+const AdvantagesCarousel = ({ advantages }: { advantages: AdvantageItem[] }) => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -165,7 +173,9 @@ const AdvantagesCarousel = ({ advantages }: { advantages: { icon: string; title:
           {advantages.map((adv, index) => (
             <div key={index} className="w-full flex-shrink-0 px-4">
               <div className="glass p-6 rounded-xl">
-                <div className="text-3xl mb-3">{adv.icon}</div>
+                <div className="w-10 h-10 mb-3 flex items-center justify-center rounded-lg bg-primary/10">
+                  <adv.Icon className="w-5 h-5 text-primary" />
+                </div>
                 <h3 className="font-bold text-lg mb-2">{adv.title}</h3>
                 <p className="text-muted-foreground text-sm">{adv.desc}</p>
               </div>
@@ -255,7 +265,7 @@ export const OwnerOperatorHeroSection = () => {
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-background">
         <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${heroBackground})` }} />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-        
+
         <div className="container-custom relative z-10 pt-24 pb-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -282,7 +292,7 @@ export const OwnerOperatorHeroSection = () => {
 
             <Button variant="hero" size="lg" asChild>
               <a
-                href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -377,7 +387,7 @@ export const OwnerOperatorHeroSection = () => {
               <div className="flex flex-col items-center lg:items-start">
                 <Button variant="hero" size="lg" asChild>
                   <a
-                    href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                    href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
@@ -426,7 +436,9 @@ export const OwnerOperatorHeroSection = () => {
                 transition={{ delay: index * 0.05 }}
                 className="glass p-6 rounded-xl hover:border-primary/50 transition-colors"
               >
-                <div className="text-3xl mb-4">{adv.icon}</div>
+                <div className="w-10 h-10 mb-4 flex items-center justify-center rounded-lg bg-primary/10">
+                  <adv.Icon className="w-5 h-5 text-primary" />
+                </div>
                 <h3 className="font-bold text-lg mb-2">{adv.title}</h3>
                 <p className="text-muted-foreground text-sm">{adv.desc}</p>
               </motion.div>
@@ -436,7 +448,7 @@ export const OwnerOperatorHeroSection = () => {
           <div className="text-center mt-10">
             <Button variant="hero" size="lg" asChild>
               <a
-                href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -492,7 +504,7 @@ export const OwnerOperatorHeroSection = () => {
               While other companies leave drivers to fight for $2/mile scraps, we've spent 16+ years building relationships with major shippers who pay premium rates for reliable service.
             </p>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Curious how we compare to <Link to="/company-drivers" className="text-primary hover:underline">company driver opportunities</Link>? Or want to learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link>? Explore what makes XXII Century different from the carriers that treat drivers like numbers.
+              Explore what makes XXII Century different from the carriers that treat drivers like numbers.
             </p>
           </div>
         </div>

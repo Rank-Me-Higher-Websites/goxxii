@@ -184,7 +184,7 @@ const Contact = () => {
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -333,7 +333,7 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="hero" size="lg" asChild>
                   <a
-                    href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                    href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

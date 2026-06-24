@@ -14,7 +14,7 @@ const footerLinks = {
     { label: "Owner Operators", href: "/owner-operators" },
     { label: "Company Drivers", href: "/company-drivers" },
     { label: "Fleet Program", href: "/fleet-program" },
-    { label: "Apply Now", href: "https://intelliapp.driverapponline.com/c/goxxii?r=Eve" },
+    { label: "Apply Now", href: "https://intelliapp.driverapponline.com/c/goxxii?r=bodan" },
   ],
   resources: [
     { label: "Freight Services", href: "/freight-shipping-services" },
@@ -51,7 +51,7 @@ export const Footer = ({ onApplyClick }: FooterProps) => {
               ) : (
                 <Button variant="hero" size="lg" asChild>
                   <a
-                    href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                    href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"

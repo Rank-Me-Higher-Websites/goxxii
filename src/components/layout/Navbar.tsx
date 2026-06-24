@@ -206,7 +206,7 @@ export const Navbar = () => {
                       {/* Dropdown CTA */}
                       <div className="border-t border-border/40 mt-1 pt-1 px-1 pb-0.5">
                         <a
-                          href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                          href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider text-primary hover:bg-primary/10 transition-colors duration-200"
@@ -278,7 +278,7 @@ export const Navbar = () => {
 
             <Button variant="hero" size="default" className="whitespace-nowrap text-xs h-9" asChild>
               <a
-                href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -475,7 +475,7 @@ export const Navbar = () => {
               >
                 <Button variant="hero" size="lg" className="w-full" asChild>
                   <a
-                    href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                    href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

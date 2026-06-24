@@ -99,7 +99,7 @@ export const OwnerOperatorSection = () => {
             <div className="flex flex-wrap justify-center lg:justify-start gap-3">
               <Button variant="hero" size="default" className="group" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

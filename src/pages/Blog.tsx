@@ -281,7 +281,7 @@ const Blog = () => {
             <div className="hidden md:flex flex-wrap gap-4 justify-center mb-8">
               <Button variant="hero" size="lg" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -459,7 +459,7 @@ const Blog = () => {
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
                 <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve"
+                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
