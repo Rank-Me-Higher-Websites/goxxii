@@ -30,7 +30,7 @@ export const AboutHeroSection = () => {
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
             We work with drivers and carriers to deliver reliable trucking and
-            logistics services — built for performance, flexibility, and growth.
+            logistics services - built for performance, flexibility, and growth.
           </p>
           <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-8">
             Since 2009, XXII Century has connected professional drivers with premium freight opportunities. Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> with 80% revenue share, or discover <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> starting at 68 + 2 CPM with full benefits.

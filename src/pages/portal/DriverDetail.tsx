@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+﻿import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import {
@@ -28,14 +28,14 @@ const valueLabels: Record<string, string> = {
   few_days: "Took a few days",
   too_long: "Took too long",
   no_issues: "Haven't needed any",
-  great: "Great — We work well together",
-  strained: "Strained — Some tension",
+  great: "Great - We work well together",
+  strained: "Strained - Some tension",
   yes: "Yes",
   no: "No",
 };
 
 function formatValue(value: any): string {
-  if (value === null || value === undefined || value === "") return "—";
+  if (value === null || value === undefined || value === "") return "-";
   if (typeof value === "boolean") return value ? "Yes" : "No";
   if (typeof value === "number") return String(value);
   return valueLabels[value] || String(value);
@@ -204,7 +204,7 @@ export default function DriverDetail() {
                       <div className="w-6 h-6 rounded-full border-2 border-border" />
                     )}
                     <div className="text-left">
-                      <div className={`text-sm font-medium ${done ? c.text : "text-foreground"}`}>{stage.label} — {stage.sublabel}</div>
+                      <div className={`text-sm font-medium ${done ? c.text : "text-foreground"}`}>{stage.label} - {stage.sublabel}</div>
                       {done && checkIn?.completedAt && (
                         <div className="text-[10px] text-muted-foreground mt-0.5">
                           Completed {new Date(checkIn.completedAt).toLocaleDateString()}

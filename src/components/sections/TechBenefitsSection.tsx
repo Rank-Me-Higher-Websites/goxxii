@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Cpu, Clock, Globe, Percent, Gift } from "lucide-react";
 
@@ -34,7 +34,7 @@ export const TechBenefitsSection = () => {
             Built-In <span className="text-gradient">Tech &amp; Benefits</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mt-4 text-sm sm:text-base">
-            Everything you need to run leaner and earn more — engineered right into the XXII Century platform.
+            Everything you need to run leaner and earn more - engineered right into the XXII Century platform.
           </p>
         </motion.div>
 

@@ -13,7 +13,7 @@ import {
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Phone } from "lucide-react";
+import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Phone, Package } from "lucide-react";
 import { Link } from "react-router-dom";
 import freightTruck from "@/assets/heroes/truck-green.png";
 import heroBackground from "@/assets/heroes/truck-green-closeup.jpg";
@@ -82,6 +82,11 @@ const fleetFeatures = [
     icon: Clock,
     title: "24/7 Dispatch Support",
     description: "Round-the-clock dispatch team ensures drivers and loads stay on schedule.",
+  },
+  {
+    icon: Package,
+    title: "Customer Lanes & Drop & Hook",
+    description: "Dedicated customer lanes with 70-80% drop & hook freight - no-touch loads, less wait time, more miles.",
   },
 ];
 
@@ -269,10 +274,10 @@ const FreightServices = () => {
           >
             <div className="order-2 lg:order-1 space-y-4 text-center lg:text-left">
               <p className="text-muted-foreground leading-relaxed">
-                Experience fast, reliable, and secure <strong className="text-foreground">freight shipping services</strong> with XXII Century Inc. We provide nationwide coverage, competitive rates, and tailored solutions to fit your business needs. From LTL to full truckload and expedited freight, our expert team ensures your shipments arrive on time, every time.
+                Experience fast, reliable, and secure <strong className="text-foreground">freight shipping services</strong> with XXII Century Inc. We specialize in <strong className="text-foreground">dry van customer freight</strong> with nationwide coverage, competitive rates, and tailored solutions to fit your business needs. Our expert team ensures your shipments arrive on time, every time.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Get transparent quotes, real-time tracking, and exceptional customer support—ship with confidence today! Looking to haul freight with us? Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator trucking jobs</Link> or <Link to="/company-drivers" className="text-primary hover:underline">CDL-A company driver positions</Link> with competitive pay.
+                We run <strong className="text-foreground">70-80% drop & hook freight</strong> - no-touch loads on established customer lanes. Less waiting at docks means more miles and more money. Get transparent quotes, real-time tracking, and exceptional support. Looking to haul freight with us? Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator trucking jobs</Link> or <Link to="/company-drivers" className="text-primary hover:underline">CDL-A company driver positions</Link>.
               </p>
             </div>
             <div className="order-1 lg:order-2">
@@ -301,10 +306,10 @@ const FreightServices = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  XXII Century operates a modern, asset-based fleet built for reliability and performance. With our own trucks, trailers, and professional drivers, we maintain full control over every shipment—delivering consistent service quality that third-party solutions simply can't match.
+                  XXII Century operates a modern, asset-based fleet built for reliability and performance. With our own trucks, trailers, and professional drivers, we maintain full control over every shipment-delivering consistent service quality that third-party solutions simply can't match.
                 </p>
                 <p>
-                  Our in-house operations team, advanced tracking technology, and commitment to on-time delivery mean your freight is always in capable hands. With our dry van fleet, we offer flexible capacity and competitive pricing tailored to your supply chain needs.
+                  Our in-house operations team, advanced tracking technology, and commitment to on-time delivery mean your freight is always in capable hands. We run primarily <strong className="text-foreground">drop & hook customer freight</strong> on proven lanes - faster turnaround, fewer dock delays, and consistent volume for our customers.
                 </p>
                 <p>
                   Ready to streamline your shipping? Our <Link to="/fleet-program" className="text-primary hover:underline">fleet program</Link> keeps capacity available for your freight. We're also hiring <Link to="/careers" className="text-primary hover:underline">professional truck drivers</Link> to support our growing operations.
@@ -361,10 +366,10 @@ const FreightServices = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  At XXII Century, our Freight Brokerage Division combines industry expertise with unmatched service and communication. We understand the complexities of modern logistics and are committed to streamlining the freight process for our clients across the continental United States.
+                  At XXII Century, our Freight Division combines industry expertise with unmatched service and communication. We specialize in <strong className="text-foreground">customer freight</strong> - established lanes with consistent volume for shippers who need reliability. We understand the complexities of modern logistics and are committed to streamlining the freight process across the continental United States.
                 </p>
                 <p>
-                  Through our <strong className="text-foreground">Trusted Carrier Network</strong>, we connect shippers with thoroughly vetted, high-performing carriers—ensuring every load is handled with precision, safety, and accountability. We don't just move freight; we build lasting partnerships that drive efficiency and growth.
+                  Through our <strong className="text-foreground">Trusted Carrier Network</strong>, we connect shippers with thoroughly vetted, high-performing carriers on dedicated customer lanes. The majority of our loads are <strong className="text-foreground">drop & hook</strong> - fast, no-touch freight that keeps freight moving and dock times minimal. We don't just move freight; we build lasting partnerships that drive efficiency and growth.
                 </p>
                 <p>
                   Want to join our carrier network? Explore <Link to="/owner-operators" className="text-primary hover:underline">independent owner operator opportunities</Link> with premium freight access, or <Link to="/contact" className="text-primary hover:underline">contact our logistics team</Link> to discuss partnership options. Learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our commitment to excellence.
@@ -433,7 +438,7 @@ const FreightServices = () => {
               Your Road to <span className="text-primary">More Loads</span>
             </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto mb-8">
-              Take control of your success with steady freight, competitive pay, and the support you need to keep moving. As a trusted partner, we connect you with consistent loads, clear communication, and the tools to maximize your earnings—so you can focus on driving your business forward.
+              Take control of your success with steady freight, competitive pay, and the support you need to keep moving. As a trusted partner, we connect you with consistent loads, clear communication, and the tools to maximize your earnings-so you can focus on driving your business forward.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="hero" size="lg" asChild>

@@ -60,7 +60,7 @@ const blogPosts = [
   {
     image: negotiateLinehaul,
     title: "Owner Operator Truck Driver Jobs: How to Negotiate Better Linehaul Rates",
-    excerpt: "If you've ever hung up the phone after booking a load and thought, 'Wait… should I have asked for more?'—you're not alone.",
+    excerpt: "If you've ever hung up the phone after booking a load and thought, 'Wait… should I have asked for more?'-you're not alone.",
     date: "January 19, 2026",
     readTime: "10 min read",
     slug: "owner-operator-truck-driver-jobs-negotiate",
@@ -87,7 +87,7 @@ const blogPosts = [
   {
     image: chicagoTips,
     title: "Local Owner Operator Jobs Near Me: Chicago Tips",
-    excerpt: "If you've ever typed 'local owner operator jobs near me' into a search bar and found yourself overwhelmed by options—especially in Chicago—you're not alone.",
+    excerpt: "If you've ever typed 'local owner operator jobs near me' into a search bar and found yourself overwhelmed by options-especially in Chicago-you're not alone.",
     date: "December 15, 2025",
     readTime: "10 min read",
     slug: "local-owner-operator-jobs-chicago-tips",
@@ -114,7 +114,7 @@ const blogPosts = [
   {
     image: localJobsHome,
     title: "Local Owner Operator Jobs That Pay and Let You Stay Home",
-    excerpt: "Local owner operator jobs offer a rare balance between solid income and personal time—without sacrificing the moments that matter most.",
+    excerpt: "Local owner operator jobs offer a rare balance between solid income and personal time-without sacrificing the moments that matter most.",
     date: "November 13, 2025",
     readTime: "10 min read",
     slug: "local-owner-operator-jobs-home",

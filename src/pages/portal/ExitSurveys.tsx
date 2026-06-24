@@ -1,4 +1,4 @@
-import { useQuery, useMutation } from "@tanstack/react-query";
+﻿import { useQuery, useMutation } from "@tanstack/react-query";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useState } from "react";
 import { Copy, Check, ExternalLink, RefreshCw, DoorOpen, LogOut } from "lucide-react";
@@ -50,7 +50,7 @@ export default function ExitSurveys() {
           <h2 className="text-sm font-semibold text-foreground font-display">How it works</h2>
         </div>
         <p className="text-xs text-muted-foreground">
-          When a driver is leaving, copy their exit survey link below and send it to them. Their responses come straight back into the portal — just like the weekly surveys.
+          When a driver is leaving, copy their exit survey link below and send it to them. Their responses come straight back into the portal - just like the weekly surveys.
         </p>
       </div>
 

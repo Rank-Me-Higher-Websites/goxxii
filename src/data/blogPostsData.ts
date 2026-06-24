@@ -37,15 +37,15 @@ export const blogPostsData: Record<string, BlogPostData> = {
     content: [
       "If you've been searching \"how much do owner operator truck drivers make\" in 2026, you've probably noticed something frustrating: the numbers are all over the place. One article says $250,000 a year. Another says $80,000. A YouTube video promises $400,000. A forum post says you'll be lucky to break even.",
 
-      "So which is it? The honest answer is: it depends — but not in the vague, hand-wavy way most blogs say it. Owner operator pay in 2026 follows a real, predictable pattern, and once you understand the math, you can stop guessing and start planning.",
+      "So which is it? The honest answer is: it depends - but not in the vague, hand-wavy way most blogs say it. Owner operator pay in 2026 follows a real, predictable pattern, and once you understand the math, you can stop guessing and start planning.",
 
       "In this guide, we'll break down what owner operators actually gross, what they keep after expenses, and what separates the drivers pulling in six figures of real take-home from the ones running hard but ending the year with little to show for it. Whether you're already searching [owner operator truck driver jobs](/owner-operators) or thinking about leaving company driving behind, you'll walk away with clear, no-fluff numbers you can apply to your own situation.",
 
-      "## Owner Operator Pay in 2026 — The Headline Numbers",
+      "## Owner Operator Pay in 2026 - The Headline Numbers",
 
       "![owner operator truck driver salary 2026](https://goxxii.com/wp-content/uploads/2025/11/IMG_6201-scaled-e1768833010862.jpg)",
 
-      "Let's start with what most drivers want to know first: the gross. In 2026, the typical full-time owner operator running a Class 8 sleeper grosses somewhere between **$220,000 and $350,000 per year**. The wide range is real — it reflects the difference between drivers running spot freight at average rates and drivers running consistent, well-negotiated dedicated lanes.",
+      "Let's start with what most drivers want to know first: the gross. In 2026, the typical full-time owner operator running a Class 8 sleeper grosses somewhere between **$220,000 and $350,000 per year**. The wide range is real - it reflects the difference between drivers running spot freight at average rates and drivers running consistent, well-negotiated dedicated lanes.",
 
       "Here's a more useful way to look at it:",
 
@@ -54,13 +54,13 @@ export const blogPostsData: Record<string, BlogPostData> = {
       "- **Top 25%:** $310,000–$380,000 gross",
       "- **Top 10% (specialty, hazmat, heavy haul, or strong dedicated):** $400,000+ gross",
 
-      "But gross is the headline, not the paycheck. Almost every \"how much do owner operators make\" article stops at the gross number — which is exactly why so many drivers jump in expecting one income and end up with another. The real story lives below the line, in the expenses.",
+      "But gross is the headline, not the paycheck. Almost every \"how much do owner operators make\" article stops at the gross number - which is exactly why so many drivers jump in expecting one income and end up with another. The real story lives below the line, in the expenses.",
 
-      "## What You Actually Take Home — The Real Math",
+      "## What You Actually Take Home - The Real Math",
 
       "![owner operator take home pay](https://goxxii.com/wp-content/uploads/2025/10/image-5.png.webp)",
 
-      "Most owner operators in 2026 keep somewhere between **30% and 45%** of their gross as take-home pay, depending on their truck setup, lane choice, and how disciplined they are with expenses. That means a driver grossing $280,000 typically nets between $84,000 and $126,000 — a real, livable income, but a long way from the \"$300K driver\" headlines.",
+      "Most owner operators in 2026 keep somewhere between **30% and 45%** of their gross as take-home pay, depending on their truck setup, lane choice, and how disciplined they are with expenses. That means a driver grossing $280,000 typically nets between $84,000 and $126,000 - a real, livable income, but a long way from the \"$300K driver\" headlines.",
 
       "Here's a realistic breakdown for a leased-on owner operator running a paid-off truck and grossing $280,000 a year:",
 
@@ -80,29 +80,29 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![top earning owner operators](https://goxxii.com/wp-content/uploads/2025/09/2025-09-17-21.10.54-e1760557828682.jpg.webp)",
 
-      "Here's the part most articles skip: the drivers making real money in 2026 aren't running more miles than everyone else. They're running smarter ones. Top owner operators consistently do five things differently — and none of them require luck.",
+      "Here's the part most articles skip: the drivers making real money in 2026 aren't running more miles than everyone else. They're running smarter ones. Top owner operators consistently do five things differently - and none of them require luck.",
 
-      "**1. They run higher-paying freight, not more miles.** A driver running 95,000 miles at $2.65/mile linehaul earns the same as a driver running 120,000 miles at $2.10/mile — except the first driver has 25,000 fewer miles of fuel, wear, and time. Top earners chase rate per mile, not odometer numbers.",
+      "**1. They run higher-paying freight, not more miles.** A driver running 95,000 miles at $2.65/mile linehaul earns the same as a driver running 120,000 miles at $2.10/mile - except the first driver has 25,000 fewer miles of fuel, wear, and time. Top earners chase rate per mile, not odometer numbers.",
 
       "**2. They lock in dedicated or semi-dedicated lanes.** Spot freight in 2026 is still volatile. Drivers with steady dedicated lanes through a strong [trucking company in Chicago](/blog/owner-operator-jobs-chicago) or other freight hubs avoid the income swings that crush spot-only operators. Predictable revenue makes everything else (fuel planning, maintenance scheduling, home time) easier.",
 
-      "**3. They negotiate the full package — not just the linehaul.** Detention, layover, fuel surcharge, TONU, and lumper terms quietly add up to $15,000–$25,000 a year for drivers who track them. Drivers who don't ask just leave that money on the table. We covered the full negotiation playbook in our guide on [how to negotiate better linehaul rates](/blog/owner-operator-truck-driver-jobs-negotiate).",
+      "**3. They negotiate the full package - not just the linehaul.** Detention, layover, fuel surcharge, TONU, and lumper terms quietly add up to $15,000–$25,000 a year for drivers who track them. Drivers who don't ask just leave that money on the table. We covered the full negotiation playbook in our guide on [how to negotiate better linehaul rates](/blog/owner-operator-truck-driver-jobs-negotiate).",
 
-      "**4. They control their fuel cost-per-mile.** A 0.3 MPG improvement on 100,000 miles saves roughly $4,500 a year at $4/gallon diesel. Top earners drive for fuel — steady throttle, smart routing, fuel network discounts — and treat MPG like a paycheck.",
+      "**4. They control their fuel cost-per-mile.** A 0.3 MPG improvement on 100,000 miles saves roughly $4,500 a year at $4/gallon diesel. Top earners drive for fuel - steady throttle, smart routing, fuel network discounts - and treat MPG like a paycheck.",
 
-      "**5. They partner with the right carrier.** This is the one most drivers underestimate. The carrier you sign with controls your settlement structure, fuel discount, insurance pricing, freight quality, and how fast you get paid. The wrong partner can quietly cost you 10–15% of your gross. The right one — like a carrier built around drivers, not against them — gives you 80% of linehaul, fast settlements, and a dispatcher who actually answers the phone.",
+      "**5. They partner with the right carrier.** This is the one most drivers underestimate. The carrier you sign with controls your settlement structure, fuel discount, insurance pricing, freight quality, and how fast you get paid. The wrong partner can quietly cost you 10–15% of your gross. The right one - like a carrier built around drivers, not against them - gives you 80% of linehaul, fast settlements, and a dispatcher who actually answers the phone.",
 
-      "## Owner Operator vs Company Driver — Is the Jump Worth It in 2026?",
+      "## Owner Operator vs Company Driver - Is the Jump Worth It in 2026?",
 
       "![owner operator vs company driver](https://goxxii.com/wp-content/uploads/2025/10/image.png.webp)",
 
-      "This is the question every company driver eventually asks: does becoming an owner operator actually pay more? In 2026, the honest answer is **yes — but only if you treat it like a business**.",
+      "This is the question every company driver eventually asks: does becoming an owner operator actually pay more? In 2026, the honest answer is **yes - but only if you treat it like a business**.",
 
       "A solid company driver running OTR in 2026 takes home **$70,000–$95,000** with no equipment risk, no maintenance bills, and no surprise breakdowns. That's a real number, and for many drivers it's the right answer for their stage of life.",
 
-      "An average owner operator takes home **$80,000–$110,000** — which sounds like a small jump for a lot more responsibility. But here's where it gets interesting: a disciplined owner operator with a paid-off truck, good lanes, and the right carrier consistently nets **$120,000–$160,000+**. That's the gap company drivers can't reach, no matter how many miles they run.",
+      "An average owner operator takes home **$80,000–$110,000** - which sounds like a small jump for a lot more responsibility. But here's where it gets interesting: a disciplined owner operator with a paid-off truck, good lanes, and the right carrier consistently nets **$120,000–$160,000+**. That's the gap company drivers can't reach, no matter how many miles they run.",
 
-      "The trade-off is real. Owner operators carry maintenance risk, slow weeks hit them harder, and one bad transmission can erase a month of profit. But they also keep the upside — when freight is strong, they earn real money, not just a slightly bigger per-mile rate.",
+      "The trade-off is real. Owner operators carry maintenance risk, slow weeks hit them harder, and one bad transmission can erase a month of profit. But they also keep the upside - when freight is strong, they earn real money, not just a slightly bigger per-mile rate.",
 
       "If you're weighing the jump, our guide on [becoming an owner operator: costs and what to expect](/blog/owner-operator-costs-benefits) walks through the startup numbers, and our breakdown of [the best owner operator trucking company](/blog/best-owner-operator-trucking-company) covers what to look for in a partner before you sign anything.",
 
@@ -110,72 +110,72 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![maximize owner operator income](https://goxxii.com/wp-content/uploads/2025/11/IMG_6201-scaled-e1768833010862.jpg)",
 
-      "If you're already an owner operator and you want to push your take-home higher in 2026, the levers are smaller than people think — but they stack fast. You don't need a magic load board or a secret broker contact. You need to win the same five-percent battles every week.",
+      "If you're already an owner operator and you want to push your take-home higher in 2026, the levers are smaller than people think - but they stack fast. You don't need a magic load board or a secret broker contact. You need to win the same five-percent battles every week.",
 
       "Start with the lane. Sit down and look at your last 90 days of loads. Which ones actually paid you well after fuel, deadhead, and time? Which ones looked good on paper but ate your week? Most drivers find that 20% of their loads are pulling 60% of their net profit. Run more of those, and politely turn down the rest.",
 
-      "Next, look at the fuel. Your fuel network discount, your route choice, and your driving style are the three biggest levers. A driver paying 25 cents per gallon less and running 6.5 MPG instead of 6.0 MPG saves close to $9,000 a year on a typical OTR schedule — without changing a single load.",
+      "Next, look at the fuel. Your fuel network discount, your route choice, and your driving style are the three biggest levers. A driver paying 25 cents per gallon less and running 6.5 MPG instead of 6.0 MPG saves close to $9,000 a year on a typical OTR schedule - without changing a single load.",
 
       "Then look at the carrier relationship. If your dispatcher isn't bringing you loads that match your CPM target, you're working for them instead of the other way around. Drivers leased to carriers that pay 80% of gross with no hidden deductions consistently out-earn drivers on percentage splits that look similar but have fees buried in the fine print.",
 
-      "Finally, look at the small stuff. Detention you didn't bill for. Layover that wasn't claimed. A factoring fee that's a half-percent higher than it should be. An ELD subscription you forgot you had. Owner operator income in 2026 isn't won by big swings — it's won by drivers who treat every line item like it matters, because it does.",
+      "Finally, look at the small stuff. Detention you didn't bill for. Layover that wasn't claimed. A factoring fee that's a half-percent higher than it should be. An ELD subscription you forgot you had. Owner operator income in 2026 isn't won by big swings - it's won by drivers who treat every line item like it matters, because it does.",
 
       "_Also Read: [Local Owner Operator Jobs That Pay and Let You Stay Home](/blog/local-owner-operator-jobs-home)_",
 
       "## The Bottom Line on Owner Operator Pay in 2026",
 
-      "So how much do owner operator truck drivers make in 2026? Realistically, most full-time owner operators **gross $240,000–$290,000 and take home $80,000–$120,000** after expenses and taxes. The top 25% take home $130,000–$165,000+, and the top 10% — the drivers running heavy haul, hazmat, or strong dedicated lanes with a great carrier — clear $180,000+ in real net pay.",
+      "So how much do owner operator truck drivers make in 2026? Realistically, most full-time owner operators **gross $240,000–$290,000 and take home $80,000–$120,000** after expenses and taxes. The top 25% take home $130,000–$165,000+, and the top 10% - the drivers running heavy haul, hazmat, or strong dedicated lanes with a great carrier - clear $180,000+ in real net pay.",
 
-      "The number you end up at isn't random. It's the result of the lanes you run, the carrier you partner with, the fuel you burn, and the terms you negotiate. The drivers winning in 2026 aren't the ones running the most miles — they're the ones running the right miles, with the right partner, on the right terms.",
+      "The number you end up at isn't random. It's the result of the lanes you run, the carrier you partner with, the fuel you burn, and the terms you negotiate. The drivers winning in 2026 aren't the ones running the most miles - they're the ones running the right miles, with the right partner, on the right terms.",
 
-      "If you're ready to find out what your numbers could look like with a carrier that pays 80% of gross, settles weekly, and treats drivers like business partners, take a look at our open [owner operator truck driver jobs](/owner-operators) or explore our [Chicago-based opportunities](/careers). The right partnership is the single biggest lever in your income — and it's the one you control today."
+      "If you're ready to find out what your numbers could look like with a carrier that pays 80% of gross, settles weekly, and treats drivers like business partners, take a look at our open [owner operator truck driver jobs](/owner-operators) or explore our [Chicago-based opportunities](/careers). The right partnership is the single biggest lever in your income - and it's the one you control today."
     ]
   },
 
   "owner-operator-truck-driver-jobs-negotiate": {
     image: negotiateLinehaul,
     title: "Owner Operator Truck Driver Jobs: How to Negotiate Better Linehaul Rates",
-    excerpt: "If you've ever hung up the phone after booking a load and thought, 'Wait… should I have asked for more?'—you're not alone. Linehaul rates can feel like a moving target.",
+    excerpt: "If you've ever hung up the phone after booking a load and thought, 'Wait… should I have asked for more?'-you're not alone. Linehaul rates can feel like a moving target.",
     date: "January 19, 2026",
     readTime: "10 min read",
     category: "Owner Operators",
     author: "XXII Century Team",
     content: [
-      "If you've ever hung up the phone after booking a load and thought, \"Wait… should I have asked for more?\"—you're not alone. Linehaul rates can feel like a moving target, and when you're juggling fuel costs, maintenance, insurance, and your own time, a few cents per mile can be the difference between a solid week and a stressful one.",
+      "If you've ever hung up the phone after booking a load and thought, \"Wait… should I have asked for more?\"-you're not alone. Linehaul rates can feel like a moving target, and when you're juggling fuel costs, maintenance, insurance, and your own time, a few cents per mile can be the difference between a solid week and a stressful one.",
 
       "The good news? Better rates aren't reserved for the \"big guys\" or the drivers with insider connections. They usually go to the people who show up prepared, speak confidently, and know exactly what to ask for (and how to ask for it). That's especially true if you're scanning [owner operator truck driver jobs](/owner-operators) and trying to separate the fair offers from the ones that quietly eat your profit.",
 
-      "In this post, you'll learn a simple, real-world approach to negotiating linehaul rates—without sounding pushy or getting into awkward back-and-forth. We'll break down what to say, what numbers to know before you call, how to spot hidden money in the deal, and when it's smarter to walk away. By the end, you'll have a repeatable playbook you can use on your very next booking call.",
+      "In this post, you'll learn a simple, real-world approach to negotiating linehaul rates-without sounding pushy or getting into awkward back-and-forth. We'll break down what to say, what numbers to know before you call, how to spot hidden money in the deal, and when it's smarter to walk away. By the end, you'll have a repeatable playbook you can use on your very next booking call.",
 
-      "## The Truth About Linehaul — Why \"Good Loads\" Aren't Luck",
+      "## The Truth About Linehaul - Why \"Good Loads\" Aren't Luck",
 
       "![xxii century owner operator truck driver jobs](https://goxxii.com/wp-content/uploads/2025/11/IMG_6201-scaled-e1768833010862.jpg)",
 
       "Let's be real: most owner-operators don't have a \"revenue problem.\" They have a rate problem.",
 
-      "You can stay booked all week and still feel like the money disappears the second it hits your account. Fuel, maintenance, insurance, tolls, a surprise tire bill… it adds up fast. That's why linehaul matters so much. Linehaul is the core pay for moving the freight from Point A to Point B—before the extras like fuel surcharge, detention, layover, and other add-ons. If your linehaul is weak, the rest of the deal has to work _really_ hard to save you.",
+      "You can stay booked all week and still feel like the money disappears the second it hits your account. Fuel, maintenance, insurance, tolls, a surprise tire bill… it adds up fast. That's why linehaul matters so much. Linehaul is the core pay for moving the freight from Point A to Point B-before the extras like fuel surcharge, detention, layover, and other add-ons. If your linehaul is weak, the rest of the deal has to work _really_ hard to save you.",
 
       "And here's the part that should give you hope: drivers who consistently [negotiate better linehaul rates](/blog/truck-driving-career-chicago) aren't usually louder or more aggressive. They're simply more prepared. They know their numbers, they know the lane, and they know how to counter without turning it into an argument.",
 
-      "Think about it like this: two truck drivers can look at the same load and get two different outcomes—because one accepts the first offer and the other asks one smart question.",
+      "Think about it like this: two truck drivers can look at the same load and get two different outcomes-because one accepts the first offer and the other asks one smart question.",
 
       "**Why Brokers and Dispatchers Often Start Low**",
 
-      "This isn't always personal—it's usually business. Here are the three most common reasons you'll hear a low starting number:",
+      "This isn't always personal-it's usually business. Here are the three most common reasons you'll hear a low starting number:",
 
       "1. **They're testing your floor.** If you don't counter, they've learned what you'll take.",
       "2. **The market is moving.** Rates shift quickly, and some folks quote conservatively to protect their margin.",
-      "3. **They expect you to negotiate.** A counteroffer is normal—it's part of the process.",
+      "3. **They expect you to negotiate.** A counteroffer is normal-it's part of the process.",
 
-      "The goal of this post is to make sure you're not leaving money on the table. Because when you're running hard and searching for [owner operator truck driver jobs](/owner-operators) that actually pay, you shouldn't have to \"hope\" the rate is good—you should be able to _make it better._",
+      "The goal of this post is to make sure you're not leaving money on the table. Because when you're running hard and searching for [owner operator truck driver jobs](/owner-operators) that actually pay, you shouldn't have to \"hope\" the rate is good-you should be able to _make it better._",
 
-      "## Know Your Floor — The \"Walk-Away Number\" Every Owner-Operator Needs",
+      "## Know Your Floor - The \"Walk-Away Number\" Every Owner-Operator Needs",
 
       "![woman speaking to an owner operator](https://goxxii.com/wp-content/uploads/2025/10/image-5.png.webp)",
 
       "Before you can negotiate better linehaul rates, you need one thing most drivers skip: a clear \"walk-away number.\" Not a gut feeling. Not \"whatever sounds okay.\" A real number that protects your business.",
 
-      "That starts with your [cost-per-mile](/blog/local-owner-operator-jobs-home) (CPM)—what it actually costs to roll your truck down the road. Once you know it, negotiation stops feeling awkward because you're not begging for more money. You're simply making sure the load makes sense.",
+      "That starts with your [cost-per-mile](/blog/local-owner-operator-jobs-home) (CPM)-what it actually costs to roll your truck down the road. Once you know it, negotiation stops feeling awkward because you're not begging for more money. You're simply making sure the load makes sense.",
 
       "Keep it simple with three buckets:",
 
@@ -189,17 +189,17 @@ export const blogPostsData: Record<string, BlogPostData> = {
       "2. **Target CPM:** what you want to run at consistently for profit",
       "3. **Premium CPM:** your price for \"extra headache\" loads (tight appointments, heavy deadhead, live load/unload, weekend delivery, bad weather)",
 
-      "Here's why this matters: two loads can be the same miles and _not_ be the same job. A lane with 120 miles of deadhead and a slow receiver should pay more—period. When you already know your premium CPM, you can counter calmly and confidently instead of doing stressed-out math on the phone.",
+      "Here's why this matters: two loads can be the same miles and _not_ be the same job. A lane with 120 miles of deadhead and a slow receiver should pay more-period. When you already know your premium CPM, you can counter calmly and confidently instead of doing stressed-out math on the phone.",
 
-      "This is the foundation for negotiating better deals in [owner operator truck driver jobs](/owner-operators): you don't need every load—you need the right load at the right price.",
+      "This is the foundation for negotiating better deals in [owner operator truck driver jobs](/owner-operators): you don't need every load-you need the right load at the right price.",
 
-      "## Build Market Proof — Walk Into the Negotiation With Receipts",
+      "## Build Market Proof - Walk Into the Negotiation With Receipts",
 
       "![Truck driver standing in front of a truck](https://goxxii.com/wp-content/uploads/2025/09/2025-09-17-21.10.54-e1760557828682.jpg.webp)",
 
       "Let's keep this simple: the easiest way to get better linehaul rates is to stop sounding like you're guessing.",
 
-      "You don't need a fancy setup, and you definitely don't need to argue. You just want to sound like someone who understands the lane, the timing, and what it will actually take to run the load profitably. That's what I mean by \"receipts.\" It's not paperwork—it's confidence backed by reality.",
+      "You don't need a fancy setup, and you definitely don't need to argue. You just want to sound like someone who understands the lane, the timing, and what it will actually take to run the load profitably. That's what I mean by \"receipts.\" It's not paperwork-it's confidence backed by reality.",
 
       "Before you counter, take a quick breath and check the situation around you. Is freight moving fast today, or does it feel slow? Are you in a spot where trucks are stacked up, or does it seem like loads are disappearing as soon as they hit the board? Then look at your own situation: how far are you from the pickup, and what does the pickup/delivery setup look like? A load with a tight appointment window and a live unload isn't the same job as a smooth [drop-and-hook](https://www.saintjohncapital.com/drop-and-hook-versus-live-loads-whats-the-difference-and-which-is-better/), even if the miles are identical.",
 
@@ -207,11 +207,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "And over time, this approach stacks. When you consistently communicate clearly and run clean, you become the driver people want to work with. That kind of reputation gives you leverage, and leverage makes it a lot easier to negotiate the next load without a long back-and-forth.",
 
-      "Next, we'll talk about the money most drivers miss—because even when linehaul won't move much, the _total deal_ often can.",
+      "Next, we'll talk about the money most drivers miss-because even when linehaul won't move much, the _total deal_ often can.",
 
-      "Here's the trap: you push for a higher number, they say, \"That's the best I can do,\" and you assume the conversation is over. Most of the time, it's not. It just means the _linehaul_ may be capped—while the rest of the deal still has room.",
+      "Here's the trap: you push for a higher number, they say, \"That's the best I can do,\" and you assume the conversation is over. Most of the time, it's not. It just means the _linehaul_ may be capped-while the rest of the deal still has room.",
 
-      "If you want more money, you should. But you'll make even more progress by negotiating the full package so \"real life\" doesn't eat your profit. A load isn't just miles—it's time, risk, and how fast you can turn the next one.",
+      "If you want more money, you should. But you'll make even more progress by negotiating the full package so \"real life\" doesn't eat your profit. A load isn't just miles-it's time, risk, and how fast you can turn the next one.",
 
       "Here are the big money items to lock in (and get on the rate confirmation):",
 
@@ -222,7 +222,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
       "- **Lumper/driver assist:** Who pays, how fast, and what proof is needed?",
       "- **Extra equipment fees:** Reefer washout, temperature requirements, or other add-ons",
 
-      "This matters even more with [reefer driver jobs](/), where strict appointments and receiver delays can turn a \"good-looking load\" into a time sink. When the linehaul won't move, shift the conversation to terms: \"If that's your best linehaul, can we confirm detention after two hours?\" That's not being difficult—that's being paid for your time.",
+      "This matters even more with [reefer driver jobs](/), where strict appointments and receiver delays can turn a \"good-looking load\" into a time sink. When the linehaul won't move, shift the conversation to terms: \"If that's your best linehaul, can we confirm detention after two hours?\" That's not being difficult-that's being paid for your time.",
 
       "A strong deal is the one that still pays well after delays, lumpers, and surprises.",
 
@@ -230,29 +230,29 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![owner operator jobs](https://goxxii.com/wp-content/uploads/2025/10/image.png.webp)",
 
-      "Negotiating doesn't have to be a whole performance. If you want to negotiate better linehaul rates, the goal is to stay calm, be clear, and keep the conversation moving. Most of the time, the driver who gets paid more isn't the loudest—it's the one who sounds prepared.",
+      "Negotiating doesn't have to be a whole performance. If you want to negotiate better linehaul rates, the goal is to stay calm, be clear, and keep the conversation moving. Most of the time, the driver who gets paid more isn't the loudest-it's the one who sounds prepared.",
 
       "Start by giving a clean number. Don't hint or dance around it. Say something like, \"I can cover it today, but I'd need $____ all-in,\" or \"If you can do $____ linehaul, I'll take it right now.\" Short, confident, and easy for them to respond to.",
 
-      "Next, give one real reason for your number. One or two facts is enough. Deadhead miles, a live unload, a tight appointment window—anything that directly affects your time and cost. The point isn't to complain. It's to price the load like a business decision.",
+      "Next, give one real reason for your number. One or two facts is enough. Deadhead miles, a live unload, a tight appointment window-anything that directly affects your time and cost. The point isn't to complain. It's to price the load like a business decision.",
 
       "If they push back with \"that's the best we can do,\" don't get stuck repeating yourself. Shift to the terms that protect your profit. Ask how detention works and when it starts. Make sure layover is covered if the receiver doesn't get you unloaded. Confirm who pays the lumper and how fast you're reimbursed. Those details can turn an average load into a decent one, even when the linehaul number barely moves.",
 
-      "Before you roll, read the rate confirmation like it's part of your paycheck—because it is. If detention or other terms aren't clearly written, fix it right then. A ten-second check saves hours of arguing later.",
+      "Before you roll, read the rate confirmation like it's part of your paycheck-because it is. If detention or other terms aren't clearly written, fix it right then. A ten-second check saves hours of arguing later.",
 
-      "And if the deal still doesn't make sense, walk away without drama. A simple \"I'm going to pass at that number—call me if it changes\" keeps it professional and keeps your standards intact.",
+      "And if the deal still doesn't make sense, walk away without drama. A simple \"I'm going to pass at that number-call me if it changes\" keeps it professional and keeps your standards intact.",
 
       "_Also Read: [Local Owner Operator Jobs Near Me: What to Ask Before You Sign a Contract](/blog/local-owner-operator-jobs)_",
 
       "## Better Linehaul Rates Start With Better Habits",
 
-      "At the end of the day, better pay isn't about luck or finding some secret load board. It's about showing up prepared and treating every call like a business conversation. When you know your floor, understand what the lane is doing, and negotiate the full package (not just the headline number), you stop taking \"pretty good\" loads that quietly drain your week—and you start booking freight that actually makes sense.",
+      "At the end of the day, better pay isn't about luck or finding some secret load board. It's about showing up prepared and treating every call like a business conversation. When you know your floor, understand what the lane is doing, and negotiate the full package (not just the headline number), you stop taking \"pretty good\" loads that quietly drain your week-and you start booking freight that actually makes sense.",
 
-      "The main takeaway is simple: you don't need to be aggressive to win—you need to be clear. Give a confident number, tie it to real conditions, tighten up the terms, and make sure everything is written on the rate confirmation. That's how you negotiate better linehaul rates consistently, even when the market is up and down.",
+      "The main takeaway is simple: you don't need to be aggressive to win-you need to be clear. Give a confident number, tie it to real conditions, tighten up the terms, and make sure everything is written on the rate confirmation. That's how you negotiate better linehaul rates consistently, even when the market is up and down.",
 
-      "Next step: build a quick cost-per-mile note you can check before every call, and save a couple of negotiation lines you can reuse word-for-word. Then try it on your very next booking call—just once—and see how often the conversation shifts in your favor.",
+      "Next step: build a quick cost-per-mile note you can check before every call, and save a couple of negotiation lines you can reuse word-for-word. Then try it on your very next booking call-just once-and see how often the conversation shifts in your favor.",
 
-      "If you want to go deeper, explore our related guides on reducing deadhead, picking stronger lanes, and getting paid faster—especially if you're comparing [owner operator truck driver jobs](/careers) and trying to choose the ones that truly protect your profit."
+      "If you want to go deeper, explore our related guides on reducing deadhead, picking stronger lanes, and getting paid faster-especially if you're comparing [owner operator truck driver jobs](/careers) and trying to choose the ones that truly protect your profit."
     ]
   },
 
@@ -265,11 +265,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
     category: "Local Jobs",
     author: "XXII Century Team",
     content: [
-      "Scrolling through listings for local owner operator jobs near me can feel exciting at first. Home-daily routes, steady freight, and predictable schedules sound like a win—especially if you're ready to spend less time on the road and more time living your life. But here's the truth most job posts don't mention: the real deal isn't in the listing, it's in the contract.",
+      "Scrolling through listings for local owner operator jobs near me can feel exciting at first. Home-daily routes, steady freight, and predictable schedules sound like a win-especially if you're ready to spend less time on the road and more time living your life. But here's the truth most job posts don't mention: the real deal isn't in the listing, it's in the contract.",
 
       "For owner operators, signing on with the wrong carrier can quietly chip away at your income through hidden deductions, restrictive clauses, or insurance requirements you didn't see coming. What looks like a solid local opportunity on paper can quickly turn into long days, tight margins, and frustrating surprises once the wheels start turning. That's why knowing what to ask before you sign is just as important as finding the job itself.",
 
-      "This guide is designed to help you slow down, look past the headlines, and understand what really matters in a local owner operator contract. You'll learn which questions protect your pay, your schedule, and your truck—and how to spot red flags before they cost you time or money. Whether you're new to local work or reevaluating your current setup, this post will help you approach local owner operator jobs near me with confidence, clarity, and control.",
+      "This guide is designed to help you slow down, look past the headlines, and understand what really matters in a local owner operator contract. You'll learn which questions protect your pay, your schedule, and your truck-and how to spot red flags before they cost you time or money. Whether you're new to local work or reevaluating your current setup, this post will help you approach local owner operator jobs near me with confidence, clarity, and control.",
 
       "## Understanding What \"Local\" Really Means Before You Commit",
 
@@ -301,7 +301,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Hidden Deductions That Affect Take-Home Pay",
 
-      "Even solid local pay can shrink once deductions are applied. Fuel charges, administrative fees, and insurance-related costs—especially those tied to owner operator semi truck insurance—can add up quickly. Asking clear questions about deductions ensures you understand what you'll actually take home, not just what's promised on paper.",
+      "Even solid local pay can shrink once deductions are applied. Fuel charges, administrative fees, and insurance-related costs-especially those tied to owner operator semi truck insurance-can add up quickly. Asking clear questions about deductions ensures you understand what you'll actually take home, not just what's promised on paper.",
 
       "## Knowing Who's Responsible for Your Truck and Maintenance Costs",
 
@@ -357,7 +357,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Time Off and Backup Coverage",
 
-      "Local work doesn't automatically mean unlimited flexibility when you need time off. Contracts may require advance notice for days off or limit how often you can take extended breaks. This is especially important in dedicated owner operator jobs, where consistency is part of the agreement. Knowing how time off is handled—and whether there's backup coverage when your truck is down—helps you avoid surprises when life happens.",
+      "Local work doesn't automatically mean unlimited flexibility when you need time off. Contracts may require advance notice for days off or limit how often you can take extended breaks. This is especially important in dedicated owner operator jobs, where consistency is part of the agreement. Knowing how time off is handled-and whether there's backup coverage when your truck is down-helps you avoid surprises when life happens.",
 
       "### How Schedule Ties Back to Costs and Commitments",
 
@@ -367,24 +367,24 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "## Signing Smarter Starts With Asking Better Questions",
 
-      "Finding local owner operator jobs near me can feel like a win, especially when the promise of steady freight and being home more often is on the table. But as this guide shows, the real value of a local opportunity isn't in the job title—it's in the details of the contract. Pay structures, maintenance responsibilities, insurance requirements, and schedule control all play a role in whether a job truly supports your goals or slowly chips away at your profits.",
+      "Finding local owner operator jobs near me can feel like a win, especially when the promise of steady freight and being home more often is on the table. But as this guide shows, the real value of a local opportunity isn't in the job title-it's in the details of the contract. Pay structures, maintenance responsibilities, insurance requirements, and schedule control all play a role in whether a job truly supports your goals or slowly chips away at your profits.",
 
       "Taking the time to ask the right questions puts you back in control. It helps you avoid surprises, protect your income, and choose work that fits both your business and your lifestyle. Whether you're considering general local routes or more structured dedicated owner operator jobs, understanding what you're signing ensures you're making a decision you won't regret six months down the road.",
 
-      "Before you commit, revisit the contract with a critical eye. Talk to other drivers, review insurance options like owner operator semi truck insurance, and don't hesitate to push for clarity from the carrier. The demand for local work gives owner operators more leverage than ever—use it wisely. If you're ready to [explore your options](/about) or want to learn more about evaluating contracts, keep digging, stay informed, and make your next move with confidence."
+      "Before you commit, revisit the contract with a critical eye. Talk to other drivers, review insurance options like owner operator semi truck insurance, and don't hesitate to push for clarity from the carrier. The demand for local work gives owner operators more leverage than ever-use it wisely. If you're ready to [explore your options](/about) or want to learn more about evaluating contracts, keep digging, stay informed, and make your next move with confidence."
     ]
   },
 
   "local-owner-operator-jobs-chicago-tips": {
     image: chicagoTips,
     title: "Local Owner Operator Jobs Near Me: Chicago Tips",
-    excerpt: "If you've ever typed 'local owner operator jobs near me' into a search bar and found yourself overwhelmed by options—especially in a busy market like Chicago—you're not alone.",
+    excerpt: "If you've ever typed 'local owner operator jobs near me' into a search bar and found yourself overwhelmed by options-especially in a busy market like Chicago-you're not alone.",
     date: "December 15, 2025",
     readTime: "10 min read",
     category: "Local Jobs",
     author: "XXII Century Team",
     content: [
-      "If you've ever typed \"local owner operator jobs near me\" into a search bar and found yourself overwhelmed by options—especially in a busy market like Chicago—you're not alone. The city is a major freight powerhouse, buzzing with opportunities for drivers who want steady loads, good pay, and the chance to stay close to home. But with so many companies, routes, and requirements to sort through, figuring out where to start can feel like a job in itself.",
+      "If you've ever typed \"local owner operator jobs near me\" into a search bar and found yourself overwhelmed by options-especially in a busy market like Chicago-you're not alone. The city is a major freight powerhouse, buzzing with opportunities for drivers who want steady loads, good pay, and the chance to stay close to home. But with so many companies, routes, and requirements to sort through, figuring out where to start can feel like a job in itself.",
 
       "That's where this guide comes in. Whether you're a seasoned owner operator looking to maximize your earnings or you're new to the Chicago logistics scene, this post breaks down everything you need to know to navigate the market confidently. You'll learn which neighborhoods and industries offer the best freight, how to choose the right company, what insurance and costs to expect, and the practical steps drivers are using right now to land consistent, high-paying local work.",
 
@@ -394,23 +394,23 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![owner operator jobs](https://goxxii.com/wp-content/uploads/2025/07/photo_2025-07-16_19-30-21-e1758295499819.jpg.webp)",
 
-      "When people think of Chicago, they picture skyscrapers, deep-dish pizza, and Lake Michigan—but for truck drivers, the city represents something even better: opportunity. Chicago sits right in the middle of one of the busiest freight networks in the country, which is exactly why so many drivers searching for local owner operator jobs near me end up pointing their wheels toward the Windy City.",
+      "When people think of Chicago, they picture skyscrapers, deep-dish pizza, and Lake Michigan-but for truck drivers, the city represents something even better: opportunity. Chicago sits right in the middle of one of the busiest freight networks in the country, which is exactly why so many drivers searching for local owner operator jobs near me end up pointing their wheels toward the Windy City.",
 
-      "What makes Chicago so unique? It's the combination of highways, rail yards, distribution centers, and major industries all packed into one region. O'Hare moves a massive amount of cargo every day, rail hubs connect coast to coast, and warehouses stretch from Joliet to the North Side. That means freight is constantly moving—short hauls, day routes, night routes, and plenty of dedicated lanes for anyone wanting predictable schedules.",
+      "What makes Chicago so unique? It's the combination of highways, rail yards, distribution centers, and major industries all packed into one region. O'Hare moves a massive amount of cargo every day, rail hubs connect coast to coast, and warehouses stretch from Joliet to the North Side. That means freight is constantly moving-short hauls, day routes, night routes, and plenty of dedicated lanes for anyone wanting predictable schedules.",
 
       "Another big advantage is the variety of industries here. Food and beverage companies, construction suppliers, manufacturing plants, e-commerce fulfillment centers, and retail distributors are always looking for reliable drivers. If you're exploring [dedicated owner operator jobs](/owner-operators), Chicago is one of the few places where you can secure consistent, year-round work with minimal downtime.",
 
-      "Many drivers also appreciate that they don't have to rely on one single trucking company Chicago offers. There are hundreds of carriers—big and small—competing for experienced owner operators. This competition often means better rates, consistent loads, and the freedom to choose work that fits your lifestyle. For drivers who want to stay close to home, pick up daily runs, or build long-term relationships with local shippers, Chicago's freight market creates the perfect environment.",
+      "Many drivers also appreciate that they don't have to rely on one single trucking company Chicago offers. There are hundreds of carriers-big and small-competing for experienced owner operators. This competition often means better rates, consistent loads, and the freedom to choose work that fits your lifestyle. For drivers who want to stay close to home, pick up daily runs, or build long-term relationships with local shippers, Chicago's freight market creates the perfect environment.",
 
       "And because freight volume is so high, local operators don't face the same dry spells seen in smaller cities. This makes a huge difference when managing expenses, from fuel to maintenance to essentials like [owner operator semi truck insurance](/blog/owner-operator-guide). Steady work means steadier income, which is exactly what most drivers are looking for.",
 
-      "In short, Chicago isn't just another trucking city—it's a dense, fast-moving, opportunity-packed market where owner operators can truly thrive. Whether you're looking for flexibility, consistent miles, or a dedicated lane that keeps you home every night, this city has a lane for everyone.",
+      "In short, Chicago isn't just another trucking city-it's a dense, fast-moving, opportunity-packed market where owner operators can truly thrive. Whether you're looking for flexibility, consistent miles, or a dedicated lane that keeps you home every night, this city has a lane for everyone.",
 
       "## How to Evaluate a Trucking Company in Chicago Before Signing On",
 
       "![local owner operator jobs near me](https://goxxii.com/wp-content/uploads/2025/11/Tanker-owner-operator-jobs.png.webp)",
 
-      "With so many carriers based in and around the city, choosing the right trucking company Chicago has to offer can feel a little overwhelming. But the truth is, finding the right fit can make or break your experience as an owner operator. The good news? Chicago's busy freight scene gives you options—lots of them. The key is knowing what to look for so you can avoid headaches later and land the kind of work that actually supports your goals.",
+      "With so many carriers based in and around the city, choosing the right trucking company Chicago has to offer can feel a little overwhelming. But the truth is, finding the right fit can make or break your experience as an owner operator. The good news? Chicago's busy freight scene gives you options-lots of them. The key is knowing what to look for so you can avoid headaches later and land the kind of work that actually supports your goals.",
 
       "### 1. Take a Close Look at the Pay Structure",
 
@@ -420,11 +420,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### 2. Watch Out for Hidden or Extra Costs",
 
-      "Operating in and around Chicago has its own set of financial realities—tolls, parking, higher fuel prices in certain areas, and heavy traffic that can affect your productivity. Some companies build extra charges into their contracts, and others leave more responsibility on the driver. Understanding the breakdown upfront is key to protecting your profit.",
+      "Operating in and around Chicago has its own set of financial realities-tolls, parking, higher fuel prices in certain areas, and heavy traffic that can affect your productivity. Some companies build extra charges into their contracts, and others leave more responsibility on the driver. Understanding the breakdown upfront is key to protecting your profit.",
 
       "### 3. Understand the Insurance Expectations",
 
-      "Every carrier has its own insurance requirements, so be sure you know what you're responsible for. Expenses like owner operator semi truck insurance can vary widely depending on your equipment, driving record, and the type of freight you plan to haul. Some companies help offset the cost; others expect you to manage it entirely on your own. Neither option is wrong—it's just important to choose what works best for your business.",
+      "Every carrier has its own insurance requirements, so be sure you know what you're responsible for. Expenses like owner operator semi truck insurance can vary widely depending on your equipment, driving record, and the type of freight you plan to haul. Some companies help offset the cost; others expect you to manage it entirely on your own. Neither option is wrong-it's just important to choose what works best for your business.",
 
       "### 4. Check Reputation and Stability",
 
@@ -432,13 +432,13 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### 5. Know the Red Flags",
 
-      "If a company avoids direct answers, brushes off your questions, or promises \"unlimited freight\" without showing any proof—proceed with caution. Clear contracts, transparent communication, and realistic expectations are your best friends in this industry.",
+      "If a company avoids direct answers, brushes off your questions, or promises \"unlimited freight\" without showing any proof-proceed with caution. Clear contracts, transparent communication, and realistic expectations are your best friends in this industry.",
 
       "## Where to Find the Best Dedicated Owner Operator Jobs in Chicago",
 
       "![Trucks on a highway representing regional trucking demand](https://goxxii.com/wp-content/uploads/2025/11/trucks-on-a-highway-representing-regional-trucking-demand-and-owner-operator-opportunities-in-2025-3b637e9d-6f71-4f31-b494-39d35efa9ba2-e1765468861858.jpg.webp)",
 
-      "If there's one thing Chicago does well, it's keeping freight moving around the clock. And for many drivers, the real sweet spot lies in dedicated owner operator jobs—the kind of work that gives you predictable lanes, consistent income, and a routine you can actually plan your life around. In a city as fast-paced as Chicago, that kind of stability is worth its weight in gold.",
+      "If there's one thing Chicago does well, it's keeping freight moving around the clock. And for many drivers, the real sweet spot lies in dedicated owner operator jobs-the kind of work that gives you predictable lanes, consistent income, and a routine you can actually plan your life around. In a city as fast-paced as Chicago, that kind of stability is worth its weight in gold.",
 
       "### Why Dedicated Routes Are So Popular in Chicago",
 
@@ -457,7 +457,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Partnering With a Trucking Company That Has Strong Local Contracts",
 
-      "Working with an established trucking company Chicago carriers often gives you access to long-term partnerships and steady freight. These companies typically handle large-volume clients who prefer dependable, recurring deliveries—exactly the kind of work owner operators thrive on.",
+      "Working with an established trucking company Chicago carriers often gives you access to long-term partnerships and steady freight. These companies typically handle large-volume clients who prefer dependable, recurring deliveries-exactly the kind of work owner operators thrive on.",
 
       "This stability also helps with budgeting and planning, especially when considering expenses like fuel, maintenance, and essentials such as owner operator semi truck insurance.",
 
@@ -465,7 +465,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Beyond consistency, dedicated routes bring balance. When you know your weekly schedule, mileage, and expected loads, running your trucking business becomes much more manageable. You can plan ahead, avoid downtime, and create a routine that supports both your income and your lifestyle.",
 
-      "For many owner operators in Chicago, dedicated work offers the perfect mix of freedom and structure—allowing you to grow your business while staying grounded and close to home.",
+      "For many owner operators in Chicago, dedicated work offers the perfect mix of freedom and structure-allowing you to grow your business while staying grounded and close to home.",
 
       "_Also Read: [How to Choose the Best Owner Operator Trucking Company for Your Future](/blog/best-owner-operator-trucking-company)_",
 
@@ -481,7 +481,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Cut Operating Costs Without Cutting Quality",
 
-      "Running a [trucking business](https://www.ajrtrucking.com/blog/how-to-go-from-a-truck-driver-to-an-owner-operator/) in a major city comes with expenses that add up quickly, but small adjustments can make a big difference. Many drivers fuel up in the suburbs where prices tend to be lower, especially during busy seasons. Staying ahead of preventative maintenance is also crucial in Chicago, particularly with winter weather putting extra stress on equipment. Even simple choices like avoiding pricey downtown parking or choosing more affordable overnight spots can help you hold onto more of what you earn. Increasing profit isn't always about making more—it's often about spending smarter.",
+      "Running a [trucking business](https://www.ajrtrucking.com/blog/how-to-go-from-a-truck-driver-to-an-owner-operator/) in a major city comes with expenses that add up quickly, but small adjustments can make a big difference. Many drivers fuel up in the suburbs where prices tend to be lower, especially during busy seasons. Staying ahead of preventative maintenance is also crucial in Chicago, particularly with winter weather putting extra stress on equipment. Even simple choices like avoiding pricey downtown parking or choosing more affordable overnight spots can help you hold onto more of what you earn. Increasing profit isn't always about making more-it's often about spending smarter.",
 
       "### Build Strong Relationships With Local Brokers and Shippers",
 
@@ -489,7 +489,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Make Smart Insurance Decisions",
 
-      "Insurance may not be the most exciting topic, but choosing the right coverage is one of the best financial decisions an owner operator can make. A well-chosen owner operator semi truck insurance policy can protect your revenue and help you get back on the road quickly if something unexpected happens. Some Chicago carriers offer partial coverage or assistance, while others require drivers to handle insurance independently. Understanding exactly what you need—and what you're responsible for—makes a big difference in keeping your business stable.",
+      "Insurance may not be the most exciting topic, but choosing the right coverage is one of the best financial decisions an owner operator can make. A well-chosen owner operator semi truck insurance policy can protect your revenue and help you get back on the road quickly if something unexpected happens. Some Chicago carriers offer partial coverage or assistance, while others require drivers to handle insurance independently. Understanding exactly what you need-and what you're responsible for-makes a big difference in keeping your business stable.",
 
       "### Use Technology to Stay Efficient and Competitive",
 
@@ -497,26 +497,26 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "## Finding Your Best Path as a Chicago Owner Operator",
 
-      "Chicago is a city built on movement—freight, people, opportunity—and for owner operators, it offers one of the richest markets in the country. Whether you're exploring local [owner operator](https://qualitycarriers.com/owner-operator/is-being-an-owner-operator-worth-it/) jobs near me, comparing trucking companies, or looking for dedicated routes that offer stability, the key to success is understanding how to navigate this unique landscape.",
+      "Chicago is a city built on movement-freight, people, opportunity-and for owner operators, it offers one of the richest markets in the country. Whether you're exploring local [owner operator](https://qualitycarriers.com/owner-operator/is-being-an-owner-operator-worth-it/) jobs near me, comparing trucking companies, or looking for dedicated routes that offer stability, the key to success is understanding how to navigate this unique landscape.",
 
-      "If there's one thing to take away, it's this: Chicago gives owner operators a rare combination of opportunity and flexibility—but the drivers who thrive are the ones who approach it with intention. When you pair the right company with smart planning and a clear understanding of the local market, you're not just making a living—you're building a business.",
+      "If there's one thing to take away, it's this: Chicago gives owner operators a rare combination of opportunity and flexibility-but the drivers who thrive are the ones who approach it with intention. When you pair the right company with smart planning and a clear understanding of the local market, you're not just making a living-you're building a business.",
 
-      "If you're ready to take the next step, now is the perfect time. Explore local carriers, learn more about dedicated freight options, [connect with reputable brokers](/about), or dive deeper into what it takes to grow as an independent driver in this competitive city. Chicago has a lane for every kind of owner operator—it's just waiting for you to take it."
+      "If you're ready to take the next step, now is the perfect time. Explore local carriers, learn more about dedicated freight options, [connect with reputable brokers](/about), or dive deeper into what it takes to grow as an independent driver in this competitive city. Chicago has a lane for every kind of owner operator-it's just waiting for you to take it."
     ]
   },
 
   "owner-operator-guide": {
     image: ownerOperatorGuide,
     title: "Owner Operator Guide: Insurance, Jobs and Carriers",
-    excerpt: "Thinking about becoming an owner operator—or looking to level up your current setup? You're in the right place. This comprehensive guide covers everything you need to know.",
+    excerpt: "Thinking about becoming an owner operator-or looking to level up your current setup? You're in the right place. This comprehensive guide covers everything you need to know.",
     date: "December 3, 2025",
     readTime: "12 min read",
     category: "Guides",
     author: "XXII Century Team",
     content: [
-      "Thinking about becoming an owner operator—or looking to level up your current setup? You're in the right place. Today's trucking world is full of opportunities, but it also comes with its share of challenges, especially when it comes to finding steady work, choosing the right carriers, and securing the right owner operator semi truck insurance to protect your business.",
+      "Thinking about becoming an owner operator-or looking to level up your current setup? You're in the right place. Today's trucking world is full of opportunities, but it also comes with its share of challenges, especially when it comes to finding steady work, choosing the right carriers, and securing the right owner operator semi truck insurance to protect your business.",
 
-      "Whether you're just starting out or already hauling loads across the country, navigating this industry can feel overwhelming. There are countless job listings, endless carrier options, and so many insurance policies that all claim to be \"the best.\" It's a lot—and that's exactly why this guide exists.",
+      "Whether you're just starting out or already hauling loads across the country, navigating this industry can feel overwhelming. There are countless job listings, endless carrier options, and so many insurance policies that all claim to be \"the best.\" It's a lot-and that's exactly why this guide exists.",
 
       "In this owner operator guide, you'll get a clear, straightforward breakdown of everything you need to know: the most reliable job opportunities, what to look for in a trustworthy carrier, and how to choose insurance that actually has your back.",
 
@@ -524,27 +524,27 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![woman holding a document and speaking to an owner operator](https://goxxii.com/wp-content/uploads/2025/10/image-5.png.webp)",
 
-      "When you're an owner operator, whether you run general freight or take on dedicated owner operator jobs, your truck isn't just a vehicle—it's your business, your income, and your daily livelihood. That's exactly why having the right insurance isn't optional. It's the foundation that protects everything you've worked for. But with so many policies and coverage types out there, knowing what you actually need can feel like decoding a foreign language.",
+      "When you're an owner operator, whether you run general freight or take on dedicated owner operator jobs, your truck isn't just a vehicle-it's your business, your income, and your daily livelihood. That's exactly why having the right insurance isn't optional. It's the foundation that protects everything you've worked for. But with so many policies and coverage types out there, knowing what you actually need can feel like decoding a foreign language.",
 
       "### Why Insurance Matters More Than Ever",
 
       "The trucking industry is more fast-paced and unpredictable than it's ever been. One accident, breakdown, or cargo mishap can create huge financial setbacks if you're not properly covered. The right [owner operator semi truck insurance](/owner-operators) makes sure one bad day doesn't turn into a long-term crisis.",
 
-      "Beyond that, most carriers and brokers require specific insurance limits before they'll even work with you. So having solid coverage isn't just smart—it's your ticket to better-paying loads and long-term stability.",
+      "Beyond that, most carriers and brokers require specific insurance limits before they'll even work with you. So having solid coverage isn't just smart-it's your ticket to better-paying loads and long-term stability.",
 
       "### The Core Types of Insurance Every Owner Operator Should Have",
 
       "Not all insurance policies are created equal. To protect yourself, your truck, and your cargo, here are the coverage essentials you should know:",
 
-      "**Primary Liability** — This is the big one. It covers bodily injury or property damage if you're involved in an accident. Carriers usually require it, and without it, you simply can't operate legally.",
+      "**Primary Liability** - This is the big one. It covers bodily injury or property damage if you're involved in an accident. Carriers usually require it, and without it, you simply can't operate legally.",
 
-      "**Physical Damage** — Think of this as coverage for your truck itself. Accidents, theft, vandalism, weather damage—this protects the equipment you rely on to earn a living.",
+      "**Physical Damage** - Think of this as coverage for your truck itself. Accidents, theft, vandalism, weather damage-this protects the equipment you rely on to earn a living.",
 
-      "**Cargo Insurance** — If the freight you're hauling gets damaged, spoiled, or lost, cargo insurance helps cover the loss. It's especially important if you're hauling high-value or time-sensitive goods.",
+      "**Cargo Insurance** - If the freight you're hauling gets damaged, spoiled, or lost, cargo insurance helps cover the loss. It's especially important if you're hauling high-value or time-sensitive goods.",
 
-      "**Bobtail/Non-Trucking Liability** — When you're driving without a load or outside of dispatch, this policy steps in. It protects you during all those \"in-between\" miles that still carry risk.",
+      "**Bobtail/Non-Trucking Liability** - When you're driving without a load or outside of dispatch, this policy steps in. It protects you during all those \"in-between\" miles that still carry risk.",
 
-      "**Occupational Accident Insurance** — This helps cover injuries or accidents that happen on the job. It's especially vital if you're not under a workers' comp plan.",
+      "**Occupational Accident Insurance** - This helps cover injuries or accidents that happen on the job. It's especially vital if you're not under a workers' comp plan.",
 
       "### How to Choose the Right Insurance Provider",
 
@@ -560,7 +560,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### What Affects Your Insurance Costs?",
 
-      "It's no secret—insurance can be pricey. But [understanding what drives those costs](/blog/tca-2025-key-insights) helps you find ways to lower them. Your rates can be influenced by:",
+      "It's no secret-insurance can be pricey. But [understanding what drives those costs](/blog/tca-2025-key-insights) helps you find ways to lower them. Your rates can be influenced by:",
 
       "- Your driving history (clean records save money)",
       "- Type of freight you haul",
@@ -570,13 +570,13 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "For example, working with busy carriers or running steady freight out of a trucking hotspot can impact your rates because insurers evaluate risk based on traffic, freight demand, and claim trends in those areas.",
 
-      "Having the right insurance isn't about checking a box—it's about protecting your business so you can focus on what actually matters: finding better loads, building strong relationships with carriers, and growing your income as an owner operator. Let's keep moving and dig into the job opportunities that can help you do exactly that.",
+      "Having the right insurance isn't about checking a box-it's about protecting your business so you can focus on what actually matters: finding better loads, building strong relationships with carriers, and growing your income as an owner operator. Let's keep moving and dig into the job opportunities that can help you do exactly that.",
 
       "## Finding the Best Job Opportunities: Local, Dedicated & High-Paying",
 
       "![company truck driver checking owner operator guide](https://goxxii.com/wp-content/uploads/2025/04/blog-1-e1752675694865.jpg.webp)",
 
-      "Now that you have a solid understanding of insurance and the role owner operator semi truck insurance plays in protecting your business, it's time to talk about the part every owner operator cares about most: the work. The trucking job market has changed a lot in the last few years. Freight demand has shifted, new carriers have entered the scene, and more companies than ever are leaning on independent drivers. That means opportunities are out there—good ones, too—but knowing where to look and what to look for can make all the difference.",
+      "Now that you have a solid understanding of insurance and the role owner operator semi truck insurance plays in protecting your business, it's time to talk about the part every owner operator cares about most: the work. The trucking job market has changed a lot in the last few years. Freight demand has shifted, new carriers have entered the scene, and more companies than ever are leaning on independent drivers. That means opportunities are out there-good ones, too-but knowing where to look and what to look for can make all the difference.",
 
       "### The Job Market for Owner Operators in Today's Industry",
 
@@ -584,7 +584,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Dedicated Owner Operator Jobs: Pros, Cons and What to Expect",
 
-      "Dedicated routes have become especially appealing for owner operators who want consistency. Instead of constantly searching for your next load, you get predictable lanes, steady freight, and regular income. These jobs often pair you with the same shipper or route, which means you'll know the pickup and delivery routine like the back of your hand. The main benefit is stability—you don't have to guess what your week will look like. The trade-off, of course, is that you may sacrifice some flexibility or miss out on fluctuating spot-market rates when they spike. But for many [drivers](/company-drivers), especially those who prefer routine and reliability, dedicated owner operator jobs feel like the perfect balance between freedom and financial security.",
+      "Dedicated routes have become especially appealing for owner operators who want consistency. Instead of constantly searching for your next load, you get predictable lanes, steady freight, and regular income. These jobs often pair you with the same shipper or route, which means you'll know the pickup and delivery routine like the back of your hand. The main benefit is stability-you don't have to guess what your week will look like. The trade-off, of course, is that you may sacrifice some flexibility or miss out on fluctuating spot-market rates when they spike. But for many [drivers](/company-drivers), especially those who prefer routine and reliability, dedicated owner operator jobs feel like the perfect balance between freedom and financial security.",
 
       "### Local Owner Operator Jobs Near Me: Finding Reliable Daily or Regional Work",
 
@@ -592,7 +592,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Red Flags to Watch Out For Before Accepting a Job",
 
-      "Not every opportunity is as good as it sounds, which is why evaluating each offer carefully is essential. Pay attention to listings that promise unusually high rates with vague details—they may include forced dispatch or unstable freight. Jobs that lack transparent load information or have confusing payout terms should also raise a red flag. If communication feels off from the start, or if answers to your questions seem incomplete, it's often a sign to walk away. Your time, truck, and business deserve respect and clarity, so trust your instincts and choose carriers or shippers that value your professionalism.",
+      "Not every opportunity is as good as it sounds, which is why evaluating each offer carefully is essential. Pay attention to listings that promise unusually high rates with vague details-they may include forced dispatch or unstable freight. Jobs that lack transparent load information or have confusing payout terms should also raise a red flag. If communication feels off from the start, or if answers to your questions seem incomplete, it's often a sign to walk away. Your time, truck, and business deserve respect and clarity, so trust your instincts and choose carriers or shippers that value your professionalism.",
 
       "Finding the right work is one of the biggest steps toward creating a profitable and sustainable [career as an owner operator](https://arcb.com/blog/what-does-it-take-to-succeed-as-an-owner-operator). Once you understand the types of jobs available and how to spot the good from the bad, you're already ahead of most drivers in the market. In the next section, we'll break down what makes a carrier worth partnering with and how to choose one that supports your long-term success.",
 
@@ -600,29 +600,29 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![Truck driver standing in front of a truck](https://goxxii.com/wp-content/uploads/2025/09/2025-09-17-21.10.54-e1760557828682.jpg.webp)",
 
-      "Landing good freight is important, but choosing the right carrier to partner with can completely shape your experience as an owner operator. A carrier isn't just a company that sends you loads—they're the team you rely on for steady work, fair rates, and clear communication. Just as owner operator semi truck insurance gives you stability on the road, the right carrier gives you stability in your business. Pick the right one, and your operations can run smoothly. Pick the wrong one, and even the best-paying loads can become a headache. That's why it's worth taking time to understand what makes a carrier truly supportive of independent drivers.",
+      "Landing good freight is important, but choosing the right carrier to partner with can completely shape your experience as an owner operator. A carrier isn't just a company that sends you loads-they're the team you rely on for steady work, fair rates, and clear communication. Just as owner operator semi truck insurance gives you stability on the road, the right carrier gives you stability in your business. Pick the right one, and your operations can run smoothly. Pick the wrong one, and even the best-paying loads can become a headache. That's why it's worth taking time to understand what makes a carrier truly supportive of independent drivers.",
 
       "### What Makes a Carrier \"Owner Operator Friendly\"?",
 
-      "A good carrier feels like a partner, not a boss. They respect the fact that you're running your own business, and they structure their system in a way that helps you profit. Pay that's delivered on time, consistent freight, reasonable expectations, and dispatchers who treat you like a human being rather than a truck number—these are all signs you're dealing with an owner-operator-friendly carrier. Whether you're working with a regional fleet or a trucking company Chicago drivers often recommend, the best carriers also help with things like fuel discounts, maintenance programs, and route planning, which can make a big difference in your bottom line. When a carrier wants you to succeed, you'll feel it from day one.",
+      "A good carrier feels like a partner, not a boss. They respect the fact that you're running your own business, and they structure their system in a way that helps you profit. Pay that's delivered on time, consistent freight, reasonable expectations, and dispatchers who treat you like a human being rather than a truck number-these are all signs you're dealing with an owner-operator-friendly carrier. Whether you're working with a regional fleet or a trucking company Chicago drivers often recommend, the best carriers also help with things like fuel discounts, maintenance programs, and route planning, which can make a big difference in your bottom line. When a carrier wants you to succeed, you'll feel it from day one.",
 
       "### How to Evaluate a Trucking Company in Chicago or Any Busy Freight Hub",
 
-      "If you're operating out of a major freight market like Chicago, searching for local owner operator jobs near me will show you just how many options are available. The area is packed with regional carriers, intermodal companies, and long-established freight networks. That's a good thing because it gives you more opportunities to [choose a company](https://magnumlog.com/finding-the-right-trucking-company) that aligns with your goals. The key is looking beyond flashy promises. Check how long the company has been in business, whether drivers tend to stick around, and what their reputation is like in the community. A strong trucking company Chicago will have a reliable flow of freight moving in and out of the Midwest, meaning more consistent loads for you. Pay attention to how they communicate during the onboarding process too—if they're organized, transparent, and honest upfront, that's often a sign of how they'll treat you once you're officially under their authority.",
+      "If you're operating out of a major freight market like Chicago, searching for local owner operator jobs near me will show you just how many options are available. The area is packed with regional carriers, intermodal companies, and long-established freight networks. That's a good thing because it gives you more opportunities to [choose a company](https://magnumlog.com/finding-the-right-trucking-company) that aligns with your goals. The key is looking beyond flashy promises. Check how long the company has been in business, whether drivers tend to stick around, and what their reputation is like in the community. A strong trucking company Chicago will have a reliable flow of freight moving in and out of the Midwest, meaning more consistent loads for you. Pay attention to how they communicate during the onboarding process too-if they're organized, transparent, and honest upfront, that's often a sign of how they'll treat you once you're officially under their authority.",
 
       "### Carrier Contract Terms You Must Understand",
 
-      "Owner operators sometimes get excited about the freight opportunities—especially when considering owner operator jobs that promise steady loads—and overlook the paperwork, but your contract is one of the most important documents in your business. It spells out how you get paid, what expenses you're responsible for, and how disputes are handled. Take time to understand whether the carrier requires escrow accounts or chargebacks, and check if you're responsible for certain types of maintenance or insurance costs. You'll also want to know how often settlements are paid, what deductions might apply, and how the company handles time off or temporary breaks in your schedule.",
+      "Owner operators sometimes get excited about the freight opportunities-especially when considering owner operator jobs that promise steady loads-and overlook the paperwork, but your contract is one of the most important documents in your business. It spells out how you get paid, what expenses you're responsible for, and how disputes are handled. Take time to understand whether the carrier requires escrow accounts or chargebacks, and check if you're responsible for certain types of maintenance or insurance costs. You'll also want to know how often settlements are paid, what deductions might apply, and how the company handles time off or temporary breaks in your schedule.",
 
       "_Also Read: [Becoming an Owner Operator: Costs, Benefits, and What to Expect](/blog/becoming-owner-operator-costs)_",
 
       "## Building a Successful Future as an Owner Operator",
 
-      "Being an owner operator isn't just about driving a truck—it's about running a business, managing risks, and choosing the right opportunities to grow. From understanding the importance of solid owner operator semi truck insurance, to finding dedicated or local jobs, to choosing a dependable trucking company Chicago operators can rely on, every decision you make helps shape your long-term success on the road.",
+      "Being an owner operator isn't just about driving a truck-it's about running a business, managing risks, and choosing the right opportunities to grow. From understanding the importance of solid owner operator semi truck insurance, to finding dedicated or local jobs, to choosing a dependable trucking company Chicago operators can rely on, every decision you make helps shape your long-term success on the road.",
 
       "We've covered the essentials: why the right insurance protects your livelihood, how to spot quality job opportunities that fit your lifestyle, and what to look for when evaluating carriers, whether you're operating locally or in a major freight hub like Chicago. With the right foundation, attentive planning, and smart choices, you can build a profitable and sustainable career that gives you both freedom and stability.",
 
-      "If you're ready to [take the next step](/about), start reviewing your current setup—your insurance, your routes, and your partnerships—and explore opportunities that align with your goals. Whether that means searching for new jobs, comparing carriers, or learning more about how to optimize your operations, now is the perfect time to put your knowledge into action. Your business is in your hands, and every mile forward is a chance to grow."
+      "If you're ready to [take the next step](/about), start reviewing your current setup-your insurance, your routes, and your partnerships-and explore opportunities that align with your goals. Whether that means searching for new jobs, comparing carriers, or learning more about how to optimize your operations, now is the perfect time to put your knowledge into action. Your business is in your hands, and every mile forward is a chance to grow."
     ]
   },
 
@@ -637,19 +637,19 @@ export const blogPostsData: Record<string, BlogPostData> = {
     content: [
       "If you've been thinking about becoming a dry van owner operator, you're not alone. More drivers than ever are exploring this path because it offers something rare in trucking: flexibility, steady demand, and a real chance to build your own business on your own terms. Whether you're tired of company-driver limitations or simply curious about what owner-operator life looks like, dry van work is often the easiest and most beginner-friendly place to start.",
 
-      "In this guide, we'll break down everything you need to know before jumping in—from how much you can realistically earn to the requirements, insurance costs, and where to find the best opportunities. You'll also learn what separates successful owner operators from those who struggle, plus the insider tips that can help you maximize your time on the road.",
+      "In this guide, we'll break down everything you need to know before jumping in-from how much you can realistically earn to the requirements, insurance costs, and where to find the best opportunities. You'll also learn what separates successful owner operators from those who struggle, plus the insider tips that can help you maximize your time on the road.",
 
       "## What Is a Dry Van Owner Operator? (And Why It's the Most Flexible Path)",
 
       "![Local tanker owner operator standing beside a silver fuel truck](https://goxxii.com/wp-content/uploads/2025/11/Tanker-owner-operator-jobs.png.webp)",
 
-      "Before you jump into this career path, it helps to understand what being a dry van owner operator really means. At its core, it's one of the simplest setups in trucking: you haul non-perishable goods inside an enclosed trailer—no tanks, no tarps, no temperature controls, no complicated equipment. Think everyday items like clothing, electronics, packaged food, and household supplies. If it's boxed, palletized, or shrink-wrapped, there's a good chance it travels by dry van, whether you're running independently or partnering with a trucking company Chicago drivers often rely on.",
+      "Before you jump into this career path, it helps to understand what being a dry van owner operator really means. At its core, it's one of the simplest setups in trucking: you haul non-perishable goods inside an enclosed trailer-no tanks, no tarps, no temperature controls, no complicated equipment. Think everyday items like clothing, electronics, packaged food, and household supplies. If it's boxed, palletized, or shrink-wrapped, there's a good chance it travels by dry van, whether you're running independently or partnering with a trucking company Chicago drivers often rely on.",
 
       "### Understanding the Dry Van Model",
 
-      "Dry van hauling is often considered the \"bread and butter\" of the trucking world because the freight is so widely used. That means there's usually no shortage of work, whether you prefer long hauls or shorter routes. Unlike more specialized niches, dry van loads typically require minimal extra gear or technical know-how, which is why many drivers choose this category when transitioning into the owner-operator space—especially when they're factoring in essentials like owner operator semi truck insurance.",
+      "Dry van hauling is often considered the \"bread and butter\" of the trucking world because the freight is so widely used. That means there's usually no shortage of work, whether you prefer long hauls or shorter routes. Unlike more specialized niches, dry van loads typically require minimal extra gear or technical know-how, which is why many drivers choose this category when transitioning into the owner-operator space-especially when they're factoring in essentials like owner operator semi truck insurance.",
 
-      "As a [dry van owner operator](/owner-operators), you're not tied to complex loading procedures or freight that needs specialized handling. You back in, get loaded, secure the trailer, and hit the road. This simplicity is part of what makes dry van work so accessible—even for drivers who are new to running their own business.",
+      "As a [dry van owner operator](/owner-operators), you're not tied to complex loading procedures or freight that needs specialized handling. You back in, get loaded, secure the trailer, and hit the road. This simplicity is part of what makes dry van work so accessible-even for drivers who are new to running their own business.",
 
       "### Who This Job Is Best For",
 
@@ -659,7 +659,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Common Types of Dry Van Freight",
 
-      "The best part? Dry van freight is everywhere. Retailers, manufacturers, distributors, and e-commerce companies all rely heavily on this type of shipping. That translates into a steady stream of loads year-round—something every owner operator wants.",
+      "The best part? Dry van freight is everywhere. Retailers, manufacturers, distributors, and e-commerce companies all rely heavily on this type of shipping. That translates into a steady stream of loads year-round-something every owner operator wants.",
 
       "You'll haul everything from furniture and appliances to paper products, packaged foods, auto parts, and seasonal inventory. Because the freight is so versatile, you're less likely to face slow periods compared to more niche trucking sectors.",
 
@@ -667,15 +667,15 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![Truck driver standing in front of a truck](https://goxxii.com/wp-content/uploads/2025/09/2025-09-17-21.10.54-e1760557828682.jpg.webp)",
 
-      "One of the first questions every driver asks is, \"How much can I actually make as a dry van owner operator?\" And honestly, it's a smart question—because knowing what to expect helps you plan, budget, and decide whether this path is worth the investment.",
+      "One of the first questions every driver asks is, \"How much can I actually make as a dry van owner operator?\" And honestly, it's a smart question-because knowing what to expect helps you plan, budget, and decide whether this path is worth the investment.",
 
-      "The good news? [Dry van work](/blog/truck-driving-career-chicago) offers one of the most reliable earning potentials in trucking, mainly because the freight volume stays strong year-round. But like any business, your take-home pay depends not just on how much you earn—but also how much you spend to keep the wheels turning.",
+      "The good news? [Dry van work](/blog/truck-driving-career-chicago) offers one of the most reliable earning potentials in trucking, mainly because the freight volume stays strong year-round. But like any business, your take-home pay depends not just on how much you earn-but also how much you spend to keep the wheels turning.",
 
       "### Income Ranges: Weekly, Monthly, and Annually",
 
       "On average, many dry van owner operators gross anywhere from solid mid-range earnings to significantly higher annual income depending on how often they run, the lanes they choose, and the companies or brokers they work with. Drivers who stay on consistent regional routes or seek out [local owner operator jobs](/) may earn a bit less overall, but they balance it out with predictable schedules and more home time. Others maximize income by taking on dedicated owner operator jobs that guarantee steady freight and consistent lanes.",
 
-      "Meanwhile, contractors running OTR or hauling high-volume lanes often see higher gross numbers simply because they're covering more miles. The beauty of dry van work is that you can choose which balance—money or home time—matters most.",
+      "Meanwhile, contractors running OTR or hauling high-volume lanes often see higher gross numbers simply because they're covering more miles. The beauty of dry van work is that you can choose which balance-money or home time-matters most.",
 
       "### Expenses You Must Account For",
 
@@ -687,7 +687,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Profit Margins: What's Left After Expenses",
 
-      "After everything is paid for, many dry van owner operators walk away with a steady, healthy profit—especially those who track their expenses closely and plan their loads strategically. Factors like fuel efficiency, choosing better-paying lanes, picking strong partnerships, and avoiding unnecessary downtime can make a huge difference in your bottom line.",
+      "After everything is paid for, many dry van owner operators walk away with a steady, healthy profit-especially those who track their expenses closely and plan their loads strategically. Factors like fuel efficiency, choosing better-paying lanes, picking strong partnerships, and avoiding unnecessary downtime can make a huge difference in your bottom line.",
 
       "Smart load planning and disciplined money management are what separate thriving contractors from those who struggle. And the best part is that dry van freight makes it easier to stay profitable because the demand is so steady.",
 
@@ -697,13 +697,13 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![dry van owner operator talking to a woman](https://goxxii.com/wp-content/uploads/2025/10/image-5.png.webp)",
 
-      "If you're seriously considering becoming a dry van owner operator, it's important to understand what qualifications and requirements you'll need before you hit the road. The good news is that dry van trucking is one of the most accessible ways to get started as an independent driver—especially if you're exploring opportunities with a trucking company Chicago contractors often work with. Still, there are a few essentials—both legal and practical—you'll want to have in place to set yourself up for success.",
+      "If you're seriously considering becoming a dry van owner operator, it's important to understand what qualifications and requirements you'll need before you hit the road. The good news is that dry van trucking is one of the most accessible ways to get started as an independent driver-especially if you're exploring opportunities with a trucking company Chicago contractors often work with. Still, there are a few essentials-both legal and practical-you'll want to have in place to set yourself up for success.",
 
       "### CDL Requirements & Experience Levels",
 
       "First things first: you'll need a valid CDL, typically a Class A, to haul dry van loads. Most carriers also prefer drivers with at least a year of experience, though some will work with newer drivers if they have a clean record and solid training. A good driving history makes a big difference, not just for carrier approval but also for lowering your insurance costs and giving brokers confidence in your reliability.",
 
-      "If you're coming from a company-driver role, you already have a head start. Many of the skills you've picked up—trip planning, time management, safety awareness—translate directly into owner-operator life, whether you're aiming for dedicated owner operator jobs or something with more flexibility.",
+      "If you're coming from a company-driver role, you already have a head start. Many of the skills you've picked up-trip planning, time management, safety awareness-translate directly into owner-operator life, whether you're aiming for dedicated owner operator jobs or something with more flexibility.",
 
       "### Equipment Requirements",
 
@@ -711,7 +711,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Some carriers may also expect your tractor to have certain features like air-ride suspension or up-to-date safety equipment. And if you're bringing your own trailer, make sure it's well-maintained and meets the dimensions and weight capacity commonly used in dry van freight.",
 
-      "That said, many drivers choose to start by using a carrier's trailer—one less piece of equipment to worry about when you're launching your business. This is especially helpful if you're applying to local owner operator jobs near me where faster onboarding and equipment support can make a big difference.",
+      "That said, many drivers choose to start by using a carrier's trailer-one less piece of equipment to worry about when you're launching your business. This is especially helpful if you're applying to local owner operator jobs near me where faster onboarding and equipment support can make a big difference.",
 
       "### Must-Have Insurance (Protecting Yourself and Your Business)",
 
@@ -729,11 +729,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![owner-operator-job](https://goxxii.com/wp-content/uploads/2025/10/22nd-Century-Final-11-2-scaled-e1763721462445.jpg.webp)",
 
-      "Like any path in trucking, being a dry van owner operator comes with its fair share of perks and challenges. What makes it appealing to many drivers is the balance of stability, flexibility, and manageable workload. But to decide if it's the right move for you, it helps to look at the full picture—both the good and the not-so-good.",
+      "Like any path in trucking, being a dry van owner operator comes with its fair share of perks and challenges. What makes it appealing to many drivers is the balance of stability, flexibility, and manageable workload. But to decide if it's the right move for you, it helps to look at the full picture-both the good and the not-so-good.",
 
       "### Advantages",
 
-      "One of the biggest advantages of dry van work is the sheer volume of freight available. Retailers, manufacturers, food distributors—you name it—are constantly shipping goods that fit perfectly inside a dry van trailer. This steady demand means you're less likely to experience long stretches without loads, which is a huge plus for anyone running an independent trucking business or partnering with a trucking company Chicago drivers often trust.",
+      "One of the biggest advantages of dry van work is the sheer volume of freight available. Retailers, manufacturers, food distributors-you name it-are constantly shipping goods that fit perfectly inside a dry van trailer. This steady demand means you're less likely to experience long stretches without loads, which is a huge plus for anyone running an independent trucking business or partnering with a trucking company Chicago drivers often trust.",
 
       "Another benefit? Simplicity. Dry van hauling doesn't require specialized equipment or intense loading procedures. No tarping like flatbed drivers do, and no temperature control like reefers. This makes your day-to-day workload easier and reduces unexpected hassles on the road.",
 
@@ -745,19 +745,19 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Another challenge is the unpredictability of market rates. Like all areas of owner operator trucking, freight prices rise and fall depending on the season, economy, and demand. While dry van is generally steady, there will still be ups and downs you'll need to prepare for.",
 
-      "You should also keep an eye on deadhead miles—those empty stretches between loads. Some areas don't offer great backhaul options, which can cut into your profit if you're not careful about planning your routes.",
+      "You should also keep an eye on deadhead miles-those empty stretches between loads. Some areas don't offer great backhaul options, which can cut into your profit if you're not careful about planning your routes.",
 
       "### Who Thrives in This Role",
 
       "[Successful dry van owner operators](https://qualitycarriers.com/owner-operator/8-steps-to-become-a-successful-owner-operator-in-the-trucking-industry/) are usually organized, flexible, and good at managing their business. You don't need to be a financial expert, but you should be comfortable tracking expenses, planning routes, and negotiating rates.",
 
-      "If you're someone who wants stability without the extreme physical demands of other trucking niches, dry van work could be the perfect fit. It's a straightforward, dependable way to build a sustainable trucking business without needing hyper-specialized skills. It also aligns well with drivers who value smart planning—especially when managing essentials like owner operator semi truck insurance, which plays a major role in long-term profitability.",
+      "If you're someone who wants stability without the extreme physical demands of other trucking niches, dry van work could be the perfect fit. It's a straightforward, dependable way to build a sustainable trucking business without needing hyper-specialized skills. It also aligns well with drivers who value smart planning-especially when managing essentials like owner operator semi truck insurance, which plays a major role in long-term profitability.",
 
       "## Is Becoming a Dry Van Owner Operator the Right Move for You?",
 
       "Stepping into the role of a dry van owner operator is a big decision, but it's also one filled with opportunity. Throughout this guide, we explored what the job involves, how much you can realistically earn, what qualifications you need, and the pros and cons that come with running your own trucking business. Dry van work stands out because it offers a rare mix of flexibility, steady freight, and an easier entry point compared to more specialized niches.",
 
-      "Now that you know what to expect, the next step is [exploring your options](/about)—whether that means comparing carriers, researching load boards, or learning more about owner operator trucking. The opportunities are out there, and your future on the road is yours to shape."
+      "Now that you know what to expect, the next step is [exploring your options](/about)-whether that means comparing carriers, researching load boards, or learning more about owner operator trucking. The opportunities are out there, and your future on the road is yours to shape."
     ]
   },
 
@@ -772,19 +772,19 @@ export const blogPostsData: Record<string, BlogPostData> = {
     content: [
       "Becoming an independent driver is one of the most rewarding steps in trucking. The freedom to manage your schedule, choose your loads, and grow your own business attracts more drivers every year. But one question keeps coming up for owner operators: is it better to stay local or go long haul?",
 
-      "For many, the answer has become clear. Local owner operator jobs offer a rare balance between solid income and personal time. These routes allow drivers to make a living doing what they love—without sacrificing time at home or missing the moments that matter most.",
+      "For many, the answer has become clear. Local owner operator jobs offer a rare balance between solid income and personal time. These routes allow drivers to make a living doing what they love-without sacrificing time at home or missing the moments that matter most.",
 
-      "Local trucking continues to grow because it gives drivers what they've been searching for: stability, consistency, and control. With steady freight, shorter hauls, and familiar routes, local operators can build strong, sustainable careers close to home—without the stress of being on the road for weeks at a time.",
+      "Local trucking continues to grow because it gives drivers what they've been searching for: stability, consistency, and control. With steady freight, shorter hauls, and familiar routes, local operators can build strong, sustainable careers close to home-without the stress of being on the road for weeks at a time.",
 
       "## Understanding Local Owner Operator Jobs",
 
       "![xxii-century-owner-operator-jobs](https://goxxii.com/wp-content/uploads/2025/10/22nd-Century-122-scaled-e1761174385903-1024x941.jpg.webp)",
 
-      "Local owner operator trucking means shorter routes, regional deliveries, and predictable schedules. Instead of hauling freight across multiple states for days or weeks at a time, local drivers typically operate within a single region—sometimes even within one metro area.",
+      "Local owner operator trucking means shorter routes, regional deliveries, and predictable schedules. Instead of hauling freight across multiple states for days or weeks at a time, local drivers typically operate within a single region-sometimes even within one metro area.",
 
       "This setup creates a unique advantage. Local hauls are shorter but more frequent. Drivers can plan their days, return home nightly, and enjoy a routine that fits their lifestyle. For those who value family time or community involvement, this flexibility is hard to beat.",
 
-      "In [owner operator trucking](/owner-operators), local routes also open doors to diverse opportunities. From construction materials and grocery freight to fuel and industrial supplies, local demand stays strong year-round. It's not just about shorter distances—it's about reliable work that keeps trucks moving and paychecks steady.",
+      "In [owner operator trucking](/owner-operators), local routes also open doors to diverse opportunities. From construction materials and grocery freight to fuel and industrial supplies, local demand stays strong year-round. It's not just about shorter distances-it's about reliable work that keeps trucks moving and paychecks steady.",
 
       "## The Real Advantage: Home Time Without Losing Income",
 
@@ -798,7 +798,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Why Home Time Matters",
 
-      "Successful drivers know that home time is more than a perk—it's part of long-term success and something every driver should protect to [avoid burnout](/blog/succeed-without-burnout) in owner operator trucking. When drivers can recharge, maintain their trucks, and spend time with family, they stay more focused and efficient behind the wheel.",
+      "Successful drivers know that home time is more than a perk-it's part of long-term success and something every driver should protect to [avoid burnout](/blog/succeed-without-burnout) in owner operator trucking. When drivers can recharge, maintain their trucks, and spend time with family, they stay more focused and efficient behind the wheel.",
 
       "That's the real advantage: steady income and the lifestyle you want, all within a system that values your time as much as your productivity.",
 
@@ -810,7 +810,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Building Relationships With Regular Clients",
 
-      "With local owner operator jobs, drivers often establish relationships with repeat customers. Instead of chasing random cross-country loads, they develop [strong carrier partnerships](/blog/best-owner-operator-trucking-company)—delivering to the same businesses week after week. Those partnerships reduce downtime and provide consistent income.",
+      "With local owner operator jobs, drivers often establish relationships with repeat customers. Instead of chasing random cross-country loads, they develop [strong carrier partnerships](/blog/best-owner-operator-trucking-company)-delivering to the same businesses week after week. Those partnerships reduce downtime and provide consistent income.",
 
       "### Reducing Empty Miles and Operational Waste",
 
@@ -824,11 +824,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![Local tanker owner operator standing beside a silver fuel truck](https://goxxii.com/wp-content/uploads/2025/11/Tanker-owner-operator-jobs.png.webp)",
 
-      "One of the strongest local opportunities today is in tanker owner operator jobs. Tanker work requires precision, safety, and experience—but it also offers stability and excellent earning potential, especially for drivers who prefer to stay closer to home.",
+      "One of the strongest local opportunities today is in tanker owner operator jobs. Tanker work requires precision, safety, and experience-but it also offers stability and excellent earning potential, especially for drivers who prefer to stay closer to home.",
 
       "Local tanker routes often serve essential industries like fuel distribution, chemicals, and food-grade liquids. These materials need reliable deliveries every day, which keeps tanker operators in steady demand.",
 
-      "Operating in [specialized freight roles](/blog/becoming-owner-operator-costs) requires handling unique equipment and maintaining a high level of precision. That added responsibility often leads to premium pay. With the right training and strong compliance mindset, local tanker drivers can match—or even exceed—the earnings of long-haul operators while still being home more often.",
+      "Operating in [specialized freight roles](/blog/becoming-owner-operator-costs) requires handling unique equipment and maintaining a high level of precision. That added responsibility often leads to premium pay. With the right training and strong compliance mindset, local tanker drivers can match-or even exceed-the earnings of long-haul operators while still being home more often.",
 
       "XXII Century's tanker division is designed for drivers who take pride in their skill and professionalism. The company provides structured loads, safety-focused dispatch, and strong client relationships. For drivers ready to expand their expertise, it's a chance to step into a respected niche of owner operator trucking that offers both challenge and consistency.",
 
@@ -840,7 +840,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Shorter routes reduce fuel expenses significantly. Regular maintenance becomes easier when you're close to home, and downtime is easier to manage. These savings can make a real difference in long-term profitability.",
 
-      "Another key aspect is insurance. Every driver needs proper [owner operator semi truck insurance](https://www.insureon.com/trucking-business-insurance/owner-operators/cost), and operating locally can make coverage simpler and often more affordable. Insurance rates are influenced by distance, risk exposure, and driving patterns—so local operators, who drive fewer miles and stay within a smaller radius, often benefit from lower premiums.",
+      "Another key aspect is insurance. Every driver needs proper [owner operator semi truck insurance](https://www.insureon.com/trucking-business-insurance/owner-operators/cost), and operating locally can make coverage simpler and often more affordable. Insurance rates are influenced by distance, risk exposure, and driving patterns-so local operators, who drive fewer miles and stay within a smaller radius, often benefit from lower premiums.",
 
       "### Understanding Your Insurance Coverage Options",
 
@@ -851,7 +851,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
       "- **Cargo Insurance:** Covers freight damage or loss during transport. Local hauls might involve frequent loading and unloading, which increases the risk of minor incidents.",
       "- **Non-Trucking (Bobtail) Coverage:** Applies when you're driving your truck for personal use or between jobs, outside of dispatch.",
 
-      "Local operators often qualify for lower premiums because they travel within smaller service areas and face fewer long-distance risks. When shopping for coverage, it's worth comparing providers that specialize in owner operator trucking policies—they understand the realities of daily operations and can tailor plans to your exact needs.",
+      "Local operators often qualify for lower premiums because they travel within smaller service areas and face fewer long-distance risks. When shopping for coverage, it's worth comparing providers that specialize in owner operator trucking policies-they understand the realities of daily operations and can tailor plans to your exact needs.",
 
       "## The Safety and Lifestyle Benefits of Local Hauls",
 
@@ -859,11 +859,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Safety and well-being are critical in owner operator trucking, and local driving careers naturally support both. Fewer hours on the road mean less fatigue, reduced accident risk, and better overall health.",
 
-      "For many drivers, switching to local owner operator jobs restores balance. It allows for daily routines, consistent rest, and time to connect with family and community. Drivers can attend their kids' events, maintain friendships, and enjoy a more predictable lifestyle—all without leaving the industry they love.",
+      "For many drivers, switching to local owner operator jobs restores balance. It allows for daily routines, consistent rest, and time to connect with family and community. Drivers can attend their kids' events, maintain friendships, and enjoy a more predictable lifestyle-all without leaving the industry they love.",
 
       "From a safety standpoint, familiarity with local roads and traffic patterns also reduces risk. You know the routes, the weather, and the timing that works best. That kind of knowledge builds confidence and improves performance behind the wheel.",
 
-      "When schedules are realistic and expectations are clear, drivers can perform at their best—safely, efficiently, and sustainably. A healthy balance of work and rest leads to better focus on the road and a longer, more fulfilling career in trucking.",
+      "When schedules are realistic and expectations are clear, drivers can perform at their best-safely, efficiently, and sustainably. A healthy balance of work and rest leads to better focus on the road and a longer, more fulfilling career in trucking.",
 
       "## Why More Drivers Are Choosing Local Partnerships With XXII Century",
 
@@ -879,13 +879,13 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "## Balancing Career Goals and Quality of Life",
 
-      "In today's trucking world, success isn't measured by the longest routes or the most miles logged—it's about balance. The right mix of income, stability, and personal time defines real independence behind the wheel.",
+      "In today's trucking world, success isn't measured by the longest routes or the most miles logged-it's about balance. The right mix of income, stability, and personal time defines real independence behind the wheel.",
 
       "Local owner operator jobs offer that balance. They let drivers earn steady income, control expenses, and still be home for the moments that matter. With shorter hauls, predictable freight, and safer schedules, local trucking continues to be the smart choice for drivers who want lasting success.",
 
       "Every driver deserves the chance to build a business that works for both the road and their life. Choosing routes that fit your goals, managing costs wisely, and protecting your time are what make a career sustainable.",
 
-      "If you're ready to take the next step toward steady freight and a stronger work-life balance, [explore our opportunities](/careers) and find local routes that match your goals. The road to success doesn't have to take you far—it just needs to move you forward."
+      "If you're ready to take the next step toward steady freight and a stronger work-life balance, [explore our opportunities](/careers) and find local routes that match your goals. The road to success doesn't have to take you far-it just needs to move you forward."
     ]
   },
 
@@ -898,7 +898,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
     category: "Owner Operators",
     author: "XXII Century Team",
     content: [
-      "Regional trucking demand in 2025 directly shapes your earnings and schedule, influencing everything from freight volume to lane frequency and rate dynamics across local markets. This guide dives deep into the core drivers behind regional lanes, showing you exactly how these market forces translate into better pay and more owner operator opportunities across the country. We'll also map out practical strategies—including cutting-edge technology and smart seasonal planning—to help you maximize your profit and get more home time.",
+      "Regional trucking demand in 2025 directly shapes your earnings and schedule, influencing everything from freight volume to lane frequency and rate dynamics across local markets. This guide dives deep into the core drivers behind regional lanes, showing you exactly how these market forces translate into better pay and more owner operator opportunities across the country. We'll also map out practical strategies-including cutting-edge technology and smart seasonal planning-to help you maximize your profit and get more home time.",
 
       "This comprehensive guide tackles those pain points head-on with real-world lane comparisons, clear pay scenarios, and actionable technology ROI insights. You'll discover key demand drivers, region-by-region earning comparisons, practical tech adoption advice, and straightforward steps to apply for regional [trucking opportunities](/) with XXII Century.",
 
@@ -918,7 +918,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![e-commerce fulfillment center and construction site](https://storage.googleapis.com/content-assistant-images-persistent/e-commerce-fulfillment-center-and-construction-site-illustrating-the-influence-on-regional-freight-volume-aaa87503-aab0-4113-be30-20b8f4919e2f.webp)",
 
-      "The explosion of e-commerce is fueling high-frequency, time-sensitive short-haul lanes, a perfect fit for owners with reliable turn-times and drop-and-hook capabilities. Construction demand brings intermittent but heavier loads—think flatbed, aggregate, and bulk materials—that command higher per-load premiums and benefit owners with specialized equipment or trailer flexibility.",
+      "The explosion of e-commerce is fueling high-frequency, time-sensitive short-haul lanes, a perfect fit for owners with reliable turn-times and drop-and-hook capabilities. Construction demand brings intermittent but heavier loads-think flatbed, aggregate, and bulk materials-that command higher per-load premiums and benefit owners with specialized equipment or trailer flexibility.",
 
       "These distinctions also impact dwell-time and acceptance rules; e-commerce lanes reward quick throughput, while construction work often requires staging and more flexible scheduling. Staying informed about evolving [trucking technology trends](/blog/trucking-technology) also helps owner-operators streamline scheduling, manage dwell time, and maintain profitability across these shifting freight environments.",
 
@@ -938,10 +938,10 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Explore how different regional lanes offer distinct earning and scheduling profiles:",
 
-      "- **Midwest (manufacturing corridors):** Dry van, parts — $1.90–$2.60/mi — 3–5 loads/week — Weekly home time common",
-      "- **Southeast (e-commerce & distribution):** Small pallet, parcel — $2.10–$2.80/mi — 4–7 loads/week — Multiple returns/week possible",
-      "- **West Coast (intermodal feeders):** Intermodal, container drayage — $2.00–$2.70/mi — Daily short runs — Home time varies, often weekly",
-      "- **Sun Belt (construction & bulk):** Flatbed, bulk materials — $2.00–$3.00+/load — 1–3 loads/week (seasonal) — Variable by contract",
+      "- **Midwest (manufacturing corridors):** Dry van, parts - $1.90–$2.60/mi - 3–5 loads/week - Weekly home time common",
+      "- **Southeast (e-commerce & distribution):** Small pallet, parcel - $2.10–$2.80/mi - 4–7 loads/week - Multiple returns/week possible",
+      "- **West Coast (intermodal feeders):** Intermodal, container drayage - $2.00–$2.70/mi - Daily short runs - Home time varies, often weekly",
+      "- **Sun Belt (construction & bulk):** Flatbed, bulk materials - $2.00–$3.00+/load - 1–3 loads/week (seasonal) - Variable by contract",
 
       "## Your 2025 Outlook: Owner Operator Pay on Regional Routes",
 
@@ -965,10 +965,10 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Key technology benefits for owner operators:",
 
-      "- **AI-Powered Fuel Management:** Suggests optimal fueling points based on your truck's MPG — significantly reduces fuel spend",
-      "- **Route Optimization:** Minimizes deadhead miles and selects fastest/cheapest routes — more loaded miles per week",
-      "- **Mobile Dispatch App:** Real-time load updates and quick e-signatures — faster settlements and less idle time",
-      "- **Detention & Layover Tools:** Automates detention tracking and simplifies claims — higher accessorial recovery",
+      "- **AI-Powered Fuel Management:** Suggests optimal fueling points based on your truck's MPG - significantly reduces fuel spend",
+      "- **Route Optimization:** Minimizes deadhead miles and selects fastest/cheapest routes - more loaded miles per week",
+      "- **Mobile Dispatch App:** Real-time load updates and quick e-signatures - faster settlements and less idle time",
+      "- **Detention & Layover Tools:** Automates detention tracking and simplifies claims - higher accessorial recovery",
 
       "## Why XXII Century is Your Preferred Partner for Regional Owner Operators in 2025",
 
@@ -1025,7 +1025,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
     category: "Owner Operators",
     author: "XXII Century Team",
     content: [
-      "Becoming an independent truck driver is a big step. The freedom to choose loads, set your schedule, and grow your business is what draws many into owner operator trucking. But with that freedom comes responsibility—choosing the right company to partner with can make or break your success.",
+      "Becoming an independent truck driver is a big step. The freedom to choose loads, set your schedule, and grow your business is what draws many into owner operator trucking. But with that freedom comes responsibility-choosing the right company to partner with can make or break your success.",
 
       "Not all carriers are the same. Some offer good pay but little support, while others promise miles but hide extra costs. The wrong owner operator trucking company can create stress, but the right one brings stability, higher earnings, and long-term growth.",
 
@@ -1035,7 +1035,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![owner operator trucking](https://goxxii.com/wp-content/uploads/2025/08/IMG_0155-1024x683.jpg)",
 
-      "At its core, being an owner operator means you're more than just a driver—you're also a business owner. Instead of working under a company fleet, you own or lease your truck and run it under the authority of a carrier. This independence is one of the biggest appeals of owner operator trucking, giving drivers more control over their career path.",
+      "At its core, being an owner operator means you're more than just a driver-you're also a business owner. Instead of working under a company fleet, you own or lease your truck and run it under the authority of a carrier. This independence is one of the biggest appeals of owner operator trucking, giving drivers more control over their career path.",
 
       "With independence comes flexibility. As an owner operator, you decide when and where you want to drive, and in many cases, you can choose the loads that make the most sense for your schedule and income goals. That's why [owner operator jobs](/owner-operators) are often seen as the next big step for drivers who want to grow beyond being an employee.",
 
@@ -1045,13 +1045,13 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![owner operator jobs](https://goxxii.com/wp-content/uploads/2025/07/photo_2025-07-16_19-30-21-1024x576.jpg)",
 
-      "For many drivers, the real challenge isn't becoming an owner operator—it's choosing the right company. While most carriers advertise good pay, steady loads, and support, not every owner operator trucking company delivers.",
+      "For many drivers, the real challenge isn't becoming an owner operator-it's choosing the right company. While most carriers advertise good pay, steady loads, and support, not every owner operator trucking company delivers.",
 
       "The wrong choice can hurt your business fast. Hidden fees, poor communication, or unpredictable freight can quickly turn the freedom of owner operator trucking into a burden.",
 
       "On the other hand, the right partner can completely change your experience. A strong owner operator trucking company offers consistency, transparency, and respect. With reliable freight, clear pay structures, and responsive dispatch, you can focus on building your business instead of worrying about whether your next load will cover expenses.",
 
-      "Ultimately, the company you choose shapes your success. The best carriers don't just provide owner operator jobs—they create long-term owner operator opportunities where drivers can thrive, grow, and plan for the future.",
+      "Ultimately, the company you choose shapes your success. The best carriers don't just provide owner operator jobs-they create long-term owner operator opportunities where drivers can thrive, grow, and plan for the future.",
 
       "## Key Factors to Consider When Comparing Companies",
 
@@ -1061,7 +1061,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Compensation structure is the first area to examine. Some companies pay a flat rate per mile, while others pay a percentage of the load. Percentage-based pay often gives drivers more earning potential, but it's important to understand exactly how rates are calculated. A trustworthy owner operator trucking company will be transparent about deductions and settlement schedules so you know what to expect every week.",
 
-      "Freight options matter—whether you prefer regional runs, cross-country hauls, or short trips, companies with diverse lanes create better owner operator opportunities that match your lifestyle.",
+      "Freight options matter-whether you prefer regional runs, cross-country hauls, or short trips, companies with diverse lanes create better owner operator opportunities that match your lifestyle.",
 
       "Support services like 24/7 dispatch, fuel cards, and maintenance discounts also add value. The best partners turn owner operator jobs into sustainable businesses by investing in their drivers.",
 
@@ -1073,7 +1073,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "A common mistake is signing contracts too quickly. Pay may look good upfront, but the fine print can tell a different story. With any owner operator trucking company, transparency is key.",
 
-      "Contracts should clearly explain pay, settlement schedules, and deductions. Vague terms are red flags—hidden costs can quickly turn promising owner operator jobs into financial headaches.",
+      "Contracts should clearly explain pay, settlement schedules, and deductions. Vague terms are red flags-hidden costs can quickly turn promising owner operator jobs into financial headaches.",
 
       "The same goes for lease agreements. If you're leasing a truck through the company, make sure the terms are fair and realistic. The best carriers understand that drivers succeed when they're not weighed down by unfair obligations. That's why reputable companies highlight their owner operator opportunities with straightforward agreements that build trust between the driver and the company.",
 
@@ -1095,7 +1095,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "When choosing a partner in owner operator trucking, you'll need to decide between a local or national carrier. Each has benefits depending on your goals.",
 
-      "Local companies, like XXII Century in Lemont, IL, often offer a personal touch—knowing drivers by name, tailoring owner operator jobs, and keeping routes closer to home.",
+      "Local companies, like XXII Century in Lemont, IL, often offer a personal touch-knowing drivers by name, tailoring owner operator jobs, and keeping routes closer to home.",
 
       "National carriers provide larger freight networks and consistent long-haul loads, creating more owner operator opportunities, but sometimes with less flexibility and personal interaction.",
 
@@ -1107,7 +1107,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Before joining an owner operator trucking company, treat it like a business decision and ask the right questions to avoid costly surprises.",
 
-      "Start with pay—mileage or percentage—and make sure deductions are clear. Then confirm what expenses you'll cover, like fuel, tolls, insurance, or maintenance, so you know if the owner operator jobs fit your goals.",
+      "Start with pay-mileage or percentage-and make sure deductions are clear. Then confirm what expenses you'll cover, like fuel, tolls, insurance, or maintenance, so you know if the owner operator jobs fit your goals.",
 
       "Ask about freight variety and flexibility to decline loads. The best companies create real owner operator opportunities with steady freight that supports your business.",
 
@@ -1127,7 +1127,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Some drivers also overlook the importance of insurance and compliance. Without proper coverage, even one accident can put your business at risk. A strong partner should guide you through these requirements and ensure you're protected.",
 
-      "Finally, don't forget to think long term. It's easy to get excited about your first contract, but the best owner operator opportunities are the ones that support your growth year after year—not just today's paycheck.",
+      "Finally, don't forget to think long term. It's easy to get excited about your first contract, but the best owner operator opportunities are the ones that support your growth year after year-not just today's paycheck.",
 
       "## Why Drivers Choose XXII Century in Lemont, IL",
 
@@ -1135,7 +1135,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "When it comes to building a successful career in owner operator trucking, choosing a partner that values drivers makes all the difference. That's exactly why so many drivers turn to XXII Century in Lemont, IL. With years of industry experience and a commitment to transparency, this company has built a reputation as a trusted choice for independent drivers.",
 
-      "At XXII Century, drivers aren't just filling trucks—they're treated as business partners. The company offers competitive pay structures, clear contracts, and a steady flow of freight. For drivers searching for stable and rewarding owner operator jobs, these benefits provide the foundation for long-term success.",
+      "At XXII Century, drivers aren't just filling trucks-they're treated as business partners. The company offers competitive pay structures, clear contracts, and a steady flow of freight. For drivers searching for stable and rewarding owner operator jobs, these benefits provide the foundation for long-term success.",
 
       "What sets XXII Century apart is the balance between independence and support. Drivers enjoy the freedom that comes with running their own business while still having access to dispatch assistance, fuel programs, and maintenance support.",
 
@@ -1143,7 +1143,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Becoming an independent driver is one of the most rewarding career moves in trucking, but success depends on the choices you make along the way. We've covered what it means to be an owner operator, why selecting the right partner matters, and how to evaluate pay, contracts, and support. We've also looked at the common mistakes to avoid and the questions you should always ask before signing on.",
 
-      "The main takeaway is simple: the best company doesn't just provide loads—they provide stability, support, and real opportunities to grow. When you find the right owner operator trucking company, you gain more than a contract; you gain a partner invested in your success.",
+      "The main takeaway is simple: the best company doesn't just provide loads-they provide stability, support, and real opportunities to grow. When you find the right owner operator trucking company, you gain more than a contract; you gain a partner invested in your success.",
 
       "If you're ready to explore the best owner operator opportunities and take control of your career, XXII Century in Lemont, IL is here to help. [Contact our team today](/contact) and discover how the right choice can make all the difference in your journey."
     ]
@@ -1158,27 +1158,27 @@ export const blogPostsData: Record<string, BlogPostData> = {
     category: "Owner Operators",
     author: "XXII Century Team",
     content: [
-      "If you've driven through Chicago, you've seen just how busy the highways are with freight trucks. That's no surprise—Chicago is the beating heart of America's supply chain, connecting the East Coast, West Coast, and everything in between. For drivers ready to take the next step, the city offers something special: a wide variety of owner operator jobs with strong pay, steady routes, and room to grow.",
+      "If you've driven through Chicago, you've seen just how busy the highways are with freight trucks. That's no surprise-Chicago is the beating heart of America's supply chain, connecting the East Coast, West Coast, and everything in between. For drivers ready to take the next step, the city offers something special: a wide variety of owner operator jobs with strong pay, steady routes, and room to grow.",
 
-      "The challenge is finding the _right_ fit. With so many carriers and contracts, it's easy to feel overwhelmed or end up in a deal that doesn't serve you well. That's why this guide will help you cut through the noise, understand what matters most, and land an opportunity that matches your goals—whether that's bigger paychecks, more control, or better benefits.",
+      "The challenge is finding the _right_ fit. With so many carriers and contracts, it's easy to feel overwhelmed or end up in a deal that doesn't serve you well. That's why this guide will help you cut through the noise, understand what matters most, and land an opportunity that matches your goals-whether that's bigger paychecks, more control, or better benefits.",
 
-      "By the end, you'll know how to compare pay, identify the best routes, and spot a reliable owner operator trucking company—giving you a clear path to the top owner operator opportunities in one of the nation's busiest freight hubs.",
+      "By the end, you'll know how to compare pay, identify the best routes, and spot a reliable owner operator trucking company-giving you a clear path to the top owner operator opportunities in one of the nation's busiest freight hubs.",
 
       "## What Does It Mean to Be an Owner Operator in Trucking?",
 
       "![owner operator jobs](https://goxxii.com/wp-content/uploads/2025/07/photo_2025-07-16_19-30-21-1024x576.jpg)",
 
-      "Before you start comparing pay packages or signing contracts, it helps to understand exactly what being an owner operator means. At its core, an owner operator trucking career is all about independence. Instead of working as a company driver where the carrier owns the truck, you own (or lease) your own rig and contract with companies to haul freight. That ownership gives you freedom—and responsibility—in equal measure.",
+      "Before you start comparing pay packages or signing contracts, it helps to understand exactly what being an owner operator means. At its core, an owner operator trucking career is all about independence. Instead of working as a company driver where the carrier owns the truck, you own (or lease) your own rig and contract with companies to haul freight. That ownership gives you freedom-and responsibility-in equal measure.",
 
       "One of the biggest perks is control. As an owner operator, you decide which loads to take, when to drive, and often, how far you're willing to go. That flexibility is what draws many drivers to owner operator jobs, especially in a busy hub like Chicago where freight is always moving. The trade-off, of course, is that you're also in charge of everything behind the scenes: fuel costs, truck maintenance, insurance, and compliance.",
 
-      "This setup isn't for everyone, but for drivers with an entrepreneurial mindset, it can be incredibly rewarding. Think of it as running your own small business on wheels. You're not just driving—you're managing expenses, negotiating contracts, and choosing the [owner operator trucking company](/) that best matches your goals.",
+      "This setup isn't for everyone, but for drivers with an entrepreneurial mindset, it can be incredibly rewarding. Think of it as running your own small business on wheels. You're not just driving-you're managing expenses, negotiating contracts, and choosing the [owner operator trucking company](/) that best matches your goals.",
 
       "## The Chicago Advantage: Why Drivers Choose This Market",
 
       "![Hiring Owner Operators in Chicago](https://goxxii.com/wp-content/uploads/2025/06/tanker-1024x682.jpg)",
 
-      "When it comes to trucking, location is everything—and Chicago has it all. Sitting right at the crossroads of the nation's busiest highways, railways, and shipping routes, it's a major hub that keeps freight moving coast to coast. For drivers looking to maximize their earning potential, Chicago is one of the best places to find steady and profitable [owner operator jobs](/blog/truck-driving-career-chicago).",
+      "When it comes to trucking, location is everything-and Chicago has it all. Sitting right at the crossroads of the nation's busiest highways, railways, and shipping routes, it's a major hub that keeps freight moving coast to coast. For drivers looking to maximize their earning potential, Chicago is one of the best places to find steady and profitable [owner operator jobs](/blog/truck-driving-career-chicago).",
 
       "Here's why: the city is surrounded by thriving industries that rely on constant shipping. From manufacturing and construction to food distribution and retail, businesses in and around Chicago create a near-endless demand for freight services. That means there's always work available, whether you prefer short regional hauls or longer cross-country trips.",
 
@@ -1192,17 +1192,17 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "When drivers look at owner operator jobs in Chicago, pay is usually the first question on their minds. Thanks to the city's nonstop freight demand, earnings here are some of the strongest in the Midwest.",
 
-      "On average, many in owner operator trucking gross between $150,000 and $220,000 annually. After expenses like fuel, maintenance, and insurance, net income typically falls in the $70,000–$120,000 range—still higher than most company driving jobs. The difference often comes down to what freight you haul and how well you manage costs.",
+      "On average, many in owner operator trucking gross between $150,000 and $220,000 annually. After expenses like fuel, maintenance, and insurance, net income typically falls in the $70,000–$120,000 range-still higher than most company driving jobs. The difference often comes down to what freight you haul and how well you manage costs.",
 
       "That's why it helps to think like a business owner. [Successful drivers](/blog/becoming-owner-operator-costs) treat their trucks as investments, carefully planning routes, controlling expenses, and negotiating contracts that boost profitability.",
 
-      "Long-haul runs tend to pay more per mile, while regional or local work offers steadier schedules but slightly smaller checks. Specialized freight, like reefer or oversized loads, can bring premium rates. This is where choosing the right owner operator trucking company matters—they connect you with consistent, higher-paying loads that help maximize your revenue.",
+      "Long-haul runs tend to pay more per mile, while regional or local work offers steadier schedules but slightly smaller checks. Specialized freight, like reefer or oversized loads, can bring premium rates. This is where choosing the right owner operator trucking company matters-they connect you with consistent, higher-paying loads that help maximize your revenue.",
 
       "## Routes and Lanes: Understanding Chicago's Freight Network",
 
       "![3 trucks lined up](https://goxxii.com/wp-content/uploads/2025/07/paddock-parking-lot-325-1024x683.png)",
 
-      "If pay is the \"what,\" then routes are the \"how.\" The money in owner operator trucking doesn't just come from the rate per mile—it also depends on the lanes you run and how much time you spend on the road. That's where Chicago really shines.",
+      "If pay is the \"what,\" then routes are the \"how.\" The money in owner operator trucking doesn't just come from the rate per mile-it also depends on the lanes you run and how much time you spend on the road. That's where Chicago really shines.",
 
       "Because the city sits at the intersection of major interstates like I-55, I-90, and I-94, drivers here have access to some of the busiest freight corridors in the country. For those who enjoy long-haul driving, these highways can take you directly to markets on the East Coast, West Coast, or down to the South with ease. On the other hand, if you'd rather stay closer to home, Chicago is surrounded by high-demand regional routes that can keep you busy without weeks away from family.",
 
@@ -1218,9 +1218,9 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Flexibility is one of the [biggest advantages](https://www.america1logistics.com/post/8-benefits-of-being-an-owner-operator). In owner operator trucking, you decide how much time to spend on the road and when to be home. That freedom is a major perk for drivers who value family time as much as income.",
 
-      "Supportive carriers also make a big impact. Some larger owner operator trucking companies offer access to group health insurance, retirement plans, or wellness resources—things that are tough to secure on your own. Others provide fuel cards, maintenance discounts, or lease-to-own programs that help lower your operating costs.",
+      "Supportive carriers also make a big impact. Some larger owner operator trucking companies offer access to group health insurance, retirement plans, or wellness resources-things that are tough to secure on your own. Others provide fuel cards, maintenance discounts, or lease-to-own programs that help lower your operating costs.",
 
-      "And then there's consistency. Reliable freight week after week is one of the most underrated benefits in this business. Knowing you'll have steady loads available makes planning—and saving for the future—much easier.",
+      "And then there's consistency. Reliable freight week after week is one of the most underrated benefits in this business. Knowing you'll have steady loads available makes planning-and saving for the future-much easier.",
 
       "## How to Choose the Right Owner Operator Trucking Company in Chicago",
 
@@ -1228,9 +1228,9 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "With so many carriers in the area, finding the right owner operator trucking company can feel overwhelming. But the choice you make here directly impacts your income, stability, and long-term success.",
 
-      "Start with reputation. Talk to other drivers and check reviews—companies with transparent pay, consistent freight, and good communication usually stand out. Avoid carriers with hidden fees or vague contracts; a trustworthy partner will clearly outline costs and expectations.",
+      "Start with reputation. Talk to other drivers and check reviews-companies with transparent pay, consistent freight, and good communication usually stand out. Avoid carriers with hidden fees or vague contracts; a trustworthy partner will clearly outline costs and expectations.",
 
-      "Size also matters. Large carriers often provide steady loads and perks like fuel cards, while smaller local companies may offer more personal relationships and flexibility. Neither is better—it depends on what kind of owner operator jobs fit your lifestyle.",
+      "Size also matters. Large carriers often provide steady loads and perks like fuel cards, while smaller local companies may offer more personal relationships and flexibility. Neither is better-it depends on what kind of owner operator jobs fit your lifestyle.",
 
       "Finally, think beyond today's paycheck. The right owner operator trucking company should help you grow, not leave you scrambling for loads. When you choose a partner that values transparency and supports drivers, you turn everyday owner operator opportunities into a stable career path.",
 
@@ -1252,11 +1252,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "## Driving Toward the Best Opportunities",
 
-      "Chicago isn't just another trucking city—it's a place where freight never stops moving, and where drivers with ambition can truly thrive. From competitive pay to diverse routes and valuable perks, the city offers everything you need to build a successful career in owner operator trucking.",
+      "Chicago isn't just another trucking city-it's a place where freight never stops moving, and where drivers with ambition can truly thrive. From competitive pay to diverse routes and valuable perks, the city offers everything you need to build a successful career in owner operator trucking.",
 
       "The key is making smart choices. Finding the right [owner operator jobs](/careers) means looking beyond the paycheck to consider benefits, lifestyle fit, and long-term stability. It also means being selective about the owner operator trucking company you partner with, since the right carrier can provide not only steady freight but also the support you need to grow your business.",
 
-      "At the end of the day, the opportunities are here—it's just a matter of taking the wheel."
+      "At the end of the day, the opportunities are here-it's just a matter of taking the wheel."
     ]
   },
 
@@ -1269,7 +1269,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
     category: "Guides",
     author: "XXII Century Team",
     content: [
-      "Becoming an owner operator in the trucking industry can feel like a dream come true: the freedom to be your own boss, set your own hours, and hit the open road. But while the rewards are great, the challenges can also be overwhelming. The long hours, isolation, and pressure to manage your own business can lead to burnout—something many owner-operators struggle with.",
+      "Becoming an owner operator in the trucking industry can feel like a dream come true: the freedom to be your own boss, set your own hours, and hit the open road. But while the rewards are great, the challenges can also be overwhelming. The long hours, isolation, and pressure to manage your own business can lead to burnout-something many owner-operators struggle with.",
 
       "In this guide, we'll share how to thrive in owner operator trucking jobs without sacrificing your health, happiness, or business success. From balancing work and life to managing your finances, we'll give you the tools you need to make your truck owner job sustainable and fulfilling for years to come.",
 
@@ -1279,7 +1279,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Being an owner operator offers unmatched freedom, but it's not without its challenges. Transitioning into [owner operator jobs](/) represents a major step forward in both independence and responsibility, and it's one that can completely reshape your lifestyle.",
 
-      "When you choose this route, you're not just signing up to drive—you're essentially starting a small business on wheels. Unlike traditional company roles, truck driving careers as an owner operator require you to juggle multiple roles at once: professional driver, logistics planner, accountant, negotiator, and, at times, even your own mechanic.",
+      "When you choose this route, you're not just signing up to drive-you're essentially starting a small business on wheels. Unlike traditional company roles, truck driving careers as an owner operator require you to juggle multiple roles at once: professional driver, logistics planner, accountant, negotiator, and, at times, even your own mechanic.",
 
       "The freedom to choose your own loads, set your schedule, and decide which clients you want to work with can be incredibly rewarding. However, that freedom comes with added pressure. Deadlines don't get any looser just because you're independent, and costs such as fuel, insurance, permits, and unexpected maintenance can quickly eat into profits if not managed carefully.",
 
@@ -1323,7 +1323,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Taking Regular Breaks",
 
-      "Driving long hours can drain both your body and mind. Make sure to take breaks every few hours—stretching, walking, and stepping away from the truck to recharge. These breaks improve circulation, reduce fatigue, and help you return to the road feeling refreshed and focused.",
+      "Driving long hours can drain both your body and mind. Make sure to take breaks every few hours-stretching, walking, and stepping away from the truck to recharge. These breaks improve circulation, reduce fatigue, and help you return to the road feeling refreshed and focused.",
 
       "### Healthy Eating and Hydration",
 
@@ -1361,9 +1361,9 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "## Conclusion",
 
-      "Thriving as an owner operator is all about finding the right balance—balancing the demands of the road, managing your business effectively, and taking care of your personal well-being. While owner operator trucking jobs come with their share of challenges, applying the right strategies can ensure long-term success without burning out.",
+      "Thriving as an owner operator is all about finding the right balance-balancing the demands of the road, managing your business effectively, and taking care of your personal well-being. While owner operator trucking jobs come with their share of challenges, applying the right strategies can ensure long-term success without burning out.",
 
-      "By prioritizing work-life balance, optimizing your time and energy, managing your finances wisely, and building a strong support network, you'll set yourself up for a rewarding career. Ready to take your [truck driving career](/careers) to the next level? Start implementing these strategies today and watch your business—and your quality of life—improve as you stay on the road to success."
+      "By prioritizing work-life balance, optimizing your time and energy, managing your finances wisely, and building a strong support network, you'll set yourself up for a rewarding career. Ready to take your [truck driving career](/careers) to the next level? Start implementing these strategies today and watch your business-and your quality of life-improve as you stay on the road to success."
     ]
   },
 
@@ -1378,7 +1378,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
     content: [
       "Truck driving career in Chicago opportunities are everywhere if you know where to look. From busy interstates to massive freight hubs, the Windy City is one of the biggest transportation crossroads in the country. That makes it a prime location for drivers looking to take their careers to the next level as independent professionals.",
 
-      "Building a truck driving career as an owner operator isn't just about hauling freight—it's about gaining the freedom to choose your loads, set your schedule, and take control of your earning potential. But while the rewards can be big, the path isn't always straightforward.",
+      "Building a truck driving career as an owner operator isn't just about hauling freight-it's about gaining the freedom to choose your loads, set your schedule, and take control of your earning potential. But while the rewards can be big, the path isn't always straightforward.",
 
       "That's exactly what this guide is here for. Whether you're just starting out or you've been behind the wheel for years and want to go independent, we'll walk you step by step through how to build a successful owner operator career in Chicago.",
 
@@ -1386,11 +1386,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![white heavy truck](https://goxxii.com/wp-content/uploads/2025/08/dji_fly_20240924_072356_372_1727180810648_photo-1024x768.jpg)",
 
-      "If you're thinking about starting your journey as an owner operator, there's no better place to do it than Chicago. This city isn't just deep-dish pizza and skyline views—it's one of the busiest freight hubs in the United States. With its central location, Chicago connects the East and West coasts, the Great Lakes, and the South.",
+      "If you're thinking about starting your journey as an owner operator, there's no better place to do it than Chicago. This city isn't just deep-dish pizza and skyline views-it's one of the busiest freight hubs in the United States. With its central location, Chicago connects the East and West coasts, the Great Lakes, and the South.",
 
       "For drivers, that means opportunity. Every day, thousands of loads move in and out of the city by truck. From retail goods and construction materials to food and agricultural products, the demand is steady and diverse. If you're looking for stability and growth in your career, Chicago is a market that never really slows down.",
 
-      "But here's what makes it even more appealing: as an owner operator, you're in control. Instead of being tied to a company's routes or schedules, you can choose the loads that make the most sense for you—whether that's quick local runs around the city or longer regional hauls that give you higher paydays. It's this balance of flexibility and opportunity that makes Chicago such an attractive place to build a lasting [truck driving career](/owner-operators).",
+      "But here's what makes it even more appealing: as an owner operator, you're in control. Instead of being tied to a company's routes or schedules, you can choose the loads that make the most sense for you-whether that's quick local runs around the city or longer regional hauls that give you higher paydays. It's this balance of flexibility and opportunity that makes Chicago such an attractive place to build a lasting [truck driving career](/owner-operators).",
 
       "Of course, opportunity also brings competition. With so many carriers, shippers, and logistics companies operating here, you'll need to know how to stand out and secure the best loads.",
 
@@ -1417,11 +1417,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
       "- **Higher earning potential:** Because you negotiate your own rates, you can often take home more than company drivers.",
       "- **Flexibility:** You decide whether you want short city runs, regional freight, or longer hauls across state lines.",
       "- **Diverse opportunities:** With so many freight companies based here, there's always a steady flow of [truck owner jobs](/) to choose from.",
-      "- **Independence:** You're no longer limited by a dispatcher's schedule—you call the shots.",
+      "- **Independence:** You're no longer limited by a dispatcher's schedule-you call the shots.",
 
       "### Challenges Every New Owner Operator Should Prepare For",
 
-      "Of course, freedom comes with responsibility. Owning your own truck means you're not just the driver—you're also the business owner. Some challenges to keep in mind include:",
+      "Of course, freedom comes with responsibility. Owning your own truck means you're not just the driver-you're also the business owner. Some challenges to keep in mind include:",
 
       "- **Upfront investment:** Trucks aren't cheap. Whether you buy or lease, expect a significant financial commitment.",
       "- **Operating costs:** Fuel, insurance, maintenance, and permits are your responsibility.",
@@ -1436,7 +1436,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Why a CDL Is Your Golden Ticket",
 
-      "A Commercial Driver's License (CDL) isn't just another card in your wallet—it's proof that you have the skills, knowledge, and responsibility to [handle a commercial vehicle safely](https://www.focus2move.com/7-tips-to-drive-commercial-vehicles-safely/).",
+      "A Commercial Driver's License (CDL) isn't just another card in your wallet-it's proof that you have the skills, knowledge, and responsibility to [handle a commercial vehicle safely](https://www.focus2move.com/7-tips-to-drive-commercial-vehicles-safely/).",
 
       "- **Class A CDL:** Required for most tractor-trailer and owner operator positions.",
       "- **Endorsements:** Add-ons like HazMat (H), Tanker (N), or Doubles/Triples (T) can boost your earning potential and make you more competitive.",
@@ -1451,7 +1451,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "### Preparing for Your First Owner Operator Trucking Driving Job",
 
-      "Once you've earned your CDL, you're ready to start exploring opportunities—but don't rush. Building experience is key before stepping into full ownership:",
+      "Once you've earned your CDL, you're ready to start exploring opportunities-but don't rush. Building experience is key before stepping into full ownership:",
 
       "- **Start with company driving jobs:** They give you the chance to learn routes, handle freight, and build confidence.",
       "- **Research local carriers:** Many Chicago-based companies offer [owner operator positions](/owner-operators) that let you lease or buy equipment while gaining experience.",
@@ -1462,7 +1462,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![company truck](https://goxxii.com/wp-content/uploads/2025/08/dji_fly_20240924_072130_363_1727180785626_photo-1024x768.jpg)",
 
-      "Your truck is more than just transportation—it's the heart of your business. Choosing wisely can set you up for success in owner operator trucking jobs, while a poor choice can quickly eat into your profits.",
+      "Your truck is more than just transportation-it's the heart of your business. Choosing wisely can set you up for success in owner operator trucking jobs, while a poor choice can quickly eat into your profits.",
 
       "Many new drivers wrestle with the decision to lease or buy. [Leasing usually costs less](https://www.tecequipment.com/blog/pros-and-cons-of-leasing-a-truck/) upfront and sometimes includes maintenance, making it a good option if you're just starting out. Buying, however, gives you full control of the truck and can be a smarter long-term investment if you plan to stay in the industry for years.",
 
@@ -1480,11 +1480,11 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "The key is knowing where to look. Many drivers start with online job boards that focus specifically on CDL owner operator jobs, but don't stop there. Local carriers and logistics companies often hire directly, and building relationships with dispatchers or brokers can give you access to steady loads before they're posted publicly.",
 
-      "To stand out in a competitive market like Chicago, think of yourself as more than just a driver—you're a business partner. Highlight your safety record, certifications, and reliability when negotiating contracts. Companies are willing to pay top dollar for dependable drivers who deliver on time and take care of their freight.",
+      "To stand out in a competitive market like Chicago, think of yourself as more than just a driver-you're a business partner. Highlight your safety record, certifications, and reliability when negotiating contracts. Companies are willing to pay top dollar for dependable drivers who deliver on time and take care of their freight.",
 
       "## Take the Driver's Seat in Your Future",
 
-      "Building a truck driving career as an owner operator in Chicago isn't just about getting behind the wheel—it's about taking control of your future. From understanding what it means to run your own truck driving business, to earning your CDL, choosing the right truck, and finding steady contracts, every step brings you closer to independence and long-term success.",
+      "Building a truck driving career as an owner operator in Chicago isn't just about getting behind the wheel-it's about taking control of your future. From understanding what it means to run your own truck driving business, to earning your CDL, choosing the right truck, and finding steady contracts, every step brings you closer to independence and long-term success.",
 
       "Chicago's busy freight network makes it one of the best places to grow as an owner operator. With so many opportunities available, the drivers who prepare well, stay consistent, and treat their work like a business are the ones who secure the best loads and the highest pay.",
 
@@ -1501,23 +1501,23 @@ export const blogPostsData: Record<string, BlogPostData> = {
     category: "Guides",
     author: "XXII Century Team",
     content: [
-      "If you've ever spent hours on the highway watching endless streams of big rigs roll by, you've probably wondered what it's like to be the one behind the wheel. For many drivers, _truck driving jobs_ start as a way to make a steady living, but over time, the idea of calling the shots—and keeping more of the profits—starts to look pretty appealing. That's where becoming an owner operator comes in.",
+      "If you've ever spent hours on the highway watching endless streams of big rigs roll by, you've probably wondered what it's like to be the one behind the wheel. For many drivers, _truck driving jobs_ start as a way to make a steady living, but over time, the idea of calling the shots-and keeping more of the profits-starts to look pretty appealing. That's where becoming an owner operator comes in.",
 
       "In simple terms, an owner operator is a truck driver who owns their own rig and runs their own trucking business. It's a career move that offers more freedom, higher earning potential, and the chance to build something that's truly yours. But it's also a big step, with real costs, new responsibilities, and plenty of decisions that can make or break your success.",
 
-      "In this guide, we'll break down exactly what it takes to transition from company driver to owner operator. You'll learn about the upfront investment, the daily realities of running your own rig, and the strategies successful drivers use to keep their schedules full—whether that's hauling long distances or mixing in _local trucking jobs_. By the end, you'll have a clear picture of the risks, rewards, and what to expect before you hit the road as your own boss.",
+      "In this guide, we'll break down exactly what it takes to transition from company driver to owner operator. You'll learn about the upfront investment, the daily realities of running your own rig, and the strategies successful drivers use to keep their schedules full-whether that's hauling long distances or mixing in _local trucking jobs_. By the end, you'll have a clear picture of the risks, rewards, and what to expect before you hit the road as your own boss.",
 
       "## Understanding the Role of an Owner Operator",
 
       "![Owner operator trucks](https://goxxii.com/wp-content/uploads/2025/08/DSC00052-1024x683.jpg.webp)",
 
-      "Before you dive into buying your own rig or scanning job boards for the best loads, it's worth slowing down to understand exactly what being an owner operator means—and how it's different from other truck driving jobs.",
+      "Before you dive into buying your own rig or scanning job boards for the best loads, it's worth slowing down to understand exactly what being an owner operator means-and how it's different from other truck driving jobs.",
 
-      "At its core, an owner operator is both a driver and a business owner. You're not just clocking in, picking up freight, and going home. You're managing every part of your operation: finding loads, negotiating rates, handling paperwork, keeping your truck in top shape, and making sure your business stays profitable. Think of it as wearing two hats—one for driving, one for running a small company.",
+      "At its core, an owner operator is both a driver and a business owner. You're not just clocking in, picking up freight, and going home. You're managing every part of your operation: finding loads, negotiating rates, handling paperwork, keeping your truck in top shape, and making sure your business stays profitable. Think of it as wearing two hats-one for driving, one for running a small company.",
 
       "### Owner Operator vs. Company Driver",
 
-      "When you work as a company driver, your truck, fuel, insurance, and most of your routes are provided by your employer. You get a paycheck, but your earning potential is limited by the company's pay scale and schedule. As an owner operator, you keep a larger share of what each load pays—but you also take on all the expenses and risks.",
+      "When you work as a company driver, your truck, fuel, insurance, and most of your routes are provided by your employer. You get a paycheck, but your earning potential is limited by the company's pay scale and schedule. As an owner operator, you keep a larger share of what each load pays-but you also take on all the expenses and risks.",
 
       "### Different Types of Owner Operators",
 
@@ -1529,27 +1529,27 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Not every owner operator spends weeks away from home. Some focus on [local trucking jobs](/blog/hiring-owner-operators-chicago), delivering within a certain radius so they can be home most nights. Others choose OTR work, hauling freight across state lines for bigger paychecks. The right choice depends on your lifestyle, goals, and the kind of work-life balance you're aiming for.",
 
-      "In short, being an owner operator is about freedom, responsibility, and the willingness to treat trucking like a business. The next step? Knowing exactly what it costs to get started—because the freedom comes with a price tag.",
+      "In short, being an owner operator is about freedom, responsibility, and the willingness to treat trucking like a business. The next step? Knowing exactly what it costs to get started-because the freedom comes with a price tag.",
 
       "## The True Costs of Becoming an Owner Operator",
 
       "![company truck](https://goxxii.com/wp-content/uploads/2025/08/dji_fly_20240924_072130_363_1727180785626_photo-1024x768.jpg.webp)",
 
-      "When you're a company driver, it's easy to take for granted how much your employer covers. The truck is theirs, the insurance is theirs, the permits are theirs, and when something breaks, they handle the bill. As an [owner operator](/owner-operators), every one of those costs shifts to you. That's not meant to scare you—it's meant to prepare you, because knowing the full picture of your expenses is the best way to set yourself up for success.",
+      "When you're a company driver, it's easy to take for granted how much your employer covers. The truck is theirs, the insurance is theirs, the permits are theirs, and when something breaks, they handle the bill. As an [owner operator](/owner-operators), every one of those costs shifts to you. That's not meant to scare you-it's meant to prepare you, because knowing the full picture of your expenses is the best way to set yourself up for success.",
 
       "The biggest financial hurdle usually comes right at the start: acquiring your truck. You can either buy or lease, and both paths come with trade-offs. Buying means you own the rig outright and have complete control over how you run it, but it often requires a hefty down payment and long-term financing. Leasing may be easier to get into, with lower upfront costs and sometimes even maintenance included, but over time it can end up costing more and may limit your flexibility.",
 
-      "Once you're on the road, the bills don't stop rolling in. Fuel quickly becomes your largest day-to-day expense, and fluctuating prices can turn a good week into a tight one. Maintenance is another constant—tires wear down, brakes need replacing, and sooner or later something will break unexpectedly. On top of that, you'll need to stay compliant with trucking regulations, which means paying for things like electronic logging devices, safety inspections, and sometimes costly permits depending on where you haul.",
+      "Once you're on the road, the bills don't stop rolling in. Fuel quickly becomes your largest day-to-day expense, and fluctuating prices can turn a good week into a tight one. Maintenance is another constant-tires wear down, brakes need replacing, and sooner or later something will break unexpectedly. On top of that, you'll need to stay compliant with trucking regulations, which means paying for things like electronic logging devices, safety inspections, and sometimes costly permits depending on where you haul.",
 
-      "Then there are the costs most new owner operators don't think about until they happen. Downtime is one of them. If your truck is in the shop, you're not earning, but your insurance, loan payments, and personal bills don't pause. Health insurance and retirement contributions also fall on your shoulders now, and they can add up fast if you don't plan ahead. Taxes are another factor—[self-employed drivers](/blog/owner-operator-jobs-chicago-truckers-know) are responsible for more than they might expect, so setting aside a portion of each paycheck is essential.",
+      "Then there are the costs most new owner operators don't think about until they happen. Downtime is one of them. If your truck is in the shop, you're not earning, but your insurance, loan payments, and personal bills don't pause. Health insurance and retirement contributions also fall on your shoulders now, and they can add up fast if you don't plan ahead. Taxes are another factor-[self-employed drivers](/blog/owner-operator-jobs-chicago-truckers-know) are responsible for more than they might expect, so setting aside a portion of each paycheck is essential.",
 
-      "The reality is that being your own boss in trucking comes with a price tag. But here's the thing: drivers who understand these costs, budget wisely, and run their rigs like a business often find that the rewards more than make up for the expenses. And that's exactly what we'll explore next—why the benefits of being an owner operator keep so many drivers chasing the dream.",
+      "The reality is that being your own boss in trucking comes with a price tag. But here's the thing: drivers who understand these costs, budget wisely, and run their rigs like a business often find that the rewards more than make up for the expenses. And that's exactly what we'll explore next-why the benefits of being an owner operator keep so many drivers chasing the dream.",
 
       "## The Benefits of Being an Owner Operator",
 
       "![owner operator driving a truck in the desert](https://goxxii.com/wp-content/uploads/2025/08/dji_fly_20240909_122844_339_1726802774062_photo-1024x768.jpg.webp)",
 
-      "For many drivers, the moment they first take the keys to a truck they own is unforgettable. There's a deep sense of pride in knowing that the rig sitting in the lot belongs to you, and every mile you drive is building your own business, not someone else's. That's one of the biggest reasons so many people leave traditional [truck driving jobs](/) and step into the world of being an owner operator—the work feels more personal, and the rewards often feel bigger.",
+      "For many drivers, the moment they first take the keys to a truck they own is unforgettable. There's a deep sense of pride in knowing that the rig sitting in the lot belongs to you, and every mile you drive is building your own business, not someone else's. That's one of the biggest reasons so many people leave traditional [truck driving jobs](/) and step into the world of being an owner operator-the work feels more personal, and the rewards often feel bigger.",
 
       "The most obvious advantage is the potential to earn more. Company drivers usually work for fixed pay rates, while owner operators can choose loads and negotiate rates directly. That control over your income can be empowering, especially if you learn the sweet spots in freight lanes or secure steady clients who value your reliability.",
 
@@ -1561,7 +1561,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "And then there's the satisfaction of running your own business. Over time, you develop sharper instincts about which loads are worth it, how to trim costs without cutting corners, and how to keep your truck running profitably year after year. You're building a reputation in the industry, cultivating relationships with brokers and shippers, and growing a business that has real value.",
 
-      "Of course, with more freedom comes more responsibility. The choices you make—good or bad—have a direct impact on your bottom line. That's why, before making the leap, it's important to understand not just the rewards, but the challenges that come with them.",
+      "Of course, with more freedom comes more responsibility. The choices you make-good or bad-have a direct impact on your bottom line. That's why, before making the leap, it's important to understand not just the rewards, but the challenges that come with them.",
 
       "_Also Read: [A Guide to Independent Truck Driver Jobs: Is It Right for You?](/blog/owner-operator-guide)_",
 
@@ -1569,9 +1569,9 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![owner operator trucks lined up](https://goxxii.com/wp-content/uploads/2025/08/IMG_0104-1024x683.jpg.webp)",
 
-      "Becoming an owner operator can feel like you've just been handed the keys to total freedom, but that freedom comes with responsibilities that catch many drivers off guard. These aren't here to scare you—they're here to give you a clear picture of what you're stepping into so you can prepare.",
+      "Becoming an owner operator can feel like you've just been handed the keys to total freedom, but that freedom comes with responsibilities that catch many drivers off guard. These aren't here to scare you-they're here to give you a clear picture of what you're stepping into so you can prepare.",
 
-      "1. **Unpredictable expenses.** As a company driver, a blown tire or mechanical failure is the company's problem. As an owner operator, it's yours—and the cost can run from a few hundred to several thousand dollars.",
+      "1. **Unpredictable expenses.** As a company driver, a blown tire or mechanical failure is the company's problem. As an owner operator, it's yours-and the cost can run from a few hundred to several thousand dollars.",
       "2. **The business learning curve.** You're no longer \"just\" a driver; you're also an accountant, negotiator, and compliance manager. Taxes, permits, and paperwork are now on your shoulders.",
       "3. **Balancing work and home life.** Many independent drivers push for higher earnings by taking longer hauls, but that means more time away from home. Choosing [local owner operator trucking jobs](/blog/local-owner-operator-jobs) can help with family time.",
       "4. **Competing in the market.** The world of owner operator jobs can be competitive, especially in busy freight lanes. Standing out often requires building trust with brokers, delivering on time, and offering a level of service that makes clients call you first.",
@@ -1584,7 +1584,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Switching from company driver to owner operator is exciting, but it's not a leap you want to take without a plan. The best transitions are deliberate, with finances, equipment, and strategy all lined up.",
 
-      "Start by assessing your readiness. Do you have the driving experience to handle different routes and conditions? Have you saved enough to cover a down payment, start-up costs, and a few months of expenses if freight slows down? As an owner operator, every bill is yours to cover—whether the truck is rolling or parked.",
+      "Start by assessing your readiness. Do you have the driving experience to handle different routes and conditions? Have you saved enough to cover a down payment, start-up costs, and a few months of expenses if freight slows down? As an owner operator, every bill is yours to cover-whether the truck is rolling or parked.",
 
       "Next, choose the right truck for your work style. If you plan on local trucking jobs, you might focus on maneuverability and fuel efficiency. For long-haul runs, comfort and long-range fuel capacity become priorities. Whether buying new or used, always check the truck's history and maintenance record.",
 
@@ -1592,13 +1592,13 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Finally, commit to a preventive maintenance routine. Regular inspections, timely repairs, and cost tracking keep your rig running and your business profitable.",
 
-      "The move to owner operator isn't just about owning a truck—it's about taking control of your career. With preparation, you can make the shift smoothly and start building a business that works on your terms.",
+      "The move to owner operator isn't just about owning a truck-it's about taking control of your career. With preparation, you can make the shift smoothly and start building a business that works on your terms.",
 
       "## Wrapping It Up: Your Roadmap to Owner Operator Success",
 
-      "Becoming an owner operator is more than a job change—it's stepping into the driver's seat of your own business. We've explored what the role involves, the real costs of getting started, the benefits that make it appealing, the challenges you'll need to overcome, and how to make a smooth transition from company driver to independent operator.",
+      "Becoming an owner operator is more than a job change-it's stepping into the driver's seat of your own business. We've explored what the role involves, the real costs of getting started, the benefits that make it appealing, the challenges you'll need to overcome, and how to make a smooth transition from company driver to independent operator.",
 
-      "The big takeaway? Freedom and control come with responsibility. If you understand the financial commitment, prepare for the realities of the road, and run your operation like a business, the rewards can be worth it. From higher earning potential to the flexibility of choosing your own loads—or even mixing in _local trucking jobs_ for more home time—you're in control of your career path.",
+      "The big takeaway? Freedom and control come with responsibility. If you understand the financial commitment, prepare for the realities of the road, and run your operation like a business, the rewards can be worth it. From higher earning potential to the flexibility of choosing your own loads-or even mixing in _local trucking jobs_ for more home time-you're in control of your career path.",
 
       "If you're ready to take the next step, start by researching [available owner operator jobs](/careers), connecting with experienced drivers, and building a plan that fits your goals. The trucking industry is full of opportunities for those willing to work hard and think like entrepreneurs."
     ]
@@ -1613,7 +1613,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
     category: "Local Jobs",
     author: "XXII Century Team",
     content: [
-      "Thinking about taking control of your trucking career and hitting the road on your own terms? You're not alone. Owner operator jobs in Chicago are booming, and for good reason. With its central location, massive freight traffic, and endless routes in and out of the city, Chicago has become a hotspot for truck drivers who want more freedom—and bigger paychecks.",
+      "Thinking about taking control of your trucking career and hitting the road on your own terms? You're not alone. Owner operator jobs in Chicago are booming, and for good reason. With its central location, massive freight traffic, and endless routes in and out of the city, Chicago has become a hotspot for truck drivers who want more freedom-and bigger paychecks.",
 
       "Whether you're already behind the wheel or just exploring your options, this guide will walk you through everything you need to know about becoming an owner operator in the Windy City. We'll break down earning potential, local vs long-haul opportunities, the best companies to work with, and what it really takes to run your own rig.",
 
@@ -1623,9 +1623,9 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![owner operator trucks lined up](https://goxxii.com/wp-content/uploads/2025/08/IMG_0104-1024x683.jpg.webp)",
 
-      "If you're looking for steady freight, competitive pay, and access to some of the busiest shipping lanes in the country, Chicago should be at the top of your list. It's not just the deep-dish pizza and skyline that make this city famous—it's also one of the most important logistics hubs in North America.",
+      "If you're looking for steady freight, competitive pay, and access to some of the busiest shipping lanes in the country, Chicago should be at the top of your list. It's not just the deep-dish pizza and skyline that make this city famous-it's also one of the most important logistics hubs in North America.",
 
-      "Located at the crossroads of several major interstates (I-55, I-90, I-94, and more), Chicago connects the East and West Coasts, the Great Lakes, and the entire Midwest. That means goods are constantly moving in and out of the area, and the demand for [truck driving jobs](/careers) remains consistently high—especially for skilled drivers who are ready to take on more responsibility.",
+      "Located at the crossroads of several major interstates (I-55, I-90, I-94, and more), Chicago connects the East and West Coasts, the Great Lakes, and the entire Midwest. That means goods are constantly moving in and out of the area, and the demand for [truck driving jobs](/careers) remains consistently high-especially for skilled drivers who are ready to take on more responsibility.",
 
       "But it's not just about long hauls. There's been a noticeable rise in local owner operator jobs around the city as well. Suburbs like Joliet, Cicero, and Elk Grove Village are home to large distribution centers, rail yards, and warehouses that need dependable drivers for local and regional routes. These types of positions are ideal for drivers who want to stay closer to home while still earning a solid income.",
 
@@ -1637,21 +1637,21 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "So, what exactly _is_ an owner operator, and why are so many drivers making the switch?",
 
-      "Put simply, an owner operator is a truck driver who owns (or leases) their own rig and runs their business independently—either by contracting with carriers or finding their own loads. Unlike company drivers who are assigned routes and operate company trucks, owner operators get more control over when they drive, where they go, and how much they earn.",
+      "Put simply, an owner operator is a truck driver who owns (or leases) their own rig and runs their business independently-either by contracting with carriers or finding their own loads. Unlike company drivers who are assigned routes and operate company trucks, owner operators get more control over when they drive, where they go, and how much they earn.",
 
       "But with that freedom comes responsibility.",
 
-      "Being an owner operator means you're not just a driver—you're also a business owner. You're in charge of everything from maintenance and fuel management to bookkeeping and taxes. It's a big step, but for many drivers, the benefits far outweigh the challenges. You're building something for yourself, not just punching the clock for someone else.",
+      "Being an owner operator means you're not just a driver-you're also a business owner. You're in charge of everything from maintenance and fuel management to bookkeeping and taxes. It's a big step, but for many drivers, the benefits far outweigh the challenges. You're building something for yourself, not just punching the clock for someone else.",
 
       "In a market like Chicago, that independence can really pay off. With so many freight opportunities running through the area, owner operators have a huge advantage when it comes to choosing profitable loads. Whether you want to stay local or go long haul, there's no shortage of options.",
 
-      "And let's not forget: when you're an owner operator, you're no longer waiting on dispatch to hand you a load. You _choose_ the work that fits your lifestyle—whether that's [maximizing miles and income](/blog/hiring-owner-operators-chicago) or carving out more home time.",
+      "And let's not forget: when you're an owner operator, you're no longer waiting on dispatch to hand you a load. You _choose_ the work that fits your lifestyle-whether that's [maximizing miles and income](/blog/hiring-owner-operators-chicago) or carving out more home time.",
 
       "## How Much Can You Make? Owner Operator Pay & Profit Potential",
 
       "![two black trucks going down the road](https://goxxii.com/wp-content/uploads/2025/08/IMG_0155-1024x683.jpg.webp)",
 
-      "One of the biggest reasons drivers consider owner operator jobs is the potential to earn more—and in a busy freight market like Chicago, that potential is real.",
+      "One of the biggest reasons drivers consider owner operator jobs is the potential to earn more-and in a busy freight market like Chicago, that potential is real.",
 
       "While earnings can vary depending on the type of freight, distance, and whether you're leased on or operating under your own authority, here's what many owner operators in the Chicago area can expect:",
 
@@ -1659,7 +1659,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
       "- **Monthly Net Income (after expenses):** $8,000 – $15,000",
       "- **Annual Take-Home:** $100,000 – $200,000+",
 
-      "These numbers depend heavily on how efficiently you manage your truck and business. With high freight volume in and around Chicago, many drivers find consistent, profitable loads—but smart planning makes all the difference.",
+      "These numbers depend heavily on how efficiently you manage your truck and business. With high freight volume in and around Chicago, many drivers find consistent, profitable loads-but smart planning makes all the difference.",
 
       "### Common Expenses to Expect",
 
@@ -1679,17 +1679,17 @@ export const blogPostsData: Record<string, BlogPostData> = {
       "- Choose reliable freight partners",
       "- Track every expense and adjust your rates accordingly",
 
-      "Owner operator jobs offer the freedom to choose your loads and schedule, but profitability depends on how well you run your operation. Chicago's busy freight network gives you the opportunity—what you do with it is up to you.",
+      "Owner operator jobs offer the freedom to choose your loads and schedule, but profitability depends on how well you run your operation. Chicago's busy freight network gives you the opportunity-what you do with it is up to you.",
 
       "## What You Need to Get Started as an Owner Operator in Chicago",
 
       "![black company truck](https://goxxii.com/wp-content/uploads/2025/07/photo_2025-01-28_18-42-59-1024x1024.jpg.webp)",
 
-      "Making the move into owner operator jobs is a big step—but it's one that can open up serious opportunities, especially in a freight-heavy market like Chicago. Before you can hit the road under your own name, there are a few key things you'll need to have in place.",
+      "Making the move into owner operator jobs is a big step-but it's one that can open up serious opportunities, especially in a freight-heavy market like Chicago. Before you can hit the road under your own name, there are a few key things you'll need to have in place.",
 
       "The first and most obvious requirement is a valid Class A CDL. Most trucking companies and brokers working with owner operators prefer drivers with at least a year or two of recent experience, along with a clean driving record.",
 
-      "Next comes the business side. Becoming an owner operator means you're not just a driver anymore—you're a small business owner. That means you'll need to set up your trucking business legally and obtain the proper operating authority if you plan to run independently. This includes things like a DOT number, motor carrier authority, and filing the appropriate paperwork with both state and federal agencies.",
+      "Next comes the business side. Becoming an owner operator means you're not just a driver anymore-you're a small business owner. That means you'll need to set up your trucking business legally and obtain the proper operating authority if you plan to run independently. This includes things like a DOT number, motor carrier authority, and filing the appropriate paperwork with both state and federal agencies.",
 
       "Insurance is another big part of the puzzle. From primary liability to cargo and physical damage coverage, you'll be responsible for carrying the policies that protect both you and your loads. Some drivers choose to lease onto a carrier to simplify this step, especially when starting out.",
 
@@ -1701,9 +1701,9 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![green truck](https://goxxii.com/wp-content/uploads/2025/07/473689827_1900254970384255_6534969042285056776_n-1024x768.jpg.webp)",
 
-      "If you're searching for [owner operator jobs in Chicago](/), XXII Century isn't just another name in the trucking world—it's a company that's built around driver success. Whether you're an experienced owner operator looking for freedom and flexibility, or a skilled driver ready to join a dependable fleet, XXII Century offers real opportunities on the road.",
+      "If you're searching for [owner operator jobs in Chicago](/), XXII Century isn't just another name in the trucking world-it's a company that's built around driver success. Whether you're an experienced owner operator looking for freedom and flexibility, or a skilled driver ready to join a dependable fleet, XXII Century offers real opportunities on the road.",
 
-      "For owner operators, this is more than just a freight connection—it's a partnership. XXII Century gives you the independence to run your business your way, backed by support that helps you stay profitable. With access to steady freight, competitive rates, and optional fuel and maintenance programs, you'll spend less time worrying about overhead and more time earning.",
+      "For owner operators, this is more than just a freight connection-it's a partnership. XXII Century gives you the independence to run your business your way, backed by support that helps you stay profitable. With access to steady freight, competitive rates, and optional fuel and maintenance programs, you'll spend less time worrying about overhead and more time earning.",
 
       "The company also hires qualified [company drivers](/company-drivers) looking for reliable truck driving jobs with consistent routes, modern equipment, and a strong team culture. If you're not quite ready to become an owner operator yet, this is a solid path to gain experience and earn a competitive income.",
 
@@ -1711,7 +1711,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "## Your Next Move Starts Here",
 
-      "Chicago isn't just a transportation hub—it's a city full of opportunity for drivers who are ready to take the next step. Whether you're exploring owner operator jobs to gain more control over your schedule and earnings, or you're looking for solid company driving work with a reliable carrier, there's no shortage of options in this market.",
+      "Chicago isn't just a transportation hub-it's a city full of opportunity for drivers who are ready to take the next step. Whether you're exploring owner operator jobs to gain more control over your schedule and earnings, or you're looking for solid company driving work with a reliable carrier, there's no shortage of options in this market.",
 
       "We've covered the benefits of running your own rig, what it takes to get started, how much you can earn, and why companies like [XXII Century](/) are making it easier than ever for drivers to succeed. From local routes to long hauls, and from new business owners to seasoned pros, there's a lane for every kind of driver in Chicago.",
 
@@ -1730,19 +1730,19 @@ export const blogPostsData: Record<string, BlogPostData> = {
     content: [
       "If you're a trucker in the Windy City looking to take control of your career, now might be the perfect time to explore owner operator opportunities in Chicago. With freight demand climbing and shipping hubs expanding, the city is quickly becoming a hot spot for independent drivers who want more freedom, better pay, and the ability to run their own business on their terms.",
 
-      "But with so many listings and companies hiring owner operators, how do you know where to start—or who to trust?",
+      "But with so many listings and companies hiring owner operators, how do you know where to start-or who to trust?",
 
-      "Whether you're already behind the wheel as an independent driver or you're considering the switch from a company position, this guide breaks down everything you need to know. From CDL requirements to the best places to find reliable CDL owner operator jobs, we'll walk you through what makes Chicago unique for truckers—and how to stand out in a competitive market.",
+      "Whether you're already behind the wheel as an independent driver or you're considering the switch from a company position, this guide breaks down everything you need to know. From CDL requirements to the best places to find reliable CDL owner operator jobs, we'll walk you through what makes Chicago unique for truckers-and how to stand out in a competitive market.",
 
       "## The Booming Trucking Industry in Chicago",
 
       "![Hiring Owner Operators in Chicago](https://goxxii.com/wp-content/uploads/2025/06/tanker-1024x682.jpg)",
 
-      "If there's one thing Chicago does well—besides deep-dish pizza and sports rivalries—it's moving freight. As one of the biggest logistics hubs in the country, the Windy City sits at the crossroads of major highways, rail lines, and intermodal facilities. That means _everything from electronics to produce_ is passing through this region daily—and someone's got to haul it all.",
+      "If there's one thing Chicago does well-besides deep-dish pizza and sports rivalries-it's moving freight. As one of the biggest logistics hubs in the country, the Windy City sits at the crossroads of major highways, rail lines, and intermodal facilities. That means _everything from electronics to produce_ is passing through this region daily-and someone's got to haul it all.",
 
       "That's where owner operator trucking comes in.",
 
-      "With freight volumes continuing to rise and delivery demands getting tighter, more companies are relying on skilled, independent drivers who can get the job done. For many truckers, [becoming an owner operator](/blog/owner-operator-costs-benefits) isn't just about driving—it's about freedom, flexibility, and bigger paydays. And in a city like Chicago, the opportunities are wide open if you know where to look.",
+      "With freight volumes continuing to rise and delivery demands getting tighter, more companies are relying on skilled, independent drivers who can get the job done. For many truckers, [becoming an owner operator](/blog/owner-operator-costs-benefits) isn't just about driving-it's about freedom, flexibility, and bigger paydays. And in a city like Chicago, the opportunities are wide open if you know where to look.",
 
       "Whether you're already behind the wheel of your own rig or considering making the leap, understanding how Chicago's freight scene works is the first step toward building a profitable career on your own terms.",
 
@@ -1750,35 +1750,35 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![3 trucks lined up](https://goxxii.com/wp-content/uploads/2025/07/paddock-parking-lot-325-1024x683.png)",
 
-      "Let's face it—trucking is the backbone of the U.S. economy, and right now, that backbone needs more support than ever. As consumer demand rises and supply chains stretch to keep up, companies across the country are actively turning to owner operator trucking to help meet the need. Why? Because independent drivers bring flexibility, speed, and experience to the table.",
+      "Let's face it-trucking is the backbone of the U.S. economy, and right now, that backbone needs more support than ever. As consumer demand rises and supply chains stretch to keep up, companies across the country are actively turning to owner operator trucking to help meet the need. Why? Because independent drivers bring flexibility, speed, and experience to the table.",
 
-      "In cities like Chicago, where freight volume is consistently high, having a fleet of reliable owner operators allows companies to move shipments more efficiently without the overhead of maintaining more trucks. That's a win for businesses—and a big opportunity for truckers who want more control over their schedule and earnings.",
+      "In cities like Chicago, where freight volume is consistently high, having a fleet of reliable owner operators allows companies to move shipments more efficiently without the overhead of maintaining more trucks. That's a win for businesses-and a big opportunity for truckers who want more control over their schedule and earnings.",
 
       "For drivers, the appeal is clear: you get to run your own show. Whether you're hauling local freight or chasing high-paying loads across state lines, you decide how you want to work. And with the surge in [CDL owner operator jobs](/), there are more options than ever before to find contracts that fit your lifestyle.",
 
-      "Beyond just the freedom, there's also the potential for higher pay. Sure, you've got to handle your own expenses—but many owner operators find that the long-term financial rewards outweigh the risks. Simply put, if you're ready to build something of your own, trucking is wide open.",
+      "Beyond just the freedom, there's also the potential for higher pay. Sure, you've got to handle your own expenses-but many owner operators find that the long-term financial rewards outweigh the risks. Simply put, if you're ready to build something of your own, trucking is wide open.",
 
       "## What Makes Chicago Unique for Independent Truck Driver Jobs",
 
       "![black company truck](https://goxxii.com/wp-content/uploads/2025/07/photo_2025-01-28_18-42-59-1024x1024.jpg)",
 
-      "If you're searching for independent truck driver jobs, Chicago is one of the best places to be. Why? Because it's more than just a big city—it's a freight gateway for the entire country.",
+      "If you're searching for independent truck driver jobs, Chicago is one of the best places to be. Why? Because it's more than just a big city-it's a freight gateway for the entire country.",
 
       "With access to major highways like I-80, I-90, and I-94, Chicago connects the East and West Coasts, making it a critical link in national supply chains. That means loads are constantly moving through the area, creating a steady stream of opportunities for drivers who are ready to hit the road.",
 
-      "But what really sets Chicago apart is the variety of freight available. From retail goods and construction materials to food and industrial equipment, you'll find all kinds of shipments needing transport. This gives independent drivers the chance to specialize—or mix it up—based on their equipment and preferences.",
+      "But what really sets Chicago apart is the variety of freight available. From retail goods and construction materials to food and industrial equipment, you'll find all kinds of shipments needing transport. This gives independent drivers the chance to specialize-or mix it up-based on their equipment and preferences.",
 
       "Also, many businesses in Chicago prefer to work directly with owner operators. They value the professionalism and reliability that experienced drivers bring, and they're willing to pay for it. So if you've got your own truck and you're looking to stay busy, there's no shortage of [independent truck driver jobs](/owner-operators) waiting for you.",
 
-      "Whether you're sticking to local routes or expanding into regional hauls, Chicago gives you the volume, variety, and flexibility to build the career you want—on your own terms.",
+      "Whether you're sticking to local routes or expanding into regional hauls, Chicago gives you the volume, variety, and flexibility to build the career you want-on your own terms.",
 
       "## Key Qualifications: What Companies Look for When Hiring Owner Operators",
 
       "![company truck driver](https://goxxii.com/wp-content/uploads/2025/04/blog-1-1024x683.jpg)",
 
-      "If you're ready to dive into the world of owner operator trucking, it's important to know what companies are actually looking for. The truth is, with so many businesses hiring owner operators, there's a lot of opportunity—but there's also competition. To stand out, you'll need more than just a truck and a dream.",
+      "If you're ready to dive into the world of owner operator trucking, it's important to know what companies are actually looking for. The truth is, with so many businesses hiring owner operators, there's a lot of opportunity-but there's also competition. To stand out, you'll need more than just a truck and a dream.",
 
-      "First and foremost, a valid Class A CDL is essential. Most companies offering CDL owner operator jobs also expect a fairly clean driving record. Some will require endorsements like HazMat or Tanker, especially for specialized freight—but even without those, having a few years of experience under your belt can go a long way.",
+      "First and foremost, a valid Class A CDL is essential. Most companies offering CDL owner operator jobs also expect a fairly clean driving record. Some will require endorsements like HazMat or Tanker, especially for specialized freight-but even without those, having a few years of experience under your belt can go a long way.",
 
       "Here's a quick look at what many companies typically expect:",
 
@@ -1790,32 +1790,32 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "Chicago companies especially value reliability and consistency. If you can deliver loads on time, navigate urban traffic like a pro, and maintain a professional image, you'll find no shortage of opportunities knocking on your door.",
 
-      "Remember, when companies are hiring owner operators, they're not just filling a seat—they're building a partnership.",
+      "Remember, when companies are hiring owner operators, they're not just filling a seat-they're building a partnership.",
 
       "## Top Opportunities with XXII Century",
 
       "![trucking dispatcher](https://goxxii.com/wp-content/uploads/2025/04/blog-3-1024x683.jpg)",
 
-      "If you're looking for real opportunities in owner operator trucking, you don't have to search far—XXII Century is right here in Chicago and actively hiring owner operators who want more than just a paycheck. We're looking for professionals who are ready to build long-term success with a company that respects the hustle and supports independent drivers every step of the way.",
+      "If you're looking for real opportunities in owner operator trucking, you don't have to search far-XXII Century is right here in Chicago and actively hiring owner operators who want more than just a paycheck. We're looking for professionals who are ready to build long-term success with a company that respects the hustle and supports independent drivers every step of the way.",
 
-      "At XXII Century, we know what owner operators need to thrive because we've built our model around them. Whether you're running local routes or taking on regional loads, we offer the structure and flexibility to help you stay profitable—and stay in control.",
+      "At XXII Century, we know what owner operators need to thrive because we've built our model around them. Whether you're running local routes or taking on regional loads, we offer the structure and flexibility to help you stay profitable-and stay in control.",
 
       "Here's what you can expect when you work with us:",
 
       "- Competitive pay with weekly settlements",
       "- Fuel discounts and access to maintenance resources",
-      "- No forced dispatch—we respect your freedom to choose",
+      "- No forced dispatch-we respect your freedom to choose",
       "- Support from real people who understand the road",
 
-      "When you [partner with XXII Century](/), you're not just filling a spot—you're joining a team that sees you as a business partner. With the growing number of CDL owner operator jobs out there, it's important to align with a company that actually has your back.",
+      "When you [partner with XXII Century](/), you're not just filling a spot-you're joining a team that sees you as a business partner. With the growing number of CDL owner operator jobs out there, it's important to align with a company that actually has your back.",
 
       "## Your Next Move in Owner Operator Trucking Starts Here",
 
-      "Chicago isn't just a great place to live—it's a prime hub for building a thriving career in owner operator trucking. From the steady flow of freight to the variety of available loads, the opportunities for independent drivers here are real and growing.",
+      "Chicago isn't just a great place to live-it's a prime hub for building a thriving career in owner operator trucking. From the steady flow of freight to the variety of available loads, the opportunities for independent drivers here are real and growing.",
 
-      "We've covered what makes the local market so unique, the qualifications that companies look for, and how to spot the best CDL owner operator jobs. More importantly, you now know that success as an independent trucker isn't just about hitting the road—it's about finding the right support and the right fit.",
+      "We've covered what makes the local market so unique, the qualifications that companies look for, and how to spot the best CDL owner operator jobs. More importantly, you now know that success as an independent trucker isn't just about hitting the road-it's about finding the right support and the right fit.",
 
-      "At XXII Century, we're committed to helping owner operators do more than just drive—we help you grow. If you're looking for flexible routes, strong pay, and a partner that truly understands the demands of the road, it's time to take the next step.",
+      "At XXII Century, we're committed to helping owner operators do more than just drive-we help you grow. If you're looking for flexible routes, strong pay, and a partner that truly understands the demands of the road, it's time to take the next step.",
 
       "Ready to get started? [Contact us today](/contact) to learn more about our current openings, or check out our resources for independent truckers who want to take control of their future."
     ]
@@ -1838,7 +1838,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "![Chicago Truck Driving Jobs](https://goxxii.com/wp-content/uploads/2025/06/tanker-1024x682.jpg)",
 
-      "Chicago is one of the busiest freight hubs in the country, which means there is no shortage of freight to move. But moving freight is only half the battle—you need a carrier that pays you what you are worth and keeps you rolling.",
+      "Chicago is one of the busiest freight hubs in the country, which means there is no shortage of freight to move. But moving freight is only half the battle-you need a carrier that pays you what you are worth and keeps you rolling.",
 
       "We specialize in dry van freight, working with Fortune 500 customers to ensure our drivers have consistent, high-quality loads. Our drivers average between **2,500 and 3,500 miles per week**, meaning you never have to worry about sitting empty when you want to be earning.",
 

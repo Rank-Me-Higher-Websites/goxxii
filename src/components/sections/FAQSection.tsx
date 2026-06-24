@@ -78,7 +78,7 @@ const ownerOperatorFaqs: FAQ[] = [
   {
     question: "Is there a referral bonus for owner operators?",
     answer: (
-      <p>Yes — we offer an <strong className="text-foreground">unlimited referral bonus program</strong>. Refer qualified drivers and earn $1,000 per referral with no cap. Contact our <Link to="/contact" className="text-primary hover:underline">recruiting team</Link> for details.</p>
+      <p>Yes - we offer an <strong className="text-foreground">unlimited referral bonus program</strong>. Refer qualified drivers and earn $1,000 per referral with no cap. Contact our <Link to="/contact" className="text-primary hover:underline">recruiting team</Link> for details.</p>
     ),
   },
 ];
@@ -105,7 +105,7 @@ const companyDriverFaqs: FAQ[] = [
   {
     question: "Do I need to sign up for the fuel incentive program?",
     answer: (
-      <p>No — <strong className="text-foreground">all company drivers are automatically included</strong> in the program. No enrollment needed.</p>
+      <p>No - <strong className="text-foreground">all company drivers are automatically included</strong> in the program. No enrollment needed.</p>
     ),
   },
   {
@@ -117,7 +117,7 @@ const companyDriverFaqs: FAQ[] = [
   {
     question: "Are Owner Operators eligible for monthly rewards?",
     answer: (
-      <p>No — Owner Operators are <strong className="text-foreground">excluded</strong> from the driver incentive program. This program is for company drivers only.</p>
+      <p>No - Owner Operators are <strong className="text-foreground">excluded</strong> from the driver incentive program. This program is for company drivers only.</p>
     ),
   },
 ];
@@ -126,7 +126,7 @@ const fleetProgramFaqs: FAQ[] = [
   {
     question: "What is the XXII Century Power Only program?",
     answer: (
-      <p>Our Power Only program lets <Link to="/owner-operators" className="text-primary hover:underline">owner operators</Link> use their own tractor with our trailers to haul freight for Fortune 500 companies. We provide the loads, trailer access, and 24/7 dispatch support — you provide the power unit and driving expertise.</p>
+      <p>Our Power Only program lets <Link to="/owner-operators" className="text-primary hover:underline">owner operators</Link> use their own tractor with our trailers to haul freight for Fortune 500 companies. We provide the loads, trailer access, and 24/7 dispatch support - you provide the power unit and driving expertise.</p>
     ),
   },
   {
@@ -172,9 +172,9 @@ const careersFaqs: FAQ[] = [
       <div className="space-y-3">
         <p>We offer multiple career paths:</p>
         <ul className="list-disc pl-5 space-y-1">
-          <li><Link to="/owner-operators" className="text-primary hover:underline">Owner operator</Link> — run your own business with our freight and support</li>
-          <li><Link to="/company-drivers" className="text-primary hover:underline">Company driver</Link> — full employment with benefits and steady pay</li>
-          <li><Link to="/fleet-program" className="text-primary hover:underline">Fleet program</Link> — Power Only opportunities with trailer access</li>
+          <li><Link to="/owner-operators" className="text-primary hover:underline">Owner operator</Link> - run your own business with our freight and support</li>
+          <li><Link to="/company-drivers" className="text-primary hover:underline">Company driver</Link> - full employment with benefits and steady pay</li>
+          <li><Link to="/fleet-program" className="text-primary hover:underline">Fleet program</Link> - Power Only opportunities with trailer access</li>
         </ul>
       </div>
     ),
@@ -194,7 +194,7 @@ const careersFaqs: FAQ[] = [
           <li>Submit your <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a></li>
           <li>Phone screening with our recruiting team</li>
           <li>Background and MVR verification</li>
-          <li>Orientation and dispatch — many drivers start within days</li>
+          <li>Orientation and dispatch - many drivers start within days</li>
         </ol>
       </div>
     ),

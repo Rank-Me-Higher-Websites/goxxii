@@ -23,7 +23,7 @@ export const MobileAppSection = () => {
               Your Truck, Your Phone
             </h2>
             <p className="text-sm sm:text-base text-muted-foreground mb-6">
-              24/7 dispatch, real-time loads, digital paperwork, accident reporting, road assistance — all in one app. Efficiency on every mile.
+              24/7 dispatch, real-time loads, digital paperwork, accident reporting, road assistance - all in one app. Efficiency on every mile.
             </p>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">

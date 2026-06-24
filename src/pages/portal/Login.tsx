@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { useLogin, useAuth } from "@/hooks/use-auth";
 import { Navigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
@@ -106,7 +106,7 @@ export default function Login() {
         </div>
 
         <p className="text-center text-xs text-muted-foreground/50 mt-6">
-          XXII Century Trucking — Secure Internal Portal
+          XXII Century Trucking - Secure Internal Portal
         </p>
       </div>
     </div>

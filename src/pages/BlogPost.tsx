@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+﻿import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
@@ -209,7 +209,7 @@ const BlogPost = () => {
       <SEOHead
         title={`${post.title} | XXII Century Trucking Blog`}
         description={post.excerpt.length > 155 ? post.excerpt.slice(0, 152) + "..." : post.excerpt}
-        keywords={`${post.category}, ${post.title.split(/[\s:—]+/).slice(0, 4).join(", ")}, trucking blog, XXII Century, CDL driver tips, owner operator guide`}
+        keywords={`${post.category}, ${post.title.split(/[\s:-]+/).slice(0, 4).join(", ")}, trucking blog, XXII Century, CDL driver tips, owner operator guide`}
         canonicalPath={`/blog/${slug}`}
       />
       <SchemaMarkup schemas={schemas} />

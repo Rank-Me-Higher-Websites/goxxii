@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Award, ShieldCheck, TrendingDown, TrendingUp, Fuel, Timer } from "lucide-react";
 
@@ -58,12 +58,12 @@ export const AwardsSection = () => {
             Award-Winning Fleet Performance
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
-            Independently verified by Samsara telematics — top-tier safety and
+            Independently verified by Samsara telematics - top-tier safety and
             efficiency, benchmarked against thousands of carriers in our class.
           </p>
         </motion.div>
 
-        {/* Awards grid — three equal cards */}
+        {/* Awards grid - three equal cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 max-w-6xl mx-auto">
           {awards.map((award, i) => (
             <motion.div

@@ -25,7 +25,7 @@ export const AboutSection = () => {
 
             <div className="space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
               <p>
-                17+ years in the industry. Chicago-based. We get what matters —{" "}
+                17+ years in the industry. Chicago-based. We get what matters -{" "}
                 <strong className="text-foreground">
                   steady freight, real support, respect on the road
                 </strong>
@@ -46,7 +46,7 @@ export const AboutSection = () => {
               <p>
                 24/7 team support.{" "}
                 <strong className="text-foreground">
-                  Clear communication. Fair treatment. We work with you — not
+                  Clear communication. Fair treatment. We work with you - not
                   just for you.
                 </strong>{" "}
                 Ready to explore{" "}

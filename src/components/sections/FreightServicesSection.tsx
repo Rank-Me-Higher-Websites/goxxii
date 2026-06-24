@@ -15,7 +15,7 @@ const services = [
   {
     icon: Truck,
     title: "Tech-Enabled Logistics Solutions",
-    description: "XXII Century provides 24/7 Dry Van, FTL, and Expedited shipping—delivered with precision and reliability.",
+    description: "XXII Century provides 24/7 Dry Van, FTL, and Expedited shipping-delivered with precision and reliability.",
   },
   {
     icon: Wrench,
@@ -218,7 +218,7 @@ export const FreightServicesSection = () => {
                   At XXII Century, we support <Link to="/careers" className="text-foreground font-semibold hover:text-primary transition-colors">CDL truck drivers in Chicago and across the U.S.</Link> with dependable routes, steady freight, and a professional logistics network. Whether you&apos;re hauling <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">dry van</Link> or <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">full truckload</Link>, our asset-based fleet and optimized routing help you stay efficient and on the move.
                 </p>
                 <p>
-                  We&apos;re more than a carrier — we&apos;re a <Link to="/owner-operators" className="text-foreground font-semibold hover:text-primary transition-colors">driver-focused partner</Link> built on communication, predictable miles, and on-time freight delivery. Our system is designed to reduce wait times, keep loads consistent, and help <Link to="/company-drivers" className="text-foreground font-semibold hover:text-primary transition-colors">drivers get from point A to point B</Link> with confidence.
+                  We&apos;re more than a carrier - we&apos;re a <Link to="/owner-operators" className="text-foreground font-semibold hover:text-primary transition-colors">driver-focused partner</Link> built on communication, predictable miles, and on-time freight delivery. Our system is designed to reduce wait times, keep loads consistent, and help <Link to="/company-drivers" className="text-foreground font-semibold hover:text-primary transition-colors">drivers get from point A to point B</Link> with confidence.
                 </p>
               </div>
               <Button variant="heroOutline" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>

@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+﻿import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Check, Clock, User } from "lucide-react";
 
@@ -111,7 +111,7 @@ export default function CheckInDetail() {
               </Link>
             )}
             <span className="text-muted-foreground text-sm">
-              — {new Date(checkIn.createdAt).toLocaleDateString()}
+              - {new Date(checkIn.createdAt).toLocaleDateString()}
             </span>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function CheckInDetail() {
         {driver && (
           <div className="bg-card/80 backdrop-blur border border-border rounded-xl px-4 py-3 flex items-center gap-2">
             <User className="w-4 h-4 text-muted-foreground" />
-            <span className="text-sm text-muted-foreground">Truck #{driver.truckNumber || "—"}</span>
+            <span className="text-sm text-muted-foreground">Truck #{driver.truckNumber || "-"}</span>
           </div>
         )}
       </div>
@@ -171,17 +171,17 @@ export default function CheckInDetail() {
 
 function formatType(type: string) {
   const map: Record<string, string> = {
-    week1: "Week 1 — Orientation and Onboarding",
-    week2: "Week 2 — First Week with XXII Century",
-    week3: "Week 3 — Second Week with XXII Century",
-    week4: "Week 4 — Partnership Fit with XXII Century",
-    exit: "Exit Survey — Departure Feedback",
+    week1: "Week 1 - Orientation and Onboarding",
+    week2: "Week 2 - First Week with XXII Century",
+    week3: "Week 3 - Second Week with XXII Century",
+    week4: "Week 4 - Partnership Fit with XXII Century",
+    exit: "Exit Survey - Departure Feedback",
   };
   return map[type] || type;
 }
 
 function formatValue(value: any): string {
-  if (value === null || value === undefined || value === "") return "—";
+  if (value === null || value === undefined || value === "") return "-";
   if (typeof value === "boolean") return value ? "Yes" : "No";
   if (typeof value === "number") return String(value);
   if (value === "yes") return "Yes";
@@ -208,8 +208,8 @@ function formatValue(value: any): string {
     few_days: "Took a few days",
     too_long: "Took too long",
     no_issues: "Haven't needed any",
-    great: "Great — We work well together",
-    strained: "Strained — Some tension",
+    great: "Great - We work well together",
+    strained: "Strained - Some tension",
     better_pay: "Better pay elsewhere",
     home_time: "Home time / schedule",
     equipment: "Truck / equipment issues",

@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Fuel, Trophy, BarChart3, Users, DollarSign } from "lucide-react";
 
@@ -49,7 +49,7 @@ export const FuelIncentiveSection = () => {
           </p>
         </motion.div>
 
-        {/* How It Works — 3 Cards */}
+        {/* How It Works - 3 Cards */}
         <div className="grid sm:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-14">
           {howItWorks.map((item, i) => (
             <motion.div
@@ -146,7 +146,7 @@ export const FuelIncentiveSection = () => {
               </table>
             </div>
             <p className="text-xs text-muted-foreground mt-4">
-              The higher your MPG average, the more you earn. Drive steady at 67 mph — many drivers now qualify for bonuses consistently by losing just 2 mph in speed.
+              The higher your MPG average, the more you earn. Drive steady at 67 mph - many drivers now qualify for bonuses consistently by losing just 2 mph in speed.
             </p>
           </motion.div>
         </div>

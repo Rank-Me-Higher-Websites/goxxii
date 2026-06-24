@@ -62,16 +62,16 @@ export const SEOHead = ({ title, description, canonicalPath, keywords }: SEOHead
 export const SEO_CONTENT = {
   home: {
     title: "XXII Century Trucking | Chicago CDL-A Jobs & Freight | goxxii.com",
-    description: "XXII Century Trucking — Chicago's driver-first CDL-A carrier. Owner operators keep 80% of gross, company drivers earn 68 + 2 CPM. Fortune 500 freight, weekly pay, no forced dispatch. Apply at goxxii.com.",
+    description: "XXII Century Trucking - Chicago's driver-first CDL-A carrier. Owner operators keep 80% of gross, company drivers earn 68 + 2 CPM. Fortune 500 freight, weekly pay, no forced dispatch. Apply at goxxii.com.",
     keywords: "xxii century trucking, xxii century inc, century trucking, century transport, xxii century inc reviews, owner operator jobs Chicago, CDL-A driver jobs Illinois, trucking company Chicago, company driver positions, dry van trucking, OTR truck driving jobs, Fortune 500 freight, truck driving jobs near me, best trucking company Illinois, Woodridge IL trucking, hiring now, goxxii.com",
   },
   ownerOperators: {
-    title: "Owner Operator Truck Driver Jobs — Earn 80% Linehaul | XXII Century",
+    title: "Owner Operator Truck Driver Jobs - Earn 80% Linehaul | XXII Century",
     description: "Owner operator trucking jobs paying 80% linehaul revenue. No forced dispatch, fuel discounts, Fortune 500 loads, weekly settlements. CDL-A contractors apply.",
     keywords: "owner operator trucking jobs, 80% linehaul pay, independent truck driver, no forced dispatch, OTR owner operator, dry van owner operator, owner operator pay per mile, best owner operator trucking company 2025, independent trucker jobs, 1099 truck driver, owner operator dry van loads",
   },
   companyDrivers: {
-    title: "CDL-A Company Driver Jobs — 68 + 2 CPM + Full Benefits | XXII Century",
+    title: "CDL-A Company Driver Jobs - 68 + 2 CPM + Full Benefits | XXII Century",
     description: "Company driver positions starting at 68 + 2 CPM. Medical, dental, 401(k), paid vacation. Late-model trucks. Apply online in 5 minutes.",
     keywords: "company driver jobs, CDL-A driver positions, trucking jobs with benefits, OTR company driver, truck driver 401k, CDL-A truck driver salary, company driver pay per mile, truck driver benefits package, OTR driver jobs 2025, truck driving career",
   },
@@ -81,27 +81,27 @@ export const SEO_CONTENT = {
     keywords: "fleet owner partnership, power only trucking, carrier partnership program, fleet management, truck fleet opportunities, power only loads, fleet owner trucking program, small carrier partnership, trailer interchange program, trucking business opportunity",
   },
   freightServices: {
-    title: "Dry Van Freight Shipping — 97% On-Time Delivery | XXII Century",
+    title: "Dry Van Freight Shipping - 97% On-Time Delivery | XXII Century",
     description: "Nationwide FTL dry van shipping with 97% on-time rate. Real-time GPS tracking, dedicated account management. Shippers & brokers get a free quote.",
     keywords: "freight shipping company, dry van logistics, FTL freight services, truckload shipping, supply chain solutions, FTL shipping rates, dry van carrier, truckload freight quote, reliable trucking company, freight broker carrier, nationwide freight shipping",
   },
   about: {
-    title: "About XXII Century — Chicago Trucking Company Since 2009",
+    title: "About XXII Century - Chicago Trucking Company Since 2009",
     description: "100+ drivers strong. Fortune 500 partnerships. Based in Woodridge, IL. Discover why drivers and shippers choose XXII Century. Join our team today.",
     keywords: "XXII Century trucking, Chicago trucking carrier, driver-first company, Woodridge IL logistics, Midwest trucking provider, XXII Century reviews, trucking company Woodridge IL, driver-first carrier, Chicago logistics company, XXII Century careers",
   },
   careers: {
-    title: "Trucking Jobs — CDL Drivers & Dispatchers Hiring | XXII Century",
-    description: "Browse open CDL-A driver, owner operator & dispatcher positions. Competitive pay up to $300K, full benefits, career growth. Apply online — quick application.",
+    title: "Trucking Jobs - CDL Drivers & Dispatchers Hiring | XXII Century",
+    description: "Browse open CDL-A driver, owner operator & dispatcher positions. Competitive pay up to $300K, full benefits, career growth. Apply online - quick application.",
     keywords: "trucking job openings, CDL driver employment, dispatcher positions, logistics careers, transportation jobs, trucking job application, dispatcher job trucking, transportation career opportunities, truck driver hiring 2025",
   },
   contact: {
-    title: "Contact XXII Century — Call 630-914-6037 | Woodridge, IL",
+    title: "Contact XXII Century - Call 630-914-6037 | Woodridge, IL",
     description: "Call 630-914-6037 or visit 7501 Lemont Rd, Woodridge IL. Driver applications, freight quotes, fleet partnerships. Our team responds within 24 hours.",
     keywords: "trucking company contact, driver recruiting, freight quote request, Woodridge IL trucking, XXII Century phone number, XXII Century address, trucking company near me, driver recruiter contact, freight quote phone number",
   },
   blog: {
-    title: "Trucking Industry Blog — Tips & Guides | XXII Century",
+    title: "Trucking Industry Blog - Tips & Guides | XXII Century",
     description: "Owner operator tips, CDL career guides, freight market insights & trucking industry news. Expert advice from XXII Century professionals.",
     keywords: "trucking industry blog, driver career advice, owner operator tips, CDL guides, freight market news, trucking tips 2025, owner operator advice, CDL driver guides, freight industry trends, trucking career tips",
   },

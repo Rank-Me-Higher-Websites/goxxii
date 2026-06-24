@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import logo from "@/assets/logo.svg";
@@ -147,7 +147,7 @@ export default function PublicRegister() {
         </div>
 
         <p className="text-center text-xs text-muted-foreground/50 mt-6">
-          XXII Century Trucking — Your feedback helps us improve
+          XXII Century Trucking - Your feedback helps us improve
         </p>
       </div>
     </div>

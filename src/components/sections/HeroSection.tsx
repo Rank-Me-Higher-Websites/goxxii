@@ -58,7 +58,7 @@ export const HeroSection = () => {
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight leading-[1.05] mb-3 sm:mb-4"
             >
               <span className="block text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-2 sm:mb-3">
-                XXII Century Trucking — Chicago&apos;s Driver-First CDL-A Carrier
+                XXII Century Trucking - Chicago&apos;s Driver-First CDL-A Carrier
               </span>
               <span className="text-gradient">Owner Operators</span>
               <br />
@@ -150,7 +150,7 @@ export const HeroSection = () => {
               >
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 <span className="sm:hidden whitespace-nowrap">Apply Now</span>
-                <span className="hidden sm:inline whitespace-nowrap">Apply Now — Only 3 Spots Left</span>
+                <span className="hidden sm:inline whitespace-nowrap">Apply Now - Only 3 Spots Left</span>
               </Button>
               <Button variant="heroOutline" size="default" className="sm:h-14 sm:px-10 sm:text-base" asChild>
                 <a href="tel:+16309146037">
@@ -191,7 +191,7 @@ export const HeroSection = () => {
                 <p className="text-xs text-muted-foreground italic mb-2">
                   "Best carrier I have worked with in 20 years. Pay is always on time, support is amazing."
                 </p>
-                <p className="text-xs font-semibold text-foreground">— Mike D., Owner Operator</p>
+                <p className="text-xs font-semibold text-foreground">- Mike D., Owner Operator</p>
               </div>
             </motion.div>
           </div>
@@ -233,7 +233,7 @@ export const HeroSection = () => {
                 data-testid="button-apply-now-vsl"
               >
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                Apply Now — See If You Qualify
+                Apply Now - See If You Qualify
               </Button>
             </motion.div>
 

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { useParams, Navigate } from "react-router-dom";
 import { useState, useMemo } from "react";
 import {
@@ -37,9 +37,9 @@ const highlights = [
   { icon: Truck, title: "New Volvos & Freightliners", desc: "Brand new equipment with all the comforts" },
   { icon: Package, title: "Fridges, Microwaves, APU", desc: "Inverters & disc brakes on every truck" },
   { icon: MapPin, title: "Customer Lanes", desc: "Consistent freight, steady miles every week" },
-  { icon: Shield, title: "Dry Van Only", desc: "No-touch freight — less hassle" },
+  { icon: Shield, title: "Dry Van Only", desc: "No-touch freight - less hassle" },
   { icon: Fuel, title: "Midwest, East, N & S", desc: "Wide running areas, more opportunities" },
-  { icon: DollarSign, title: "Stops & Detention Paid", desc: "Extra stops, layovers — all compensated" },
+  { icon: DollarSign, title: "Stops & Detention Paid", desc: "Extra stops, layovers - all compensated" },
   { icon: Users, title: "$1,500 Referral Bonus", desc: "Bring a friend, earn a bonus" },
   { icon: DollarSign, title: "Weekly Direct Deposits", desc: "Get paid every week, on time" },
   { icon: Star, title: "1099 Position", desc: "Independent contractor flexibility" },
@@ -142,7 +142,7 @@ const DriverFunnel = () => {
                 </motion.h1>
 
                 <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="text-muted-foreground text-xs lg:text-sm max-w-xl mb-2 lg:mb-4">
-                  <span className="text-foreground font-semibold">68 + 2 CPM Empty & Loaded</span> starting Day 1. <span className="text-accent font-semibold">70–80% Drop &amp; Hook</span> — no-touch freight, less waiting, more miles. New trucks, customer lanes, dry van only.
+                  <span className="text-foreground font-semibold">68 + 2 CPM Empty & Loaded</span> starting Day 1. <span className="text-accent font-semibold">70–80% Drop &amp; Hook</span> - no-touch freight, less waiting, more miles. New trucks, customer lanes, dry van only.
                 </motion.p>
 
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 lg:gap-3 mb-3 lg:mb-5">
@@ -294,7 +294,7 @@ const DriverFunnel = () => {
               <span className="text-gradient">Nothing You Don't.</span>
             </h2>
             <p className="text-xs lg:text-sm text-muted-foreground mt-2 lg:mt-3 max-w-lg mx-auto">
-              No surprise fees. No mystery deductions. Just one clear percentage—
+              No surprise fees. No mystery deductions. Just one clear percentage-
               <br className="hidden sm:block" />
               and you keep everything else.
             </p>
@@ -451,7 +451,7 @@ const DriverFunnel = () => {
             <p className="text-[11px] lg:text-xs text-muted-foreground italic mb-1.5">
               "Best carrier I have worked with in 20 years. Pay is always on time, support is amazing."
             </p>
-            <p className="text-[11px] lg:text-xs font-semibold text-foreground">— Mike D., OTR Driver</p>
+            <p className="text-[11px] lg:text-xs font-semibold text-foreground">- Mike D., OTR Driver</p>
           </div>
         </div>
       </section>

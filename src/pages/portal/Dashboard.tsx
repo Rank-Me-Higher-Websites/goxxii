@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+﻿import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { Users, UserPlus, ClipboardCheck, TrendingUp } from "lucide-react";
 
@@ -63,13 +63,13 @@ export default function Dashboard() {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard
           label="Total Drivers"
-          value={stats?.totalDrivers ?? "—"}
+          value={stats?.totalDrivers ?? "-"}
           icon={Users}
           loading={statsLoading}
         />
         <StatCard
           label="Active"
-          value={stats?.activeDrivers ?? "—"}
+          value={stats?.activeDrivers ?? "-"}
           icon={TrendingUp}
           loading={statsLoading}
         />

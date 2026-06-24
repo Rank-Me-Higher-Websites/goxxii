@@ -160,7 +160,7 @@ const CareerDetail = () => {
   return (
     <Layout>
       <SEOHead
-        title={`${job.title} Jobs — Apply Now | XXII Century Careers`}
+        title={`${job.title} Jobs - Apply Now | XXII Century Careers`}
         description={`Now hiring: ${job.title} at XXII Century Trucking. ${job.type} position${job.location !== "Remote / On-site" ? `, ${job.location}` : ""}. Competitive pay, benefits & career growth. Apply online today.`}
         keywords={`${job.title} jobs, ${job.title} hiring now, trucking careers, XXII Century hiring, ${job.type} trucking jobs, ${job.location} trucking, apply online`}
         canonicalPath={`/careers/${slug}`}

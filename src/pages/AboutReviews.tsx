@@ -58,7 +58,7 @@ const AboutReviews = () => {
             <span className="text-gradient">What Drivers Actually Say</span>
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl mb-4">
-            Honest XXII Century Trucking reviews from owner operators and company drivers — covering
+            Honest XXII Century Trucking reviews from owner operators and company drivers - covering
             real pay, dispatch quality, fuel discounts, freight quality, and how XXII Century compares
             to other Chicago CDL-A carriers.
           </p>
@@ -108,7 +108,7 @@ const AboutReviews = () => {
             <li>
               <strong className="text-foreground">Fortune 500 freight, not brokered loads.</strong>{" "}
               Drivers cite steady, direct freight from Fortune 500 shippers rather than thin broker
-              loads — a recurring theme in positive XXII Century reviews.
+              loads - a recurring theme in positive XXII Century reviews.
             </li>
             <li>
               <strong className="text-foreground">No forced dispatch.</strong> Owner operators report
@@ -117,7 +117,7 @@ const AboutReviews = () => {
             </li>
             <li>
               <strong className="text-foreground">Weekly pay, on time.</strong> Settlements arrive
-              consistently weekly — a basic expectation many drivers say other carriers miss.
+              consistently weekly - a basic expectation many drivers say other carriers miss.
             </li>
             <li>
               <strong className="text-foreground">24/7 dispatch from Woodridge, IL.</strong> Reviews

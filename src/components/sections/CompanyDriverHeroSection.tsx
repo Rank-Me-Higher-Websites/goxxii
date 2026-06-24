@@ -34,8 +34,8 @@ const benefits = [
   { icon: Award, title: "68 + 2 CPM", desc: "Earn $104,000–$120,000 annually with XXII Century." },
   { icon: Gift, title: "Driver Bonuses", desc: "Enjoy performance bonuses, monthly rewards, photo contests, and year-round giveaways!" },
   { icon: Heart, title: "Paid Layover", desc: "Awesome health plans to choose from. Includes dental and vision too." },
-  { icon: Users, title: "Referral Bonus", desc: "On-site maintenance available—relax at HQ or head home while we service your truck." },
-  { icon: MessageSquare, title: "Transparent Feedback", desc: "Drive efficiently, earn more—ask a recruiter for details!" },
+  { icon: Users, title: "Referral Bonus", desc: "On-site maintenance available-relax at HQ or head home while we service your truck." },
+  { icon: MessageSquare, title: "Transparent Feedback", desc: "Drive efficiently, earn more-ask a recruiter for details!" },
 ];
 
 export const CompanyDriverHeroSection = () => {
@@ -121,7 +121,7 @@ export const CompanyDriverHeroSection = () => {
               </h2>
               
               <p className="text-muted-foreground mb-6">
-                Enjoy weekly direct deposits, cash advances, and extra pay for layovers, stops, and detention time. We're hiring company drivers who want more than miles— <strong className="text-foreground">get paid performance bonuses, safety rewards, fuel incentives, and automatic raises every 75K miles.</strong>
+                Enjoy weekly direct deposits, cash advances, and extra pay for layovers, stops, and detention time. We're hiring company drivers who want more than miles- <strong className="text-foreground">get paid performance bonuses, safety rewards, fuel incentives, and automatic raises every 75K miles.</strong>
               </p>
 
               <div className="rounded-2xl overflow-hidden">
@@ -140,7 +140,7 @@ export const CompanyDriverHeroSection = () => {
               </h3>
               
               <p className="text-muted-foreground mb-8">
-                Join XXII Century and experience a carrier that puts CDL drivers first—on and off the road. Whether you're based near <strong className="text-foreground">Lemont, IL</strong> or hauling across the country, we offer <strong className="text-foreground">Class A company drivers</strong> competitive pay, modern equipment, and a reliable support team. From day one, we're committed to your long-term success, with consistent freight and the respect you deserve.
+                Join XXII Century and experience a carrier that puts CDL drivers first-on and off the road. Whether you're based near <strong className="text-foreground">Lemont, IL</strong> or hauling across the country, we offer <strong className="text-foreground">Class A company drivers</strong> competitive pay, modern equipment, and a reliable support team. From day one, we're committed to your long-term success, with consistent freight and the respect you deserve.
               </p>
 
               {/* Stats Grid */}

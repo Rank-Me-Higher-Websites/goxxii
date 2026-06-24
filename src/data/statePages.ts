@@ -69,7 +69,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Is there a referral bonus for Illinois owner operators?",
-        answer: "Yes — we offer an unlimited referral bonus program. Refer qualified drivers in Illinois and earn $1,000 per referral with no cap.",
+        answer: "Yes - we offer an unlimited referral bonus program. Refer qualified drivers in Illinois and earn $1,000 per referral with no cap.",
       },
       {
         question: "How quickly can I start driving in Illinois?",
@@ -128,7 +128,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Do Iowa drivers need their own trailer?",
-        answer: "No. We provide trailer access including dry vans. Iowa drivers can use our equipment or bring their own — your choice.",
+        answer: "No. We provide trailer access including dry vans. Iowa drivers can use our equipment or bring their own - your choice.",
       },
       {
         question: "What fuel discounts are available for Iowa drivers?",
@@ -140,7 +140,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Is there a referral bonus for Iowa drivers?",
-        answer: "Yes — earn $1,000 per qualified driver referred with no cap. Refer fellow Iowa drivers and build additional income on top of your hauling revenue.",
+        answer: "Yes - earn $1,000 per qualified driver referred with no cap. Refer fellow Iowa drivers and build additional income on top of your hauling revenue.",
       },
       {
         question: "How fast can I start driving from Iowa?",
@@ -211,7 +211,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Is there a referral bonus for Kentucky drivers?",
-        answer: "Yes — $1,000 per qualified driver referred with no cap. Build extra income by referring fellow Kentucky truckers.",
+        answer: "Yes - $1,000 per qualified driver referred with no cap. Build extra income by referring fellow Kentucky truckers.",
       },
       {
         question: "How soon can Kentucky drivers start?",
@@ -282,7 +282,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Is there a referral program for Ohio drivers?",
-        answer: "Yes — $1,000 per qualified referral with no cap. Ohio drivers can earn substantial bonus income by referring fellow truckers.",
+        answer: "Yes - $1,000 per qualified referral with no cap. Ohio drivers can earn substantial bonus income by referring fellow truckers.",
       },
       {
         question: "How quickly can Ohio drivers get started?",
@@ -353,7 +353,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Is there a referral bonus for Mississippi drivers?",
-        answer: "Yes — $1,000 per qualified referral with no cap. Refer Mississippi drivers and earn bonus income on top of your hauling revenue.",
+        answer: "Yes - $1,000 per qualified referral with no cap. Refer Mississippi drivers and earn bonus income on top of your hauling revenue.",
       },
       {
         question: "How fast can Mississippi drivers start?",
@@ -424,7 +424,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Is there a referral program for South Dakota drivers?",
-        answer: "Yes — $1,000 per qualified referral with no cap. Refer fellow South Dakota truckers and earn bonus income.",
+        answer: "Yes - $1,000 per qualified referral with no cap. Refer fellow South Dakota truckers and earn bonus income.",
       },
       {
         question: "How quickly can South Dakota drivers start?",
@@ -495,7 +495,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "Is there a referral bonus for WV drivers?",
-        answer: "Yes — $1,000 per qualified referral with no cap. Refer West Virginia drivers and earn bonus income on top of your hauling revenue.",
+        answer: "Yes - $1,000 per qualified referral with no cap. Refer West Virginia drivers and earn bonus income on top of your hauling revenue.",
       },
       {
         question: "How fast can WV drivers get started?",

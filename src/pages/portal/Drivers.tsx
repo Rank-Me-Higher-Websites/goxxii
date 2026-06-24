@@ -1,4 +1,4 @@
-import { useQuery, useMutation } from "@tanstack/react-query";
+﻿import { useQuery, useMutation } from "@tanstack/react-query";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { Link, useSearchParams } from "react-router-dom";
 import { useState } from "react";
@@ -95,11 +95,11 @@ export default function Drivers() {
                   </div>
 
                   <div className="text-xs text-muted-foreground truncate">
-                    {driver.truckNumber ? `#${driver.truckNumber}` : "—"}
+                    {driver.truckNumber ? `#${driver.truckNumber}` : "-"}
                   </div>
 
                   <div className="text-xs text-muted-foreground truncate">
-                    {driver.phone || driver.email || "—"}
+                    {driver.phone || driver.email || "-"}
                   </div>
 
                   <div>

@@ -31,7 +31,7 @@ export const FleetHeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-            Partnering with Fortune 500 companies — ensuring top pay, exclusive benefits, and dedicated support every step of the way.
+            Partnering with Fortune 500 companies - ensuring top pay, exclusive benefits, and dedicated support every step of the way.
           </p>
           
           <p className="text-base text-muted-foreground mb-8 max-w-3xl mx-auto">

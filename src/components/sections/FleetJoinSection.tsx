@@ -29,7 +29,7 @@ export const FleetJoinSection = () => {
               </p>
 
               <p>
-                We connect you with dry van freight options that keep your wheels turning. Our <Link to="/owner-operators" className="text-primary hover:underline">dry van owner operator jobs</Link> are among the most in-demand, with customer lanes and consistent miles. Plus, our 24/7 dispatch support team is always ready to assist — day or night.
+                We connect you with dry van freight options that keep your wheels turning. Our <Link to="/owner-operators" className="text-primary hover:underline">dry van owner operator jobs</Link> are among the most in-demand, with customer lanes and consistent miles. Plus, our 24/7 dispatch support team is always ready to assist - day or night.
               </p>
 
               <p>
@@ -65,7 +65,7 @@ export const FleetJoinSection = () => {
                 className="absolute top-4 left-4 z-10 flex items-center gap-2 bg-primary backdrop-blur-sm text-primary-foreground px-5 py-2.5 rounded-full text-sm font-bold shadow-lg hover:scale-105 hover:shadow-primary/40 hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
                 <Phone className="w-4 h-4" />
-                Call Us — Join the Fleet
+                Call Us - Join the Fleet
               </a>
 
               {/* Image with hover glow */}

@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Lightbulb } from "lucide-react";
 import {
@@ -12,22 +12,22 @@ const tips = [
   {
     title: "Drive Smoothly",
     details: [
-      "Accelerate gently — avoid sudden or rapid acceleration. Gradually press the gas pedal for a smooth takeoff.",
-      "Brake gradually — anticipate stops and slow down gradually to avoid hard braking. This saves fuel and reduces brake wear.",
+      "Accelerate gently - avoid sudden or rapid acceleration. Gradually press the gas pedal for a smooth takeoff.",
+      "Brake gradually - anticipate stops and slow down gradually to avoid hard braking. This saves fuel and reduces brake wear.",
       "Use cruise control on highways to maintain a steady speed and avoid unnecessary speed fluctuations.",
     ],
   },
   {
     title: "Maintain a Steady Speed",
     details: [
-      "Drive steady at 67 mph — that's the sweet spot. Many drivers now drive 67 mph consistently and always qualify for bonuses.",
+      "Drive steady at 67 mph - that's the sweet spot. Many drivers now drive 67 mph consistently and always qualify for bonuses.",
       "They only lose 2 miles per hour in speed, but at the end of the month they earn up to 66¢ per mile because of how much fuel they save.",
     ],
   },
   {
     title: "Reduce Idling",
     details: [
-      "Avoid idling — idling burns nearly 1 gallon per hour.",
+      "Avoid idling - idling burns nearly 1 gallon per hour.",
       "Turn off the engine during long stops: if you're stopped for more than 5 minutes, shut down your engine. Idling for more than 10 seconds uses more fuel than restarting.",
       "Use idle reduction systems (APU): if your truck has an Auxiliary Power Unit or bunk heater, use it instead of idling the main engine.",
     ],
@@ -42,9 +42,9 @@ const tips = [
   {
     title: "Improve Driving Technique",
     details: [
-      "Shift gears early — shift to a higher gear as soon as the engine allows to reduce strain and improve fuel economy.",
-      "Coast when possible — if you know you'll be stopping soon, take your foot off the gas early and coast to a stop.",
-      "Use engine braking — whenever possible, use engine braking instead of relying heavily on the brake pedal. This saves fuel and reduces brake wear.",
+      "Shift gears early - shift to a higher gear as soon as the engine allows to reduce strain and improve fuel economy.",
+      "Coast when possible - if you know you'll be stopping soon, take your foot off the gas early and coast to a stop.",
+      "Use engine braking - whenever possible, use engine braking instead of relying heavily on the brake pedal. This saves fuel and reduces brake wear.",
     ],
   },
   {
@@ -67,7 +67,7 @@ const tips = [
     ],
   },
   {
-    title: "Avoid Headwind — Pay Attention to Weather",
+    title: "Avoid Headwind - Pay Attention to Weather",
     details: [
       "Adjust to road conditions: in windy or rainy conditions, reduce speed to avoid excessive fuel consumption.",
       "Wind against you increases fuel usage. If it's strong, consider adjusting route or speed.",
@@ -107,7 +107,7 @@ export const FuelTipsSection = () => {
             Tips to Improve MPG & Reduce Idling
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto">
-            Small changes in driving habits can add up to big savings — and bigger bonuses.
+            Small changes in driving habits can add up to big savings - and bigger bonuses.
           </p>
         </motion.div>
 

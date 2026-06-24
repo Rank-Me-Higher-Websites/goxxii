@@ -1,4 +1,4 @@
-import { useQuery, useMutation } from "@tanstack/react-query";
+﻿import { useQuery, useMutation } from "@tanstack/react-query";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useState } from "react";
 import { Link as LinkIcon, Copy, Check, Send, ExternalLink, RefreshCw } from "lucide-react";
@@ -112,7 +112,7 @@ export default function SurveyLinks() {
           <h2 className="text-sm font-semibold text-foreground font-display">Public Registration Link</h2>
         </div>
         <p className="text-xs text-muted-foreground mb-3">
-          Share this link with new drivers — they can register themselves and start their Week 1 survey.
+          Share this link with new drivers - they can register themselves and start their Week 1 survey.
         </p>
         <div className="flex items-center gap-2">
           <code className="flex-1 bg-background border border-border rounded-lg px-4 py-2.5 text-sm text-foreground font-mono truncate" data-testid="text-register-url">

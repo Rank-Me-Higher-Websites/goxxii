@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Mail } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
@@ -96,7 +96,7 @@ export const LeadershipSection = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             XXII Century's leadership brings together decades of logistics
-            experience, united by a shared mission—supporting carriers, drivers,
+            experience, united by a shared mission-supporting carriers, drivers,
             and partners.
           </p>
         </motion.div>

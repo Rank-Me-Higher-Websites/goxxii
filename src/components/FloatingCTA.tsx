@@ -55,7 +55,7 @@ export const FloatingCTA = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              <span className="text-xs font-semibold text-accent">Limited Spots Available — Apply Today</span>
+              <span className="text-xs font-semibold text-accent">Limited Spots Available - Apply Today</span>
             </div>
 
             {/* Buttons */}

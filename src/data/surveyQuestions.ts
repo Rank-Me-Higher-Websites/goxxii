@@ -1,4 +1,4 @@
-export interface SurveyQuestion {
+﻿export interface SurveyQuestion {
   key: string;
   label: string;
   sublabel?: string;
@@ -15,7 +15,7 @@ export interface SurveySection {
 
 export const surveyQuestions: Record<string, SurveySection> = {
   week1: {
-    title: "Week 1 — Orientation and Onboarding",
+    title: "Week 1 - Orientation and Onboarding",
     focus: "Ensuring the driver has everything needed to start smoothly and without friction.",
     questions: [
       { key: "tools_access", label: "Did you receive access to all necessary apps and tools before your first load?", sublabel: "Open Road, Relay fuel card, ELD, CAT Scale access, etc.", type: "textarea" },
@@ -33,7 +33,7 @@ export const surveyQuestions: Record<string, SurveySection> = {
     ],
   },
   week2: {
-    title: "Week 2 — First Week with XXII Century",
+    title: "Week 2 - First Week with XXII Century",
     focus: "Identifying communication or equipment bottlenecks that may cause frustration.",
     questions: [
       { key: "feel_supported", label: "During your first week, did you feel supported by the team?", type: "yesno" },
@@ -60,24 +60,24 @@ export const surveyQuestions: Record<string, SurveySection> = {
     ],
   },
   week3: {
-    title: "Week 3 — Second Week with XXII Century",
+    title: "Week 3 - Second Week with XXII Century",
     focus: "Checking if the driver is building momentum and feeling part of the team.",
     questions: [
       { key: "routine_established", label: "Do you feel like you've established a good daily/weekly routine?", type: "yesno" },
       { key: "routine_blockers", label: "If not, what's getting in the way?", type: "textarea", condition: "routine_established:no" },
       { key: "communication_quality", label: "How would you rate the overall communication from the company?", type: "select", options: [
-        { value: "excellent", label: "Excellent — I feel well-informed" },
-        { value: "good", label: "Good — Most things are communicated" },
-        { value: "average", label: "Average — Could be better" },
-        { value: "poor", label: "Poor — I'm often in the dark" },
+        { value: "excellent", label: "Excellent - I feel well-informed" },
+        { value: "good", label: "Good - Most things are communicated" },
+        { value: "average", label: "Average - Could be better" },
+        { value: "poor", label: "Poor - I'm often in the dark" },
       ]},
       { key: "miles_consistent", label: "Are you consistently getting the miles you were promised?", type: "yesno" },
       { key: "miles_detail", label: "If not, what's the gap?", type: "textarea", condition: "miles_consistent:no" },
       { key: "team_relationship", label: "How would you describe your relationship with dispatch and the office team?", type: "select", options: [
-        { value: "great", label: "Great — We work well together" },
-        { value: "good", label: "Good — Getting there" },
-        { value: "neutral", label: "Neutral — Just business" },
-        { value: "strained", label: "Strained — Some tension" },
+        { value: "great", label: "Great - We work well together" },
+        { value: "good", label: "Good - Getting there" },
+        { value: "neutral", label: "Neutral - Just business" },
+        { value: "strained", label: "Strained - Some tension" },
       ]},
       { key: "safety_concerns", label: "Do you have any safety concerns that haven't been addressed?", type: "textarea" },
       { key: "overall_satisfaction", label: "Overall, how satisfied are you at this point?", type: "select", options: [
@@ -91,7 +91,7 @@ export const surveyQuestions: Record<string, SurveySection> = {
     ],
   },
   week4: {
-    title: "Week 4 — Partnership Fit with XXII Century",
+    title: "Week 4 - Partnership Fit with XXII Century",
     focus: "Evaluating long-term profitability and overall satisfaction.",
     questions: [
       { key: "pay_aligned", label: "Based on your first month, is your take-home pay aligning with your initial expectations?", type: "select", options: [
@@ -116,11 +116,11 @@ export const surveyQuestions: Record<string, SurveySection> = {
       ]},
       { key: "considered_leaving", label: "In your first 30 days, was there a moment you considered leaving?", type: "yesno" },
       { key: "leaving_reason", label: "If yes, what caused it?", type: "textarea", condition: "considered_leaving:yes" },
-      { key: "dream_feature", label: "What would you like to see in our company that you have never had in any other company — something that would make you stay long term?", type: "textarea" },
+      { key: "dream_feature", label: "What would you like to see in our company that you have never had in any other company - something that would make you stay long term?", type: "textarea" },
     ],
   },
   exit: {
-    title: "Exit Survey — Departure Feedback",
+    title: "Exit Survey - Departure Feedback",
     focus: "Understanding why a driver is leaving so we can reduce future turnover and improve the experience for current drivers.",
     questions: [
       { key: "primary_reason", label: "What was the primary reason you decided to leave the company?", type: "select", options: [

@@ -111,7 +111,7 @@ export const getWebSiteSchema = () => ({
   name: COMPANY.alternateName,
   url: COMPANY.url,
   description:
-    "XXII Century Trucking — owner operator jobs, company driver positions, fleet programs, and freight shipping services.",
+    "XXII Century Trucking - owner operator jobs, company driver positions, fleet programs, and freight shipping services.",
   publisher: {
     "@type": "Organization",
     name: COMPANY.name,
@@ -361,7 +361,7 @@ export const ownerOperatorFaqsPlain = [
   { question: "Do I need my own trailer to be an owner operator?", answer: "No. XXII Century offers a large trailer network including dry vans. You can use our trailers or bring your own." },
   { question: "What fuel discounts are available for owner operators?", answer: "We provide large fleet volume fuel discounts at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route." },
   { question: "Can I choose my own routes as an owner operator?", answer: "Yes. We offer flexible scheduling with both customer lanes and open-board freight. Whether you prefer local Chicago-area runs or long-haul OTR, we match loads to your preferences." },
-  { question: "Is there a referral bonus for owner operators?", answer: "Yes — we offer an unlimited referral bonus program. Refer qualified drivers and earn $1,000 per referral with no cap." },
+  { question: "Is there a referral bonus for owner operators?", answer: "Yes - we offer an unlimited referral bonus program. Refer qualified drivers and earn $1,000 per referral with no cap." },
 ];
 
 export const companyDriverFaqsPlain = [
@@ -382,9 +382,9 @@ export const fleetProgramFaqsPlain = [
 ];
 
 export const careersFaqsPlain = [
-  { question: "What trucking career paths are available at XXII Century?", answer: "We offer multiple career paths: Owner operator — run your own business with our freight and support; Company driver — full employment with benefits and steady pay; Fleet program — Power Only opportunities with trailer access." },
+  { question: "What trucking career paths are available at XXII Century?", answer: "We offer multiple career paths: Owner operator - run your own business with our freight and support; Company driver - full employment with benefits and steady pay; Fleet program - Power Only opportunities with trailer access." },
   { question: "Does XXII Century hire drivers in the Chicago area?", answer: "Yes. Our headquarters are in Chicago, IL and many of our customer lanes originate from the Chicagoland area. We have local, regional, and OTR positions based out of Chicago." },
-  { question: "What is the hiring process like?", answer: "Our process is straightforward: Submit your online application, phone screening with our recruiting team, background and MVR verification, orientation and dispatch — many drivers start within days." },
+  { question: "What is the hiring process like?", answer: "Our process is straightforward: Submit your online application, phone screening with our recruiting team, background and MVR verification, orientation and dispatch - many drivers start within days." },
   { question: "Are there bonuses for safe driving?", answer: "Yes. We offer safety and inspection bonuses that reward clean CSA scores and DOT inspections. These are available to both owner operators and company drivers." },
   { question: "Can I drive for XXII Century if I live outside Illinois?", answer: "Absolutely. We have drivers across the country. While our base is in Chicago, our freight network spans the entire U.S. and Canada." },
 ];
@@ -416,11 +416,11 @@ export const aboutFaqsPlain = [
 
 export const reviewsFaqsPlain = [
   { question: "Is XXII Century Inc a good company to drive for?", answer: "Reviews consistently rate XXII Century 4.8/5. Drivers cite transparent owner operator settlements (80% of gross), no forced dispatch, real Fortune 500 freight, and reliable weekly pay as the top reasons they stay." },
-  { question: "How much do owner operators actually make at XXII Century Trucking?", answer: "Owner operators at XXII Century average $8,000+ per week in gross revenue and keep 80% — with no hidden trailer rental, ELD, or dispatch fees. Real take-home depends on miles run and fuel efficiency." },
+  { question: "How much do owner operators actually make at XXII Century Trucking?", answer: "Owner operators at XXII Century average $8,000+ per week in gross revenue and keep 80% - with no hidden trailer rental, ELD, or dispatch fees. Real take-home depends on miles run and fuel efficiency." },
   { question: "Are XXII Century reviews legitimate?", answer: "Yes. Reviews are pulled from public sources including Google, Trustindex, and direct driver feedback collected through the company's retention surveys. The 4.8/5 aggregate covers 127+ verified driver reviews." },
-  { question: "Where is XXII Century Inc located?", answer: "XXII Century Inc is headquartered at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517 — in the Chicago metro area. The company operates nationwide and into Canada. Recruiting: 630-914-6037." },
-  { question: "What do drivers complain about in XXII Century reviews?", answer: "The most common constructive feedback in reviews centers on long onboarding windows during peak hiring seasons and occasional load gaps in slow freight weeks — both of which the company addresses with customer lanes and a referral-driven driver pipeline." },
-  { question: "How do I apply to XXII Century Trucking after reading reviews?", answer: "Apply online at goxxii.com — the application takes about 5 minutes. Recruiting typically responds within 24 hours by phone (630-914-6037) or email (hr@goxxii.com). Owner operators, company drivers, and fleet owners all use the same application form." },
+  { question: "Where is XXII Century Inc located?", answer: "XXII Century Inc is headquartered at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517 - in the Chicago metro area. The company operates nationwide and into Canada. Recruiting: 630-914-6037." },
+  { question: "What do drivers complain about in XXII Century reviews?", answer: "The most common constructive feedback in reviews centers on long onboarding windows during peak hiring seasons and occasional load gaps in slow freight weeks - both of which the company addresses with customer lanes and a referral-driven driver pipeline." },
+  { question: "How do I apply to XXII Century Trucking after reading reviews?", answer: "Apply online at goxxii.com - the application takes about 5 minutes. Recruiting typically responds within 24 hours by phone (630-914-6037) or email (hr@goxxii.com). Owner operators, company drivers, and fleet owners all use the same application form." },
 ];
 
 export const blogFaqsPlain = [

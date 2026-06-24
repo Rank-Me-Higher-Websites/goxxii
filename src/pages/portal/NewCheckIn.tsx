@@ -1,4 +1,4 @@
-import { useQuery, useMutation } from "@tanstack/react-query";
+﻿import { useQuery, useMutation } from "@tanstack/react-query";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useSearchParams, useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
@@ -69,7 +69,7 @@ export default function NewCheckIn() {
             >
               <option value="">Choose a driver...</option>
               {drivers.filter((d: any) => d.status === "active").map((d: any) => (
-                <option key={d.id} value={d.id}>{d.firstName} {d.lastName} — Truck #{d.truckNumber || "N/A"}</option>
+                <option key={d.id} value={d.id}>{d.firstName} {d.lastName} - Truck #{d.truckNumber || "N/A"}</option>
               ))}
             </select>
           </div>
@@ -89,7 +89,7 @@ export default function NewCheckIn() {
                   data-testid={`button-type-${key}`}
                 >
                   <div className={`text-sm font-medium font-display ${selectedType === key ? "text-primary" : "text-foreground"}`}>
-                    {sq.title.split(" — ")[0]}
+                    {sq.title.split(" - ")[0]}
                   </div>
                   <div className="text-[10px] text-muted-foreground mt-0.5">{sq.questions.length} questions</div>
                 </button>
