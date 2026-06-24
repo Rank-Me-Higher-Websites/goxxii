@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.svg";
@@ -62,9 +62,9 @@ export const Footer = ({ onApplyClick }: FooterProps) => {
                 </Button>
               )}
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+16309480501" className="flex items-center gap-2">
+                <a href="tel:+16309146037" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  Call: 630-948-0501
+                  Call: 630-914-6037
                 </a>
               </Button>
             </div>
@@ -85,11 +85,11 @@ export const Footer = ({ onApplyClick }: FooterProps) => {
             </p>
             <div className="space-y-2">
               <a
-                href="tel:+16309480501"
+                href="tel:+16309146037"
                 className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                630-948-0501
+                630-914-6037
               </a>
               <a
                 href="mailto:hr@goxxii.com"

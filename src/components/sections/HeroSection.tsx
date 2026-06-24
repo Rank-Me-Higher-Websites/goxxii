@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronRight, Phone, Star, Users, Truck, Fuel } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -153,9 +153,9 @@ export const HeroSection = () => {
                 <span className="hidden sm:inline whitespace-nowrap">Apply Now — Only 3 Spots Left</span>
               </Button>
               <Button variant="heroOutline" size="default" className="sm:h-14 sm:px-10 sm:text-base" asChild>
-                <a href="tel:+16309480501">
+                <a href="tel:+16309146037">
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  <span className="whitespace-nowrap">630-948-0501</span>
+                  <span className="whitespace-nowrap">630-914-6037</span>
                 </a>
               </Button>
             </motion.div>

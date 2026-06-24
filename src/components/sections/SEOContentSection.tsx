@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { TrendingUp, Shield, Cpu, Users, Clock, DollarSign, Truck, Star } from "lucide-react";
@@ -17,7 +17,7 @@ const keyPoints: Record<string, { icon: any; label: string }[]> = {
     { icon: Shield, label: "No Hidden Fees" },
     { icon: TrendingUp, label: "Fortune 500 Freight" },
     { icon: Clock, label: "24/7 Support" },
-    { icon: Star, label: "15+ Years Trusted" },
+    { icon: Star, label: "17+ years Trusted" },
   ],
   ownerOperators: [
     { icon: DollarSign, label: "80% Linehaul Pay" },
@@ -53,7 +53,7 @@ const seoContent = {
   home: {
     heading: "Why Choose XXII Century for Your Trucking Career",
     paragraphs: [
-      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 15 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions with 80% linehaul pay or company driver roles offering 68 + 2 CPM with full benefits, our team is committed to your success on the road.",
+      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 17 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions with 80% linehaul pay or company driver roles offering 68 + 2 CPM with full benefits, our team is committed to your success on the road.",
       "Our technology-driven approach sets us apart from traditional carriers. AI-powered dispatch optimizes your routes for maximum earnings while minimizing empty miles. Real-time load matching ensures you're never left searching for freight, and our 24/7 support team handles logistics so you can focus on driving. We invest in tools that put more money in your pocket.",
       "From the moment you apply, we prioritize transparency and respect. No hidden fees, no surprise deductions—just honest partnerships that help you build a sustainable trucking career. Join hundreds of drivers who have found their home with a carrier that truly values their contribution to keeping America moving."
     ],
@@ -96,7 +96,7 @@ const seoContent = {
     heading: "Grow Your Fleet with a Trusted Carrier Partner",
     paragraphs: [
       "Fleet owners and small carriers partner with XXII Century to access <strong>premium freight without sacrificing control</strong> of their operations. Our fleet partnership program provides consistent load volumes from established shippers, competitive rates, and dedicated dispatch support—everything you need to scale your trucking business profitably.",
-      "We've spent over 15 years building relationships with Fortune 500 companies who value reliability and professionalism. As a fleet partner, you benefit from these connections while maintaining full autonomy over your trucks and drivers. No forced dispatch, no micromanagement—just steady freight and transparent settlements every week.",
+      "We've spent over 17 years building relationships with Fortune 500 companies who value reliability and professionalism. As a fleet partner, you benefit from these connections while maintaining full autonomy over your trucks and drivers. No forced dispatch, no micromanagement—just steady freight and transparent settlements every week.",
       "Our technology platform gives you real-time visibility into load assignments, settlements, and performance metrics. Combined with 24/7 support from our experienced team, you'll have the tools and resources to <strong>maximize utilization</strong> and grow your fleet with confidence in any market conditions."
     ],
     links: [
@@ -123,7 +123,7 @@ const seoContent = {
   about: {
     heading: "A Driver-First Trucking Company Since 2009",
     paragraphs: [
-      "XXII Century was founded with a simple mission: <strong>treat drivers the way they deserve to be treated</strong>. For over 15 years, we've built a Chicago-based trucking company that puts people first—offering fair pay, honest communication, and genuine support for every member of our team whether they run their own truck or drive ours.",
+      "XXII Century was founded with a simple mission: <strong>treat drivers the way they deserve to be treated</strong>. For over 17 years, we've built a Chicago-based trucking company that puts people first—offering fair pay, honest communication, and genuine support for every member of our team whether they run their own truck or drive ours.",
       "Our growth from a small local carrier to a nationwide logistics partner reflects our commitment to doing things right. We've earned the trust of Fortune 500 shippers by delivering consistent results, and we've built a loyal driver community by keeping our promises. When we say no hidden fees, we mean it—every time.",
       "Today, XXII Century serves drivers and shippers across the country while staying true to our <strong>Midwest roots and values</strong>. Our leadership team brings decades of industry experience, and our 24/7 support staff treats every call like it matters—because it does. That's the XXII Century difference."
     ],
@@ -151,7 +151,7 @@ const seoContent = {
   blog: {
     heading: "Expert Insights for Professional Drivers",
     paragraphs: [
-      "Our <strong>trucking industry blog</strong> delivers actionable advice for owner operators, company drivers, and anyone considering a career behind the wheel. From maximizing fuel efficiency to navigating regulatory changes, we share the knowledge our team has gained over 15+ years in the logistics industry to help you succeed.",
+      "Our <strong>trucking industry blog</strong> delivers actionable advice for owner operators, company drivers, and anyone considering a career behind the wheel. From maximizing fuel efficiency to navigating regulatory changes, we share the knowledge our team has gained over 17+ years in the logistics industry to help you succeed.",
       "Stay informed about market trends, equipment innovations, and best practices that can boost your earnings and improve your quality of life on the road. Whether you're a seasoned professional or exploring trucking for the first time, our articles are written by industry experts who understand the real challenges drivers face daily.",
       "We also spotlight driver success stories and company updates that showcase what it's <strong>really like to work with XXII Century</strong>. Real experiences from real drivers—not marketing fluff—help you make informed decisions about your trucking career and which carrier deserves your talent."
     ],

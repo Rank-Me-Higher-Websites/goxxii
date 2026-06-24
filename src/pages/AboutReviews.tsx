@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+﻿import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
@@ -78,7 +78,7 @@ const AboutReviews = () => {
               <div className="text-xs text-muted-foreground mt-1">Driver Rating</div>
             </div>
             <div className="rounded-xl border border-border bg-card p-5 text-center">
-              <div className="text-3xl font-bold text-accent">500+</div>
+              <div className="text-3xl font-bold text-accent">100+</div>
               <div className="text-xs text-muted-foreground mt-1">Active Drivers</div>
             </div>
             <div className="rounded-xl border border-border bg-card p-5 text-center">
@@ -148,7 +148,7 @@ const AboutReviews = () => {
             and provides freight shipping services for shippers and brokers.
           </p>
           <p className="text-muted-foreground mb-3">
-            Phone: <a href="tel:+16309480501" className="text-accent hover:underline">630-948-0501</a> ·
+            Phone: <a href="tel:+16309146037" className="text-accent hover:underline">630-914-6037</a> ·
             Recruiting:{" "}
             <a href="mailto:hr@goxxii.com" className="text-accent hover:underline">hr@goxxii.com</a>
           </p>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 
 interface SEOHeadProps {
   title: string;
@@ -87,7 +87,7 @@ export const SEO_CONTENT = {
   },
   about: {
     title: "About XXII Century — Chicago Trucking Company Since 2009",
-    description: "500+ drivers strong. Fortune 500 partnerships. Based in Woodridge, IL. Discover why drivers and shippers choose XXII Century. Join our team today.",
+    description: "100+ drivers strong. Fortune 500 partnerships. Based in Woodridge, IL. Discover why drivers and shippers choose XXII Century. Join our team today.",
     keywords: "XXII Century trucking, Chicago trucking carrier, driver-first company, Woodridge IL logistics, Midwest trucking provider, XXII Century reviews, trucking company Woodridge IL, driver-first carrier, Chicago logistics company, XXII Century careers",
   },
   careers: {
@@ -96,8 +96,8 @@ export const SEO_CONTENT = {
     keywords: "trucking job openings, CDL driver employment, dispatcher positions, logistics careers, transportation jobs, trucking job application, dispatcher job trucking, transportation career opportunities, truck driver hiring 2025",
   },
   contact: {
-    title: "Contact XXII Century — Call 630-948-0501 | Woodridge, IL",
-    description: "Call 630-948-0501 or visit 7501 Lemont Rd, Woodridge IL. Driver applications, freight quotes, fleet partnerships. Our team responds within 24 hours.",
+    title: "Contact XXII Century — Call 630-914-6037 | Woodridge, IL",
+    description: "Call 630-914-6037 or visit 7501 Lemont Rd, Woodridge IL. Driver applications, freight quotes, fleet partnerships. Our team responds within 24 hours.",
     keywords: "trucking company contact, driver recruiting, freight quote request, Woodridge IL trucking, XXII Century phone number, XXII Century address, trucking company near me, driver recruiter contact, freight quote phone number",
   },
   blog: {

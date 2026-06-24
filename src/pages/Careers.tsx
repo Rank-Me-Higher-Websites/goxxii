@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+﻿import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
@@ -183,7 +183,7 @@ const Careers = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+16309480501" className="inline-flex items-center gap-2" aria-label="Call recruiting team">
+                <a href="tel:+16309146037" className="inline-flex items-center gap-2" aria-label="Call recruiting team">
                   <Phone className="w-5 h-5" /> Contact Us
                 </a>
               </Button>
@@ -393,8 +393,8 @@ const Careers = () => {
             </div>
             
             <div className="flex flex-wrap gap-6 justify-center text-sm">
-              <a href="tel:+16309480501" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                <Phone className="w-4 h-4" /> 630-948-0501
+              <a href="tel:+16309146037" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <Phone className="w-4 h-4" /> 630-914-6037
               </a>
               <a href="mailto:hr@goxxii.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="w-4 h-4" /> hr@goxxii.com

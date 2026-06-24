@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -47,7 +47,7 @@ export const AboutHeroSection = () => {
               </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:+16309480501" className="flex items-center gap-2">
+              <a href="tel:+16309146037" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 Call Us
               </a>

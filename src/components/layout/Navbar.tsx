@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+﻿import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronRight, ChevronDown, Phone, Truck, Users, Network } from "lucide-react";
@@ -269,11 +269,11 @@ export const Navbar = () => {
           {/* CTA + Socials */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+16309480501"
+              href="tel:+16309146037"
               className="flex items-center gap-1.5 text-xs font-semibold bg-accent/25 hover:bg-accent/35 text-accent px-3 py-2 rounded-lg border border-accent/50 hover:border-accent/70 shadow-[0_0_8px_rgba(34,197,94,0.15)] hover:shadow-[0_0_12px_rgba(34,197,94,0.25)] transition-all whitespace-nowrap"
             >
               <Phone className="w-4 h-4 flex-shrink-0" strokeWidth={2.5} />
-              (630) 948-0501
+              (630) 914-6037
             </a>
 
             <Button variant="hero" size="default" className="whitespace-nowrap text-xs h-9" asChild>
@@ -483,9 +483,9 @@ export const Navbar = () => {
                   </a>
                 </Button>
                 <Button variant="heroOutline" size="lg" className="w-full" asChild>
-                  <a href="tel:+16309480501" className="flex items-center justify-center gap-2">
+                  <a href="tel:+16309146037" className="flex items-center justify-center gap-2">
                     <Phone size={18} />
-                    (630) 948-0501
+                    (630) 914-6037
                   </a>
                 </Button>
               </motion.div>

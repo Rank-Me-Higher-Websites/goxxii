@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -54,7 +54,7 @@ export const LocationMapSection = () => {
                 </div>
                 <div className="text-left">
                   <h3 className="font-display font-bold text-foreground mb-1">Phone</h3>
-                  <a href="tel:+16309480501" className="text-muted-foreground text-sm hover:text-primary transition-colors block">630-948-0501</a>
+                  <a href="tel:+16309146037" className="text-muted-foreground text-sm hover:text-primary transition-colors block">630-914-6037</a>
                 </div>
               </div>
             </div>

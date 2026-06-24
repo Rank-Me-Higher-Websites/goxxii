@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import companyDriver from "@/assets/company-driver.jpg";
@@ -25,7 +25,7 @@ export const AboutSection = () => {
 
             <div className="space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
               <p>
-                15+ years in the industry. Chicago-based. We get what matters —{" "}
+                17+ years in the industry. Chicago-based. We get what matters —{" "}
                 <strong className="text-foreground">
                   steady freight, real support, respect on the road
                 </strong>

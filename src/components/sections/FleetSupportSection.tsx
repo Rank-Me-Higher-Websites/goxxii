@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Gift, DollarSign, Headphones, Award, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -65,9 +65,9 @@ export const FleetSupportSection = () => {
           className="text-center"
         >
           <Button variant="heroOutline" size="lg" asChild>
-            <a href="tel:+16309480501" className="inline-flex items-center gap-2">
+            <a href="tel:+16309146037" className="inline-flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              Reach Us Now: 630-948-0501
+              Reach Us Now: 630-914-6037
             </a>
           </Button>
         </motion.div>

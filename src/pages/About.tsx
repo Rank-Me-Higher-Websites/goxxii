@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+﻿import { useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
@@ -27,7 +27,7 @@ const About = () => {
     ]),
     getServiceSchema({
       name: "About XXII Century Trucking",
-      description: "Chicago-based trucking carrier since 2009. 500+ drivers, Fortune 500 partnerships, owner operator and company driver programs with AI-powered fleet management.",
+      description: "Chicago-based trucking carrier since 2009. 100+ drivers, Fortune 500 partnerships, owner operator and company driver programs with AI-powered fleet management.",
       url: "/about",
     }),
   ], []);

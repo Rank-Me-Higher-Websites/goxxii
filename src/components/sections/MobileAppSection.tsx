@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import mobileApp from "@/assets/mobile-app.png";
@@ -39,9 +39,9 @@ export const MobileAppSection = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="default" asChild>
-                <a href="tel:+16309480501" className="flex items-center gap-2">
+                <a href="tel:+16309146037" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  630-948-0501
+                  630-914-6037
                 </a>
               </Button>
             </div>

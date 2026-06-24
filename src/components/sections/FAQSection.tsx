@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
@@ -39,7 +39,7 @@ const homeFaqs: FAQ[] = [
   {
     question: "Does XXII Century offer freight shipping services?",
     answer: (
-      <p>Yes. We provide <Link to="/freight-shipping-services" className="text-primary hover:underline">dry van and flatbed freight services</Link> for shippers and brokers. Our network covers the continental U.S. and Canada with dedicated and spot capacity.</p>
+      <p>Yes. We provide <Link to="/freight-shipping-services" className="text-primary hover:underline">dry van freight services</Link> for shippers and brokers. Our network covers the continental U.S. and Canada with dedicated and spot capacity.</p>
     ),
   },
   {
@@ -60,7 +60,7 @@ const ownerOperatorFaqs: FAQ[] = [
   {
     question: "Do I need my own trailer to be an owner operator?",
     answer: (
-      <p>No. XXII Century offers a large trailer network including dry vans and flatbeds. You can use our trailers or bring your own. Learn about trailer options on our <Link to="/fleet-program" className="text-primary hover:underline">fleet program page</Link>.</p>
+      <p>No. XXII Century offers a large trailer network of dry vans. You can use our trailers or bring your own. Learn about trailer options on our <Link to="/fleet-program" className="text-primary hover:underline">fleet program page</Link>.</p>
     ),
   },
   {
@@ -148,7 +148,7 @@ const fleetProgramFaqs: FAQ[] = [
   {
     question: "What types of trailers are available in the fleet program?",
     answer: (
-      <p>Our trailer network includes <strong className="text-foreground">dry vans and flatbeds</strong>. This diversity ensures you can haul a wide range of freight and stay loaded consistently. Learn more about our <Link to="/freight-shipping-services" className="text-primary hover:underline">freight services</Link>.</p>
+      <p>Our trailer network includes <strong className="text-foreground">dry vans</strong>. This diversity ensures you can haul a wide range of freight and stay loaded consistently. Learn more about our <Link to="/freight-shipping-services" className="text-primary hover:underline">freight services</Link>.</p>
     ),
   },
   {
@@ -217,7 +217,7 @@ const contactFaqs: FAQ[] = [
   {
     question: "What is the best way to reach XXII Century recruiting?",
     answer: (
-      <p>Call us at <a href="tel:+16309480501" className="text-primary hover:underline font-semibold">630-948-0501</a> or email <a href="mailto:hr@goxxii.com" className="text-primary hover:underline">hr@goxxii.com</a>. You can also apply directly through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a>.</p>
+      <p>Call us at <a href="tel:+16309146037" className="text-primary hover:underline font-semibold">630-914-6037</a> or email <a href="mailto:hr@goxxii.com" className="text-primary hover:underline">hr@goxxii.com</a>. You can also apply directly through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=Eve" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a>.</p>
     ),
   },
   {
@@ -235,13 +235,13 @@ const contactFaqs: FAQ[] = [
   {
     question: "How quickly does the recruiting team respond?",
     answer: (
-      <p>We typically respond within <strong className="text-foreground">24 hours</strong> of receiving your application or inquiry. For faster results, call our recruiting line directly at <a href="tel:+16309480501" className="text-primary hover:underline">630-948-0501</a>.</p>
+      <p>We typically respond within <strong className="text-foreground">24 hours</strong> of receiving your application or inquiry. For faster results, call our recruiting line directly at <a href="tel:+16309146037" className="text-primary hover:underline">630-914-6037</a>.</p>
     ),
   },
   {
     question: "Can shippers or brokers contact XXII Century for freight services?",
     answer: (
-      <p>Yes. If you need <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping services</Link> including dry van or flatbed capacity, contact our logistics team. We partner with Fortune 500 companies and welcome new shipper relationships.</p>
+      <p>Yes. If you need <Link to="/freight-shipping-services" className="text-primary hover:underline">freight shipping services</Link> including dry van capacity, contact our logistics team. We partner with Fortune 500 companies and welcome new shipper relationships.</p>
     ),
   },
   {
@@ -292,7 +292,7 @@ export const FAQSection = ({ pageKey = "home" }: FAQSectionProps) => {
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-3">
               <Button variant="hero" size="default" asChild>
-                <a href="tel:+16309480501" className="flex items-center gap-2">
+                <a href="tel:+16309146037" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   Call
                 </a>

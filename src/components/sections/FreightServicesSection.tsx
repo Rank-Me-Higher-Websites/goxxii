@@ -1,4 +1,4 @@
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+﻿import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -215,7 +215,7 @@ export const FreightServicesSection = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  At XXII Century, we support <Link to="/careers" className="text-foreground font-semibold hover:text-primary transition-colors">CDL truck drivers in Chicago and across the U.S.</Link> with dependable routes, steady freight, and a professional logistics network. Whether you&apos;re hauling <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">dry van</Link>, flatbed, or <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">full truckload</Link>, our asset-based fleet and optimized routing help you stay efficient and on the move.
+                  At XXII Century, we support <Link to="/careers" className="text-foreground font-semibold hover:text-primary transition-colors">CDL truck drivers in Chicago and across the U.S.</Link> with dependable routes, steady freight, and a professional logistics network. Whether you&apos;re hauling <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">dry van</Link> or <Link to="/freight-shipping-services" className="text-foreground font-semibold hover:text-primary transition-colors">full truckload</Link>, our asset-based fleet and optimized routing help you stay efficient and on the move.
                 </p>
                 <p>
                   We&apos;re more than a carrier — we&apos;re a <Link to="/owner-operators" className="text-foreground font-semibold hover:text-primary transition-colors">driver-focused partner</Link> built on communication, predictable miles, and on-time freight delivery. Our system is designed to reduce wait times, keep loads consistent, and help <Link to="/company-drivers" className="text-foreground font-semibold hover:text-primary transition-colors">drivers get from point A to point B</Link> with confidence.
@@ -238,7 +238,7 @@ export const FreightServicesSection = () => {
                   <div className="text-sm text-muted-foreground">On-Time Delivery</div>
                 </div>
                 <div className="glass rounded-xl p-5 text-center">
-                  <div className="text-3xl font-display font-bold text-primary mb-1">500+</div>
+                  <div className="text-3xl font-display font-bold text-primary mb-1">100+</div>
                   <div className="text-sm text-muted-foreground">Active Drivers</div>
                 </div>
                 <div className="glass rounded-xl p-5 text-center">

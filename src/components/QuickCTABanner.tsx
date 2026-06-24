@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -28,7 +28,7 @@ export const QuickCTABanner = ({ variant = "default" }: QuickCTABannerProps) => 
                 </a>
               </Button>
               <Button variant="heroOutline" size="sm" asChild>
-                <a href="tel:+16309480501" className="inline-flex items-center gap-2">
+                <a href="tel:+16309146037" className="inline-flex items-center gap-2">
                   <Phone className="w-4 h-4" /> Call Us
                 </a>
               </Button>
@@ -71,8 +71,8 @@ export const QuickCTABanner = ({ variant = "default" }: QuickCTABannerProps) => 
               </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:+16309480501" className="inline-flex items-center gap-2">
-                <Phone className="w-5 h-5" /> 630-948-0501
+              <a href="tel:+16309146037" className="inline-flex items-center gap-2">
+                <Phone className="w-5 h-5" /> 630-914-6037
               </a>
             </Button>
             <a

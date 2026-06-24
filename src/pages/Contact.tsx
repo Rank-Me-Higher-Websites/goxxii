@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from "react";
+﻿import { useMemo, useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
@@ -23,8 +23,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["630-948-0501"],
-    action: "tel:+16309480501",
+    details: ["630-914-6037"],
+    action: "tel:+16309146037",
     actionLabel: "Call Now",
   },
   {
@@ -192,7 +192,7 @@ const Contact = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+16309480501" className="flex items-center gap-2">
+                <a href="tel:+16309146037" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   Call Us
                 </a>
@@ -341,9 +341,9 @@ const Contact = () => {
                   </a>
                 </Button>
                 <Button variant="heroOutline" size="lg" asChild>
-                  <a href="tel:+16309480501" className="flex items-center gap-2">
+                  <a href="tel:+16309146037" className="flex items-center gap-2">
                     <Phone className="w-5 h-5" />
-                    Call: 630-948-0501
+                    Call: 630-914-6037
                   </a>
                 </Button>
               </div>

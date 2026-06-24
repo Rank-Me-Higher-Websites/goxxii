@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ChevronRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -51,9 +51,9 @@ export const FleetHeroSection = () => {
               </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:+16309480501" className="flex items-center gap-2">
+              <a href="tel:+16309146037" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                Call 630-948-0501
+                Call 630-914-6037
               </a>
             </Button>
           </div>

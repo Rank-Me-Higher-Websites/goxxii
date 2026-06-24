@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from "react";
+﻿import { useMemo, useState, useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead, SEO_CONTENT } from "@/components/SEOHead";
 import { SchemaMarkup } from "@/components/SchemaMarkup";
@@ -154,7 +154,7 @@ const FreightServices = () => {
     getFAQSchema(freightServicesFaqsPlain),
     getServiceSchema({
       name: "Freight Shipping Services",
-      description: "Nationwide dry van and flatbed freight shipping. Real-time tracking, competitive rates, Fortune 500 carrier network, and 24/7 dispatch support.",
+      description: "Nationwide dry van freight shipping. Real-time tracking, competitive rates, Fortune 500 carrier network, and 24/7 dispatch support.",
       url: "/freight-shipping-services",
     }),
     getServiceSchema({
@@ -216,7 +216,7 @@ const FreightServices = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+16309480501" className="flex items-center gap-2">
+                <a href="tel:+16309146037" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   Call Us
                 </a>
@@ -448,9 +448,9 @@ const FreightServices = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+16309480501" className="flex items-center gap-2">
+                <a href="tel:+16309146037" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  630-948-0501
+                  630-914-6037
                 </a>
               </Button>
             </div>

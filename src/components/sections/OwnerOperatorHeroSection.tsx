@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, ChevronLeft, DollarSign, TrendingDown, Clock, Route, Star, Phone } from "lucide-react";
@@ -48,7 +48,7 @@ const galleryImages = [car1, car2, car3, car5];
 const stats = [
   { value: "2009", label: "Established in" },
   { value: "$300K+", label: "Average Annual Income" },
-  { value: "500+", label: "Successful Partnerships" },
+  { value: "100+", label: "Successful Partnerships" },
   { value: "24/7", label: "Dispatch Support" },
 ];
 
@@ -326,7 +326,7 @@ export const OwnerOperatorHeroSection = () => {
 
           <div className="text-center mt-8">
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:+16309480501" className="flex items-center gap-2">
+              <a href="tel:+16309146037" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>

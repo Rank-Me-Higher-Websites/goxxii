@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, Phone, Home, Wrench, Award, MapPin, DollarSign, Gift, Clock, Heart, Users, MessageSquare } from "lucide-react";
@@ -80,7 +80,7 @@ export const CompanyDriverHeroSection = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+16309480501" className="flex items-center gap-2">
+                <a href="tel:+16309146037" className="flex items-center gap-2">
                   <ChevronRight className="w-5 h-5" />
                   Call Us
                 </a>
