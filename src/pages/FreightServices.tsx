@@ -86,7 +86,7 @@ const fleetFeatures = [
   {
     icon: Package,
     title: "Customer Lanes & Drop & Hook",
-    description: "Dedicated customer lanes with 70-80% drop & hook freight - no-touch loads, less wait time, more miles.",
+    description: "Dedicated customer lanes with 50%+ drop & hook freight - no-touch loads, less wait time, more miles.",
   },
 ];
 

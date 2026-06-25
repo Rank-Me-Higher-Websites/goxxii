@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 
 import localOwnerOperator from "@/assets/blog/local-owner-operator.jpg";
-import ownerOperatorGuide from "@/assets/blog/owner-operator-guide.png";
+import ownerOperatorGuide from "@/assets/xxii-new-1.jpg";
 
 const blogPosts = [
   {
     image: localOwnerOperator,
-    title: "Local Owner Operator Jobs Near Me: Chicago Tips",
-    excerpt: "Find the best local owner operator opportunities in the Chicago area with insider tips.",
-    date: "December 15, 2025",
-    readTime: "4 min read",
+    title: "Local Owner Operator Jobs Near Me: What to Ask Before You Sign a Contract",
+    excerpt: "Scrolling through listings for local owner operator jobs near me can feel exciting at first. But the real deal isn't in the listing, it's in the contract.",
+    date: "January 5, 2026",
+    readTime: "12 min read",
     slug: "/blog/local-owner-operator-jobs",
   },
   {

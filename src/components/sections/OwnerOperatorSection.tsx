@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, Check, DollarSign, Fuel, Clock, Headphones, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import truck1 from "@/assets/oo-truck-cat.jpg";
+import truck1 from "@/assets/xxii-new-2.jpg";
 import truck2 from "@/assets/truck-2.png";
 
 const benefits = [
@@ -139,7 +139,7 @@ export const OwnerOperatorSection = () => {
                 >
                   <div className="absolute -top-8 -right-8 w-20 h-20 bg-primary/20 rounded-full blur-2xl pointer-events-none" />
                   <TrendingUp className="w-5 h-5 text-primary mx-auto mb-1 relative" />
-                  <div className="text-2xl sm:text-3xl font-display font-bold text-gradient relative">$200K+</div>
+                  <div className="text-2xl sm:text-3xl font-display font-bold text-gradient relative">$300K+</div>
                   <div className="text-xs text-muted-foreground relative">Avg Annual Earnings</div>
                 </motion.div>
               </div>
@@ -152,7 +152,7 @@ export const OwnerOperatorSection = () => {
                 >
                   <div className="absolute -top-8 -left-8 w-20 h-20 bg-accent/20 rounded-full blur-2xl pointer-events-none" />
                   <Award className="w-5 h-5 text-accent mx-auto mb-1 relative" />
-                  <div className="text-2xl sm:text-3xl font-display font-bold text-accent relative">15+</div>
+                  <div className="text-2xl sm:text-3xl font-display font-bold text-accent relative">17+</div>
                   <div className="text-xs text-muted-foreground relative">Years Strong</div>
                 </motion.div>
                 <div className="img-hover-lift rounded-xl border border-border overflow-hidden">

@@ -19,10 +19,9 @@ import { SEOContentSection } from "@/components/sections/SEOContentSection";
 import heroBackground from "@/assets/heroes/truck-green-closeup.jpg";
 
 import localOwnerOperator from "@/assets/blog/local-owner-operator.jpg";
-import ownerOperatorGuide from "@/assets/blog/owner-operator-guide.png";
+import ownerOperatorGuide from "@/assets/xxii-new-1.jpg";
 import dryVanJobs from "@/assets/blog/dry-van-jobs.jpg";
 import negotiateLinehaul from "@/assets/blog/negotiate-linehaul.jpg";
-import chicagoTips from "@/assets/blog/chicago-tips.jpg";
 import localJobsHome from "@/assets/blog/local-jobs-home.png";
 import careerChicago from "@/assets/blog/career-chicago.jpg";
 import bestTruckingCompany from "@/assets/blog/best-trucking-company.jpg";
@@ -72,15 +71,6 @@ const blogPosts = [
     date: "January 5, 2026",
     readTime: "12 min read",
     slug: "local-owner-operator-jobs",
-    category: "Local Jobs",
-  },
-  {
-    image: chicagoTips,
-    title: "Local Owner Operator Jobs Near Me: Chicago Tips",
-    excerpt: "If you've ever typed 'local owner operator jobs near me' into a search bar and found yourself overwhelmed by options-especially in Chicago-you're not alone.",
-    date: "December 15, 2025",
-    readTime: "10 min read",
-    slug: "local-owner-operator-jobs-chicago-tips",
     category: "Local Jobs",
   },
   {

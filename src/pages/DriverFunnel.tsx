@@ -228,7 +228,7 @@ const DriverFunnel = () => {
             {[
               { value: "$2,400", label: "Weekly Potential" },
               { value: "68 + 2", label: "CPM" },
-              { value: "70-80%", label: "Drop & Hook" },
+              { value: "50%+", label: "Drop & Hook" },
               { value: "3,000+", label: "Weekly Miles" },
             ].map((s) => (
               <div key={s.label}>
