@@ -18,7 +18,6 @@ import { useState } from "react";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
 import heroBackground from "@/assets/heroes/truck-green-closeup.jpg";
 
-import dedicatedOwnerOperator from "@/assets/blog/dedicated-owner-operator.jpg";
 import localOwnerOperator from "@/assets/blog/local-owner-operator.jpg";
 import ownerOperatorGuide from "@/assets/blog/owner-operator-guide.png";
 import dryVanJobs from "@/assets/blog/dry-van-jobs.jpg";
@@ -74,15 +73,6 @@ const blogPosts = [
     readTime: "12 min read",
     slug: "local-owner-operator-jobs",
     category: "Local Jobs",
-  },
-  {
-    image: dedicatedOwnerOperator,
-    title: "Dedicated Owner Operator Jobs: Pros and Cons",
-    excerpt: "If you're an owner operator, you've probably heard the term dedicated lanes thrown around more times than you can count.",
-    date: "December 22, 2025",
-    readTime: "8 min read",
-    slug: "dedicated-owner-operator-jobs",
-    category: "Owner Operators",
   },
   {
     image: chicagoTips,

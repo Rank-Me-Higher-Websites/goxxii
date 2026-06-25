@@ -3,19 +3,10 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 
-import dedicatedOwnerOperator from "@/assets/blog/dedicated-owner-operator.jpg";
 import localOwnerOperator from "@/assets/blog/local-owner-operator.jpg";
 import ownerOperatorGuide from "@/assets/blog/owner-operator-guide.png";
 
 const blogPosts = [
-  {
-    image: dedicatedOwnerOperator,
-    title: "Dedicated Owner Operator Jobs: Pros and Cons",
-    excerpt: "Explore the advantages and challenges of dedicated owner operator positions in the trucking industry.",
-    date: "December 22, 2025",
-    readTime: "5 min read",
-    slug: "/blog/dedicated-owner-operator-jobs",
-  },
   {
     image: localOwnerOperator,
     title: "Local Owner Operator Jobs Near Me: Chicago Tips",
