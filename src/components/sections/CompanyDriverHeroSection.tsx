@@ -195,7 +195,7 @@ export const CompanyDriverHeroSection = () => {
               Ready to take the wheel? or do you have your own truck and you would like to explore <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link>?
             </p>
             <Button variant="hero" size="lg" asChild>
-              <a href="mailto:milos@goxxii.com">
+              <a href="mailto:james@goxxii.com">
                 Email Us
               </a>
             </Button>

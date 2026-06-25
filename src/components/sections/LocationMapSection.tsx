@@ -66,7 +66,7 @@ export const LocationMapSection = () => {
                 </div>
                 <div className="text-left">
                   <h3 className="font-display font-bold text-foreground mb-1">Email</h3>
-                  <a href="mailto:milos@goxxii.com" className="text-muted-foreground text-sm hover:text-primary transition-colors block">milos@goxxii.com</a>
+                  <a href="mailto:james@goxxii.com" className="text-muted-foreground text-sm hover:text-primary transition-colors block">james@goxxii.com</a>
                   <a href="mailto:dispatch@goxxii.com" className="text-muted-foreground text-sm hover:text-primary transition-colors block">dispatch@goxxii.com</a>
                 </div>
               </div>

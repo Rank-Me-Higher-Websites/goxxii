@@ -295,10 +295,10 @@ const CareerDetail = () => {
                       <Phone className="w-4 h-4" /> 630-914-6037
                     </a>
                     <a 
-                      href="mailto:milos@goxxii.com" 
+                      href="mailto:james@goxxii.com" 
                       className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      <Mail className="w-4 h-4" /> milos@goxxii.com
+                      <Mail className="w-4 h-4" /> james@goxxii.com
                     </a>
                   </div>
                 </div>

@@ -211,7 +211,7 @@ const contactFaqs: FAQ[] = [
   {
     question: "What is the best way to reach XXII Century recruiting?",
     answer: (
-      <p>Call us at <a href="tel:+16309146037" className="text-primary hover:underline font-semibold">630-914-6037</a> or email <a href="mailto:milos@goxxii.com" className="text-primary hover:underline">milos@goxxii.com</a>. You can also apply directly through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a>.</p>
+      <p>Call us at <a href="tel:+16309146037" className="text-primary hover:underline font-semibold">630-914-6037</a> or email <a href="mailto:james@goxxii.com" className="text-primary hover:underline">james@goxxii.com</a>. You can also apply directly through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a>.</p>
     ),
   },
   {
@@ -292,7 +292,7 @@ export const FAQSection = ({ pageKey = "home" }: FAQSectionProps) => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="default" asChild>
-                <a href="mailto:milos@goxxii.com" className="flex items-center gap-2">
+                <a href="mailto:james@goxxii.com" className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
                   Email
                 </a>

@@ -92,11 +92,11 @@ export const Footer = ({ onApplyClick }: FooterProps) => {
                 630-914-6037
               </a>
               <a
-                href="mailto:milos@goxxii.com"
+                href="mailto:james@goxxii.com"
                 className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                milos@goxxii.com
+                james@goxxii.com
               </a>
               <div className="flex items-start justify-center md:justify-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />

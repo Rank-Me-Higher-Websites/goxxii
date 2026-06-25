@@ -30,8 +30,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["milos@goxxii.com", "dispatch@goxxii.com"],
-    action: "mailto:milos@goxxii.com",
+    details: ["james@goxxii.com", "dispatch@goxxii.com"],
+    action: "mailto:james@goxxii.com",
     actionLabel: "Send Email",
   },
   {
