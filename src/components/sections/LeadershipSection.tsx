@@ -13,7 +13,7 @@ import aprilRay from "@/assets/team/april-ray.png";
 const leaders = [
   {
     name: "David Molo",
-    title: "Principal",
+    title: "CEO",
     email: "David@goxxii.com",
     image: davidMolo,
   },

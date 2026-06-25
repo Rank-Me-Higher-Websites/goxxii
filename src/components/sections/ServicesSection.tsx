@@ -26,7 +26,7 @@ const services = [
 ];
 
 const statsData = [
-  { value: "$2.50+", label: "Per Mile Consistently" },
+  { value: "100%", label: "Satisfied Drivers" },
   { value: "98%", label: "Utilization Rate" },
   { value: "Zero", label: "Detention Loss" },
   { value: "24/7", label: "Support Available" },
@@ -192,7 +192,7 @@ export const ServicesSection = () => {
           className="mt-16 hidden sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {[
-            { value: "$2.50+", label: "Per Mile Consistently" },
+            { value: "100%", label: "Satisfied Drivers" },
             { value: "98%", label: "Utilization Rate" },
             { value: "Zero", label: "Detention Loss" },
             { value: "24/7", label: "Support Available" },

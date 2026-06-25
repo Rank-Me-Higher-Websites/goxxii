@@ -73,7 +73,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "How quickly can I start driving in Illinois?",
-        answer: "Most qualified owner operators can start within days of completing orientation. Our streamlined onboarding process gets you on the road fast with Illinois freight ready to haul.",
+        answer: "Most qualified owner operators can start within 48 hours of completing orientation. Our streamlined onboarding process gets you on the road fast with Illinois freight ready to haul.",
       },
       {
         question: "What types of freight are available in Illinois?",
@@ -144,7 +144,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "How fast can I start driving from Iowa?",
-        answer: "Most qualified owner operators start within days of completing orientation. We have Iowa freight ready and waiting for reliable drivers.",
+        answer: "Most qualified owner operators start within 48 hours of completing orientation. We have Iowa freight ready and waiting for reliable drivers.",
       },
       {
         question: "What freight is available from Iowa?",
@@ -428,7 +428,7 @@ export const statePages: Record<string, StatePageData> = {
       },
       {
         question: "How quickly can South Dakota drivers start?",
-        answer: "Most qualified owner operators start within days of completing orientation. We have freight pipelines ready for South Dakota drivers.",
+        answer: "Most qualified owner operators start within 48 hours of completing orientation. We have freight pipelines ready for South Dakota drivers.",
       },
       {
         question: "What freight is available from South Dakota?",

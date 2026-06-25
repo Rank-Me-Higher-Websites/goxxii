@@ -12,7 +12,7 @@ interface SEOContentSectionProps {
 
 const keyPoints: Record<string, { icon: any; label: string }[]> = {
   home: [
-    { icon: DollarSign, label: "80% Revenue Share" },
+    { icon: DollarSign, label: "$300K+ Avg. Yearly" },
     { icon: Cpu, label: "AI-Powered Dispatch" },
     { icon: Shield, label: "No Hidden Fees" },
     { icon: TrendingUp, label: "Fortune 500 Freight" },
@@ -20,7 +20,7 @@ const keyPoints: Record<string, { icon: any; label: string }[]> = {
     { icon: Star, label: "17+ years Trusted" },
   ],
   ownerOperators: [
-    { icon: DollarSign, label: "80% Linehaul Pay" },
+    { icon: DollarSign, label: "$300K+ Avg. Yearly" },
     { icon: Shield, label: "No Forced Dispatch" },
     { icon: Cpu, label: "AI Fuel Discounts" },
     { icon: Clock, label: "Weekly Settlements" },
@@ -53,7 +53,7 @@ const seoContent = {
   home: {
     heading: "Why Choose XXII Century for Your Trucking Career",
     paragraphs: [
-      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 17 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions with 80% linehaul pay or company driver roles offering 68 + 2 CPM with full benefits, our team is committed to your success on the road.",
+      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 17 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions averaging $300K+ yearly or company driver roles offering 68 + 2 CPM with full benefits, our team is committed to your success on the road.",
       "Our technology-driven approach sets us apart from traditional carriers. AI-powered dispatch optimizes your routes for maximum earnings while minimizing empty miles. Real-time load matching ensures you're never left searching for freight, and our 24/7 support team handles logistics so you can focus on driving. We invest in tools that put more money in your pocket.",
       "From the moment you apply, we prioritize transparency and respect. No hidden fees, no surprise deductions-just honest partnerships that help you build a sustainable trucking career. Join hundreds of drivers who have found their home with a carrier that truly values their contribution to keeping America moving."
     ],
@@ -68,7 +68,7 @@ const seoContent = {
     heading: "Independent Trucking Excellence with XXII Century",
     paragraphs: [
       "Unlike carriers that nickel-and-dime you with hidden fees, we believe in complete transparency. No ELD charges, no dispatch fees, no forced dispatch-just straightforward partnerships that respect your autonomy as a business owner. Our AI-powered fuel network delivers industry-leading discounts, and weekly settlements mean your money arrives reliably every Friday.",
-      "Owner operators choose XXII Century because we understand what it takes to run a <strong>successful independent trucking business</strong>. Our 80% linehaul revenue share means you keep more of every load, while our exclusive Fortune 500 contracts provide the steady freight volume you need to plan ahead and grow your operation without gambling on spot market rates.",
+      "Owner operators choose XXII Century because we understand what it takes to run a <strong>successful independent trucking business</strong>. Our industry-leading revenue share means you keep more of every load, while our exclusive Fortune 500 contracts provide the steady freight volume you need to plan ahead and grow your operation without gambling on spot market rates.",
       "Based in the <strong>Chicago logistics hub</strong>, we offer strategic access to major shipping lanes across the Midwest and nationwide. Whether you prefer dedicated routes for predictable schedules or flexible OTR runs for maximum earning potential, our experienced dispatch team works with you to build a schedule that fits your lifestyle and income goals."
     ],
     links: [
@@ -137,8 +137,8 @@ const seoContent = {
   careers: {
     heading: "Build Your Future in the Trucking Industry",
     paragraphs: [
-      "XXII Century is actively hiring <strong>CDL-A drivers, dispatchers, and logistics professionals</strong> who share our passion for excellence. We offer multiple career paths-from high-earning owner operator partnerships to stable company driver positions with full benefits-designed to match your goals and lifestyle preferences.",
-      "Our hiring process is straightforward and respectful of your time. Apply online in minutes, speak with a recruiter within 24 hours, and get on the road quickly with our streamlined onboarding. We provide paid orientation, equipment training, and ongoing support to set you up for success from day one-no games, no waiting.",
+      "XXII Century is actively hiring <strong>CDL-A drivers and logistics professionals</strong> who share our passion for excellence. We offer multiple career paths-from high-earning owner operator partnerships to stable company driver positions with full benefits-designed to match your goals and lifestyle preferences.",
+      "Our hiring process is straightforward and respectful of your time. Apply online in minutes, speak with a recruiter within 1 hour, and get on the road quickly with our streamlined onboarding. We provide quick orientation, equipment training, and ongoing support to set you up for success from day one-no games, no waiting.",
       "Beyond competitive pay, we invest in your <strong>long-term career growth</strong>. Performance bonuses, safety incentives, and automatic raises reward your hard work, while our driver community offers networking opportunities and industry insights. This isn't just a job-it's a career you can build on for years to come."
     ],
     links: [

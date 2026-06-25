@@ -23,30 +23,6 @@ const jobDetails: Record<string, {
   location: string;
   type: string;
 }> = {
-  "otr-dispatcher": {
-    title: "OTR Dispatcher",
-    date: "February 26, 2026",
-    intro: "We are expanding and inviting you to join our dispatch team! We want to hear from you if you have experience in a similar position!",
-    responsibilities: [
-      "Planning and managing truck routes",
-      "Ongoing communication with drivers and clients",
-      "Real-time problem-solving",
-      "Efficient use of transport management systems",
-    ],
-    requirements: [
-      "At least 2 years of experience as a dispatcher or fleet manager",
-      "Strong communication skills and the ability to solve problems effectively",
-      "Responsibility, the ability to work independently and as part of a team",
-    ],
-    offers: [
-      "A stable position in a growing company",
-      "Competitive salary and an attractive bonus system",
-      "Training and opportunities for professional growth",
-      "A friendly team and a modern work environment",
-    ],
-    location: "Remote / On-site",
-    type: "Full-time",
-  },
   "owner-operator-nationwide": {
     title: "Owner-Operator, Nationwide",
     date: "February 20, 2026",
@@ -72,7 +48,7 @@ const jobDetails: Record<string, {
     offers: [
       "Competitive pay with weekly settlements and transparent payment structure",
       "Consistent freight with customer lanes and flexible scheduling",
-      "Fuel discounts, maintenance support, and other cost-saving programs",
+      "100% fuel discounts, maintenance support, and other cost-saving programs",
       "Partnership with a trusted company that values your independence and hard work",
       "Professional support from our logistics and dispatch teams",
     ],
@@ -118,7 +94,6 @@ const CareerDetail = () => {
   const schemas = useMemo(() => {
     if (!job || !slug) return [];
     const salaryMap: Record<string, { min: number; max: number; type: string }> = {
-      "otr-dispatcher": { min: 45000, max: 65000, type: "FULL_TIME" },
       "owner-operator-nationwide": { min: 150000, max: 300000, type: "CONTRACTOR" },
       "company-driver": { min: 65000, max: 120000, type: "FULL_TIME" },
     };

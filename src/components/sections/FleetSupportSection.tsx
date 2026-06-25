@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const stats = [
   { icon: Gift, value: "$1,000", label: "Referral Bonus" },
-  { icon: DollarSign, value: "$100K", label: "Average Annual Income" },
+  { icon: DollarSign, value: "$300K+", label: "Average Annual Income" },
   { icon: Headphones, value: "24/7", label: "Dispatch Support" },
   { icon: Award, value: "$500", label: "Safety Bonus" },
 ];

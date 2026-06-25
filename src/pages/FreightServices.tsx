@@ -164,7 +164,7 @@ const FreightServices = () => {
     }),
     getServiceSchema({
       name: "Freight Carrier Services",
-      description: "Asset-based freight carrier with modern fleet, professional drivers, real-time tracking, and nationwide coverage across the continental U.S. and Canada.",
+      description: "Asset-based freight carrier with modern fleet, professional drivers, real-time tracking, and nationwide coverage across the continental U.S.",
       url: "/freight-shipping-services",
     }),
   ], []);

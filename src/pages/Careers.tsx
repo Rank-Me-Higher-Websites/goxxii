@@ -13,7 +13,7 @@ import {
 } from "@/data/schemaData";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Truck, Users, Shield, CheckCircle, DollarSign, Clock, MapPin, Phone, Mail, Headphones } from "lucide-react";
+import { ArrowRight, Truck, Users, Shield, CheckCircle, DollarSign, Clock, MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -23,18 +23,10 @@ import truckMountainsImg from "@/assets/truck-mountains.jpg";
 
 const positions = [
   {
-    icon: Headphones,
-    title: "OTR Dispatcher",
-    description: "Coordinate freight movements, communicate with drivers, and optimize routes for maximum efficiency.",
-    benefits: ["Competitive Salary", "Remote Options", "Growth Opportunities", "Team Environment"],
-    slug: "otr-dispatcher",
-    date: "February 26, 2026",
-  },
-  {
     icon: Truck,
     title: "Owner-Operator, Nationwide",
-    description: "Maximize your earnings with access to premium freight, AI-powered tools, and an 80% revenue share.",
-    benefits: ["80% Revenue Share", "Fuel Discounts", "Safety Bonuses", "Customer Lanes"],
+    description: "Maximize your earnings with access to premium freight and AI-powered tools. Owner operators average $300K+ yearly.",
+    benefits: ["80% Revenue Share", "100% Fuel Discount", "100% Fuel Surcharge", "Customer Lanes"],
     slug: "owner-operator-nationwide",
     date: "February 20, 2026",
   },
@@ -42,7 +34,7 @@ const positions = [
     icon: Users,
     title: "Company Driver",
     description: "Join our team with competitive pay at 68 + 2 CPM, modern equipment, and a supportive work environment.",
-    benefits: ["68 + 2 CPM", "Weekly Pay", "Paid Training", "Health Benefits"],
+    benefits: ["68 + 2 CPM", "Weekly Pay", "Brand New Trucks", "Paid Transportation", "Health Benefits"],
     slug: "company-driver",
     date: "February 15, 2026",
   },
@@ -57,7 +49,7 @@ const whyJoin = [
   {
     icon: Clock,
     title: "Flexible Schedules",
-    description: "Choose routes that work for you with regional, OTR, and dedicated options.",
+    description: "Choose routes that work for you with regional, OTR, and customer lane options.",
   },
   {
     icon: MapPin,
@@ -118,13 +110,6 @@ const Careers = () => {
       url: "/careers",
     }),
     getJobPostingSchema({
-      title: "OTR Dispatcher",
-      description: "Coordinate freight movements, communicate with drivers, and optimize routes for maximum efficiency at XXII Century.",
-      employmentType: "FULL_TIME",
-      minSalary: 45000,
-      maxSalary: 65000,
-    }),
-    getJobPostingSchema({
       title: "Owner-Operator, Nationwide",
       description: "Maximize your earnings with access to premium Fortune 500 freight, AI-powered tools, and competitive linehaul pay. No forced dispatch.",
       employmentType: "CONTRACTOR",
@@ -167,8 +152,8 @@ const Careers = () => {
               Truck Driver Jobs and More
             </p>
             <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-              At <strong className="text-foreground">XXII Century Inc.</strong>, we offer <strong className="text-foreground">trucking industry opportunities</strong> for experienced Company Drivers, independent Owner Operators, and OTR Dispatchers.
-              <span className="hidden md:inline"> We are always looking to expand our team with passionate and dedicated individuals. Whether you're an experienced driver or just starting out, we have the perfect role for you.</span>
+              At <strong className="text-foreground">XXII Century Inc.</strong>, we offer <strong className="text-foreground">trucking industry opportunities</strong> for experienced Company Drivers and independent Owner Operators.
+              <span className="hidden md:inline"> We are looking for experienced CDL-A drivers ready to take their career to the next level.</span>
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
@@ -211,7 +196,7 @@ const Careers = () => {
                 At XXII Century Inc., you'll be part of a dynamic team that's shaping the future of the transportation industry.
               </p>
               <p className="text-center lg:text-left text-muted-foreground leading-relaxed">
-                Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> offers 80% revenue share for independent truckers, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> provide stable employment with full benefits. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
+                Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> helps independent truckers average $300K+ yearly, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> provide stable employment with full benefits. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
               </p>
               <div className="text-center lg:text-left mt-6">
                 <Button variant="heroOutline" size="lg" asChild>
@@ -255,7 +240,7 @@ const Careers = () => {
               Current CDL Driver Job Openings
             </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto mb-4">
-              We are expanding and inviting professional truck drivers to join our team! Whether you're an experienced OTR driver or looking to transition into the trucking industry, we have positions that match your career goals.
+              We are expanding and inviting experienced OTR drivers to join our team. We are looking for professionals ready to make their next move with a carrier that respects your time and pays you right.
             </p>
             <p className="text-muted-foreground max-w-3xl mx-auto">
               All positions offer competitive pay, comprehensive benefits, and the support you need to succeed. Questions? <Link to="/contact" className="text-primary hover:underline">Contact our recruiting team</Link> or read our <Link to="/blog" className="text-primary hover:underline">driver career guides</Link>.

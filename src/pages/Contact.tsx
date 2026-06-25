@@ -54,12 +54,12 @@ const contactReasons = [
   {
     icon: Truck,
     title: "Driver Recruiting",
-    description: "Interested in owner operator or company driver positions? Our recruiting team responds within 24 hours to discuss pay, routes, and requirements.",
+    description: "Interested in owner operator or company driver positions? Our recruiting team responds within 1 hour to discuss pay, routes, and requirements.",
   },
   {
     icon: Users,
     title: "Fleet Partnerships",
-    description: "Small carriers and fleet owners looking for steady freight can learn about our partnership programs and dedicated lane opportunities.",
+    description: "Small carriers and fleet owners looking for steady freight can learn about our partnership programs and customer lane opportunities.",
   },
   {
     icon: Building,

@@ -17,7 +17,7 @@ const homeFaqs: FAQ[] = [
     question: "What types of trucking jobs does XXII Century offer?",
     answer: (
       <div className="space-y-3">
-        <p>We offer both <Link to="/owner-operators" className="text-primary hover:underline">owner operator</Link> and <Link to="/company-drivers" className="text-primary hover:underline">company driver</Link> CDL-A positions. Routes include local, regional, and OTR lanes across the U.S. and Canada, hauling for Fortune 500 shippers.</p>
+        <p>We offer both <Link to="/owner-operators" className="text-primary hover:underline">owner operator</Link> and <Link to="/company-drivers" className="text-primary hover:underline">company driver</Link> CDL-A positions. Routes include regional and OTR dry van lanes across the U.S., hauling for Fortune 500 shippers.</p>
         <p>Browse all open positions on our <Link to="/careers" className="text-primary hover:underline">careers page</Link>.</p>
       </div>
     ),
@@ -25,21 +25,21 @@ const homeFaqs: FAQ[] = [
   {
     question: "Where is XXII Century based?",
     answer: (
-      <p>Our headquarters are in <strong className="text-foreground">Chicago, Illinois</strong>. We operate freight lanes nationwide and into Canada. Learn more on our <Link to="/about" className="text-primary hover:underline">about page</Link>.</p>
+      <p>Our headquarters are in <strong className="text-foreground">Chicago, Illinois</strong>. We operate freight lanes nationwide. Learn more on our <Link to="/about" className="text-primary hover:underline">about page</Link>.</p>
     ),
   },
   {
     question: "How do I apply to drive with XXII Century?",
     answer: (
       <div className="space-y-3">
-        <p>Apply online through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">driver application</a>. Our recruiting team typically responds within 24 hours. You can also reach us via the <Link to="/contact" className="text-primary hover:underline">contact page</Link>.</p>
+        <p>Apply online through our <a href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">driver application</a>. Our recruiting team typically responds within 1 hour. You can also reach us via the <Link to="/contact" className="text-primary hover:underline">contact page</Link>.</p>
       </div>
     ),
   },
   {
     question: "Does XXII Century offer freight shipping services?",
     answer: (
-      <p>Yes. We provide <Link to="/freight-shipping-services" className="text-primary hover:underline">dry van freight services</Link> for shippers and brokers. Our network covers the continental U.S. and Canada with dedicated and spot capacity.</p>
+      <p>Yes. We provide <Link to="/freight-shipping-services" className="text-primary hover:underline">dry van freight services</Link> for shippers and brokers. Our network covers the continental U.S. with dedicated and spot capacity.</p>
     ),
   },
   {
@@ -66,13 +66,13 @@ const ownerOperatorFaqs: FAQ[] = [
   {
     question: "What fuel discounts are available for owner operators?",
     answer: (
-      <p>We provide <strong className="text-foreground">large fleet volume fuel discounts</strong> at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route, saving you money on every trip.</p>
+      <p>We provide <strong className="text-foreground">100% fuel discounts</strong> at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route, saving you money on every trip.</p>
     ),
   },
   {
     question: "Can I choose my own routes as an owner operator?",
     answer: (
-      <p>Yes. We offer flexible scheduling with both customer lanes and open-board freight. Whether you prefer local Chicago-area runs or long-haul OTR, we match loads to your preferences. <Link to="/contact" className="text-primary hover:underline">Talk to recruiting</Link> about available lanes.</p>
+      <p>Yes. We offer flexible scheduling with both customer lanes and open-board freight. Whether you prefer regional or long-haul OTR, we match loads to your preferences. <Link to="/contact" className="text-primary hover:underline">Talk to recruiting</Link> about available lanes.</p>
     ),
   },
   {
@@ -154,13 +154,7 @@ const fleetProgramFaqs: FAQ[] = [
   {
     question: "What is the average income for fleet program drivers?",
     answer: (
-      <p>Owner operators in our fleet program average <strong className="text-foreground">$100,000+ annually</strong>. Earnings depend on miles driven, freight type, and route preferences. We also offer a $1,000 referral bonus with no cap.</p>
-    ),
-  },
-  {
-    question: "Does the fleet program operate in Canada?",
-    answer: (
-      <p>Yes. We have freight lanes across the <strong className="text-foreground">continental U.S. and Canada</strong>, partnering with major corporations and government agencies on both sides of the border. Visit our <Link to="/about" className="text-primary hover:underline">about page</Link> to learn more about our operations.</p>
+      <p>Owner operators in our fleet program average <strong className="text-foreground">$300,000+ annually</strong>. Earnings depend on miles driven, freight type, and route preferences. We also offer a $1,000 referral bonus with no cap.</p>
     ),
   },
 ];
@@ -182,7 +176,7 @@ const careersFaqs: FAQ[] = [
   {
     question: "Does XXII Century hire drivers in the Chicago area?",
     answer: (
-      <p>Yes. Our headquarters are in <strong className="text-foreground">Chicago, IL</strong> and many of our customer lanes originate from the Chicagoland area. We have local, regional, and OTR positions based out of Chicago. <Link to="/contact" className="text-primary hover:underline">Reach out</Link> to see what's available near you.</p>
+      <p>Yes. Our headquarters are in <strong className="text-foreground">Chicago, IL</strong> and many of our customer lanes originate from the midwest area. We have regional and OTR positions based out of Chicago. <Link to="/contact" className="text-primary hover:underline">Reach out</Link> to see what's available near you.</p>
     ),
   },
   {
@@ -194,7 +188,7 @@ const careersFaqs: FAQ[] = [
           <li>Submit your <a href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">online application</a></li>
           <li>Phone screening with our recruiting team</li>
           <li>Background and MVR verification</li>
-          <li>Orientation and dispatch - many drivers start within days</li>
+          <li>Orientation and dispatch - many drivers start within 48 hours</li>
         </ol>
       </div>
     ),
@@ -208,7 +202,7 @@ const careersFaqs: FAQ[] = [
   {
     question: "Can I drive for XXII Century if I live outside Illinois?",
     answer: (
-      <p>Absolutely. We have drivers across the country. While our base is in Chicago, our freight network spans the <strong className="text-foreground">entire U.S. and Canada</strong>. <Link to="/contact" className="text-primary hover:underline">Contact us</Link> to find lanes near your location.</p>
+      <p>Absolutely. We have drivers across the country. While our base is in Chicago, our freight network spans the <strong className="text-foreground">entire U.S.</strong>. <Link to="/contact" className="text-primary hover:underline">Contact us</Link> to find lanes near your location.</p>
     ),
   },
 ];
@@ -229,13 +223,13 @@ const contactFaqs: FAQ[] = [
   {
     question: "Where is XXII Century located?",
     answer: (
-      <p>Our main office is in <strong className="text-foreground">Chicago, Illinois</strong>. We serve drivers and shippers across all 48 states and Canada. Visit our <Link to="/about" className="text-primary hover:underline">about page</Link> for more details on our operations.</p>
+      <p>Our main office is in <strong className="text-foreground">Chicago, Illinois</strong>. We serve drivers and shippers across all 48 states. Visit our <Link to="/about" className="text-primary hover:underline">about page</Link> for more details on our operations.</p>
     ),
   },
   {
     question: "How quickly does the recruiting team respond?",
     answer: (
-      <p>We typically respond within <strong className="text-foreground">24 hours</strong> of receiving your application or inquiry. For faster results, call our recruiting line directly at <a href="tel:+16309146037" className="text-primary hover:underline">630-914-6037</a>.</p>
+      <p>We typically respond within <strong className="text-foreground">1 hour</strong> of receiving your application or inquiry. For faster results, call our recruiting line directly at <a href="tel:+16309146037" className="text-primary hover:underline">630-914-6037</a>.</p>
     ),
   },
   {

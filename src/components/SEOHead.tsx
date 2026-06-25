@@ -97,7 +97,7 @@ export const SEO_CONTENT = {
   },
   contact: {
     title: "Contact XXII Century - Call 630-914-6037 | Woodridge, IL",
-    description: "Call 630-914-6037 or visit 7501 Lemont Rd, Woodridge IL. Driver applications, freight quotes, fleet partnerships. Our team responds within 24 hours.",
+    description: "Call 630-914-6037 or visit 7501 Lemont Rd, Woodridge IL. Driver applications, freight quotes, fleet partnerships. Our team responds within 1 hour.",
     keywords: "trucking company contact, driver recruiting, freight quote request, Woodridge IL trucking, XXII Century phone number, XXII Century address, trucking company near me, driver recruiter contact, freight quote phone number",
   },
   blog: {

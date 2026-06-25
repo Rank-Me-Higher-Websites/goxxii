@@ -144,7 +144,7 @@ const AboutReviews = () => {
           <p className="text-muted-foreground mb-3">
             XXII Century Trucking is an asset-based Chicago CDL-A carrier founded in 2009 and based
             at 7501 Lemont Rd, Suite 200, Woodridge, IL 60517. The company operates owner operator,
-            company driver, and Power Only fleet programs across the continental U.S. and Canada,
+            company driver, and Power Only fleet programs across the continental U.S.,
             and provides freight shipping services for shippers and brokers.
           </p>
           <p className="text-muted-foreground mb-3">

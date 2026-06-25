@@ -285,7 +285,7 @@ export const QualifyFormDialog = ({ open, onOpenChange, recruiter }: QualifyForm
                   </div>
                   <h3 className="text-xl font-display font-bold text-white mb-2">You May Qualify!</h3>
                   <p className="text-sm text-[#8a9ab8] mb-4">
-                    A recruiter will reach out within 24 hours to discuss your eligibility.
+                    A recruiter will reach out within 1 hour to discuss your eligibility.
                   </p>
                   <Button data-testid="button-close-success" className="bg-accent hover:bg-accent/90 text-white" onClick={handleClose}>
                     Close

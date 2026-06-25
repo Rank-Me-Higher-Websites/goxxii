@@ -249,7 +249,7 @@ export const LeadFormDialog = ({ open, onOpenChange, recruiterName, recruiterPho
                   </div>
                   <h3 className="text-xl font-display font-bold text-foreground mb-2">Application Received!</h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    {recruiterName} will reach out within 24 hours.
+                    {recruiterName} will reach out within 1 hour.
                   </p>
                   <Button variant="heroOutline" onClick={handleClose}>
                     Close

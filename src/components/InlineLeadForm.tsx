@@ -206,7 +206,7 @@ export const InlineLeadForm = ({ recruiterName, recruiterPhone, recruiterPhoneFo
             </div>
             <h3 className="text-xl font-display font-bold text-foreground mb-2">Application Received!</h3>
             <p className="text-sm text-muted-foreground">
-              {recruiterName} will reach out within 24 hours.
+              {recruiterName} will reach out within 1 hour.
             </p>
           </motion.div>
         )}
