@@ -33,7 +33,7 @@ export const AboutHeroSection = () => {
             logistics services - built for performance, flexibility, and growth.
           </p>
           <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-8">
-            Since 2009, XXII Century has connected professional drivers with premium freight opportunities. Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> averaging $300K yearly, or discover <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> starting at 68 + 2 CPM with full benefits.
+            Since 2009, XXII Century has connected professional drivers with premium freight opportunities. Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> averaging $300K yearly, or discover <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> starting at $2,300+/week with full benefits.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>

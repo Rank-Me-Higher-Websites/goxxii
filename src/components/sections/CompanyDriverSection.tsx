@@ -7,7 +7,7 @@ import companyDriver from "@/assets/company-driver-truck.jpg";
 
 const benefits = [
   { icon: Truck, text: "70–80% Drop & Hook", highlight: true },
-  { icon: DollarSign, text: "68 + 2 CPM" },
+  { icon: DollarSign, text: "$2,300+" },
   { icon: TrendingUp, text: "Consistent Miles" },
   { icon: Shield, text: "Full Benefits" },
   { icon: MessageSquare, text: "AI Detention Pay" },
@@ -45,7 +45,7 @@ export const CompanyDriverSection = () => {
               transition={{ delay: 0.4, type: "spring" }}
               className="absolute -bottom-3 -right-3 sm:bottom-4 sm:right-4 glass-strong rounded-xl px-4 py-3 border border-primary/30"
             >
-              <div className="text-xl sm:text-2xl font-display font-bold text-gradient">68 + 2¢/mi</div>
+              <div className="text-xl sm:text-2xl font-display font-bold text-gradient">$2,300+</div>
               <div className="text-xs text-muted-foreground">Starting Pay</div>
             </motion.div>
           </motion.div>

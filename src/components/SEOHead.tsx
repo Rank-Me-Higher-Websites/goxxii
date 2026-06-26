@@ -62,7 +62,7 @@ export const SEOHead = ({ title, description, canonicalPath, keywords }: SEOHead
 export const SEO_CONTENT = {
   home: {
     title: "XXII Century Trucking | Chicago CDL-A Jobs & Freight | goxxii.com",
-    description: "XXII Century Trucking - Chicago's driver-first CDL-A carrier. Owner operators keep 80% of gross, company drivers earn 68 + 2 CPM. Fortune 500 freight, weekly pay, no forced dispatch. Apply at goxxii.com.",
+    description: "XXII Century Trucking - Chicago's driver-first CDL-A carrier. Owner operators keep 80% of gross, company drivers earn $2,300+/week. Fortune 500 freight, weekly pay, no forced dispatch. Apply at goxxii.com.",
     keywords: "xxii century trucking, xxii century inc, century trucking, century transport, xxii century inc reviews, owner operator jobs Chicago, CDL-A driver jobs Illinois, trucking company Chicago, company driver positions, dry van trucking, OTR truck driving jobs, Fortune 500 freight, truck driving jobs near me, best trucking company Illinois, Woodridge IL trucking, hiring now, goxxii.com",
   },
   ownerOperators: {
@@ -71,8 +71,8 @@ export const SEO_CONTENT = {
     keywords: "owner operator trucking jobs, 80% linehaul pay, independent truck driver, no forced dispatch, OTR owner operator, dry van owner operator, owner operator pay per mile, best owner operator trucking company 2025, independent trucker jobs, 1099 truck driver, owner operator dry van loads",
   },
   companyDrivers: {
-    title: "CDL-A Company Driver Jobs - 68 + 2 CPM + Full Benefits | XXII Century",
-    description: "Company driver positions starting at 68 + 2 CPM. Medical, dental, 401(k), paid vacation. Late-model trucks. Apply online in 5 minutes.",
+    title: "CDL-A Company Driver Jobs - $2,300+/Week + Full Benefits | XXII Century",
+    description: "Company driver positions starting at $2,300+/week. Medical, dental, 401(k), paid vacation. Late-model trucks. Apply online in 5 minutes.",
     keywords: "company driver jobs, CDL-A driver positions, trucking jobs with benefits, OTR company driver, truck driver 401k, CDL-A truck driver salary, company driver pay per mile, truck driver benefits package, OTR driver jobs 2025, truck driving career",
   },
   fleetProgram: {

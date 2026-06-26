@@ -41,7 +41,7 @@ const Index = () => {
     getBreadcrumbSchema([{ name: "Home", path: "/" }]),
     getFAQSchema(homeFaqsPlain),
     getServiceSchema({ name: "Owner Operator Program", description: "Independent contractor trucking program offering competitive linehaul pay, Fortune 500 freight, fuel discounts, and 24/7 dispatch support.", url: "/owner-operators" }),
-    getServiceSchema({ name: "Company Driver Employment", description: "Full-time CDL-A company driver positions with 68 + 2 CPM starting pay, health benefits, 401(k), and modern equipment.", url: "/company-drivers" }),
+    getServiceSchema({ name: "Company Driver Employment", description: "Full-time CDL-A company driver positions with $2,300+/week starting pay, health benefits, 401(k), and modern equipment.", url: "/company-drivers" }),
     getServiceSchema({ name: "Freight Shipping Services", description: "Nationwide dry van freight shipping for shippers and brokers. Real-time tracking and Fortune 500 carrier network.", url: "/freight-shipping-services" }),
   ], []);
 

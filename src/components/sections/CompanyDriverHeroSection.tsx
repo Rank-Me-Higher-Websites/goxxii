@@ -18,7 +18,7 @@ const features = [
 const stats = [
   { value: "$1000", label: "Referral Bonus" },
   { value: "$2,200+", label: "Average Weekly" },
-  { value: "68 + 2", label: "CPM" },
+  { value: "$2,300+", label: "Starting Pay" },
 ];
 
 const stats2 = [
@@ -30,7 +30,7 @@ const stats2 = [
 
 const benefits = [
   { icon: DollarSign, title: "Paid Detention", desc: "Company-matched plan - helping you prepare for retirement." },
-  { icon: Award, title: "68 + 2 CPM", desc: "Earn $104,000-$120,000 annually with XXII Century." },
+  { icon: Award, title: "$2,300+/week", desc: "Earn $104,000-$120,000 annually with XXII Century." },
   { icon: Gift, title: "Driver Bonuses", desc: "Enjoy performance bonuses, monthly rewards, photo contests, and year-round giveaways!" },
   { icon: Heart, title: "Paid Layover", desc: "Awesome health plans to choose from. Includes dental and vision too." },
   { icon: Users, title: "Referral Bonus", desc: "On-site maintenance available-relax at HQ or head home while we service your truck." },

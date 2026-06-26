@@ -15,9 +15,9 @@ const careerOptions = [
   {
     icon: Users,
     title: "Company Drivers",
-    description: "Enjoy competitive pay at 68 + 2 CPM, modern equipment, and a supportive team environment.",
+    description: "Enjoy competitive pay starting at $2,300+/week, modern equipment, and a supportive team environment.",
     link: "/company-drivers",
-    highlight: "68 + 2 CPM",
+    highlight: "$2,300+/week",
   },
   {
     icon: Shield,

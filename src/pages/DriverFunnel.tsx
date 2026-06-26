@@ -27,7 +27,7 @@ const recruiterData: Record<string, { name: string; phone: string; phoneFormatte
 };
 
 const perks = [
-  { icon: DollarSign, label: "68 + 2 CPM", sub: "Empty & Loaded" },
+  { icon: DollarSign, label: "$2,300+", sub: "Starting Pay" },
   { icon: Fuel, label: "+2 CPM", sub: "Fuel Bonus Day 1" },
   { icon: Truck, label: "Drop & Hook", sub: "70–80% No-Touch", highlight: true },
   { icon: MapPin, label: "3,000+ Mi", sub: "Weekly Miles" },
@@ -92,7 +92,7 @@ const DriverFunnel = () => {
     ]),
     getJobPostingSchema({
       title: "OTR Company Driver – Drop & Hook",
-      description: "68 + 2 CPM empty & loaded. Drop & hook dry van. New Volvos & Freightliners. $2,200–$2,400/week potential.",
+      description: "$2,300+ starting pay. Drop & hook dry van. New Volvos & Freightliners. $2,200–$2,400/week potential.",
       employmentType: "CONTRACTOR",
       minSalary: 109200,
       maxSalary: 124800,
@@ -105,8 +105,8 @@ const DriverFunnel = () => {
     <Layout onApplyClick={() => setQualifyOpen(true)}>
       <SEOHead
         title="OTR Driver Jobs – $2,100–$2,400/Week | XXII Century"
-        description="68 + 2 CPM fuel bonus. Drop & hook dry van, new trucks, customer lanes. Apply now for OTR company driver positions."
-        keywords="OTR driver jobs, CDL-A jobs, drop and hook trucking, company driver 68 + 2 CPM, dry van jobs, trucking jobs Chicago"
+        description="$2,300+ starting pay. Drop & hook dry van, new trucks, customer lanes. Apply now for OTR company driver positions."
+        keywords="OTR driver jobs, CDL-A jobs, drop and hook trucking, company driver $2300 week, dry van jobs, trucking jobs Chicago"
         canonicalPath={`/${recruiter}`}
       />
       <SchemaMarkup schemas={schemas} />
@@ -142,7 +142,7 @@ const DriverFunnel = () => {
                 </motion.h1>
 
                 <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="text-muted-foreground text-xs lg:text-sm max-w-xl mb-2 lg:mb-4">
-                  <span className="text-foreground font-semibold">68 + 2 CPM Empty & Loaded</span> starting Day 1. <span className="text-accent font-semibold">70–80% Drop &amp; Hook</span> - no-touch freight, less waiting, more miles. New trucks, customer lanes, dry van only.
+                  <span className="text-foreground font-semibold">$2,300+ Starting Pay</span> starting Day 1. <span className="text-accent font-semibold">50%+ Drop &amp; Hook</span> - no-touch freight, less waiting, more miles. New trucks, customer lanes, dry van only.
                 </motion.p>
 
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 lg:gap-3 mb-3 lg:mb-5">
@@ -227,7 +227,7 @@ const DriverFunnel = () => {
           <div className="grid grid-cols-4 gap-2 md:gap-4 text-center">
             {[
               { value: "$2,400", label: "Weekly Potential" },
-              { value: "68 + 2", label: "CPM" },
+              { value: "$2,300+", label: "Starting Pay" },
               { value: "50%+", label: "Drop & Hook" },
               { value: "3,000+", label: "Weekly Miles" },
             ].map((s) => (
