@@ -28,7 +28,7 @@ const recruiterData: Record<string, { name: string; phone: string; phoneFormatte
 
 const perks = [
   { icon: DollarSign, label: "$2,300+", sub: "Starting Pay" },
-  { icon: Fuel, label: "+2 CPM", sub: "Fuel Bonus Day 1" },
+  { icon: Fuel, label: "+2¢/mi", sub: "Fuel Bonus Day 1" },
   { icon: Truck, label: "Drop & Hook", sub: "70–80% No-Touch", highlight: true },
   { icon: MapPin, label: "3,000+ Mi", sub: "Weekly Miles" },
 ];

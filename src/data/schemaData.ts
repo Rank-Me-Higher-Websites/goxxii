@@ -38,7 +38,7 @@ export const getOrganizationSchema = () => ({
   logo: COMPANY.logo,
   foundingDate: COMPANY.foundingDate,
   description:
-    "Premier trucking carrier offering owner operators competitive linehaul pay and company drivers top CPM rates. Fortune 500 freight partners, AI-powered tools, nationwide coverage.",
+    "Premier trucking carrier offering owner operators competitive linehaul pay and company drivers $2,300+/week starting pay. Fortune 500 freight partners, AI-powered tools, nationwide coverage.",
   address: COMPANY.address,
   contactPoint: [
     {

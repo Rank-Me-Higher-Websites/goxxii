@@ -37,7 +37,7 @@ const CompanyDrivers = () => {
     }),
     getServiceSchema({
       name: "Company Driver Employment",
-      description: "Full-time CDL-A company driver positions with competitive CPM, comprehensive benefits, modern equipment, and flexible route options.",
+      description: "Full-time CDL-A company driver positions with $2,300+/week starting pay, comprehensive benefits, modern equipment, and flexible route options.",
       url: "/company-drivers",
     }),
   ], []);
