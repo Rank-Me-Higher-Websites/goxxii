@@ -196,7 +196,7 @@ const Careers = () => {
                 At XXII Century Inc., you'll be part of a dynamic team that's shaping the future of the transportation industry.
               </p>
               <p className="text-center lg:text-left text-muted-foreground leading-relaxed">
-                Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> helps independent truckers average $300K+ yearly, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> provide stable employment with full benefits. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
+                Our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link> helps independent truckers average $300K+ yearly, while our <Link to="/company-drivers" className="text-primary hover:underline">company driver positions</Link> earn $2,300+ consistently with stable employment. Fleet owners can explore our <Link to="/fleet-program" className="text-primary hover:underline">carrier partnership opportunities</Link> for steady freight access.
               </p>
               <div className="text-center lg:text-left mt-6">
                 <Button variant="heroOutline" size="lg" asChild>

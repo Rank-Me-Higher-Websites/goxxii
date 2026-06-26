@@ -16,6 +16,7 @@ import { TrustedBrandsSection } from "@/components/sections/TrustedBrandsSection
 import { IndustryPartnersSection } from "@/components/sections/IndustryPartnersSection";
 import { QuickCTABanner } from "@/components/QuickCTABanner";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
+import { ReviewsWidgetSection } from "@/components/sections/ReviewsWidgetSection";
 
 const About = () => {
   const schemas = useMemo(() => [
@@ -47,6 +48,7 @@ const About = () => {
       <ServicesSection />
       <SEOContentSection pageKey="about" />
       <LeadershipSection />
+      <ReviewsWidgetSection />
       <TrustedBrandsSection />
       <IndustryPartnersSection />
     </Layout>

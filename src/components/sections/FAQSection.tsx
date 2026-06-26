@@ -148,7 +148,7 @@ const fleetProgramFaqs: FAQ[] = [
   {
     question: "What types of trailers are available in the fleet program?",
     answer: (
-      <p>Our trailer network includes <strong className="text-foreground">dry vans</strong>. This diversity ensures you can haul a wide range of freight and stay loaded consistently. Learn more about our <Link to="/freight-shipping-services" className="text-primary hover:underline">freight services</Link>.</p>
+      <p>Our trailer network is <strong className="text-foreground">dry van only</strong>. Drop & hook freight keeps you moving consistently with minimal wait time at docks. Learn more about our <Link to="/freight-shipping-services" className="text-primary hover:underline">freight services</Link>.</p>
     ),
   },
   {

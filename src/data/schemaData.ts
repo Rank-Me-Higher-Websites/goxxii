@@ -376,7 +376,7 @@ export const companyDriverFaqsPlain = [
 export const fleetProgramFaqsPlain = [
   { question: "What is the XXII Century Power Only program?", answer: "Our Power Only program lets owner operators use their own tractor with our trailers to haul freight for Fortune 500 companies. We provide the loads, trailer access, and 24/7 dispatch support." },
   { question: "What are the requirements to join the fleet program?", answer: "Requirements include Motor Carrier Authority, DOT Number, Auto Liability Insurance, Cargo Liability Insurance, and Non-Owned Trailer Interchange Insurance." },
-  { question: "What types of trailers are available in the fleet program?", answer: "Our trailer network includes dry vans. This diversity ensures you can haul a wide range of freight and stay loaded consistently." },
+  { question: "What types of trailers are available in the fleet program?", answer: "Our trailer network is dry van only. Drop & hook freight keeps you moving consistently with minimal wait time at docks." },
   { question: "What is the average income for fleet program drivers?", answer: "Owner operators in our fleet program average $300,000+ annually. Earnings depend on miles driven, freight type, and route preferences." },
 ];
 

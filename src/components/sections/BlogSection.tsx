@@ -9,8 +9,8 @@ import ownerOperatorGuide from "@/assets/xxii-new-1.jpg";
 const blogPosts = [
   {
     image: localOwnerOperator,
-    title: "Local Owner Operator Jobs Near Me: What to Ask Before You Sign a Contract",
-    excerpt: "Scrolling through listings for local owner operator jobs near me can feel exciting at first. But the real deal isn't in the listing, it's in the contract.",
+    title: "Regional Owner Operator Jobs: What to Ask Before You Sign a Contract",
+    excerpt: "Scrolling through regional owner operator job listings can feel exciting at first. But the real deal isn't in the listing, it's in the contract.",
     date: "January 5, 2026",
     readTime: "12 min read",
     slug: "/blog/local-owner-operator-jobs",

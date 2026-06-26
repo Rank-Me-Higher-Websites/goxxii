@@ -71,7 +71,7 @@ const blogPosts = [
     date: "January 5, 2026",
     readTime: "12 min read",
     slug: "local-owner-operator-jobs",
-    category: "Local Jobs",
+    category: "Regional Jobs",
   },
   {
     image: ownerOperatorGuide,
@@ -98,7 +98,7 @@ const blogPosts = [
     date: "November 13, 2025",
     readTime: "10 min read",
     slug: "local-owner-operator-jobs-home",
-    category: "Local Jobs",
+    category: "Regional Jobs",
   },
   {
     image: careerChicago,
@@ -143,7 +143,7 @@ const blogPosts = [
     date: "September 8, 2025",
     readTime: "10 min read",
     slug: "truck-driving-career-chicago",
-    category: "Local Jobs",
+    category: "Regional Jobs",
   },
   {
     image: becomingOwnerOperator,
@@ -161,7 +161,7 @@ const blogPosts = [
     date: "August 8, 2025",
     readTime: "10 min read",
     slug: "owner-operator-jobs-chicago-truckers-know",
-    category: "Local Jobs",
+    category: "Regional Jobs",
   },
   {
     image: hiringOoChicago,
@@ -170,11 +170,11 @@ const blogPosts = [
     date: "July 23, 2025",
     readTime: "8 min read",
     slug: "hiring-owner-operators-chicago",
-    category: "Local Jobs",
+    category: "Regional Jobs",
   },
 ];
 
-const categories = ["All", "Owner Operators", "Local Jobs", "Guides"];
+const categories = ["All", "Owner Operators", "Regional Jobs", "Guides"];
 const POSTS_PER_PAGE = 6;
 
 const Blog = () => {

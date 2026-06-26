@@ -1713,7 +1713,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "## Unbeatable Pay for Company Drivers",
 
-      "For company drivers, predictability and high pay are the top priorities. At XXII Century, we offer an industry-leading rate of **63 CPM (Cents Per Mile)**. When you combine that with our consistent 2,500-3,500 weekly miles, you are looking at a highly competitive and reliable weekly paycheck.",
+      "For company drivers, predictability and high pay are the top priorities. At XXII Century, we offer **$2,300+/week starting pay**. When you combine that with our consistent 2,500-3,500 weekly miles, you are looking at a highly competitive and reliable weekly paycheck.",
 
       "But it is not just about the per-mile rate. We believe in taking care of our drivers with top-tier equipment, dedicated dispatch support available 24/7, and a culture that respects your time on and off the road.",
 
@@ -1723,7 +1723,7 @@ export const blogPostsData: Record<string, BlogPostData> = {
 
       "If you own your truck, you deserve to keep the lion's share of the revenue. That is why our owner operator program is designed to put more money in your pocket.",
 
-      "We pay our owner operators **90% of the linehaul**. With our strong customer base and consistent freight network, our owner operators average **$8,000+ in gross weekly earnings**.",
+      "We pay our owner operators **80% of the linehaul**. With our strong customer base and consistent freight network, our owner operators average **$300K+ in annual earnings**.",
 
       "We also eliminate the financial friction that slows down your business. We offer **Friday settlements** with **no factoring fees**, meaning you get paid fast and keep more of what you earn.",
 
