@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight, ChevronLeft, DollarSign, TrendingDown, Clock, Route, Phone, Wrench, AlertTriangle, Shield, MapPin, Package, Home, Cpu, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import driverBlue from "@/assets/driver-truck-blue.jpg";
-import heroBackground from "@/assets/heroes/truck-green.png";
+import heroBackground from "@/assets/xxii-volvo-truck-5.jpg";
 import car1 from "@/assets/gallery/car-1.png";
 import car2 from "@/assets/gallery/car-2.png";
 import car3 from "@/assets/gallery/car-3.png";
@@ -275,7 +275,7 @@ export const OwnerOperatorHeroSection = () => {
           >
             <div className="flex items-center justify-center gap-2 mb-4">
               <span className="text-yellow-400">⭑⭑⭑⭑⭑</span>
-              <span className="text-muted-foreground text-sm">16+ years experience</span>
+              <span className="text-muted-foreground text-sm">17+ years experience</span>
             </div>
 
             <div className="inline-block glass px-4 py-2 rounded-full mb-6">
@@ -501,7 +501,7 @@ export const OwnerOperatorHeroSection = () => {
           <div className="text-center mt-8">
             <h3 className="text-xl font-bold mb-2">The People-First Logistics Company</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-4">
-              While other companies leave drivers to fight for $2/mile scraps, we've spent 16+ years building relationships with major shippers who pay premium rates for reliable service.
+              While other companies leave drivers to fight for $2/mile scraps, we've spent 17+ years building relationships with major shippers who pay premium rates for reliable service.
             </p>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Explore what makes XXII Century different from the carriers that treat drivers like numbers.

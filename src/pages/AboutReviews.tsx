@@ -82,7 +82,7 @@ const AboutReviews = () => {
               <div className="text-xs text-muted-foreground mt-1">Active Drivers</div>
             </div>
             <div className="rounded-xl border border-border bg-card p-5 text-center">
-              <div className="text-3xl font-bold text-accent">16+</div>
+              <div className="text-3xl font-bold text-accent">17+</div>
               <div className="text-xs text-muted-foreground mt-1">Years in Business</div>
             </div>
             <div className="rounded-xl border border-border bg-card p-5 text-center">

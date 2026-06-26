@@ -15,8 +15,8 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Phone, Package } from "lucide-react";
 import { Link } from "react-router-dom";
-import freightTruck from "@/assets/heroes/truck-green.png";
-import heroBackground from "@/assets/heroes/truck-green-closeup.jpg";
+import freightTruck from "@/assets/xxii-volvo-truck-4.jpg";
+import heroBackground from "@/assets/xxii-new-1.jpg";
 import freightBroker from "@/assets/freight-broker.png";
 import freightShipper from "@/assets/freight-shipper.png";
 import lgLogo from "@/assets/brands/lg.png";
@@ -277,7 +277,7 @@ const FreightServices = () => {
                 Experience fast, reliable, and secure <strong className="text-foreground">freight shipping services</strong> with XXII Century Inc. We specialize in <strong className="text-foreground">dry van customer freight</strong> with nationwide coverage, competitive rates, and tailored solutions to fit your business needs. Our expert team ensures your shipments arrive on time, every time.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We run <strong className="text-foreground">70-80% drop & hook freight</strong> - no-touch loads on established customer lanes. Less waiting at docks means more miles and more money. Get transparent quotes, real-time tracking, and exceptional support. Looking to haul freight with us? Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator trucking jobs</Link> or <Link to="/company-drivers" className="text-primary hover:underline">CDL-A company driver positions</Link>.
+                We run <strong className="text-foreground">50%+ drop & hook freight</strong> - no-touch loads on established customer lanes. Less waiting at docks means more miles and more money. Get transparent quotes, real-time tracking, and exceptional support. Looking to haul freight with us? Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator trucking jobs</Link> or <Link to="/company-drivers" className="text-primary hover:underline">CDL-A company driver positions</Link>.
               </p>
             </div>
             <div className="order-1 lg:order-2">

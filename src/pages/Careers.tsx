@@ -18,8 +18,8 @@ import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
-import heroBackground from "@/assets/heroes/truck-green.png";
-import truckMountainsImg from "@/assets/truck-mountains.jpg";
+import heroBackground from "@/assets/xxii-volvo-truck-2.jpg";
+import truckMountainsImg from "@/assets/hero-driver.png";
 
 const positions = [
   {
@@ -248,7 +248,7 @@ const Careers = () => {
           </motion.div>
 
           {/* Desktop grid */}
-          <div className="hidden md:grid md:grid-cols-3 gap-8">
+          <div className="hidden md:grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {positions.map((position, index) => (
               <motion.article
                 key={position.title}

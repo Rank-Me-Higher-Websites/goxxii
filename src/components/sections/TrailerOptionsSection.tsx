@@ -2,8 +2,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import truckMountains from "@/assets/truck-mountains.jpg";
-import dryVanTruck from "@/assets/dry-van-truck.jpg";
+import truckMountains from "@/assets/xxii-mack-mountains.jpg";
+import dryVanTruck from "@/assets/company-driver-truck.jpg";
 
 export const TrailerOptionsSection = () => {
   const ref = useRef(null);

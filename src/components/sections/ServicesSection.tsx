@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 import { Truck, ChevronRight } from "lucide-react";
 
-import dryVanTruck from "@/assets/dry-van-truck.jpg";
+import dryVanTruck from "@/assets/xxii-volvo-truck-3.jpg";
 
 const services = [
   {

@@ -189,7 +189,7 @@ const OwnerOperatorState = () => {
           >
             <div className="flex items-center justify-center gap-2 mb-4">
               <span className="text-yellow-400">⭑⭑⭑⭑⭑</span>
-              <span className="text-muted-foreground text-sm">16+ years experience</span>
+              <span className="text-muted-foreground text-sm">17+ years experience</span>
             </div>
 
             <div className="inline-block glass px-4 py-2 rounded-full mb-6">
