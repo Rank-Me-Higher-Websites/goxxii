@@ -32,7 +32,7 @@ export const FleetSupportSection = () => {
           </h2>
 
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
-            16 years strong in trucking. XXII Century is all about reliability, safety, satisfaction, and transparency. With deep industry know-how, we tackle every challenge head-on, delivering the quality service you can count on.
+            17 years strong in trucking. XXII Century is all about reliability, safety, satisfaction, and transparency. With deep industry know-how, we tackle every challenge head-on, delivering the quality service you can count on.
           </p>
         </motion.div>
 

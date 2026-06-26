@@ -353,11 +353,11 @@ export const homeFaqsPlain = [
   { question: "Where is XXII Century based?", answer: "Our headquarters are in Chicago, Illinois. We operate freight lanes nationwide." },
   { question: "How do I apply to drive with XXII Century?", answer: "Apply online through our driver application at intelliapp.driverapponline.com. Our recruiting team typically responds within 1 hour." },
   { question: "Does XXII Century offer freight shipping services?", answer: "Yes. We provide dry van freight services for shippers and brokers. Our network covers the continental U.S. with dedicated and spot capacity." },
-  { question: "How long has XXII Century been in business?", answer: "XXII Century has been in the trucking industry for over 16 years, building a reputation for reliability, safety, and transparent partnerships." },
+  { question: "How long has XXII Century been in business?", answer: "XXII Century has been in the trucking industry for over 17 years, building a reputation for reliability, safety, and transparent partnerships." },
 ];
 
 export const ownerOperatorFaqsPlain = [
-  { question: "What percentage do owner operators keep at XXII Century?", answer: "Owner operators receive competitive linehaul rates with transparent settlements and zero hidden fees. There are no forced dispatch fees or trailer rental surprises." },
+  { question: "What percentage do owner operators keep at XXII Century?", answer: "Owner operators keep 80% of gross linehaul revenue on every load. There are no forced dispatch fees, no trailer rental fees, and no ELD charges — what you earn stays in your pocket." },
   { question: "Do I need my own trailer to be an owner operator?", answer: "No. XXII Century offers a large trailer network including dry vans. You can use our trailers or bring your own." },
   { question: "What fuel discounts are available for owner operators?", answer: "We provide 100% fuel discounts at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route." },
   { question: "Can I choose my own routes as an owner operator?", answer: "Yes. We offer flexible scheduling with both customer lanes and open-board freight. Whether you prefer regional or long-haul OTR, we match loads to your preferences." },

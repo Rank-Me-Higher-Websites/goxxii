@@ -45,7 +45,7 @@ const homeFaqs: FAQ[] = [
   {
     question: "How long has XXII Century been in business?",
     answer: (
-      <p>XXII Century has been in the trucking industry for over <strong className="text-foreground">16 years</strong>, building a reputation for reliability, safety, and transparent partnerships. Meet our <Link to="/about" className="text-primary hover:underline">leadership team</Link> to learn about the people behind the company.</p>
+      <p>XXII Century has been in the trucking industry for over <strong className="text-foreground">17 years</strong>, building a reputation for reliability, safety, and transparent partnerships. Meet our <Link to="/about" className="text-primary hover:underline">leadership team</Link> to learn about the people behind the company.</p>
     ),
   },
 ];
@@ -54,7 +54,7 @@ const ownerOperatorFaqs: FAQ[] = [
   {
     question: "What percentage do owner operators keep at XXII Century?",
     answer: (
-      <p>Owner operators receive competitive linehaul rates with <strong className="text-foreground">transparent settlements and zero hidden fees</strong>. There are no forced dispatch fees or trailer rental surprises. View full details on our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program page</Link>.</p>
+      <p>Owner operators keep <strong className="text-foreground">80% of gross linehaul revenue</strong> on every load. There are no forced dispatch fees, no trailer rental fees, and no ELD charges — what you earn stays in your pocket. View full details on our <Link to="/owner-operators" className="text-primary hover:underline">owner operator program page</Link>.</p>
     ),
   },
   {

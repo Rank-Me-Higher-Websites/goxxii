@@ -3,7 +3,7 @@ import { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
-import trucksFleet from "@/assets/office-dispatch.jpg";
+import trucksFleet from "@/assets/xxii-new-2.jpg";
 import { Lightbulb, Truck, Wrench, Award } from "lucide-react";
 
 const services = [
@@ -169,10 +169,6 @@ export const FreightServicesSection = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-primary" />
-                  Refrigerated Units for Temperature-Sensitive Freight
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-primary" />
                   Late-Model Tractors with Modern Amenities
                 </li>
                 <li className="flex items-center gap-2">
@@ -230,7 +226,7 @@ export const FreightServicesSection = () => {
             <motion.div ref={bottomContentRef} style={{ y: bottomY }}>
               <div className="hidden lg:grid grid-cols-2 gap-4 pt-6">
                 <div className="glass rounded-xl p-5 text-center">
-                  <div className="text-3xl font-display font-bold text-primary mb-1">15+</div>
+                  <div className="text-3xl font-display font-bold text-primary mb-1">17+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="glass rounded-xl p-5 text-center">
