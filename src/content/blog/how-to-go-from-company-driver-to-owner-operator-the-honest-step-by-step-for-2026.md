@@ -91,10 +91,10 @@ Not if you're leased on under a carrier's authority. That's one of the primary a
 Gross revenue varies by miles run and load rates. At 90% linehaul with top performers averaging $8,000+ gross per week, that's $8,000 before your operating expenses — fuel, maintenance reserve, insurance, truck payment, and taxes. Net income depends on how well you manage those costs.
 
 **Can I still run as a company driver while I decide?**
-Yes, and that's often the smarter move. Use your company driver seat to build savings and study your target carrier's load board and freight volume before making the jump. [Company driver positions at XXII Century](/company-drivers) start at 65 CPM with raises to 80 CPM — a solid income base for building your transition fund.
+Yes, and that's often the smarter move. Use your company driver seat to build savings and study your target carrier's load board and freight volume before making the jump. [Company driver positions at XXII Century](/company-drivers) start at $2,300+/week with automatic raises every 75,000 miles — a solid income base for building your transition fund.
 
 ## Bottom line
 
 _The company driver to owner operator transition in 2026 is genuinely achievable for any driver with clean records, solid savings discipline, and the ability to read a settlement sheet — but it rewards preparation and punishes shortcuts._ A lease-on program with a transparent revenue split, voluntary dispatch, and a real fuel discount infrastructure removes the biggest barriers to entry. The math changes in your favor fast when 90 cents of every linehaul dollar is yours to work with.
 
-Ready to run the numbers on your own situation? XXII Century's owner-operator program is built around drivers who want full transparency before they sign anything. [Apply online in about 5 minutes](https://intelliapp.driverapponline.com/c/goxxii?r=Eve) or call **630-948-0501** to talk through the details with someone who can answer your questions straight.
+Ready to run the numbers on your own situation? XXII Century's owner-operator program is built around drivers who want full transparency before they sign anything. [Apply online in about 5 minutes](https://intelliapp.driverapponline.com/c/goxxii?r=Eve) or call **630-914-6037** to talk through the details with someone who can answer your questions straight.

@@ -164,11 +164,17 @@ interface JobPostingInput {
 export const getJobPostingSchema = (job: JobPostingInput) => ({
   "@context": "https://schema.org",
   "@type": "JobPosting",
+  identifier: {
+    "@type": "PropertyValue",
+    name: COMPANY.name,
+    value: job.title.toLowerCase().replace(/\s+/g, "-"),
+  },
   title: job.title,
   description: job.description,
   datePosted: job.datePosted || "2025-01-01",
   validThrough: job.validThrough || "2026-12-31",
   employmentType: job.employmentType,
+  directApply: true,
   hiringOrganization: {
     "@type": "Organization",
     name: COMPANY.name,
@@ -227,6 +233,7 @@ interface BlogPostInput {
   title: string;
   excerpt: string;
   date: string;
+  dateModified?: string;
   author: string;
   image: string;
   slug: string;
@@ -238,7 +245,7 @@ export const getBlogPostingSchema = (post: BlogPostInput) => ({
   headline: post.title,
   description: post.excerpt,
   datePublished: post.date,
-  dateModified: post.date,
+  dateModified: post.dateModified || post.date,
   author: {
     "@type": "Organization",
     name: COMPANY.name,
