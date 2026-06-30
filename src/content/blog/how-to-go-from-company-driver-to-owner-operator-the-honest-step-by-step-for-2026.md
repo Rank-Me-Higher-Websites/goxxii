@@ -23,9 +23,9 @@ The numbers tell the real story. According to the [Owner-Operator Independent Dr
 
 ## Definition: What is a lease-on program?
 
-**Lease-on program definition:** A contractual arrangement where an owner-operator signs on exclusively with a single motor carrier, leasing their truck authority, trailer access, dispatch infrastructure, and sometimes the equipment itself — in exchange for a defined percentage of linehaul revenue.
+**Lease-on program definition:** A contractual arrangement where an owner-operator signs on exclusively with a single motor carrier, leasing their truck authority, trailer access, dispatch infrastructure, and sometimes the equipment itself — in exchange for a defined percentage of gross revenue.
 
-The critical word in that definition is "percentage." Unlike a company driver who earns cents-per-mile regardless of what the load pays, an owner-operator on a lease-on gets paid based on what the load actually generates. That's where the upside lives. A carrier offering 90% of linehaul revenue means if the load pays $3,000, you keep $2,700 before your own expenses — fuel, maintenance, insurance, and truck payment. The carrier keeps $300 for their infrastructure, authority, and freight network. That's a fundamentally different business model than company driving, and treating it like a wage job is one of the fastest ways to fail at it.
+The critical word in that definition is "percentage." Unlike a company driver who earns cents-per-mile regardless of what the load pays, an owner-operator on a lease-on gets paid based on what the load actually generates. That's where the upside lives. A carrier offering 80% of gross revenue means if the load pays $3,000, you keep $2,400 before your own expenses — fuel, maintenance, insurance, and truck payment. The carrier keeps $600 for their infrastructure, authority, and freight network. That's a fundamentally different business model than company driving, and treating it like a wage job is one of the fastest ways to fail at it.
 
 ## How the transition works: From company seat to your own authority
 
@@ -33,7 +33,7 @@ The actual mechanics of how to become owner operator from company driver in 2026
 
 1. **Build your financial baseline** — Calculate your current monthly household expenses, then add a 3-month operating reserve for your truck. Know this number before you look at a single truck listing. Undercapitalization kills more new owner-operator businesses than any other single factor.
 2. **Audit your driving record and CSA score** — Carriers running lease-on programs will pull your safety record. Clean up anything addressable before you apply. A strong record also affects your commercial truck insurance rates, which directly hits your margin.
-3. **Choose your carrier carefully** — Not all lease-on programs are built the same. Look at the revenue percentage, whether dispatch is forced or voluntary, trailer availability, and how settlements are structured. Transparency in weekly settlements matters — hidden fees compound fast. Review the [owner operator opportunities at XXII Century](/owner-operators) to see what a 90% linehaul model with no forced dispatch actually looks like in practice.
+3. **Choose your carrier carefully** — Not all lease-on programs are built the same. Look at the revenue percentage, whether dispatch is forced or voluntary, trailer availability, and how settlements are structured. Transparency in weekly settlements matters — hidden fees compound fast. Review the [owner operator opportunities at XXII Century](/owner-operators) to see what an 80% of gross model with no forced dispatch actually looks like in practice.
 4. **Secure or confirm your equipment** — Either purchase your truck outright, finance through a lender, or enter the carrier's truck lease program if offered. Factor in your monthly truck payment as a fixed cost against your projected gross before you commit.
 5. **Handle your business setup** — Register your LLC or sole proprietorship, open a dedicated business bank account, and set up quarterly estimated tax payments. If you're leased on under the carrier's authority, you skip the motor carrier authority process — but you're still a business owner from the IRS's perspective.
 
@@ -41,7 +41,7 @@ The actual mechanics of how to become owner operator from company driver in 2026
 
 The income difference between a company driver and a leased-on owner-operator isn't magic — it's a direct result of owning the revenue upside on every mile. Here's where that money actually materializes:
 
-- **Higher gross per load** — At 90% of linehaul, a well-selected load calendar produces gross revenue well above a CPM wage, with top owner operators averaging $8,000+ per week gross at carriers like XXII Century.
+- **Higher gross per load** — At 80% of gross, a well-selected load calendar produces gross revenue well above a CPM wage, with top owner operators averaging $8,000+ per week gross at carriers like XXII Century.
 - **Fuel program access** — Running under a large fleet's fuel discount network reduces one of your biggest variable costs. An AI-powered fuel management tool that finds cheapest diesel on your specific route compounds those savings over thousands of miles.
 - **Load selection control** — No forced dispatch means you can avoid low-rate loads, dead-head miles, and lanes that don't pencil out. That selectivity directly protects your margin.
 - **Trailer flexibility** — Access to a large network of dry vans, reefers, and flatbeds — or the option to bring your own — means you aren't stuck declining freight because you don't have the right equipment.
@@ -87,14 +87,14 @@ No. A lease-on means you're contracting your services (and your truck) to a carr
 **Do I need my own motor carrier authority to become an owner operator?**
 Not if you're leased on under a carrier's authority. That's one of the primary advantages of a lease-on program — you get owner-operator income without the cost and complexity of obtaining your own MC number and building freight relationships from scratch.
 
-**What does 90% linehaul actually mean in weekly take-home?**
-Gross revenue varies by miles run and load rates. At 90% linehaul with top performers averaging $8,000+ gross per week, that's $8,000 before your operating expenses — fuel, maintenance reserve, insurance, truck payment, and taxes. Net income depends on how well you manage those costs.
+**What does 80% of gross actually mean in weekly take-home?**
+Gross revenue varies by miles run and load rates. At 80% of gross with top performers averaging $8,000+ per week, that's $8,000 before your operating expenses — fuel, maintenance reserve, insurance, truck payment, and taxes. Net income depends on how well you manage those costs.
 
 **Can I still run as a company driver while I decide?**
 Yes, and that's often the smarter move. Use your company driver seat to build savings and study your target carrier's load board and freight volume before making the jump. [Company driver positions at XXII Century](/company-drivers) start at $2,300+/week with automatic raises every 75,000 miles — a solid income base for building your transition fund.
 
 ## Bottom line
 
-_The company driver to owner operator transition in 2026 is genuinely achievable for any driver with clean records, solid savings discipline, and the ability to read a settlement sheet — but it rewards preparation and punishes shortcuts._ A lease-on program with a transparent revenue split, voluntary dispatch, and a real fuel discount infrastructure removes the biggest barriers to entry. The math changes in your favor fast when 90 cents of every linehaul dollar is yours to work with.
+_The company driver to owner operator transition in 2026 is genuinely achievable for any driver with clean records, solid savings discipline, and the ability to read a settlement sheet — but it rewards preparation and punishes shortcuts._ A lease-on program with a transparent revenue split, voluntary dispatch, and a real fuel discount infrastructure removes the biggest barriers to entry. The math changes in your favor fast when 80 cents of every gross dollar is yours to work with.
 
 Ready to run the numbers on your own situation? XXII Century's owner-operator program is built around drivers who want full transparency before they sign anything. [Apply online in about 5 minutes](https://intelliapp.driverapponline.com/c/goxxii?r=Eve) or call **630-914-6037** to talk through the details with someone who can answer your questions straight.
