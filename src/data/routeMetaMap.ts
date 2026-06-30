@@ -175,17 +175,26 @@ export const ROUTE_META: Record<string, RouteMeta> = {
 
 const HOME_META = ROUTE_META["/"];
 
+// Real content routes that are data-driven (no static ROUTE_META entry). For
+// these we self-canonicalize so non-JS crawlers never see them as duplicates of
+// the homepage; the client SEOHead still sets exact per-page title/description.
+const DYNAMIC_PREFIXES = ["/blog/", "/owner-operators/", "/careers/"];
+
 /**
  * Resolve the best meta for a request path. Known static routes get their exact
- * entry; everything else (dynamic /blog/:slug, /owner-operators/:state,
- * /careers/:slug, and unknown paths) falls back to the homepage meta — which is
- * accurate and on-brand. Dynamic pages still receive their own per-page meta via
- * SEOHead when the client/Googlebot renders JS.
+ * entry. Dynamic content routes (/blog/:slug, /owner-operators/:state,
+ * /careers/:slug) inherit the homepage title/description but keep a SELF
+ * canonical/og:url so they aren't clustered with the homepage. Truly unknown
+ * paths fall back to the homepage meta.
  */
 export function resolveRouteMeta(path: string): RouteMeta {
   if (!path) return HOME_META;
   // Strip query/hash and a trailing slash (except root).
   let clean = path.split("?")[0].split("#")[0];
   if (clean.length > 1 && clean.endsWith("/")) clean = clean.slice(0, -1);
-  return ROUTE_META[clean] || HOME_META;
+  if (ROUTE_META[clean]) return ROUTE_META[clean];
+  if (DYNAMIC_PREFIXES.some((p) => clean.startsWith(p))) {
+    return { ...HOME_META, canonicalPath: clean };
+  }
+  return HOME_META;
 }
