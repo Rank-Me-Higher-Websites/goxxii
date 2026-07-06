@@ -1,9 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Route } from "lucide-react";
+import { ArrowRight, ChevronRight, Route } from "lucide-react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { Button } from "@/components/ui/button";
 import { LANE_ROUTES } from "@/data/laneRoutes";
+
+interface DedicatedLanesSectionProps {
+  onGetQuote?: () => void;
+}
 
 type LabelDir = "top" | "bottom" | "left" | "right";
 
@@ -100,7 +105,7 @@ function lanePoints(id: number, a: City, b: City): [number, number][] {
   return decodePolyline(encoded);
 }
 
-export const DedicatedLanesSection = () => {
+export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps) => {
   const mapEl = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
   const laneLayers = useRef<globalThis.Map<number, L.Polyline>>(new globalThis.Map());
@@ -333,6 +338,13 @@ export const DedicatedLanesSection = () => {
                 <div className="text-gray-400 text-xs uppercase tracking-wider">Drop &amp; Hook</div>
               </div>
             </div>
+
+            {onGetQuote && (
+              <Button variant="hero" size="lg" className="w-full mt-5" onClick={onGetQuote}>
+                <ChevronRight className="w-5 h-5" />
+                Get Your Quote
+              </Button>
+            )}
           </div>
 
           {/* Map */}

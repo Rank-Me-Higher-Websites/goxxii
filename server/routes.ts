@@ -340,6 +340,7 @@ export function registerRoutes(router: Router) {
     "website-driver-funnel",
     "website-contact-form",
     "website-estimate-form",
+    "website-freight-quote",
     "other",
   ]);
 

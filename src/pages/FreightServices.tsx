@@ -13,7 +13,7 @@ import {
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Phone, Package, BarChart3, FileText, Brain, Truck, Map, Users, Star } from "lucide-react";
+import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Package, BarChart3, FileText, Brain, Truck, Map, Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import freightTruck from "@/assets/xxii-volvo-truck-4.jpg";
 import heroBackground from "@/assets/xxii-new-1.jpg";
@@ -23,7 +23,7 @@ import { SEOContentSection } from "@/components/sections/SEOContentSection";
 import { TrustedByStripSection } from "@/components/sections/TrustedByStripSection";
 import { AwardsSection } from "@/components/sections/AwardsSection";
 import { DedicatedLanesSection } from "@/components/sections/DedicatedLanesSection";
-import { TruckFeaturesSection } from "@/components/sections/TruckFeaturesSection";
+import { QuoteFormDialog } from "@/components/QuoteFormDialog";
 
 // Define trusted features
 const trustedFeatures = [
@@ -164,6 +164,7 @@ const FreightServices = () => {
   const featuresInView = useInView(featuresRef, { once: true, margin: "-100px" });
   const fleetRef = useRef(null);
   const fleetInView = useInView(fleetRef, { once: true, margin: "-100px" });
+  const [quoteOpen, setQuoteOpen] = useState(false);
 
   const schemas = useMemo(() => [
     getOrganizationSchema(),
@@ -230,16 +231,14 @@ const FreightServices = () => {
             </h1>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-              <Button variant="hero" size="lg" asChild>
-                <a href="/contact" className="flex items-center gap-2">
-                  <ChevronRight className="w-5 h-5" />
-                  Contact Us
-                </a>
+              <Button variant="hero" size="lg" onClick={() => setQuoteOpen(true)} className="flex items-center gap-2">
+                <ChevronRight className="w-5 h-5" />
+                Get Your Quote
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+16309146037" className="flex items-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Call Us
+                <a href="/contact" className="flex items-center gap-2">
+                  <Truck className="w-5 h-5" />
+                  Ship With Us
                 </a>
               </Button>
             </div>
@@ -293,7 +292,11 @@ const FreightServices = () => {
                 Experience fast, reliable, and secure <strong className="text-foreground">freight shipping services</strong> with XXII Century Inc. We specialize in <strong className="text-foreground">dry van customer freight</strong> with nationwide coverage, competitive rates, and tailored solutions to fit your business needs. Our expert team ensures your shipments arrive on time, every time.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We run <strong className="text-foreground">50%+ drop & hook freight</strong> - no-touch loads on established customer lanes. Less waiting at docks means more miles and more money. Get transparent quotes, real-time tracking, and exceptional support. Looking to haul freight with us? Explore our <Link to="/owner-operators" className="text-primary hover:underline">owner operator trucking jobs</Link> or <Link to="/company-drivers" className="text-primary hover:underline">CDL-A company driver positions</Link>.
+                We run <strong className="text-foreground">50%+ drop & hook freight</strong> - no-touch loads on established customer lanes. Less waiting at docks means more miles and more money. Get transparent quotes, real-time tracking, and exceptional support. Ready to move your freight?{" "}
+                <button type="button" onClick={() => setQuoteOpen(true)} className="text-primary hover:underline font-medium">
+                  Get your quote
+                </button>{" "}
+                or <Link to="/contact" className="text-primary hover:underline">ship with us</Link> today.
               </p>
             </div>
             <div className="order-1 lg:order-2">
@@ -328,14 +331,12 @@ const FreightServices = () => {
                   Our in-house operations team, advanced tracking technology, and commitment to on-time delivery mean your freight is always in capable hands. We run primarily <strong className="text-foreground">drop & hook customer freight</strong> on proven lanes - faster turnaround, fewer dock delays, and consistent volume for our customers.
                 </p>
                 <p>
-                  Ready to streamline your shipping? Our <Link to="/fleet-program" className="text-primary hover:underline">fleet program</Link> keeps capacity available for your freight. We're also hiring <Link to="/careers" className="text-primary hover:underline">professional truck drivers</Link> to support our growing operations.
+                  Ready to streamline your shipping? Our <Link to="/fleet-program" className="text-primary hover:underline">fleet program</Link> keeps dedicated capacity available for your freight, and our logistics team builds lane plans around your volume.
                 </p>
               </div>
-              <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
-                <a href="/contact" className="flex items-center gap-2">
-                  <ChevronRight className="w-5 h-5" />
-                  Contact Us
-                </a>
+              <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" onClick={() => setQuoteOpen(true)}>
+                <ChevronRight className="w-5 h-5" />
+                Get Your Quote
               </Button>
             </motion.div>
 
@@ -388,21 +389,19 @@ const FreightServices = () => {
                   Through our <strong className="text-foreground">Trusted Carrier Network</strong>, we connect shippers with thoroughly vetted, high-performing carriers on dedicated customer lanes. The majority of our loads are <strong className="text-foreground">drop & hook</strong> - fast, no-touch freight that keeps freight moving and dock times minimal. We don't just move freight; we build lasting partnerships that drive efficiency and growth.
                 </p>
                 <p>
-                  Want to join our carrier network? Explore <Link to="/owner-operators" className="text-primary hover:underline">independent owner operator opportunities</Link> with premium freight access, or <Link to="/contact" className="text-primary hover:underline">contact our logistics team</Link> to discuss partnership options. Learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our commitment to excellence.
+                  Ready to ship with us? <Link to="/contact" className="text-primary hover:underline">Contact our logistics team</Link> for a custom rate on your lanes, or learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our commitment to excellence.
                 </p>
               </div>
               <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
-                <a href="mailto:james@goxxii.com" className="flex items-center gap-2">
-                  <ChevronRight className="w-5 h-5" />
-                  Work With Us
+                <a href="/contact" className="flex items-center gap-2">
+                  <Truck className="w-5 h-5" />
+                  Ship With Us
                 </a>
               </Button>
             </motion.div>
           </div>
         </div>
       </section>
-
-      <DedicatedLanesSection />
 
       {/* Industry-Leading Tools Section */}
       <section ref={fleetRef} className="py-24 relative overflow-hidden bg-[#07111f]">
@@ -459,11 +458,11 @@ const FreightServices = () => {
         </div>
       </section>
 
-      <TruckFeaturesSection />
+      <DedicatedLanesSection onGetQuote={() => setQuoteOpen(true)} />
 
       <AwardsSection />
 
-      {/* Road to More Loads CTA */}
+      {/* Ready to Ship CTA */}
       <section className="py-20 bg-gradient-to-r from-primary/10 via-background to-accent/10">
         <div className="container-custom text-center">
           <motion.div
@@ -472,30 +471,29 @@ const FreightServices = () => {
             viewport={{ once: true }}
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Your Road to <span className="text-primary">More Loads</span>
+              Ready to <span className="text-primary">Ship With XXII?</span>
             </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto mb-8">
-              Take control of your success with steady freight, competitive pay, and the support you need to keep moving. As a trusted partner, we connect you with consistent loads, clear communication, and the tools to maximize your earnings-so you can focus on driving your business forward.
+              Get a transparent rate on your lanes in minutes. Dedicated capacity, drop & hook freight, real-time tracking, and a logistics team that answers the phone - so your freight keeps moving and your docks keep clear.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button variant="hero" size="lg" asChild>
-                <a
-                  href="https://intelliapp.driverapponline.com/c/goxxii?r=bodan"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <ChevronRight className="w-5 h-5" />
-                  Join Carrier Network
-                </a>
+              <Button variant="hero" size="lg" onClick={() => setQuoteOpen(true)} className="flex items-center gap-2">
+                <ChevronRight className="w-5 h-5" />
+                Get Your Quote
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <a href="tel:+16309146037" className="flex items-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  630-914-6037
+                <a href="/contact" className="flex items-center gap-2">
+                  <Truck className="w-5 h-5" />
+                  Ship With Us
                 </a>
               </Button>
             </div>
+            <p className="text-muted-foreground text-sm mt-6">
+              Prefer to talk?{" "}
+              <a href="tel:+16309146037" className="text-primary hover:underline font-medium">
+                630-914-6037
+              </a>
+            </p>
           </motion.div>
         </div>
       </section>
@@ -504,6 +502,8 @@ const FreightServices = () => {
       <TrustedByStripSection />
 
       <SEOContentSection pageKey="freightServices" />
+
+      <QuoteFormDialog open={quoteOpen} onOpenChange={setQuoteOpen} />
     </Layout>
   );
 };

@@ -115,8 +115,8 @@ const seoContent = {
     ],
     links: [
       { text: "Request a freight quote", href: "/contact" },
-      { text: "Join our carrier network", href: "/fleet-program" },
-      { text: "CDL driver career opportunities", href: "/careers" },
+      { text: "Ship your freight with us", href: "/contact" },
+      { text: "Explore our dedicated lanes", href: "/freight-shipping-services" },
       { text: "About our logistics company", href: "/about" },
     ],
   },
