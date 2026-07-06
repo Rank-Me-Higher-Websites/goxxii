@@ -413,3 +413,72 @@
     backface-visibility: hidden;
   }
 }
+
+/* Dedicated lanes map (Leaflet) */
+.leaflet-container {
+  font-family: 'Inter', sans-serif;
+  background: #fbf6ef;
+}
+
+.lane-city-label {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #475569;
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1px 3px;
+  letter-spacing: 0.01em;
+  text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.9),
+    1px -1px 0 rgba(255, 255, 255, 0.9),
+    -1px 1px 0 rgba(255, 255, 255, 0.9),
+    1px 1px 0 rgba(255, 255, 255, 0.9),
+    0 0 6px rgba(255, 255, 255, 0.9);
+  pointer-events: none;
+}
+
+.lane-city-label::before {
+  display: none;
+}
+
+/* On phones the map is too small for 17 permanent city labels */
+@media (max-width: 639px) {
+  .lane-city-label {
+    display: none;
+  }
+}
+
+.lane-tooltip {
+  background: #0d1e36;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 4px 10px;
+  box-shadow: 0 4px 12px rgba(13, 30, 54, 0.3);
+}
+
+.lane-tooltip::before {
+  display: none;
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 9px;
+  color: #94a3b8;
+}
+
+.leaflet-container .leaflet-control-zoom {
+  border: none;
+  box-shadow: 0 2px 8px rgba(13, 30, 54, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.leaflet-container .leaflet-control-zoom a {
+  border: none;
+  color: #475569;
+}

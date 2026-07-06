@@ -13,19 +13,17 @@ import {
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Phone, Package } from "lucide-react";
+import { ChevronRight, MapPin, Shield, LineChart, Clock, Fuel, Route, Radio, ShieldCheck, RefreshCcw, Phone, Package, BarChart3, FileText, Brain, Truck, Map, Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import freightTruck from "@/assets/xxii-volvo-truck-4.jpg";
 import heroBackground from "@/assets/xxii-new-1.jpg";
 import freightBroker from "@/assets/freight-broker.png";
 import freightShipper from "@/assets/freight-shipper.png";
-import lgLogo from "@/assets/brands/lg.png";
-import thermafiberLogo from "@/assets/brands/thermafiber.png";
-import millerLogo from "@/assets/brands/miller.png";
-import westrockLogo from "@/assets/brands/westrock.png";
-import petcoLogo from "@/assets/brands/petco.png";
-import wisconsinLogo from "@/assets/brands/wisconsin.png";
 import { SEOContentSection } from "@/components/sections/SEOContentSection";
+import { TrustedByStripSection } from "@/components/sections/TrustedByStripSection";
+import { AwardsSection } from "@/components/sections/AwardsSection";
+import { DedicatedLanesSection } from "@/components/sections/DedicatedLanesSection";
+import { TruckFeaturesSection } from "@/components/sections/TruckFeaturesSection";
 
 // Define trusted features
 const trustedFeatures = [
@@ -51,53 +49,71 @@ const trustedFeatures = [
   },
 ];
 
-// Define fleet features
-const fleetFeatures = [
+// Define industry tools features
+const industryTools = [
   {
-    icon: Fuel,
-    title: "Fuel Efficiency Monitoring",
-    description: "Track fuel usage in real time to reduce costs and improve sustainability.",
+    icon: RefreshCcw,
+    title: "Automatic Load Status Updates",
+    description: "Receive automatic status messages generated with geofencing technology for complete peace of mind.",
+    color: "from-blue-500/20 to-blue-600/20",
+    iconColor: "text-blue-400",
   },
   {
-    icon: Route,
-    title: "Smart Routing",
-    description: "AI instantly maps the quickest, most cost-efficient path for every load.",
+    icon: BarChart3,
+    title: "Historical Load Data",
+    description: "Access comprehensive historical data for all your loads to make informed business decisions.",
+    color: "from-green-500/20 to-green-600/20",
+    iconColor: "text-green-400",
   },
   {
-    icon: Radio,
-    title: "Live Fleet Tracking",
-    description: "Track fleet health, ETAs, and driver performance from a single dashboard.",
+    icon: FileText,
+    title: "Driver Activity Reports",
+    description: "Detailed reports on driver performance and activity for better fleet management.",
+    color: "from-purple-500/20 to-purple-600/20",
+    iconColor: "text-purple-400",
+  },
+  {
+    icon: Brain,
+    title: "Fleet Safety AI",
+    description: "Advanced AI-powered safety monitoring to ensure driver and cargo protection on every load.",
+    color: "from-orange-500/20 to-orange-600/20",
+    iconColor: "text-orange-400",
   },
   {
     icon: ShieldCheck,
-    title: "Advanced Safety",
-    description: "Real-time condition and tamper alerts shield every shipment from pickup to delivery.",
+    title: "Truck Safety Features",
+    description: "State-of-the-art safety equipment and monitoring systems on all XXII Century vehicles.",
+    color: "from-red-500/20 to-red-600/20",
+    iconColor: "text-red-400",
   },
   {
-    icon: RefreshCcw,
-    title: "Auto Load Updates",
-    description: "Automated status messages keep shippers, drivers, and customers perfectly in sync.",
+    icon: Radio,
+    title: "GPS Tracking on Trucks and Trailers",
+    description: "Real-time GPS tracking for complete visibility of your freight from pickup to delivery.",
+    color: "from-teal-500/20 to-teal-600/20",
+    iconColor: "text-teal-400",
   },
   {
-    icon: Clock,
-    title: "24/7 Dispatch Support",
-    description: "Round-the-clock dispatch team ensures drivers and loads stay on schedule.",
+    icon: Map,
+    title: "Customer Active Loads Map",
+    description: "Interactive map showing all your active loads in real-time for easy tracking and visibility.",
+    color: "from-blue-500/20 to-cyan-500/20",
+    iconColor: "text-cyan-400",
   },
   {
-    icon: Package,
-    title: "Customer Lanes & Drop & Hook",
-    description: "Dedicated customer lanes with 50%+ drop & hook freight - no-touch loads, less wait time, more miles.",
+    icon: Star,
+    title: "Elite Drivers",
+    description: "Highly trained and experienced professional drivers committed to excellent service delivery.",
+    color: "from-yellow-500/20 to-yellow-600/20",
+    iconColor: "text-yellow-400",
   },
-];
-
-// Define trusted brands
-const brands = [
-  { name: "LG", logo: lgLogo },
-  { name: "Thermafiber", logo: thermafiberLogo },
-  { name: "Miller", logo: millerLogo },
-  { name: "WestRock", logo: westrockLogo },
-  { name: "Petco", logo: petcoLogo },
-  { name: "Wisconsin Paper Council", logo: wisconsinLogo },
+  {
+    icon: Route,
+    title: "Route Optimization",
+    description: "Smart routing algorithms ensure the most efficient delivery paths for every load.",
+    color: "from-indigo-500/20 to-indigo-600/20",
+    iconColor: "text-indigo-400",
+  },
 ];
 
 const MobileFeatureCarousel = ({ features }: { features: typeof trustedFeatures }) => {
@@ -386,45 +402,66 @@ const FreightServices = () => {
         </div>
       </section>
 
-      {/* Fleet Management Section */}
-      <section ref={fleetRef} className="py-20 bg-background">
-        <div className="container-custom">
+      <DedicatedLanesSection />
+
+      {/* Industry-Leading Tools Section */}
+      <section ref={fleetRef} className="py-24 relative overflow-hidden bg-[#07111f]">
+        {/* Subtle background grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px]" />
+        {/* Glow blobs */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/8 rounded-full blur-[120px] pointer-events-none" />
+
+        <div className="container-custom relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={fleetInView ? { opacity: 1, y: 0 } : {}}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Smarter Fleet Management - <span className="text-primary">Simplified</span>
+            <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-4 px-3 py-1 rounded-full border border-primary/30 bg-primary/10">
+              Technology
+            </span>
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-5 leading-tight">
+              Industry-Leading Tools Built to{" "}
+              <span className="text-primary">Streamline Your Logistics</span>
             </h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
-              Our advanced tools give you complete visibility, safety, and efficiency across every load. From fuel tracking to smart routing and automated updates, we keep your operations running seamlessly.
+            <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+              Enterprise-grade technology on every load — real-time visibility, AI safety monitoring, and automated updates from pickup to delivery.
             </p>
           </motion.div>
 
           {/* Mobile: Carousel */}
-          <MobileFeatureCarousel features={fleetFeatures} />
+          <MobileFeatureCarousel features={industryTools} />
 
           {/* Desktop: Grid */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {fleetFeatures.map((feature, index) => (
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {industryTools.map((feature, index) => (
               <motion.div
                 key={feature.title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={fleetInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: index * 0.1 }}
-                className="glass p-6 rounded-xl hover:border-primary/50 transition-colors"
+                transition={{ delay: index * 0.07 }}
+                className="group relative p-6 rounded-2xl border border-white/8 bg-white/3 hover:bg-white/6 hover:border-white/16 transition-all duration-300 cursor-default"
               >
-                <div className="w-12 h-12 mb-4 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <feature.icon className="w-6 h-6 text-primary" />
+                {/* Top accent line */}
+                <div className={`absolute top-0 left-6 right-6 h-px bg-gradient-to-r ${feature.color.replace('/20', '/60').replace('from-', 'from-').replace('to-', 'to-')} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+
+                <div className={`w-11 h-11 mb-5 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center ring-1 ring-white/10`}>
+                  <feature.icon className={`w-5 h-5 ${feature.iconColor}`} />
                 </div>
-                <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground text-sm">{feature.description}</p>
+                <h3 className="font-semibold text-white text-base mb-2 leading-snug">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
+      <TruckFeaturesSection />
+
+      <AwardsSection />
 
       {/* Road to More Loads CTA */}
       <section className="py-20 bg-gradient-to-r from-primary/10 via-background to-accent/10">
@@ -463,43 +500,8 @@ const FreightServices = () => {
         </div>
       </section>
 
-      {/* Trusted Brands Section */}
-      <section className="py-14 sm:py-20 bg-gradient-to-b from-[#0a1628] via-[#0d1e36] to-[#0a1628] relative">
-        <div className="container-custom relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 text-white">
-              Trusted by <span className="text-primary">Industry Leaders</span>
-            </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              We proudly serve and partner with America's most recognized brands, delivering reliable freight solutions nationwide.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
-            {brands.map((brand, index) => (
-              <motion.div
-                key={brand.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="flex items-center justify-center p-6 rounded-xl bg-white/5 border border-white/10 hover:border-primary/30 transition-colors"
-              >
-                <img
-                  src={brand.logo}
-                  alt={`${brand.name} - XXII Century freight partner`}
-                  className="max-h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Trusted By logo marquee (same as home page) */}
+      <TrustedByStripSection />
 
       <SEOContentSection pageKey="freightServices" />
     </Layout>
