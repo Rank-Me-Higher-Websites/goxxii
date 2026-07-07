@@ -24,6 +24,7 @@ import { TrustedByStripSection } from "@/components/sections/TrustedByStripSecti
 import { AwardsSection } from "@/components/sections/AwardsSection";
 import { DedicatedLanesSection } from "@/components/sections/DedicatedLanesSection";
 import { CarrierNetworkSection } from "@/components/sections/CarrierNetworkSection";
+import { TruckFeaturesSection } from "@/components/sections/TruckFeaturesSection";
 import { QuoteFormDialog } from "@/components/QuoteFormDialog";
 
 // Define trusted features
@@ -264,7 +265,7 @@ const FreightServices = () => {
           <MobileFeatureCarousel features={trustedFeatures} />
 
           {/* Desktop: Grid */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {trustedFeatures.map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -281,11 +282,19 @@ const FreightServices = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
 
+      {/* Dedicated Lanes map - directly below the feature boxes */}
+      <DedicatedLanesSection onGetQuote={() => setQuoteOpen(true)} />
+
+      {/* Freight shipping intro + truck photo */}
+      <section className="py-14 sm:py-20 bg-background">
+        <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={featuresInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.4 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             className="grid lg:grid-cols-2 gap-12 items-center"
           >
             <div className="order-2 lg:order-1 space-y-4 text-center lg:text-left">
@@ -357,53 +366,6 @@ const FreightServices = () => {
         </div>
       </section>
 
-      {/* Freight Shippers Section */}
-      <section className="py-14 sm:py-20 bg-muted/30">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <img
-                src={freightShipper}
-                alt="Black truck and white trailer"
-                className="rounded-2xl w-full"
-              />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="text-center lg:text-left"
-            >
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-                Freight <span className="text-primary">Shippers</span>
-              </h2>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  At XXII Century, our Freight Division combines industry expertise with unmatched service and communication. We specialize in <strong className="text-foreground">customer freight</strong> - established lanes with consistent volume for shippers who need reliability. We understand the complexities of modern logistics and are committed to streamlining the freight process across the continental United States.
-                </p>
-                <p>
-                  Through our <strong className="text-foreground">Trusted Carrier Network</strong>, we connect shippers with thoroughly vetted, high-performing carriers on dedicated customer lanes. The majority of our loads are <strong className="text-foreground">drop & hook</strong> - fast, no-touch freight that keeps freight moving and dock times minimal. We don't just move freight; we build lasting partnerships that drive efficiency and growth.
-                </p>
-                <p>
-                  Ready to ship with us? <Link to="/contact" className="text-primary hover:underline">Contact our logistics team</Link> for a custom rate on your lanes, or learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our commitment to excellence.
-                </p>
-              </div>
-              <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
-                <a href="/contact" className="flex items-center gap-2">
-                  <Truck className="w-5 h-5" />
-                  Ship With Us
-                </a>
-              </Button>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Industry-Leading Tools Section */}
       <section ref={fleetRef} className="py-24 relative overflow-hidden bg-[#07111f]">
         {/* Subtle background grid */}
@@ -461,7 +423,7 @@ const FreightServices = () => {
 
       <CarrierNetworkSection onGetQuote={() => setQuoteOpen(true)} />
 
-      <DedicatedLanesSection onGetQuote={() => setQuoteOpen(true)} />
+      <TruckFeaturesSection />
 
       <AwardsSection />
 
@@ -498,6 +460,53 @@ const FreightServices = () => {
               </a>
             </p>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Freight Shippers Section (moved to bottom) */}
+      <section className="py-14 sm:py-20 bg-muted/30">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <img
+                src={freightShipper}
+                alt="Black truck and white trailer"
+                className="rounded-2xl w-full"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="text-center lg:text-left"
+            >
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
+                Freight <span className="text-primary">Shippers</span>
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  At XXII Century, our Freight Division combines industry expertise with unmatched service and communication. We specialize in <strong className="text-foreground">customer freight</strong> - established lanes with consistent volume for shippers who need reliability. We understand the complexities of modern logistics and are committed to streamlining the freight process across the continental United States.
+                </p>
+                <p>
+                  Through our <strong className="text-foreground">Trusted Carrier Network</strong>, we connect shippers with thoroughly vetted, high-performing carriers on dedicated customer lanes. The majority of our loads are <strong className="text-foreground">drop & hook</strong> - fast, no-touch freight that keeps freight moving and dock times minimal. We don't just move freight; we build lasting partnerships that drive efficiency and growth.
+                </p>
+                <p>
+                  Ready to ship with us? <Link to="/contact" className="text-primary hover:underline">Contact our logistics team</Link> for a custom rate on your lanes, or learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our commitment to excellence.
+                </p>
+              </div>
+              <Button variant="hero" size="lg" className="mt-8 mx-auto lg:mx-0" asChild>
+                <a href="/contact" className="flex items-center gap-2">
+                  <Truck className="w-5 h-5" />
+                  Ship With Us
+                </a>
+              </Button>
+            </motion.div>
+          </div>
         </div>
       </section>
 
