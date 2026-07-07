@@ -226,10 +226,10 @@ const FreightServices = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <p className="text-muted-foreground uppercase tracking-widest mb-4">Freight Shipping Services</p>
-            
-            <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight mb-6">
-              Nationwide Freight Shipping <span className="text-primary">Solutions You Can Rely On</span>
+            <p className="text-white/95 font-semibold uppercase tracking-widest mb-4 [text-shadow:_0_2px_10px_rgba(0,0,0,0.85)]">Freight Shipping Services</p>
+
+            <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight mb-6 text-white [text-shadow:_0_2px_4px_rgba(0,0,0,0.65),_0_6px_28px_rgba(0,0,0,0.75)]">
+              Nationwide Freight Shipping <span className="text-primary [text-shadow:_0_2px_4px_rgba(0,0,0,0.7),_0_6px_28px_rgba(0,0,0,0.85)]">Solutions You Can Rely On</span>
             </h1>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
