@@ -23,6 +23,7 @@ import { SEOContentSection } from "@/components/sections/SEOContentSection";
 import { TrustedByStripSection } from "@/components/sections/TrustedByStripSection";
 import { AwardsSection } from "@/components/sections/AwardsSection";
 import { DedicatedLanesSection } from "@/components/sections/DedicatedLanesSection";
+import { CarrierNetworkSection } from "@/components/sections/CarrierNetworkSection";
 import { QuoteFormDialog } from "@/components/QuoteFormDialog";
 
 // Define trusted features
@@ -457,6 +458,8 @@ const FreightServices = () => {
           </div>
         </div>
       </section>
+
+      <CarrierNetworkSection onGetQuote={() => setQuoteOpen(true)} />
 
       <DedicatedLanesSection onGetQuote={() => setQuoteOpen(true)} />
 
