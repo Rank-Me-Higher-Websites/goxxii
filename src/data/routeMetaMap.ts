@@ -54,7 +54,7 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/company-drivers": {
     title: "CDL-A Company Driver Jobs - $2,300+/Week + Benefits | XXII",
     description:
-      "Company driver jobs starting at $2,300+/week. Full benefits: medical, dental, 401(k), paid vacation. Modern Volvo & Freightliner trucks, no-touch freight.",
+      "Company driver jobs starting at $2,300+/week. Full benefits: medical, dental, 401(k), paid vacation. Modern Volvo & Freightliner trucks, weekly home time.",
     keywords:
       "company driver jobs, CDL-A driver positions, trucking jobs with benefits, OTR company driver, company driver $2300 week, truck driver 401k, CDL-A truck driver salary, truck driver benefits package, OTR driver jobs 2026, truck driving career",
     ogTitle: "CDL-A Company Driver Jobs - $2,300+/Week + Benefits | XXII Century",

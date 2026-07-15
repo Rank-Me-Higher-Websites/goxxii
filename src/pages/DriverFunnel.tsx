@@ -29,7 +29,7 @@ const recruiterData: Record<string, { name: string; phone: string; phoneFormatte
 const perks = [
   { icon: DollarSign, label: "$2,300+", sub: "Starting Pay" },
   { icon: Fuel, label: "+2¢/mi", sub: "Fuel Bonus Day 1" },
-  { icon: Truck, label: "Drop & Hook", sub: "70–80% No-Touch", highlight: true },
+  { icon: Truck, label: "Drop & Hook", sub: "70–80% of Loads" },
   { icon: MapPin, label: "3,000+ Mi", sub: "Weekly Miles" },
 ];
 
@@ -37,7 +37,7 @@ const highlights = [
   { icon: Truck, title: "New Volvos & Freightliners", desc: "Brand new equipment with all the comforts" },
   { icon: Package, title: "Fridges, Microwaves, APU", desc: "Inverters & disc brakes on every truck" },
   { icon: MapPin, title: "Customer Lanes", desc: "Consistent freight, steady miles every week" },
-  { icon: Shield, title: "Dry Van Only", desc: "No-touch freight - less hassle" },
+  { icon: Shield, title: "Dry Van Only", desc: "Dry van, consistent lanes" },
   { icon: Fuel, title: "Midwest, East, N & S", desc: "Wide running areas, more opportunities" },
   { icon: DollarSign, title: "Stops & Detention Paid", desc: "Extra stops, layovers - all compensated" },
   { icon: Users, title: "$1,500 Referral Bonus", desc: "Bring a friend, earn a bonus" },
@@ -142,7 +142,7 @@ const DriverFunnel = () => {
                 </motion.h1>
 
                 <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="text-muted-foreground text-xs lg:text-sm max-w-xl mb-2 lg:mb-4">
-                  <span className="text-foreground font-semibold">$2,300+ Starting Pay</span> starting Day 1. <span className="text-accent font-semibold">50%+ Drop &amp; Hook</span> - no-touch freight, less waiting, more miles. New trucks, customer lanes, dry van only.
+                  <span className="text-foreground font-semibold">$2,300+ Starting Pay</span> starting Day 1. <span className="text-accent font-semibold">50%+ Drop &amp; Hook</span> - fast loading, less waiting, more miles. New trucks, customer lanes, dry van only.
                 </motion.p>
 
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 lg:gap-3 mb-3 lg:mb-5">

@@ -86,11 +86,6 @@ export const CompanyDriverSection = () => {
                   <span className={`font-medium text-foreground ${benefit.highlight ? "text-base font-bold" : "text-sm"}`}>
                     {benefit.text}
                   </span>
-                  {benefit.highlight && (
-                    <span className="ml-auto text-[10px] uppercase tracking-wide font-semibold text-emerald-400 bg-emerald-500/15 px-2 py-0.5 rounded-full">
-                      No-Touch
-                    </span>
-                  )}
                 </motion.div>
               ))}
             </div>

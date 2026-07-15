@@ -302,7 +302,7 @@ const FreightServices = () => {
                 Experience fast, reliable, and secure <strong className="text-foreground">freight shipping services</strong> with XXII Century Inc. We specialize in <strong className="text-foreground">dry van customer freight</strong> with nationwide coverage, competitive rates, and tailored solutions to fit your business needs. Our expert team ensures your shipments arrive on time, every time.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We run <strong className="text-foreground">50%+ drop & hook freight</strong> - no-touch loads on established customer lanes. Less waiting at docks means more miles and more money. Get transparent quotes, real-time tracking, and exceptional support. Ready to move your freight?{" "}
+                We run <strong className="text-foreground">50%+ drop & hook freight</strong> on established customer lanes. Less waiting at docks means more miles and more money. Get transparent quotes, real-time tracking, and exceptional support. Ready to move your freight?{" "}
                 <button type="button" onClick={() => setQuoteOpen(true)} className="text-primary hover:underline font-medium">
                   Get your quote
                 </button>{" "}
@@ -493,7 +493,7 @@ const FreightServices = () => {
                   At XXII Century, our Freight Division combines industry expertise with unmatched service and communication. We specialize in <strong className="text-foreground">customer freight</strong> - established lanes with consistent volume for shippers who need reliability. We understand the complexities of modern logistics and are committed to streamlining the freight process across the continental United States.
                 </p>
                 <p>
-                  Through our <strong className="text-foreground">Trusted Carrier Network</strong>, we connect shippers with thoroughly vetted, high-performing carriers on dedicated customer lanes. The majority of our loads are <strong className="text-foreground">drop & hook</strong> - fast, no-touch freight that keeps freight moving and dock times minimal. We don't just move freight; we build lasting partnerships that drive efficiency and growth.
+                  Through our <strong className="text-foreground">Trusted Carrier Network</strong>, we connect shippers with thoroughly vetted, high-performing carriers on dedicated customer lanes. The majority of our loads are <strong className="text-foreground">drop & hook</strong> freight that keeps loads moving and dock times minimal. We don't just move freight; we build lasting partnerships that drive efficiency and growth.
                 </p>
                 <p>
                   Ready to ship with us? <Link to="/contact" className="text-primary hover:underline">Contact our logistics team</Link> for a custom rate on your lanes, or learn more <Link to="/about" className="text-primary hover:underline">about our trucking company</Link> and our commitment to excellence.

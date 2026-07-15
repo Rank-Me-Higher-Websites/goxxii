@@ -116,7 +116,7 @@ export const HeroSection = () => {
                 </div>
                 <div>
                   <div className="text-sm font-bold text-foreground">Drop &amp; Hook</div>
-                  <div className="text-xs text-muted-foreground">No-Touch Only</div>
+                  <div className="text-xs text-muted-foreground">Dock Efficient</div>
                 </div>
               </div>
             </motion.div>
