@@ -105,17 +105,102 @@ function lanePoints(id: number, a: City, b: City): [number, number][] {
   return decodePolyline(encoded);
 }
 
+// ---- Live truck animation ----
+// Lanes that get a live moving truck (chosen so no two share an endpoint city,
+// which keeps the waypoint chips from overlapping).
+const ACTIVE_LANES = [1, 5, 8, 11, 15];
+// Per-lane fuel-stop position (fraction of the route) so the fuel chips
+// spread out geographically instead of clustering.
+const FUEL_FRACS: Record<number, number> = { 1: 0.55, 5: 0.48, 8: 0.64, 11: 0.4, 15: 0.74 };
+const DWELL = { pickup: 2400, fuel: 2800, drop: 3200 };
+const FADE_MS = 400;
+
+interface Geom {
+  pts: [number, number][];
+  cum: number[];
+  total: number;
+}
+
+// One pass of corner-cutting so the truck glides through bends instead of snapping
+function chaikin(pts: [number, number][]): [number, number][] {
+  if (pts.length < 3) return pts;
+  const out: [number, number][] = [pts[0]];
+  for (let i = 0; i < pts.length - 1; i++) {
+    const a = pts[i];
+    const b = pts[i + 1];
+    out.push(
+      [a[0] * 0.75 + b[0] * 0.25, a[1] * 0.75 + b[1] * 0.25],
+      [a[0] * 0.25 + b[0] * 0.75, a[1] * 0.25 + b[1] * 0.75],
+    );
+  }
+  out.push(pts[pts.length - 1]);
+  return out;
+}
+
+function buildGeom(pts: [number, number][]): Geom {
+  const cum = [0];
+  let total = 0;
+  for (let i = 1; i < pts.length; i++) {
+    total += L.latLng(pts[i - 1]).distanceTo(L.latLng(pts[i]));
+    cum.push(total);
+  }
+  return { pts, cum, total };
+}
+
+function posAt(g: Geom, d: number): [number, number] {
+  if (d <= 0) return g.pts[0];
+  if (d >= g.total) return g.pts[g.pts.length - 1];
+  let i = 1;
+  while (i < g.cum.length && g.cum[i] < d) i++;
+  const a = g.pts[i - 1];
+  const b = g.pts[i];
+  const t = (d - g.cum[i - 1]) / (g.cum[i] - g.cum[i - 1] || 1);
+  return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
+}
+
+const SVG = {
+  truck:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>',
+  pickup:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z"/><path d="M6 18h12"/><path d="M6 14h12"/><path d="M6 10h12"/></svg>',
+  fuel:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="15" y1="22" y2="22"/><line x1="4" x2="14" y1="9" y2="9"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2a2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/></svg>',
+  drop:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>',
+};
+
+type WpKind = "pickup" | "fuel" | "drop";
+
+interface Truck {
+  from: City;
+  to: City;
+  geom: Geom;
+  fuelD: number;
+  marker: L.Marker;
+  wp: Record<WpKind, L.Marker>;
+  speed: number; // meters per ms
+  dist: number;
+  leg: 0 | 1; // 0 = pickup -> fuel, 1 = fuel -> delivery
+  target: number;
+  mode: "drive" | "dwell" | "fadeOut" | "fadeIn";
+  until: number;
+  next: "leg1" | "reset" | "resume";
+  px: number | null; // last screen x, for facing direction
+  flipped: boolean;
+  gpuHinted: boolean;
+}
+
 export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps) => {
   const mapEl = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
   const laneLayers = useRef<globalThis.Map<number, L.Polyline>>(new globalThis.Map());
   const hitLayers = useRef<globalThis.Map<number, L.Polyline>>(new globalThis.Map());
   const allBounds = useRef<L.LatLngBounds | null>(null);
+  const rafRef = useRef<number | null>(null);
   const [active, setActive] = useState<number | null>(null);
   const activeRef = useRef<number | null>(null);
   const [hintVisible, setHintVisible] = useState(true);
   const interactedRef = useRef(false);
-  const cycleRef = useRef<number | null>(null);
 
   const highlight = (id: number, hot: boolean) => {
     const lane = laneLayers.current.get(id);
@@ -124,16 +209,11 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
     if (hot) lane.bringToFront();
   };
 
-  // First real interaction: stop the attract loop and hide the hint pill
+  // First real interaction hides the hint pill
   const markInteracted = () => {
     if (interactedRef.current) return;
     interactedRef.current = true;
     setHintVisible(false);
-    if (cycleRef.current != null) {
-      highlight(cycleRef.current, false);
-      hitLayers.current.get(cycleRef.current)?.closeTooltip();
-      cycleRef.current = null;
-    }
   };
 
   useEffect(() => {
@@ -183,7 +263,17 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
       hitLayers.current.set(lane.id, hit);
     });
 
-    Object.values(CITIES).forEach((city) => {
+    // Cities that host a pickup/delivery chip get the chip as their only marker
+    // (the chip carries the city label), so nothing stacks on top of anything.
+    const chipCities = new Set<string>();
+    ACTIVE_LANES.forEach((laneId) => {
+      const lane = LANES.find((l) => l.id === laneId)!;
+      chipCities.add(lane.from);
+      chipCities.add(lane.to);
+    });
+
+    Object.entries(CITIES).forEach(([key, city]) => {
+      if (chipCities.has(key)) return;
       L.circleMarker([city.lat, city.lng], {
         radius: 3.5,
         color: "#007aff",
@@ -204,35 +294,200 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
     allBounds.current = bounds;
     map.fitBounds(bounds.pad(0.12));
 
+    // ---- Live moving trucks + waypoint icons ----
+    const wpIcon = (kind: WpKind) =>
+      L.divIcon({ className: "", html: `<div class="lane-wp lane-wp-${kind}">${SVG[kind]}</div>`, iconSize: [20, 20], iconAnchor: [10, 10] });
+    const truckIcon = () =>
+      L.divIcon({
+        className: "",
+        html: `<div class="lane-truck-wrap"><div class="lane-truck-note"></div><div class="lane-truck">${SVG.truck}</div></div>`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 14],
+      });
+
+    const trucks: Truck[] = [];
+    ACTIVE_LANES.forEach((laneId, idx) => {
+      const lane = LANES.find((l) => l.id === laneId)!;
+      const from = CITIES[lane.from];
+      const to = CITIES[lane.to];
+      const raw = lanePoints(laneId, from, to);
+      const geom = buildGeom(chaikin(chaikin(chaikin(raw))));
+      const fuelD = geom.total * (FUEL_FRACS[laneId] ?? 0.55);
+      const cityChip = (kind: WpKind, city: City, latlng: [number, number]) =>
+        L.marker(latlng, { icon: wpIcon(kind), interactive: false, zIndexOffset: 400 })
+          .bindTooltip(city.name, { permanent: true, direction: city.labelDir, className: "lane-city-label" })
+          .addTo(map);
+      const wp = {
+        pickup: cityChip("pickup", from, geom.pts[0]),
+        fuel: L.marker(posAt(geom, fuelD), { icon: wpIcon("fuel"), interactive: false, zIndexOffset: 400 }).addTo(map),
+        drop: cityChip("drop", to, geom.pts[geom.pts.length - 1]),
+      };
+      // Stagger start positions along the route so the board feels alive but not synchronized
+      const dist = geom.total * ((idx + 0.4) / ACTIVE_LANES.length);
+      const leg: 0 | 1 = dist < fuelD ? 0 : 1;
+      const marker = L.marker(posAt(geom, dist), { icon: truckIcon(), interactive: false, zIndexOffset: 1000 }).addTo(map);
+      trucks.push({
+        from,
+        to,
+        geom,
+        fuelD,
+        marker,
+        wp,
+        speed: geom.total / (52000 + idx * 9000), // full route in ~52-88s
+        dist,
+        leg,
+        target: leg === 0 ? fuelD : geom.total,
+        mode: "drive",
+        until: 0,
+        next: "resume",
+        px: null,
+        flipped: false,
+        gpuHinted: false,
+      });
+    });
+
+    // Sub-pixel positioning: Leaflet rounds marker positions to whole pixels,
+    // which makes slow movement look twitchy. Setting the exact fractional
+    // layer point keeps the glide perfectly smooth.
+    const setPos = (tk: Truck, d: number) => {
+      const ll = L.latLng(posAt(tk.geom, d));
+      tk.marker.setLatLng(ll);
+      const el = tk.marker.getElement();
+      if (!el) return;
+      if (!tk.gpuHinted) {
+        el.style.willChange = "transform";
+        tk.gpuHinted = true;
+      }
+      const p = map.latLngToLayerPoint(ll);
+      L.DomUtil.setPosition(el, p);
+      // Face the direction of travel (flip the glyph when heading west)
+      if (tk.px != null) {
+        const dx = p.x - tk.px;
+        if (Math.abs(dx) > 0.05) {
+          const flipped = dx < 0;
+          if (flipped !== tk.flipped) {
+            tk.flipped = flipped;
+            el.querySelector<HTMLElement>(".lane-truck")?.classList.toggle("flip", flipped);
+          }
+        }
+      }
+      tk.px = p.x;
+    };
+
+    // Smoothstep speed ramp so trucks pull away and arrive gently
+    const easeFor = (tk: Truck) => {
+      const ramp = Math.min(tk.geom.total * 0.07, 90000);
+      const legStart = tk.leg === 0 ? 0 : tk.fuelD;
+      const fromStop = Math.max(0, tk.dist - legStart);
+      const toStop = Math.max(0, tk.target - tk.dist);
+      const t = Math.min(1, Math.min(fromStop, toStop) / ramp);
+      const s = t * t * (3 - 2 * t);
+      return 0.22 + 0.78 * s;
+    };
+
+    // Status pill lives inside the truck marker and fades in/out with CSS —
+    // no tooltip popping, and it stays glued to the truck.
+    const noteEl = (tk: Truck) => tk.marker.getElement()?.querySelector<HTMLElement>(".lane-truck-note");
+    const showNote = (tk: Truck, kind: WpKind) => {
+      const text =
+        kind === "pickup" ? `At pickup · ${tk.from.name}` : kind === "fuel" ? "Fueling · truck stop" : `Delivered · ${tk.to.name}`;
+      const el = noteEl(tk);
+      if (el) {
+        el.innerHTML = `<span class="lane-note-dot lane-note-${kind}"></span>${text}`;
+        el.classList.add("show");
+      }
+      const wpEl = tk.wp[kind].getElement()?.firstElementChild as HTMLElement | undefined;
+      if (wpEl) {
+        wpEl.classList.remove("wp-pop");
+        void wpEl.offsetWidth;
+        wpEl.classList.add("wp-pop");
+      }
+    };
+    const hideNote = (tk: Truck) => noteEl(tk)?.classList.remove("show");
+
+    const fade = (tk: Truck, opacity: number) => {
+      const el = tk.marker.getElement();
+      if (el) {
+        el.style.transition = `opacity ${FADE_MS}ms ease`;
+        el.style.opacity = String(opacity);
+      }
+    };
+
+    let last = 0;
+    const animate = (ts: number) => {
+      if (!last) last = ts;
+      const dt = Math.min(ts - last, 50);
+      last = ts;
+      trucks.forEach((tk) => {
+        switch (tk.mode) {
+          case "drive": {
+            tk.dist = Math.min(tk.dist + tk.speed * easeFor(tk) * dt, tk.target);
+            setPos(tk, tk.dist);
+            if (tk.dist >= tk.target) {
+              if (tk.leg === 0) {
+                showNote(tk, "fuel");
+                tk.mode = "dwell";
+                tk.until = ts + DWELL.fuel;
+                tk.next = "leg1";
+              } else {
+                showNote(tk, "drop");
+                tk.mode = "dwell";
+                tk.until = ts + DWELL.drop;
+                tk.next = "reset";
+              }
+            }
+            break;
+          }
+          case "dwell": {
+            if (ts >= tk.until) {
+              hideNote(tk);
+              if (tk.next === "leg1") {
+                tk.leg = 1;
+                tk.target = tk.geom.total;
+                tk.mode = "drive";
+              } else if (tk.next === "reset") {
+                fade(tk, 0);
+                tk.mode = "fadeOut";
+                tk.until = ts + FADE_MS;
+              } else {
+                tk.mode = "drive";
+              }
+            }
+            break;
+          }
+          case "fadeOut": {
+            if (ts >= tk.until) {
+              tk.dist = 0;
+              tk.leg = 0;
+              tk.target = tk.fuelD;
+              setPos(tk, 0);
+              fade(tk, 1);
+              tk.mode = "fadeIn";
+              tk.until = ts + FADE_MS;
+            }
+            break;
+          }
+          case "fadeIn": {
+            if (ts >= tk.until) {
+              showNote(tk, "pickup");
+              tk.mode = "dwell";
+              tk.until = ts + DWELL.pickup;
+              tk.next = "resume";
+            }
+            break;
+          }
+        }
+      });
+      rafRef.current = requestAnimationFrame(animate);
+    };
+    rafRef.current = requestAnimationFrame(animate);
+
     return () => {
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
       map.remove();
       mapRef.current = null;
       laneLayers.current.clear();
       hitLayers.current.clear();
-    };
-  }, []);
-
-  // Attract loop: pulse one lane at a time (with its name) until the user interacts
-  useEffect(() => {
-    const tick = () => {
-      if (interactedRef.current || activeRef.current != null || !mapRef.current) return;
-      const prev = cycleRef.current;
-      if (prev != null) {
-        highlight(prev, false);
-        hitLayers.current.get(prev)?.closeTooltip();
-      }
-      const nextIdx = prev == null ? 0 : (LANES.findIndex((l) => l.id === prev) + 1) % LANES.length;
-      const id = LANES[nextIdx].id;
-      cycleRef.current = id;
-      highlight(id, true);
-      const hit = hitLayers.current.get(id);
-      if (hit) hit.openTooltip(hit.getCenter());
-    };
-    const iv = setInterval(tick, 1800);
-    const start = setTimeout(tick, 900);
-    return () => {
-      clearInterval(iv);
-      clearTimeout(start);
     };
   }, []);
 
@@ -282,11 +537,7 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
                 Dedicated Freight Network
               </span>
             </div>
-            <p className="text-sm text-gray-400 mt-3 mb-5">
-              Click a lane to see it on the map.
-            </p>
-
-            <ul className="space-y-1 overflow-y-auto max-h-[320px] lg:max-h-none lg:flex-1 pr-1">
+            <ul className="mt-5 space-y-1 overflow-y-auto max-h-[320px] lg:max-h-none lg:flex-1 pr-1">
               {LANES.map((lane) => {
                 const isActive = active === lane.id;
                 return (
@@ -350,6 +601,13 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
           {/* Map */}
           <div className="relative z-0 h-[420px] lg:h-auto lg:min-h-[640px]">
             <div ref={mapEl} className="absolute inset-0" />
+            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-[500] pointer-events-none flex items-center gap-2 rounded-full bg-[#0d1e36]/95 shadow-lg px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-white">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-70" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
+              </span>
+              Live Network
+            </div>
             <div
               className="absolute top-3 right-3 sm:top-4 sm:right-4 z-[500] pointer-events-none flex items-center gap-2 rounded-full bg-white/95 shadow-lg px-3 py-1.5 sm:px-4 sm:py-2 text-[11px] sm:text-xs font-semibold text-slate-600 transition-opacity duration-500"
               style={{ opacity: hintVisible ? 1 : 0 }}

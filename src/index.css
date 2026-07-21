@@ -465,6 +465,93 @@
   display: none;
 }
 
+/* Live moving trucks + waypoints */
+.lane-truck {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0069dd;
+  filter:
+    drop-shadow(0 1.5px 0 #fff) drop-shadow(0 -1.5px 0 #fff)
+    drop-shadow(1.5px 0 0 #fff) drop-shadow(-1.5px 0 0 #fff)
+    drop-shadow(0 3px 4px rgba(13, 30, 54, 0.3));
+  transition: transform 0.45s ease;
+}
+.lane-truck svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2.4;
+}
+.lane-truck.flip {
+  transform: scaleX(-1);
+}
+
+.lane-wp {
+  width: 19px;
+  height: 19px;
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(13, 30, 54, 0.28), 0 0 0 2px rgba(255, 255, 255, 0.95);
+  transition: transform 0.3s ease;
+}
+.lane-wp svg {
+  width: 11px;
+  height: 11px;
+}
+.lane-wp-pickup { background: #0d1e36; }
+.lane-wp-fuel { background: #e0872a; }
+.lane-wp-drop { background: #1f9d6b; }
+.wp-pop { animation: wpPop 0.7s ease; }
+@keyframes wpPop {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+/* Truck status pill — fades in/out with the truck, never pops */
+.lane-truck-wrap {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+.lane-truck-note {
+  position: absolute;
+  bottom: calc(100% + 9px);
+  left: 50%;
+  transform: translate(-50%, 5px);
+  background: rgba(13, 30, 54, 0.92);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(13, 30, 54, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.lane-truck-note.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.lane-note-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.lane-note-pickup { background: #5b8cff; }
+.lane-note-fuel { background: #f0a850; }
+.lane-note-drop { background: #34c88a; }
+
 .leaflet-container .leaflet-control-attribution {
   background: rgba(255, 255, 255, 0.6);
   font-size: 9px;
