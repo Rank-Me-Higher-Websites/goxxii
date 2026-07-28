@@ -3,20 +3,20 @@
   "brand": "XXII Century Trucking",
   "shortBrand": "XXII Century",
   "domain": "goxxii.com",
-  "tagline": "Chicago-area trucking carrier \u2014 owner operators keep 90% linehaul; company drivers start at 65 CPM with raises to 80 CPM",
+  "tagline": "Chicago-area driver-first CDL-A carrier — owner operators keep 80% of gross ($8,000+/week average); company drivers start at $2,300+/week with full benefits",
   "primaryAudience": "Owner operators and CDL-A company drivers (Chicago/Midwest)",
-  "secondaryAudience": "Fleet owners considering a Power Only partnership; shippers needing dry-van freight",
+  "secondaryAudience": "Fleet owners and small carriers considering a Power Only partnership; shippers/brokers needing dry-van freight",
   "voice": {
     "tone": "Direct, confident, no-fluff. Talks to drivers like a knowledgeable peer who has run the numbers, not a corporate marketer.",
     "personality": "Honest about trade-offs. Names specific dollar amounts and percentages, never vague ranges. Counters generic advice with evidence.",
-    "perspective": "Insider perspective \u2014 dispatcher / carrier ops / experienced operator."
+    "perspective": "Insider perspective — dispatcher / carrier ops / experienced operator."
   },
   "doSay": [
     "Specific dollar amounts, miles, percentages, dates (the ones in siteFacts below)",
     "Empathy openers: 'If you've been searching X, you've probably noticed Y'",
     "Bold lead-ins on numbered insights",
     "Internal links woven naturally into sentences",
-    "Subtle carrier framing \u2014 'the right carrier' / 'a carrier built around drivers'",
+    "Subtle carrier framing — 'the right carrier' / 'a carrier built around drivers'",
     "Honest trade-offs",
     "Em-dashes for emphasis"
   ],
@@ -28,23 +28,29 @@
     "It's important to note / At the end of the day / In conclusion",
     "Click-baity questions",
     "Hyperbolic claims ('absolutely the best', 'unbeatable', 'world-class')",
-    "Emojis in body text"
+    "Emojis in body text",
+    "CPM pay figures for company drivers — the site advertises weekly pay ($2,300+/week), NOT cents-per-mile",
+    "'90% linehaul' — the current owner operator split is 80% of gross"
   ],
   "groundingRules": [
     "CRITICAL: Use ONLY facts that appear in the siteFacts section below or in entities. Do NOT invent operational specifics, numbers, lane lists, dispatcher policies, fleet sizes, or service details. If a topic requires a fact not in siteFacts, write generically (industry-wide, not company-specific) or omit that detail.",
-    "When citing specific company numbers (pay percent, CPM, referral bonus, etc.), use the EXACT values from siteFacts \u2014 never approximate or substitute.",
-    "When referencing location, use 'Woodridge, IL (Chicago metro)' or 'Chicago-area' \u2014 not just 'Chicago' since HQ is actually in Woodridge.",
+    "When citing specific company numbers (pay percent, weekly pay, referral bonus, etc.), use the EXACT values from siteFacts — never approximate or substitute.",
+    "Owner operator pay is 80% of GROSS (linehaul) revenue — never write '90%' or '90% linehaul'. That figure is outdated.",
+    "Company driver pay is quoted as $2,300+/week ($104K–$120K/yr) with automatic raises every 75,000 miles. Do NOT use CPM / cents-per-mile figures for company drivers — the site deliberately avoids CPM language.",
+    "When referencing location, use 'Woodridge, IL (Chicago metro)' or 'Chicago-area' — not just 'Chicago'. HQ is 7501 Lemont Rd, Suite 200, Woodridge, IL 60517. The site also refers to itself broadly as a 'Chicago' carrier, so 'Chicago-area' is safe.",
     "Lane specifics (which states / cities the company runs to): do NOT name specific lanes unless they appear in siteFacts.",
-    "Pay structure: owner operators are on 90% linehaul revenue with transparent settlements; company drivers earn 65 CPM starting, with raises to 80 CPM. Don't invent alternative structures.",
-    "Equipment: dry vans, reefers, and flatbeds available. Power Only program for fleet owners with their own trucks.",
-    "Always include the phone number 630-948-0501 in the closing CTA paragraph.",
+    "Pay structure: owner operators keep 80% of gross linehaul revenue with transparent weekly settlements and zero hidden fees (no forced dispatch fees, no trailer rental fees, no ELD charges). Company drivers earn $2,300+/week starting with automatic raises. Don't invent alternative structures.",
+    "Equipment: the XXII Century trailer network is DRY VAN ONLY (drop & hook). Do NOT claim reefers or flatbeds as company equipment. Drivers can use XXII Century trailers or bring their own tractor (Power Only).",
+    "Always include the phone number 630-914-6037 in the closing CTA paragraph.",
     "When citing facts that aren't about the company itself (fuel prices, regulations, industry trends), link to one of the approved externalLinks domains as the source. Do NOT invent statistics or cite unnamed 'experts/studies'."
   ],
   "entities": {
     "company": "XXII Century Trucking",
-    "phone": "630-948-0501",
-    "applyUrl": "https://intelliapp.driverapponline.com/c/goxxii?r=Eve",
-    "headquarters": "7501 Lemont Rd, Woodridge, IL",
+    "legalName": "XXII Century Inc (operating as XXII Century Trucking)",
+    "phone": "630-914-6037",
+    "recruitingEmail": "james@goxxii.com",
+    "applyUrl": "https://intelliapp.driverapponline.com/c/goxxii?r=bodan",
+    "headquarters": "7501 Lemont Rd, Suite 200, Woodridge, IL 60517",
     "primaryHub": "Woodridge, IL (Chicago metro)",
     "regions": [
       "Chicago",
@@ -53,55 +59,66 @@
       "Midwest"
     ],
     "foundedYear": 2009,
-    "fleetSize": "500+ drivers"
+    "yearsInBusiness": "17+ years",
+    "teamSize": "100+ drivers",
+    "reviews": "4.8/5 across 127+ reviews"
   },
   "siteFacts": {
-    "ownerOperatorPay": "Owner operators keep 90% of linehaul revenue with transparent weekly settlements and zero hidden fees. No forced dispatch fees, no trailer rental surprises.",
-    "companyDriverPay": "Company drivers start at 65 CPM with raises to 80 CPM. Full benefits: medical, dental, 401(k), paid vacation. Late-model trucks.",
-    "topEarnings": "Top owner operators average $8,000+/week gross. Company driver career pay path reaches up to $300K.",
-    "trailers": "Large trailer network: dry vans, reefers, and flatbeds. Drivers can use XXII Century trailers or bring their own.",
-    "fuelProgram": "Large fleet volume fuel discounts at major truck stops nationwide. AI-powered fuel management tool to find cheapest fuel on your route.",
-    "dispatchModel": "No forced dispatch \u2014 you see the load, you see the rate, you decide. Flexible scheduling: dedicated lanes + open-board freight. Both local Chicago-area and long-haul OTR available.",
+    "ownerOperatorPay": "Owner operators keep 80% of gross linehaul revenue on every load, with transparent weekly settlements and zero hidden fees. No forced dispatch fees, no trailer rental fees, no ELD charges.",
+    "companyDriverPay": "Company drivers start at $2,300+/week ($104K–$120K/yr) with automatic raises every 75,000 miles. Full benefits: medical, dental, vision, 401(k), paid vacation. Modern Volvo & Freightliner trucks, weekly pay, weekly home time.",
+    "topEarnings": "Top owner operators average $8,000+/week gross. Owner operators average $300,000+ annually.",
+    "trailers": "Large dry-van trailer network (drop & hook freight). Drivers can use XXII Century trailers or bring their own tractor. The trailer network is dry van only.",
+    "fuelProgram": "Large fleet-volume fuel discounts at major truck stops nationwide (biggest fuel discount guaranteed). AI-powered fuel management tool to find the cheapest fuel on your route.",
+    "dispatchModel": "No forced dispatch — you see the load, you see the rate, you decide. Flexible scheduling: customer (dedicated) lanes + open-board freight. Both regional Chicago-area and long-haul OTR available. 24/7 dispatch support.",
     "freight": "Fortune 500 freight partners. 97% on-time delivery rate.",
-    "powerOnlyProgram": "Fleet owners and small carriers: Power Only program. Trailer provided by XXII Century, 24/7 dispatch, fast pay.",
+    "powerOnlyProgram": "Fleet owners and small carriers: Power Only program. Trailer provided by XXII Century, 24/7 dispatch, weekly pay. Requires Motor Carrier Authority, DOT Number, Auto Liability, Cargo Liability, and Non-Owned Trailer Interchange Insurance. Fleet program owner operators average $300,000+ annually.",
     "referralBonus": "$1,000 per qualified driver referral, unlimited (no cap).",
-    "applicationProcess": "Apply online in roughly 5 minutes at intelliapp.driverapponline.com/c/goxxii?r=Eve, or call 630-948-0501.",
-    "freightServices": "Nationwide FTL dry van shipping with 97% on-time rate. Real-time GPS tracking, dedicated account management."
+    "applicationProcess": "Apply online in roughly 5 minutes at intelliapp.driverapponline.com/c/goxxii?r=bodan, or call 630-914-6037. Recruiting typically responds within 1 hour; many drivers start within 48 hours.",
+    "freightServices": "Nationwide FTL dry van shipping across all 48 contiguous states with a 97% on-time rate. Real-time GPS tracking, dedicated account management, asset-based capacity for shippers and brokers.",
+    "company": "Founded 2009 in Woodridge, IL (Chicago metro). 17+ years in business, 100+ drivers, 4.8/5 across 127+ reviews. Asset-based Chicago CDL-A carrier hauling Fortune 500 freight."
   },
   "siteFAQs": {
     "ownerOperators": [
       {
         "q": "What percentage do owner operators keep at XXII Century?",
-        "a": "Owner operators receive competitive linehaul rates (90% linehaul) with transparent settlements and zero hidden fees. There are no forced dispatch fees or trailer rental surprises."
+        "a": "Owner operators keep 80% of gross linehaul revenue on every load. There are no forced dispatch fees, no trailer rental fees, and no ELD charges — what you earn stays in your pocket."
       },
       {
         "q": "Do I need my own trailer to be an owner operator?",
-        "a": "No. XXII Century offers a large trailer network including dry vans, reefers, and flatbeds. You can use our trailers or bring your own."
+        "a": "No. XXII Century offers a large dry-van trailer network. You can use our trailers or bring your own tractor."
       },
       {
         "q": "What fuel discounts are available for owner operators?",
-        "a": "We provide large fleet volume fuel discounts at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route."
+        "a": "We provide large fleet-volume fuel discounts at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route."
       },
       {
         "q": "Can I choose my own routes as an owner operator?",
-        "a": "Yes. We offer flexible scheduling with both dedicated lanes and open-board freight. Whether you prefer local Chicago-area runs or long-haul OTR, we match loads to your preferences."
+        "a": "Yes. We offer flexible scheduling with both customer (dedicated) lanes and open-board freight. Whether you prefer regional Chicago-area runs or long-haul OTR, we match loads to your preferences."
       },
       {
         "q": "Is there a referral bonus for owner operators?",
-        "a": "Yes \u2014 $1,000 per qualified driver referral, unlimited (no cap)."
+        "a": "Yes — $1,000 per qualified driver referral, unlimited (no cap)."
+      }
+    ],
+    "companyDrivers": [
+      {
+        "q": "How much do company drivers earn at XXII Century?",
+        "a": "Company drivers start at $2,300+/week ($104K–$120K/yr) with automatic raises every 75,000 miles, plus full benefits and weekly pay."
       }
     ]
   },
   "internalLinks": {
-    "/": "homepage / Owner Operators landing",
-    "/owner-operators": "owner operator opportunities + 90% linehaul comp details",
-    "/owner-operators/:state": "state-specific owner operator pages",
-    "/company-drivers": "company driver positions (65-80 CPM + benefits)",
-    "/fleet-program": "Power Only program for fleet owners",
-    "/freight-shipping-services": "freight shipping services for shippers",
+    "/": "homepage / driver-first carrier overview",
+    "/owner-operators": "owner operator opportunities + 80%-of-gross comp details",
+    "/owner-operators/:state": "state-specific owner operator pages (Illinois, Iowa, Kentucky, Ohio, Mississippi, South Dakota, West Virginia)",
+    "/company-drivers": "company driver positions ($2,300+/week + benefits)",
+    "/fleet-program": "Power Only program for fleet owners and small carriers",
+    "/freight-shipping-services": "dry van freight shipping services for shippers/brokers",
     "/careers": "all open positions",
-    "/contact": "contact form + phone 630-948-0501",
-    "/about": "company background (since 2009, Woodridge IL)"
+    "/about": "company background (since 2009, Woodridge IL)",
+    "/about/reviews": "driver and shipper reviews (4.8/5 across 127+ reviews)",
+    "/blog": "blog index",
+    "/contact": "contact form + phone 630-914-6037"
   },
   "categories": [
     "Owner Operators",
@@ -113,7 +130,7 @@
     {
       "cluster": "Owner Operator Economics",
       "examples": [
-        "90% linehaul math vs other carriers",
+        "80%-of-gross math vs other carriers",
         "owner-op take-home with XXII fuel discount",
         "cost-per-mile control",
         "owner-op vs company-driver economics"
@@ -140,7 +157,7 @@
     {
       "cluster": "Practical Operations",
       "examples": [
-        "XXII trailer network: dry vans/reefers/flatbeds",
+        "XXII dry-van trailer network + drop & hook",
         "fuel management AI tool",
         "Power Only program for fleet owners",
         "referral bonus program"
@@ -170,7 +187,7 @@
     "headings": "H1 title + 4-6 H2 sections + optional H3 subsections",
     "openingPattern": "Start with a 2-sentence TL;DR summary that captures the main takeaway, then a hook addressing the reader's frustration or question.",
     "internalLinkCount": "2-3 woven into sentences",
-    "ctaPlacement": "End with a CTA mentioning phone 630-948-0501 + apply URL",
+    "ctaPlacement": "End with a CTA mentioning phone 630-914-6037 + apply URL",
     "images": "Hero image picked from blogCoverImages (workflow picks one). Optional 1-2 in-body via ![alt](url)",
     "alsoReadCallout": "Optional `_Also Read: [title](/blog/slug)` line linking one existing post",
     "externalLinkCount": "1-2 woven into sentences, only from approved externalLinks list"
@@ -180,8 +197,6 @@
     "chicago-cdl-a-truck-driving-jobs-owner-operator",
     "owner-operator-truck-driver-jobs-negotiate",
     "local-owner-operator-jobs",
-    "dedicated-owner-operator-jobs",
-    "local-owner-operator-jobs-chicago-tips",
     "owner-operator-guide",
     "dry-van-owner-operator-jobs",
     "local-owner-operator-jobs-home",
@@ -192,9 +207,11 @@
     "truck-driving-career-chicago",
     "owner-operator-costs-benefits",
     "owner-operator-jobs-chicago-truckers-know",
-    "hiring-owner-operators-chicago"
+    "hiring-owner-operators-chicago",
+    "analyzing-truck-driver-shortage-statistics-in-the-tech-era-2026",
+    "how-to-go-from-company-driver-to-owner-operator-the-honest-step-by-step-for-2026"
   ],
-  "_note": "siteFacts + siteFAQs are the source of truth for company-specific claims. The LLM workflow is instructed to use ONLY these facts when making company-specific assertions. Update this file when XXII Century's pay structure, location, or service offerings change.",
+  "_note": "siteFacts + siteFAQs are the source of truth for company-specific claims. The LLM workflow is instructed to use ONLY these facts when making company-specific assertions. The canonical business facts also live in the repo at src/data/routeMetaMap.ts and src/data/schemaData.ts. Update this file when XXII Century's pay structure, location, phone, or service offerings change.",
   "externalLinks": [
     {
       "url": "https://www.fmcsa.dot.gov/",
@@ -223,7 +240,7 @@
     },
     {
       "url": "https://www.bls.gov/oes/current/oes533032.htm",
-      "name": "U.S. BLS \u2014 Heavy Truck Drivers",
+      "name": "U.S. BLS — Heavy Truck Drivers",
       "useFor": "official wage / employment stats"
     },
     {

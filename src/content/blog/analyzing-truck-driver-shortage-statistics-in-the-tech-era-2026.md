@@ -45,15 +45,15 @@ The shortage is not just an abstract industry problem—it has concrete dollar v
 
 - **Leverage at contract time:** When driver supply is tight, carriers cannot afford to lowball. A driver who knows the market rate for their lane and equipment type can negotiate from a position of actual strength, not just hope.
 - **Retention incentives:** Driver retention in trucking has become a budget line item at serious carriers. Pay increases, referral bonuses, and improved home time are not charity—they are competitive responses to the shortage. At XXII Century Trucking, that includes a **$1,000 referral bonus per qualified driver with no cap**, which means a driver with a network can turn the shortage into direct income.
-- **Owner-operator expansion opportunity:** With shipper demand up and carrier capacity limited, owner-operators running under a carrier with Fortune 500 freight access can capture serious gross revenue. Top owner operators at XXII Century average **$8,000+ per week gross** on 90% linehaul revenue.
-- **Career trajectory acceleration:** In a tight labor market, company drivers advance faster. A 65 CPM starting rate that ramps to 80 CPM—with a career pay path that reaches up to $300K—becomes a realistic target when carriers are actively trying to keep experienced drivers in the seat.
+- **Owner-operator expansion opportunity:** With shipper demand up and carrier capacity limited, owner-operators running under a carrier with Fortune 500 freight access can capture serious gross revenue. Top owner operators at XXII Century average **$8,000+ per week gross** on 80% of gross linehaul revenue.
+- **Career trajectory acceleration:** In a tight labor market, company drivers advance faster. A starting rate of $2,300+/week with automatic raises every 75,000 miles—and a career path that runs from $104K–$120K a year as a company driver into $300K+ territory for owner operators—becomes a realistic target when carriers are actively trying to keep experienced drivers in the seat.
 
 ## Common mistakes drivers make in a shortage market
 
 The shortage gives drivers leverage, but leverage only works if you use it correctly. Most drivers who fail to benefit from the tight market make predictable errors.
 
 - **Staying at a carrier out of habit, not performance:** The shortage means better options exist. If your current carrier's settlements are unclear, dispatch is coercive, or pay has not moved in two years, you are leaving money on the table by defaulting to inertia.
-- **Ignoring revenue structure when comparing offers:** CPM is not the whole picture for company drivers, and percentage splits mean nothing without understanding what "linehaul revenue" actually covers. A carrier advertising 90% of linehaul with transparent weekly settlements and zero hidden fees is a fundamentally different offer than one burying deductions in the fine print.
+- **Ignoring revenue structure when comparing offers:** CPM is not the whole picture for company drivers, and percentage splits mean nothing without understanding what "linehaul revenue" actually covers. A carrier advertising 80% of gross with transparent weekly settlements and zero hidden fees is a fundamentally different offer than one burying deductions in the fine print.
 - **Overlooking owner-operator demand 2026 as a career inflection point:** Drivers who have been considering the lease-to-own or owner-operator path sometimes wait for "a better time." In a high-demand, tight-supply market, this is about as good as it gets for stepping into independent operation.
 - **Undervaluing endorsements:** In a shortage market, hazmat, tanker, and doubles/triples endorsements create a smaller, more competitive sub-pool. Specialty endorsements command premium rates and open more consistent freight options.
 - **Skipping the fuel math:** Shortage-driven rate increases can be partially offset by fuel cost increases at the same time. Using carrier fuel discount programs and AI-powered fuel optimization tools matters more when margins are under pressure.
@@ -66,7 +66,7 @@ Before you can negotiate, you need a clean baseline. Pull your last 90 days of s
 
 ### Use the shortage to time your owner-operator transition
 
-If you have been running as a company driver and building toward your own authority or a carrier lease, the current market conditions favor the move. Owner-operator demand in 2026 is high, spot and contract rates are under upward pressure, and carriers need reliable independent capacity. The [owner-operator program at XXII Century](/owner-operators) runs on 90% linehaul revenue with no forced dispatch—you see the load, you see the rate, and you decide.
+If you have been running as a company driver and building toward your own authority or a carrier lease, the current market conditions favor the move. Owner-operator demand in 2026 is high, spot and contract rates are under upward pressure, and carriers need reliable independent capacity. The [owner-operator program at XXII Century](/owner-operators) runs on 80% of gross linehaul revenue with no forced dispatch—you see the load, you see the rate, and you decide.
 
 ### Treat your CDL record like an asset, not a formality
 
@@ -97,4 +97,4 @@ Technology—ELDs, freight matching apps, AI routing—has improved efficiency b
 
 _The truck driver shortage statistics for 2026 are not just a news story—they are a market signal that experienced, qualified CDL drivers hold real leverage right now._ Carriers need drivers more than they have in years, and the ones building serious freight businesses are responding with better pay, cleaner deal structures, and actual flexibility. The drivers who benefit most are the ones who understand the numbers, run their own comparisons, and choose carriers based on what the data says rather than habit or hope.
 
-XXII Century Trucking is built around giving drivers the full picture—90% linehaul for owner operators, 65 to 80 CPM for company drivers, no forced dispatch, and Fortune 500 freight. Call **630-948-0501** to talk through where you stand, or [apply online in about 5 minutes](https://intelliapp.driverapponline.com/c/goxxii?r=Eve) and let the numbers speak for themselves.
+XXII Century Trucking is built around giving drivers the full picture—80% of gross for owner operators, $2,300+/week for company drivers, no forced dispatch, and Fortune 500 freight. Call **630-914-6037** to talk through where you stand, or [apply online in about 5 minutes](https://intelliapp.driverapponline.com/c/goxxii?r=bodan) and let the numbers speak for themselves.
