@@ -2,6 +2,13 @@ import { Router } from "express";
 import { requireAuth } from "./auth";
 import { storage } from "./storage";
 import { insertDriverSchema, insertCheckInSchema, insertLeadSchema } from "../shared/schema";
+import {
+  evaluateRewards,
+  REWARD_PROGRAM,
+  ALL_RULES,
+  type DriverStats,
+} from "../src/data/rewardsProgram";
+import { renderCertificateHTML } from "./certificate";
 import crypto from "crypto";
 
 function generateToken(): string {
@@ -476,6 +483,77 @@ export function registerRoutes(router: Router) {
 
       res.json({ sent: results.filter(r => r.status === "sent").length, total: activeDrivers.length, results });
     } catch (err) { next(err); }
+  });
+
+  // ===== DRIVER REWARDS PROGRAM =====
+
+  // Helper: days between hireDate and now.
+  function daysSince(d?: Date | string | null): number {
+    if (!d) return 0;
+    const t = new Date(d).getTime();
+    if (Number.isNaN(t)) return 0;
+    return Math.max(0, Math.floor((Date.now() - t) / 86_400_000));
+  }
+
+  // Public: the full program matrix (for the marketing page / n8n reference).
+  router.get("/api/rewards/program", (_req, res) => {
+    res.json({ categories: REWARD_PROGRAM, rules: ALL_RULES.length });
+  });
+
+  // n8n engine: POST a driver stats snapshot, get every earned award back.
+  // n8n populates the rank/event fields from fleet-wide data before calling.
+  router.post("/api/rewards/evaluate", (req, res) => {
+    const stats = (req.body || {}) as DriverStats;
+    const earned = evaluateRewards(stats);
+    res.json({ earned, count: earned.length });
+  });
+
+  // Public, no-login: a driver's personal rewards page data, keyed by their token.
+  // Reuses the existing per-driver survey token — the email's "My Rewards" link carries it.
+  router.get("/api/rewards/status/:token", async (req, res, next) => {
+    try {
+      const driver = await storage.getDriverByToken(req.params.token);
+      if (!driver) return res.status(404).json({ found: false });
+
+      const tenureDays = daysSince(driver.hireDate);
+      const tenureYears = Math.floor(tenureDays / 365);
+      // Only tenure/onboarding is derivable from the CRM. Fleet stats (miles, MPG,
+      // safety) are supplied by n8n; when absent those awards simply don't show yet.
+      const stats: DriverStats = {
+        status: driver.status === "active" ? "active" : "inactive",
+        tenureDays,
+        tenureYears,
+      };
+      const earned = evaluateRewards(stats);
+
+      // Progress toward the next tenure milestone, for the progress bars.
+      const tenureTargets = [30, 60, 90, 182, 365, 730, 1095, 1825, 3650];
+      const nextTarget = tenureTargets.find((t) => t > tenureDays) ?? null;
+
+      res.json({
+        found: true,
+        driver: { firstName: driver.firstName, lastName: driver.lastName },
+        stats: { tenureDays, tenureYears },
+        earned,
+        nextMilestone: nextTarget
+          ? { target: nextTarget, current: tenureDays, remaining: nextTarget - tenureDays }
+          : null,
+      });
+    } catch (err) { next(err); }
+  });
+
+  // Certificate file: branded, print-ready HTML. n8n renders it to PDF/PNG and
+  // attaches it to the driver's email; drivers can also open it to print.
+  router.get("/api/rewards/certificate", (req, res) => {
+    const name = String(req.query.name || "XXII Driver").slice(0, 80);
+    const title = String(req.query.title || "Certificate of Achievement").slice(0, 80);
+    const subtitle = req.query.subtitle ? String(req.query.subtitle).slice(0, 160) : undefined;
+    const date =
+      String(req.query.date || "").slice(0, 40) ||
+      new Date().toLocaleDateString("en-US", { day: "2-digit", month: "short", year: "numeric" });
+    const certId = String(req.query.certId || "XXII-CERT").slice(0, 40);
+    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    res.send(renderCertificateHTML({ name, title, subtitle, date, certId }));
   });
 }
 

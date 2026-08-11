@@ -34,6 +34,8 @@ import SurveyLinks from "./pages/portal/SurveyLinks";
 import ExitSurveys from "./pages/portal/ExitSurveys";
 import PublicSurvey from "./pages/PublicSurvey";
 import PublicRegister from "./pages/PublicRegister";
+import Loyalty from "./pages/Loyalty";
+import DriverRewards from "./pages/DriverRewards";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -58,6 +60,9 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
+
+          <Route path="/loyalty" element={<Loyalty />} />
+          <Route path="/loyalty/:token" element={<DriverRewards />} />
 
           <Route path="/survey" element={<Navigate to="/survey/register" replace />} />
           <Route path="/survey/register" element={<PublicRegister />} />
