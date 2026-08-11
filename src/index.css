@@ -525,6 +525,10 @@
   position: absolute;
   bottom: calc(100% + 9px);
   left: 50%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   transform: translate(-50%, 5px);
   background: rgba(13, 30, 54, 0.92);
   color: #fff;
@@ -550,8 +554,53 @@
   margin-right: 5px;
   vertical-align: middle;
 }
+/* Delivery confirmation pill that lands on the drop point */
+.lane-arrival {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  /* The Leaflet divIcon wrapper is 0px wide; without this the pill collapses
+     to a dark stub instead of sizing to its label. */
+  width: max-content;
+  transform: translate(-50%, 4px) scale(0.94);
+  background: #0d1e36;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border-radius: 999px;
+  padding: 5px 11px 5px 6px;
+  box-shadow: 0 6px 18px rgba(13, 30, 54, 0.32);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.lane-arrival.show {
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1);
+}
+.lane-arrival-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  border-radius: 50%;
+  background: #34c88a;
+  color: #0d1e36;
+}
+.lane-arrival-check svg {
+  width: 10px;
+  height: 10px;
+}
+
 .lane-note-pickup { background: #5b8cff; }
+.lane-note-route { background: #8b7dff; }
 .lane-note-fuel { background: #f0a850; }
+.lane-note-rest { background: #4dc9e6; }
+.lane-note-scale { background: #c4a6ff; }
 .lane-note-drop { background: #34c88a; }
 
 .leaflet-container .leaflet-control-attribution {

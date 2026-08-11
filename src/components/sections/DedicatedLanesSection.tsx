@@ -57,6 +57,11 @@ const LANES: { id: number; from: keyof typeof CITIES; to: keyof typeof CITIES }[
   { id: 15, from: "westJeffersonOH", to: "sullivanMO" },
 ];
 
+// The live demo cycles these three lanes rather than all fifteen, so a viewer
+// sees a whole loop in ~80s. Picked for geographic spread and a mix of a long
+// two-stop haul and a shorter single-stop run. Clicking any lane still works.
+const DEMO_LANE_IDS = [1, 10, 15];
+
 // Solid "navigation" routes with a soft white casing underneath. The wider
 // white casing leaves a clean gap where lanes overlap, so the network reads clearly.
 const NET_CASE: L.PolylineOptions = { color: "#ffffff", weight: 2.8, opacity: 0.9, lineCap: "round", lineJoin: "round" };
@@ -69,7 +74,28 @@ const PHASE_MS: Record<Phase, number> = { network: 3600, pickup: 2400, route: 30
 // Network intro: draw the 15 routes on one-by-one, fast.
 const NET_BUILD_STAGGER = 150;
 const NET_BUILD_DUR = 480;
-const FUEL_FRAC = 0.55;
+// En-route pacing. Drive time scales with route length so every lane cruises at
+// the same on-screen speed (short lanes used to blur past in the fixed window),
+// and the truck holds at each stop like a GPS tracker catching up.
+const TARGET_DRIVE_MS = 17000;
+const DRIVE_MIN_MS = 13500;
+const DRIVE_MAX_MS = 24000;
+const DWELL_MS = 2100;
+// Three scheduled stops on every run — the truck eases in, the status pill pops
+// above it, then it pulls back out. Hovering a pin names the stop.
+type StopKind = "fuel" | "rest" | "scale";
+const STOPS: {
+  frac: number;
+  kind: StopKind;
+  note: string;
+  label: string;
+  status: string;
+  dot: string;
+}[] = [
+  { frac: 0.22, kind: "fuel", note: "Fueling · 15 min", label: "Fuel stop", status: "Fueling", dot: "lane-note-fuel" },
+  { frac: 0.52, kind: "rest", note: "Truck stop · 30 min break", label: "Truck stop", status: "On break", dot: "lane-note-rest" },
+  { frac: 0.79, kind: "scale", note: "Weigh station · cleared", label: "Weigh station", status: "At scales", dot: "lane-note-scale" },
+];
 const STEPS: { key: Phase; label: string }[] = [
   { key: "pickup", label: "Pickup" },
   { key: "route", label: "AI Route" },
@@ -161,8 +187,15 @@ const SVG = {
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="15" y1="22" y2="22"/><line x1="4" x2="14" y1="9" y2="9"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2a2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/></svg>',
   drop:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>',
+  check:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+  rest:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h12z"/><path d="M17 9h1a3 3 0 0 1 0 6h-1"/><path d="M6 2v2"/></svg>',
+  scale:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v17"/><path d="M7 21h10"/><path d="M4 8h16"/><path d="m4 8-2 6h4z"/><path d="m20 8-2 6h4z"/></svg>',
 };
-type WpKind = "pickup" | "fuel" | "drop";
+type WpKind = "pickup" | "fuel" | "drop" | "rest";
+type EndKind = "pickup" | "drop";
 
 export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps) => {
   const mapEl = useRef<HTMLDivElement>(null);
@@ -171,6 +204,10 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
   const rafRef = useRef<number | null>(null);
   const [phase, setPhase] = useState<Phase>("network");
   const [featuredId, setFeaturedId] = useState<number | null>(null);
+  // Live read-outs for the tracker: miles left on the run, and what the truck
+  // is doing right now ("Rolling", "Fueling", "On break"…).
+  const [milesLeft, setMilesLeft] = useState<number | null>(null);
+  const [activity, setActivity] = useState<string | null>(null);
 
   useEffect(() => {
     if (!mapEl.current || mapRef.current) return;
@@ -229,22 +266,79 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
 
     // Featured pins + hero truck (hidden until a load plays)
     const wpIcon = (kind: WpKind) => L.divIcon({ className: "", html: `<div class="lane-wp lane-wp-${kind}">${SVG[kind]}</div>`, iconSize: [18, 18], iconAnchor: [9, 9] });
-    const pins: Record<WpKind, L.Marker> = {
+    // Endpoint pins only — the mid-route truck stops own their own markers below.
+    const pins: Record<EndKind, L.Marker> = {
       pickup: L.marker([0, 0], { icon: wpIcon("pickup"), interactive: false, opacity: 0, zIndexOffset: 600 }).addTo(map),
-      fuel: L.marker([0, 0], { icon: wpIcon("fuel"), interactive: false, opacity: 0, zIndexOffset: 600 }).addTo(map),
       drop: L.marker([0, 0], { icon: wpIcon("drop"), interactive: false, opacity: 0, zIndexOffset: 600 }).addTo(map),
     };
+    // One pin per scheduled truck stop, matching STOPS.
+    const stopIcon = (kind: StopKind) =>
+      L.divIcon({ className: "", html: `<div class="lane-wp lane-wp-${kind}">${SVG[kind]}</div>`, iconSize: [18, 18], iconAnchor: [9, 9] });
+    // Interactive so hovering a pin names the stop.
+    const stopPins = STOPS.map((s) =>
+      L.marker([0, 0], { icon: stopIcon(s.kind), interactive: true, opacity: 0, zIndexOffset: 600 })
+        .bindTooltip(s.label, { direction: "top", offset: [0, -10], className: "lane-tooltip" })
+        .addTo(map),
+    );
+    const popStop = (i: number) => {
+      const el = stopPins[i]?.getElement()?.firstElementChild as HTMLElement | undefined;
+      if (el) {
+        el.classList.remove("wp-pop");
+        void el.offsetWidth;
+        el.classList.add("wp-pop");
+      }
+    };
     const hero = L.marker([0, 0], {
-      icon: L.divIcon({ className: "", html: `<div class="lane-truck">${SVG.truck}</div>`, iconSize: [26, 26], iconAnchor: [13, 13] }),
+      icon: L.divIcon({
+        className: "",
+        html:
+          `<div class="lane-truck-wrap">` +
+          `<div class="lane-truck-note"><span class="lane-note-dot"></span><span class="lane-note-txt"></span></div>` +
+          `<div class="lane-truck">${SVG.truck}</div>` +
+          `</div>`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 14],
+      }),
       interactive: false,
       opacity: 0,
       zIndexOffset: 1200,
     }).addTo(map);
+    // Status pill that rides above the truck ("Fueling", "Truck stop", …).
+    const setNote = (text: string, dotClass = "") => {
+      const el = hero.getElement();
+      const note = el?.querySelector(".lane-truck-note") as HTMLElement | null;
+      if (!note) return;
+      if (text) {
+        (note.querySelector(".lane-note-txt") as HTMLElement).textContent = text;
+        const dot = note.querySelector(".lane-note-dot") as HTMLElement;
+        dot.className = `lane-note-dot ${dotClass}`;
+        note.classList.add("show");
+      } else {
+        note.classList.remove("show");
+      }
+    };
+    // Delivery confirmation that lands on the drop point at arrival.
+    const arrivalBadge = L.marker([0, 0], {
+      icon: L.divIcon({
+        className: "",
+        html: `<div class="lane-arrival"><span class="lane-arrival-check">${SVG.check}</span>On-time delivery</div>`,
+        iconSize: [0, 0],
+        iconAnchor: [0, 30],
+      }),
+      interactive: false,
+      opacity: 0,
+      zIndexOffset: 1400,
+    }).addTo(map);
+    const showArrival = (show: boolean) => {
+      arrivalBadge.setOpacity(show ? 1 : 0);
+      const el = arrivalBadge.getElement()?.firstElementChild as HTMLElement | undefined;
+      el?.classList.toggle("show", show);
+    };
 
     const allBounds = L.latLngBounds(Object.values(CITIES).map((c) => [c.lat, c.lng]));
     map.fitBounds(allBounds.pad(0.12));
 
-    const popWp = (kind: WpKind) => {
+    const popWp = (kind: EndKind) => {
       const el = pins[kind].getElement()?.firstElementChild as HTMLElement | undefined;
       if (el) {
         el.classList.remove("wp-pop");
@@ -252,7 +346,7 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
         el.classList.add("wp-pop");
       }
     };
-    const heroState = { px: null as number | null, flipped: false };
+    const heroState = { flipped: false };
     const setHeroPos = (geom: Geom, d: number) => {
       const ll = L.latLng(posAt(geom, d));
       hero.setLatLng(ll);
@@ -260,17 +354,19 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
       if (!el) return;
       const p = map.latLngToLayerPoint(ll);
       L.DomUtil.setPosition(el, p);
-      if (heroState.px != null) {
-        const dx = p.x - heroState.px;
-        if (Math.abs(dx) > 0.05) {
-          const flip = dx < 0;
-          if (flip !== heroState.flipped) {
-            heroState.flipped = flip;
-            (el.querySelector(".lane-truck") as HTMLElement | null)?.classList.toggle("flip", flip);
-          }
+      // Heading comes from a long look-ahead chord rather than the frame-to-frame
+      // delta, so a switchback or a tight bend no longer spins the truck around.
+      const look = geom.total * 0.06;
+      const a = map.latLngToLayerPoint(L.latLng(posAt(geom, Math.max(0, d - look))));
+      const b = map.latLngToLayerPoint(L.latLng(posAt(geom, Math.min(geom.total, d + look))));
+      const dx = b.x - a.x;
+      if (Math.abs(dx) > 6) {
+        const flip = dx < 0;
+        if (flip !== heroState.flipped) {
+          heroState.flipped = flip;
+          (el.querySelector(".lane-truck") as HTMLElement | null)?.classList.toggle("flip", flip);
         }
       }
-      heroState.px = p.x;
     };
     const pathsOf = (id: number) =>
       [routeLines.get(id), casings.get(id)]
@@ -296,8 +392,43 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
       });
     };
 
+    // Normalise cruise speed against the median lane so a short run like
+    // Golden → Rapid City no longer rockets across in the same fixed window.
+    const sortedTotals = Array.from(geoms.values())
+      .map((g) => g.total)
+      .sort((a, b) => a - b);
+    const medianTotal = sortedTotals[Math.floor(sortedTotals.length / 2)] || 1;
+    const driveMsFor = (g: Geom) =>
+      Math.min(DRIVE_MAX_MS, Math.max(DRIVE_MIN_MS, (g.total / medianTotal) * TARGET_DRIVE_MS));
+    const enrouteMsFor = (g: Geom) => driveMsFor(g) + STOPS.length * DWELL_MS;
+
+    // Distance travelled at a given elapsed time: eases into each stop, holds
+    // there for DWELL_MS, then eases back out — reads like a GPS breadcrumb.
+    // Returns how far along the truck is, and which stop it's parked at (-1 = rolling).
+    const enrouteAt = (g: Geom, el: number): { d: number; atStop: number } => {
+      const drive = driveMsFor(g);
+      let prev = 0;
+      let acc = 0;
+      for (let i = 0; i < STOPS.length; i++) {
+        const s = STOPS[i].frac;
+        const seg = drive * (s - prev);
+        if (el < acc + seg)
+          return { d: g.total * (prev + (s - prev) * smooth((el - acc) / seg)), atStop: -1 };
+        acc += seg;
+        if (el < acc + DWELL_MS) return { d: g.total * s, atStop: i };
+        acc += DWELL_MS;
+        prev = s;
+      }
+      const seg = drive * (1 - prev);
+      return {
+        d: g.total * (prev + (1 - prev) * smooth(Math.min(1, (el - acc) / seg))),
+        atStop: -1,
+      };
+    };
+
     let curFeat: number | null = null;
-    let fuelPassed = false;
+    let lastStop = -1;
+    let lastMiles = -1;
 
     const enterNetwork = () => {
       if (curFeat != null) clearRouteDraw(curFeat);
@@ -311,16 +442,24 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
         m.openTooltip();
       });
       pins.pickup.setOpacity(0).unbindTooltip();
-      pins.fuel.setOpacity(0);
+      stopPins.forEach((p) => p.setOpacity(0));
       pins.drop.setOpacity(0).unbindTooltip();
+      showArrival(false);
+      setNote("");
       hero.setOpacity(0);
       map.flyToBounds(allBounds.pad(0.12), { duration: 1.1 });
     };
 
     const enterFeature = (id: number) => {
       curFeat = id;
-      fuelPassed = false;
-      heroState.px = null;
+      lastStop = -1;
+      lastMiles = -1;
+      setMilesLeft(null);
+      setActivity(null);
+      showArrival(false);
+      setNote("Load picked up", "lane-note-pickup");
+      heroState.flipped = false;
+      (hero.getElement()?.querySelector(".lane-truck") as HTMLElement | null)?.classList.remove("flip");
       const lane = LANES.find((l) => l.id === id)!;
       const from = CITIES[lane.from];
       const to = CITIES[lane.to];
@@ -335,10 +474,12 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
       routeLines.get(id)?.bringToFront();
       // pins with endpoint labels
       pins.pickup.setLatLng(geom.pts[0]).bindTooltip(from.name, { permanent: true, direction: "bottom", offset: [0, 4], className: "lane-city-label" });
-      pins.fuel.setLatLng(posAt(geom, geom.total * FUEL_FRAC));
+      stopPins.forEach((pin, i) => {
+        pin.setLatLng(posAt(geom, geom.total * STOPS[i].frac));
+        pin.setOpacity(0);
+      });
       pins.drop.setLatLng(geom.pts[geom.pts.length - 1]).bindTooltip(to.name, { permanent: true, direction: "bottom", offset: [0, 4], className: "lane-city-label" });
       pins.pickup.setOpacity(1);
-      pins.fuel.setOpacity(0);
       pins.drop.setOpacity(0);
       popWp("pickup");
       setRouteDraw(id, 0);
@@ -365,29 +506,39 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
     const advance = (ts: number) => {
       switch (phaseName) {
         case "network":
-          enterFeature(LANES[idx % LANES.length].id);
+          enterFeature(DEMO_LANE_IDS[idx % DEMO_LANE_IDS.length]);
           phaseName = "pickup";
           break;
         case "pickup":
-          if (curFeat != null) {
-            pins.fuel.setOpacity(1);
-            popWp("fuel");
-          }
+          // Routing reveals both scheduled truck stops along the lane.
+          stopPins.forEach((pin, i) => {
+            pin.setOpacity(1);
+            popStop(i);
+          });
+          setNote("Route + fuel planned", "lane-note-route");
           phaseName = "route";
           break;
         case "route":
           if (curFeat != null) clearRouteDraw(curFeat);
+          setNote("");
           phaseName = "enroute";
           break;
         case "enroute":
           if (curFeat != null) {
+            const g = geoms.get(curFeat)!;
+            setHeroPos(g, g.total);
             pins.drop.setOpacity(1);
             popWp("drop");
+            arrivalBadge.setLatLng(g.pts[g.pts.length - 1]);
+            showArrival(true);
+            setNote("");
+            setMilesLeft(0);
+            setActivity("Delivered");
           }
           phaseName = "arrival";
           break;
         case "arrival":
-          idx = (idx + 1) % LANES.length;
+          idx = (idx + 1) % DEMO_LANE_IDS.length;
           enterNetwork();
           phaseName = "network";
           break;
@@ -406,13 +557,17 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
       if (jumpRef.current != null) {
         const jid = jumpRef.current;
         jumpRef.current = null;
-        idx = Math.max(0, LANES.findIndex((l) => l.id === jid));
-        enterFeature(LANES[idx].id);
+        // Any of the 15 can be spotlighted on click; the 3-lane demo rotation
+        // picks up again from wherever it was once this load finishes.
+        enterFeature(jid);
         phaseName = "pickup";
         phaseStart = ts;
       }
 
-      const dur = PHASE_MS[phaseName];
+      const dur =
+        phaseName === "enroute" && curFeat != null
+          ? enrouteMsFor(geoms.get(curFeat)!)
+          : PHASE_MS[phaseName];
       const t = Math.min(1, (ts - phaseStart) / dur);
 
       if (phaseName === "network") {
@@ -422,11 +577,27 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
         setRouteDraw(curFeat, smooth(t));
       } else if (phaseName === "enroute" && curFeat != null) {
         const geom = geoms.get(curFeat)!;
-        const d = smooth(t) * geom.total;
+        const { d, atStop } = enrouteAt(geom, ts - phaseStart);
         setHeroPos(geom, d);
-        if (!fuelPassed && d >= geom.total * FUEL_FRAC) {
-          fuelPassed = true;
-          popWp("fuel");
+        // Pop the pin the first time the truck reaches it, and show the status
+        // pill above the truck for as long as it's parked there.
+        if (atStop !== lastStop) {
+          lastStop = atStop;
+          if (atStop >= 0) {
+            popStop(atStop);
+            setNote(STOPS[atStop].note, STOPS[atStop].dot);
+            setActivity(STOPS[atStop].status);
+          } else {
+            setNote("");
+            setActivity("Rolling");
+          }
+        }
+        // Miles remaining, throttled so the tracker updates a few times a second
+        // rather than every frame.
+        const remaining = Math.round(((geom.total - d) / 1609.34) / 5) * 5;
+        if (remaining !== lastMiles) {
+          lastMiles = remaining;
+          setMilesLeft(remaining);
         }
       }
 
@@ -451,14 +622,14 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
   const stepIndex = STEPS.findIndex((s) => s.key === phase);
 
   return (
-    <section className="py-14 sm:py-20 bg-background">
+    <section id="dedicated-lanes" className="py-14 sm:py-20 bg-background">
       <div className="container-custom">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
             Our <span className="text-primary">Dedicated Lanes</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Contracted freight we run week in, week out — 15 dedicated lanes connecting the Rockies, the Plains, and the Midwest.
+            Contracted freight we run week in, week out — dedicated lanes connecting the Rockies, the Plains, and the Midwest.
           </p>
         </motion.div>
 
@@ -507,10 +678,6 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
 
             <div className="mt-6 pt-5 border-t border-white/10 flex items-center justify-between text-sm">
               <div>
-                <div className="font-display text-2xl font-bold text-white">15</div>
-                <div className="text-gray-400 text-xs uppercase tracking-wider">Dedicated Lanes</div>
-              </div>
-              <div>
                 <div className="font-display text-2xl font-bold text-white">11</div>
                 <div className="text-gray-400 text-xs uppercase tracking-wider">States Covered</div>
               </div>
@@ -541,7 +708,7 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-70" />
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
                     </span>
-                    <span className="text-sm font-semibold">Live Network · 15 Dedicated Lanes</span>
+                    <span className="text-sm font-semibold">Live Network · Dedicated Lanes</span>
                   </div>
                 ) : (
                   <>
@@ -555,7 +722,16 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
                           {featFrom} <span className="text-white/40 font-normal">→</span> {featTo}
                         </span>
                       </div>
-                      <span className="text-[11px] font-semibold text-sky-300 whitespace-nowrap">{STATUS[phase]}</span>
+                      <span className="flex items-center gap-2 whitespace-nowrap text-[11px] font-semibold">
+                        {phase === "enroute" && milesLeft != null && (
+                          <span className="tabular-nums text-white/45">
+                            {milesLeft.toLocaleString()} mi to go
+                          </span>
+                        )}
+                        <span className="text-sky-300">
+                          {phase === "enroute" && activity ? activity : STATUS[phase]}
+                        </span>
+                      </span>
                     </div>
                     <div className="relative grid grid-cols-4">
                       <span className="absolute top-[5px] left-[12.5%] right-[12.5%] h-0.5 bg-white/15 rounded-full" />
