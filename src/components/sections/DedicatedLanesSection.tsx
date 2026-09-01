@@ -224,11 +224,12 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
     });
     mapRef.current = map;
 
-    // CARTO started stamping "API KEY REQUIRED" across their keyless basemap
-    // tiles, so the default is Esri's Light Gray canvas: keyless, unwatermarked
-    // and quiet enough for the lane lines to carry the map. Set
-    // VITE_CARTO_API_KEY to go back to the Voyager road basemap.
+    // CARTO started stamping "API KEY REQUIRED" across their keyless raster
+    // tiles, so this uses Esri instead: a light grey canvas with the highway
+    // network laid over it, which keeps the road detail the lanes are drawn
+    // against. Set VITE_CARTO_API_KEY to go back to the Voyager basemap.
     const cartoKey = import.meta.env.VITE_CARTO_API_KEY as string | undefined;
+    const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services";
     if (cartoKey) {
       L.tileLayer(
         `https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png?api_key=${cartoKey}`,
@@ -241,13 +242,15 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
       ).addTo(map);
     } else {
       // Note the {z}/{y}/{x} ordering — Esri swaps y and x versus the usual scheme.
-      L.tileLayer(
-        "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-        {
-          attribution: "Tiles &copy; Esri",
-          maxZoom: 12,
-        },
-      ).addTo(map);
+      L.tileLayer(`${ESRI}/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
+        attribution: "Tiles &copy; Esri",
+        maxZoom: 12,
+      }).addTo(map);
+      // Highways on top of the canvas — this is what gives the map its roads.
+      L.tileLayer(`${ESRI}/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}`, {
+        maxZoom: 12,
+        opacity: 0.8,
+      }).addTo(map);
     }
 
     // Routes (casing pass, then coloured pass) + geometry
