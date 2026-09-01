@@ -224,11 +224,31 @@ export const DedicatedLanesSection = ({ onGetQuote }: DedicatedLanesSectionProps
     });
     mapRef.current = map;
 
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: "abcd",
-      maxZoom: 12,
-    }).addTo(map);
+    // CARTO started stamping "API KEY REQUIRED" across their keyless basemap
+    // tiles, so the default is Esri's Light Gray canvas: keyless, unwatermarked
+    // and quiet enough for the lane lines to carry the map. Set
+    // VITE_CARTO_API_KEY to go back to the Voyager road basemap.
+    const cartoKey = import.meta.env.VITE_CARTO_API_KEY as string | undefined;
+    if (cartoKey) {
+      L.tileLayer(
+        `https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png?api_key=${cartoKey}`,
+        {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+          subdomains: "abcd",
+          maxZoom: 12,
+        },
+      ).addTo(map);
+    } else {
+      // Note the {z}/{y}/{x} ordering — Esri swaps y and x versus the usual scheme.
+      L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+        {
+          attribution: "Tiles &copy; Esri",
+          maxZoom: 12,
+        },
+      ).addTo(map);
+    }
 
     // Routes (casing pass, then coloured pass) + geometry
     const routeLines = new globalThis.Map<number, L.Polyline>();
