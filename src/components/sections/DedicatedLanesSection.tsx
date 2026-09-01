@@ -57,9 +57,9 @@ const LANES: { id: number; from: keyof typeof CITIES; to: keyof typeof CITIES }[
   { id: 15, from: "westJeffersonOH", to: "sullivanMO" },
 ];
 
-// The live demo cycles these three lanes rather than all fifteen, so a viewer
-// sees a whole loop in ~80s. Picked for geographic spread and a mix of a long
-// two-stop haul and a shorter single-stop run. Clicking any lane still works.
+// The live demo cycles these three lanes rather than all fifteen. Picked for
+// geographic spread and a mix of long and short hauls; each run takes ~42-53s,
+// so a full loop is a little over two minutes. Clicking any lane still works.
 const DEMO_LANE_IDS = [1, 10, 15];
 
 // Solid "navigation" routes with a soft white casing underneath. The wider
@@ -70,17 +70,17 @@ const NET_STYLE: L.PolylineOptions = { color: "#2183ec", weight: 1.3, opacity: 0
 const FEAT_STYLE: L.PolylineOptions = { color: "#0060df", weight: 3, opacity: 1, lineCap: "round", lineJoin: "round" };
 
 type Phase = "network" | "pickup" | "route" | "enroute" | "arrival";
-const PHASE_MS: Record<Phase, number> = { network: 3600, pickup: 2400, route: 3000, enroute: 7600, arrival: 3000 };
+const PHASE_MS: Record<Phase, number> = { network: 4400, pickup: 3200, route: 4000, enroute: 7600, arrival: 3800 };
 // Network intro: draw the 15 routes on one-by-one, fast.
-const NET_BUILD_STAGGER = 150;
-const NET_BUILD_DUR = 480;
+const NET_BUILD_STAGGER = 200;
+const NET_BUILD_DUR = 600;
 // En-route pacing. Drive time scales with route length so every lane cruises at
 // the same on-screen speed (short lanes used to blur past in the fixed window),
 // and the truck holds at each stop like a GPS tracker catching up.
-const TARGET_DRIVE_MS = 17000;
-const DRIVE_MIN_MS = 13500;
-const DRIVE_MAX_MS = 24000;
-const DWELL_MS = 2100;
+const TARGET_DRIVE_MS = 24000;
+const DRIVE_MIN_MS = 19000;
+const DRIVE_MAX_MS = 33000;
+const DWELL_MS = 2700;
 // Three scheduled stops on every run — the truck eases in, the status pill pops
 // above it, then it pulls back out. Hovering a pin names the stop.
 type StopKind = "fuel" | "rest" | "scale";
