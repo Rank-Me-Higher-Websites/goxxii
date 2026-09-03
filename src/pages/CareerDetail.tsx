@@ -48,7 +48,7 @@ const jobDetails: Record<string, {
     offers: [
       "Competitive pay with weekly settlements and transparent payment structure",
       "Consistent freight with customer lanes and flexible scheduling",
-      "100% fuel discounts, maintenance support, and other cost-saving programs",
+      "100% of our fuel card discount passed to you, maintenance support, and other cost-saving programs",
       "Partnership with a trusted company that values your independence and hard work",
       "Professional support from our logistics and dispatch teams",
     ],
@@ -79,7 +79,7 @@ const jobDetails: Record<string, {
       "Competitive pay with opportunities for additional bonuses",
       "Stable work schedule with optional extra shifts",
       "Training programs and support for professional growth",
-      "Health insurance and other employee benefits",
+      "Automatic pay increases every 75,000 miles and performance bonuses",
       "A friendly and supportive team environment",
     ],
     location: "Nationwide",

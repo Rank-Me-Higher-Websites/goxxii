@@ -9,7 +9,7 @@ const benefits = [
   { icon: Truck, text: "70–80% Drop & Hook", highlight: true },
   { icon: DollarSign, text: "$2,300+" },
   { icon: TrendingUp, text: "Consistent Miles" },
-  { icon: Shield, text: "Full Benefits" },
+  { icon: Shield, text: "Weekly Pay" },
   { icon: MessageSquare, text: "AI Detention Pay" },
 ];
 
@@ -62,7 +62,7 @@ export const CompanyDriverSection = () => {
               Steady Pay, Zero Hassle
             </h2>
             <p className="text-sm text-muted-foreground mb-5">
-              Get consistent miles, $2,300+/week starting pay, and full benefits without the overhead of ownership. Own your own truck? Explore our <Link to="/owner-operators" className="text-muted-foreground hover:text-primary underline underline-offset-2">owner operator program</Link> — or browse more <a href="https://cdlagency.com/drivers" className="text-muted-foreground hover:text-primary underline underline-offset-2">truck driver jobs</a> through CDL Agency.
+              Get consistent miles, $2,300+/week starting pay, and late-model equipment without the overhead of ownership. Own your own truck? Explore our <Link to="/owner-operators" className="text-muted-foreground hover:text-primary underline underline-offset-2">owner operator program</Link> — or browse more <a href="https://cdlagency.com/drivers" className="text-muted-foreground hover:text-primary underline underline-offset-2">truck driver jobs</a> through CDL Agency.
             </p>
 
             {/* Benefits Grid */}
@@ -92,7 +92,7 @@ export const CompanyDriverSection = () => {
 
             {/* Additional perks */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-5">
-              {["Health Insurance", "401k Match", "Paid Time Off", "Home Weekly"].map((perk) => (
+              {["Weekly Pay", "Late-Model Equipment", "Home Weekly"].map((perk) => (
                 <span key={perk} className="inline-flex items-center gap-1.5 text-xs text-muted-foreground bg-muted/50 px-2.5 py-1 rounded-full">
                   <Check className="w-3 h-3 text-primary" />
                   {perk}

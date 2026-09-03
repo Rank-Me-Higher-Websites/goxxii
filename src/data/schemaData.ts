@@ -5,7 +5,8 @@ const COMPANY = {
   url: "https://goxxii.com",
   logo: "https://goxxii.com/wp-content/uploads/2025/01/cropped-XXII-Century-Logo.png",
   foundingDate: "2009",
-  phone: "+1-630-914-6037",
+  phone: "+1-630-948-0501",
+  recruitingPhone: "+1-630-914-6037",
   customerServicePhone: "+1-224-240-6441",
   email: "james@goxxii.com",
   address: {
@@ -43,7 +44,7 @@ export const getOrganizationSchema = () => ({
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: COMPANY.phone,
+      telephone: COMPANY.recruitingPhone,
       contactType: "recruiting",
       email: COMPANY.email,
       availableLanguage: ["English", "Spanish", "Russian"],
@@ -366,7 +367,7 @@ export const homeFaqsPlain = [
 export const ownerOperatorFaqsPlain = [
   { question: "What percentage do owner operators keep at XXII Century?", answer: "Owner operators keep 80% of gross linehaul revenue on every load. There are no forced dispatch fees, no trailer rental fees, and no ELD charges — what you earn stays in your pocket." },
   { question: "Do I need my own trailer to be an owner operator?", answer: "No. XXII Century offers a large trailer network including dry vans. You can use our trailers or bring your own." },
-  { question: "What fuel discounts are available for owner operators?", answer: "We provide 100% fuel discounts at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route." },
+  { question: "What fuel discounts are available for owner operators?", answer: "We pass 100% of our fuel card discount to you at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route." },
   { question: "Can I choose my own routes as an owner operator?", answer: "Yes. We offer flexible scheduling with both customer lanes and open-board freight. Whether you prefer regional or long-haul OTR, we match loads to your preferences." },
   { question: "Is there a referral bonus for owner operators?", answer: "Yes - we offer an unlimited referral bonus program. Refer qualified drivers and earn $1,000 per referral with no cap." },
 ];
@@ -407,7 +408,7 @@ export const contactFaqsPlain = [
 export const freightServicesFaqsPlain = [
   { question: "What freight services does XXII Century offer?", answer: "We provide dry van freight shipping across the continental U.S. Our asset-based fleet handles FTL shipments with real-time GPS tracking and dedicated account management." },
   { question: "How does XXII Century ensure on-time delivery?", answer: "We maintain a 97% on-time delivery rate through AI-powered route optimization, real-time tracking, proactive dispatch support, and a modern fleet of well-maintained trucks." },
-  { question: "Can I get a freight shipping quote?", answer: "Yes. Contact our logistics team at 630-914-6037 or email james@goxxii.com for a free, no-obligation freight quote. We respond within 1 hour." },
+  { question: "Can I get a freight shipping quote?", answer: "Yes. Contact our logistics team at 630-948-0501 or email james@goxxii.com for a free, no-obligation freight quote. We respond within 1 hour." },
   { question: "Does XXII Century work with freight brokers?", answer: "Yes. We partner with freight brokers and shippers nationwide. Our asset-based fleet provides reliable capacity with competitive rates and full shipment visibility." },
   { question: "What areas does XXII Century serve for freight shipping?", answer: "We serve all 48 contiguous states. Our Chicago headquarters coordinates nationwide freight lanes with both dedicated and spot capacity options." },
 ];

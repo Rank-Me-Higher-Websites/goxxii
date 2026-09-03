@@ -27,7 +27,7 @@ const keyPoints: Record<string, { icon: any; label: string }[]> = {
   ],
   companyDrivers: [
     { icon: DollarSign, label: "$2,300+" },
-    { icon: Shield, label: "Full Benefits" },
+    { icon: Shield, label: "Weekly Pay" },
     { icon: Truck, label: "Late-Model Equipment" },
     { icon: Users, label: "Home Weekly" },
   ],
@@ -53,7 +53,7 @@ const seoContent = {
   home: {
     heading: "Why Choose XXII Century for Your Trucking Career",
     paragraphs: [
-      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 17 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions averaging $300K+ yearly or company driver roles offering $2,300+/week with full benefits, our team is committed to your success on the road.",
+      "XXII Century has been a trusted name in the <strong>Chicago trucking industry</strong> for over 17 years. We specialize in connecting skilled CDL-A drivers with high-paying freight opportunities from Fortune 500 companies. Whether you're searching for owner operator positions averaging $300K+ yearly or company driver roles offering $2,300+/week, our team is committed to your success on the road.",
       "Our technology-driven approach sets us apart from traditional carriers. AI-powered dispatch optimizes your routes for maximum earnings while minimizing empty miles. Real-time load matching ensures you're never left searching for freight, and our 24/7 support team handles logistics so you can focus on driving. We invest in tools that put more money in your pocket.",
       "From the moment you apply, we prioritize transparency and respect. No hidden fees, no surprise deductions-just honest partnerships that help you build a sustainable trucking career. Join hundreds of drivers who have found their home with a carrier that truly values their contribution to keeping America moving."
     ],
@@ -81,7 +81,7 @@ const seoContent = {
   companyDrivers: {
     heading: "Stable Trucking Careers with Full Support",
     paragraphs: [
-      "XXII Century offers <strong>CDL-A company driver positions</strong> designed for professionals who want consistent earnings without the overhead of truck ownership. Starting at $2,300+/week with performance bonuses, our drivers earn $104,000–$120,000 annually while enjoying comprehensive health benefits, 401k matching, and paid time off that lets you recharge.",
+      "XXII Century offers <strong>CDL-A company driver positions</strong> designed for professionals who want consistent earnings without the overhead of truck ownership. Starting at $2,300+/week with performance bonuses, our drivers earn $104,000–$120,000 annually with consistent miles and weekly pay.",
       "Our modern fleet features late-model equipment with the latest safety technology, ensuring comfortable and efficient runs mile after mile. Automatic pay increases every 75,000 miles reward your loyalty and experience, while safety bonuses and fuel incentives put extra money in your pocket throughout the year. We recognize hard work.",
       "We understand that <strong>home time matters</strong>. That's why we offer flexible scheduling options, customer lanes, and regional routes that keep you closer to family. Our dispatch team respects your preferences and works to balance your earning potential with your personal life-because trucking shouldn't mean sacrificing everything else."
     ],
@@ -137,7 +137,7 @@ const seoContent = {
   careers: {
     heading: "Build Your Future in the Trucking Industry",
     paragraphs: [
-      "XXII Century is actively hiring <strong>CDL-A drivers and logistics professionals</strong> who share our passion for excellence. We offer multiple career paths-from high-earning owner operator partnerships to stable company driver positions with full benefits-designed to match your goals and lifestyle preferences.",
+      "XXII Century is actively hiring <strong>CDL-A drivers and logistics professionals</strong> who share our passion for excellence. We offer multiple career paths-from high-earning owner operator partnerships to stable company driver positions with consistent miles-designed to match your goals and lifestyle preferences.",
       "Our hiring process is straightforward and respectful of your time. Apply online in minutes, speak with a recruiter within 1 hour, and get on the road quickly with our streamlined onboarding. We provide quick orientation, equipment training, and ongoing support to set you up for success from day one-no games, no waiting.",
       "Beyond competitive pay, we invest in your <strong>long-term career growth</strong>. Performance bonuses, safety incentives, and automatic raises reward your hard work, while our driver community offers networking opportunities and industry insights. This isn't just a job-it's a career you can build on for years to come."
     ],

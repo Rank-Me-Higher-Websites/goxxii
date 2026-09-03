@@ -13,7 +13,8 @@
 // Copy rules (canonical business facts):
 //   - Company drivers: "$2,300+/week" starting pay (NO "CPM" language).
 //   - Owner operators: keep "80% of gross", "$8,000+/week" average.
-//   - Phone 630-914-6037, 7501 Lemont Rd, Woodridge IL 60517, founded 2009 (17+ yrs).
+//   - Main company phone 630-948-0501; recruiting/hiring phone stays 630-914-6037.
+//   - 7501 Lemont Rd, Woodridge IL 60517, founded 2009 (17+ yrs).
 //   - Titles ≤ 60 chars (SERP). Descriptions 140–160 chars. og* may run longer.
 
 export interface RouteMeta {
@@ -35,7 +36,7 @@ export const ROUTE_META: Record<string, RouteMeta> = {
       "xxii century trucking, xxii century inc, century trucking, xxii century inc reviews, owner operator jobs Chicago, CDL-A driver jobs Illinois, trucking company Woodridge IL, company driver jobs $2300 week, owner operator 80% gross, Fortune 500 freight, no hidden fees trucking, dry van owner operator, weekly pay trucking, 4.8 star reviews, goxxii.com",
     ogTitle: "XXII Century Trucking | Chicago CDL-A Jobs | goxxii.com",
     ogDescription:
-      "Owner operators keep 80% of gross ($8,000+/week). Company drivers start at $2,300+/week with full benefits. $0 hidden fees, Fortune 500 freight. Apply today.",
+      "Owner operators keep 80% of gross ($8,000+/week). Company drivers start at $2,300+/week with automatic raises. $0 hidden fees, Fortune 500 freight. Apply today.",
     ogType: "website",
     canonicalPath: "/",
   },
@@ -52,14 +53,14 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     canonicalPath: "/owner-operators",
   },
   "/company-drivers": {
-    title: "CDL-A Company Driver Jobs - $2,300+/Week + Benefits | XXII",
+    title: "CDL-A Company Driver Jobs - $2,300+/Week | XXII Century",
     description:
-      "Company driver jobs starting at $2,300+/week. Full benefits: medical, dental, 401(k), paid vacation. Modern Volvo & Freightliner trucks, weekly home time.",
+      "Company driver jobs starting at $2,300+/week with automatic raises every 75,000 miles. Modern Volvo & Freightliner trucks, weekly home time.",
     keywords:
-      "company driver jobs, CDL-A driver positions, trucking jobs with benefits, OTR company driver, company driver $2300 week, truck driver 401k, CDL-A truck driver salary, truck driver benefits package, OTR driver jobs 2026, truck driving career",
-    ogTitle: "CDL-A Company Driver Jobs - $2,300+/Week + Benefits | XXII Century",
+      "company driver jobs, CDL-A driver positions, OTR company driver, company driver $2300 week, CDL-A truck driver salary, weekly home time trucking jobs, OTR driver jobs 2026, truck driving career",
+    ogTitle: "CDL-A Company Driver Jobs - $2,300+/Week | XXII Century",
     ogDescription:
-      "Start at $2,300+/week ($104K–$120K/yr) with full benefits and automatic raises every 75,000 miles. Modern trucks, weekly pay, Fortune 500 freight. Apply now.",
+      "Start at $2,300+/week ($104K–$120K/yr) with automatic raises every 75,000 miles. Modern trucks, weekly pay, Fortune 500 freight. Apply now.",
     ogType: "website",
     canonicalPath: "/company-drivers",
   },
@@ -114,22 +115,22 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   "/careers": {
     title: "Trucking Jobs - CDL-A Drivers & Owner Operators | XXII",
     description:
-      "Browse open CDL-A driver and owner operator positions. Competitive pay to $300K+, full benefits, career growth. Start your application with XXII Century today.",
+      "Browse open CDL-A driver and owner operator positions. Competitive pay to $300K+, modern equipment, career growth. Start your application with XXII Century today.",
     keywords:
       "trucking job openings, CDL driver employment, owner operator positions, logistics careers, transportation jobs, trucking job application, CDL-A driver hiring, transportation career opportunities, truck driver hiring 2026",
     ogTitle: "Trucking Jobs - CDL-A Drivers & Owner Operators | XXII Century",
     ogDescription:
-      "Hiring CDL-A company drivers ($2,300+/week) and owner operators (80% of gross, $300K+/yr). Full benefits, Fortune 500 freight, weekly pay. Apply in minutes.",
+      "Hiring CDL-A company drivers ($2,300+/week) and owner operators (80% of gross, $300K+/yr). Modern equipment, Fortune 500 freight, weekly pay. Apply in minutes.",
     ogType: "website",
     canonicalPath: "/careers",
   },
   "/contact": {
-    title: "Contact XXII Century - Call 630-914-6037 | Woodridge IL",
+    title: "Contact XXII Century - Call 630-948-0501 | Woodridge IL",
     description:
-      "Call 630-914-6037 or visit 7501 Lemont Rd, Woodridge, IL. Driver applications, freight quotes, fleet partnerships — our team responds within 1 hour.",
+      "Call 630-948-0501 or visit 7501 Lemont Rd, Woodridge, IL. Driver applications, freight quotes, fleet partnerships — our team responds within 1 hour.",
     keywords:
       "trucking company contact, driver recruiting, freight quote request, Woodridge IL trucking, XXII Century phone number, XXII Century address, trucking company near me, driver recruiter contact, freight quote phone number",
-    ogTitle: "Contact XXII Century - Call 630-914-6037 | Woodridge, IL",
+    ogTitle: "Contact XXII Century - Call 630-948-0501 | Woodridge, IL",
     ogDescription:
       "Reach XXII Century recruiting at 630-914-6037 or visit 7501 Lemont Rd, Woodridge, IL 60517. Driver applications, freight quotes & fleet partnerships.",
     ogType: "website",

@@ -23,8 +23,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["630-914-6037"],
-    action: "tel:+16309146037",
+    details: ["630-948-0501", "Recruiting: 630-914-6037"],
+    action: "tel:+16309480501",
     actionLabel: "Call Now",
   },
   {

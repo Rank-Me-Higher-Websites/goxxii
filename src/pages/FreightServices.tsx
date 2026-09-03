@@ -455,8 +455,8 @@ const FreightServices = () => {
             </div>
             <p className="text-muted-foreground text-sm mt-6">
               Prefer to talk?{" "}
-              <a href="tel:+16309146037" className="text-primary hover:underline font-medium">
-                630-914-6037
+              <a href="tel:+16309480501" className="text-primary hover:underline font-medium">
+                630-948-0501
               </a>
             </p>
           </motion.div>

@@ -232,8 +232,8 @@ export const QuoteFormDialog = ({ open, onOpenChange }: QuoteFormDialogProps) =>
 
                     <p className="text-center text-xs text-muted-foreground">
                       Or call directly:{" "}
-                      <a href="tel:+16309146037" className="text-primary hover:underline font-medium">
-                        630-914-6037
+                      <a href="tel:+16309480501" className="text-primary hover:underline font-medium">
+                        630-948-0501
                       </a>
                     </p>
                   </form>

@@ -56,7 +56,7 @@ export const FleetCompanyDriverSection = () => {
             </p>
             
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              XXII Century invests in late-model equipment and comprehensive training to set you up for success. From health insurance to 401k matching, our <Link to="/careers" className="text-primary hover:underline">trucking careers</Link> come with the full benefits package professional drivers expect.
+              XXII Century invests in late-model equipment and comprehensive training to set you up for success. Our <Link to="/careers" className="text-primary hover:underline">trucking careers</Link> come with consistent miles, weekly pay, and dispatch that respects your time.
             </p>
 
             {/* Feature Grid */}

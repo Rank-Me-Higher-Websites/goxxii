@@ -29,10 +29,10 @@ const stats2 = [
 ];
 
 const benefits = [
-  { icon: DollarSign, title: "Paid Detention", desc: "Company-matched plan - helping you prepare for retirement." },
+  { icon: DollarSign, title: "Paid Detention", desc: "Get paid for the hours you sit - detention pay on qualifying loads." },
   { icon: Award, title: "$2,300+/week", desc: "Earn $104,000-$120,000 annually with XXII Century." },
   { icon: Gift, title: "Driver Bonuses", desc: "Enjoy performance bonuses, monthly rewards, photo contests, and year-round giveaways!" },
-  { icon: Heart, title: "Paid Layover", desc: "Awesome health plans to choose from. Includes dental and vision too." },
+  { icon: Heart, title: "Paid Layover", desc: "$150 layover pay when a load keeps you out an extra day." },
   { icon: Users, title: "Referral Bonus", desc: "On-site maintenance available-relax at HQ or head home while we service your truck." },
   { icon: MessageSquare, title: "Transparent Feedback", desc: "Drive efficiently, earn more-ask a recruiter for details!" },
 ];
@@ -189,7 +189,7 @@ export const CompanyDriverHeroSection = () => {
               Join XXII Century Today and Drive Toward a Brighter Future in Trucking!
             </h3>
             <p className="text-muted-foreground mb-4 max-w-2xl mx-auto">
-              Drive with XXII and get the consistency you deserve! With customer lanes and flexible home time options, your schedule works for you. Enjoy paid vacations to recharge, and earn big with safety and performance bonuses recognizing your hard work.
+              Drive with XXII and get the consistency you deserve! With customer lanes and flexible home time options, your schedule works for you. Earn big with safety and performance bonuses recognizing your hard work.
             </p>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Ready to take the wheel? or do you have your own truck and you would like to explore <Link to="/owner-operators" className="text-primary hover:underline">owner operator program</Link>?

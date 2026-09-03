@@ -66,7 +66,7 @@ const ownerOperatorFaqs: FAQ[] = [
   {
     question: "What fuel discounts are available for owner operators?",
     answer: (
-      <p>We provide <strong className="text-foreground">100% fuel discounts</strong> at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route, saving you money on every trip.</p>
+      <p>We provide <strong className="text-foreground">100% of our fuel card discount passed to you</strong> at major truck stops nationwide. Our AI-powered fuel management tool helps you find the cheapest fuel on your route, saving you money on every trip.</p>
     ),
   },
   {
