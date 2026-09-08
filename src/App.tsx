@@ -32,6 +32,7 @@ import NewCheckIn from "./pages/portal/NewCheckIn";
 import CheckInDetail from "./pages/portal/CheckInDetail";
 import SurveyLinks from "./pages/portal/SurveyLinks";
 import ExitSurveys from "./pages/portal/ExitSurveys";
+import Rewards from "./pages/portal/Rewards";
 import PublicSurvey from "./pages/PublicSurvey";
 import PublicRegister from "./pages/PublicRegister";
 import Loyalty from "./pages/Loyalty";
@@ -79,6 +80,7 @@ const App = () => (
             <Route path="retention/:id" element={<CheckInDetail />} />
             <Route path="exit-surveys" element={<ExitSurveys />} />
             <Route path="survey-links" element={<SurveyLinks />} />
+            <Route path="rewards" element={<Rewards />} />
           </Route>
 
           <Route path="/:recruiter" element={<DriverFunnel />} />

@@ -1,9 +1,9 @@
 import { db } from "./db";
 import { eq, desc } from "drizzle-orm";
 import {
-  users, drivers, retentionCheckIns, leads,
+  users, drivers, retentionCheckIns, leads, driverAwards,
   InsertUser, User, InsertDriver, Driver, InsertCheckIn, RetentionCheckIn,
-  InsertLead, Lead
+  InsertLead, Lead, InsertDriverAward, DriverAward
 } from "../shared/schema";
 
 export interface IStorage {
@@ -26,6 +26,11 @@ export interface IStorage {
   createLead(lead: InsertLead): Promise<Lead>;
   getLeads(): Promise<Lead[]>;
   deleteLead(id: number): Promise<void>;
+
+  getDriverAwards(driverId?: number): Promise<DriverAward[]>;
+  createDriverAward(award: InsertDriverAward): Promise<DriverAward | undefined>;
+  updateDriverAward(id: number, data: Partial<DriverAward>): Promise<DriverAward | undefined>;
+  getPendingGifts(): Promise<DriverAward[]>;
 
   getDashboardStats(): Promise<{
     totalDrivers: number;
@@ -115,6 +120,40 @@ export class DatabaseStorage implements IStorage {
 
   async deleteLead(id: number): Promise<void> {
     await db.delete(leads).where(eq(leads.id, id));
+  }
+
+  async getDriverAwards(driverId?: number): Promise<DriverAward[]> {
+    if (driverId !== undefined) {
+      return db.select().from(driverAwards)
+        .where(eq(driverAwards.driverId, driverId))
+        .orderBy(desc(driverAwards.createdAt));
+    }
+    return db.select().from(driverAwards).orderBy(desc(driverAwards.createdAt));
+  }
+
+  /** Insert an award, or return undefined when the driver already has it.
+   *  The (driver_id, rule_id, period_key) unique index is what guarantees a
+   *  certificate is never sent twice, even if two runs overlap. */
+  async createDriverAward(award: InsertDriverAward): Promise<DriverAward | undefined> {
+    const [created] = await db.insert(driverAwards).values(award)
+      .onConflictDoNothing({
+        target: [driverAwards.driverId, driverAwards.ruleId, driverAwards.periodKey],
+      })
+      .returning();
+    return created;
+  }
+
+  async updateDriverAward(id: number, data: Partial<DriverAward>): Promise<DriverAward | undefined> {
+    const [updated] = await db.update(driverAwards).set(data)
+      .where(eq(driverAwards.id, id)).returning();
+    return updated;
+  }
+
+  /** Physical items still owed to a driver — the team's shipping queue. */
+  async getPendingGifts(): Promise<DriverAward[]> {
+    return db.select().from(driverAwards)
+      .where(eq(driverAwards.fulfillment, "pending"))
+      .orderBy(desc(driverAwards.createdAt));
   }
 
   async getDashboardStats() {

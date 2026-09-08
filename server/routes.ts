@@ -9,37 +9,22 @@ import {
   type DriverStats,
 } from "../src/data/rewardsProgram";
 import { renderCertificateHTML } from "./certificate";
+import { sendTelegramNotification, sendEmail, appBaseUrl } from "./notify";
+import { runAwardCycle } from "./awards";
 import crypto from "crypto";
+
+/** Constant-time secret comparison, so the cron secret can't be recovered by
+ *  timing how long a wrong guess takes to reject. */
+function secretMatches(given: string | undefined, expected: string): boolean {
+  if (!given) return false;
+  const a = Buffer.from(given);
+  const b = Buffer.from(expected);
+  if (a.length !== b.length) return false;
+  return crypto.timingSafeEqual(a, b);
+}
 
 function generateToken(): string {
   return crypto.randomBytes(24).toString("hex");
-}
-
-const TELEGRAM_CHAT_ID = "-1003752172558";
-
-async function sendTelegramNotification(message: string) {
-  const token = process.env.TELEGRAM_BOT_TOKEN;
-  if (!token) {
-    console.warn("TELEGRAM_BOT_TOKEN not configured, skipping notification");
-    return;
-  }
-  try {
-    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
-        text: message,
-        parse_mode: "HTML",
-      }),
-    });
-    if (!res.ok) {
-      const err = await res.text();
-      console.error("Telegram API error:", err);
-    }
-  } catch (err) {
-    console.error("Failed to send Telegram notification:", err);
-  }
 }
 
 export function registerRoutes(router: Router) {
@@ -530,15 +515,104 @@ export function registerRoutes(router: Router) {
       const tenureTargets = [30, 60, 90, 182, 365, 730, 1095, 1825, 3650];
       const nextTarget = tenureTargets.find((t) => t > tenureDays) ?? null;
 
+      // What the automation has actually granted (with certificate links).
+      const granted = await storage.getDriverAwards(driver.id);
+
       res.json({
         found: true,
         driver: { firstName: driver.firstName, lastName: driver.lastName },
         stats: { tenureDays, tenureYears },
         earned,
+        granted: granted.map((a) => ({
+          ruleId: a.ruleId,
+          event: a.event,
+          category: a.category,
+          rewards: a.rewards,
+          certUrl: a.certUrl,
+          awardedAt: a.createdAt,
+          giftStatus: a.fulfillment,
+        })),
         nextMilestone: nextTarget
           ? { target: nextTarget, current: tenureDays, remaining: nextTarget - tenureDays }
           : null,
       });
+    } catch (err) { next(err); }
+  });
+
+  // ===== AWARD AUTOMATION =====
+
+  // Runs one award cycle: evaluate every active driver, grant what is newly earned,
+  // email the certificates, and ping the team for anything physical.
+  // Auth: a logged-in portal user, or the cron secret header (for an external scheduler).
+  //   ?dryRun=1  -> evaluate and report, write/send nothing
+  //   ?notify=0  -> write the ledger silently (use this for the FIRST run, so existing
+  //                 drivers do not get a backlog of emails and gift tickets)
+  router.post("/api/rewards/run", async (req, res, next) => {
+    const secret = process.env.REWARDS_CRON_SECRET;
+    const headerSecret = req.get("x-cron-secret");
+    const authed = typeof (req as any).isAuthenticated === "function" && (req as any).isAuthenticated();
+    if (!authed && !(secret && secretMatches(headerSecret, secret))) {
+      return res.status(401).json({ message: "Not authenticated" });
+    }
+    try {
+      const isOn = (v: unknown) => v === "1" || v === "true" || v === true;
+      const isOff = (v: unknown) => v === "0" || v === "false" || v === false;
+      const notifyParam = req.query.notify ?? req.body?.notify;
+      const summary = await runAwardCycle({
+        dryRun: isOn(req.query.dryRun ?? req.body?.dryRun),
+        notify: !isOff(notifyParam),
+      });
+      res.json(summary);
+    } catch (err: any) {
+      if (String(err?.message).includes("already running")) {
+        return res.status(409).json({ message: "An award cycle is already running" });
+      }
+      next(err);
+    }
+  });
+
+  // Portal: full award history (optionally for one driver).
+  router.get("/api/portal/awards", requireAuth, async (req, res, next) => {
+    try {
+      const driverId = req.query.driverId ? Number(req.query.driverId) : undefined;
+      if (driverId !== undefined && !Number.isInteger(driverId)) {
+        return res.status(400).json({ error: "Invalid driverId" });
+      }
+      res.json(await storage.getDriverAwards(driverId));
+    } catch (err) { next(err); }
+  });
+
+  // Portal: the physical-gift queue — everything the team still has to ship.
+  router.get("/api/portal/gifts", requireAuth, async (_req, res, next) => {
+    try {
+      const pending = await storage.getPendingGifts();
+      const drivers = await storage.getDrivers();
+      const byId = new Map(drivers.map((d) => [d.id, d]));
+      res.json(pending.map((a) => {
+        const d = byId.get(a.driverId);
+        return {
+          ...a,
+          driverName: d ? `${d.firstName} ${d.lastName}` : `Driver #${a.driverId}`,
+          truckNumber: d?.truckNumber ?? null,
+          phone: d?.phone ?? null,
+        };
+      }));
+    } catch (err) { next(err); }
+  });
+
+  // Portal: mark a physical gift as shipped/handed over.
+  router.post("/api/portal/gifts/:id/shipped", requireAuth, async (req, res, next) => {
+    try {
+      const id = Number(req.params.id);
+      if (!Number.isInteger(id)) return res.status(400).json({ error: "Invalid id" });
+      const note = typeof req.body?.note === "string" ? req.body.note.slice(0, 500) : null;
+      const updated = await storage.updateDriverAward(id, {
+        fulfillment: "shipped",
+        fulfilledAt: new Date(),
+        fulfillmentNote: note,
+      });
+      if (!updated) return res.status(404).json({ error: "Award not found" });
+      res.json(updated);
     } catch (err) { next(err); }
   });
 
@@ -552,8 +626,11 @@ export function registerRoutes(router: Router) {
       String(req.query.date || "").slice(0, 40) ||
       new Date().toLocaleDateString("en-US", { day: "2-digit", month: "short", year: "numeric" });
     const certId = String(req.query.certId || "XXII-CERT").slice(0, 40);
+    // Selects the per-category design (emblem, accent, copy). Unknown or missing
+    // categories fall back to the neutral theme rather than failing.
+    const category = req.query.category ? String(req.query.category).slice(0, 60) : undefined;
     res.setHeader("Content-Type", "text/html; charset=utf-8");
-    res.send(renderCertificateHTML({ name, title, subtitle, date, certId }));
+    res.send(renderCertificateHTML({ name, title, subtitle, category, date, certId }));
   });
 }
 
@@ -619,14 +696,7 @@ export async function processPendingSurveyEmails() {
 }
 
 async function sendSurveyEmail(email: string, firstName: string, token: string, week: string) {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) throw new Error("RESEND_API_KEY not configured");
-
-  const baseUrl = process.env.REPLIT_DEV_DOMAIN
-    ? `https://${process.env.REPLIT_DEV_DOMAIN}`
-    : process.env.APP_URL || "https://goxxii.com";
-
-  const surveyUrl = `${baseUrl}/survey/${token}`;
+  const surveyUrl = `${appBaseUrl()}/survey/${token}`;
   const weekLabels: Record<string, string> = {
     week1: "Week 1 — Seamless Start",
     week2: "Week 2 — Operational Flow",
@@ -634,17 +704,10 @@ async function sendSurveyEmail(email: string, firstName: string, token: string, 
     week4: "Week 4 — Partnership Fit",
   };
 
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      "Authorization": `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from: process.env.RESEND_FROM_EMAIL || "XXII Century <noreply@ava.rankmehigher.com>",
-      to: [email],
-      subject: `XXII Century — ${weekLabels[week] || week} Check-In`,
-      html: `
+  await sendEmail({
+    to: email,
+    subject: `XXII Century — ${weekLabels[week] || week} Check-In`,
+    html: `
         <div style="font-family: Inter, Arial, sans-serif; max-width: 560px; margin: 0 auto; background: #1a2332; color: #e2e8f0; padding: 40px 30px; border-radius: 12px;">
           <div style="text-align: center; margin-bottom: 30px;">
             <h1 style="font-family: Oswald, Arial, sans-serif; font-size: 24px; margin: 0; color: #ffffff;">XXII CENTURY</h1>
@@ -660,13 +723,7 @@ async function sendSurveyEmail(email: string, firstName: string, token: string, 
           <p style="color: #5a6a7e; font-size: 11px; text-align: center;">XXII Century Trucking — goxxii.com</p>
         </div>
       `,
-    }),
   });
-
-  if (!response.ok) {
-    const err = await response.text();
-    throw new Error(`Resend API error: ${err}`);
-  }
 }
 
 async function recalculateDriverScore(driverId: number) {

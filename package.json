@@ -9,7 +9,8 @@
     "build:dev": "vite build --mode development && tsx scripts/generate-sitemap.ts",
     "lint": "eslint .",
     "preview": "vite preview",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "rewards:smoke": "tsx scripts/award-cycle-smoke.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

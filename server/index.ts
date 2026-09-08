@@ -2,6 +2,7 @@ import express from "express";
 import { Router } from "express";
 import { setupAuth } from "./auth";
 import { registerRoutes, processPendingSurveyEmails } from "./routes";
+import { runAwardCycle } from "./awards";
 import { setupVite } from "./vite";
 import { db } from "./db";
 import { sql } from "drizzle-orm";
@@ -50,5 +51,21 @@ app.use(router);
     }, 60 * 60 * 1000);
 
     setTimeout(() => processPendingSurveyEmails(), 30 * 1000);
+
+    // Rewards automation: one award cycle per day. The ledger makes repeat runs
+    // harmless, so an extra run after a restart can never double-award anyone.
+    // Set REWARDS_AUTORUN=off to disable and drive it from an external cron
+    // (POST /api/rewards/run with the x-cron-secret header) instead.
+    if (process.env.REWARDS_AUTORUN !== "off") {
+      const runAwards = async () => {
+        try {
+          await runAwardCycle();
+        } catch (err) {
+          console.error("Award cycle failed:", err);
+        }
+      };
+      setInterval(runAwards, 24 * 60 * 60 * 1000);
+      setTimeout(runAwards, 2 * 60 * 1000);
+    }
   });
 })();

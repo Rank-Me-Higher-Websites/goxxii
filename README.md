@@ -1,4 +1,15 @@
-# Welcome to your Lovable project
+# XXII Century Trucking
+
+## Driver Rewards automation
+
+Certificates are emailed automatically and the ops team is notified for every physical
+gift. For developers connecting it to Samsara, start with the API contract in
+[docs/INTEGRATION-SPEC.md](docs/INTEGRATION-SPEC.md); setup and day-to-day operation are in
+[docs/REWARDS-AUTOMATION.md](docs/REWARDS-AUTOMATION.md), and the transfer plan is in
+[docs/REWARDS-HANDOVER.md](docs/REWARDS-HANDOVER.md).
+Smoke test: `npm run rewards:smoke`.
+
+---
 
 ## Project info
 

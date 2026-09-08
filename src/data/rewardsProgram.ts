@@ -21,6 +21,11 @@ export type Audience = "both" | "company";
 
 export type DriverType = "company" | "owner_operator";
 
+/** How often a rule can pay out. "once" = a one-time milestone (never repeats),
+ *  "monthly" = re-earnable every calendar month. Drives the award ledger's
+ *  period key, which is what stops duplicate certificates. */
+export type Cadence = "once" | "monthly";
+
 export interface RewardRule {
   id: string;
   event: string;
@@ -29,6 +34,8 @@ export interface RewardRule {
   when: string;
   who: Audience;
   trigger: TriggerType;
+  /** Defaults to "once" for threshold rules and "monthly" for cohort/event rules. */
+  cadence?: Cadence;
   rewards: Reward[];
   // Optional machine test for threshold rules. Returns the earned reward(s) or false.
   test?: (d: DriverStats) => boolean;
@@ -197,6 +204,7 @@ export const REWARD_PROGRAM: RewardCategory[] = [
         when: "Beat 7.0 MPG with low idle time",
         who: "company",
         trigger: "threshold",
+        cadence: "monthly",
         rewards: [r("digital", "leaderboard eligible")],
         test: (d) => (d.monthlyMpg ?? 0) >= 7.0 && (d.idlePct ?? 100) < 15,
       },
@@ -253,6 +261,7 @@ export const REWARD_PROGRAM: RewardCategory[] = [
         when: "Finish a month with zero violations",
         who: "both",
         trigger: "threshold",
+        cadence: "monthly",
         rewards: [
           r("digital", "Clean-Record certificate"),
           r("perk", "quarterly raffle entry + points"),
@@ -309,6 +318,11 @@ export const REWARD_PROGRAM: RewardCategory[] = [
     ],
   },
 ];
+
+/** Ledger cadence for a rule — explicit when set, otherwise derived from the trigger. */
+export function ruleCadence(rule: RewardRule): Cadence {
+  return rule.cadence ?? (rule.trigger === "threshold" ? "once" : "monthly");
+}
 
 export const ALL_RULES: RewardRule[] = REWARD_PROGRAM.flatMap((c) => c.rules);
 
