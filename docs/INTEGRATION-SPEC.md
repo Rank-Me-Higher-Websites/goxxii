@@ -461,7 +461,7 @@ Every variable is documented in `.env.example`. The ones this integration adds:
 | --- | --- | --- |
 | `SAMSARA_API_TOKEN` | for fleet awards | Read-only token. Absent → `fleetSource: "none"`, tenure awards still run. |
 | `SAMSARA_BASE_URL` | no | EU-hosted accounts only. |
-| `REWARDS_AUTORUN` | no | `off` disables the built-in daily timer. |
+| `REWARDS_AUTORUN` | no | `on` enables the built-in daily timer. **Defaults to OFF** so a fresh deploy cannot email drivers before the ledger is seeded. |
 | `REWARDS_CRON_SECRET` | no | Enables `x-cron-secret` on `/api/rewards/run`. Generate with `openssl rand -hex 32`. |
 | `APP_URL` | recommended | Base URL used in certificate and portal links. |
 | `RESEND_FROM_EMAIL` | recommended | Set once `goxxii.com` is verified in Resend. |
@@ -474,7 +474,7 @@ not before — check nothing was committed historically).
 # Part G — Scheduling, concurrency, idempotency
 
 - **Schedule:** built-in timer, one cycle 2 minutes after boot and every 24 h. Replace
-  with your own cron via `REWARDS_AUTORUN=off` + the cron-secret endpoint.
+  with your own cron by leaving `REWARDS_AUTORUN` unset and using the cron-secret endpoint.
 - **Idempotency:** the unique index. A repeat run inserts nothing and therefore emails
   nothing. Safe to run by hand, on every deploy, or twice by accident.
 - **Concurrency:** a writing cycle takes an in-process lock; a second overlapping run

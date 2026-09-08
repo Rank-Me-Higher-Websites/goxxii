@@ -54,9 +54,11 @@ app.use(router);
 
     // Rewards automation: one award cycle per day. The ledger makes repeat runs
     // harmless, so an extra run after a restart can never double-award anyone.
-    // Set REWARDS_AUTORUN=off to disable and drive it from an external cron
+    // OFF unless REWARDS_AUTORUN=on. Deliberately opt-in: a fresh deploy must not
+    // start emailing drivers before the ledger has been seeded (see docs). Or drive
+    // it from an external cron
     // (POST /api/rewards/run with the x-cron-secret header) instead.
-    if (process.env.REWARDS_AUTORUN !== "off") {
+    if (process.env.REWARDS_AUTORUN === "on") {
       const runAwards = async () => {
         try {
           await runAwardCycle();

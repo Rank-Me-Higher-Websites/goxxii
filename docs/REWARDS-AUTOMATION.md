@@ -87,7 +87,7 @@ New columns on `drivers`:
 | `APP_URL` | recommended | Base URL used in certificate/portal links. Defaults to `https://goxxii.com`. |
 | `SAMSARA_API_TOKEN` | **for fleet awards** | Read-only API token. Without it the engine still runs, it just cannot award MPG/safety/mileage. |
 | `SAMSARA_BASE_URL` | no | Defaults to `https://api.samsara.com`. Only needed for EU-hosted accounts. |
-| `REWARDS_AUTORUN` | no | Set to `off` to disable the built-in daily timer and drive the cycle from your own cron. |
+| `REWARDS_AUTORUN` | no | Set to `on` to enable the built-in daily timer. **Defaults to OFF** — set it only AFTER the seed run, or leave it off and drive the cycle from your own cron. |
 | `REWARDS_CRON_SECRET` | no | Lets an external scheduler call `POST /api/rewards/run` with an `x-cron-secret` header instead of a portal login. |
 
 ### 3.3 The first run — do this once, in this order
@@ -156,7 +156,7 @@ Built in: `server/index.ts` runs a cycle 2 minutes after boot and every 24 h aft
 Repeat runs are harmless — the ledger's unique index means a restart loop cannot
 double-award anyone.
 
-To use your own scheduler instead, set `REWARDS_AUTORUN=off` and call:
+To use your own scheduler instead, leave `REWARDS_AUTORUN` unset and call:
 
 ```bash
 curl -X POST https://goxxii.com/api/rewards/run -H "x-cron-secret: $REWARDS_CRON_SECRET"

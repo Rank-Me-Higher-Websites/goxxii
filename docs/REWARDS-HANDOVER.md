@@ -122,9 +122,10 @@ Steps 3 and 4 are also available as buttons in `/portal/rewards` (*Preview run* 
 
 ## 6. Operating it afterwards
 
-- **Cadence:** built-in daily timer. To use your own scheduler, set `REWARDS_AUTORUN=off`
+- **Cadence:** built-in daily timer, enabled with `REWARDS_AUTORUN=on` (off by default —
+  turn it on only after the seed run). To use your own scheduler, leave it unset
   and POST to `/api/rewards/run` with the `x-cron-secret` header.
-- **Kill switch:** `REWARDS_AUTORUN=off` and restart stops all automatic awarding
+- **Kill switch:** remove `REWARDS_AUTORUN=on` and restart — stops all automatic awarding
   immediately. Nothing else in the app depends on it.
 - **Changing the rewards:** edit `src/data/rewardsProgram.ts` only. The public `/loyalty`
   page and the automation both read from it, so they can never drift apart. Adding a rule
