@@ -385,35 +385,31 @@ Regenerate all five for review:
 npx tsx scripts/preview-certificates.ts   # → exports/certificates/*.html
 ```
 
-## If you want PNG or PDF files instead of links
+## Certificate files (PDF) — implemented
 
-Today the email links to the certificate page, which prints cleanly. To attach a file
-instead, render that same URL with headless Chrome. Add `puppeteer` and this helper:
+Each award email carries the certificate as an attached **PDF**, rendered from the same
+HTML by headless Chromium (`server/certificateRender.ts`). The link stays in the email as
+a fallback and as the shareable web version.
 
-```ts
-// npm i puppeteer
-import puppeteer from "puppeteer";
+- `renderCertificateFiles(html)` returns `{ pdf, png }`. Only the PDF is attached; the
+  PNG is available for sharing/social use but is ~3.5x larger, and a driver earning six
+  awards at once would otherwise receive a ~6 MB email that many servers reject.
+- One Chromium instance is reused for a whole cycle and closed at the end
+  (`closeCertificateRenderer()`).
+- Attachments are capped at `MAX_ATTACHMENT_BYTES` (6 MB) per driver. Anything beyond the
+  cap is still reachable from the links, and a warning is added to the run summary.
+- Filenames read `Michael-Torres-1-Year-Certificate.pdf`.
 
-export async function renderCertificateFile(url: string, as: "png" | "pdf"): Promise<Buffer> {
-  const browser = await puppeteer.launch({ args: ["--no-sandbox", "--disable-dev-shm-usage"] });
-  try {
-    const page = await browser.newPage();
-    // At exactly 1600x1000 the page's fit factor is 1, so this is a 1:1 capture.
-    await page.setViewport({ width: 1600, height: 1000, deviceScaleFactor: 2 });
-    await page.goto(url, { waitUntil: "networkidle0" });
-    return as === "png"
-      ? await page.screenshot({ type: "png", clip: { x: 0, y: 0, width: 1600, height: 1000 } })
-      : await page.pdf({ width: "1600px", height: "1000px", printBackground: true });
-  } finally {
-    await browser.close();
-  }
-}
-```
+**Deployment requirement.** `puppeteer` downloads its own Chromium (~300 MB) on
+`npm install`, so it does not depend on Chrome being present on the host. On a slim
+container you may also need the usual shared libraries (`libnss3`, `libatk-1.0-0`,
+`libgbm1`, `libasound2`). We launch with `--no-sandbox --disable-setuid-sandbox
+--disable-dev-shm-usage` so it runs as root in a container.
 
-Then attach the buffer in `sendEmail()` (Resend takes `attachments: [{ filename, content }]`
-with base64 content). Notes: `deviceScaleFactor: 2` gives a 3200 × 2000 PNG, good for
-print and social; a PDF keeps the text selectable; and Chromium adds ~300 MB to the
-deployment, which is the main reason we did not add it unasked.
+**If Chromium cannot start, nothing breaks.** The renderer logs one warning, returns
+`null`, and the cycle continues sending link-only emails. Verified by pointing
+`PUPPETEER_EXECUTABLE_PATH` at a missing binary: awards were still granted and emails
+still sent, just without attachments.
 
 ---
 

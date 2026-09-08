@@ -23,7 +23,13 @@ import {
   type RewardRule,
 } from "../src/data/rewardsProgram";
 import { getFleetSnapshot, statsForDriver, type FleetSnapshot } from "./fleetProvider";
-import { appBaseUrl, sendEmail, sendTelegramNotification } from "./notify";
+import { appBaseUrl, sendEmail, sendTelegramNotification, type EmailAttachment } from "./notify";
+import { renderCertificateHTML, type CertOptions } from "./certificate";
+import {
+  renderCertificateFiles,
+  closeCertificateRenderer,
+  certificateFileName,
+} from "./certificateRender";
 import type { Driver } from "../shared/schema";
 
 const RULE_BY_ID = new Map<string, RewardRule>(ALL_RULES.map((r) => [r.id, r]));
@@ -68,6 +74,9 @@ function esc(s: string): string {
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c] as string),
   );
 }
+
+/** Keep one driver's award email comfortably under common mail-server limits. */
+const MAX_ATTACHMENT_BYTES = 6 * 1024 * 1024;
 
 /** Not every digital reward is a certificate — "leaderboard eligible" and portal
  *  badges are recorded in the ledger and shown in the driver portal, but they do
@@ -186,7 +195,7 @@ async function runAwardCycleInner(opts: AwardRunOptions = {}): Promise<AwardRunS
   }
 
   // --- Evaluate + persist ---------------------------------------------------
-  const perDriverDigital = new Map<number, Array<{ rule: RewardRule; category: string; reward: Reward; url: string }>>();
+  const perDriverDigital = new Map<number, Array<{ rule: RewardRule; category: string; reward: Reward; url: string; cert: CertOptions }>>();
   const perDriverGifts = new Map<number, Array<{ rule: RewardRule; reward: Reward }>>();
 
   for (const driver of drivers) {
@@ -260,19 +269,15 @@ async function runAwardCycleInner(opts: AwardRunOptions = {}): Promise<AwardRunS
       if (certificates.length) {
         const list = perDriverDigital.get(driver.id) ?? [];
         for (const reward of certificates) {
-          list.push({
-            rule,
+          const cert: CertOptions = {
+            name: fullName,
+            title: certTitle(rule, reward),
+            subtitle: rule.when,
             category: award.category,
-            reward,
-            url: buildCertUrl(base, {
-              name: fullName,
-              title: certTitle(rule, reward),
-              subtitle: rule.when,
-              category: award.category,
-              date: dateLabel,
-              certId,
-            }),
-          });
+            date: dateLabel,
+            certId,
+          };
+          list.push({ rule, category: award.category, reward, url: buildCertUrl(base, cert), cert });
         }
         perDriverDigital.set(driver.id, list);
       }
@@ -300,6 +305,33 @@ async function runAwardCycleInner(opts: AwardRunOptions = {}): Promise<AwardRunS
       continue;
     }
 
+    // Attach the certificate as real files the driver can keep. If Chromium is
+    // unavailable the render returns null and the email still goes out with the
+    // link — a missing attachment must never cost someone their award email.
+    // PDF only: it is print-ready, ~230KB, and a driver with six new awards would
+    // otherwise get a 6MB email that plenty of mail servers reject outright. The
+    // PNG is still reachable from the link in the email.
+    const attachments: EmailAttachment[] = [];
+    let attachedBytes = 0;
+    let rendered = 0;
+    for (const item of items) {
+      if (attachedBytes >= MAX_ATTACHMENT_BYTES) break;
+      const files = await renderCertificateFiles(renderCertificateHTML(item.cert));
+      if (!files) continue;
+      rendered++;
+      attachments.push({
+        filename: `${certificateFileName(item.cert.name, item.cert.title)}.pdf`,
+        content: files.pdf,
+      });
+      attachedBytes += files.pdf.length;
+    }
+    if (rendered < items.length) {
+      summary.warnings.push(
+        `${driver.firstName} ${driver.lastName}: attached ${rendered}/${items.length} certificate file(s); ` +
+          `the rest are reachable from the links in the email.`,
+      );
+    }
+
     try {
       await sendEmail({
         to: driver.email,
@@ -307,6 +339,7 @@ async function runAwardCycleInner(opts: AwardRunOptions = {}): Promise<AwardRunS
           ? `You earned it — ${items[0].rule.event}`
           : `You earned ${items.length} new XXII Century awards`,
         html: awardEmailHTML(driver, items, base),
+        attachments,
       });
       for (const r of rows) await storage.updateDriverAward(r.awardId, { emailStatus: "sent" });
       summary.emailsSent++;
@@ -346,6 +379,9 @@ async function runAwardCycleInner(opts: AwardRunOptions = {}): Promise<AwardRunS
         `Fleet data: ${summary.fleetSource}`,
     );
   }
+
+  // Chromium is expensive to keep alive between daily runs.
+  await closeCertificateRenderer();
 
   console.log(
     `[rewards] ${period} run: ${summary.newAwards} new award(s), ${summary.emailsSent} email(s), ` +

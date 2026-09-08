@@ -62,6 +62,13 @@ Modified: `shared/schema.ts` (new ledger table + two driver columns), `server/st
 Delivered as a branch with a pull request so your team can review before it touches
 `main`. Ask for repository access if you do not have it yet.
 
+## 2a. Deployment requirement — Chromium
+
+Award emails attach a PDF certificate, rendered with headless Chromium via `puppeteer`.
+`npm install` downloads its own Chromium (~300 MB), so no system Chrome is required; on a
+slim container add `libnss3`, `libatk-1.0-0`, `libgbm1`, `libasound2`. If Chromium cannot
+start, awards and emails still go out — just with links instead of attachments.
+
 ## 3. What we need from you
 
 | # | Item | Why | Owner |

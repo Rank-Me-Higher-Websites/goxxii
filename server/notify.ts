@@ -37,7 +37,18 @@ export async function sendTelegramNotification(message: string): Promise<void> {
 }
 
 /** Send one email through Resend. Throws on failure so the caller can record it. */
-export async function sendEmail(opts: { to: string; subject: string; html: string }): Promise<void> {
+export interface EmailAttachment {
+  filename: string;
+  /** Raw file bytes; base64-encoded for the Resend API below. */
+  content: Buffer;
+}
+
+export async function sendEmail(opts: {
+  to: string;
+  subject: string;
+  html: string;
+  attachments?: EmailAttachment[];
+}): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) throw new Error("RESEND_API_KEY not configured");
 
@@ -52,6 +63,14 @@ export async function sendEmail(opts: { to: string; subject: string; html: strin
       to: [opts.to],
       subject: opts.subject,
       html: opts.html,
+      ...(opts.attachments?.length
+        ? {
+            attachments: opts.attachments.map((a) => ({
+              filename: a.filename,
+              content: a.content.toString("base64"),
+            })),
+          }
+        : {}),
     }),
   });
 

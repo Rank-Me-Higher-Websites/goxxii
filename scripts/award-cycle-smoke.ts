@@ -61,7 +61,7 @@ let nextId = 1;
 };
 
 // --- fake network ---------------------------------------------------------
-const emails: Array<{ to: string; subject: string; certLinks: string[] }> = [];
+const emails: Array<{ to: string; subject: string; certLinks: string[]; attachments: Array<{ filename: string; bytes: number }> }> = [];
 const telegrams: string[] = [];
 
 const json = (body: unknown) =>
@@ -76,6 +76,10 @@ globalThis.fetch = (async (input: any, init: any) => {
       to: body.to[0],
       subject: body.subject,
       certLinks: Array.from(String(body.html).matchAll(/href="([^"]*certificate[^"]*)"/g)).map((m: any) => m[1]),
+      attachments: (body.attachments ?? []).map((a: any) => ({
+        filename: a.filename,
+        bytes: Buffer.from(a.content, "base64").length,
+      })),
     });
     return json({ id: "email_stub" });
   }
@@ -141,7 +145,8 @@ for (const w of pass1.warnings) console.log(`   ! ${w}`);
 console.log("\n--- emails ---");
 for (const e of emails) {
   console.log(`   -> ${e.to}: ${e.subject}`);
-  for (const l of e.certLinks) console.log(`      cert: ${l.slice(0, 150)}`);
+  for (const l of e.certLinks) console.log(`      cert: ${l.slice(0, 100)}`);
+  for (const a of e.attachments) console.log(`      file: ${a.filename} (${Math.round(a.bytes / 1024)} KB)`);
 }
 
 console.log("\n--- team notifications ---");
@@ -168,4 +173,13 @@ const ok =
   !ledger.some((a) => a.driverId === 4); // inactive driver must never be awarded
 
 console.log(`\n${ok ? "PASS" : "FAIL"} — idempotent: ${pass2.newAwards === 0}, no duplicate emails: ${emails.length === emailCountAfterPass1}`);
-process.exit(ok ? 0 : 1);
+const pdfs = emails.flatMap((e) => e.attachments).filter((a) => a.filename.endsWith(".pdf"));
+const pngs = emails.flatMap((e) => e.attachments).filter((a) => a.filename.endsWith(".png"));
+const perEmailBytes = emails.map((e) => e.attachments.reduce((n, a) => n + a.bytes, 0));
+const heaviest = Math.max(0, ...perEmailBytes);
+const filesOk = pdfs.length > 0 && pdfs.every((a) => a.bytes > 10000) && heaviest < 8 * 1024 * 1024;
+line("heaviest email (KB)", Math.round(heaviest / 1024));
+line("certificate PDFs attached", pdfs.length);
+line("certificate PNGs attached", pngs.length);
+console.log("certificate files attached: " + filesOk);
+process.exit(ok && filesOk ? 0 : 1);

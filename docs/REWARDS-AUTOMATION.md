@@ -206,7 +206,19 @@ Two smaller notes:
   `isCertificate()` in `server/awards.ts`.
 
 
-## 7a. Certificate artwork
+## 7a. Certificate files
+
+Every award email attaches the certificate as a **PDF** (~230 KB each), rendered from the
+certificate HTML by headless Chromium in `server/certificateRender.ts`. The link stays in
+the email too.
+
+- `puppeteer` ships its own Chromium (~300 MB on `npm install`) — no system Chrome needed.
+  Slim containers may still need `libnss3`, `libatk-1.0-0`, `libgbm1`, `libasound2`.
+- If Chromium cannot start the run does **not** fail: it logs one warning and sends
+  link-only emails.
+- Attachments are capped at 6 MB per driver; the rest stay reachable via the links.
+
+## 7b. Certificate artwork
 
 Five designs, one per reward category, each with its own emblem, accent colour, body
 copy and sign-off line - so a safety award does not look like a fuel award. The design
