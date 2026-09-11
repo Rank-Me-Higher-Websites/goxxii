@@ -7,6 +7,8 @@ const COMPANY = {
   foundingDate: "2009",
   phone: "+1-630-948-0501",
   recruitingPhone: "+1-630-914-6037",
+  safetyPhone: "+1-630-914-6951",
+  maintenancePhone: "+1-630-529-5658",
   customerServicePhone: "+1-224-240-6441",
   email: "james@goxxii.com",
   address: {
@@ -47,6 +49,18 @@ export const getOrganizationSchema = () => ({
       telephone: COMPANY.recruitingPhone,
       contactType: "recruiting",
       email: COMPANY.email,
+      availableLanguage: ["English", "Spanish", "Russian"],
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: COMPANY.safetyPhone,
+      contactType: "safety",
+      availableLanguage: ["English", "Spanish", "Russian"],
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: COMPANY.maintenancePhone,
+      contactType: "technical support",
       availableLanguage: ["English", "Spanish", "Russian"],
     },
     {

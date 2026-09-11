@@ -24,6 +24,13 @@ const footerLinks = {
   ],
 };
 
+const footerPhones = [
+  { label: "Main Office", display: "630-948-0501", tel: "+16309480501" },
+  { label: "Recruiting", display: "630-914-6037", tel: "+16309146037" },
+  { label: "Safety", display: "630-914-6951", tel: "+16309146951" },
+  { label: "Maintenance", display: "630-529-5658", tel: "+16305295658" },
+];
+
 interface FooterProps {
   onApplyClick?: () => void;
 }
@@ -84,13 +91,18 @@ export const Footer = ({ onApplyClick }: FooterProps) => {
               Your trusted partner in trucking. Building success for owner operators and company drivers since 2009.
             </p>
             <div className="space-y-2">
-              <a
-                href="tel:+16309146037"
-                className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                630-914-6037
-              </a>
+              {footerPhones.map((item) => (
+                <a
+                  key={item.tel}
+                  href={`tel:${item.tel}`}
+                  className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                  <span>
+                    <span className="text-foreground/80">{item.label}:</span> {item.display}
+                  </span>
+                </a>
+              ))}
               <a
                 href="mailto:james@goxxii.com"
                 className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"

@@ -148,7 +148,7 @@ const AboutReviews = () => {
             and provides freight shipping services for shippers and brokers.
           </p>
           <p className="text-muted-foreground mb-3">
-            Phone: <a href="tel:+16309146037" className="text-accent hover:underline">630-914-6037</a> ·
+            Phone: <a href="tel:+16309480501" className="text-accent hover:underline">630-948-0501</a> ·
             Recruiting:{" "}
             <a href="mailto:james@goxxii.com" className="text-accent hover:underline">james@goxxii.com</a>
           </p>

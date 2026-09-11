@@ -14,6 +14,7 @@
 //   - Company drivers: "$2,300+/week" starting pay (NO "CPM" language).
 //   - Owner operators: keep "80% of gross", "$8,000+/week" average.
 //   - Main company phone 630-948-0501; recruiting/hiring phone stays 630-914-6037.
+//     Departments (footer + contact page): Safety 630-914-6951, Maintenance 630-529-5658.
 //   - 7501 Lemont Rd, Woodridge IL 60517, founded 2009 (17+ yrs).
 //   - Titles ≤ 60 chars (SERP). Descriptions 140–160 chars. og* may run longer.
 
