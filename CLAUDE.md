@@ -40,3 +40,9 @@ Offline test with `npm run rewards:smoke` (no DB/Samsara/Resend/Telegram needed)
   `never` in this repo. Type new inserts as `typeof table.$inferInsert`.
 - `src/data/loyaltyDemo.ts` holds invented drivers used by the public `/loyalty`
   leaderboard. Replace with real data before treating those standings as real.
+- **Phone numbers are department-specific.** Main Office 630-948-0501 is the
+  company number and belongs on every general/company touchpoint; recruiting and
+  hiring CTAs (anything paired with "Apply To Drive") keep 630-914-6037. Safety
+  630-914-6951 and Maintenance 630-529-5658 appear in the footer, the Contact
+  page phone card and the Organization schema. Canonical list lives in
+  `Footer.tsx` (`footerPhones`) and `schemaData.ts` (`COMPANY`).
