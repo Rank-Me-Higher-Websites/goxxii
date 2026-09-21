@@ -29,6 +29,19 @@ Everything else — the daily cycle, Samsara adapter, certificates, ledger:
 Offline test with `npm run rewards:smoke` (no DB/Samsara/Resend/Telegram needed).
 
 ## Gotchas
+- **The deploy does NOT migrate the database.** The VPS only pulls + rebuilds, and
+  there are no migration files — schema changes need `npm run db:push` on the VPS
+  (`scripts/post-merge.sh` does this only if it is actually installed as the git
+  hook there). A column added to `shared/schema.ts` but missing in the live DB
+  breaks EVERY read and write of that table, because Drizzle expands
+  `db.select().from(t)` into an explicit column list. That is what killed the
+  portal's "Add New Driver" in Sept 2026 (`driver_type` / `samsara_driver_id` were
+  never pushed). `server/schemaGuard.ts` now reconciles the portal tables at boot
+  — keep it updated when the schema changes, or push the schema properly.
+- **API errors must stay JSON.** `server/index.ts` ends with an error middleware;
+  without it Express answers with an HTML page and the portal can only say
+  "Request failed" (over HTTP/2 `res.statusText` is empty). Routes should
+  `next(err)` and let that handler answer.
 - **Owner-operators get no MPG rewards** — they buy their own fuel. Enforced in
   `evaluateRewards` via `who: "company"`, not just hidden in the UI.
 - **First rewards run must be `?notify=0`** or every long-tenure driver gets a
