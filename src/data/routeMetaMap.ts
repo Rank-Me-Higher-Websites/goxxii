@@ -89,6 +89,18 @@ export const ROUTE_META: Record<string, RouteMeta> = {
     ogType: "website",
     canonicalPath: "/freight-shipping-services",
   },
+  "/consulting": {
+    title: "Trucking Consulting & Lane Profitability | XXII Century",
+    description:
+      "Carrier-run trucking consulting. We use your own load data to find unprofitable lanes, cut deadhead, and model true cost per mile. Book a free network review.",
+    keywords:
+      "trucking consulting services, trucking company consultant, lane profitability analysis, freight network optimization, cost per mile trucking, deadhead reduction, fleet analytics, carrier consulting, trucking KPI dashboard, freight analytics",
+    ogTitle: "Trucking Consulting Services for Profitable Fleets | XXII Century",
+    ogDescription:
+      "Data-driven consulting from a carrier that runs its own trucks: lane profitability, cost-per-mile modeling, network optimization, and deadhead reduction.",
+    ogType: "website",
+    canonicalPath: "/consulting",
+  },
   "/about": {
     title: "About XXII Century - Chicago Trucking Company Since 2009",
     description:

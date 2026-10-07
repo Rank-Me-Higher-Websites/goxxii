@@ -18,6 +18,7 @@ const footerLinks = {
   ],
   resources: [
     { label: "Freight Services", href: "/freight-shipping-services" },
+    { label: "Trucking Consulting", href: "/consulting" },
     { label: "Available Trucks", href: "https://app.openroadtms.com/available_trucks/KkqF6-_5iDsQDGfuPRikbg" },
     { label: "FAQ", href: "/contact#faq" },
     { label: "Contact", href: "/contact" },

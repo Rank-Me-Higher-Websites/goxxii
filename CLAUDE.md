@@ -18,6 +18,12 @@ Client in `src/`, server in `server/`, shared DB schema in `shared/schema.ts`.
 There is no PR flow. Verify by fetching the live page and grepping the new
 `/assets/index-*.js` bundle — note the minifier rewrites `24000` as `24e3`.
 
+## Adding a public page
+New route = `src/App.tsx` + an entry in `ROUTE_META` (`src/data/routeMetaMap.ts`,
+also read by `server/metaInjection.ts` for non-JS crawlers) + `SEO_CONTENT` key in
+`SEOHead.tsx` + `public/sitemap.xml`. `/consulting` (B2B trucking consulting, in nav
+after Freight Services) uses the main office line, not the recruiting number.
+
 ## Driver rewards
 Program lives at `/loyalty` (public, unlisted) and `/portal/rewards` (ops).
 Rules + the pure evaluation engine: `src/data/rewardsProgram.ts`.

@@ -77,6 +77,7 @@ export const SEO_CONTENT = {
   companyDrivers: ROUTE_META["/company-drivers"],
   fleetProgram: ROUTE_META["/fleet-program"],
   freightServices: ROUTE_META["/freight-shipping-services"],
+  consulting: ROUTE_META["/consulting"],
   about: ROUTE_META["/about"],
   careers: ROUTE_META["/careers"],
   contact: ROUTE_META["/contact"],

@@ -8,6 +8,7 @@ import logo from "@/assets/logo.svg";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Freight Services", href: "/freight-shipping-services" },
+  { label: "Consulting", href: "/consulting" },
 ];
 
 const postDriverLinks = [

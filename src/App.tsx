@@ -11,6 +11,7 @@ import OwnerOperatorState from "./pages/OwnerOperatorState";
 import CompanyDrivers from "./pages/CompanyDrivers";
 import FleetProgram from "./pages/FleetProgram";
 import FreightServices from "./pages/FreightServices";
+import Consulting from "./pages/Consulting";
 import About from "./pages/About";
 import AboutReviews from "./pages/AboutReviews";
 import Contact from "./pages/Contact";
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/company-drivers" element={<CompanyDrivers />} />
           <Route path="/fleet-program" element={<FleetProgram />} />
           <Route path="/freight-shipping-services" element={<FreightServices />} />
+          <Route path="/consulting" element={<Consulting />} />
           <Route path="/about" element={<About />} />
           <Route path="/about/reviews" element={<AboutReviews />} />
           <Route path="/contact" element={<Contact />} />
